@@ -122,9 +122,9 @@ Five fresh processes per profile, no retries or pooled pass rates. Every trial r
 | CL15 | PASS | Target-relative scope manifest; no deployment rollback; protected source guard passes |
 | CL16 | FAIL | Full clean invocation failed ROS coverage; its campaign was skipped 77, then separately completed on unchanged binaries |
 | CL17 | PASS_WITH_DISCLOSED_FAILURES | Raw aggregate 1 retained; new ROS failure and exact inherited lint delta disclosed |
-| CL18 | PENDING_PUBLICATION | Archive verification and remote publication/equivalence recorded in final-delivery.json |
+| CL18 | PASS | Evidence branch remote commit verified; archive/part/member hashes pass. Submitted documentation-only head equivalence is recorded in final-delivery.json. |
 | CL19 | PASS | Software qualification false; simulation, physical qualification and deployment false |
-| CL20 | PENDING_DELIVERY | Existing PR85 branch only; body write permission currently returns 403 |
+| CL20 | PARTIAL_PR_BODY_WRITE_BLOCKED | Existing PR85 source branch updated; final submitted head and live API status recorded in final-delivery.json. GitHub rejects PR body PATCH with 403 Resource not accessible by integration; PR85_BODY.md published for manual application. |
 
 [Portable evidence, checksum manifests and final delivery proof](https://github.com/timothyypark/HOPE/tree/evidence/pr85-software-qualification-20261024). Archive parts reconstruct byte-identical tar files, with per-member hashes; the original historical archive retains SHA-256 `fb23fd72ccdff4bb38e5c9820937ad1ee22421f53c15421cbeecb067c42ea3c8`.
 

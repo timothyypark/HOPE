@@ -1,0 +1,173 @@
+{
+  "wall_ns": 1792842666351745388,
+  "head": "dc012fe970d6bb2169853dd8e985705193ac9148",
+  "base": "91aecabfd44cb258ac998158e724be9017d883a7",
+  "remote_before": "4065cb57fe3a9256ebb635912d7a1e62d3fbf806",
+  "remote_after": "dc012fe970d6bb2169853dd8e985705193ac9148",
+  "non_force": true,
+  "commands": [
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "status",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": "dc012fe970d6bb2169853dd8e985705193ac9148\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "exit": 0,
+      "stdout": "https://github.com/timothyypark/HOPE.git\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "fetch",
+        "origin",
+        "refs/heads/feature/integrated-planner-reacquisition-spin-readiness:refs/remotes/audit-pr85/live-fork-head"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "From https://github.com/timothyypark/HOPE\n   e7947b9..4065cb5  feature/integrated-planner-reacquisition-spin-readiness -> audit-pr85/live-fork-head\n"
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "fetch",
+        "https://github.com/hitchopen/HOPE.git",
+        "refs/heads/nightly_built:refs/remotes/audit-pr85/live-upstream-nightly"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "rev-parse",
+        "refs/remotes/audit-pr85/live-upstream-nightly"
+      ],
+      "exit": 0,
+      "stdout": "91aecabfd44cb258ac998158e724be9017d883a7\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "rev-parse",
+        "refs/remotes/audit-pr85/live-fork-head"
+      ],
+      "exit": 0,
+      "stdout": "4065cb57fe3a9256ebb635912d7a1e62d3fbf806\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "merge-base",
+        "--is-ancestor",
+        "4065cb57fe3a9256ebb635912d7a1e62d3fbf806",
+        "dc012fe970d6bb2169853dd8e985705193ac9148"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "merge-base",
+        "--is-ancestor",
+        "91aecabfd44cb258ac998158e724be9017d883a7",
+        "dc012fe970d6bb2169853dd8e985705193ac9148"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/integrated-planner-reacquisition-spin-readiness"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "To https://github.com/timothyypark/HOPE.git\n   4065cb5..dc012fe  HEAD -> feature/integrated-planner-reacquisition-spin-readiness\n"
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=/workspace/HOPE-pr85-bounded-ingress",
+        "-C",
+        "/workspace/HOPE-pr85-bounded-ingress",
+        "ls-remote",
+        "origin",
+        "refs/heads/feature/integrated-planner-reacquisition-spin-readiness"
+      ],
+      "exit": 0,
+      "stdout": "dc012fe970d6bb2169853dd8e985705193ac9148\trefs/heads/feature/integrated-planner-reacquisition-spin-readiness\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -6,7 +6,7 @@ Conflict resolution is complete against `hitchopen/HOPE:nightly_built` at `91aec
 
 Corrections include bounded stage-loss accounting, aligned source state/stamps, bounded depth-eight integrated ingress, actual consumed-prefix parity, context-safe relay/planner shutdown, a single V2 executor and a measured 5 ms publication reserve. The 95% coverage, 30 ms publication-completion and decoder P95 thresholds are unchanged.
 
-Tested source: `dc012fe970d6bb2169853dd8e985705193ac9148`. Any later submitted commit changes only qualification/integration receipts; [final-delivery.json](https://github.com/timothyypark/HOPE/blob/evidence/pr85-software-qualification-20261024/final-delivery.json) records the exact submitted head and hash equivalence.
+Tested source: `dc012fe970d6bb2169853dd8e985705193ac9148`. Submitted head: `4d2247c69100f1e5416a8f42468b4d67418c45fb` (four documentation receipts only). Any later submitted commit changes only qualification/integration receipts; [final-delivery.json](https://github.com/timothyypark/HOPE/blob/evidence/pr85-software-qualification-20261024/final-delivery.json) records the exact submitted head and hash equivalence.
 
 | Verification | Result |
 |---|---|
@@ -20,7 +20,7 @@ Tested source: `dc012fe970d6bb2169853dd8e985705193ac9148`. Any later submitted c
 
 The verifier skipped the repeated campaign after the ROS audit failed. The entire predeclared campaign was then completed separately on unchanged source and binaries; it is not presented as a coherent passing invocation. Historical failed runs, all per-trial denominators, exceptions, stage/receiver ledgers and resource receipts remain available.
 
-- [Integration receipt and conflict ledger](https://github.com/timothyypark/HOPE/blob/dc012fe970d6bb2169853dd8e985705193ac9148/hope_ws/src/hope_planner_cpp/docs/integrated_planner_pr85_integration.md).
+- [Integration receipt and conflict ledger](https://github.com/timothyypark/HOPE/blob/4d2247c69100f1e5416a8f42468b4d67418c45fb/hope_ws/src/hope_planner_cpp/docs/integrated_planner_pr85_integration.md).
 - [Scoped result, M01–M08 / CL01–CL20 checklist and every trial](https://github.com/timothyypark/HOPE/blob/evidence/pr85-software-qualification-20261024/integrated_planner_software_qualification.md).
 - [Downloadable evidence and checksum verification](https://github.com/timothyypark/HOPE/tree/evidence/pr85-software-qualification-20261024).
 

@@ -8,13 +8,15 @@ The clean full run failed `base_yaw_chain_150_0` at 39/43 eligible command epoch
 
 The separately continued, predeclared campaign completed **157/160 passing trials and 3 failing trials** on unchanged source, contract and binaries. All outcomes are retained; no retries were credited. The campaign cannot turn the earlier failed full invocation into a pass.
 
+Submitted PR head: [`4d2247c69100f1e5416a8f42468b4d67418c45fb`](https://github.com/timothyypark/HOPE/commit/4d2247c69100f1e5416a8f42468b4d67418c45fb); only four documentation receipts differ from the tested source. GitHub reports `mergeable=true` / `clean` against the pinned base. The PR description update remains blocked by HTTP 403; the prepared body is below.
+
 ## Start here
 
 - [Scoped qualification receipt and all trial results](integrated_planner_software_qualification.md).
 - [Machine-readable receipt](integrated_planner_software_qualification.json), [campaign summary](campaign-summary.json), [frozen contract](qualification-contract.json).
 - [Final base-yaw failure analysis](final-base-yaw-failure-analysis.json). Actual-stage attribution remains unresolved for that uninstrumented run.
 - [Repeated-campaign failure analysis](final-campaign-failure-analysis.json), [tested binary and runtime-library hashes](final-binary-inventory.json), and [policy Python dependencies](policy-python-dependencies.json).
-- [Integration receipt and all 18 conflict resolutions](https://github.com/timothyypark/HOPE/blob/dc012fe970d6bb2169853dd8e985705193ac9148/hope_ws/src/hope_planner_cpp/docs/integrated_planner_pr85_integration.md); original index/stage blobs are in the integration archive.
+- [Integration receipt and all 18 conflict resolutions](https://github.com/timothyypark/HOPE/blob/4d2247c69100f1e5416a8f42468b4d67418c45fb/hope_ws/src/hope_planner_cpp/docs/integrated_planner_pr85_integration.md); original index/stage blobs are in the integration archive.
 - [Final delivery proof](final-delivery.json): submitted head, tested-source equivalence, remote evidence commit, live GitHub mergeability/checks and PR-description write result.
 - [Prepared PR85 description](PR85_BODY.md), provided for manual application if the GitHub credential still cannot update the upstream PR.
 

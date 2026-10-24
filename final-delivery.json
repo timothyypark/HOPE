@@ -1,0 +1,160 @@
+{
+  "observed_utc": "2026-10-24T12:02:53.992731+00:00",
+  "source_repository": "https://github.com/timothyypark/HOPE",
+  "source_branch": "feature/integrated-planner-reacquisition-spin-readiness",
+  "existing_pr": "https://github.com/hitchopen/HOPE/pull/85",
+  "original_head": "47296db5653c6dda7d397d7a82153f69fa4ed4fb",
+  "integration_checkpoint": "e7947b9486f1b49b70a560318eaf12bc7de9979a",
+  "target_base": "91aecabfd44cb258ac998158e724be9017d883a7",
+  "tested_source": "dc012fe970d6bb2169853dd8e985705193ac9148",
+  "tested_tree": "0a57e50a2508717421673d16904a1dcac3d62b20",
+  "submitted_head": "4d2247c69100f1e5416a8f42468b4d67418c45fb",
+  "submitted_tree": "0c9537e574dcd9aeed729c0c64fed2b0dbc782f5",
+  "evidence_archive_commit": "048882c26624ab101f21351c9df257bbf7121020",
+  "evidence_publication": {
+    "wall_ns": 1792843162801631191,
+    "evidence_commit": "048882c26624ab101f21351c9df257bbf7121020",
+    "remote_head": "048882c26624ab101f21351c9df257bbf7121020",
+    "remote_verified": true,
+    "remote_tree_matches_local": true,
+    "remote_files": 51,
+    "downloaded_and_verified": [
+      "README.md",
+      "artifacts/archives.json",
+      "artifact-verification.json"
+    ],
+    "artifact_verification": "PASS",
+    "archives": 11,
+    "url": "https://github.com/timothyypark/HOPE/tree/evidence/pr85-software-qualification-20261024"
+  },
+  "documentation_only_equivalence": {
+    "status": "PASS",
+    "changed_paths": [
+      "hope_ws/src/hope_planner_cpp/docs/integrated_planner_pr85_integration.json",
+      "hope_ws/src/hope_planner_cpp/docs/integrated_planner_pr85_integration.md",
+      "hope_ws/src/hope_planner_cpp/docs/integrated_planner_software_qualification.json",
+      "hope_ws/src/hope_planner_cpp/docs/integrated_planner_software_qualification.md"
+    ],
+    "source_config_interface_test_files_unchanged": 490,
+    "source_manifest_sha256": "cb187d87d53466c5232bad11a50c5e11a6df5600e6e07d23cebf535c7ae45054",
+    "contract_sha256": "b9be2f44664402270012d772abeac2650b847a384953535671e7ae58c47addc5",
+    "binary_sha256": {
+      "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_planner_cpp_node": "02522a0240e9907c245d74849bd9b3beff1f7ebc63c0df1a70d467addad0663c",
+      "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_integrated_runner_probe": "0db62d4046db777b93e58312ac36cebd69a1b7fc76138b1f2b6330ab9e8bbdb8"
+    },
+    "receiver_test_sources_unchanged": true,
+    "policy_artifacts_unchanged": true,
+    "receipt_sha256": {
+      "hope_ws/src/hope_planner_cpp/docs/integrated_planner_pr85_integration.json": "5bd0d18b2fc8b9c8584ebc2830c1d45647d51a102afbb78becf347785a482d82",
+      "hope_ws/src/hope_planner_cpp/docs/integrated_planner_pr85_integration.md": "6762d9249a849d0e2ef434de984dccb8ef4a6d3194a37bd01082f0ba3479f48c",
+      "hope_ws/src/hope_planner_cpp/docs/integrated_planner_software_qualification.json": "5c46e33a31e89b184a80cd3262f6b0217b214c88fdb21dbb9ba83dd859105722",
+      "hope_ws/src/hope_planner_cpp/docs/integrated_planner_software_qualification.md": "5075b0eb7c2ecdfff11e1ddc52ace3e0ef4473ec27c4707acc2d48fcd14e8d16"
+    }
+  },
+  "github": {
+    "head": "4d2247c69100f1e5416a8f42468b4d67418c45fb",
+    "base": "91aecabfd44cb258ac998158e724be9017d883a7",
+    "state": "open",
+    "draft": false,
+    "merged": false,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "changed_files": 175,
+    "commits": 58,
+    "test_merge": "6a9e32e7d2e9688f8028606a55b8eea3f26d0abc",
+    "test_merge_parents": [
+      "91aecabfd44cb258ac998158e724be9017d883a7",
+      "4d2247c69100f1e5416a8f42468b4d67418c45fb"
+    ],
+    "test_merge_tree_matches_submitted": true,
+    "check_runs_reported": 0,
+    "combined_status": "pending",
+    "commit_statuses_reported": 0,
+    "required_status_check_access_exit": 1,
+    "required_status_check_response": {
+      "message": "Resource not accessible by integration",
+      "documentation_url": "https://docs.github.com/rest/branches/branch-protection#get-status-checks-protection",
+      "status": "403"
+    },
+    "reviews": 0,
+    "review_comments": 0,
+    "ci_claim": "No external CI success is inferred from empty check/status lists or textual mergeability"
+  },
+  "pr_description_update": {
+    "updated": false,
+    "command_exit": 1,
+    "message": "Resource not accessible by integration",
+    "status": "403",
+    "stderr": "gh: Resource not accessible by integration (HTTP 403)\n",
+    "request": "PR85_BODY.md on evidence branch",
+    "endpoint": "PATCH /repos/hitchopen/HOPE/pulls/85",
+    "wall_ns": 1792843163298566691
+  },
+  "prepared_description": "PR85_BODY.md",
+  "prepared_description_sha256": "7ae758c352d4f9ba0e5b472364b734754c81aa28339052ac4ffc3114a06be910",
+  "attempted_description_request_sha256": "40ff212d1b87c7fbe3b67c05bd3926222af6ade4d51eb6239fc14c715988fc4f",
+  "verification": {
+    "full_invocation_aggregate_exit": 1,
+    "original_repeated_campaign_exit": 77,
+    "separately_continued_campaign_exit": 1,
+    "campaign_trials": 160,
+    "campaign_passed": 157,
+    "campaign_failed": 3,
+    "full_ros_new_failure": "base_yaw_chain_150_0: 39/43 eligible epochs",
+    "campaign_failures": [
+      {
+        "profile": "review_chain_300_12_unknown",
+        "repetition": 1,
+        "covered": 37,
+        "denominator": 40
+      },
+      {
+        "profile": "review_chain_150_12_zero",
+        "repetition": 4,
+        "covered": 18,
+        "denominator": 20
+      },
+      {
+        "profile": "review_refresh_300_10_unknown",
+        "repetition": 5,
+        "covered": 149,
+        "denominator": 160
+      }
+    ],
+    "flags": {
+      "merge_conflicts_resolved": true,
+      "planner_functional_qualified": false,
+      "planner_timing_qualified": false,
+      "planner_final_candidate_verified": false,
+      "planner_software_qualified": false,
+      "simulation_qualified": false,
+      "physically_qualified": false,
+      "deployment_authorized": false
+    },
+    "artifact_verification": "PASS"
+  },
+  "preserved_worktrees": [
+    {
+      "path": "/workspace/HOPE",
+      "head": "4dc0959348f2aa777330d177d16eb70f778a79e6",
+      "status": ""
+    },
+    {
+      "path": "/workspace/HOPE-integrated-reacquisition-spin",
+      "head": "47296db5653c6dda7d397d7a82153f69fa4ed4fb",
+      "status": ""
+    },
+    {
+      "path": "/workspace/HOPE-integrated-v2-review-fixes",
+      "head": "1e379f5da1533a14d0091bfa8e4f1be23caf00b7",
+      "status": ""
+    },
+    {
+      "path": "/workspace/nohope",
+      "head": "96e71c1adb217d14b925681173cebe00d8427f21",
+      "status": ""
+    }
+  ],
+  "nohope_upstream_access": "API identifies dongc1/nohope, but its main ref is inaccessible to this credential (API 404/Git 403). Fork main and local HEAD both 96e71c1; no changes required by PR85 plan.",
+  "prepared_description_updated_after_rejected_attempt": "Added final submitted documentation-head SHA and current integration-receipt link; the recorded API write attempt was rejected, so no version of the new description was applied."
+}

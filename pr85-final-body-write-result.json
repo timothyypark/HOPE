@@ -1,0 +1,10 @@
+{
+  "updated": false,
+  "command_exit": 1,
+  "message": "Resource not accessible by integration",
+  "status": "403",
+  "stderr": "gh: Resource not accessible by integration (HTTP 403)\n",
+  "request": "PR85_BODY.md on evidence branch",
+  "endpoint": "PATCH /repos/hitchopen/HOPE/pulls/85",
+  "wall_ns": 1792843163298566691
+}

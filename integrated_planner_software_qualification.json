@@ -34403,7 +34403,10 @@
   "evidence": {
     "branch": "evidence/pr85-software-qualification-20261024",
     "location": "https://github.com/timothyypark/HOPE/tree/evidence/pr85-software-qualification-20261024",
-    "publication_proof": "final-delivery.json; verify actual remote commit before claiming publication"
+    "publication_proof": "final-delivery.json; verify actual remote commit before claiming publication",
+    "published": true,
+    "archive_commit": "048882c26624ab101f21351c9df257bbf7121020",
+    "verification": "PASS; all archive/part/member hashes verified"
   },
   "campaign_extrema": {
     "min_coverage": 0.9,
@@ -34581,16 +34584,26 @@
       "evidence": "Raw aggregate 1 retained; new ROS failure and exact inherited lint delta disclosed"
     },
     "CL18": {
-      "status": "PENDING_PUBLICATION",
-      "evidence": "Archive verification and remote publication/equivalence recorded in final-delivery.json"
+      "status": "PASS",
+      "evidence": "Evidence branch remote commit verified; archive/part/member hashes pass. Submitted documentation-only head equivalence is recorded in final-delivery.json."
     },
     "CL19": {
       "status": "PASS",
       "evidence": "Software qualification false; simulation, physical qualification and deployment false"
     },
     "CL20": {
-      "status": "PENDING_DELIVERY",
-      "evidence": "Existing PR85 branch only; body write permission currently returns 403"
+      "status": "PARTIAL_PR_BODY_WRITE_BLOCKED",
+      "evidence": "Existing PR85 source branch updated; final submitted head and live API status recorded in final-delivery.json. GitHub rejects PR body PATCH with 403 Resource not accessible by integration; PR85_BODY.md published for manual application."
     }
+  },
+  "pr_body_write": {
+    "updated": false,
+    "command_exit": 1,
+    "message": "Resource not accessible by integration",
+    "status": "403",
+    "stderr": "gh: Resource not accessible by integration (HTTP 403)\n",
+    "request": "PR85_BODY.md on evidence branch",
+    "endpoint": "PATCH /repos/hitchopen/HOPE/pulls/85",
+    "wall_ns": 1792843163298566691
   }
 }

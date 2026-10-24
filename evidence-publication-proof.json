@@ -1,0 +1,16 @@
+{
+  "wall_ns": 1792843162801631191,
+  "evidence_commit": "048882c26624ab101f21351c9df257bbf7121020",
+  "remote_head": "048882c26624ab101f21351c9df257bbf7121020",
+  "remote_verified": true,
+  "remote_tree_matches_local": true,
+  "remote_files": 51,
+  "downloaded_and_verified": [
+    "README.md",
+    "artifacts/archives.json",
+    "artifact-verification.json"
+  ],
+  "artifact_verification": "PASS",
+  "archives": 11,
+  "url": "https://github.com/timothyypark/HOPE/tree/evidence/pr85-software-qualification-20261024"
+}
