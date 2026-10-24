@@ -1,0 +1,13 @@
+{
+  "source": "dc012fe970d6bb2169853dd8e985705193ac9148",
+  "declared_wall_ns": 1792839869285023493,
+  "profiles": 32,
+  "repetitions": 5,
+  "expected_trials": 160,
+  "reason": "Full verifier retained base_yaw_chain_150_0 coverage failure and skipped campaign (77). Complete the originally predeclared matrix separately on the same unchanged source and installed binaries, without rerunning the failed ROS gate or claiming a coherent passing invocation.",
+  "qualification_remains_failed": true,
+  "original_aggregate_exit": 1,
+  "original_repeated_campaign_exit": 77,
+  "command": "bash /workspace/.cloud-setup/pr85-qualification/run_final_campaign_continuation.sh",
+  "policy": "Every trial is retained; no retries or pooled passing averages; no changed criteria or denominator"
+}

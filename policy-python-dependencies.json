@@ -1,0 +1,36 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "pythonpath": "/workspace/.cloud-setup/reacquisition-spin/policy-python",
+  "scope": "Post-campaign inventory using the exact environment override of the recorded policy-contract command; no dependencies changed during qualification",
+  "modules": [
+    {
+      "module": "numpy",
+      "version": "1.26.4",
+      "file": "/usr/lib/python3/dist-packages/numpy/__init__.py",
+      "native_library_sha256": {},
+      "required_by_policy_contract": true
+    },
+    {
+      "module": "scipy",
+      "version": "1.11.4",
+      "file": "/usr/lib/python3/dist-packages/scipy/__init__.py",
+      "native_library_sha256": {},
+      "required_by_policy_contract": false
+    },
+    {
+      "module": "onnxruntime",
+      "version": "1.31.0",
+      "file": "/workspace/.cloud-setup/reacquisition-spin/policy-python/onnxruntime/__init__.py",
+      "native_library_sha256": {
+        "/workspace/.cloud-setup/reacquisition-spin/policy-python/onnxruntime/capi/libonnxruntime_providers_shared.so": "086ec1d5388f64153d9c63470d126693db9a182c8ce236d3a1119068471b8a0d",
+        "/workspace/.cloud-setup/reacquisition-spin/policy-python/onnxruntime/capi/onnxruntime_pybind11_state.cpython-312-x86_64-linux-gnu.so": "2377ce1c968f274da1e694680ea8dc19fdc619bd61c192d8b2dff3362710ec4e"
+      },
+      "required_by_policy_contract": true
+    },
+    {
+      "module": "onnx",
+      "unavailable": "No module named 'onnx'",
+      "required_by_policy_contract": false
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "source": "dc012fe970d6bb2169853dd8e985705193ac9148",
+  "campaign_status": "FAIL",
+  "expected_trials": 160,
+  "executed_trials": 160,
+  "failures": [
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 1,
+      "exit": 1,
+      "exception": "AssertionError: ('command coverage', 37, 40, 0.925)",
+      "covered": 37,
+      "denominator": 40,
+      "coverage": 0.925,
+      "maximum_observed_publication_ms": 20.012107,
+      "source_gc": "disabled_during_pacing",
+      "missing_epochs": [
+        {
+          "source_ns": 1792840366506281477,
+          "index": 870,
+          "elapsed_s": 2.9000721840000003,
+          "phase_s": 0.10007218400000006,
+          "pacing_late_ms": 0.073487,
+          "previous_interval_ms": 3.320149,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        },
+        {
+          "source_ns": 1792840366512952753,
+          "index": 872,
+          "elapsed_s": 2.9067434600000004,
+          "phase_s": 0.10674346000000057,
+          "pacing_late_ms": 0.077525,
+          "previous_interval_ms": 3.306479,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        },
+        {
+          "source_ns": 1792840366516284210,
+          "index": 873,
+          "elapsed_s": 2.910074917,
+          "phase_s": 0.11007491700000038,
+          "pacing_late_ms": 0.0761,
+          "previous_interval_ms": 3.331457,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        }
+      ],
+      "stage_accounting_enabled": false,
+      "accounting_complete": false,
+      "resources": {
+        "optitrack_mct_relay": {
+          "pid": 162010,
+          "exit": null,
+          "VmHWM": "76544 kB",
+          "VmRSS": "76544 kB",
+          "Threads": "14",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 2.66,
+          "final_exit": 0
+        },
+        "hope_base_pose_flat_relay": {
+          "pid": 162011,
+          "exit": 0,
+          "unavailable": "[Errno 2] No such file or directory: '/proc/162011/status'",
+          "final_exit": 0
+        },
+        "hope_planner_cpp_node": {
+          "pid": 162012,
+          "exit": null,
+          "VmHWM": "35424 kB",
+          "VmRSS": "35424 kB",
+          "Threads": "15",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 1.26,
+          "final_exit": 0
+        },
+        "hope_integrated_runner_probe": {
+          "pid": 162013,
+          "exit": null,
+          "VmHWM": "29988 kB",
+          "VmRSS": "29988 kB",
+          "Threads": "14",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 0.08,
+          "final_exit": 0
+        }
+      },
+      "attribution": "Accounting-disabled losses remain unresolved. Source pacing and observer receipt are observations, not proof of the first lost production stage."
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 4,
+      "exit": 1,
+      "exception": "AssertionError: ('command coverage', 18, 20, 0.9)",
+      "covered": 18,
+      "denominator": 20,
+      "coverage": 0.9,
+      "maximum_observed_publication_ms": 20.781529,
+      "source_gc": "disabled_during_pacing",
+      "missing_epochs": [
+        {
+          "source_ns": 1792841924841749770,
+          "index": 1335,
+          "elapsed_s": 8.900088575,
+          "phase_s": 0.10008857499999912,
+          "pacing_late_ms": 0.089516,
+          "previous_interval_ms": 6.583303,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        },
+        {
+          "source_ns": 1792841924848426348,
+          "index": 1336,
+          "elapsed_s": 8.906765153,
+          "phase_s": 0.10676515299999956,
+          "pacing_late_ms": 0.099338,
+          "previous_interval_ms": 6.676578,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        }
+      ],
+      "stage_accounting_enabled": false,
+      "accounting_complete": false,
+      "resources": {
+        "optitrack_mct_relay": {
+          "pid": 169931,
+          "exit": null,
+          "VmHWM": "76632 kB",
+          "VmRSS": "76632 kB",
+          "Threads": "14",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 1.78,
+          "final_exit": 0
+        },
+        "hope_base_pose_flat_relay": {
+          "pid": 169932,
+          "exit": 0,
+          "unavailable": "[Errno 2] No such file or directory: '/proc/169932/status'",
+          "final_exit": 0
+        },
+        "hope_planner_cpp_node": {
+          "pid": 169933,
+          "exit": null,
+          "VmHWM": "35244 kB",
+          "VmRSS": "35244 kB",
+          "Threads": "15",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 0.86,
+          "final_exit": 0
+        },
+        "hope_integrated_runner_probe": {
+          "pid": 169934,
+          "exit": null,
+          "VmHWM": "30116 kB",
+          "VmRSS": "30116 kB",
+          "Threads": "14",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 0.08,
+          "final_exit": 0
+        }
+      },
+      "attribution": "Accounting-disabled losses remain unresolved. Source pacing and observer receipt are observations, not proof of the first lost production stage."
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 5,
+      "exit": 1,
+      "exception": "AssertionError: ('command coverage', 149, 160, 0.93125)",
+      "covered": 149,
+      "denominator": 160,
+      "coverage": 0.93125,
+      "maximum_observed_publication_ms": 23.06491,
+      "source_gc": "disabled_during_pacing",
+      "missing_epochs": [
+        {
+          "source_ns": 1792842372622619218,
+          "index": 1471,
+          "elapsed_s": 4.903405726,
+          "phase_s": 0.10340572600000009,
+          "pacing_late_ms": 0.073734,
+          "previous_interval_ms": 3.328932,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": false
+        },
+        {
+          "source_ns": 1792842372625959256,
+          "index": 1472,
+          "elapsed_s": 4.906745764,
+          "phase_s": 0.10674576400000024,
+          "pacing_late_ms": 0.080308,
+          "previous_interval_ms": 3.340038,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": false
+        },
+        {
+          "source_ns": 1792842372629285973,
+          "index": 1473,
+          "elapsed_s": 4.910072481,
+          "phase_s": 0.11007248100000044,
+          "pacing_late_ms": 0.073763,
+          "previous_interval_ms": 3.326717,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": false
+        },
+        {
+          "source_ns": 1792842372632625500,
+          "index": 1474,
+          "elapsed_s": 4.913412008,
+          "phase_s": 0.11341200800000006,
+          "pacing_late_ms": 0.080057,
+          "previous_interval_ms": 3.339527,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": false
+        },
+        {
+          "source_ns": 1792842372635955223,
+          "index": 1475,
+          "elapsed_s": 4.916741731,
+          "phase_s": 0.11674173100000029,
+          "pacing_late_ms": 0.076355,
+          "previous_interval_ms": 3.329723,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": false
+        },
+        {
+          "source_ns": 1792842372639295371,
+          "index": 1476,
+          "elapsed_s": 4.9200818790000005,
+          "phase_s": 0.12008187900000067,
+          "pacing_late_ms": 0.08303,
+          "previous_interval_ms": 3.340148,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        },
+        {
+          "source_ns": 1792842372642622499,
+          "index": 1477,
+          "elapsed_s": 4.923409007,
+          "phase_s": 0.12340900700000024,
+          "pacing_late_ms": 0.077005,
+          "previous_interval_ms": 3.327128,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        },
+        {
+          "source_ns": 1792842372645959803,
+          "index": 1478,
+          "elapsed_s": 4.9267463110000005,
+          "phase_s": 0.12674631100000067,
+          "pacing_late_ms": 0.080875,
+          "previous_interval_ms": 3.337304,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        },
+        {
+          "source_ns": 1792842372652623224,
+          "index": 1480,
+          "elapsed_s": 4.933409732,
+          "phase_s": 0.1334097320000005,
+          "pacing_late_ms": 0.07776,
+          "previous_interval_ms": 3.328441,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        },
+        {
+          "source_ns": 1792842372662625410,
+          "index": 1483,
+          "elapsed_s": 4.943411918000001,
+          "phase_s": 0.14341191800000086,
+          "pacing_late_ms": 0.079987,
+          "previous_interval_ms": 3.330303,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        },
+        {
+          "source_ns": 1792842372665963916,
+          "index": 1484,
+          "elapsed_s": 4.946750424,
+          "phase_s": 0.14675042400000038,
+          "pacing_late_ms": 0.084898,
+          "previous_interval_ms": 3.338506,
+          "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+          "observer_received": true
+        }
+      ],
+      "stage_accounting_enabled": false,
+      "accounting_complete": false,
+      "resources": {
+        "optitrack_mct_relay": {
+          "pid": 172245,
+          "exit": null,
+          "VmHWM": "76028 kB",
+          "VmRSS": "76028 kB",
+          "Threads": "14",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 2.73,
+          "final_exit": 0
+        },
+        "hope_base_pose_flat_relay": {
+          "pid": 172246,
+          "exit": 0,
+          "unavailable": "[Errno 2] No such file or directory: '/proc/172246/status'",
+          "final_exit": 0
+        },
+        "hope_planner_cpp_node": {
+          "pid": 172247,
+          "exit": null,
+          "VmHWM": "35680 kB",
+          "VmRSS": "35680 kB",
+          "Threads": "15",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 1.36,
+          "final_exit": 0
+        },
+        "hope_integrated_runner_probe": {
+          "pid": 172248,
+          "exit": null,
+          "VmHWM": "29700 kB",
+          "VmRSS": "29700 kB",
+          "Threads": "14",
+          "Cpus_allowed_list": "0-4",
+          "cpu_s": 0.11,
+          "final_exit": 0
+        }
+      },
+      "attribution": "Accounting-disabled losses remain unresolved. Source pacing and observer receipt are observations, not proof of the first lost production stage."
+    }
+  ],
+  "no_retries_credited": true
+}

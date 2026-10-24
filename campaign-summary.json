@@ -1,0 +1,5916 @@
+{
+  "status": "FAIL",
+  "candidate_unchanged": true,
+  "source_commit": "dc012fe970d6bb2169853dd8e985705193ac9148",
+  "expected_trials": 160,
+  "executed_trials": 160,
+  "failed_trials": [
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 1,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1792840361926902025,
+      "finished_wall_ns": 1792840377286301562,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_300_12_unknown/result.json",
+      "coverage": 0.925,
+      "denominator": 40,
+      "decoder_ms": null
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 4,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1792841914274445628,
+      "finished_wall_ns": 1792841929514278543,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_150_12_zero/result.json",
+      "coverage": 0.9,
+      "denominator": 20,
+      "decoder_ms": null
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 5,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1792842366022123558,
+      "finished_wall_ns": 1792842381432366039,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_refresh_300_10_unknown/result.json",
+      "coverage": 0.93125,
+      "denominator": 160,
+      "decoder_ms": null
+    }
+  ],
+  "outcomes": [
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.867985,
+          "p95": 2.7582210000000003,
+          "p99": 3.848921560000001,
+          "max": 7.530613
+        },
+        "decoder_ms": {
+          "p50": 2.098593,
+          "p95": 3.0579454,
+          "p99": 4.047310400000015,
+          "max": 7.68513
+        }
+      },
+      "started_wall_ns": 1792839871088458834,
+      "finished_wall_ns": 1792839893037306867,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.098593,
+        "p95": 3.0579454,
+        "p99": 4.047310400000015,
+        "max": 7.68513
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.992998,
+          "p95": 2.7695546,
+          "p99": 3.882602480000004,
+          "max": 6.521455
+        },
+        "decoder_ms": {
+          "p50": 2.104386,
+          "p95": 3.03392,
+          "p99": 4.223346360000026,
+          "max": 8.394227
+        }
+      },
+      "started_wall_ns": 1792839893037657023,
+      "finished_wall_ns": 1792839915078371532,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.104386,
+        "p95": 3.03392,
+        "p99": 4.223346360000026,
+        "max": 8.394227
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.043947,
+          "p95": 3.085873,
+          "p99": 5.020698000000001,
+          "max": 5.928772
+        },
+        "decoder_ms": {
+          "p50": 2.128014,
+          "p95": 3.1756744,
+          "p99": 5.16355436,
+          "max": 6.252538
+        }
+      },
+      "started_wall_ns": 1792839915078719915,
+      "finished_wall_ns": 1792839937130548960,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.128014,
+        "p95": 3.1756744,
+        "p99": 5.16355436,
+        "max": 6.252538
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.858967,
+          "p95": 2.6265652000000004,
+          "p99": 3.452835520000004,
+          "max": 4.262422
+        },
+        "decoder_ms": {
+          "p50": 1.930875,
+          "p95": 2.8677335999999998,
+          "p99": 3.9965028000000093,
+          "max": 8.301717
+        }
+      },
+      "started_wall_ns": 1792839937130926517,
+      "finished_wall_ns": 1792839959131268110,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.930875,
+        "p95": 2.8677335999999998,
+        "p99": 3.9965028000000093,
+        "max": 8.301717
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.82782,
+          "p95": 2.4619308,
+          "p99": 2.6697372800000028,
+          "max": 3.088639
+        },
+        "decoder_ms": {
+          "p50": 1.922117,
+          "p95": 2.6107014000000004,
+          "p99": 3.0479467600000008,
+          "max": 3.491623
+        }
+      },
+      "started_wall_ns": 1792839959131637876,
+      "finished_wall_ns": 1792839983531786537,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.922117,
+        "p95": 2.6107014000000004,
+        "p99": 3.0479467600000008,
+        "max": 3.491623
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.931782,
+          "p95": 2.910564200000001,
+          "p99": 4.206085840000009,
+          "max": 6.202187
+        },
+        "decoder_ms": {
+          "p50": 2.10738,
+          "p95": 3.1257974000000006,
+          "p99": 4.816938640000006,
+          "max": 6.294215
+        }
+      },
+      "started_wall_ns": 1792839983532389172,
+      "finished_wall_ns": 1792840005833929688,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.10738,
+        "p95": 3.1257974000000006,
+        "p99": 4.816938640000006,
+        "max": 6.294215
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.7248065000000001,
+          "p95": 2.2472753499999993,
+          "p99": 2.5302849699999976,
+          "max": 3.030203
+        },
+        "decoder_ms": {
+          "p50": 1.840368,
+          "p95": 2.4686508,
+          "p99": 2.707835419999999,
+          "max": 3.138075
+        }
+      },
+      "started_wall_ns": 1792840005834316940,
+      "finished_wall_ns": 1792840021529580335,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.840368,
+        "p95": 2.4686508,
+        "p99": 2.707835419999999,
+        "max": 3.138075
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.0565425,
+          "p95": 2.7339430499999944,
+          "p99": 4.9245288799999996,
+          "max": 5.103425
+        },
+        "decoder_ms": {
+          "p50": 2.197845,
+          "p95": 2.9246394499999946,
+          "p99": 4.9784617099999995,
+          "max": 5.163365
+        }
+      },
+      "started_wall_ns": 1792840021530098813,
+      "finished_wall_ns": 1792840036873628521,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.197845,
+        "p95": 2.9246394499999946,
+        "p99": 4.9784617099999995,
+        "max": 5.163365
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.726333,
+          "p95": 2.2575841,
+          "p99": 3.0997409799999995,
+          "max": 6.077433
+        },
+        "decoder_ms": {
+          "p50": 1.808913,
+          "p95": 2.4165172999999998,
+          "p99": 3.728875199999995,
+          "max": 6.100412
+        }
+      },
+      "started_wall_ns": 1792840036874219909,
+      "finished_wall_ns": 1792840061509711443,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.808913,
+        "p95": 2.4165172999999998,
+        "p99": 3.728875199999995,
+        "max": 6.100412
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.7004255,
+          "p95": 2.3415267500000003,
+          "p99": 2.924034340000013,
+          "max": 5.366872
+        },
+        "decoder_ms": {
+          "p50": 1.7615405,
+          "p95": 2.5141970000000002,
+          "p99": 3.7776926200000043,
+          "max": 5.531004
+        }
+      },
+      "started_wall_ns": 1792840061510121108,
+      "finished_wall_ns": 1792840083695821810,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.7615405,
+        "p95": 2.5141970000000002,
+        "p99": 3.7776926200000043,
+        "max": 5.531004
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 593,
+        "publication_ms": {
+          "p50": 1.782027,
+          "p95": 2.6102369999999997,
+          "p99": 4.034617440000038,
+          "max": 8.517514
+        },
+        "decoder_ms": {
+          "p50": 1.821546,
+          "p95": 2.7580302,
+          "p99": 5.019202360000026,
+          "max": 8.566307
+        }
+      },
+      "started_wall_ns": 1792840083696320148,
+      "finished_wall_ns": 1792840105932915503,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.821546,
+        "p95": 2.7580302,
+        "p99": 5.019202360000026,
+        "max": 8.566307
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.691691,
+          "p95": 2.4198399999999998,
+          "p99": 3.9358448999999958,
+          "max": 6.829959
+        },
+        "decoder_ms": {
+          "p50": 1.770844,
+          "p95": 2.5831915999999984,
+          "p99": 4.0304749999999965,
+          "max": 6.903213
+        }
+      },
+      "started_wall_ns": 1792840105933311558,
+      "finished_wall_ns": 1792840128193504048,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.770844,
+        "p95": 2.5831915999999984,
+        "p99": 4.0304749999999965,
+        "max": 6.903213
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 585,
+        "publication_ms": {
+          "p50": 1.90143,
+          "p95": 2.650578,
+          "p99": 4.083208039999999,
+          "max": 7.869465
+        },
+        "decoder_ms": {
+          "p50": 1.994554,
+          "p95": 2.8480725999999996,
+          "p99": 4.308691359999989,
+          "max": 8.441374
+        }
+      },
+      "started_wall_ns": 1792840128193915266,
+      "finished_wall_ns": 1792840150487297290,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.994554,
+        "p95": 2.8480725999999996,
+        "p99": 4.308691359999989,
+        "max": 8.441374
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.794554,
+          "p95": 2.8159822999999986,
+          "p99": 4.583091379999997,
+          "max": 6.953025
+        },
+        "decoder_ms": {
+          "p50": 1.894785,
+          "p95": 3.056248499999998,
+          "p99": 5.504177659999992,
+          "max": 7.040316
+        }
+      },
+      "started_wall_ns": 1792840150487705764,
+      "finished_wall_ns": 1792840175180929041,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.894785,
+        "p95": 3.056248499999998,
+        "p99": 5.504177659999992,
+        "max": 7.040316
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7395375,
+          "p95": 2.293088349999999,
+          "p99": 2.843889339999997,
+          "max": 5.130212
+        },
+        "decoder_ms": {
+          "p50": 1.8209125,
+          "p95": 2.4693156999999992,
+          "p99": 3.18782916,
+          "max": 5.22183
+        }
+      },
+      "started_wall_ns": 1792840175181353378,
+      "finished_wall_ns": 1792840190662061909,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.8209125,
+        "p95": 2.4693156999999992,
+        "p99": 3.18782916,
+        "max": 5.22183
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 116,
+        "publication_ms": {
+          "p50": 2.0114495,
+          "p95": 2.37943075,
+          "p99": 2.6234876999999996,
+          "max": 2.973462
+        },
+        "decoder_ms": {
+          "p50": 2.1126385,
+          "p95": 2.6761955,
+          "p99": 3.1262080499999993,
+          "max": 3.16816
+        }
+      },
+      "started_wall_ns": 1792840190662449441,
+      "finished_wall_ns": 1792840206135675560,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.1126385,
+        "p95": 2.6761955,
+        "p99": 3.1262080499999993,
+        "max": 3.16816
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.985129,
+          "p95": 2.8819885999999983,
+          "p99": 3.672884749999997,
+          "max": 4.061039
+        },
+        "decoder_ms": {
+          "p50": 2.091997,
+          "p95": 3.262771499999999,
+          "p99": 4.104143529999999,
+          "max": 4.524131
+        }
+      },
+      "started_wall_ns": 1792840206136307980,
+      "finished_wall_ns": 1792840221486937878,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.091997,
+        "p95": 3.262771499999999,
+        "p99": 4.104143529999999,
+        "max": 4.524131
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.9624635,
+          "p95": 2.67075575,
+          "p99": 3.0544454299999995,
+          "max": 3.194738
+        },
+        "decoder_ms": {
+          "p50": 2.060805,
+          "p95": 2.8509860999999996,
+          "p99": 3.31326689,
+          "max": 3.79494
+        }
+      },
+      "started_wall_ns": 1792840221487484158,
+      "finished_wall_ns": 1792840236828979464,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.060805,
+        "p95": 2.8509860999999996,
+        "p99": 3.31326689,
+        "max": 3.79494
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.8464265,
+          "p95": 2.6804030999999986,
+          "p99": 5.894322929999998,
+          "max": 7.539065
+        },
+        "decoder_ms": {
+          "p50": 1.9633735,
+          "p95": 2.90988,
+          "p99": 5.8229838299999965,
+          "max": 7.642941
+        }
+      },
+      "started_wall_ns": 1792840236829336180,
+      "finished_wall_ns": 1792840252122599316,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.9633735,
+        "p95": 2.90988,
+        "p99": 5.8229838299999965,
+        "max": 7.642941
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.2411025,
+          "p95": 3.1153424999999997,
+          "p99": 4.762031319999998,
+          "max": 6.674341
+        },
+        "decoder_ms": {
+          "p50": 2.341507,
+          "p95": 3.2646584499999998,
+          "p99": 4.987946919999999,
+          "max": 6.797296
+        }
+      },
+      "started_wall_ns": 1792840252122937744,
+      "finished_wall_ns": 1792840267419498348,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.341507,
+        "p95": 3.2646584499999998,
+        "p99": 4.987946919999999,
+        "max": 6.797296
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.4220485,
+          "p95": 3.495348699999999,
+          "p99": 4.862795439999997,
+          "max": 5.327162
+        },
+        "decoder_ms": {
+          "p50": 2.495869,
+          "p95": 3.9076609499999995,
+          "p99": 5.413069529999999,
+          "max": 6.376058
+        }
+      },
+      "started_wall_ns": 1792840267419893813,
+      "finished_wall_ns": 1792840283023505563,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.495869,
+        "p95": 3.9076609499999995,
+        "p99": 5.413069529999999,
+        "max": 6.376058
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.606294,
+          "p95": 3.2663071499999994,
+          "p99": 3.47343063,
+          "max": 3.548382
+        },
+        "decoder_ms": {
+          "p50": 2.7022505,
+          "p95": 3.4161142,
+          "p99": 3.60487559,
+          "max": 3.71381
+        }
+      },
+      "started_wall_ns": 1792840283023863091,
+      "finished_wall_ns": 1792840298314988184,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.7022505,
+        "p95": 3.4161142,
+        "p99": 3.60487559,
+        "max": 3.71381
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 1.983114,
+          "p95": 2.726279499999999,
+          "p99": 3.21878603,
+          "max": 3.379812
+        },
+        "decoder_ms": {
+          "p50": 2.0109060000000003,
+          "p95": 3.120510349999999,
+          "p99": 3.45199858,
+          "max": 3.469336
+        }
+      },
+      "started_wall_ns": 1792840298315429087,
+      "finished_wall_ns": 1792840305525940179,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.0109060000000003,
+        "p95": 3.120510349999999,
+        "p99": 3.45199858,
+        "max": 3.469336
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 2.0287355,
+          "p95": 3.8018101999999976,
+          "p99": 4.980610380000001,
+          "max": 6.209969
+        },
+        "decoder_ms": {
+          "p50": 2.137321,
+          "p95": 3.9454264999999973,
+          "p99": 5.154579310000001,
+          "max": 6.404182
+        }
+      },
+      "started_wall_ns": 1792840305526335053,
+      "finished_wall_ns": 1792840313037405732,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.137321,
+        "p95": 3.9454264999999973,
+        "p99": 5.154579310000001,
+        "max": 6.404182
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.6608990000000001,
+          "p95": 2.1260075,
+          "p99": 3.271856439999983,
+          "max": 5.153271
+        },
+        "decoder_ms": {
+          "p50": 1.742748,
+          "p95": 2.2277955999999994,
+          "p99": 3.371460379999997,
+          "max": 5.454064
+        }
+      },
+      "started_wall_ns": 1792840313037776169,
+      "finished_wall_ns": 1792840328573849523,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.742748,
+        "p95": 2.2277955999999994,
+        "p99": 3.371460379999997,
+        "max": 5.454064
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.720754,
+          "p95": 2.5085202,
+          "p99": 3.5702334299999996,
+          "max": 4.599621
+        },
+        "decoder_ms": {
+          "p50": 1.795128,
+          "p95": 2.675049199999998,
+          "p99": 3.681845800000001,
+          "max": 4.896246
+        }
+      },
+      "started_wall_ns": 1792840328574316474,
+      "finished_wall_ns": 1792840346435014581,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_300_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.795128,
+        "p95": 2.675049199999998,
+        "p99": 3.681845800000001,
+        "max": 4.896246
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 409,
+        "publication_ms": {
+          "p50": 1.794838,
+          "p95": 2.2954109999999996,
+          "p99": 3.01541668,
+          "max": 3.906132
+        },
+        "decoder_ms": {
+          "p50": 1.880146,
+          "p95": 2.5224191999999994,
+          "p99": 3.09441068,
+          "max": 4.293834
+        }
+      },
+      "started_wall_ns": 1792840346435456235,
+      "finished_wall_ns": 1792840361926372279,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.880146,
+        "p95": 2.5224191999999994,
+        "p99": 3.09441068,
+        "max": 4.293834
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 1,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1792840361926902025,
+      "finished_wall_ns": 1792840377286301562,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_300_12_unknown/result.json",
+      "coverage": 0.925,
+      "denominator": 40,
+      "decoder_ms": null
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 259,
+        "publication_ms": {
+          "p50": 1.987928,
+          "p95": 2.7983014999999996,
+          "p99": 4.083530399999997,
+          "max": 5.781283
+        },
+        "decoder_ms": {
+          "p50": 2.088646,
+          "p95": 2.9733186,
+          "p99": 4.415279159999996,
+          "max": 6.68607
+        }
+      },
+      "started_wall_ns": 1792840377286595413,
+      "finished_wall_ns": 1792840392655641413,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.088646,
+        "p95": 2.9733186,
+        "p99": 4.415279159999996,
+        "max": 6.68607
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 112,
+        "publication_ms": {
+          "p50": 2.0358395,
+          "p95": 2.5360796499999996,
+          "p99": 2.86279691,
+          "max": 3.048547
+        },
+        "decoder_ms": {
+          "p50": 2.1155765,
+          "p95": 2.6621123,
+          "p99": 2.90346162,
+          "max": 3.106448
+        }
+      },
+      "started_wall_ns": 1792840392656020282,
+      "finished_wall_ns": 1792840408137762522,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.1155765,
+        "p95": 2.6621123,
+        "p99": 2.90346162,
+        "max": 3.106448
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 1.840132,
+          "p95": 2.465061849999999,
+          "p99": 2.6504325900000003,
+          "max": 2.697938
+        },
+        "decoder_ms": {
+          "p50": 1.9013835000000001,
+          "p95": 2.6316383999999995,
+          "p99": 2.82320405,
+          "max": 3.325375
+        }
+      },
+      "started_wall_ns": 1792840408138189074,
+      "finished_wall_ns": 1792840415410995927,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.9013835000000001,
+        "p95": 2.6316383999999995,
+        "p99": 2.82320405,
+        "max": 3.325375
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 82,
+        "complete_valid_publication_count": 127,
+        "publication_ms": {
+          "p50": 1.916821,
+          "p95": 3.1019943999999993,
+          "p99": 5.027779719999994,
+          "max": 5.656703
+        },
+        "decoder_ms": {
+          "p50": 1.998333,
+          "p95": 3.286453,
+          "p99": 5.212119699999996,
+          "max": 5.725666
+        }
+      },
+      "started_wall_ns": 1792840415411405973,
+      "finished_wall_ns": 1792840422675401067,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-1/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.998333,
+        "p95": 3.286453,
+        "p99": 5.212119699999996,
+        "max": 5.725666
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.91981,
+          "p95": 2.894095,
+          "p99": 4.319241000000019,
+          "max": 5.521417
+        },
+        "decoder_ms": {
+          "p50": 2.041185,
+          "p95": 3.182015600000001,
+          "p99": 5.550070080000002,
+          "max": 7.807734
+        }
+      },
+      "started_wall_ns": 1792840422675813687,
+      "finished_wall_ns": 1792840444716176750,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.041185,
+        "p95": 3.182015600000001,
+        "p99": 5.550070080000002,
+        "max": 7.807734
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.006866,
+          "p95": 2.9592314000000015,
+          "p99": 3.667350640000005,
+          "max": 5.03059
+        },
+        "decoder_ms": {
+          "p50": 2.111608,
+          "p95": 3.0333596000000007,
+          "p99": 3.7229944000000015,
+          "max": 4.87711
+        }
+      },
+      "started_wall_ns": 1792840444716604894,
+      "finished_wall_ns": 1792840466700257678,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.111608,
+        "p95": 3.0333596000000007,
+        "p99": 3.7229944000000015,
+        "max": 4.87711
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.945041,
+          "p95": 3.1022462000000006,
+          "p99": 4.548942920000012,
+          "max": 6.330316
+        },
+        "decoder_ms": {
+          "p50": 2.088007,
+          "p95": 3.2695190000000003,
+          "p99": 4.449037360000019,
+          "max": 6.362635
+        }
+      },
+      "started_wall_ns": 1792840466700637329,
+      "finished_wall_ns": 1792840488698005031,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.088007,
+        "p95": 3.2695190000000003,
+        "p99": 4.449037360000019,
+        "max": 6.362635
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.948546,
+          "p95": 2.7296314000000006,
+          "p99": 3.2739289200000106,
+          "max": 4.205098
+        },
+        "decoder_ms": {
+          "p50": 2.064546,
+          "p95": 2.8947136,
+          "p99": 3.939369440000011,
+          "max": 4.525192
+        }
+      },
+      "started_wall_ns": 1792840488698619264,
+      "finished_wall_ns": 1792840510784686645,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.064546,
+        "p95": 2.8947136,
+        "p99": 3.939369440000011,
+        "max": 4.525192
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.966949,
+          "p95": 2.8514868,
+          "p99": 3.866669520000005,
+          "max": 4.282761
+        },
+        "decoder_ms": {
+          "p50": 2.118462,
+          "p95": 3.402566,
+          "p99": 4.460207760000005,
+          "max": 5.451137
+        }
+      },
+      "started_wall_ns": 1792840510785026456,
+      "finished_wall_ns": 1792840533124504994,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.118462,
+        "p95": 3.402566,
+        "p99": 4.460207760000005,
+        "max": 5.451137
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.989313,
+          "p95": 2.5020914000000003,
+          "p99": 2.6707880000000026,
+          "max": 3.813717
+        },
+        "decoder_ms": {
+          "p50": 2.100296,
+          "p95": 2.6659604,
+          "p99": 2.8973784000000036,
+          "max": 4.051122
+        }
+      },
+      "started_wall_ns": 1792840533125134804,
+      "finished_wall_ns": 1792840555115527618,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.100296,
+        "p95": 2.6659604,
+        "p99": 2.8973784000000036,
+        "max": 4.051122
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.8450864999999999,
+          "p95": 2.20231435,
+          "p99": 2.337581459999999,
+          "max": 2.910762
+        },
+        "decoder_ms": {
+          "p50": 1.9350525,
+          "p95": 2.3479075,
+          "p99": 2.5241463999999953,
+          "max": 3.992566
+        }
+      },
+      "started_wall_ns": 1792840555115847109,
+      "finished_wall_ns": 1792840570410620147,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.9350525,
+        "p95": 2.3479075,
+        "p99": 2.5241463999999953,
+        "max": 3.992566
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 1.9884745000000001,
+          "p95": 2.5193694,
+          "p99": 2.5642025999999998,
+          "max": 2.581698
+        },
+        "decoder_ms": {
+          "p50": 2.1088245,
+          "p95": 2.619959449999999,
+          "p99": 3.1512248199999995,
+          "max": 3.325735
+        }
+      },
+      "started_wall_ns": 1792840570410971105,
+      "finished_wall_ns": 1792840585656382763,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.1088245,
+        "p95": 2.619959449999999,
+        "p99": 3.1512248199999995,
+        "max": 3.325735
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.721037,
+          "p95": 2.4537751999999986,
+          "p99": 4.017123099999992,
+          "max": 6.670303
+        },
+        "decoder_ms": {
+          "p50": 1.799919,
+          "p95": 2.6929421999999996,
+          "p99": 4.278661480000006,
+          "max": 7.581364
+        }
+      },
+      "started_wall_ns": 1792840585656729575,
+      "finished_wall_ns": 1792840607784758970,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.799919,
+        "p95": 2.6929421999999996,
+        "p99": 4.278661480000006,
+        "max": 7.581364
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.695148,
+          "p95": 2.232142299999999,
+          "p99": 2.683289439999994,
+          "max": 4.060833
+        },
+        "decoder_ms": {
+          "p50": 1.765957,
+          "p95": 2.3679984999999992,
+          "p99": 2.8258316399999885,
+          "max": 4.126537
+        }
+      },
+      "started_wall_ns": 1792840607785139291,
+      "finished_wall_ns": 1792840629917290124,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.765957,
+        "p95": 2.3679984999999992,
+        "p99": 2.8258316399999885,
+        "max": 4.126537
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.781319,
+          "p95": 2.4353257999999993,
+          "p99": 3.6168970599999937,
+          "max": 4.851442
+        },
+        "decoder_ms": {
+          "p50": 1.859767,
+          "p95": 2.6400427999999994,
+          "p99": 3.8545673999999965,
+          "max": 5.955441
+        }
+      },
+      "started_wall_ns": 1792840629917673750,
+      "finished_wall_ns": 1792840652171428853,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.859767,
+        "p95": 2.6400427999999994,
+        "p99": 3.8545673999999965,
+        "max": 5.955441
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.692158,
+          "p95": 2.4005189000000002,
+          "p99": 3.0592426399999977,
+          "max": 3.75816
+        },
+        "decoder_ms": {
+          "p50": 1.77584,
+          "p95": 2.5805025999999995,
+          "p99": 3.4948288800000102,
+          "max": 5.256318
+        }
+      },
+      "started_wall_ns": 1792840652171780471,
+      "finished_wall_ns": 1792840674412565399,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.77584,
+        "p95": 2.5805025999999995,
+        "p99": 3.4948288800000102,
+        "max": 5.256318
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 591,
+        "publication_ms": {
+          "p50": 1.681771,
+          "p95": 2.19801,
+          "p99": 2.771214900000003,
+          "max": 3.951072
+        },
+        "decoder_ms": {
+          "p50": 1.770292,
+          "p95": 2.3676185,
+          "p99": 2.898399100000002,
+          "max": 4.979316
+        }
+      },
+      "started_wall_ns": 1792840674412952180,
+      "finished_wall_ns": 1792840696597791512,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.770292,
+        "p95": 2.3676185,
+        "p99": 2.898399100000002,
+        "max": 4.979316
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.889387,
+          "p95": 2.5518277,
+          "p99": 3.1379719399999977,
+          "max": 5.066069
+        },
+        "decoder_ms": {
+          "p50": 1.972473,
+          "p95": 2.7664237999999997,
+          "p99": 3.40718884,
+          "max": 5.239952
+        }
+      },
+      "started_wall_ns": 1792840696598211432,
+      "finished_wall_ns": 1792840718854375893,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.972473,
+        "p95": 2.7664237999999997,
+        "p99": 3.40718884,
+        "max": 5.239952
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 406,
+        "publication_ms": {
+          "p50": 1.923606,
+          "p95": 3.434433,
+          "p99": 5.200032399999999,
+          "max": 6.395835
+        },
+        "decoder_ms": {
+          "p50": 2.00877,
+          "p95": 3.7841927999999987,
+          "p99": 5.600859399999993,
+          "max": 15.897074
+        }
+      },
+      "started_wall_ns": 1792840718854928505,
+      "finished_wall_ns": 1792840734377843716,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 2.00877,
+        "p95": 3.7841927999999987,
+        "p99": 5.600859399999993,
+        "max": 15.897074
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 113,
+        "publication_ms": {
+          "p50": 2.096372,
+          "p95": 3.2797837999999992,
+          "p99": 4.922685199999995,
+          "max": 7.595995
+        },
+        "decoder_ms": {
+          "p50": 2.201045,
+          "p95": 3.1696495000000002,
+          "p99": 4.6639254000000046,
+          "max": 5.679393
+        }
+      },
+      "started_wall_ns": 1792840734378215588,
+      "finished_wall_ns": 1792840752273641339,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.201045,
+        "p95": 3.1696495000000002,
+        "p99": 4.6639254000000046,
+        "max": 5.679393
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 199,
+        "publication_ms": {
+          "p50": 1.952866,
+          "p95": 2.7856975,
+          "p99": 5.5881755200000205,
+          "max": 8.255772
+        },
+        "decoder_ms": {
+          "p50": 2.059952,
+          "p95": 2.9509674999999995,
+          "p99": 5.52001306000002,
+          "max": 8.477106
+        }
+      },
+      "started_wall_ns": 1792840752274086286,
+      "finished_wall_ns": 1792840770045470323,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.059952,
+        "p95": 2.9509674999999995,
+        "p99": 5.52001306000002,
+        "max": 8.477106
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.2107665,
+          "p95": 4.595899049999995,
+          "p99": 6.608735239999983,
+          "max": 8.813844
+        },
+        "decoder_ms": {
+          "p50": 2.348521,
+          "p95": 4.725619849999994,
+          "p99": 6.969772429999984,
+          "max": 9.117881
+        }
+      },
+      "started_wall_ns": 1792840770045826604,
+      "finished_wall_ns": 1792840785461698603,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.348521,
+        "p95": 4.725619849999994,
+        "p99": 6.969772429999984,
+        "max": 9.117881
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.13614,
+          "p95": 4.080718349999999,
+          "p99": 5.465915769999999,
+          "max": 6.46844
+        },
+        "decoder_ms": {
+          "p50": 2.2652115000000004,
+          "p95": 4.1864807499999985,
+          "p99": 5.594257549999997,
+          "max": 6.679048
+        }
+      },
+      "started_wall_ns": 1792840785462180577,
+      "finished_wall_ns": 1792840800916546020,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.2652115000000004,
+        "p95": 4.1864807499999985,
+        "p99": 5.594257549999997,
+        "max": 6.679048
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.144614,
+          "p95": 2.5896822,
+          "p99": 2.8539802899999995,
+          "max": 5.126158
+        },
+        "decoder_ms": {
+          "p50": 2.2422635,
+          "p95": 2.70351935,
+          "p99": 2.9792042199999997,
+          "max": 5.220655
+        }
+      },
+      "started_wall_ns": 1792840800916902595,
+      "finished_wall_ns": 1792840818679461052,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.2422635,
+        "p95": 2.70351935,
+        "p99": 2.9792042199999997,
+        "max": 5.220655
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.2084460000000004,
+          "p95": 3.1379509,
+          "p99": 4.718754719999994,
+          "max": 5.077785
+        },
+        "decoder_ms": {
+          "p50": 2.368965,
+          "p95": 3.2435102,
+          "p99": 4.842434579999994,
+          "max": 5.893825
+        }
+      },
+      "started_wall_ns": 1792840818679825197,
+      "finished_wall_ns": 1792840834029771097,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.368965,
+        "p95": 3.2435102,
+        "p99": 4.842434579999994,
+        "max": 5.893825
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.311367,
+          "p95": 3.4629329999999983,
+          "p99": 4.3082822599999995,
+          "max": 4.526708
+        },
+        "decoder_ms": {
+          "p50": 2.5279335,
+          "p95": 3.5537797999999983,
+          "p99": 4.47339549,
+          "max": 4.718436
+        }
+      },
+      "started_wall_ns": 1792840834030126190,
+      "finished_wall_ns": 1792840849328022550,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.5279335,
+        "p95": 3.5537797999999983,
+        "p99": 4.47339549,
+        "max": 4.718436
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 2.1294364999999997,
+          "p95": 2.68059435,
+          "p99": 3.2984329700000004,
+          "max": 3.506396
+        },
+        "decoder_ms": {
+          "p50": 2.241911,
+          "p95": 2.7632699,
+          "p99": 3.42727722,
+          "max": 3.580142
+        }
+      },
+      "started_wall_ns": 1792840849328419515,
+      "finished_wall_ns": 1792840856534150799,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.241911,
+        "p95": 2.7632699,
+        "p99": 3.42727722,
+        "max": 3.580142
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 2.412125,
+          "p95": 3.24874325,
+          "p99": 4.55883021,
+          "max": 4.743135
+        },
+        "decoder_ms": {
+          "p50": 2.607764,
+          "p95": 3.3788628499999995,
+          "p99": 4.68656773,
+          "max": 4.854261
+        }
+      },
+      "started_wall_ns": 1792840856534466061,
+      "finished_wall_ns": 1792840863792358651,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.607764,
+        "p95": 3.3788628499999995,
+        "p99": 4.68656773,
+        "max": 4.854261
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7208615,
+          "p95": 2.2928246499999996,
+          "p99": 2.775012509999998,
+          "max": 4.739379
+        },
+        "decoder_ms": {
+          "p50": 1.81348,
+          "p95": 2.4886541999999996,
+          "p99": 3.1003358000000008,
+          "max": 4.813915
+        }
+      },
+      "started_wall_ns": 1792840863792895887,
+      "finished_wall_ns": 1792840879273216478,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.81348,
+        "p95": 2.4886541999999996,
+        "p99": 3.1003358000000008,
+        "max": 4.813915
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7467385000000002,
+          "p95": 2.3676352499999993,
+          "p99": 3.478529069999998,
+          "max": 7.290455
+        },
+        "decoder_ms": {
+          "p50": 1.839874,
+          "p95": 2.53353985,
+          "p99": 4.026345839999998,
+          "max": 7.32448
+        }
+      },
+      "started_wall_ns": 1792840879273590238,
+      "finished_wall_ns": 1792840895067671341,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_300_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.839874,
+        "p95": 2.53353985,
+        "p99": 4.026345839999998,
+        "max": 7.32448
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 409,
+        "publication_ms": {
+          "p50": 1.8789,
+          "p95": 2.670274599999999,
+          "p99": 4.155889000000004,
+          "max": 8.283202
+        },
+        "decoder_ms": {
+          "p50": 1.986536,
+          "p95": 2.9527259999999984,
+          "p99": 4.421318760000003,
+          "max": 8.333357
+        }
+      },
+      "started_wall_ns": 1792840895068088678,
+      "finished_wall_ns": 1792840910545964933,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.986536,
+        "p95": 2.9527259999999984,
+        "p99": 4.421318760000003,
+        "max": 8.333357
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 260,
+        "publication_ms": {
+          "p50": 1.890854,
+          "p95": 2.3802255499999996,
+          "p99": 3.291089760000004,
+          "max": 6.019562
+        },
+        "decoder_ms": {
+          "p50": 1.9641099999999998,
+          "p95": 2.4635082999999995,
+          "p99": 3.3615487900000036,
+          "max": 6.103022
+        }
+      },
+      "started_wall_ns": 1792840910546635078,
+      "finished_wall_ns": 1792840925918789523,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_300_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 1.9641099999999998,
+        "p95": 2.4635082999999995,
+        "p99": 3.3615487900000036,
+        "max": 6.103022
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 260,
+        "publication_ms": {
+          "p50": 2.062388,
+          "p95": 2.7088934,
+          "p99": 2.969296210000002,
+          "max": 4.65284
+        },
+        "decoder_ms": {
+          "p50": 2.158073,
+          "p95": 2.84102965,
+          "p99": 3.341078080000009,
+          "max": 4.667913
+        }
+      },
+      "started_wall_ns": 1792840925919239740,
+      "finished_wall_ns": 1792840941703442276,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.158073,
+        "p95": 2.84102965,
+        "p99": 3.341078080000009,
+        "max": 4.667913
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 107,
+        "publication_ms": {
+          "p50": 1.986328,
+          "p95": 2.9436637999999995,
+          "p99": 5.174704179999998,
+          "max": 9.845012
+        },
+        "decoder_ms": {
+          "p50": 2.141372,
+          "p95": 3.2412243999999975,
+          "p99": 5.313949139999999,
+          "max": 9.883114
+        }
+      },
+      "started_wall_ns": 1792840941703897660,
+      "finished_wall_ns": 1792840957135191615,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.141372,
+        "p95": 3.2412243999999975,
+        "p99": 5.313949139999999,
+        "max": 9.883114
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 1.8768595000000001,
+          "p95": 2.516932699999999,
+          "p99": 3.5296820100000015,
+          "max": 5.495849
+        },
+        "decoder_ms": {
+          "p50": 1.9893535,
+          "p95": 3.2677714499999966,
+          "p99": 4.2135261,
+          "max": 5.686425
+        }
+      },
+      "started_wall_ns": 1792840957135569774,
+      "finished_wall_ns": 1792840964476333680,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.9893535,
+        "p95": 3.2677714499999966,
+        "p99": 4.2135261,
+        "max": 5.686425
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 1.9888875,
+          "p95": 2.8296285999999986,
+          "p99": 3.1557966500000005,
+          "max": 3.423544
+        },
+        "decoder_ms": {
+          "p50": 2.046552,
+          "p95": 3.11659715,
+          "p99": 4.446944049999998,
+          "max": 4.676436
+        }
+      },
+      "started_wall_ns": 1792840964476817387,
+      "finished_wall_ns": 1792840974204415093,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-2/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 2.046552,
+        "p95": 3.11659715,
+        "p99": 4.446944049999998,
+        "max": 4.676436
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.851321,
+          "p95": 2.5686708,
+          "p99": 4.538196680000007,
+          "max": 7.221139
+        },
+        "decoder_ms": {
+          "p50": 1.951762,
+          "p95": 2.694755,
+          "p99": 4.680069440000006,
+          "max": 7.367869
+        }
+      },
+      "started_wall_ns": 1792840974204789515,
+      "finished_wall_ns": 1792840996554425970,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.951762,
+        "p95": 2.694755,
+        "p99": 4.680069440000006,
+        "max": 7.367869
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9875,
+        "denominator": 80,
+        "complete_valid_publication_count": 284,
+        "publication_ms": {
+          "p50": 2.0595809999999997,
+          "p95": 3.0725080999999976,
+          "p99": 3.9091461100000013,
+          "max": 16.615572
+        },
+        "decoder_ms": {
+          "p50": 2.1766775000000003,
+          "p95": 3.171190499999999,
+          "p99": 4.05265287,
+          "max": 16.815037
+        }
+      },
+      "started_wall_ns": 1792840996554769667,
+      "finished_wall_ns": 1792841019004975596,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 0.9875,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.1766775000000003,
+        "p95": 3.171190499999999,
+        "p99": 4.05265287,
+        "max": 16.815037
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.941147,
+          "p95": 2.7738026000000002,
+          "p99": 3.9820412800000047,
+          "max": 4.373871
+        },
+        "decoder_ms": {
+          "p50": 2.051043,
+          "p95": 3.0389658,
+          "p99": 4.128673520000003,
+          "max": 4.548425
+        }
+      },
+      "started_wall_ns": 1792841019005417880,
+      "finished_wall_ns": 1792841041364858557,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.051043,
+        "p95": 3.0389658,
+        "p99": 4.128673520000003,
+        "max": 4.548425
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 70,
+        "complete_valid_publication_count": 270,
+        "publication_ms": {
+          "p50": 1.8636045,
+          "p95": 2.523934,
+          "p99": 3.37119335,
+          "max": 4.175273
+        },
+        "decoder_ms": {
+          "p50": 1.975933,
+          "p95": 2.7159910999999997,
+          "p99": 3.45796823,
+          "max": 4.547275
+        }
+      },
+      "started_wall_ns": 1792841041365297340,
+      "finished_wall_ns": 1792841063521196609,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 70,
+      "decoder_ms": {
+        "p50": 1.975933,
+        "p95": 2.7159910999999997,
+        "p99": 3.45796823,
+        "max": 4.547275
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.023127,
+          "p95": 2.7636164000000005,
+          "p99": 3.728671120000009,
+          "max": 9.205285
+        },
+        "decoder_ms": {
+          "p50": 2.125428,
+          "p95": 2.981431,
+          "p99": 4.138933920000002,
+          "max": 9.43864
+        }
+      },
+      "started_wall_ns": 1792841063521577980,
+      "finished_wall_ns": 1792841085565124184,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.125428,
+        "p95": 2.981431,
+        "p99": 4.138933920000002,
+        "max": 9.43864
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.808265,
+          "p95": 2.4254156000000004,
+          "p99": 3.118281960000001,
+          "max": 4.821519
+        },
+        "decoder_ms": {
+          "p50": 1.89712,
+          "p95": 2.5238408,
+          "p99": 3.1723112800000015,
+          "max": 4.944945
+        }
+      },
+      "started_wall_ns": 1792841085565736544,
+      "finished_wall_ns": 1792841107503772834,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.89712,
+        "p95": 2.5238408,
+        "p99": 3.1723112800000015,
+        "max": 4.944945
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.8153995,
+          "p95": 2.676017949999999,
+          "p99": 3.3874701699999945,
+          "max": 4.357972
+        },
+        "decoder_ms": {
+          "p50": 1.9070874999999998,
+          "p95": 2.725892149999999,
+          "p99": 3.3454705799999944,
+          "max": 4.301898
+        }
+      },
+      "started_wall_ns": 1792841107504304902,
+      "finished_wall_ns": 1792841122858585689,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.9070874999999998,
+        "p95": 2.725892149999999,
+        "p99": 3.3454705799999944,
+        "max": 4.301898
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.2181935,
+          "p95": 2.9035262499999988,
+          "p99": 3.26661418,
+          "max": 3.286714
+        },
+        "decoder_ms": {
+          "p50": 2.3613915,
+          "p95": 2.9245265999999988,
+          "p99": 3.3700716199999996,
+          "max": 3.438221
+        }
+      },
+      "started_wall_ns": 1792841122858998218,
+      "finished_wall_ns": 1792841140562749198,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.3613915,
+        "p95": 2.9245265999999988,
+        "p99": 3.3700716199999996,
+        "max": 3.438221
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.6470995,
+          "p95": 2.1269277000000004,
+          "p99": 2.5823056700000016,
+          "max": 4.440249
+        },
+        "decoder_ms": {
+          "p50": 1.72492,
+          "p95": 2.2435017999999998,
+          "p99": 2.668390400000005,
+          "max": 4.309998
+        }
+      },
+      "started_wall_ns": 1792841140563217542,
+      "finished_wall_ns": 1792841162761211331,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.72492,
+        "p95": 2.2435017999999998,
+        "p99": 2.668390400000005,
+        "max": 4.309998
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 591,
+        "publication_ms": {
+          "p50": 1.789861,
+          "p95": 2.4179755,
+          "p99": 4.618975500000003,
+          "max": 15.663486
+        },
+        "decoder_ms": {
+          "p50": 1.8643805,
+          "p95": 2.678873099999999,
+          "p99": 4.778939020000002,
+          "max": 15.832921
+        }
+      },
+      "started_wall_ns": 1792841162761600566,
+      "finished_wall_ns": 1792841185006275788,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.8643805,
+        "p95": 2.678873099999999,
+        "p99": 4.778939020000002,
+        "max": 15.832921
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.895947,
+          "p95": 3.0584993,
+          "p99": 5.211751530000007,
+          "max": 8.095398
+        },
+        "decoder_ms": {
+          "p50": 1.99607,
+          "p95": 3.2582310000000003,
+          "p99": 5.514025700000012,
+          "max": 8.591123
+        }
+      },
+      "started_wall_ns": 1792841185006755099,
+      "finished_wall_ns": 1792841207212830554,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.99607,
+        "p95": 3.2582310000000003,
+        "p99": 5.514025700000012,
+        "max": 8.591123
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.717466,
+          "p95": 2.2852818500000005,
+          "p99": 3.391799520000013,
+          "max": 5.003403
+        },
+        "decoder_ms": {
+          "p50": 1.823828,
+          "p95": 2.5372402,
+          "p99": 3.5099430100000095,
+          "max": 6.944245
+        }
+      },
+      "started_wall_ns": 1792841207213258066,
+      "finished_wall_ns": 1792841229410794836,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.823828,
+        "p95": 2.5372402,
+        "p99": 3.5099430100000095,
+        "max": 6.944245
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 592,
+        "publication_ms": {
+          "p50": 1.6887590000000001,
+          "p95": 2.2249706499999986,
+          "p99": 2.9358592800000056,
+          "max": 5.027115
+        },
+        "decoder_ms": {
+          "p50": 1.754677,
+          "p95": 2.3434611999999997,
+          "p99": 3.0741932400000027,
+          "max": 5.095112
+        }
+      },
+      "started_wall_ns": 1792841229411215388,
+      "finished_wall_ns": 1792841254059855239,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.754677,
+        "p95": 2.3434611999999997,
+        "p99": 3.0741932400000027,
+        "max": 5.095112
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.796592,
+          "p95": 2.6604646000000005,
+          "p99": 4.8634518000000035,
+          "max": 5.819356
+        },
+        "decoder_ms": {
+          "p50": 1.884978,
+          "p95": 2.7338935500000003,
+          "p99": 5.197978410000009,
+          "max": 6.051344
+        }
+      },
+      "started_wall_ns": 1792841254060347749,
+      "finished_wall_ns": 1792841276618308899,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.884978,
+        "p95": 2.7338935500000003,
+        "p99": 5.197978410000009,
+        "max": 6.051344
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.60849,
+          "p95": 2.0409114999999995,
+          "p99": 2.345675419999999,
+          "max": 2.69507
+        },
+        "decoder_ms": {
+          "p50": 1.6993195,
+          "p95": 2.2915584499999992,
+          "p99": 2.5259145999999997,
+          "max": 4.157762
+        }
+      },
+      "started_wall_ns": 1792841276618802651,
+      "finished_wall_ns": 1792841292121010852,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.6993195,
+        "p95": 2.2915584499999992,
+        "p99": 2.5259145999999997,
+        "max": 4.157762
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 112,
+        "publication_ms": {
+          "p50": 2.190455,
+          "p95": 4.230781649999998,
+          "p99": 5.045568360000001,
+          "max": 5.107529
+        },
+        "decoder_ms": {
+          "p50": 2.3611005,
+          "p95": 3.9906018499999916,
+          "p99": 5.14574781,
+          "max": 5.392636
+        }
+      },
+      "started_wall_ns": 1792841292121428709,
+      "finished_wall_ns": 1792841307615738781,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.3611005,
+        "p95": 3.9906018499999916,
+        "p99": 5.14574781,
+        "max": 5.392636
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.056741,
+          "p95": 3.3230801999999984,
+          "p99": 5.017595359999996,
+          "max": 6.769238
+        },
+        "decoder_ms": {
+          "p50": 2.216282,
+          "p95": 4.142612299999998,
+          "p99": 5.75447885,
+          "max": 7.003746
+        }
+      },
+      "started_wall_ns": 1792841307616206668,
+      "finished_wall_ns": 1792841323087970045,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.216282,
+        "p95": 4.142612299999998,
+        "p99": 5.75447885,
+        "max": 7.003746
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.0559250000000002,
+          "p95": 2.899766399999997,
+          "p99": 4.614697469999999,
+          "max": 6.127489
+        },
+        "decoder_ms": {
+          "p50": 2.1933445000000003,
+          "p95": 3.1259852999999995,
+          "p99": 4.78792701,
+          "max": 6.277484
+        }
+      },
+      "started_wall_ns": 1792841323088528824,
+      "finished_wall_ns": 1792841338500636555,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.1933445000000003,
+        "p95": 3.1259852999999995,
+        "p99": 4.78792701,
+        "max": 6.277484
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.106944,
+          "p95": 3.25281195,
+          "p99": 4.7860274,
+          "max": 9.047309
+        },
+        "decoder_ms": {
+          "p50": 2.224884,
+          "p95": 3.7699215999999995,
+          "p99": 5.120888680000004,
+          "max": 6.049083
+        }
+      },
+      "started_wall_ns": 1792841338501051728,
+      "finished_wall_ns": 1792841353914884171,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.224884,
+        "p95": 3.7699215999999995,
+        "p99": 5.120888680000004,
+        "max": 6.049083
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 2.3303019999999997,
+          "p95": 3.678170449999996,
+          "p99": 4.7513524700000005,
+          "max": 6.641996
+        },
+        "decoder_ms": {
+          "p50": 2.458417,
+          "p95": 4.477302649999999,
+          "p99": 5.8112204400000005,
+          "max": 6.692181
+        }
+      },
+      "started_wall_ns": 1792841353915318243,
+      "finished_wall_ns": 1792841369261461771,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.458417,
+        "p95": 4.477302649999999,
+        "p99": 5.8112204400000005,
+        "max": 6.692181
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 129,
+        "publication_ms": {
+          "p50": 2.245187,
+          "p95": 2.9188289999999992,
+          "p99": 3.9055530799999993,
+          "max": 7.47188
+        },
+        "decoder_ms": {
+          "p50": 2.352095,
+          "p95": 3.3385823999999995,
+          "p99": 4.539696919999999,
+          "max": 7.586672
+        }
+      },
+      "started_wall_ns": 1792841369261844987,
+      "finished_wall_ns": 1792841384670810436,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.352095,
+        "p95": 3.3385823999999995,
+        "p99": 4.539696919999999,
+        "max": 7.586672
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.0098605000000003,
+          "p95": 2.8952303500000003,
+          "p99": 2.94415201,
+          "max": 2.972911
+        },
+        "decoder_ms": {
+          "p50": 2.1598414999999997,
+          "p95": 3.05930955,
+          "p99": 3.24384974,
+          "max": 3.347603
+        }
+      },
+      "started_wall_ns": 1792841384671175846,
+      "finished_wall_ns": 1792841399917632587,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.1598414999999997,
+        "p95": 3.05930955,
+        "p99": 3.24384974,
+        "max": 3.347603
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 2.0923344999999998,
+          "p95": 3.4242252499999983,
+          "p99": 4.51918035,
+          "max": 4.964032
+        },
+        "decoder_ms": {
+          "p50": 2.1780785,
+          "p95": 3.577568549999999,
+          "p99": 4.61828997,
+          "max": 5.058968
+        }
+      },
+      "started_wall_ns": 1792841399917988141,
+      "finished_wall_ns": 1792841407124330668,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.1780785,
+        "p95": 3.577568549999999,
+        "p99": 4.61828997,
+        "max": 5.058968
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 1.8998285,
+          "p95": 2.6986843499999993,
+          "p99": 4.895260430000001,
+          "max": 6.292732
+        },
+        "decoder_ms": {
+          "p50": 2.0116515,
+          "p95": 2.81618005,
+          "p99": 4.9819534600000015,
+          "max": 6.435226
+        }
+      },
+      "started_wall_ns": 1792841407124676687,
+      "finished_wall_ns": 1792841414636974821,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.0116515,
+        "p95": 2.81618005,
+        "p99": 4.9819534600000015,
+        "max": 6.435226
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.6804999999999999,
+          "p95": 2.18365815,
+          "p99": 2.559849519999997,
+          "max": 4.252288
+        },
+        "decoder_ms": {
+          "p50": 1.7620874999999998,
+          "p95": 2.2756763999999996,
+          "p99": 2.6757935899999947,
+          "max": 4.450015
+        }
+      },
+      "started_wall_ns": 1792841414637335523,
+      "finished_wall_ns": 1792841430110042653,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.7620874999999998,
+        "p95": 2.2756763999999996,
+        "p99": 2.6757935899999947,
+        "max": 4.450015
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7666564999999999,
+          "p95": 2.977101299999998,
+          "p99": 4.032077489999999,
+          "max": 5.373343
+        },
+        "decoder_ms": {
+          "p50": 1.8414359999999999,
+          "p95": 3.0531663999999976,
+          "p99": 4.618424059999986,
+          "max": 6.468713
+        }
+      },
+      "started_wall_ns": 1792841430110419980,
+      "finished_wall_ns": 1792841445592192248,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_300_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.8414359999999999,
+        "p95": 3.0531663999999976,
+        "p99": 4.618424059999986,
+        "max": 6.468713
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7311135,
+          "p95": 2.2842962499999984,
+          "p99": 4.093828239999982,
+          "max": 8.567646
+        },
+        "decoder_ms": {
+          "p50": 1.805363,
+          "p95": 2.4399433999999998,
+          "p99": 3.9455060400000117,
+          "max": 8.624577
+        }
+      },
+      "started_wall_ns": 1792841445592573791,
+      "finished_wall_ns": 1792841461091074130,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.805363,
+        "p95": 2.4399433999999998,
+        "p99": 3.9455060400000117,
+        "max": 8.624577
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 260,
+        "publication_ms": {
+          "p50": 1.982511,
+          "p95": 2.78080925,
+          "p99": 3.3836363800000053,
+          "max": 4.230805
+        },
+        "decoder_ms": {
+          "p50": 2.0787875,
+          "p95": 2.897935999999999,
+          "p99": 3.472711590000005,
+          "max": 3.707493
+        }
+      },
+      "started_wall_ns": 1792841461091520090,
+      "finished_wall_ns": 1792841476520884761,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_300_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.0787875,
+        "p95": 2.897935999999999,
+        "p99": 3.472711590000005,
+        "max": 3.707493
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 259,
+        "publication_ms": {
+          "p50": 2.059199,
+          "p95": 2.9710628999999997,
+          "p99": 4.057788099999997,
+          "max": 5.835573
+        },
+        "decoder_ms": {
+          "p50": 2.135743,
+          "p95": 3.4021974999999993,
+          "p99": 4.821203999999987,
+          "max": 6.405779
+        }
+      },
+      "started_wall_ns": 1792841476521411673,
+      "finished_wall_ns": 1792841491948551454,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.135743,
+        "p95": 3.4021974999999993,
+        "p99": 4.821203999999987,
+        "max": 6.405779
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 110,
+        "publication_ms": {
+          "p50": 1.8983695,
+          "p95": 2.688323949999999,
+          "p99": 3.748199559999999,
+          "max": 4.175503
+        },
+        "decoder_ms": {
+          "p50": 2.0210464999999997,
+          "p95": 3.1500733,
+          "p99": 4.05905091,
+          "max": 4.312484
+        }
+      },
+      "started_wall_ns": 1792841491948907769,
+      "finished_wall_ns": 1792841507731664726,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.0210464999999997,
+        "p95": 3.1500733,
+        "p99": 4.05905091,
+        "max": 4.312484
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 1.776262,
+          "p95": 3.0016056,
+          "p99": 3.9458938800000003,
+          "max": 5.044267
+        },
+        "decoder_ms": {
+          "p50": 1.8605904999999998,
+          "p95": 3.1021460000000003,
+          "p99": 4.6495264999999995,
+          "max": 4.882934
+        }
+      },
+      "started_wall_ns": 1792841507732084469,
+      "finished_wall_ns": 1792841515052485593,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.8605904999999998,
+        "p95": 3.1021460000000003,
+        "p99": 4.6495264999999995,
+        "max": 4.882934
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 129,
+        "publication_ms": {
+          "p50": 1.802038,
+          "p95": 2.401164,
+          "p99": 2.7879488,
+          "max": 3.141718
+        },
+        "decoder_ms": {
+          "p50": 1.871638,
+          "p95": 2.4603884,
+          "p99": 2.90442904,
+          "max": 3.21628
+        }
+      },
+      "started_wall_ns": 1792841515052849169,
+      "finished_wall_ns": 1792841522328467143,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.871638,
+        "p95": 2.4603884,
+        "p99": 2.90442904,
+        "max": 3.21628
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.815351,
+          "p95": 2.6291748000000004,
+          "p99": 3.633099600000005,
+          "max": 5.351659
+        },
+        "decoder_ms": {
+          "p50": 1.912633,
+          "p95": 2.7728690000000005,
+          "p99": 3.7488617200000047,
+          "max": 5.433172
+        }
+      },
+      "started_wall_ns": 1792841522328875337,
+      "finished_wall_ns": 1792841544335268965,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.912633,
+        "p95": 2.7728690000000005,
+        "p99": 3.7488617200000047,
+        "max": 5.433172
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.962415,
+          "p95": 2.7971924,
+          "p99": 3.727932040000014,
+          "max": 4.875146
+        },
+        "decoder_ms": {
+          "p50": 2.055895,
+          "p95": 3.0302518000000003,
+          "p99": 4.217584640000002,
+          "max": 6.89075
+        }
+      },
+      "started_wall_ns": 1792841544335597279,
+      "finished_wall_ns": 1792841566679654320,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.055895,
+        "p95": 3.0302518000000003,
+        "p99": 4.217584640000002,
+        "max": 6.89075
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.049374,
+          "p95": 3.493201400000001,
+          "p99": 4.460513400000008,
+          "max": 8.423217
+        },
+        "decoder_ms": {
+          "p50": 2.163689,
+          "p95": 3.7967394000000003,
+          "p99": 4.617524000000005,
+          "max": 8.594918
+        }
+      },
+      "started_wall_ns": 1792841566680042648,
+      "finished_wall_ns": 1792841589083377744,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.163689,
+        "p95": 3.7967394000000003,
+        "p99": 4.617524000000005,
+        "max": 8.594918
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 286,
+        "publication_ms": {
+          "p50": 1.9052090000000002,
+          "p95": 2.93567375,
+          "p99": 4.476140749999985,
+          "max": 5.756646
+        },
+        "decoder_ms": {
+          "p50": 2.0073855,
+          "p95": 3.043971,
+          "p99": 4.513176849999984,
+          "max": 5.918319
+        }
+      },
+      "started_wall_ns": 1792841589083725329,
+      "finished_wall_ns": 1792841611087491820,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.0073855,
+        "p95": 3.043971,
+        "p99": 4.513176849999984,
+        "max": 5.918319
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.960992,
+          "p95": 2.5962400000000003,
+          "p99": 3.53628852000001,
+          "max": 5.607591
+        },
+        "decoder_ms": {
+          "p50": 2.051854,
+          "p95": 2.7827242,
+          "p99": 3.898539680000009,
+          "max": 5.72007
+        }
+      },
+      "started_wall_ns": 1792841611087870789,
+      "finished_wall_ns": 1792841633142281632,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.051854,
+        "p95": 2.7827242,
+        "p99": 3.898539680000009,
+        "max": 5.72007
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.987967,
+          "p95": 2.7174690000000004,
+          "p99": 3.9826028400000033,
+          "max": 8.035832
+        },
+        "decoder_ms": {
+          "p50": 2.067271,
+          "p95": 2.852091,
+          "p99": 4.177048040000002,
+          "max": 8.197425
+        }
+      },
+      "started_wall_ns": 1792841633142636626,
+      "finished_wall_ns": 1792841655188963019,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.067271,
+        "p95": 2.852091,
+        "p99": 4.177048040000002,
+        "max": 8.197425
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.9513500000000001,
+          "p95": 2.7244297,
+          "p99": 3.721942589999998,
+          "max": 4.387783
+        },
+        "decoder_ms": {
+          "p50": 2.073352,
+          "p95": 2.8252864499999983,
+          "p99": 3.7772879499999976,
+          "max": 4.566768
+        }
+      },
+      "started_wall_ns": 1792841655189565595,
+      "finished_wall_ns": 1792841670569300509,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.073352,
+        "p95": 2.8252864499999983,
+        "p99": 3.7772879499999976,
+        "max": 4.566768
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.3419410000000003,
+          "p95": 3.61894775,
+          "p99": 5.059737489999999,
+          "max": 5.951164
+        },
+        "decoder_ms": {
+          "p50": 2.434644,
+          "p95": 3.8457709,
+          "p99": 5.225765949999999,
+          "max": 6.089692
+        }
+      },
+      "started_wall_ns": 1792841670569778627,
+      "finished_wall_ns": 1792841685921220756,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.434644,
+        "p95": 3.8457709,
+        "p99": 5.225765949999999,
+        "max": 6.089692
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.689929,
+          "p95": 2.1592317,
+          "p99": 2.6292099599999954,
+          "max": 4.59977
+        },
+        "decoder_ms": {
+          "p50": 1.787175,
+          "p95": 2.3110225,
+          "p99": 2.9262828599999944,
+          "max": 4.712374
+        }
+      },
+      "started_wall_ns": 1792841685921564312,
+      "finished_wall_ns": 1792841708269604896,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.787175,
+        "p95": 2.3110225,
+        "p99": 2.9262828599999944,
+        "max": 4.712374
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 592,
+        "publication_ms": {
+          "p50": 1.812197,
+          "p95": 3.1136869499999893,
+          "p99": 4.954929060000036,
+          "max": 9.889031
+        },
+        "decoder_ms": {
+          "p50": 1.8956855,
+          "p95": 3.2985312,
+          "p99": 5.136911370000049,
+          "max": 10.017719
+        }
+      },
+      "started_wall_ns": 1792841708270208473,
+      "finished_wall_ns": 1792841730522357092,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.8956855,
+        "p95": 3.2985312,
+        "p99": 5.136911370000049,
+        "max": 10.017719
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.99375,
+        "denominator": 160,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.792667,
+          "p95": 2.7083150500000013,
+          "p99": 4.076378020000013,
+          "max": 8.313308
+        },
+        "decoder_ms": {
+          "p50": 1.873716,
+          "p95": 2.9116527999999993,
+          "p99": 4.683951560000014,
+          "max": 8.36797
+        }
+      },
+      "started_wall_ns": 1792841730522840909,
+      "finished_wall_ns": 1792841752819750969,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 0.99375,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.873716,
+        "p95": 2.9116527999999993,
+        "p99": 4.683951560000014,
+        "max": 8.36797
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.649305,
+          "p95": 2.0949326999999998,
+          "p99": 2.3868382199999982,
+          "max": 4.185383
+        },
+        "decoder_ms": {
+          "p50": 1.728241,
+          "p95": 2.2020861,
+          "p99": 2.6304700399999996,
+          "max": 4.225379
+        }
+      },
+      "started_wall_ns": 1792841752820271611,
+      "finished_wall_ns": 1792841775008031572,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.728241,
+        "p95": 2.2020861,
+        "p99": 2.6304700399999996,
+        "max": 4.225379
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 591,
+        "publication_ms": {
+          "p50": 1.710313,
+          "p95": 2.2839855,
+          "p99": 2.7125939000000003,
+          "max": 3.925992
+        },
+        "decoder_ms": {
+          "p50": 1.809937,
+          "p95": 2.4222859999999997,
+          "p99": 2.9139679000000025,
+          "max": 4.027384
+        }
+      },
+      "started_wall_ns": 1792841775008464146,
+      "finished_wall_ns": 1792841797211246270,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.809937,
+        "p95": 2.4222859999999997,
+        "p99": 2.9139679000000025,
+        "max": 4.027384
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.77339,
+          "p95": 2.4089574999999996,
+          "p99": 3.407860739999998,
+          "max": 4.719631
+        },
+        "decoder_ms": {
+          "p50": 1.845588,
+          "p95": 2.5622664999999993,
+          "p99": 3.52796902,
+          "max": 4.869701
+        }
+      },
+      "started_wall_ns": 1792841797211628875,
+      "finished_wall_ns": 1792841819537541230,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.845588,
+        "p95": 2.5622664999999993,
+        "p99": 3.52796902,
+        "max": 4.869701
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.716319,
+          "p95": 2.30862315,
+          "p99": 4.25162197999998,
+          "max": 5.827713
+        },
+        "decoder_ms": {
+          "p50": 1.818141,
+          "p95": 2.4166923999999996,
+          "p99": 3.7939562800000055,
+          "max": 5.944046
+        }
+      },
+      "started_wall_ns": 1792841819537925787,
+      "finished_wall_ns": 1792841837381680428,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.818141,
+        "p95": 2.4166923999999996,
+        "p99": 3.7939562800000055,
+        "max": 5.944046
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 112,
+        "publication_ms": {
+          "p50": 1.909332,
+          "p95": 2.2046009,
+          "p99": 2.45992539,
+          "max": 2.48389
+        },
+        "decoder_ms": {
+          "p50": 2.0313045,
+          "p95": 2.44721545,
+          "p99": 2.6315071199999998,
+          "max": 2.692548
+        }
+      },
+      "started_wall_ns": 1792841837382112777,
+      "finished_wall_ns": 1792841852760844511,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.0313045,
+        "p95": 2.44721545,
+        "p99": 2.6315071199999998,
+        "max": 2.692548
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.7582095,
+          "p95": 2.2070113999999985,
+          "p99": 4.115549979999998,
+          "max": 5.947765
+        },
+        "decoder_ms": {
+          "p50": 1.8378025,
+          "p95": 2.3402561999999985,
+          "p99": 4.2228368299999985,
+          "max": 5.999683
+        }
+      },
+      "started_wall_ns": 1792841852761262509,
+      "finished_wall_ns": 1792841868071271273,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.8378025,
+        "p95": 2.3402561999999985,
+        "p99": 4.2228368299999985,
+        "max": 5.999683
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.855953,
+          "p95": 2.37433315,
+          "p99": 2.6549176999999964,
+          "max": 3.328836
+        },
+        "decoder_ms": {
+          "p50": 1.964344,
+          "p95": 2.548938549999999,
+          "p99": 3.1617041599999975,
+          "max": 4.335038
+        }
+      },
+      "started_wall_ns": 1792841868071826377,
+      "finished_wall_ns": 1792841883377581254,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.964344,
+        "p95": 2.548938549999999,
+        "p99": 3.1617041599999975,
+        "max": 4.335038
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.921054,
+          "p95": 2.6908789499999988,
+          "p99": 4.1210634499999985,
+          "max": 5.061024
+        },
+        "decoder_ms": {
+          "p50": 2.0141885000000004,
+          "p95": 2.9294789499999996,
+          "p99": 4.252336239999998,
+          "max": 5.006252
+        }
+      },
+      "started_wall_ns": 1792841883377929066,
+      "finished_wall_ns": 1792841899028030773,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.0141885000000004,
+        "p95": 2.9294789499999996,
+        "p99": 4.252336239999998,
+        "max": 5.006252
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.1026290000000003,
+          "p95": 2.8021119999999997,
+          "p99": 2.99335636,
+          "max": 3.092561
+        },
+        "decoder_ms": {
+          "p50": 2.196833,
+          "p95": 2.90829025,
+          "p99": 3.17330525,
+          "max": 3.192045
+        }
+      },
+      "started_wall_ns": 1792841899028405366,
+      "finished_wall_ns": 1792841914274084175,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.196833,
+        "p95": 2.90829025,
+        "p99": 3.17330525,
+        "max": 3.192045
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 4,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1792841914274445628,
+      "finished_wall_ns": 1792841929514278543,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_150_12_zero/result.json",
+      "coverage": 0.9,
+      "denominator": 20,
+      "decoder_ms": null
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.1993205,
+          "p95": 3.05035125,
+          "p99": 3.3570437799999997,
+          "max": 3.536833
+        },
+        "decoder_ms": {
+          "p50": 2.3272705,
+          "p95": 3.2363548499999997,
+          "p99": 3.5289070999999996,
+          "max": 3.713108
+        }
+      },
+      "started_wall_ns": 1792841929514575008,
+      "finished_wall_ns": 1792841944817162880,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.3272705,
+        "p95": 3.2363548499999997,
+        "p99": 3.5289070999999996,
+        "max": 3.713108
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 1.8798865,
+          "p95": 2.3607085999999993,
+          "p99": 3.759164150000001,
+          "max": 4.912604
+        },
+        "decoder_ms": {
+          "p50": 1.9603705,
+          "p95": 2.4316047,
+          "p99": 3.835429030000001,
+          "max": 4.9996
+        }
+      },
+      "started_wall_ns": 1792841944817512094,
+      "finished_wall_ns": 1792841951968501481,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 1.9603705,
+        "p95": 2.4316047,
+        "p99": 3.835429030000001,
+        "max": 4.9996
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 1.9119015,
+          "p95": 2.839989449999999,
+          "p99": 5.847453730000002,
+          "max": 7.57571
+        },
+        "decoder_ms": {
+          "p50": 1.95581,
+          "p95": 3.016541549999998,
+          "p99": 5.927021840000002,
+          "max": 7.655125
+        }
+      },
+      "started_wall_ns": 1792841951968845748,
+      "finished_wall_ns": 1792841959168469791,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 1.95581,
+        "p95": 3.016541549999998,
+        "p99": 5.927021840000002,
+        "max": 7.655125
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.815147,
+          "p95": 2.545255799999999,
+          "p99": 3.0547038199999976,
+          "max": 5.059596
+        },
+        "decoder_ms": {
+          "p50": 1.8876675,
+          "p95": 2.641988,
+          "p99": 3.1256686499999993,
+          "max": 5.310488
+        }
+      },
+      "started_wall_ns": 1792841959168813607,
+      "finished_wall_ns": 1792841974716221828,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.8876675,
+        "p95": 2.641988,
+        "p99": 3.1256686499999993,
+        "max": 5.310488
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.8068885,
+          "p95": 2.5564982499999993,
+          "p99": 3.4024839399999998,
+          "max": 5.855241
+        },
+        "decoder_ms": {
+          "p50": 1.9065435,
+          "p95": 2.7739670999999975,
+          "p99": 3.954283239999996,
+          "max": 5.967058
+        }
+      },
+      "started_wall_ns": 1792841974716724583,
+      "finished_wall_ns": 1792841990227983429,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_300_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.9065435,
+        "p95": 2.7739670999999975,
+        "p99": 3.954283239999996,
+        "max": 5.967058
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.8037985,
+          "p95": 2.2821921499999998,
+          "p99": 2.7397366799999987,
+          "max": 4.451089
+        },
+        "decoder_ms": {
+          "p50": 1.8831470000000001,
+          "p95": 2.4653085999999993,
+          "p99": 2.9426872499999983,
+          "max": 4.60061
+        }
+      },
+      "started_wall_ns": 1792841990228442899,
+      "finished_wall_ns": 1792842005669325443,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.8831470000000001,
+        "p95": 2.4653085999999993,
+        "p99": 2.9426872499999983,
+        "max": 4.60061
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 260,
+        "publication_ms": {
+          "p50": 2.13118,
+          "p95": 3.3685993,
+          "p99": 5.041853910000007,
+          "max": 5.466245
+        },
+        "decoder_ms": {
+          "p50": 2.217837,
+          "p95": 3.511743499999999,
+          "p99": 5.147476759999997,
+          "max": 5.917718
+        }
+      },
+      "started_wall_ns": 1792842005669697953,
+      "finished_wall_ns": 1792842021104121332,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_300_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.217837,
+        "p95": 3.511743499999999,
+        "p99": 5.147476759999997,
+        "max": 5.917718
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 258,
+        "publication_ms": {
+          "p50": 1.989044,
+          "p95": 2.898174899999995,
+          "p99": 4.013430670000004,
+          "max": 6.835096
+        },
+        "decoder_ms": {
+          "p50": 2.068055,
+          "p95": 3.3847085499999996,
+          "p99": 5.763066760000004,
+          "max": 10.877002
+        }
+      },
+      "started_wall_ns": 1792842021104505310,
+      "finished_wall_ns": 1792842036555754804,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.068055,
+        "p95": 3.3847085499999996,
+        "p99": 5.763066760000004,
+        "max": 10.877002
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 102,
+        "publication_ms": {
+          "p50": 2.0710945,
+          "p95": 2.814090499999999,
+          "p99": 5.204869909999998,
+          "max": 5.399537
+        },
+        "decoder_ms": {
+          "p50": 2.151026,
+          "p95": 2.876978,
+          "p99": 5.296493,
+          "max": 5.585637
+        }
+      },
+      "started_wall_ns": 1792842036556293684,
+      "finished_wall_ns": 1792842051930801739,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.151026,
+        "p95": 2.876978,
+        "p99": 5.296493,
+        "max": 5.585637
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 126,
+        "publication_ms": {
+          "p50": 1.86402,
+          "p95": 3.6107447500000003,
+          "p99": 5.95363675,
+          "max": 16.327034
+        },
+        "decoder_ms": {
+          "p50": 1.9628394999999998,
+          "p95": 4.33010575,
+          "p99": 6.5277905,
+          "max": 18.346051
+        }
+      },
+      "started_wall_ns": 1792842051931201159,
+      "finished_wall_ns": 1792842059205025245,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.9628394999999998,
+        "p95": 4.33010575,
+        "p99": 6.5277905,
+        "max": 18.346051
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 129,
+        "publication_ms": {
+          "p50": 1.704174,
+          "p95": 2.2454698,
+          "p99": 2.9639778,
+          "max": 3.612297
+        },
+        "decoder_ms": {
+          "p50": 1.798567,
+          "p95": 2.386773199999999,
+          "p99": 3.0438234799999995,
+          "max": 3.696639
+        }
+      },
+      "started_wall_ns": 1792842059205460950,
+      "finished_wall_ns": 1792842066476949065,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-4/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.798567,
+        "p95": 2.386773199999999,
+        "p99": 3.0438234799999995,
+        "max": 3.696639
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.834867,
+          "p95": 2.5031475999999997,
+          "p99": 2.893165680000001,
+          "max": 3.274946
+        },
+        "decoder_ms": {
+          "p50": 1.944097,
+          "p95": 2.7634298000000004,
+          "p99": 3.099358520000001,
+          "max": 3.409926
+        }
+      },
+      "started_wall_ns": 1792842066477446023,
+      "finished_wall_ns": 1792842088459710102,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.944097,
+        "p95": 2.7634298000000004,
+        "p99": 3.099358520000001,
+        "max": 3.409926
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.927084,
+          "p95": 2.6690044,
+          "p99": 3.686584640000012,
+          "max": 4.546719
+        },
+        "decoder_ms": {
+          "p50": 2.036364,
+          "p95": 2.8987316000000005,
+          "p99": 4.236920880000011,
+          "max": 4.707929
+        }
+      },
+      "started_wall_ns": 1792842088460045932,
+      "finished_wall_ns": 1792842110461085554,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.036364,
+        "p95": 2.8987316000000005,
+        "p99": 4.236920880000011,
+        "max": 4.707929
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.819719,
+          "p95": 2.3616556000000006,
+          "p99": 3.4992222000000166,
+          "max": 6.213914
+        },
+        "decoder_ms": {
+          "p50": 1.927367,
+          "p95": 2.6600318,
+          "p99": 3.569110720000017,
+          "max": 6.250449
+        }
+      },
+      "started_wall_ns": 1792842110461471365,
+      "finished_wall_ns": 1792842134856108366,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.927367,
+        "p95": 2.6600318,
+        "p99": 3.569110720000017,
+        "max": 6.250449
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.806196,
+          "p95": 2.6260580000000004,
+          "p99": 4.00912168000001,
+          "max": 5.386205
+        },
+        "decoder_ms": {
+          "p50": 1.878842,
+          "p95": 2.7978476,
+          "p99": 4.166598800000007,
+          "max": 6.474019
+        }
+      },
+      "started_wall_ns": 1792842134856620949,
+      "finished_wall_ns": 1792842156811483129,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.878842,
+        "p95": 2.7978476,
+        "p99": 4.166598800000007,
+        "max": 6.474019
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.875651,
+          "p95": 2.5201602000000003,
+          "p99": 4.398929080000009,
+          "max": 10.182222
+        },
+        "decoder_ms": {
+          "p50": 1.98812,
+          "p95": 2.747652200000001,
+          "p99": 4.437282160000011,
+          "max": 10.310328
+        }
+      },
+      "started_wall_ns": 1792842156812194778,
+      "finished_wall_ns": 1792842179162854995,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.98812,
+        "p95": 2.747652200000001,
+        "p99": 4.437282160000011,
+        "max": 10.310328
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.005974,
+          "p95": 2.831022200000001,
+          "p99": 3.7647705600000028,
+          "max": 4.158127
+        },
+        "decoder_ms": {
+          "p50": 2.124566,
+          "p95": 3.2684580000000003,
+          "p99": 4.53956444,
+          "max": 5.404175
+        }
+      },
+      "started_wall_ns": 1792842179163237149,
+      "finished_wall_ns": 1792842201168541475,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.124566,
+        "p95": 3.2684580000000003,
+        "p99": 4.53956444,
+        "max": 5.404175
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.9110605,
+          "p95": 3.1710076499999977,
+          "p99": 4.993295159999994,
+          "max": 10.162825
+        },
+        "decoder_ms": {
+          "p50": 1.999711,
+          "p95": 3.7820636499999956,
+          "p99": 5.401201269999998,
+          "max": 10.765455
+        }
+      },
+      "started_wall_ns": 1792842201168894455,
+      "finished_wall_ns": 1792842216532739562,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.999711,
+        "p95": 3.7820636499999956,
+        "p99": 5.401201269999998,
+        "max": 10.765455
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.2073185000000004,
+          "p95": 3.4309434,
+          "p99": 3.7052283999999998,
+          "max": 3.846658
+        },
+        "decoder_ms": {
+          "p50": 2.344112,
+          "p95": 3.854476499999999,
+          "p99": 4.35471729,
+          "max": 4.451472
+        }
+      },
+      "started_wall_ns": 1792842216533358181,
+      "finished_wall_ns": 1792842231880944793,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.344112,
+        "p95": 3.854476499999999,
+        "p99": 4.35471729,
+        "max": 4.451472
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 592,
+        "publication_ms": {
+          "p50": 1.7217605,
+          "p95": 2.302774949999999,
+          "p99": 3.1236498000000013,
+          "max": 11.189276
+        },
+        "decoder_ms": {
+          "p50": 1.8170415,
+          "p95": 2.53608725,
+          "p99": 3.3240948100000063,
+          "max": 11.333257
+        }
+      },
+      "started_wall_ns": 1792842231881288809,
+      "finished_wall_ns": 1792842254190159706,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.8170415,
+        "p95": 2.53608725,
+        "p99": 3.3240948100000063,
+        "max": 11.333257
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.7128525,
+          "p95": 2.2150334500000004,
+          "p99": 2.824945470000025,
+          "max": 5.487197
+        },
+        "decoder_ms": {
+          "p50": 1.7992955,
+          "p95": 2.3682678999999998,
+          "p99": 3.461874040000002,
+          "max": 5.577308
+        }
+      },
+      "started_wall_ns": 1792842254190555169,
+      "finished_wall_ns": 1792842276489792258,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.7992955,
+        "p95": 2.3682678999999998,
+        "p99": 3.461874040000002,
+        "max": 5.577308
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 159,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.716719,
+          "p95": 2.3318152999999975,
+          "p99": 3.587950859999996,
+          "max": 5.15261
+        },
+        "decoder_ms": {
+          "p50": 1.788676,
+          "p95": 2.562838499999999,
+          "p99": 3.8859640999999945,
+          "max": 5.294428
+        }
+      },
+      "started_wall_ns": 1792842276490221883,
+      "finished_wall_ns": 1792842299151905191,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 159,
+      "decoder_ms": {
+        "p50": 1.788676,
+        "p95": 2.562838499999999,
+        "p99": 3.8859640999999945,
+        "max": 5.294428
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.718372,
+          "p95": 2.2187009999999994,
+          "p99": 2.6206869999999993,
+          "max": 3.66843
+        },
+        "decoder_ms": {
+          "p50": 1.792233,
+          "p95": 2.3563862999999996,
+          "p99": 2.7900333799999952,
+          "max": 4.577115
+        }
+      },
+      "started_wall_ns": 1792842299152418862,
+      "finished_wall_ns": 1792842321422527557,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.792233,
+        "p95": 2.3563862999999996,
+        "p99": 2.7900333799999952,
+        "max": 4.577115
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 149,
+        "complete_valid_publication_count": 589,
+        "publication_ms": {
+          "p50": 1.726243,
+          "p95": 2.3377296000000003,
+          "p99": 3.5076409200000014,
+          "max": 7.311739
+        },
+        "decoder_ms": {
+          "p50": 1.810459,
+          "p95": 2.56185145,
+          "p99": 3.7978489799999995,
+          "max": 7.041587
+        }
+      },
+      "started_wall_ns": 1792842321422935880,
+      "finished_wall_ns": 1792842343772429898,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 149,
+      "decoder_ms": {
+        "p50": 1.810459,
+        "p95": 2.56185145,
+        "p99": 3.7978489799999995,
+        "max": 7.041587
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 585,
+        "publication_ms": {
+          "p50": 1.837916,
+          "p95": 2.7677795999999977,
+          "p99": 4.421721279999955,
+          "max": 9.194988
+        },
+        "decoder_ms": {
+          "p50": 1.932217,
+          "p95": 2.9047856,
+          "p99": 4.234151579999996,
+          "max": 9.297988
+        }
+      },
+      "started_wall_ns": 1792842343772816098,
+      "finished_wall_ns": 1792842366021709556,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.932217,
+        "p95": 2.9047856,
+        "p99": 4.234151579999996,
+        "max": 9.297988
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 5,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1792842366022123558,
+      "finished_wall_ns": 1792842381432366039,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_refresh_300_10_unknown/result.json",
+      "coverage": 0.93125,
+      "denominator": 160,
+      "decoder_ms": null
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 108,
+        "publication_ms": {
+          "p50": 1.960543,
+          "p95": 2.4149273499999997,
+          "p99": 2.761395419999999,
+          "max": 3.729864
+        },
+        "decoder_ms": {
+          "p50": 2.0338545,
+          "p95": 2.4962202499999995,
+          "p99": 2.937149909999998,
+          "max": 3.783535
+        }
+      },
+      "started_wall_ns": 1792842381432675635,
+      "finished_wall_ns": 1792842396872933710,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.0338545,
+        "p95": 2.4962202499999995,
+        "p99": 2.937149909999998,
+        "max": 3.783535
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.016232,
+          "p95": 3.0774638499999996,
+          "p99": 3.741748559999998,
+          "max": 5.540414
+        },
+        "decoder_ms": {
+          "p50": 2.1478755,
+          "p95": 3.3953108499999987,
+          "p99": 4.09491063,
+          "max": 5.722553
+        }
+      },
+      "started_wall_ns": 1792842396873419891,
+      "finished_wall_ns": 1792842412178056448,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.1478755,
+        "p95": 3.3953108499999987,
+        "p99": 4.09491063,
+        "max": 5.722553
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.9407035,
+          "p95": 2.9270849999999986,
+          "p99": 4.8343581299999965,
+          "max": 5.217387
+        },
+        "decoder_ms": {
+          "p50": 2.1029910000000003,
+          "p95": 3.2500552499999973,
+          "p99": 5.029091659999996,
+          "max": 5.391913
+        }
+      },
+      "started_wall_ns": 1792842412178448477,
+      "finished_wall_ns": 1792842427494761185,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.1029910000000003,
+        "p95": 3.2500552499999973,
+        "p99": 5.029091659999996,
+        "max": 5.391913
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.863559,
+          "p95": 2.7897225,
+          "p99": 4.334821639999988,
+          "max": 6.406763
+        },
+        "decoder_ms": {
+          "p50": 1.958558,
+          "p95": 2.867204799999999,
+          "p99": 4.3764094099999875,
+          "max": 7.557662
+        }
+      },
+      "started_wall_ns": 1792842427495230580,
+      "finished_wall_ns": 1792842442855777365,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.958558,
+        "p95": 2.867204799999999,
+        "p99": 4.3764094099999875,
+        "max": 7.557662
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.253182,
+          "p95": 3.3171432,
+          "p99": 3.909434519999999,
+          "max": 5.703823
+        },
+        "decoder_ms": {
+          "p50": 2.376181,
+          "p95": 3.6642369,
+          "p99": 4.07197244,
+          "max": 6.432362
+        }
+      },
+      "started_wall_ns": 1792842442856209314,
+      "finished_wall_ns": 1792842458159079874,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.376181,
+        "p95": 3.6642369,
+        "p99": 4.07197244,
+        "max": 6.432362
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 2.2614175,
+          "p95": 3.7345165,
+          "p99": 5.078203350000001,
+          "max": 5.119059
+        },
+        "decoder_ms": {
+          "p50": 2.3588554999999998,
+          "p95": 4.122829049999997,
+          "p99": 5.22321538,
+          "max": 5.304908
+        }
+      },
+      "started_wall_ns": 1792842458159663621,
+      "finished_wall_ns": 1792842473468700261,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.3588554999999998,
+        "p95": 4.122829049999997,
+        "p99": 5.22321538,
+        "max": 5.304908
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.083367,
+          "p95": 2.4211571999999997,
+          "p99": 2.5987031099999998,
+          "max": 2.666466
+        },
+        "decoder_ms": {
+          "p50": 2.1849819999999998,
+          "p95": 2.5296851999999994,
+          "p99": 2.7494069899999998,
+          "max": 2.803562
+        }
+      },
+      "started_wall_ns": 1792842473469023126,
+      "finished_wall_ns": 1792842488815212502,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.1849819999999998,
+        "p95": 2.5296851999999994,
+        "p99": 2.7494069899999998,
+        "max": 2.803562
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 1.9143409999999998,
+          "p95": 2.7020580499999998,
+          "p99": 3.446278200000001,
+          "max": 4.402258
+        },
+        "decoder_ms": {
+          "p50": 2.013499,
+          "p95": 2.7973894,
+          "p99": 3.522005080000001,
+          "max": 4.485422
+        }
+      },
+      "started_wall_ns": 1792842488815558491,
+      "finished_wall_ns": 1792842496072683420,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.013499,
+        "p95": 2.7973894,
+        "p99": 3.522005080000001,
+        "max": 4.485422
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 1.8755739999999999,
+          "p95": 2.4668829499999996,
+          "p99": 3.8944446900000016,
+          "max": 5.718449
+        },
+        "decoder_ms": {
+          "p50": 1.9713690000000001,
+          "p95": 2.5425919,
+          "p99": 3.7983428600000018,
+          "max": 5.473326
+        }
+      },
+      "started_wall_ns": 1792842496073215560,
+      "finished_wall_ns": 1792842503273070236,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 1.9713690000000001,
+        "p95": 2.5425919,
+        "p99": 3.7983428600000018,
+        "max": 5.473326
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.675867,
+          "p95": 2.095409199999999,
+          "p99": 2.4429994199999987,
+          "max": 3.500107
+        },
+        "decoder_ms": {
+          "p50": 1.7909955,
+          "p95": 2.4220016,
+          "p99": 2.709803029999999,
+          "max": 3.616632
+        }
+      },
+      "started_wall_ns": 1792842503273425380,
+      "finished_wall_ns": 1792842518702634325,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.7909955,
+        "p95": 2.4220016,
+        "p99": 2.709803029999999,
+        "max": 3.616632
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7214809999999998,
+          "p95": 2.442983099999999,
+          "p99": 3.0440226099999963,
+          "max": 4.947152
+        },
+        "decoder_ms": {
+          "p50": 1.80521,
+          "p95": 2.6226705,
+          "p99": 4.209709399999999,
+          "max": 4.958343
+        }
+      },
+      "started_wall_ns": 1792842518703047996,
+      "finished_wall_ns": 1792842534136775704,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_300_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.80521,
+        "p95": 2.6226705,
+        "p99": 4.209709399999999,
+        "max": 4.958343
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.6944935,
+          "p95": 2.1263718499999995,
+          "p99": 2.614130779999997,
+          "max": 5.899434
+        },
+        "decoder_ms": {
+          "p50": 1.7796485,
+          "p95": 2.2531097499999997,
+          "p99": 3.5404189299999995,
+          "max": 6.352344
+        }
+      },
+      "started_wall_ns": 1792842534137156566,
+      "finished_wall_ns": 1792842549679350360,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.7796485,
+        "p95": 2.2531097499999997,
+        "p99": 3.5404189299999995,
+        "max": 6.352344
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 260,
+        "publication_ms": {
+          "p50": 1.8900475,
+          "p95": 2.5641656499999983,
+          "p99": 3.8341069800000143,
+          "max": 5.814146
+        },
+        "decoder_ms": {
+          "p50": 1.9695395,
+          "p95": 2.5462942999999973,
+          "p99": 3.909494700000015,
+          "max": 5.908093
+        }
+      },
+      "started_wall_ns": 1792842549679738463,
+      "finished_wall_ns": 1792842565067476684,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_300_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 1.9695395,
+        "p95": 2.5462942999999973,
+        "p99": 3.909494700000015,
+        "max": 5.908093
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 260,
+        "publication_ms": {
+          "p50": 1.9453725,
+          "p95": 2.5476305499999996,
+          "p99": 3.15607094,
+          "max": 4.88505
+        },
+        "decoder_ms": {
+          "p50": 2.046438,
+          "p95": 2.8284778999999998,
+          "p99": 4.119895130000004,
+          "max": 4.965461
+        }
+      },
+      "started_wall_ns": 1792842565067835012,
+      "finished_wall_ns": 1792842580502692562,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.046438,
+        "p95": 2.8284778999999998,
+        "p99": 4.119895130000004,
+        "max": 4.965461
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 110,
+        "publication_ms": {
+          "p50": 1.9066065,
+          "p95": 2.4229517999999994,
+          "p99": 2.6727301999999997,
+          "max": 2.941855
+        },
+        "decoder_ms": {
+          "p50": 2.0464330000000004,
+          "p95": 2.7206411999999998,
+          "p99": 3.10587974,
+          "max": 3.727475
+        }
+      },
+      "started_wall_ns": 1792842580503219954,
+      "finished_wall_ns": 1792842598323402176,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.0464330000000004,
+        "p95": 2.7206411999999998,
+        "p99": 3.10587974,
+        "max": 3.727475
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 129,
+        "publication_ms": {
+          "p50": 1.619925,
+          "p95": 2.0669724,
+          "p99": 2.36064516,
+          "max": 2.487212
+        },
+        "decoder_ms": {
+          "p50": 1.698929,
+          "p95": 2.375669,
+          "p99": 2.59430804,
+          "max": 3.857915
+        }
+      },
+      "started_wall_ns": 1792842598323770574,
+      "finished_wall_ns": 1792842605605006923,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.698929,
+        "p95": 2.375669,
+        "p99": 2.59430804,
+        "max": 3.857915
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 129,
+        "publication_ms": {
+          "p50": 1.646327,
+          "p95": 2.156957999999999,
+          "p99": 2.6651807599999997,
+          "max": 3.418775
+        },
+        "decoder_ms": {
+          "p50": 1.728572,
+          "p95": 2.4587654,
+          "p99": 2.8117582,
+          "max": 3.526754
+        }
+      },
+      "started_wall_ns": 1792842605605428474,
+      "finished_wall_ns": 1792842613221422003,
+      "output": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/repeated-campaign/repetition-5/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.728572,
+        "p95": 2.4587654,
+        "p99": 2.8117582,
+        "max": 3.526754
+      }
+    }
+  ]
+}

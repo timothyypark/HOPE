@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "archives": [
+    {
+      "archive": "environment-support.tar.gz",
+      "sha256": "c8f16214f0eb2c4616529b46b157b22c94120a41bfeadac3cf8ca398dbc28064",
+      "members": 5,
+      "uncompressed_bytes": 15656,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "integration-checkpoint.tar.gz",
+      "sha256": "0e65d5ae5b4395a57f2f39fc9d6394dd0d7774473e211abbbd1a0fa94f59dff3",
+      "members": 1038,
+      "uncompressed_bytes": 94162275,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "diagnosis-and-failures.tar.gz",
+      "sha256": "d8e718190fe54c06a6b6102c94ce001aac082ea48584dde4e65bde4069ecc76f",
+      "members": 4931,
+      "uncompressed_bytes": 2563813872,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "final-complete-ladder.tar.gz",
+      "sha256": "cf96f7147c2f1354746f81e31431018ff97f02ac57a4fc29e621f1a3f5b4eff9",
+      "members": 1140,
+      "uncompressed_bytes": 523283499,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "campaign-freeze-and-summary.tar.gz",
+      "sha256": "3014e975c9de5541a0442d138343f4379d79577b3e97f61c306ae42df9cebba1",
+      "members": 4,
+      "uncompressed_bytes": 797680,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "campaign-repetition-1.tar.gz",
+      "sha256": "f1018e66871b5d8267ded083192a1a51bf4f5f3a8f7bfc565a379f566e64d12f",
+      "members": 288,
+      "uncompressed_bytes": 275989690,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "campaign-repetition-2.tar.gz",
+      "sha256": "7f8304dd1ad2bdeb96d69f6c8864446a72296f2c56c0e347673c4eb40a16fc48",
+      "members": 288,
+      "uncompressed_bytes": 279727150,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "campaign-repetition-3.tar.gz",
+      "sha256": "5113663ea19c3f144ef6c9092bc7b4fac738a35099e76dde24aa48c2c4ee08c6",
+      "members": 288,
+      "uncompressed_bytes": 279368448,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "campaign-repetition-4.tar.gz",
+      "sha256": "6e39e41a07fa3a24c96588a1e1ed91b19ee905c1fccbac39dca22dbc94ecc397",
+      "members": 288,
+      "uncompressed_bytes": 277066704,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "campaign-repetition-5.tar.gz",
+      "sha256": "abb2bfcc6f487abb80343f7134c2c90a9b74aa430b4267d636d46506378f203d",
+      "members": 288,
+      "uncompressed_bytes": 275056390,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "reacquisition-spin-evidence.tar.gz",
+      "sha256": "fb23fd72ccdff4bb38e5c9820937ad1ee22421f53c15421cbeecb067c42ea3c8",
+      "members": 1575,
+      "uncompressed_bytes": 204490333,
+      "status": "PASS",
+      "all_members_manifested": false
+    }
+  ],
+  "credential_pattern_scan": "No matches in archived file contents",
+  "limitations": "Pattern scan is not an exhaustive secret audit"
+}

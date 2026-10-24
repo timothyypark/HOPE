@@ -1,0 +1,137 @@
+[
+  {
+    "archive": "environment-support.tar.gz",
+    "bytes": 2580,
+    "sha256": "c8f16214f0eb2c4616529b46b157b22c94120a41bfeadac3cf8ca398dbc28064"
+  },
+  {
+    "archive": "integration-checkpoint.tar.gz",
+    "bytes": 11189005,
+    "sha256": "0e65d5ae5b4395a57f2f39fc9d6394dd0d7774473e211abbbd1a0fa94f59dff3"
+  },
+  {
+    "archive": "diagnosis-and-failures.tar.gz",
+    "bytes": 240735154,
+    "sha256": "d8e718190fe54c06a6b6102c94ce001aac082ea48584dde4e65bde4069ecc76f",
+    "parts": [
+      {
+        "file": "diagnosis-and-failures.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "874cf0fdb77cf63165afad0bcc19df0956cda1b3f1b7afd210d1e6836aa61758"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part001",
+        "bytes": 20971520,
+        "sha256": "43cfed8037bfe1bdb5a11c15f2b4a384b9e7a4bda0c1f52ac98d02ca4de00ce1"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part002",
+        "bytes": 20971520,
+        "sha256": "f4495bee66ad03996eee2d8f0cf213265aac2fda7be50339e25243bc4c4d68f4"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part003",
+        "bytes": 20971520,
+        "sha256": "a5d3d31f278b5dd8f7fe8a3972338cb94fac2f5f151a70229141e0648cccf710"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part004",
+        "bytes": 20971520,
+        "sha256": "b738928ec20b691afc051bb7d937661ffbe607bfd0605f51cc8a5de129745191"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part005",
+        "bytes": 20971520,
+        "sha256": "d0c4a4bf5f1ef2a0aa0c396c6abfde87f44e129e82a933921a3a882fc7558d10"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part006",
+        "bytes": 20971520,
+        "sha256": "aa2fb672802f0f58391c876ff57c41c70746b9b2d16b95652c59e5822fb0199b"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part007",
+        "bytes": 20971520,
+        "sha256": "09ee18a2ab35c8eb4ab0b80dac5f00312554a389d327e51e32b0c8842cf255d3"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part008",
+        "bytes": 20971520,
+        "sha256": "e8bd6f626d6ac0e1ea1260d90b35ce4905490170ef5c60f73a9821995b6c7d0f"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part009",
+        "bytes": 20971520,
+        "sha256": "d5b23ad8a7ca0931ac16dce344b19bf619075ea597dbe7ce60fef23110eb75a6"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part010",
+        "bytes": 20971520,
+        "sha256": "812ad3e2e8b7f3699bced5387e479e63d8561d2d73f3c8325e75700ef3ba07ac"
+      },
+      {
+        "file": "diagnosis-and-failures.tar.gz.part011",
+        "bytes": 10048434,
+        "sha256": "ae4c1ec7f503fdbf686d40b76171295da1ff21f499ac6d9981738133dd66eecf"
+      }
+    ]
+  },
+  {
+    "archive": "final-complete-ladder.tar.gz",
+    "bytes": 49454383,
+    "sha256": "cf96f7147c2f1354746f81e31431018ff97f02ac57a4fc29e621f1a3f5b4eff9",
+    "parts": [
+      {
+        "file": "final-complete-ladder.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "0e73e7f503fa969112320d92201b3b47617f9d86a3e75cb70807a98d27ce7605"
+      },
+      {
+        "file": "final-complete-ladder.tar.gz.part001",
+        "bytes": 20971520,
+        "sha256": "060f5c42630a8ec65aa1b4c6a26f25265881c54aa5a7e7b6631bbd20f7c5a738"
+      },
+      {
+        "file": "final-complete-ladder.tar.gz.part002",
+        "bytes": 7511343,
+        "sha256": "3991bdd1cfd1ac2ac49165171471ce1d04c653076803a277a48091a90871b648"
+      }
+    ]
+  },
+  {
+    "archive": "campaign-freeze-and-summary.tar.gz",
+    "bytes": 87733,
+    "sha256": "3014e975c9de5541a0442d138343f4379d79577b3e97f61c306ae42df9cebba1"
+  },
+  {
+    "archive": "campaign-repetition-1.tar.gz",
+    "bytes": 23906812,
+    "sha256": "f1018e66871b5d8267ded083192a1a51bf4f5f3a8f7bfc565a379f566e64d12f"
+  },
+  {
+    "archive": "campaign-repetition-2.tar.gz",
+    "bytes": 24305506,
+    "sha256": "7f8304dd1ad2bdeb96d69f6c8864446a72296f2c56c0e347673c4eb40a16fc48"
+  },
+  {
+    "archive": "campaign-repetition-3.tar.gz",
+    "bytes": 24292107,
+    "sha256": "5113663ea19c3f144ef6c9092bc7b4fac738a35099e76dde24aa48c2c4ee08c6"
+  },
+  {
+    "archive": "campaign-repetition-4.tar.gz",
+    "bytes": 24075536,
+    "sha256": "6e39e41a07fa3a24c96588a1e1ed91b19ee905c1fccbac39dca22dbc94ecc397"
+  },
+  {
+    "archive": "campaign-repetition-5.tar.gz",
+    "bytes": 23836889,
+    "sha256": "abb2bfcc6f487abb80343f7134c2c90a9b74aa430b4267d636d46506378f203d"
+  },
+  {
+    "archive": "reacquisition-spin-evidence.tar.gz",
+    "bytes": 15579488,
+    "sha256": "fb23fd72ccdff4bb38e5c9820937ad1ee22421f53c15421cbeecb067c42ea3c8",
+    "scope": "Previously published historical evidence; preserved byte-for-byte"
+  }
+]

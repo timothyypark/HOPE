@@ -1,0 +1,32 @@
+{
+  "archive": "environment-support.tar.gz",
+  "bytes": 2580,
+  "sha256": "c8f16214f0eb2c4616529b46b157b22c94120a41bfeadac3cf8ca398dbc28064",
+  "files": [
+    {
+      "path": "ros-schema-catalog.xml",
+      "bytes": 360,
+      "sha256": "51b4064001d943da9e0f7d989130a9307ae418b0a978240edad1f33ca9c6ef1c"
+    },
+    {
+      "path": "ros-rep/xsd/package_common.xsd",
+      "bytes": 3007,
+      "sha256": "941ea8645344f3c4b7b9d7e68799898309d65a18225fa9cbef4169d95d1a3211"
+    },
+    {
+      "path": "ros-rep/xsd/package_format1.xsd",
+      "bytes": 3433,
+      "sha256": "5409efaaea14cce5041d62b9e44cc538e90d55d6f1b181e65e123a54cbddf71b"
+    },
+    {
+      "path": "ros-rep/xsd/package_format2.xsd",
+      "bytes": 3708,
+      "sha256": "bb7afaf08f6174bf733f02ae4e1695d5d9a741d9cb7c847254fb97f3f43bb911"
+    },
+    {
+      "path": "ros-rep/xsd/package_format3.xsd",
+      "bytes": 5148,
+      "sha256": "f096a197ed6d7878984bb2501a55f7f1bd4895d254399fb7857e154bfb644f41"
+    }
+  ]
+}

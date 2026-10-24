@@ -1,0 +1,1040 @@
+{
+  "tested_source": "dc012fe970d6bb2169853dd8e985705193ac9148",
+  "executables_and_shared_objects": [
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 15992,
+      "sha256": "879b5d31eac14d7b0ca6cd3b96320041ad8d87b538fea24a17e8707f0656bc96"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/CMakeFiles/3.28.3/CompilerIdCXX/a.out",
+      "bytes": 16096,
+      "sha256": "a3d366f5f634a9cc0d9340115704a2d978e930f75ce0aceac02d7177849a8a1a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/hope_base_pose_contract_probe",
+      "bytes": 51256,
+      "sha256": "1a5a7bc050727fc333c148c595729bdf08dded2e379def37c33da64dbca04bbb"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/hope_flight_prediction_v2_replay",
+      "bytes": 636136,
+      "sha256": "a5ea92ec86b071e2c9125ff8e7e8095bf2b9e3e0b0d295eb3e03c6b7de767ad3"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/hope_integrated_return_sweep",
+      "bytes": 632368,
+      "sha256": "816986ad1ba752e65614497012e46b1c99b7e1eeaf46834b8059b833bfb42426"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_adaptive_flight_commit",
+      "bytes": 786768,
+      "sha256": "ff54f59b61171d8b69f42ec8f8757a79dd12b966f127b55011beff87c94e9180"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_audit_logger",
+      "bytes": 583872,
+      "sha256": "4646f183784b52e2d3dbd5ed260d473d6e7706ddb04a3e857371819844dc83c4"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_base_pose_contract",
+      "bytes": 610560,
+      "sha256": "0ae35a62c3f25bb9ef41167ffe4740adf7dddeae3fc2ea18658120355f56e78c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_batch_physics_estimator",
+      "bytes": 696136,
+      "sha256": "34e197b6571e1743ae39ecc33c2b68103952e24018a8929d89396ee4fc08dcd6"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_flight_prediction_v2",
+      "bytes": 1606112,
+      "sha256": "56821bd8714d0b30737979ae9a8423e5f4b7344eb5773ab68e7010e7a56c60a6"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_future_contact_predictor",
+      "bytes": 586008,
+      "sha256": "3e30d5c6775c3db4a71a8c5e00e24d7a955b2528031401a9e850543f797afbea"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_incoming_trajectory",
+      "bytes": 767968,
+      "sha256": "420129771a8a6aa105700d0c6af790640ac54e09293283e79bf558183c617165"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_integrated_return",
+      "bytes": 1352192,
+      "sha256": "f46ae26f33c039d2444fca2abaca39069409ab82cd1dbdfa4b29a4e17a2e21f9"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_post_net_one_shot",
+      "bytes": 555152,
+      "sha256": "346b3fdcd30a87d565e2d3a7fe08ed1aeea0bace88ab0bfb562918c523353c80"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_prediction_event_order",
+      "bytes": 576352,
+      "sha256": "e94c6a09e7ce869faa7bd895d2c88640be0b13097a7fbcd4cd80c43b0be75103"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_reacquisition_counterexamples",
+      "bytes": 1159288,
+      "sha256": "ebb4617281bda2efbdad4eb42910fa1b62778cf756de5cb8c6dedf353dba7cf4"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_reacquisition_spin",
+      "bytes": 1277264,
+      "sha256": "81c8ba8de051f2ecb82ea69c0cc7460ab50d8448b55f43322a5c4f7edf735eed"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_schema2",
+      "bytes": 672552,
+      "sha256": "a42c0e4b80be745f13d0f677392c92feb955bf9aa510db62cdedce3fd82a7272"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_spin_estimator",
+      "bytes": 562544,
+      "sha256": "73fae796ec0d26dbf6a0226d26bb8212521705e63e0f4d9a0b6affa83cf4fe4e"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_spin_physics",
+      "bytes": 638744,
+      "sha256": "b1ec7a0e178235df4a00fd21b45368f4da18a01b478456b462817586c89e50bf"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_stage_trace",
+      "bytes": 565240,
+      "sha256": "7c51c9f4194a86c84e9cda4ea8466fb5a44b1db567b7af648d1706e678153d44"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_target_turn_guard",
+      "bytes": 551872,
+      "sha256": "134895d64c6e1e52dd9472cac4911ea0dc0f63d077350d0dbd86f84609e7fd4f"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_trajectory_and_stage3",
+      "bytes": 630520,
+      "sha256": "4d120ac9fee1a4a802edc2b55ec54e527775033f6afccf9f3846c96ce7b20c42"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_upstream_receiver",
+      "bytes": 1001648,
+      "sha256": "f90eceb568d324266cfeca1bc3bb5cf42ff981579d51087312e2db150a79eda8"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/native/test_v2_pr64_review_regressions",
+      "bytes": 1495984,
+      "sha256": "5bd8138c12f73e9fe7686b199de56162126c7ed76dd7079e62ad7329059ec3d2"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 33616,
+      "sha256": "f067b10cb9fd2f5dc2a3e38377f231d29d1a085620c7b381c3cecf137174459e"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/CMakeFiles/3.28.3/CompilerIdCXX/a.out",
+      "bytes": 34584,
+      "sha256": "aced49af508a4d59202a14c1240cabb89412622565db317dd680c3426ac2d723"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/hope_base_pose_contract_probe",
+      "bytes": 3991664,
+      "sha256": "6904a026f3c219f92d598c704565d1d2782acb844b01d216dba8b810f65dda78"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/hope_flight_prediction_v2_replay",
+      "bytes": 131609904,
+      "sha256": "e4fdf4980e756a3dac4944779f04baa54f673a3b494a35df48401b97816e6b22"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/hope_integrated_return_sweep",
+      "bytes": 136805352,
+      "sha256": "8578df217a36485f99a578220268e887c38b6c9a74461a671cd2fc5c6f293bf5"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_adaptive_flight_commit",
+      "bytes": 40471392,
+      "sha256": "6d32160ecd14f5a492d8c77d536bc9600b221baaf92fb31c4c4849d30e30bd70"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_audit_logger",
+      "bytes": 3259536,
+      "sha256": "780c3b7b246fcde7075b598b5b4f486ca26aef31fd5d4017ffaf2146c716cd3f"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_base_pose_contract",
+      "bytes": 11238392,
+      "sha256": "9a3061098128db69a0933a89ed722ad552906e60f84ffee583f9749d61d5d09e"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_batch_physics_estimator",
+      "bytes": 33927912,
+      "sha256": "829b30008c684c339c590630d3d94a14994c9c4e0bc9a32d0e425336ff789f2a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_flight_prediction_v2",
+      "bytes": 149686384,
+      "sha256": "6566c49afcd26849de14d9272d80856f8c20d78ee256e79a1115ceebdf15b34b"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_future_contact_predictor",
+      "bytes": 6502344,
+      "sha256": "a5e4df6fde462d5ed9450ff5aa5ce1349618ca63a4c99394e955ca5ea67973a1"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_incoming_trajectory",
+      "bytes": 40006312,
+      "sha256": "5862f94bfcca87e82b70308f6390e41568d77b2c3cb50de28e7854bad55ad3e0"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_integrated_return",
+      "bytes": 150906960,
+      "sha256": "4bd232a969f59982465ca7d3e33ff5914636379f2e70147bdd2b5ab5cd9514e6"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_post_net_one_shot",
+      "bytes": 2594376,
+      "sha256": "e806d21d13a77ab8a38b37c595be1a855b44235cd38501efc37b2107171bb3eb"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_prediction_event_order",
+      "bytes": 6389240,
+      "sha256": "7afebc8827c453ef66dda03dddcfbd9f5c429074999f1642071dfc95f2eb657f"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_reacquisition_counterexamples",
+      "bytes": 131556520,
+      "sha256": "aab6394a0817bbefbeb3b0c9c8cdcc1ffd69df8872229f8aa52cca0e66db89a7"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_reacquisition_spin",
+      "bytes": 133785104,
+      "sha256": "186035a46bdbbd409dc81059c2df5f5691c1bea7a1a92e781a1de5cc059c4cb5"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_schema2",
+      "bytes": 3675216,
+      "sha256": "b50ff849d30d72bfecf0bb0f2e1d887d5af5262deb152967e536dc6ed0ded178"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_spin_estimator",
+      "bytes": 5554584,
+      "sha256": "cbcfe525a23b47f32b518a9ea19b8c5cd0bb17865136a4311d4f5cf4599d8b7c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_spin_physics",
+      "bytes": 38236576,
+      "sha256": "ba5dfd517c24715d341c116493b2a44e2cdcc61cec57428729410f77379f5351"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_stage_trace",
+      "bytes": 1937328,
+      "sha256": "d122e64e69840c8828e9f180a8a0797ac5aa298d256be96ec680ca371c46b345"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_target_turn_guard",
+      "bytes": 4459416,
+      "sha256": "b08d7be6aa36c22eace81c65693ea4d8207bce9ef60a28d357778fb4e9135477"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_trajectory_and_stage3",
+      "bytes": 15419920,
+      "sha256": "0361268bf7cb91876550f3bd27927c58b7474a65c32752ad5613b758fe85c31b"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_upstream_receiver",
+      "bytes": 11533384,
+      "sha256": "e3922d091193a54fcd0a0c8a438aac50dce35c0327c318ed3216e98ca8c5f7a0"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/sanitized/test_v2_pr64_review_regressions",
+      "bytes": 169922736,
+      "sha256": "a9ef02e8d36ab879c88ef5a37d1ea97f5f59c2e4fcfe0be4c9d0392252c4afb2"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_bringup/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin",
+      "bytes": 15968,
+      "sha256": "ba6646aa78bf3dd0a7997f89bcc1154630fcb86d28103e0bfcd5200b21f54c7c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_bringup/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 15992,
+      "sha256": "879b5d31eac14d7b0ca6cd3b96320041ad8d87b538fea24a17e8707f0656bc96"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_bringup/CMakeFiles/3.28.3/CompilerIdC/a.out",
+      "bytes": 16088,
+      "sha256": "88aa2744b35746a2f6464f0d7f31c3991c8fdb255d08727ecfbf676478e051b8"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_bringup/CMakeFiles/3.28.3/CompilerIdCXX/a.out",
+      "bytes": 16096,
+      "sha256": "a3d366f5f634a9cc0d9340115704a2d978e930f75ce0aceac02d7177849a8a1a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin",
+      "bytes": 15968,
+      "sha256": "ba6646aa78bf3dd0a7997f89bcc1154630fcb86d28103e0bfcd5200b21f54c7c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 15992,
+      "sha256": "879b5d31eac14d7b0ca6cd3b96320041ad8d87b538fea24a17e8707f0656bc96"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/CMakeFiles/3.28.3/CompilerIdC/a.out",
+      "bytes": 16088,
+      "sha256": "88aa2744b35746a2f6464f0d7f31c3991c8fdb255d08727ecfbf676478e051b8"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/CMakeFiles/3.28.3/CompilerIdCXX/a.out",
+      "bytes": 16096,
+      "sha256": "a3d366f5f634a9cc0d9340115704a2d978e930f75ce0aceac02d7177849a8a1a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/libhope_msgs__rosidl_generator_c.so",
+      "bytes": 158792,
+      "sha256": "5077053f48720252c9b80072109eb3d8baa92650050ca7c56935a7aabe974401"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/libhope_msgs__rosidl_generator_py.so",
+      "bytes": 81056,
+      "sha256": "860f4f840b312ae6beecfcb0a9a538917ccf7aa9279ad5a62a06d2d7a7a45dad"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/libhope_msgs__rosidl_typesupport_c.so",
+      "bytes": 29040,
+      "sha256": "a7b606ddc1e2bef68113dd248c83fd72c6a8f48e055f46ad57361a06530b0912"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/libhope_msgs__rosidl_typesupport_cpp.so",
+      "bytes": 39104,
+      "sha256": "38f206eae932179dcdee39795f520d70e5a6cc174f44613fbf1fa98e2b00107f"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/libhope_msgs__rosidl_typesupport_fastrtps_c.so",
+      "bytes": 163056,
+      "sha256": "c25d0a29640da86f2f3aceebbeea936282c3079506b6620624f2194c34b0018a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/libhope_msgs__rosidl_typesupport_fastrtps_cpp.so",
+      "bytes": 232024,
+      "sha256": "1d8a2b2f7736e60c45b4ad32c9d2c0a62ddf950e476c5729d6277b3127ec60bc"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/libhope_msgs__rosidl_typesupport_introspection_c.so",
+      "bytes": 100808,
+      "sha256": "596ba07c69578725b4156eb7ede1054e55f66c7ae7cf9d13ada9ed125a7c4b63"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/libhope_msgs__rosidl_typesupport_introspection_cpp.so",
+      "bytes": 149752,
+      "sha256": "1ca426792728b1e4608f2d01649041d62d0801405765be5aab02e12a7ad28d89"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/rosidl_generator_py/hope_msgs/hope_msgs_s__rosidl_typesupport_c.so",
+      "bytes": 33904,
+      "sha256": "592cfa5a4887daceb34cff874684a5026aee2faf3fff74c97953814f9d54e91c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/rosidl_generator_py/hope_msgs/hope_msgs_s__rosidl_typesupport_fastrtps_c.so",
+      "bytes": 33920,
+      "sha256": "fdc26d1bb6f1b965757427bb2c368a5fe427c0912015aef90210554e4bb867b8"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_msgs/rosidl_generator_py/hope_msgs/hope_msgs_s__rosidl_typesupport_introspection_c.so",
+      "bytes": 33928,
+      "sha256": "b51b0880ece474e6d3dfc2e0d87901d8210e153aafa917ffe368de8055136557"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin",
+      "bytes": 15968,
+      "sha256": "ba6646aa78bf3dd0a7997f89bcc1154630fcb86d28103e0bfcd5200b21f54c7c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 15992,
+      "sha256": "879b5d31eac14d7b0ca6cd3b96320041ad8d87b538fea24a17e8707f0656bc96"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/CMakeFiles/3.28.3/CompilerIdC/a.out",
+      "bytes": 16088,
+      "sha256": "88aa2744b35746a2f6464f0d7f31c3991c8fdb255d08727ecfbf676478e051b8"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/CMakeFiles/3.28.3/CompilerIdCXX/a.out",
+      "bytes": 16096,
+      "sha256": "a3d366f5f634a9cc0d9340115704a2d978e930f75ce0aceac02d7177849a8a1a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_ball_flight_baseline_replay",
+      "bytes": 739736,
+      "sha256": "9bb968f82dc327456d84999bc3b7318bcf052c44e6193c72c6fddb1121092b11"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_ball_flight_packetizer",
+      "bytes": 1590816,
+      "sha256": "165155756a67826afd04755b118ef759a9eb7fe0a6702fd86c1db157130cfcac"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_base_pose_contract_probe",
+      "bytes": 51256,
+      "sha256": "1a5a7bc050727fc333c148c595729bdf08dded2e379def37c33da64dbca04bbb"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_flight_prediction_v2_node",
+      "bytes": 2923264,
+      "sha256": "d8d9f381b24d2e830dca3467cf812a66845c5014262d8f1b686b1f1f6db65b6f"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_flight_prediction_v2_replay",
+      "bytes": 636136,
+      "sha256": "d4d44850b63f267fcc8742b285a792a025711b93f928b1125543c986ada4eed3"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_integrated_return_sweep",
+      "bytes": 632368,
+      "sha256": "c7ca42880ad998a70740e737258d93c76ab72985536ce93ecb433a03f7a9cfb0"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_integrated_runner_probe",
+      "bytes": 841848,
+      "sha256": "0db62d4046db777b93e58312ac36cebd69a1b7fc76138b1f2b6330ab9e8bbdb8"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_planner_cpp_node",
+      "bytes": 5137048,
+      "sha256": "02522a0240e9907c245d74849bd9b3beff1f7ebc63c0df1a70d467addad0663c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/hope_planner_cpp_replay",
+      "bytes": 238928,
+      "sha256": "672608c1a8ee442870f3b9fb5662ae5fbedee47ec33bf1802fbe8f45102bb419"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_adaptive_flight_commit",
+      "bytes": 800552,
+      "sha256": "f268a336258f3fe1cd40e10749c2d501b3b5ef154c2419d2ce9889780f59dbbf"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_audit_logger",
+      "bytes": 597648,
+      "sha256": "f40925bad73b31d39f4c5069ee706f3c6270bfedd3d0b30f8cc8979d5b4df965"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_base_pose_contract",
+      "bytes": 620240,
+      "sha256": "2f05ed186e7a0b0449f6705b8eb3f342285b90dc0df4bf379ff3aac35a1a70ab"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_batch_physics_estimator",
+      "bytes": 709912,
+      "sha256": "ba455bd268ac16df19e51d301b7a7ab58cc36b2563e06f1dbd9d6cbd741ddc57"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_flight_packet",
+      "bytes": 610080,
+      "sha256": "b45b29a33f351d6ae30ec42f0eb7170d8c49b7a7b09280c567dbd9af533677b3"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_flight_packet_pipeline",
+      "bytes": 6194360,
+      "sha256": "2c44ec20a84569f418bff9cfd854bc42ed0c03057e370306f73c2cf7dbcd858e"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_flight_prediction_v2",
+      "bytes": 1615656,
+      "sha256": "c33f971c5bfb14ab6f4c8b0b850dcddb53d7fe3560c43763c875922eeb9abfe2"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_flight_transport_v2",
+      "bytes": 1499816,
+      "sha256": "ed989f5e6d7bdaa5291a050ac10918d539e41f368e35e1b71e3cac3412b27802"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_future_contact_predictor",
+      "bytes": 595688,
+      "sha256": "22ee93f239c401b5f0bb56cbfd2557e9aab5aa3ec418aae956cf06f6a5e95b75"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_incoming_trajectory",
+      "bytes": 777648,
+      "sha256": "262ab2401209b33ec3183e05a43a2a250b2e6610e7a078da50277a783ef1e8a3"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_integrated_return",
+      "bytes": 1357784,
+      "sha256": "075d5bc646fddd6a8070940317458f88223e14c06d9fd69dd7b8f791fd5a8601"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_planner_node_one_shot",
+      "bytes": 5888560,
+      "sha256": "32d60873910a911467be9e1f55cc8610646da994d6b6c55f4c204bde1d162d25"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_planner_node_turn_guard",
+      "bytes": 6316112,
+      "sha256": "238c06dca8e38d3aafcb1557f82fa43425c8d07f27b19820ad1e2e71b020c281"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_planner_runtime_plane",
+      "bytes": 6758880,
+      "sha256": "da0082aa5427799da9a494c7821485fda53ae8cc273b66c2dfd0efe72c9742ea"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_post_net_one_shot",
+      "bytes": 564840,
+      "sha256": "9cd664807c28007cb098e964e417547bca221ceced7448472b583c096b89babd"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_prediction_event_order",
+      "bytes": 586032,
+      "sha256": "3680a751267d7fc130df37ce60e4718808496e7715d4d413864a1db76b3cedb2"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_question_bank_fixture",
+      "bytes": 608048,
+      "sha256": "8e1edae75ed55e03580264956192a6ce7c072db1d9018d4df23ff7fc8c8d489c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_reacquisition_counterexamples",
+      "bytes": 1168976,
+      "sha256": "c758988e5496005f87b8a9e15d2b1d607d4032ffbf3116d93cb4659235924dfd"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_reacquisition_spin",
+      "bytes": 1286880,
+      "sha256": "5384f34698c9f4c03b84d7c191a17a1c0490ad3202bde28ad24736557d42183f"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_ros_context_guard",
+      "bytes": 654184,
+      "sha256": "315b211d76243f7bae85f91786849d724c018705bf36b3723a134ee967297a7d"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_runtime_plane_reference",
+      "bytes": 565576,
+      "sha256": "dce20707fbc84c9581fe4ce1e22099757f7101d88ade307ddfb30d4ee9eb8791"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_schema2",
+      "bytes": 678136,
+      "sha256": "bda8493bc7ab8da7c05e94eab60901c5775d4bc9d64cadc5781b31a5d49eb95d"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_spin_estimator",
+      "bytes": 572232,
+      "sha256": "01601ef446babfbef03bdcbbcc290a8e0205cd999ef34d15d7ccc64b98246641"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_spin_physics",
+      "bytes": 648432,
+      "sha256": "a51b1cd2656435e9b4d52e61f12e0854fd43fd88d4faa9018788f6419587476d"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_target_turn_guard",
+      "bytes": 561560,
+      "sha256": "21ea1437485582dd9cfdeccf030a972bc0ee5ffd4f4510f4867f18a107832f78"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_trajectory_and_stage3",
+      "bytes": 644296,
+      "sha256": "12fffb564580d84f6531e6dc8d7df5bbbb9c8bda4a4b610b97f46f30f412355f"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/hope_planner_cpp/test_v2_pr64_review_regressions",
+      "bytes": 1505528,
+      "sha256": "d8df5a1436a57a87b7011ccb8ec5ae9c5497f170edb1991fa90a4ccff3b08abc"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin",
+      "bytes": 15968,
+      "sha256": "ba6646aa78bf3dd0a7997f89bcc1154630fcb86d28103e0bfcd5200b21f54c7c"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin",
+      "bytes": 15992,
+      "sha256": "879b5d31eac14d7b0ca6cd3b96320041ad8d87b538fea24a17e8707f0656bc96"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/CMakeFiles/3.28.3/CompilerIdC/a.out",
+      "bytes": 16088,
+      "sha256": "88aa2744b35746a2f6464f0d7f31c3991c8fdb255d08727ecfbf676478e051b8"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/CMakeFiles/3.28.3/CompilerIdCXX/a.out",
+      "bytes": 16096,
+      "sha256": "a3d366f5f634a9cc0d9340115704a2d978e930f75ce0aceac02d7177849a8a1a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/libmotion_capture_tracking_interfaces__rosidl_generator_c.so",
+      "bytes": 78488,
+      "sha256": "f175c691bd62f960dc43d855fef4995343aa813e9070bde7353ccfdefab8e458"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/libmotion_capture_tracking_interfaces__rosidl_generator_py.so",
+      "bytes": 31296,
+      "sha256": "61e8f36230a3e8a4b30609ee79c20884e6a3ba73e7668f31385cded3f172ebfc"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/libmotion_capture_tracking_interfaces__rosidl_typesupport_c.so",
+      "bytes": 27160,
+      "sha256": "47047e2e485acfa1ceb2e0cd602ec9e7dcd54cd65d6754210156614040fbd906"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/libmotion_capture_tracking_interfaces__rosidl_typesupport_cpp.so",
+      "bytes": 28624,
+      "sha256": "fc7f98df03fc99ee434f87e1bc3a674df445feae92fcade6d01342196dcb4a87"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/libmotion_capture_tracking_interfaces__rosidl_typesupport_fastrtps_c.so",
+      "bytes": 67680,
+      "sha256": "f37535a80f2fbcd514efb8c467de981eeaff96530c132f0d3bce7e871db44b8e"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/libmotion_capture_tracking_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+      "bytes": 85080,
+      "sha256": "ad588056a23eb353af0126464023bb8e276290fb2a6deb7932e3cb5ef7a23583"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/libmotion_capture_tracking_interfaces__rosidl_typesupport_introspection_c.so",
+      "bytes": 44792,
+      "sha256": "dc8a729e2d64b6641a54bb1939409931ab04afb23dcb5ada3113c951dcb92c51"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/libmotion_capture_tracking_interfaces__rosidl_typesupport_introspection_cpp.so",
+      "bytes": 63400,
+      "sha256": "77f161cd3092c0e4a98703f3bf7e0b2d569860fe9f9af9016b4cb2f2b586c151"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/rosidl_generator_py/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces_s__rosidl_typesupport_c.so",
+      "bytes": 24864,
+      "sha256": "669fccff49b25651296210c353f539011c77f809bf0d696728cc7d00bea5e5dd"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/rosidl_generator_py/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces_s__rosidl_typesupport_fastrtps_c.so",
+      "bytes": 24888,
+      "sha256": "5a9801516402bd8695ee2a1166225fecca3c473a32ab3991f09fef7a30354b8b"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/build/motion_capture_tracking_interfaces/rosidl_generator_py/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces_s__rosidl_typesupport_introspection_c.so",
+      "bytes": 24896,
+      "sha256": "dc475e1577d8d4dfb08c1cdd4ae2c1149bb95732d5acdf124c42bacab2405853"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_generator_c.so",
+      "bytes": 158792,
+      "sha256": "59087f2ee2d7dded209c530a97f3021067f3e60f88cdeb87fb442cb0a0ab9924"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_generator_py.so",
+      "bytes": 81056,
+      "sha256": "bf0a8063ebce3c8023f57095c1159119a7a067494e813da88dc201e759718d35"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_typesupport_c.so",
+      "bytes": 29040,
+      "sha256": "62db1e4465c61a86b05d433aa11783b9bc1067f1ced1e30294aba133d71251cf"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_typesupport_cpp.so",
+      "bytes": 39104,
+      "sha256": "9871d4a351aa8beb68e54107cfbe20b0ba8c54969c8062fb0c0af9a165122757"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_typesupport_fastrtps_c.so",
+      "bytes": 163056,
+      "sha256": "dcbdecb651401ff772718fca34c4efcbbb7041d0d4764c0ec93142d6a4203c86"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_typesupport_fastrtps_cpp.so",
+      "bytes": 232024,
+      "sha256": "0223f191b0ff525fd979ae09606bba4607c909e241023a665dccc29d96e802da"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_typesupport_introspection_c.so",
+      "bytes": 100808,
+      "sha256": "d083c1c3f22ad3b52a333f00ef3486daab1a28a5f5876079437800025928fe86"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_typesupport_introspection_cpp.so",
+      "bytes": 149752,
+      "sha256": "d1f5c03663f93eb48eaa9e722713e1da8322c7beda3d9c201c89eb2667366c41"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/python3.12/site-packages/hope_msgs/hope_msgs_s__rosidl_typesupport_c.so",
+      "bytes": 33904,
+      "sha256": "6c76ec3f5848263c9881e7081627adf34158582a35ed35d3cf6adbb8ed2aec5b"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/python3.12/site-packages/hope_msgs/hope_msgs_s__rosidl_typesupport_fastrtps_c.so",
+      "bytes": 33920,
+      "sha256": "49b757a9462b311a6568d3e1587e49062d489ea5e573cf5cd43208a5446ffd6f"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/python3.12/site-packages/hope_msgs/hope_msgs_s__rosidl_typesupport_introspection_c.so",
+      "bytes": 33928,
+      "sha256": "1d82ceda257125fac5041ee9adb3e7c29ad056e8e6ceca0c3dcb3fd0f36e77a9"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_planner_cpp/lib/hope_planner_cpp/hope_ball_flight_baseline_replay",
+      "bytes": 739736,
+      "sha256": "9bb968f82dc327456d84999bc3b7318bcf052c44e6193c72c6fddb1121092b11"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_planner_cpp/lib/hope_planner_cpp/hope_ball_flight_packetizer",
+      "bytes": 1590816,
+      "sha256": "df25aa255c3308860942dc859543d64146d943affecc0f511a8f1919dcb27559"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_planner_cpp/lib/hope_planner_cpp/hope_flight_prediction_v2_node",
+      "bytes": 2923264,
+      "sha256": "0a64e47ff08a7c424dd71c0347999613f42e0570bb45b385147fc38b96784b1a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_planner_cpp/lib/hope_planner_cpp/hope_flight_prediction_v2_replay",
+      "bytes": 636136,
+      "sha256": "d4d44850b63f267fcc8742b285a792a025711b93f928b1125543c986ada4eed3"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_planner_cpp/lib/hope_planner_cpp/hope_integrated_return_sweep",
+      "bytes": 632368,
+      "sha256": "c7ca42880ad998a70740e737258d93c76ab72985536ce93ecb433a03f7a9cfb0"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_planner_cpp/lib/hope_planner_cpp/hope_integrated_runner_probe",
+      "bytes": 841848,
+      "sha256": "66222a6bb001f0fe6388f9e451b3fde76724dac574130f6cfa7bc4eac3a16e91"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_planner_cpp/lib/hope_planner_cpp/hope_planner_cpp_node",
+      "bytes": 5137048,
+      "sha256": "9b026ba9b3057d42835f5616108b5d979521fecaced72b03c90e768f91d2fd6a"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_planner_cpp/lib/hope_planner_cpp/hope_planner_cpp_replay",
+      "bytes": 238928,
+      "sha256": "ac383dc179a87f9c2b84f5a33227e48734082e4fa1f94339b7e218da3297fdc5"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/libmotion_capture_tracking_interfaces__rosidl_generator_c.so",
+      "bytes": 78488,
+      "sha256": "f55e4ddc2e051efb5662efda53f2dc37feaed303b3a2dcbfaf484fae4464b778"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/libmotion_capture_tracking_interfaces__rosidl_generator_py.so",
+      "bytes": 31296,
+      "sha256": "7db7fededcc0da3f269c141d109724a81ffb8560701727af903fe85e2129eefb"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/libmotion_capture_tracking_interfaces__rosidl_typesupport_c.so",
+      "bytes": 27160,
+      "sha256": "27cbaebf8f8b8a64db80f6d0cc4d02a8185a0c778eb14b47eb1553e7724c3a9b"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/libmotion_capture_tracking_interfaces__rosidl_typesupport_cpp.so",
+      "bytes": 28624,
+      "sha256": "0e05a82d00e603eb11c75667fea6c34e3de95f55798e384440d711a3194edbfd"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/libmotion_capture_tracking_interfaces__rosidl_typesupport_fastrtps_c.so",
+      "bytes": 67680,
+      "sha256": "a24843997ffad0a24388f746b4ee2e20175a0f824bb8bfc5edd3388ab6d542e2"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/libmotion_capture_tracking_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+      "bytes": 85080,
+      "sha256": "b4587f7b0450e659e66e98f845980d6701d5d12ebcf2baccbba499da3b319bfd"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/libmotion_capture_tracking_interfaces__rosidl_typesupport_introspection_c.so",
+      "bytes": 44792,
+      "sha256": "ed7b2ff03b87a499769ea17f614d0db4a8c90d0ce21f3f3cc4c5ab3d43e6acab"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/libmotion_capture_tracking_interfaces__rosidl_typesupport_introspection_cpp.so",
+      "bytes": 63400,
+      "sha256": "94113f7f30436f1c302bda1ffca6bf856c69c50fb6110f3b8531587544076afe"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/python3.12/site-packages/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces_s__rosidl_typesupport_c.so",
+      "bytes": 24864,
+      "sha256": "a24af66341c9cc790fab5987889816b42e4e828cca55aa59dbf0e468f2a2ae29"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/python3.12/site-packages/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces_s__rosidl_typesupport_fastrtps_c.so",
+      "bytes": 24888,
+      "sha256": "a085187155f7d5333b89dc207923a02357e6611b573ce9e51a3204e77b98b3b0"
+    },
+    {
+      "path": "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/motion_capture_tracking_interfaces/lib/python3.12/site-packages/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces_s__rosidl_typesupport_introspection_c.so",
+      "bytes": 24896,
+      "sha256": "4bb21f6cf458dc135caf8816697b3a14a72c679a1c464a43cf3a01e11e8ef385"
+    }
+  ],
+  "ldd": {
+    "hope_planner_cpp_node": "\tlinux-vdso.so.1 (0x00007fb35664f000)\n\tlibdiagnostic_msgs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/libdiagnostic_msgs__rosidl_typesupport_cpp.so (0x00007fb3562b8000)\n\tlibstd_srvs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_cpp.so (0x00007fb3562ae000)\n\tlibrclcpp.so => /opt/ros/jazzy/lib/librclcpp.so (0x00007fb356027000)\n\tliblibstatistics_collector.so => /opt/ros/jazzy/lib/liblibstatistics_collector.so (0x00007fb35601f000)\n\tlibrcl.so => /opt/ros/jazzy/lib/librcl.so (0x00007fb355fd6000)\n\tlibrcl_interfaces__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so (0x00007fb355fbb000)\n\tlibstatistics_msgs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so (0x00007fb355fb5000)\n\tlibtracetools.so => /opt/ros/jazzy/lib/libtracetools.so (0x00007fb355f9b000)\n\tlibhope_msgs__rosidl_typesupport_cpp.so => /workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_typesupport_cpp.so (0x00007fb355f94000)\n\tlibgeometry_msgs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so (0x00007fb355f84000)\n\tlibstd_msgs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so (0x00007fb355f78000)\n\tlibrmw.so => /opt/ros/jazzy/lib/librmw.so (0x00007fb355f6d000)\n\tlibrcutils.so => /opt/ros/jazzy/lib/librcutils.so (0x00007fb355f4d000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fb355cc9000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fb355be0000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fb355bb0000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fb35599d000)\n\tlibdiagnostic_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libdiagnostic_msgs__rosidl_generator_c.so (0x00007fb355988000)\n\tlibrosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so (0x00007fb355982000)\n\tlibstd_srvs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so (0x00007fb35596e000)\n\tlibrcl_yaml_param_parser.so => /opt/ros/jazzy/lib/librcl_yaml_param_parser.so (0x00007fb355960000)\n\tlibrosgraph_msgs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so (0x00007fb355959000)\n\tlibrcl_logging_interface.so => /opt/ros/jazzy/lib/librcl_logging_interface.so (0x00007fb355954000)\n\tlibrmw_implementation.so => /opt/ros/jazzy/lib/librmw_implementation.so (0x00007fb355947000)\n\tlibament_index_cpp.so => /opt/ros/jazzy/lib/libament_index_cpp.so (0x00007fb35593a000)\n\tlibtype_description_interfaces__rosidl_typesupport_c.so => /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so (0x00007fb355931000)\n\tlibrosidl_dynamic_typesupport.so => /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so (0x00007fb355918000)\n\tlibrosidl_typesupport_introspection_cpp.so => /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so (0x00007fb355913000)\n\tlibrcpputils.so => /opt/ros/jazzy/lib/librcpputils.so (0x00007fb355904000)\n\tlibrosidl_runtime_c.so => /opt/ros/jazzy/lib/librosidl_runtime_c.so (0x00007fb3558e5000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fb356651000)\n\tlibrcl_logging_spdlog.so => /opt/ros/jazzy/lib/librcl_logging_spdlog.so (0x00007fb3558d9000)\n\tlibrcl_interfaces__rosidl_typesupport_c.so => /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so (0x00007fb3558c9000)\n\tlibtype_description_interfaces__rosidl_generator_c.so => /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so (0x00007fb3558b1000)\n\tlibyaml-0.so.2 => /lib/x86_64-linux-gnu/libyaml-0.so.2 (0x00007fb355890000)\n\tlibrcl_interfaces__rosidl_generator_c.so => /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so (0x00007fb355842000)\n\tlibstatistics_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so (0x00007fb355837000)\n\tliblttng-ust.so.1 => /lib/x86_64-linux-gnu/liblttng-ust.so.1 (0x00007fb3557b4000)\n\tlibhope_msgs__rosidl_generator_c.so => /workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_generator_c.so (0x00007fb355796000)\n\tlibgeometry_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so (0x00007fb355757000)\n\tlibstd_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so (0x00007fb355726000)\n\tlibservice_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so (0x00007fb35571f000)\n\tlibbuiltin_interfaces__rosidl_generator_c.so => /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so (0x00007fb355718000)\n\tlibrosgraph_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_c.so (0x00007fb355700000)\n\tlibrosidl_typesupport_c.so => /opt/ros/jazzy/lib/librosidl_typesupport_c.so (0x00007fb3556fa000)\n\tlibspdlog.so.1.12 => /lib/x86_64-linux-gnu/libspdlog.so.1.12 (0x00007fb355673000)\n\tlibnuma.so.1 => /lib/x86_64-linux-gnu/libnuma.so.1 (0x00007fb355663000)\n\tliblttng-ust-common.so.1 => /lib/x86_64-linux-gnu/liblttng-ust-common.so.1 (0x00007fb355656000)\n\tliblttng-ust-tracepoint.so.1 => /lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.1 (0x00007fb355639000)\n\tlibfmt.so.9 => /lib/x86_64-linux-gnu/libfmt.so.9 (0x00007fb355618000)\n",
+    "hope_integrated_runner_probe": "\tlinux-vdso.so.1 (0x00007f6558543000)\n\tlibrclcpp.so => /opt/ros/jazzy/lib/librclcpp.so (0x00007f6558228000)\n\tlibstd_msgs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so (0x00007f655821c000)\n\tliblibstatistics_collector.so => /opt/ros/jazzy/lib/liblibstatistics_collector.so (0x00007f6558214000)\n\tlibrcl.so => /opt/ros/jazzy/lib/librcl.so (0x00007f65581cd000)\n\tlibstatistics_msgs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so (0x00007f65581c5000)\n\tlibtracetools.so => /opt/ros/jazzy/lib/libtracetools.so (0x00007f65581ab000)\n\tlibrmw.so => /opt/ros/jazzy/lib/librmw.so (0x00007f65581a0000)\n\tlibrcutils.so => /opt/ros/jazzy/lib/librcutils.so (0x00007f6558180000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f6557efc000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f6557ece000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f6557cb9000)\n\tlibrcl_yaml_param_parser.so => /opt/ros/jazzy/lib/librcl_yaml_param_parser.so (0x00007f6557cad000)\n\tlibrosgraph_msgs__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so (0x00007f6557ca6000)\n\tlibrcl_logging_interface.so => /opt/ros/jazzy/lib/librcl_logging_interface.so (0x00007f6557ca1000)\n\tlibrmw_implementation.so => /opt/ros/jazzy/lib/librmw_implementation.so (0x00007f6557c94000)\n\tlibament_index_cpp.so => /opt/ros/jazzy/lib/libament_index_cpp.so (0x00007f6557c85000)\n\tlibtype_description_interfaces__rosidl_typesupport_c.so => /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so (0x00007f6557c7e000)\n\tlibrcl_interfaces__rosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so (0x00007f6557c63000)\n\tlibrosidl_dynamic_typesupport.so => /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so (0x00007f6557c4a000)\n\tlibrosidl_typesupport_introspection_cpp.so => /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so (0x00007f6557c45000)\n\tlibrcpputils.so => /opt/ros/jazzy/lib/librcpputils.so (0x00007f6557c36000)\n\tlibrosidl_runtime_c.so => /opt/ros/jazzy/lib/librosidl_runtime_c.so (0x00007f6557c15000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f6557b2c000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f6558545000)\n\tlibstd_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so (0x00007f6557afb000)\n\tlibrosidl_typesupport_cpp.so => /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so (0x00007f6557af5000)\n\tlibrcl_logging_spdlog.so => /opt/ros/jazzy/lib/librcl_logging_spdlog.so (0x00007f6557aeb000)\n\tlibrcl_interfaces__rosidl_typesupport_c.so => /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so (0x00007f6557ad9000)\n\tlibtype_description_interfaces__rosidl_generator_c.so => /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so (0x00007f6557ac1000)\n\tlibyaml-0.so.2 => /lib/x86_64-linux-gnu/libyaml-0.so.2 (0x00007f6557aa0000)\n\tlibstatistics_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so (0x00007f6557a97000)\n\tliblttng-ust.so.1 => /lib/x86_64-linux-gnu/liblttng-ust.so.1 (0x00007f6557a14000)\n\tlibrosgraph_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_c.so (0x00007f65579fa000)\n\tlibrosidl_typesupport_c.so => /opt/ros/jazzy/lib/librosidl_typesupport_c.so (0x00007f65579f4000)\n\tlibrcl_interfaces__rosidl_generator_c.so => /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so (0x00007f65579a6000)\n\tlibbuiltin_interfaces__rosidl_generator_c.so => /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so (0x00007f655799f000)\n\tlibspdlog.so.1.12 => /lib/x86_64-linux-gnu/libspdlog.so.1.12 (0x00007f6557918000)\n\tlibservice_msgs__rosidl_generator_c.so => /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so (0x00007f6557911000)\n\tlibnuma.so.1 => /lib/x86_64-linux-gnu/libnuma.so.1 (0x00007f6557903000)\n\tliblttng-ust-common.so.1 => /lib/x86_64-linux-gnu/liblttng-ust-common.so.1 (0x00007f65578f6000)\n\tliblttng-ust-tracepoint.so.1 => /lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.1 (0x00007f65578d9000)\n\tlibfmt.so.9 => /lib/x86_64-linux-gnu/libfmt.so.9 (0x00007f65578b8000)\n"
+  },
+  "resolved_libraries": {
+    "/opt/ros/jazzy/lib/libdiagnostic_msgs__rosidl_typesupport_cpp.so": {
+      "bytes": 36080,
+      "sha256": "432b84549d9c53d8844a681d325b005cf7c6f34c6c5d75424037f08617277e06"
+    },
+    "/opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_cpp.so": {
+      "bytes": 36152,
+      "sha256": "18866d6fe40fb12963c97a8578b597c67b48b291ffe94a54a4a88a05ca505a10"
+    },
+    "/opt/ros/jazzy/lib/librclcpp.so": {
+      "bytes": 2649672,
+      "sha256": "7800244b4f0ec3cfb1e4f08de8f60c60c8f2331b7efdc6a1d5064fe336c62fb3"
+    },
+    "/opt/ros/jazzy/lib/liblibstatistics_collector.so": {
+      "bytes": 27088,
+      "sha256": "7e857633828cae498349194a3c54e7fbb91e59ed01b2eb7059904b809221a37c"
+    },
+    "/opt/ros/jazzy/lib/librcl.so": {
+      "bytes": 287584,
+      "sha256": "94570a4bea52192aa768fb6600fffb7fa05df779c324328d077d63ce062f5fb3"
+    },
+    "/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so": {
+      "bytes": 104248,
+      "sha256": "8d283d7be91aa75f8137643520a7e2ec5239f09a7901f0cf316aeb02413d580b"
+    },
+    "/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so": {
+      "bytes": 18648,
+      "sha256": "a53ad99d32b0c300dcf1b0498b59836cf21b6ab0c4b348346146e4b6c671f0f9"
+    },
+    "/opt/ros/jazzy/lib/libtracetools.so": {
+      "bytes": 106896,
+      "sha256": "e7203baf1ff36817a90dfb59364d0678b941174f4451ee488868d87b7e9f23fd"
+    },
+    "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_typesupport_cpp.so": {
+      "bytes": 39104,
+      "sha256": "9871d4a351aa8beb68e54107cfbe20b0ba8c54969c8062fb0c0af9a165122757"
+    },
+    "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so": {
+      "bytes": 57688,
+      "sha256": "f502be6ad5286a0ef8cb2749197e5237f822d1f64fdcf151461ed17ae93d61da"
+    },
+    "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so": {
+      "bytes": 49272,
+      "sha256": "ea0e004fc476b9b80830d08224674cf5c9bdf1a39fb26fd6bafa09862d082222"
+    },
+    "/opt/ros/jazzy/lib/librmw.so": {
+      "bytes": 43456,
+      "sha256": "9e03d0c31f03b2ce01d0d934ba76bf349faa226e6b6ea69a51f62aeddfe018ae"
+    },
+    "/opt/ros/jazzy/lib/librcutils.so": {
+      "bytes": 101752,
+      "sha256": "9aedab61c0b1265c476fe12bf36d2d31bfc5fe3813c85a67b70406406a0567bc"
+    },
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33": {
+      "bytes": 2592224,
+      "sha256": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11"
+    },
+    "/usr/lib/x86_64-linux-gnu/libm.so.6": {
+      "bytes": 952616,
+      "sha256": "fce00b6f25f459cf4ae0b7fae4257909a1a8a86f9149e7c029a5d617baf1ccd0"
+    },
+    "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": {
+      "bytes": 183024,
+      "sha256": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb"
+    },
+    "/usr/lib/x86_64-linux-gnu/libc.so.6": {
+      "bytes": 2129424,
+      "sha256": "3a15d66867d83762c7f2f1e37359cb8f6c5743edb369c65285cb0b1c4f7498bf"
+    },
+    "/opt/ros/jazzy/lib/libdiagnostic_msgs__rosidl_generator_c.so": {
+      "bytes": 81416,
+      "sha256": "bd5a053bc2824da12963486797185726318e72e470b6be57f7ccd760c4772389"
+    },
+    "/opt/ros/jazzy/lib/librosidl_typesupport_cpp.so": {
+      "bytes": 18768,
+      "sha256": "075d64bfaacb093082bacb349517bdf920e9a0ab7622163c6b03082deaf18534"
+    },
+    "/opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so": {
+      "bytes": 78840,
+      "sha256": "3da9247e15a10ed51d5358ca526f8be4da461fb3ecbb293e13727f37fe5bc81f"
+    },
+    "/opt/ros/jazzy/lib/librcl_yaml_param_parser.so": {
+      "bytes": 43576,
+      "sha256": "192f94aab90f5805b9da8fbc95272f07d2faa74535454d2b4f8fc7fbda8bebd1"
+    },
+    "/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so": {
+      "bytes": 23192,
+      "sha256": "78c59e3355938f3463db0f8f324f7f095c067c728d8ff2141131ae92b2430185"
+    },
+    "/opt/ros/jazzy/lib/librcl_logging_interface.so": {
+      "bytes": 14464,
+      "sha256": "649b57bf574726b767fd5469221554813be66ae2dad2e9a420de5795555e2534"
+    },
+    "/opt/ros/jazzy/lib/librmw_implementation.so": {
+      "bytes": 47544,
+      "sha256": "55ca6142763e00dd53460ebb6891cb3b3616ff3157ea14dcde40bd5efe247127"
+    },
+    "/opt/ros/jazzy/lib/libament_index_cpp.so": {
+      "bytes": 51976,
+      "sha256": "bb0be3b8f451661297707fff0ba6372ea7c88e3eea0c3d30f785025eadf8cbcb"
+    },
+    "/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so": {
+      "bytes": 27144,
+      "sha256": "fa2dd8aa7e8a4f1e3f53f9a733ecd764d1bf8b17e3e787fe99523ae93625cc7f"
+    },
+    "/opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so": {
+      "bytes": 93104,
+      "sha256": "9d68ba0b231c9fe1419956505ef7836be24c8b76e78d21b519934de03ce951ca"
+    },
+    "/opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so": {
+      "bytes": 14032,
+      "sha256": "7e017819a0b91fdccd06d6690f30f2c47344e66f16628db368608bce8df0f444"
+    },
+    "/opt/ros/jazzy/lib/librcpputils.so": {
+      "bytes": 56288,
+      "sha256": "bfd44ceb22cfc9636f16666cf98300d5a3dcdbf232664bbc11dacabedab2d690"
+    },
+    "/opt/ros/jazzy/lib/librosidl_runtime_c.so": {
+      "bytes": 121336,
+      "sha256": "446f57672940d74c277f353132f32f61b30ba4c83621fb1be1d97ae1cadf62aa"
+    },
+    "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2": {
+      "bytes": 236616,
+      "sha256": "c20a2dc8917c755f02b94049356320fe1f62ac7d9f8994731f807d9df39302da"
+    },
+    "/opt/ros/jazzy/lib/librcl_logging_spdlog.so": {
+      "bytes": 39640,
+      "sha256": "7e6fd8671b80955fe72c9e6a38d9248c86563a1c0818f7840a5c0914c99d4c9f"
+    },
+    "/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so": {
+      "bytes": 62376,
+      "sha256": "29b8ae85f8d343fae64ad95c7fa8f490e32acc38d655fb0356caafde60bfe139"
+    },
+    "/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so": {
+      "bytes": 93560,
+      "sha256": "f0f09b3dc961847b6bff28cb3896fac3c8c39fcb53442da34ae74941fd50c80c"
+    },
+    "/usr/lib/x86_64-linux-gnu/libyaml-0.so.2.0.9": {
+      "bytes": 129016,
+      "sha256": "a518a0ec7ee915fbeabe80551b8c9573b34e37b9402cc3e3eeab0fe346ba6ef0"
+    },
+    "/opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so": {
+      "bytes": 301448,
+      "sha256": "5e22521ec1b161c77ac99e6e0023aea47533b48cd63e9b7a3300a9d56f46f642"
+    },
+    "/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so": {
+      "bytes": 35400,
+      "sha256": "c2a6b462e65244049c31d30fdcb29098b77c1c78d8870d1950a085bd1bf4e151"
+    },
+    "/usr/lib/x86_64-linux-gnu/liblttng-ust.so.1.0.0": {
+      "bytes": 500568,
+      "sha256": "3dda3aff8ce04c7a1d5f1c5f20bd725d63e686a2042ee4834d8c25cde288f27b"
+    },
+    "/workspace/.cloud-setup/pr85-qualification/final-publication-safe/install/hope_msgs/lib/libhope_msgs__rosidl_generator_c.so": {
+      "bytes": 158792,
+      "sha256": "59087f2ee2d7dded209c530a97f3021067f3e60f88cdeb87fb442cb0a0ab9924"
+    },
+    "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so": {
+      "bytes": 249784,
+      "sha256": "7e3cbadfd66e2293e8dee69c8cb9c8a7b1f0a02c6f8151b6234517a3c79de4d3"
+    },
+    "/opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so": {
+      "bytes": 197704,
+      "sha256": "467ff4c37471e199a9698dcf841e3f3f1ff2ef2c044e72358a7421a7266417d0"
+    },
+    "/opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so": {
+      "bytes": 16024,
+      "sha256": "18e7847d73008f38f2dfa8d6165d554709e5a5573c96905f07e077302b716ba1"
+    },
+    "/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so": {
+      "bytes": 24424,
+      "sha256": "469f57ca61bbac69649c17b3b8b2f18bd91458c26c806e20e91a7d82d7464c9e"
+    },
+    "/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_c.so": {
+      "bytes": 93224,
+      "sha256": "fc11475986cc210b2664c6d2ad4bae1ff99389dcd466b3fd9c35ea8d1a7bab9f"
+    },
+    "/opt/ros/jazzy/lib/librosidl_typesupport_c.so": {
+      "bytes": 18768,
+      "sha256": "60aaa3dc8b8fe054ccbc9685b8882f1db6c4366631aa85342e01963db64d17b5"
+    },
+    "/usr/lib/x86_64-linux-gnu/libspdlog.so.1.12.0": {
+      "bytes": 551288,
+      "sha256": "62bb2fbc92edc05b35888e624882b78f5b38c0aca6a3df7ab7db32bb9c2629b6"
+    },
+    "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0": {
+      "bytes": 52248,
+      "sha256": "02d7582c5d391e460e56aa67a414360e3183b968206645b9123f9dc7bff5d009"
+    },
+    "/usr/lib/x86_64-linux-gnu/liblttng-ust-common.so.1.0.0": {
+      "bytes": 47800,
+      "sha256": "28c3025315634619a7d278fff9e5bfa85ef85a58db8a52ce3ecf0054093fe0be"
+    },
+    "/usr/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.1.0.0": {
+      "bytes": 51568,
+      "sha256": "c5a75aea47fbfa1380e75fad869a00e225a947bbfa99edc6c62c2241959e1eb8"
+    },
+    "/usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0": {
+      "bytes": 129688,
+      "sha256": "da008b908b32e428eaa1c09e36d6894c8f88362e254b503c7c2c6112b4ec9ed0"
+    }
+  },
+  "note": "Recorded after all trials; campaign freeze separately proves the two scored binaries unchanged before/after every declared run. Compiled binaries are not included in portable evidence archives.",
+  "additional_receiver_test_sources_sha256": {
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_action_decoder.cpp": "52531a23efe517c33a59041e149d0b50c693f1a5cd2303ca5cfff06dcd990ff5",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_aimrt_backend.cpp": "6efd2a02fb7ecb8ca5fad838406c7987d8a22c7abb0775bb22ad2a82f71f9f3a",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_csv_motion_reference.cpp": "5f3e7e8cfe0cb569c8d8bb3bbcc56279f5758042cf7e4533f382a18b4395c389",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_encoder_obs_builder.cpp": "4fae414a100dbcfbeb2e86344e7c6012c9852e3331d4fbdb63c01fe4db8d2e4e",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_layout_extra.cpp": "9d56e432bd06f40acfe401fec538d6d820eb8c58c6c4996c2ea116f2c91ead42",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_manual_control.cpp": "8e7e98a756fbf62d483ad68ea1018bb54aa067856af2cf2de13bd0b1fed78719",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_motion_library.cpp": "e2b3a3bed63669755c97d2a34ef43234a470e261f4af1c12918dde281cb6d08f",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_mujoco_order_sanity.cpp": "52332accfc5ed58db28fc12cf4b83bd8211ceeca88364463ef104d047e80de12",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_obs_builder.cpp": "21ace1fa4ee7b6c2998fbaaaacb14eaf8b4d01af857095ab7c46d1198a7731a1",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_obs_builder_endtoend.cpp": "ccccb587195c5d7ef77f35dc8728dfe412e522a1b86238acf231977b51f886af",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_policy_driver.cpp": "9f99e18bcc7ed54179c94ef8ce1f78a9abc1f70d6bc4ec61655a4ca9601c45ae",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_policy_parameters.cpp": "326a36f380b42a05870b3586d358e271cf5266ab823d27c5a3c144e2e6fa3135",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_publishers.cpp": "29b1d960b84164ecf47727d35eeeb1d8e3806b2cf2e49070ff0508df206e5a71",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_rt.cpp": "43aa12704a5e9b9eb10ea0586ad7d2c4f5975898dcbdc8605b9d6e4a7eca67f8",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_subscribers.cpp": "2dcc178696acb2fa668cd484034aa5352fe12c376875c30a3be10689a90a0e9e",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_sync.cpp": "5e7743a2ff859ff232f2d39a818f1c14af40792e6521a4b6e950f7df5b9f0ff7",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_teleop_reference.cpp": "fd21dd3c1592fe87f65061fbf1b92833d5247c436d5074ab24b9250e875eff82",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_tokenizer_replay.cpp": "946a6cff4df2cd697c09064165da3166669b5c0410905d86de774025ad405a4b",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_a3_yaw_alignment.cpp": "ebc793ce34a2701ba4dbfc8102aa45cbf36fc3052989ed9321fed2758a4bb560",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_fk.cpp": "ce6856eb3087b5e1b7fbc62cc11f8001797ed7b974ebf38ecad7595a9445487a",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_main.cpp": "6e5581504afa789d7447d337adb82df9bde9253c0293d80eb25332d8503e124a",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_packed_motion_decoder.cpp": "70c29139d59c03a0be1fb9cddbf61e7ee32405530ebcce05ad8300bdd96bd183",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_base_pose_input.cpp": "e2686bd5c7e4f4a09f6825c12b874f3ffbca2ad7c3691498247092933e488d52",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_command_safety.cpp": "3189a5a851e15c387c2f7ac41ed1fdb92285e097c0a2d085fdf3470218e40854",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_command_transition.cpp": "195e9580be2fff5327b9042e863bc7f8ec61583824b5499f0be29540b37997f3",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_deploy_contract.cpp": "35ee4bb439282e92e45179b97ff44e70787ac480aed9b74a59ff6beec6393dab",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_execution_history.cpp": "486ab1bfff696bc8e36bd6e3531c4a299b06145d67c5c0f6c84de5f0428fdc7f",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_footstep_task.cpp": "d02b9b351668541561dadb9aaf917dd28bf5fd41f4571546e489cddd9105b804",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_humanlike_stop.cpp": "12853e0f43abc70b2721d5742a344d40c4beb13fc2a710597b3a757641e9a420",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_kernel_odometry.cpp": "d1761e791689b076c4d45b483d18f84f150d7ac8e09ccc5608b019f69b134d19",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_mode_cadence.cpp": "9b6e11a51c4d43bd6d75a80b8b10a652de7629a63b3fc3a77bebdc885bebb32e",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_planner_lifecycle.cpp": "e53995b3bedb6a2432301ce911aca74098cf86ef0ca1d4f79d6545d4e6f93680",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_policy_handoff_feedback.cpp": "a8c364c84459a9b5d44265467847e8dfd5a11a291346085d73503dd6815e2845",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_racket_fk_pose.cpp": "29ebc8e302c5156da2a798f0c4a4578509224d3a9a39d25c2a54a7c5f6e73cc1",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_racket_target_input.cpp": "b4fe359cfafc2cb9b1c0c790455a740b9cc4dd80a95fb067e4fc081b4fa6febf",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_recovery_envelope.cpp": "68c061de445f3a5a3c6c0290390887331bfebd7ddc6b65cfa063735a1ef981c7",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_runner_control.cpp": "174b808869a9082cbc54c092677415c5c59f1d30374c4e7096f37b4c3ddb0369",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_runtime_contract.cpp": "e54038da7d4469a58284c5d93a30bee06d8b095cbb888d9dcf86fcbdc46aaf8f",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_serve_controller.cpp": "7004e552bfa195c604631df0d57248a580df210426c91a4f2c453e0f82dfe9d0",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_serve_segments.cpp": "8d5086815f2102574017e2e8b9c22a102b8b80fd2df2a853be45f8cb2cb72412",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_static_handoff.cpp": "66e6c2a04d31a6f09a1f01964a867258f00d28942acabbdec98035cea8295be5",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_stationary_replay.cpp": "de950cbdc0bb557f9ba1d5a8efcf84227346d407aab7b43a83dd9d072d91fff6",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_teleop_input.cpp": "939ae3d6bc5c50a1a8f5b59572ba940496b6ad4206b1a907d120bcd58ba37245",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_v12_slew_qdes.cpp": "aeb7b0a967c3c499e1f53fb641c2ec947efaa684e0a9a29bf9cf912eb55203eb",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_pp_velocity_gate.cpp": "e60cbe3690398f46e05d406c4bc59ed887d25fb82c8c35d4a12251e39ed9896b",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/unit_tests/test_session_home_contract.cpp": "6464cb14b21cf34c6ee66647614c9976e79c56a6b5b5b783604f9fd1c80e0c69"
+  },
+  "policy_artifacts": [
+    {
+      "artifact": "a3_deploy/a3_deploy_example/models/model_21800/policy/exported/policy.onnx",
+      "sha256": "6bf1a2418f8538e23577a0153f2fe6a1e78dee91f41650a232259432a84a4dc8"
+    },
+    {
+      "artifact": "hope_training/whole_body_tracking/checkpoints/policy.onnx",
+      "sha256": "a987240610bb9a49ea42da8eafcdc84c3cfbc8d5470bf7ff1a2d7f1f624cdd28"
+    }
+  ]
+}

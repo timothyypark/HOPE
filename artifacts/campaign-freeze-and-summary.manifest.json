@@ -1,0 +1,27 @@
+{
+  "archive": "campaign-freeze-and-summary.tar.gz",
+  "bytes": 87733,
+  "sha256": "3014e975c9de5541a0442d138343f4379d79577b3e97f61c306ae42df9cebba1",
+  "files": [
+    {
+      "path": "pr85-qualification/final-publication-safe/repeated-campaign/registered-tests.json",
+      "bytes": 174076,
+      "sha256": "9f6a169658409fdd402664b1295d02be01c4c9bda2dd38f28ddce1cd9b086e65"
+    },
+    {
+      "path": "pr85-qualification/final-publication-safe/repeated-campaign/summary.json",
+      "bytes": 182791,
+      "sha256": "56dac7b38eccf00e15336c201ada4883f0ac2736a1088b6383a0c82336c46c14"
+    },
+    {
+      "path": "pr85-qualification/final-publication-safe/repeated-campaign/freeze.json",
+      "bytes": 304724,
+      "sha256": "48200a514bcafc9e4a0ea22fc8af8cc73a9e2ca5d03138e9181e6f68c67e8071"
+    },
+    {
+      "path": "pr85-qualification/final-publication-safe/repeated-campaign/outcomes.jsonl",
+      "bytes": 136089,
+      "sha256": "08879af61b56f151097fad2b64202d1e874689a5436941d5e77422b80cb11447"
+    }
+  ]
+}

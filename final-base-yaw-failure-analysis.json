@@ -1,0 +1,90 @@
+{
+  "source": "dc012fe970d6bb2169853dd8e985705193ac9148",
+  "profile": "base_yaw_chain_150_0",
+  "status": "FAIL",
+  "exception": "AssertionError: ('command coverage', 39, 43, 0.9069767441860465)",
+  "covered": 39,
+  "denominator": 43,
+  "coverage": 0.9069767441860465,
+  "missing_epochs": [
+    {
+      "source_ns": 1792838931527425378,
+      "index": 284,
+      "phase_s": 0.12291026000000005,
+      "pacing_late_ms": 29.57827,
+      "previous_interval_ms": 0.389615,
+      "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+      "observer_received": true
+    },
+    {
+      "source_ns": 1792838931527530166,
+      "index": 285,
+      "phase_s": 0.12301504800000007,
+      "pacing_late_ms": 23.016371,
+      "previous_interval_ms": 0.104788,
+      "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+      "observer_received": true
+    },
+    {
+      "source_ns": 1792838931527621283,
+      "index": 286,
+      "phase_s": 0.12310616500000005,
+      "pacing_late_ms": 16.44086,
+      "previous_interval_ms": 0.091117,
+      "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+      "observer_received": true
+    },
+    {
+      "source_ns": 1792838931644587963,
+      "index": 306,
+      "phase_s": 0.24007284500000003,
+      "pacing_late_ms": 0.073768,
+      "previous_interval_ms": 6.661071,
+      "first_observed_loss": "UNRESOLVED_ACCOUNTING_DISABLED",
+      "observer_received": true
+    }
+  ],
+  "source_gc": "disabled_during_pacing",
+  "maximum_publication_ms": 9.552103,
+  "resources": {
+    "optitrack_mct_relay": {
+      "pid": 152229,
+      "exit": null,
+      "VmHWM": "75992 kB",
+      "VmRSS": "75992 kB",
+      "Threads": "14",
+      "Cpus_allowed_list": "0-4",
+      "cpu_s": 0.85,
+      "final_exit": 0
+    },
+    "hope_base_pose_flat_relay": {
+      "pid": 152230,
+      "exit": 0,
+      "unavailable": "[Errno 2] No such file or directory: '/proc/152230/status'",
+      "final_exit": 0
+    },
+    "hope_planner_cpp_node": {
+      "pid": 152231,
+      "exit": null,
+      "VmHWM": "35240 kB",
+      "VmRSS": "35240 kB",
+      "Threads": "15",
+      "Cpus_allowed_list": "0-4",
+      "cpu_s": 0.3,
+      "final_exit": 0
+    },
+    "hope_integrated_runner_probe": {
+      "pid": 152232,
+      "exit": null,
+      "VmHWM": "29984 kB",
+      "VmRSS": "29984 kB",
+      "Threads": "14",
+      "Cpus_allowed_list": "0-4",
+      "cpu_s": 0.06,
+      "final_exit": 0
+    }
+  },
+  "interpretation": "Three missing eligible exposures were sampled in a catch-up burst after a source delay; the fourth was paced normally. Actual-stage accounting was disabled, so source pacing does not establish the first loss stage or uniquely attribute the failure to OS, DDS, relay, or planner.",
+  "decision": "Retain the failed full invocation. No evidence-supported additional source correction is established. Complete the declared 160 trials on the unchanged candidate as an explicitly separate continuation; no passing retry closes the failed full-run gate.",
+  "qualified": false
+}
