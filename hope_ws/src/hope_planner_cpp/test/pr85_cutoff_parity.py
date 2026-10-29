@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare the published pre-merge V2 implementation at identical source cutoffs."""
+"""Compare pre-merge V2, with exact declared contact-corroboration differences."""
 import argparse
 import hashlib
 import io
@@ -17,6 +17,7 @@ def main():
     args = parser.parse_args()
     fixtures = Path(__file__).parent / 'fixtures/pr85_cutoffs'
     manifest = json.loads((fixtures / 'manifest.json').read_text())
+    corrections = json.loads((fixtures / 'contact_corroboration_deltas.json').read_text())
     root = args.output.parent / 'premerge-v2'
     root.mkdir(parents=True, exist_ok=True)
     relative = 'hope_ws/src/hope_planner_cpp'
@@ -46,15 +47,36 @@ def main():
             for value in values:
                 value.pop('compute_ms', None)  # wall duration is not algorithm state
             outputs.append(values)
-        assert outputs[0] == outputs[1], entry['path']
+        assert len(outputs[0]) == len(outputs[1]), entry['path']
+        approved = {row['index']: row for row in corrections['fixtures'].get(entry['path'], [])}
+        changed = []
+        for index, (before, after) in enumerate(zip(*outputs)):
+            if before == after:
+                continue
+            assert index in approved, ('unexpected cutoff change', entry['path'], index)
+            expected = approved[index]
+            for label, value in [('before', before), ('after', after)]:
+                actual = hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()
+                assert actual == expected[label + '_sha256'], (entry['path'], index, label)
+            # Every exception is conservative, single-cutoff contact withholding.
+            # No other state or numerical difference is admitted by this policy.
+            assert before['physical_available'] and after['physical_available']
+            assert not before['target_valid'] and not after['target_valid']
+            assert after['reason'] == 'target_before_required_contact_conditional'
+            assert after['arrival_ns'] == 0 and after['position'] is None
+            assert outputs[0][index + 1] == outputs[1][index + 1], 'must reconverge next cutoff'
+            changed.append(index)
+        assert set(changed) == set(approved), ('declared differences changed', entry['path'])
         available = sum(value['physical_available'] for value in outputs[1])
         assert available >= 10, (entry['path'], available)
         if entry['rearm']:
             assert len({value['generation'] for value in outputs[1] if value['physical_available']}) >= 2
         rows.append(dict(fixture=entry['path'], cutoffs=len(outputs[1]),
-                         physical_cutoffs=available, exact_match=True))
+                         physical_cutoffs=available, exact_match=not changed,
+                         exact_cutoffs=len(outputs[1])-len(changed), contact_correction_cutoffs=changed))
     args.output.write_text(json.dumps(dict(status='PASS', premerge=manifest['premerge_head'],
-                                          excluded_fields=['compute_ms'], cases=rows), indent=2) + '\n')
+                                          excluded_fields=['compute_ms'], cases=rows,
+                                          correction_policy=corrections['reason']), indent=2) + '\n')
     print(json.dumps(rows))
 
 
