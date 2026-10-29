@@ -28,13 +28,13 @@ its submitted descendant changes only documentation. Baseline receipts are under
 
 | Step | Required result | State |
 |---|---|---|
-| Baseline | Source/config hashes, native/ROS/receiver/plane/parity receipts, retained failures | In progress |
+| Baseline | Source/config hashes, native/ROS/receiver/plane/parity receipts, retained failures | Recorded |
 | Bounce | Isolated outlier rejected as contact; genuine/double/sparse/restored contacts tested | Native checks pass |
 | Adapter | Explicit validity result and V2-to-StrikeTarget downstream parity | Native checks pass |
 | Coordinator | One owner, bounded history, packet prefix reconciliation and revocation epochs | Native component checks pass |
-| Plane and managed backend | Existing plane and one-shot planner integration, actual schema 4/5 | Pending |
-| Runner | Before-publication, before-engagement and engaged lifecycle evidence | Pending |
-| Continuous | Independent forecasts and statuses through commitment and recovery | Pending |
+| Plane and managed backend | Existing plane and one-shot planner integration, actual schema 4/5 | Development ROS checks pass |
+| Runner | Before-publication, before-engagement and engaged lifecycle evidence | Opt-in veto implemented; qualification pending |
+| Continuous | Independent forecasts and statuses through commitment and recovery | Development ROS/rate checks pass |
 | Qualification | IV01–IV24, gates A–L, native/sanitizer/ROS/rate/parity/accuracy evidence | Pending |
 
 User clarification makes closure of all four existing PR85 coverage failures
@@ -111,7 +111,51 @@ plane and packet-pipeline ROS groups pass. Ten coordinator native cases pass,
 including HOME changes and explicit expiry without a prior supported candidate.
 These checks do not replace the final clean-source qualification campaign.
 
-The production policy lifecycle probe currently stops at artifact validation:
-checked-in model_21800 is incompatible with shared HOME. This is a blocked
-Runner lifecycle test, not evidence that pre-engagement revocation works.
-No policy artifacts, Runner behavior or live deployment configuration changed.
+## Runner verification boundary
+
+Checked-in model_21800 is incompatible with shared HOME; that attempted probe
+and its artifact-validation errors are retained. The unchanged training checkpoint
+`hope_training/whole_body_tracking/checkpoints/{policy.onnx,deploy.yaml}` supports
+shared HOME and permits actual production PpPolicy inference in memory. It is not
+assumed to be the deployed robot artifact. No HAL or robot connection is used.
+
+The original receiver retains an obsolete valid target after invalid input, and
+the original policy can subsequently engage it. The optional
+`--planner-preengagement-revocation` changes this behavior for shared-HOME schemas
+4/5: an identity-bearing invalid packet permanently vetoes that flight for the
+current HOME. A final receiver lock spans the policy engagement transition.
+The option defaults off, and after-engagement swings still continue.
+
+Tests compare original PR85 production headers, the new option disabled, and the
+option enabled against the same ONNX artifact. They cover invalid input before
+any valid target, revocation after the policy observes a pending target, and
+revocation after engagement. A separate reproduced delivery-order defect required
+ordering revocations against their own flight, so a newer unrelated status cannot
+hide a delayed veto. That failing counterexample is retained and added to both
+native and production-policy tests. Qualification invocation 01 was interrupted
+during sanitizer compilation to include this correction before timing campaigns.
+
+## Frozen timing scope
+
+The incoming harness uses independent DOP853 truth, actual camera relays, the
+existing adaptive packetizer, PlannerNode, and the production command decoder.
+Every invocation declares ten flights. Continuous eligibility includes every
+offered ball epoch after 100 ms acquisition with more than 30 ms contact lead;
+command eligibility uses the ten distinct flight opportunities. Both require
+at least 95% coverage. Publication completion age and source-to-decoder P95 must
+remain within 30 ms. Full trajectory output is separately capped at 50 Hz.
+Stable generations, one immutable command per physical flight, explicit expiry
+within 30 ms of its deadline, and complete source-stage ledgers are required.
+
+The full ROS invocation includes 18 profiles: 150/300/360 Hz, three plane modes,
+and measured-zero/unknown spin. The separate incoming campaign declares five
+repetitions of each profile (90 runs, 900 flights). The original 160-run PR85
+campaign retains its original denominators and thresholds, with actual-stage
+accounting enabled in every declared run. The diagnostic pair still compares
+accounting on/off. No passing retry replaces a declared failure.
+
+The first two development producer-chain trials passed at 150/300 Hz. The 360 Hz
+stable-per-ball unknown-spin development trial covered 580/589 eligible epochs
+and all ten commands, with 11.659 ms maximum completion age, 9.960 ms decoder
+P95 and 3.272 ms maximum expiry notification delay. These development receipts
+do not constitute final-source qualification or physical-accuracy evidence.
