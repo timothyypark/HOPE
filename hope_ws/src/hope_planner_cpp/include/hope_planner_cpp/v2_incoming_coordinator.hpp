@@ -26,6 +26,7 @@ struct IncomingCounters {
   std::uint64_t offered = 0, qualified = 0, tracker_accepted = 0, tracker_rejected = 0;
   std::uint64_t queries = 0, completed = 0, obsolete = 0, commands = 0, revoked = 0;
   std::size_t history = 0, checkpoints = 0;
+  std::int64_t latest_source_ns = 0;
 };
 
 // One owner of physical state. Query copies are immutable source-cutoff views,
@@ -45,6 +46,7 @@ class V2IncomingCoordinator {
   bool publish(const IncomingQuery&, IncomingEvaluation&, std::int64_t now_ns,
                const std::function<bool(V2StrikeCandidate&)>& publication);
   void revoke(const std::string& reason);
+  void update_reference(const std::function<std::pair<std::uint64_t, bool>()>& update);
   void expire(std::int64_t now_ns);
   std::vector<V2StrikeCandidate> take_statuses();
   IncomingCounters counters() const;
@@ -54,6 +56,7 @@ class V2IncomingCoordinator {
   struct Checkpoint { std::int64_t source_ns; FlightPipeline pipeline; };
   IncomingQuery query(FlightPipeline, const IncomingPlane&, bool command);
   void revoke_locked(const std::string&);
+  void unavailable_locked(const std::string&, IncomingStatus);
   bool current(const IncomingQuery&, std::int64_t now_ns) const;
   static bool same_sample(const BallSample&, const BallSample&);
   mutable std::mutex mutex_;
@@ -63,11 +66,14 @@ class V2IncomingCoordinator {
   std::deque<Checkpoint> checkpoints_;
   std::deque<V2StrikeCandidate> statuses_;
   std::optional<V2StrikeCandidate> latest_candidate_, command_candidate_;
+  std::optional<IncomingPlane> latest_plane_;
   std::deque<std::pair<std::uint64_t, std::uint64_t>> claimed_flights_;
   std::string packet_producer_;
   std::uint64_t last_packet_sequence_ = 0, epoch_ = 1, revision_ = 0, published_revision_ = 0;
   std::uint64_t last_command_revision_ = 0;
-  bool source_fault_ = false, status_overflow_ = false;
+  bool source_fault_ = false, source_expired_ = false, status_overflow_ = false;
+  bool reference_received_ = false, reference_valid_ = false;
+  std::uint64_t home_epoch_ = 0;
   IncomingCounters counters_;
 };
 }  // namespace hope_planner_cpp

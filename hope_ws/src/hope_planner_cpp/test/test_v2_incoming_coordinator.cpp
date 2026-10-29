@@ -130,10 +130,52 @@ TEST(V2IncomingCoordinator, ExpiryAndSourceFaultBlockDelayedPublication) {
   source.owner.observe(bad, bad.source_time_ns);
   EXPECT_FALSE(source.owner.publish(query, result, bad.source_time_ns, [](auto&) { return true; }));
 }
+TEST(V2IncomingCoordinator, HomeUpdateRejectsStalePlaneEvenWhenQueryStartsAfterUpdate) {
+  Source source; source.to(31);
+  source.owner.update_reference([] { return std::make_pair(7u, true); });
+  auto query = source.owner.continuous(plane());
+  auto result = V2IncomingCoordinator::evaluate(query, source.now());
+  source.owner.update_reference([] { return std::make_pair(7u, true); });
+  ASSERT_TRUE(source.owner.publish(query, result, source.now(), [](auto&) { return true; }));
+  source.owner.update_reference([] { return std::make_pair(8u, true); });
+  auto stale_plane = source.owner.continuous(plane());
+  auto stale_result = V2IncomingCoordinator::evaluate(stale_plane, source.now());
+  EXPECT_FALSE(source.owner.publish(stale_plane, stale_result, source.now(), [](auto&) { return true; }));
+  const auto statuses = source.owner.take_statuses();
+  ASSERT_EQ(statuses.size(), 1u);
+  EXPECT_EQ(statuses[0].revokes_revision, result.candidate.revision);
+  EXPECT_EQ(statuses[0].plane.selection.epoch, 7u);
+}
 TEST(V2IncomingCoordinator, HistoryAndCheckpointsStayBounded) {
   Source source; source.to(700);
   EXPECT_LE(source.owner.counters().history, contract().history_capacity);
   EXPECT_LE(source.owner.counters().checkpoints, contract().checkpoint_capacity);
+}
+TEST(V2IncomingCoordinator, ExpiryIsExplicitWithoutAnEarlierSupportedCandidate) {
+  Source source; source.to(8);
+  source.owner.continuous(plane());
+  source.owner.expire(source.now()+30000001);
+  const auto statuses = source.owner.take_statuses();
+  ASSERT_FALSE(statuses.empty());
+  EXPECT_EQ(statuses.back().status, IncomingStatus::Expired);
+  EXPECT_EQ(statuses.back().source_ns, source.now());
+  EXPECT_FALSE(statuses.back().command_eligible);
+  source.owner.expire(source.now()+40000000);
+  EXPECT_TRUE(source.owner.take_statuses().empty());
+}
+TEST(V2IncomingCoordinator, MissingReferencePreservesPhysicalEvidenceWithoutCommandAuthority) {
+  Source source; source.to(31);
+  source.owner.update_reference([] { return std::make_pair(7u, false); });
+  auto query = source.owner.continuous(plane());
+  auto result = V2IncomingCoordinator::evaluate(query, source.now());
+  ASSERT_TRUE(result.candidate.strike_contact_supported);
+  EXPECT_TRUE(source.owner.publish(query, result, source.now(), [](const auto& candidate) {
+    EXPECT_TRUE(candidate.physical_state_available);
+    EXPECT_TRUE(candidate.strike_contact_supported);
+    EXPECT_FALSE(candidate.command_eligible);
+    EXPECT_EQ(candidate.reason, "REFERENCE_UNAVAILABLE");
+    return true;
+  }));
 }
 TEST(V2IncomingCoordinator, ConfirmedSecondBounceRetiresPreviouslySupportedWorker) {
   Source source;

@@ -31,12 +31,16 @@ bool V2IncomingCoordinator::observe(const BallSample& sample, std::int64_t now_n
       sample.clock_domain != contract_.clock_domain || sample.clock_mapping_id != contract_.clock_mapping ||
       sample.ball_id != contract_.ball || age < -1000000.L ||
       age > pipeline_.settings().max_source_age_s * 1e9L) {
+    if (!source_fault_) {
+      revoke_locked("SOURCE_UNQUALIFIED");
+      unavailable_locked("SOURCE_UNQUALIFIED", IncomingStatus::Unavailable);
+    }
     source_fault_ = true;
-    revoke_locked("SOURCE_UNQUALIFIED");
     return false;
   }
   if (!history_.empty() && sample.source_time_ns <= history_.back().source_time_ns) return false;
   source_fault_ = false;
+  source_expired_ = false;
   ++counters_.qualified;
   const auto generation = pipeline_.shot().generation(), revision = pipeline_.shot().revision();
   const bool accepted = pipeline_.observe(sample);
@@ -71,6 +75,7 @@ bool V2IncomingCoordinator::observe(const BallSample& sample, std::int64_t now_n
 IncomingQuery V2IncomingCoordinator::query(FlightPipeline pipeline, const IncomingPlane& plane,
                                          bool command) {
   ++counters_.queries;
+  latest_plane_ = plane;
   return {std::move(pipeline), plane, epoch_, ++revision_, command, {}};
 }
 IncomingQuery V2IncomingCoordinator::continuous(const IncomingPlane& plane) {
@@ -167,6 +172,8 @@ IncomingEvaluation V2IncomingCoordinator::evaluate(IncomingQuery& query, std::in
 }
 
 bool V2IncomingCoordinator::current(const IncomingQuery& query, std::int64_t now_ns) const {
+  if (reference_received_ && ((query.command && !reference_valid_) ||
+      (query.plane.snapshot.calibrated && query.plane.selection.epoch != home_epoch_))) return false;
   if (source_fault_ || status_overflow_ || query.semantic_epoch != epoch_ ||
       query.pipeline.shot().generation() != pipeline_.shot().generation() ||
       query.pipeline.shot().revision() != pipeline_.shot().revision()) return false;
@@ -185,6 +192,11 @@ bool V2IncomingCoordinator::publish(const IncomingQuery& query, IncomingEvaluati
   }
   auto& candidate = result.candidate;
   candidate.session_id = contract_.session;
+  if (reference_received_ && !reference_valid_) {
+    candidate.command_eligible = false;
+    candidate.status = IncomingStatus::Unavailable;
+    candidate.reason = "REFERENCE_UNAVAILABLE";
+  }
   if (query.command && (query.revision <= last_command_revision_ ||
       !v2_strike_target(candidate, now_ns).valid)) return false;
   if (!query.command && !candidate.strike_contact_supported &&
@@ -220,6 +232,7 @@ void V2IncomingCoordinator::revoke_locked(const std::string& reason) {
     status.command_eligible = status.strike_contact_supported = false;
     status.reason = reason;
     status.semantic_epoch = epoch_;
+    status.revokes_revision = previous->revision;
     status.revision = ++revision_;
     published_revision_ = status.revision;
     if (statuses_.size() >= 64) status_overflow_ = true;
@@ -234,15 +247,43 @@ void V2IncomingCoordinator::revoke(const std::string& reason) {
   std::lock_guard<std::mutex> lock(mutex_);
   revoke_locked(reason);
 }
+void V2IncomingCoordinator::unavailable_locked(const std::string& reason, IncomingStatus state) {
+  V2StrikeCandidate status;
+  if (latest_plane_) status.plane = *latest_plane_;
+  status.session_id = contract_.session;
+  status.status = state; status.reason = reason;
+  status.semantic_epoch = epoch_; status.revision = ++revision_;
+  status.token.generation = pipeline_.shot().generation();
+  status.token.context_revision = pipeline_.shot().revision();
+  if (!history_.empty()) status.source_ns = history_.back().source_time_ns;
+  status.token.source_ns = status.source_ns;
+  status.expires_ns = status.source_ns + std::llround(pipeline_.settings().max_source_age_s * 1e9);
+  published_revision_ = status.revision;
+  if (statuses_.size() >= 64) status_overflow_ = true;
+  else statuses_.push_back(std::move(status));
+}
+void V2IncomingCoordinator::update_reference(
+    const std::function<std::pair<std::uint64_t, bool>()>& update) {
+  std::lock_guard<std::mutex> lock(mutex_);
+  const auto [epoch, valid] = update();
+  if (epoch != home_epoch_) revoke_locked("HOME_CHANGED");
+  else if (reference_valid_ && !valid) revoke_locked("REFERENCE_UNAVAILABLE");
+  reference_received_ = true;
+  home_epoch_ = epoch;
+  reference_valid_ = valid;
+}
 void V2IncomingCoordinator::expire(std::int64_t now_ns) {
   std::lock_guard<std::mutex> lock(mutex_);
   // An accepted one-shot command keeps its original source timestamp. Its
   // flight may remain supported by newer authoritative observations; do not
   // impose a 30 ms execution lease on the existing absolute strike deadline.
-  if (!history_.empty() && static_cast<long double>(now_ns) - history_.back().source_time_ns >
-      pipeline_.settings().max_source_age_s * 1e9L)
+  if (!history_.empty() && !source_expired_ &&
+      static_cast<long double>(now_ns) - history_.back().source_time_ns >
+      pipeline_.settings().max_source_age_s * 1e9L) {
     revoke_locked("SOURCE_EXPIRED");
-  else if (command_candidate_ && command_candidate_->contact &&
+    source_expired_ = true;
+    unavailable_locked("SOURCE_EXPIRED", IncomingStatus::Expired);
+  } else if (command_candidate_ && command_candidate_->contact &&
            now_ns >= command_candidate_->contact->arrival_ns)
     revoke_locked("CONTACT_EXPIRED");
 }
@@ -257,6 +298,7 @@ IncomingCounters V2IncomingCoordinator::counters() const {
   std::lock_guard<std::mutex> lock(mutex_);
   auto result = counters_;
   result.history = history_.size(); result.checkpoints = checkpoints_.size();
+  result.latest_source_ns = history_.empty() ? 0 : history_.back().source_time_ns;
   return result;
 }
 ShotSnapshot V2IncomingCoordinator::state() const {
