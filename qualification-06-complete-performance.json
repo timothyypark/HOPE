@@ -1,0 +1,1512 @@
+{
+  "scope": "All trials, including failures. Observed-publication and matching-decoder latency only; missing opportunities retain failed coverage. No pooled passing verdict.",
+  "old_campaign": {
+    "minimum_coverage": 0.8125,
+    "publication_max_ms": 24.882178,
+    "worst_decoder_p95_ms": 7.338433,
+    "trials": [
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 14.748483,
+        "decoder_p95_ms": 4.9455604
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.402067,
+        "decoder_p95_ms": 4.705716600000001
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.443585,
+        "decoder_p95_ms": 5.1224094000000004
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.907308,
+        "decoder_p95_ms": 4.215751399999999
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 14.85131,
+        "decoder_p95_ms": 5.945036049999996
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.350631,
+        "decoder_p95_ms": 3.736739000000001
+      },
+      {
+        "profile": "review_refresh_150_10_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.376142,
+        "decoder_p95_ms": 4.1867224999999975
+      },
+      {
+        "profile": "review_refresh_150_12_known",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.920767,
+        "decoder_p95_ms": 6.609840600000003
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.223895,
+        "decoder_p95_ms": 4.5645222
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.9933333333333333,
+        "publication_max_ms": 7.472445,
+        "decoder_p95_ms": 3.495857099999999
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.99375,
+        "publication_max_ms": 7.076739,
+        "decoder_p95_ms": 3.05237615
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.99375,
+        "publication_max_ms": 24.789556,
+        "decoder_p95_ms": 5.3507787499999955
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.061688,
+        "decoder_p95_ms": 3.0557659999999998
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.72117,
+        "decoder_p95_ms": 3.212566399999999
+      },
+      {
+        "profile": "review_refresh_300_10_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 12.602953,
+        "decoder_p95_ms": 3.4861358999999994
+      },
+      {
+        "profile": "review_refresh_300_12_known",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.353078,
+        "decoder_p95_ms": 4.223978899999998
+      },
+      {
+        "profile": "review_chain_150_10_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.142854,
+        "decoder_p95_ms": 4.3637272000000005
+      },
+      {
+        "profile": "review_chain_150_10_zero",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.9868421052631579,
+        "publication_max_ms": 7.880429,
+        "decoder_p95_ms": 4.9116927999999875
+      },
+      {
+        "profile": "review_chain_150_10_known",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.020395,
+        "decoder_p95_ms": 4.112697399999999
+      },
+      {
+        "profile": "review_chain_150_12_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.774573,
+        "decoder_p95_ms": 4.3961646
+      },
+      {
+        "profile": "review_chain_150_12_zero",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.717329,
+        "decoder_p95_ms": 4.921280199999999
+      },
+      {
+        "profile": "review_chain_150_12_known",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 4.761206,
+        "decoder_p95_ms": 4.3829506
+      },
+      {
+        "profile": "integrated_chain_150_FOLLOW_POSE",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 4.791078,
+        "decoder_p95_ms": 3.361222
+      },
+      {
+        "profile": "integrated_chain_150_ON_REFRESH",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.975609756097561,
+        "publication_max_ms": 5.698069,
+        "decoder_p95_ms": 3.5075584
+      },
+      {
+        "profile": "review_chain_300_10_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.9873417721518988,
+        "publication_max_ms": 6.274252,
+        "decoder_p95_ms": 4.639588449999998
+      },
+      {
+        "profile": "review_chain_300_10_zero",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.286237,
+        "decoder_p95_ms": 2.8652237
+      },
+      {
+        "profile": "review_chain_300_10_known",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.9931972789115646,
+        "publication_max_ms": 5.592224,
+        "decoder_p95_ms": 3.5100360999999975
+      },
+      {
+        "profile": "review_chain_300_12_unknown",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 4.245904,
+        "decoder_p95_ms": 2.923926099999999
+      },
+      {
+        "profile": "review_chain_300_12_zero",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.513776,
+        "decoder_p95_ms": 3.957001299999999
+      },
+      {
+        "profile": "review_chain_300_12_known",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.967741935483871,
+        "publication_max_ms": 5.280841,
+        "decoder_p95_ms": 3.8717689999999996
+      },
+      {
+        "profile": "integrated_chain_300_FOLLOW_POSE",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.9878048780487805,
+        "publication_max_ms": 4.469528,
+        "decoder_p95_ms": 3.35595525
+      },
+      {
+        "profile": "integrated_chain_300_ON_REFRESH",
+        "repetition": 1,
+        "status": "PASS",
+        "coverage": 0.975609756097561,
+        "publication_max_ms": 5.284552,
+        "decoder_p95_ms": 3.016643799999999
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.998387,
+        "decoder_p95_ms": 5.565911400000001
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.151636,
+        "decoder_p95_ms": 3.5638152999999986
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 13.665793,
+        "decoder_p95_ms": 3.9867106000000003
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.27406,
+        "decoder_p95_ms": 3.9568166000000002
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.935417,
+        "decoder_p95_ms": 3.3819550000000005
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.188013,
+        "decoder_p95_ms": 4.0312782
+      },
+      {
+        "profile": "review_refresh_150_10_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.719417,
+        "decoder_p95_ms": 3.6407185999999996
+      },
+      {
+        "profile": "review_refresh_150_12_known",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.9927,
+        "decoder_p95_ms": 5.338308249999998
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.99375,
+        "publication_max_ms": 9.493501,
+        "decoder_p95_ms": 4.684801799999999
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 13.2611,
+        "decoder_p95_ms": 2.9916134
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.162051,
+        "decoder_p95_ms": 3.7743870000000004
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.99375,
+        "publication_max_ms": 9.992219,
+        "decoder_p95_ms": 5.289467200000001
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.554932,
+        "decoder_p95_ms": 3.2626749999999998
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 24.882178,
+        "decoder_p95_ms": 4.619217
+      },
+      {
+        "profile": "review_refresh_300_10_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 13.252686,
+        "decoder_p95_ms": 5.341853549999998
+      },
+      {
+        "profile": "review_refresh_300_12_known",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.972972972972973,
+        "publication_max_ms": 5.500516,
+        "decoder_p95_ms": 5.3671172999999985
+      },
+      {
+        "profile": "review_chain_150_10_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.468603,
+        "decoder_p95_ms": 5.520540249999997
+      },
+      {
+        "profile": "review_chain_150_10_zero",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.9875,
+        "publication_max_ms": 19.999627,
+        "decoder_p95_ms": 4.589383399999997
+      },
+      {
+        "profile": "review_chain_150_10_known",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 14.166584,
+        "decoder_p95_ms": 4.69141085
+      },
+      {
+        "profile": "review_chain_150_12_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.953139,
+        "decoder_p95_ms": 5.41052415
+      },
+      {
+        "profile": "review_chain_150_12_zero",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.193575,
+        "decoder_p95_ms": 5.067743599999992
+      },
+      {
+        "profile": "review_chain_150_12_known",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.931478,
+        "decoder_p95_ms": 4.352471699999996
+      },
+      {
+        "profile": "integrated_chain_150_FOLLOW_POSE",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 5.462996,
+        "decoder_p95_ms": 4.661409
+      },
+      {
+        "profile": "integrated_chain_150_ON_REFRESH",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 4.721891,
+        "decoder_p95_ms": 3.960198
+      },
+      {
+        "profile": "review_chain_300_10_unknown",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.336193,
+        "decoder_p95_ms": 3.80679
+      },
+      {
+        "profile": "review_chain_300_10_zero",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.9932885906040269,
+        "publication_max_ms": 21.514961,
+        "decoder_p95_ms": 3.8202777999999995
+      },
+      {
+        "profile": "review_chain_300_10_known",
+        "repetition": 2,
+        "status": "FAIL",
+        "coverage": 0.9256756756756757,
+        "publication_max_ms": 8.825879,
+        "decoder_p95_ms": 5.178842200000001
+      },
+      {
+        "profile": "review_chain_300_12_unknown",
+        "repetition": 2,
+        "status": "FAIL",
+        "coverage": 0.9230769230769231,
+        "publication_max_ms": 23.545023,
+        "decoder_p95_ms": 4.02016
+      },
+      {
+        "profile": "review_chain_300_12_zero",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.944727,
+        "decoder_p95_ms": 3.808443
+      },
+      {
+        "profile": "review_chain_300_12_known",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.972972972972973,
+        "publication_max_ms": 6.345106,
+        "decoder_p95_ms": 5.635723899999999
+      },
+      {
+        "profile": "integrated_chain_300_FOLLOW_POSE",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.975609756097561,
+        "publication_max_ms": 6.52016,
+        "decoder_p95_ms": 3.849414699999999
+      },
+      {
+        "profile": "integrated_chain_300_ON_REFRESH",
+        "repetition": 2,
+        "status": "PASS",
+        "coverage": 0.9753086419753086,
+        "publication_max_ms": 7.668638,
+        "decoder_p95_ms": 5.0474988
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.642668,
+        "decoder_p95_ms": 3.9427902000000006
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.6961,
+        "decoder_p95_ms": 3.9085892000000024
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 13.993916,
+        "decoder_p95_ms": 4.136538199999998
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9875,
+        "publication_max_ms": 8.512106,
+        "decoder_p95_ms": 4.248775049999998
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.414827,
+        "decoder_p95_ms": 5.4353264999999995
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.118337,
+        "decoder_p95_ms": 3.5084024000000005
+      },
+      {
+        "profile": "review_refresh_150_10_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.346404,
+        "decoder_p95_ms": 5.583317649999998
+      },
+      {
+        "profile": "review_refresh_150_12_known",
+        "repetition": 3,
+        "status": "FAIL",
+        "coverage": 0.9090909090909091,
+        "publication_max_ms": 5.218563,
+        "decoder_p95_ms": 4.6174458
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9620253164556962,
+        "publication_max_ms": 19.428456,
+        "decoder_p95_ms": 7.322293499999986
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.694509,
+        "decoder_p95_ms": 3.6291799
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.99375,
+        "publication_max_ms": 15.314502,
+        "decoder_p95_ms": 4.1758625
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 15.256569,
+        "decoder_p95_ms": 3.792691749999999
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9933333333333333,
+        "publication_max_ms": 6.878412,
+        "decoder_p95_ms": 4.609454
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.98125,
+        "publication_max_ms": 16.289001,
+        "decoder_p95_ms": 5.297500999999999
+      },
+      {
+        "profile": "review_refresh_300_10_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.147304,
+        "decoder_p95_ms": 4.176525
+      },
+      {
+        "profile": "review_refresh_300_12_known",
+        "repetition": 3,
+        "status": "FAIL",
+        "coverage": 0.9166666666666666,
+        "publication_max_ms": 8.255704,
+        "decoder_p95_ms": 6.214311299999998
+      },
+      {
+        "profile": "review_chain_150_10_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 4.775892,
+        "decoder_p95_ms": 3.447352549999997
+      },
+      {
+        "profile": "review_chain_150_10_zero",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.520178,
+        "decoder_p95_ms": 4.840237749999998
+      },
+      {
+        "profile": "review_chain_150_10_known",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 14.820695,
+        "decoder_p95_ms": 3.9566394999999996
+      },
+      {
+        "profile": "review_chain_150_12_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.606569,
+        "decoder_p95_ms": 5.5677465
+      },
+      {
+        "profile": "review_chain_150_12_zero",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 11.453281,
+        "decoder_p95_ms": 5.086813999999996
+      },
+      {
+        "profile": "review_chain_150_12_known",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.568803,
+        "decoder_p95_ms": 5.2489938
+      },
+      {
+        "profile": "integrated_chain_150_FOLLOW_POSE",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 4.599281,
+        "decoder_p95_ms": 4.750594
+      },
+      {
+        "profile": "integrated_chain_150_ON_REFRESH",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 5.892384,
+        "decoder_p95_ms": 5.609405
+      },
+      {
+        "profile": "review_chain_300_10_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.858004,
+        "decoder_p95_ms": 4.793240399999995
+      },
+      {
+        "profile": "review_chain_300_10_zero",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.711437,
+        "decoder_p95_ms": 4.245608199999999
+      },
+      {
+        "profile": "review_chain_300_10_known",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.161577,
+        "decoder_p95_ms": 3.200480799999999
+      },
+      {
+        "profile": "review_chain_300_12_unknown",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9736842105263158,
+        "publication_max_ms": 6.54628,
+        "decoder_p95_ms": 4.079847449999998
+      },
+      {
+        "profile": "review_chain_300_12_zero",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.748734,
+        "decoder_p95_ms": 3.3993727999999988
+      },
+      {
+        "profile": "review_chain_300_12_known",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9722222222222222,
+        "publication_max_ms": 11.337258,
+        "decoder_p95_ms": 5.775799799999999
+      },
+      {
+        "profile": "integrated_chain_300_FOLLOW_POSE",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9629629629629629,
+        "publication_max_ms": 8.136496,
+        "decoder_p95_ms": 5.402960200000001
+      },
+      {
+        "profile": "integrated_chain_300_ON_REFRESH",
+        "repetition": 3,
+        "status": "PASS",
+        "coverage": 0.9634146341463414,
+        "publication_max_ms": 10.755621,
+        "decoder_p95_ms": 5.605862449999997
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.10986,
+        "decoder_p95_ms": 4.093125
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.9875,
+        "publication_max_ms": 11.230502,
+        "decoder_p95_ms": 5.525210799999997
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 13.482912,
+        "decoder_p95_ms": 4.6688084000000005
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 12.707134,
+        "decoder_p95_ms": 4.875711199999998
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.9875,
+        "publication_max_ms": 12.028991,
+        "decoder_p95_ms": 4.582283199999998
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.472016,
+        "decoder_p95_ms": 4.599114000000001
+      },
+      {
+        "profile": "review_refresh_150_10_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 15.430348,
+        "decoder_p95_ms": 3.5491303999999997
+      },
+      {
+        "profile": "review_refresh_150_12_known",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 3.693198,
+        "decoder_p95_ms": 3.1244966
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+        "repetition": 4,
+        "status": "FAIL",
+        "coverage": 0.94375,
+        "publication_max_ms": 19.726549,
+        "decoder_p95_ms": 5.224109549999997
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.58594,
+        "decoder_p95_ms": 3.2740650000000002
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.824418,
+        "decoder_p95_ms": 4.349801299999998
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.98125,
+        "publication_max_ms": 12.361082,
+        "decoder_p95_ms": 4.9530894000000005
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.98,
+        "publication_max_ms": 17.83909,
+        "decoder_p95_ms": 5.702329749999996
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 4.265385,
+        "decoder_p95_ms": 3.28686875
+      },
+      {
+        "profile": "review_refresh_300_10_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.396872,
+        "decoder_p95_ms": 4.154546
+      },
+      {
+        "profile": "review_refresh_300_12_known",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.503182,
+        "decoder_p95_ms": 3.7645761999999996
+      },
+      {
+        "profile": "review_chain_150_10_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.118924,
+        "decoder_p95_ms": 4.533617699999999
+      },
+      {
+        "profile": "review_chain_150_10_zero",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.9875,
+        "publication_max_ms": 12.935475,
+        "decoder_p95_ms": 5.886051999999995
+      },
+      {
+        "profile": "review_chain_150_10_known",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.929349,
+        "decoder_p95_ms": 4.459500099999999
+      },
+      {
+        "profile": "review_chain_150_12_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.716788,
+        "decoder_p95_ms": 5.384290399999999
+      },
+      {
+        "profile": "review_chain_150_12_zero",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.508856,
+        "decoder_p95_ms": 4.8067659
+      },
+      {
+        "profile": "review_chain_150_12_known",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.787486,
+        "decoder_p95_ms": 4.834858199999996
+      },
+      {
+        "profile": "integrated_chain_150_FOLLOW_POSE",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 7.333117,
+        "decoder_p95_ms": 5.830087
+      },
+      {
+        "profile": "integrated_chain_150_ON_REFRESH",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 8.191266,
+        "decoder_p95_ms": 4.599665
+      },
+      {
+        "profile": "review_chain_300_10_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.9733333333333334,
+        "publication_max_ms": 24.409549,
+        "decoder_p95_ms": 4.801301799999998
+      },
+      {
+        "profile": "review_chain_300_10_zero",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.064388,
+        "decoder_p95_ms": 3.8374375999999977
+      },
+      {
+        "profile": "review_chain_300_10_known",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.742151,
+        "decoder_p95_ms": 4.93977875
+      },
+      {
+        "profile": "review_chain_300_12_unknown",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 14.655753,
+        "decoder_p95_ms": 7.254885299999996
+      },
+      {
+        "profile": "review_chain_300_12_zero",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.533954,
+        "decoder_p95_ms": 3.2570449999999997
+      },
+      {
+        "profile": "review_chain_300_12_known",
+        "repetition": 4,
+        "status": "FAIL",
+        "coverage": 0.8125,
+        "publication_max_ms": 8.593028,
+        "decoder_p95_ms": 6.54312975
+      },
+      {
+        "profile": "integrated_chain_300_FOLLOW_POSE",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.975609756097561,
+        "publication_max_ms": 5.399541,
+        "decoder_p95_ms": 3.6099936
+      },
+      {
+        "profile": "integrated_chain_300_ON_REFRESH",
+        "repetition": 4,
+        "status": "PASS",
+        "coverage": 0.975609756097561,
+        "publication_max_ms": 7.926853,
+        "decoder_p95_ms": 3.56700175
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 4.661801,
+        "decoder_p95_ms": 3.7511626000000002
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.704148,
+        "decoder_p95_ms": 3.7438641999999995
+      },
+      {
+        "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 14.720049,
+        "decoder_p95_ms": 5.1784974
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.9875,
+        "publication_max_ms": 20.256664,
+        "decoder_p95_ms": 6.486498
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 14.489933,
+        "decoder_p95_ms": 4.890505799999999
+      },
+      {
+        "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.951957,
+        "decoder_p95_ms": 3.6746944
+      },
+      {
+        "profile": "review_refresh_150_10_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 17.610467,
+        "decoder_p95_ms": 4.316727399999998
+      },
+      {
+        "profile": "review_refresh_150_12_known",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.775998,
+        "decoder_p95_ms": 4.3234825500000005
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 7.802469,
+        "decoder_p95_ms": 3.384573099999998
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.9866666666666667,
+        "publication_max_ms": 8.601079,
+        "decoder_p95_ms": 4.4944502
+      },
+      {
+        "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.975,
+        "publication_max_ms": 7.961071,
+        "decoder_p95_ms": 3.4046830000000003
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 18.009191,
+        "decoder_p95_ms": 3.704085999999999
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.14856,
+        "decoder_p95_ms": 3.9364997999999978
+      },
+      {
+        "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+        "repetition": 5,
+        "status": "FAIL",
+        "coverage": 1.0,
+        "publication_max_ms": 6.737405,
+        "decoder_p95_ms": 2.989142799999999
+      },
+      {
+        "profile": "review_refresh_300_10_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 5.083785,
+        "decoder_p95_ms": 2.78259825
+      },
+      {
+        "profile": "review_refresh_300_12_known",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.9714285714285714,
+        "publication_max_ms": 10.077848,
+        "decoder_p95_ms": 3.8555213999999998
+      },
+      {
+        "profile": "review_chain_150_10_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.180049,
+        "decoder_p95_ms": 4.2612593
+      },
+      {
+        "profile": "review_chain_150_10_zero",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.210118,
+        "decoder_p95_ms": 4.321504299999999
+      },
+      {
+        "profile": "review_chain_150_10_known",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.126981,
+        "decoder_p95_ms": 4.5748444
+      },
+      {
+        "profile": "review_chain_150_12_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 10.603022,
+        "decoder_p95_ms": 4.663707
+      },
+      {
+        "profile": "review_chain_150_12_zero",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.423453,
+        "decoder_p95_ms": 6.160373249999999
+      },
+      {
+        "profile": "review_chain_150_12_known",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 8.073439,
+        "decoder_p95_ms": 5.605083
+      },
+      {
+        "profile": "integrated_chain_150_FOLLOW_POSE",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 3.188491,
+        "decoder_p95_ms": 3.308263
+      },
+      {
+        "profile": "integrated_chain_150_ON_REFRESH",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.9512195121951219,
+        "publication_max_ms": 12.377568,
+        "decoder_p95_ms": 7.338433
+      },
+      {
+        "profile": "review_chain_300_10_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 6.650183,
+        "decoder_p95_ms": 3.2671219999999996
+      },
+      {
+        "profile": "review_chain_300_10_zero",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.9801324503311258,
+        "publication_max_ms": 8.196398,
+        "decoder_p95_ms": 4.5725637999999975
+      },
+      {
+        "profile": "review_chain_300_10_known",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.9795918367346939,
+        "publication_max_ms": 11.19319,
+        "decoder_p95_ms": 4.865322999999999
+      },
+      {
+        "profile": "review_chain_300_12_unknown",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 9.233454,
+        "decoder_p95_ms": 6.089191250000001
+      },
+      {
+        "profile": "review_chain_300_12_zero",
+        "repetition": 5,
+        "status": "FAIL",
+        "coverage": 0.9428571428571428,
+        "publication_max_ms": 16.173754,
+        "decoder_p95_ms": 5.5301012499999995
+      },
+      {
+        "profile": "review_chain_300_12_known",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 1.0,
+        "publication_max_ms": 3.979086,
+        "decoder_p95_ms": 3.3780685
+      },
+      {
+        "profile": "integrated_chain_300_FOLLOW_POSE",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.9629629629629629,
+        "publication_max_ms": 7.653829,
+        "decoder_p95_ms": 4.803034099999998
+      },
+      {
+        "profile": "integrated_chain_300_ON_REFRESH",
+        "repetition": 5,
+        "status": "PASS",
+        "coverage": 0.975609756097561,
+        "publication_max_ms": 7.942233,
+        "decoder_p95_ms": 3.7898377500000002
+      }
+    ]
+  },
+  "incoming_campaign": {
+    "maximum_actual_command_publication_age_ms": 17.579081,
+    "failures": [
+      {
+        "profile": "incoming_chain_300_per_ball_zero",
+        "repetition": 1,
+        "failed_gates": [
+          "one_shot_coverage",
+          "command_flight_identity"
+        ],
+        "commands": 9,
+        "packets": 10,
+        "continuous_coverage": 0.9958592132505176,
+        "publication_completion_max_ms": 24.539095,
+        "command_publication_max_ms": 4.515184,
+        "decoder_p95_ms": 5.6515623999999995,
+        "command_rejection_reasons": {
+          "PACKET_OBSERVATION_PREFIX_MISMATCH": 1
+        },
+        "missing_forecast_first_stages": {
+          "PLANNER_RECEIVED_NO_FORECAST": 1,
+          "PENDING_SUPERSEDED": 1
+        },
+        "source_cadence": {
+          "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+          "requested_rate_hz": 300,
+          "actual_rate_hz": 298.88984173502575,
+          "minimum_interval_ns": 1831902,
+          "maximum_lateness_ns": 13301539,
+          "resynchronizations": 11,
+          "missed_nominal_ticks": 4,
+          "samples": 2992,
+          "valid": true
+        }
+      },
+      {
+        "profile": "incoming_chain_360_per_ball_unknown",
+        "repetition": 1,
+        "failed_gates": [
+          "one_shot_coverage",
+          "command_flight_identity"
+        ],
+        "commands": 9,
+        "packets": 9,
+        "continuous_coverage": 0.9666666666666667,
+        "publication_completion_max_ms": 22.451445,
+        "command_publication_max_ms": 4.300685,
+        "decoder_p95_ms": 5.1443541999999995,
+        "command_rejection_reasons": {},
+        "missing_forecast_first_stages": {
+          "PLANNER_RECEIVED_NO_FORECAST": 4,
+          "PENDING_SUPERSEDED": 14,
+          "WORKER_RETIRED": 1
+        },
+        "source_cadence": {
+          "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+          "requested_rate_hz": 360,
+          "actual_rate_hz": 355.40046086322025,
+          "minimum_interval_ns": 1506390,
+          "maximum_lateness_ns": 34204462,
+          "resynchronizations": 32,
+          "missed_nominal_ticks": 28,
+          "samples": 3559,
+          "valid": true
+        }
+      },
+      {
+        "profile": "incoming_chain_150_per_ball_unknown",
+        "repetition": 3,
+        "failed_gates": [
+          "one_shot_coverage",
+          "command_flight_identity"
+        ],
+        "commands": 9,
+        "packets": 10,
+        "continuous_coverage": 0.984,
+        "publication_completion_max_ms": 12.852385,
+        "command_publication_max_ms": 6.232708,
+        "decoder_p95_ms": 5.868981799999999,
+        "command_rejection_reasons": {
+          "PACKET_OBSERVATION_PREFIX_MISMATCH": 1
+        },
+        "missing_forecast_first_stages": {
+          "PLANNER_RECEIVED_NO_FORECAST": 1,
+          "PENDING_SUPERSEDED": 3
+        },
+        "source_cadence": {
+          "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+          "requested_rate_hz": 150,
+          "actual_rate_hz": 149.90376046251535,
+          "minimum_interval_ns": 3556582,
+          "maximum_lateness_ns": 6374667,
+          "resynchronizations": 1,
+          "missed_nominal_ticks": 0,
+          "samples": 1502,
+          "valid": true
+        }
+      },
+      {
+        "profile": "incoming_chain_150_per_ball_zero",
+        "repetition": 4,
+        "failed_gates": [
+          "one_shot_coverage",
+          "command_flight_identity"
+        ],
+        "commands": 9,
+        "packets": 9,
+        "continuous_coverage": 0.9957446808510638,
+        "publication_completion_max_ms": 17.886149,
+        "command_publication_max_ms": 4.127367,
+        "decoder_p95_ms": 4.050644999999999,
+        "command_rejection_reasons": {},
+        "missing_forecast_first_stages": {
+          "PENDING_SUPERSEDED": 1
+        },
+        "source_cadence": {
+          "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+          "requested_rate_hz": 150,
+          "actual_rate_hz": 149.37669133382423,
+          "minimum_interval_ns": 4059016,
+          "maximum_lateness_ns": 41563164,
+          "resynchronizations": 1,
+          "missed_nominal_ticks": 6,
+          "samples": 1496,
+          "valid": true
+        }
+      },
+      {
+        "profile": "incoming_chain_150_stable_per_ball_zero",
+        "repetition": 4,
+        "failed_gates": [
+          "one_shot_coverage",
+          "command_flight_identity"
+        ],
+        "commands": 9,
+        "packets": 10,
+        "continuous_coverage": 0.9631147540983607,
+        "publication_completion_max_ms": 11.242486,
+        "command_publication_max_ms": 6.016736,
+        "decoder_p95_ms": 6.5194725999999985,
+        "command_rejection_reasons": {
+          "PACKET_SOURCE_EXPIRED_OR_UNQUALIFIED": 1
+        },
+        "missing_forecast_first_stages": {
+          "PENDING_SUPERSEDED": 9
+        },
+        "source_cadence": {
+          "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+          "requested_rate_hz": 150,
+          "actual_rate_hz": 149.55868675285348,
+          "minimum_interval_ns": 4898807,
+          "maximum_lateness_ns": 13539371,
+          "resynchronizations": 3,
+          "missed_nominal_ticks": 3,
+          "samples": 1498,
+          "valid": true
+        }
+      },
+      {
+        "profile": "incoming_chain_360_stable_per_ball_zero",
+        "repetition": 4,
+        "failed_gates": [
+          "one_shot_coverage",
+          "command_flight_identity"
+        ],
+        "commands": 9,
+        "packets": 10,
+        "continuous_coverage": 0.972027972027972,
+        "publication_completion_max_ms": 21.994287,
+        "command_publication_max_ms": 11.72059,
+        "decoder_p95_ms": 8.1134004,
+        "command_rejection_reasons": {
+          "PACKET_OBSERVATION_PREFIX_MISMATCH": 1
+        },
+        "missing_forecast_first_stages": {
+          "PLANNER_RECEIVED_NO_FORECAST": 6,
+          "PENDING_SUPERSEDED": 9,
+          "WORKER_RETIRED": 1
+        },
+        "source_cadence": {
+          "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+          "requested_rate_hz": 360,
+          "actual_rate_hz": 357.34699043340464,
+          "minimum_interval_ns": 1543085,
+          "maximum_lateness_ns": 6404851,
+          "resynchronizations": 32,
+          "missed_nominal_ticks": 7,
+          "samples": 3577,
+          "valid": true
+        }
+      },
+      {
+        "profile": "incoming_chain_300_fixed_unknown",
+        "repetition": 5,
+        "failed_gates": [
+          "completion_age"
+        ],
+        "commands": 10,
+        "packets": 10,
+        "continuous_coverage": 0.9662447257383966,
+        "publication_completion_max_ms": 54.731069,
+        "command_publication_max_ms": 13.255541,
+        "decoder_p95_ms": 11.803201749999992,
+        "command_rejection_reasons": {},
+        "missing_forecast_first_stages": {
+          "PENDING_SUPERSEDED": 12,
+          "PLANNER_RECEIVED_NO_FORECAST": 4
+        },
+        "source_cadence": {
+          "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+          "requested_rate_hz": 300,
+          "actual_rate_hz": 296.7751324764623,
+          "minimum_interval_ns": 1755611,
+          "maximum_lateness_ns": 32228575,
+          "resynchronizations": 28,
+          "missed_nominal_ticks": 15,
+          "samples": 2973,
+          "valid": true
+        }
+      }
+    ]
+  }
+}

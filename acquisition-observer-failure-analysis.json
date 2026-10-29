@@ -1,0 +1,276 @@
+[
+  {
+    "run": "post-pacing",
+    "profile": "reacquisition_delayed_150",
+    "round": 1,
+    "source_A_exposures": 6,
+    "actual_observation_stages": [
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793283306859478485",
+        "sequence": "351",
+        "generation": "4",
+        "wall_ns": "1793283306861370784",
+        "steady_ns": "342417513868301",
+        "duration_ns": "75162",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793283306866297116",
+        "sequence": "352",
+        "generation": "4",
+        "wall_ns": "1793283306867562024",
+        "steady_ns": "342417520059550",
+        "duration_ns": "9964",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793283306872915859",
+        "sequence": "353",
+        "generation": "4",
+        "wall_ns": "1793283306874417307",
+        "steady_ns": "342417526914854",
+        "duration_ns": "9244",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793283306879571287",
+        "sequence": "354",
+        "generation": "4",
+        "wall_ns": "1793283306881075779",
+        "steady_ns": "342417533573326",
+        "duration_ns": "8482",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793283306886251491",
+        "sequence": "355",
+        "generation": "4",
+        "wall_ns": "1793283306887852748",
+        "steady_ns": "342417540350295",
+        "duration_ns": "8403",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793283306892934820",
+        "sequence": "356",
+        "generation": "5",
+        "wall_ns": "1793283306894328569",
+        "steady_ns": "342417546825675",
+        "duration_ns": "291032",
+        "reason": "ballistic_acquisition_incomplete_history"
+      }
+    ],
+    "acquisition_stage_present": true,
+    "source_cadence": {
+      "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+      "requested_rate_hz": 150,
+      "actual_rate_hz": 147.470027104767,
+      "minimum_interval_ns": 3644160,
+      "maximum_lateness_ns": 322303801,
+      "resynchronizations": 1,
+      "missed_nominal_ticks": 48,
+      "samples": 2819,
+      "valid": true
+    },
+    "test_verdict_preserved": "FAIL",
+    "interpretation": "A never acquired is an observer-status assertion. Actual pipeline stages are retained separately; a transient acquired state can be missed by the periodic status observer."
+  },
+  {
+    "run": "qualification-06",
+    "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+    "round": 5,
+    "source_A_exposures": 28,
+    "actual_observation_stages": [
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234861342428",
+        "sequence": "2938",
+        "generation": "20",
+        "wall_ns": "1793281234863785080",
+        "steady_ns": "340345516282597",
+        "duration_ns": "190903",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234861459892",
+        "sequence": "2939",
+        "generation": "20",
+        "wall_ns": "1793281234864207836",
+        "steady_ns": "340345516705373",
+        "duration_ns": "4306",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234861580631",
+        "sequence": "2940",
+        "generation": "20",
+        "wall_ns": "1793281234864979559",
+        "steady_ns": "340345517477106",
+        "duration_ns": "3415",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234861695882",
+        "sequence": "2941",
+        "generation": "20",
+        "wall_ns": "1793281234865067669",
+        "steady_ns": "340345517565216",
+        "duration_ns": "1973",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234861809780",
+        "sequence": "2942",
+        "generation": "20",
+        "wall_ns": "1793281234865398058",
+        "steady_ns": "340345517895605",
+        "duration_ns": "1993",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234861945822",
+        "sequence": "2943",
+        "generation": "20",
+        "wall_ns": "1793281234865794596",
+        "steady_ns": "340345518292123",
+        "duration_ns": "2604",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234862078088",
+        "sequence": "2944",
+        "generation": "20",
+        "wall_ns": "1793281234866207517",
+        "steady_ns": "340345518705064",
+        "duration_ns": "2604",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234862200869",
+        "sequence": "2945",
+        "generation": "20",
+        "wall_ns": "1793281234866618866",
+        "steady_ns": "340345519116393",
+        "duration_ns": "3455",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234863362189",
+        "sequence": "2946",
+        "generation": "20",
+        "wall_ns": "1793281234867022444",
+        "steady_ns": "340345519519971",
+        "duration_ns": "5889",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234866876072",
+        "sequence": "2947",
+        "generation": "20",
+        "wall_ns": "1793281234867629352",
+        "steady_ns": "340345520126869",
+        "duration_ns": "5378",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234869945456",
+        "sequence": "2948",
+        "generation": "20",
+        "wall_ns": "1793281234870614352",
+        "steady_ns": "340345523111889",
+        "duration_ns": "5609",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234873278371",
+        "sequence": "2949",
+        "generation": "20",
+        "wall_ns": "1793281234873998417",
+        "steady_ns": "340345526495944",
+        "duration_ns": "8553",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234877048654",
+        "sequence": "2950",
+        "generation": "20",
+        "wall_ns": "1793281234877725050",
+        "steady_ns": "340345530222577",
+        "duration_ns": "6059",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234879954456",
+        "sequence": "2951",
+        "generation": "20",
+        "wall_ns": "1793281234880526088",
+        "steady_ns": "340345533023614",
+        "duration_ns": "4486",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234883283896",
+        "sequence": "2952",
+        "generation": "20",
+        "wall_ns": "1793281234884091507",
+        "steady_ns": "340345536589054",
+        "duration_ns": "5128",
+        "reason": "rearm_qualified_source_gap"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234886663985",
+        "sequence": "2953",
+        "generation": "21",
+        "wall_ns": "1793281234887978281",
+        "steady_ns": "340345540475468",
+        "duration_ns": "486591",
+        "reason": "ballistic_acquisition_incomplete_history"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234890008818",
+        "sequence": "2954",
+        "generation": "21",
+        "wall_ns": "1793281234890780801",
+        "steady_ns": "340345543278338",
+        "duration_ns": "37426",
+        "reason": "ballistic_acquisition_incomplete_history"
+      },
+      {
+        "stage": "pipeline_observed",
+        "source_ns": "1793281234893308433",
+        "sequence": "2955",
+        "generation": "21",
+        "wall_ns": "1793281234894429724",
+        "steady_ns": "340345546927251",
+        "duration_ns": "42383",
+        "reason": "ballistic_acquisition_incomplete_history"
+      }
+    ],
+    "acquisition_stage_present": true,
+    "source_cadence": null,
+    "test_verdict_preserved": "FAIL",
+    "interpretation": "A never acquired is an observer-status assertion. Actual pipeline stages are retained separately; a transient acquired state can be missed by the periodic status observer."
+  }
+]

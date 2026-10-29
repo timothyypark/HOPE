@@ -1,0 +1,20 @@
+{
+  "recorded_ns": 1793283163249691144,
+  "tested_runtime_source": "369dd6cf6bfbf12ce2f4cd87223570fd7ee008df",
+  "fixture_commit": "f015e0e42c9b122b35168994ce04b6045461d4b2",
+  "changed_paths": [
+    "hope_ws/src/hope_planner_cpp/docs/integrated_planner_software_contract.json",
+    "hope_ws/src/hope_planner_cpp/docs/v2_incoming_implementation.md",
+    "hope_ws/src/hope_planner_cpp/docs/v2_incoming_scope_manifest.json",
+    "hope_ws/src/hope_planner_cpp/test/reacquisition_producer_chain.py"
+  ],
+  "runtime_sources_unchanged": true,
+  "controlled_paced_copy_matches_committed_source": true,
+  "fixture_sha256": "c9f6013fcb7bb1fa51181a874c81064af76c8abf51f0c5a82cc4e8591321f437",
+  "scope_and_accounting_pytest": {
+    "exit": 0,
+    "tests_passed": 10,
+    "output": "10 passed in 0.05s",
+    "provenance": "Recorded from the actual tool return immediately before this commit; files unchanged between test and commit"
+  }
+}

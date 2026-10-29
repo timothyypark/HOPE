@@ -1,0 +1,30 @@
+{
+  "recorded_ns": 1793284688379400976,
+  "pr85": {
+    "exit": 0,
+    "stdout": "{\"base\":\"91aecabfd44cb258ac998158e724be9017d883a7\",\"head\":\"4d2247c69100f1e5416a8f42468b4d67418c45fb\",\"html_url\":\"https://github.com/hitchopen/HOPE/pull/85\",\"mergeable\":true,\"merged\":false,\"state\":\"open\"}\n",
+    "stderr": ""
+  },
+  "heads": {
+    "implementation": {
+      "exit": 0,
+      "stdout": "0fb3542d77129d42ad04099bbb5296f816841e8b\trefs/heads/feature/v2-incoming-validity-continuous-dropin\n",
+      "stderr": ""
+    },
+    "upstream": {
+      "exit": 0,
+      "stdout": "91aecabfd44cb258ac998158e724be9017d883a7\trefs/heads/nightly_built\n",
+      "stderr": ""
+    },
+    "nohope": {
+      "exit": 0,
+      "stdout": "96e71c1adb217d14b925681173cebe00d8427f21\trefs/heads/main\n",
+      "stderr": ""
+    }
+  },
+  "nohope_parent_access": {
+    "exit": 1,
+    "stdout": "{\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#get-a-commit\",\"status\":\"404\"}",
+    "stderr": "gh: Not Found (HTTP 404)\n"
+  }
+}

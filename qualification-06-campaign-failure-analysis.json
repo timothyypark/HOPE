@@ -1,0 +1,460 @@
+{
+  "scope": "Every failed trial; stage durations are wall/steady clock, not CPU attribution. No counterfactual pass or dropped opportunity is claimed.",
+  "failures": [
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 2,
+      "exception": "AssertionError: ('command coverage', 137, 148, 0.9256756756756757)",
+      "eligible": 148,
+      "covered": 137,
+      "coverage": 0.9256756756756757,
+      "source_cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 300,
+        "actual_rate_hz": 298.38772624265374,
+        "minimum_interval_ns": 1835160,
+        "maximum_lateness_ns": 8457927,
+        "resynchronizations": 19,
+        "missed_nominal_ticks": 10,
+        "samples": 3792,
+        "valid": true
+      },
+      "maximum_source_gap_ms": 11.715264,
+      "minimum_source_gap_ms": 1.83513,
+      "first_observed_loss_counts": {
+        "QUEUED_NOT_STARTED_SUPERSEDED_OR_CLOSED": 10,
+        "WORKER_REJECTED": 1
+      },
+      "worker_rejection_reasons": {
+        "RETIRED_EPOCH": 1
+      },
+      "largest_measured_stage_intervals": [
+        {
+          "milliseconds": 62.708295,
+          "stage": "solve_end",
+          "source_ns": "1793279731475490362",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 4.778283,
+          "stage": "solve_end",
+          "source_ns": "1793279737603621684",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 3.681721,
+          "stage": "solve_end",
+          "source_ns": "1793279734394871992",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 3.636529,
+          "stage": "forecast_end",
+          "source_ns": "1793279733632487551",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 2.605702,
+          "stage": "forecast_end",
+          "source_ns": "1793279737603621684",
+          "reason": "incomplete_history"
+        }
+      ],
+      "accounting_complete": true
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 2,
+      "exception": "AssertionError: ('command coverage', 36, 39, 0.9230769230769231)",
+      "eligible": 39,
+      "covered": 36,
+      "coverage": 0.9230769230769231,
+      "source_cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 300,
+        "actual_rate_hz": 298.8845641287517,
+        "minimum_interval_ns": 2129987,
+        "maximum_lateness_ns": 15825996,
+        "resynchronizations": 12,
+        "missed_nominal_ticks": 6,
+        "samples": 3799,
+        "valid": true
+      },
+      "maximum_source_gap_ms": 19.066955,
+      "minimum_source_gap_ms": 2.129577,
+      "first_observed_loss_counts": {
+        "QUEUED_NOT_STARTED_SUPERSEDED_OR_CLOSED": 3
+      },
+      "worker_rejection_reasons": {},
+      "largest_measured_stage_intervals": [
+        {
+          "milliseconds": 3.474849,
+          "stage": "forecast_end",
+          "source_ns": "1793279754370574573",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 2.315318,
+          "stage": "forecast_end",
+          "source_ns": "1793279755183920861",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 2.124098,
+          "stage": "solve_end",
+          "source_ns": "1793279749326977202",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 2.079973,
+          "stage": "solve_end",
+          "source_ns": "1793279746334067922",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 1.8918499999999998,
+          "stage": "solve_end",
+          "source_ns": "1793279746244064167",
+          "reason": "RETURN_VALID"
+        }
+      ],
+      "accounting_complete": true
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 3,
+      "exception": "AssertionError: ('command coverage', 10, 11, 0.9090909090909091)",
+      "eligible": 11,
+      "covered": 10,
+      "coverage": 0.9090909090909091,
+      "source_cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 150,
+        "actual_rate_hz": 149.92690116785587,
+        "minimum_interval_ns": 4281940,
+        "maximum_lateness_ns": 6140632,
+        "resynchronizations": 1,
+        "missed_nominal_ticks": 0,
+        "samples": 1906,
+        "valid": true
+      },
+      "maximum_source_gap_ms": 12.702437,
+      "minimum_source_gap_ms": 4.281299,
+      "first_observed_loss_counts": {
+        "QUEUED_NOT_STARTED_SUPERSEDED_OR_CLOSED": 1
+      },
+      "worker_rejection_reasons": {},
+      "largest_measured_stage_intervals": [
+        {
+          "milliseconds": 5.70913,
+          "stage": "solve_end",
+          "source_ns": "1793279972246373200",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 2.942444,
+          "stage": "forecast_end",
+          "source_ns": "1793279975339689011",
+          "reason": "target_before_required_contact_conditional"
+        },
+        {
+          "milliseconds": 2.1534269999999998,
+          "stage": "solve_end",
+          "source_ns": "1793279972273051892",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 2.15219,
+          "stage": "solve_end",
+          "source_ns": "1793279971239700896",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 2.1238699999999997,
+          "stage": "solve_end",
+          "source_ns": "1793279976233048883",
+          "reason": "RETURN_VALID"
+        }
+      ],
+      "accounting_complete": true
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 3,
+      "exception": "AssertionError: ('command coverage', 33, 36, 0.9166666666666666)",
+      "eligible": 36,
+      "covered": 33,
+      "coverage": 0.9166666666666666,
+      "source_cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 300,
+        "actual_rate_hz": 299.02175746549784,
+        "minimum_interval_ns": 1755749,
+        "maximum_lateness_ns": 4987135,
+        "resynchronizations": 14,
+        "missed_nominal_ticks": 3,
+        "samples": 3801,
+        "valid": true
+      },
+      "maximum_source_gap_ms": 8.188597,
+      "minimum_source_gap_ms": 1.755148,
+      "first_observed_loss_counts": {
+        "QUEUED_NOT_STARTED_SUPERSEDED_OR_CLOSED": 2,
+        "WORKER_REJECTED": 1
+      },
+      "worker_rejection_reasons": {
+        "RETIRED_EPOCH": 1
+      },
+      "largest_measured_stage_intervals": [
+        {
+          "milliseconds": 7.502956999999999,
+          "stage": "solve_end",
+          "source_ns": "1793280147764165281",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 5.6992259999999995,
+          "stage": "solve_end",
+          "source_ns": "1793280147741279359",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 4.148511,
+          "stage": "forecast_end",
+          "source_ns": "1793280146581433524",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 4.107486,
+          "stage": "forecast_end",
+          "source_ns": "1793280144611432705",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 3.612708,
+          "stage": "solve_end",
+          "source_ns": "1793280149729433821",
+          "reason": "RETURN_VALID"
+        }
+      ],
+      "accounting_complete": true
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 4,
+      "exception": "AssertionError: ('coverage', 151, 160, 0.94375)",
+      "eligible": 160,
+      "covered": 151,
+      "coverage": 0.94375,
+      "source_cadence": "legacy reacquisition fixture has no resynchronization/health receipt",
+      "maximum_source_gap_ms": 15.345642,
+      "minimum_source_gap_ms": 0.076553,
+      "first_observed_loss_counts": {
+        "WORKER_REJECTED": 5,
+        "QUEUED_NOT_STARTED_SUPERSEDED_OR_CLOSED": 4
+      },
+      "worker_rejection_reasons": {
+        "RETIRED_EPOCH": 2,
+        "TIMING_OR_REVISION_REJECTED": 3
+      },
+      "largest_measured_stage_intervals": [
+        {
+          "milliseconds": 12.724229999999999,
+          "stage": "forecast_end",
+          "source_ns": "1793280563616058476",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 4.11308,
+          "stage": "pipeline_observed",
+          "source_ns": "1793280570846062097",
+          "reason": "contact_or_crossing_confirmed"
+        },
+        {
+          "milliseconds": 4.09269,
+          "stage": "solve_end",
+          "source_ns": "1793280562789378959",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 4.090116,
+          "stage": "solve_end",
+          "source_ns": "1793280562792722119",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 3.9948249999999996,
+          "stage": "forecast_end",
+          "source_ns": "1793280568836050548",
+          "reason": "incomplete_history"
+        }
+      ],
+      "accounting_complete": true
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 4,
+      "exception": "AssertionError: ('command coverage', 26, 32, 0.8125)",
+      "eligible": 32,
+      "covered": 26,
+      "coverage": 0.8125,
+      "source_cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 300,
+        "actual_rate_hz": 297.60560167963513,
+        "minimum_interval_ns": 1892862,
+        "maximum_lateness_ns": 10546831,
+        "resynchronizations": 32,
+        "missed_nominal_ticks": 11,
+        "samples": 3782,
+        "valid": true
+      },
+      "maximum_source_gap_ms": 12.950896,
+      "minimum_source_gap_ms": 1.892471,
+      "first_observed_loss_counts": {
+        "WORKER_REJECTED": 2,
+        "QUEUED_NOT_STARTED_SUPERSEDED_OR_CLOSED": 4
+      },
+      "worker_rejection_reasons": {
+        "RETIRED_EPOCH": 2
+      },
+      "largest_measured_stage_intervals": [
+        {
+          "milliseconds": 15.287967,
+          "stage": "forecast_end",
+          "source_ns": "1793280916822842622",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 7.427365999999999,
+          "stage": "forecast_end",
+          "source_ns": "1793280915844842669",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 5.544084,
+          "stage": "solve_end",
+          "source_ns": "1793280916822842622",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 5.102936,
+          "stage": "solve_end",
+          "source_ns": "1793280918848833249",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 4.5825309999999995,
+          "stage": "solve_end",
+          "source_ns": "1793280919890428926",
+          "reason": "RETURN_VALID"
+        }
+      ],
+      "accounting_complete": true
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 5,
+      "exception": "AssertionError: ('A never acquired', 5)",
+      "eligible": 159,
+      "covered": 159,
+      "coverage": 1.0,
+      "source_cadence": "legacy reacquisition fixture has no resynchronization/health receipt",
+      "maximum_source_gap_ms": 58.372378,
+      "minimum_source_gap_ms": 0.036053,
+      "first_observed_loss_counts": {},
+      "worker_rejection_reasons": {},
+      "largest_measured_stage_intervals": [
+        {
+          "milliseconds": 53.087759,
+          "stage": "worker_lock",
+          "source_ns": "1793281228523285967",
+          "reason": ""
+        },
+        {
+          "milliseconds": 52.939235,
+          "stage": "queued",
+          "source_ns": "1793281228526621555",
+          "reason": ""
+        },
+        {
+          "milliseconds": 4.774026999999999,
+          "stage": "solve_end",
+          "source_ns": "1793281239379980599",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 3.740893,
+          "stage": "solve_end",
+          "source_ns": "1793281228457846635",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 3.404039,
+          "stage": "forecast_end",
+          "source_ns": "1793281239379980599",
+          "reason": "incomplete_history"
+        }
+      ],
+      "accounting_complete": true
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 5,
+      "exception": "AssertionError: ('command coverage', 33, 35, 0.9428571428571428)",
+      "eligible": 35,
+      "covered": 33,
+      "coverage": 0.9428571428571428,
+      "source_cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 300,
+        "actual_rate_hz": 296.2122218545113,
+        "minimum_interval_ns": 1768687,
+        "maximum_lateness_ns": 43436587,
+        "resynchronizations": 26,
+        "missed_nominal_ticks": 32,
+        "samples": 3765,
+        "valid": true
+      },
+      "maximum_source_gap_ms": 46.586169999999996,
+      "minimum_source_gap_ms": 1.768227,
+      "first_observed_loss_counts": {
+        "QUEUED_NOT_STARTED_SUPERSEDED_OR_CLOSED": 2
+      },
+      "worker_rejection_reasons": {},
+      "largest_measured_stage_intervals": [
+        {
+          "milliseconds": 14.255915,
+          "stage": "forecast_end",
+          "source_ns": "1793281455102337527",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 9.124941,
+          "stage": "solve_end",
+          "source_ns": "1793281458206769271",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 7.5395389999999995,
+          "stage": "forecast_end",
+          "source_ns": "1793281458169754758",
+          "reason": "incomplete_history"
+        },
+        {
+          "milliseconds": 5.157012,
+          "stage": "solve_end",
+          "source_ns": "1793281458146424753",
+          "reason": "RETURN_VALID"
+        },
+        {
+          "milliseconds": 4.145045,
+          "stage": "forecast_end",
+          "source_ns": "1793281458153087624",
+          "reason": "incomplete_history"
+        }
+      ],
+      "accounting_complete": true
+    }
+  ]
+}

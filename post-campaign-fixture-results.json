@@ -1,0 +1,106 @@
+{
+  "source_unchanged": true,
+  "passed": 13,
+  "executed": 14,
+  "qualification_credit": false,
+  "results": [
+    {
+      "name": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 0.9875,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 0.9852941176470589,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_150_ON_REFRESH_zero",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_delayed_150",
+      "exit": 1,
+      "status": "FAIL",
+      "coverage": 1.0,
+      "exception": "AssertionError: ('A never acquired', 1)"
+    },
+    {
+      "name": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_chain_300_ON_REFRESH_zero",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 1.0,
+      "exception": null
+    },
+    {
+      "name": "reacquisition_delayed_300",
+      "exit": 0,
+      "status": "PASS",
+      "coverage": 0.9933333333333333,
+      "exception": null
+    }
+  ]
+}

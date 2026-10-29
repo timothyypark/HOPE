@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "archives": [
+    {
+      "archive": "development-and-baseline.tar.gz",
+      "sha256": "f9e2a61bfdb9002cf76f8ab65287f158cc885e0f5ce90954b8dddd5bfd5ef486",
+      "members": 2609,
+      "uncompressed_bytes": 502848002,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "retained-binary-inventories.tar.gz",
+      "sha256": "d5c94423243c90e0788671bd6eba3da579a70fa917043e5c5737787705379f64",
+      "members": 11,
+      "uncompressed_bytes": 2082305,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "qualification-01-retained.tar.gz",
+      "sha256": "344724fc4388ad9b7d2f182ea29d18e50204dbc81361279923015a3ee5d62c79",
+      "members": 75,
+      "uncompressed_bytes": 695635,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "qualification-02-retained.tar.gz",
+      "sha256": "556a8d1fafcf181c9b50e71ab960e082dc8ee10666acaa4c0241c8617527ffbc",
+      "members": 454,
+      "uncompressed_bytes": 17352965,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "qualification-03-retained.tar.gz",
+      "sha256": "398909265e024908751b58a32efddf92b02cc467937e0bc0c1e7678475cd1a6f",
+      "members": 787,
+      "uncompressed_bytes": 81693493,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "qualification-04-retained.tar.gz",
+      "sha256": "0dc576d565cbfaa8a49a1721bfb65e6847e8604eb88e6762a117ba1711419cd2",
+      "members": 1310,
+      "uncompressed_bytes": 216043689,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "qualification-05-retained.tar.gz",
+      "sha256": "bc2be9131bdfb023be3077dddc0fb90eee087fd685f3fa4c5d99cbd5eb223f53",
+      "members": 4858,
+      "uncompressed_bytes": 472540175,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "final-complete-ladder.tar.gz",
+      "sha256": "2d2945d42b9684bb2d2daa420e807ac7fabc80e37705f3cffea5b65bba1bd820",
+      "members": 1494,
+      "uncompressed_bytes": 221583168,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "repeated-campaign-freeze.tar.gz",
+      "sha256": "0b14284872912412377053ff4e22ceb74133fed457e4a5b8fe0fc775730726ef",
+      "members": 4,
+      "uncompressed_bytes": 808138,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "repeated-campaign-repetition-1.tar.gz",
+      "sha256": "3ffeff20d55132ec527712c062edcb8442d7cbe5a882cc78adf8222d46006e0b",
+      "members": 384,
+      "uncompressed_bytes": 38565052,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "repeated-campaign-repetition-2.tar.gz",
+      "sha256": "a9599bccfaed5780ace44d3b8c732cabee72e4e8893b0d65450c337ac5aa893f",
+      "members": 384,
+      "uncompressed_bytes": 37811975,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "repeated-campaign-repetition-3.tar.gz",
+      "sha256": "170ede0b0586cbfbbd7519b7530a9d7c39ce51ddf85128463ae767a6b7fc5d4e",
+      "members": 384,
+      "uncompressed_bytes": 38149036,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "repeated-campaign-repetition-4.tar.gz",
+      "sha256": "8722350755737d8e73358524893c5f8fd7427eef4b638aa9ee8624cedc16f80b",
+      "members": 384,
+      "uncompressed_bytes": 37785998,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "repeated-campaign-repetition-5.tar.gz",
+      "sha256": "5f2b299bec69999106d5fac64962cf3eadde0248ece8401acc0ea3f6b99cf168",
+      "members": 384,
+      "uncompressed_bytes": 37690779,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "incoming-campaign-freeze.tar.gz",
+      "sha256": "d85fe0978466684b529483533bba7300206063f9cc3efb4b1919c485080f59f3",
+      "members": 3,
+      "uncompressed_bytes": 677420,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "incoming-campaign-repetition-1.tar.gz",
+      "sha256": "6e6b5a13e44c505ee4ff2cec1e118ee9d1b321942f255795fcce33afc466e7db",
+      "members": 288,
+      "uncompressed_bytes": 11228555,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "incoming-campaign-repetition-2.tar.gz",
+      "sha256": "17cc4fa503da96433f597442d696c095b3026e240ed1dc5fde3ac2ff505c7489",
+      "members": 288,
+      "uncompressed_bytes": 11183265,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "incoming-campaign-repetition-3.tar.gz",
+      "sha256": "6c5e5348bdc0b0fe8be187ce2f19f6487e6fdc8109a851c8441cc7dcedd8bd29",
+      "members": 288,
+      "uncompressed_bytes": 11118783,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "incoming-campaign-repetition-4.tar.gz",
+      "sha256": "1c4bedefd90d2f431c8a9e52433704ee10afc6fff26c0748034c6c34c613daec",
+      "members": 288,
+      "uncompressed_bytes": 11221893,
+      "status": "PASS",
+      "all_members_manifested": true
+    },
+    {
+      "archive": "incoming-campaign-repetition-5.tar.gz",
+      "sha256": "52fada0c7294992c62f8eaa4ad8893e31715f7ac68dd253f4e3482df4a75fddf",
+      "members": 288,
+      "uncompressed_bytes": 11058963,
+      "status": "PASS",
+      "all_members_manifested": true
+    }
+  ],
+  "losslessly_retained_raw_members_verified": 2543,
+  "credential_pattern_scan": "No matches in archived file contents, including decompressed retained gzip members",
+  "limitations": "Pattern scan is not an exhaustive secret audit"
+}

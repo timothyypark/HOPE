@@ -1,0 +1,56 @@
+{
+  "profile": "incoming_chain_300_stable_per_ball_zero",
+  "status": "FAIL",
+  "source_cadence": {
+    "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+    "requested_rate_hz": 300,
+    "actual_rate_hz": 299.162714423497,
+    "minimum_interval_ns": 1982165,
+    "maximum_lateness_ns": 5335954,
+    "resynchronizations": 10,
+    "missed_nominal_ticks": 3,
+    "samples": 2993,
+    "valid": true
+  },
+  "commands": 9,
+  "packet_flights": 9,
+  "continuous_coverage": 0.9731404958677686,
+  "missing_flight": 5,
+  "all_flights_have_stable_generation": true,
+  "missing_forecast_stage_counts": [
+    {
+      "flight": 1,
+      "stage": "PENDING_SUPERSEDED",
+      "count": 1
+    },
+    {
+      "flight": 1,
+      "stage": "WORKER_RETIRED",
+      "count": 1
+    },
+    {
+      "flight": 5,
+      "stage": "PENDING_SUPERSEDED",
+      "count": 4
+    },
+    {
+      "flight": 5,
+      "stage": "SOURCE_TO_RELAY",
+      "count": 6
+    },
+    {
+      "flight": 5,
+      "stage": "WORKER_RETIRED",
+      "count": 1
+    }
+  ],
+  "maximum_relay_receipt_source_age_ms": 25.935486,
+  "flight5_candidate_reasons": {
+    "TENTATIVE_PLANE": 66,
+    "SOURCE_EXPIRED": 3,
+    "PLANE_BEFORE_FIRST_BOUNCE": 2,
+    "CONTACT_EXPIRED": 1,
+    "PHYSICAL_TERMINATION_BEFORE_CONTACT": 7
+  },
+  "conclusion": "The independent source remained healthy; six eligible flight-5 epochs have no relay receipt. The packetizer produced no flight-5 packet, and continuous candidates remained tentative. Later relay receipts reach 25.94 ms source age. No command for that flight was authorized. The reason for the upstream scheduling/transport pause is unresolved; no direct per-pose packetizer receipt trace exists, so the exact packetizer rejection path is not inferred."
+}

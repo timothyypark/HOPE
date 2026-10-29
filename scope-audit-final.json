@@ -1,0 +1,99 @@
+{
+  "source": "0fb3542d77129d42ad04099bbb5296f816841e8b",
+  "base": "4d2247c69100f1e5416a8f42468b4d67418c45fb",
+  "protected_files": [
+    {
+      "path": "hope_ws/src/hope_planner_cpp/src/racket_target_planner.cpp",
+      "unchanged": true,
+      "sha256": "dfd28c25ca42fd20c882384314d383f1a58238a006f2a356939748bd5b4939f4"
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/runtime_plane_reference.hpp",
+      "unchanged": true,
+      "sha256": "fb2218ecec9bfe8b2366a248b7697d0b8aab30def202ed929234f249781f4946"
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/src/schema2_packer.cpp",
+      "unchanged": true,
+      "sha256": "8efd06c5af17ce8a640dac9f913c0d4d00b60e923ec56d0c4baa35739ddef997"
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/src/schema3_packer.cpp",
+      "unchanged": true,
+      "sha256": "a475779d99e2c1c5f72ed9a44bba7b5ef1af839b1451b3dbd8ae734e01aa3f14"
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/src/return_eligibility.cpp",
+      "unchanged": true,
+      "sha256": "ed5ebb3a6d56ce8e4e4786238e0036ba452d993dffdfd0ad233733465cb70cfb"
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/config/model21800_hardware.yaml",
+      "unchanged": true,
+      "sha256": "6b508c036ba884bf4faa92fd2348de1823af3c3d076b54ca1c18f792c5e21898"
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/config/model21800_flight_packetizer.yaml",
+      "unchanged": true,
+      "sha256": "a38e43067b87f7f99ee1d8e625e780606e59c3e3d4245349cc77d030cc01bb51"
+    },
+    {
+      "path": "hope_training/whole_body_tracking/checkpoints/policy.onnx",
+      "unchanged": true,
+      "sha256": "a987240610bb9a49ea42da8eafcdc84c3cfbc8d5470bf7ff1a2d7f1f624cdd28"
+    },
+    {
+      "path": "hope_training/whole_body_tracking/checkpoints/deploy.yaml",
+      "unchanged": true,
+      "sha256": "c6f60914d30c688ec1f262bdb048eba234aa032ed2c094998ce8d4dcf46a3632"
+    }
+  ],
+  "all_unchanged": true,
+  "modified_paths": [
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/include/a3_pingpong/pp_planner_input.hpp",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/include/a3_pingpong/pp_policy.hpp",
+    "a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/src/a3_deploy/a3_pingpong_main.cpp",
+    "hope_ws/src/hope_bringup/scripts/optitrack_mct_relay",
+    "hope_ws/src/hope_bringup/test/test_planner_full_rate_relay.py",
+    "hope_ws/src/hope_msgs/CMakeLists.txt",
+    "hope_ws/src/hope_msgs/msg/StrikeCandidateV1.msg",
+    "hope_ws/src/hope_planner_cpp/CMakeLists.txt",
+    "hope_ws/src/hope_planner_cpp/config/v2_incoming.shadow.yaml",
+    "hope_ws/src/hope_planner_cpp/docs/integrated_planner_software_contract.json",
+    "hope_ws/src/hope_planner_cpp/docs/v2_incoming_implementation.md",
+    "hope_ws/src/hope_planner_cpp/docs/v2_incoming_qualification.json",
+    "hope_ws/src/hope_planner_cpp/docs/v2_incoming_scope_manifest.json",
+    "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/planner_node.hpp",
+    "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/v2_incoming_coordinator.hpp",
+    "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/v2_incoming_runtime.hpp",
+    "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/v2_managed_revocation.hpp",
+    "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/v2_strike_adapter.hpp",
+    "hope_ws/src/hope_planner_cpp/launch/v2_incoming_shadow.launch.py",
+    "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/qualification_campaign.py",
+    "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/v2_incoming_campaign.py",
+    "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/verify_integrated.sh",
+    "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/verify_runner_revocation.sh",
+    "hope_ws/src/hope_planner_cpp/src/flight_state_v2.cpp",
+    "hope_ws/src/hope_planner_cpp/src/main.cpp",
+    "hope_ws/src/hope_planner_cpp/src/planner_node.cpp",
+    "hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp",
+    "hope_ws/src/hope_planner_cpp/src/v2_incoming_runtime.cpp",
+    "hope_ws/src/hope_planner_cpp/src/v2_strike_adapter.cpp",
+    "hope_ws/src/hope_planner_cpp/test/fixtures/pr85_cutoffs/contact_corroboration_deltas.json",
+    "hope_ws/src/hope_planner_cpp/test/integrated_producer_chain.py",
+    "hope_ws/src/hope_planner_cpp/test/integrated_runner_probe.cpp",
+    "hope_ws/src/hope_planner_cpp/test/native/CMakeLists.txt",
+    "hope_ws/src/hope_planner_cpp/test/pr85_cutoff_parity.py",
+    "hope_ws/src/hope_planner_cpp/test/qualification_accounting.py",
+    "hope_ws/src/hope_planner_cpp/test/reacquisition_producer_chain.py",
+    "hope_ws/src/hope_planner_cpp/test/runner_revocation_probe.cpp",
+    "hope_ws/src/hope_planner_cpp/test/test_forecast_scope.py",
+    "hope_ws/src/hope_planner_cpp/test/test_qualification_accounting.py",
+    "hope_ws/src/hope_planner_cpp/test/test_runner_preengagement_revocation.cpp",
+    "hope_ws/src/hope_planner_cpp/test/test_v2_contact_corroboration.cpp",
+    "hope_ws/src/hope_planner_cpp/test/test_v2_incoming_coordinator.cpp",
+    "hope_ws/src/hope_planner_cpp/test/test_v2_incoming_ros.cpp",
+    "hope_ws/src/hope_planner_cpp/test/test_v2_strike_adapter.cpp",
+    "hope_ws/src/hope_planner_cpp/test/v2_incoming_producer_chain.py"
+  ]
+}

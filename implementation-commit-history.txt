@@ -1,0 +1,26 @@
+afbf1022d56ef9ef775b8c1f85bb3c495cf10e39 Record V2 incoming drop-in scope and required qualification gates
+072ba6e05f9e9b46b9d62d1c4469ded41e835d2f Require independent motion evidence before confirming V2 table contact
+99c421cdd455dfe7cf74f4f0a116f022f908d4da Add explicit V2 strike validity and managed planner contact adapter
+ee89d5e1db5a74d3cf0ce8e46e9de09896adb837 Coordinate continuous V2 state and causal one-shot packet snapshots
+acbd901bb6a9a1b5faa54a4fb90ea15510613a38 Add versioned strike candidate status and revocation companion
+0bffa998b84fd0dd9ea4997823d76d9eb625c2c4 Serialize HOME authority and expose source expiry transitions
+81a271fbb401ce2dd7f1a078d36cce1ba5f45c43 Integrate shared V2 incoming state with managed shadow commands
+4d2a54dcfe2121f1fb76f41920805d5d8931b9a8 Preserve qualified spin authority when joining legacy packets
+6e2e394a578a3e55d8fe5ceb630407802c460095 Trace incoming work and preserve independent continuous output
+8236517e9a79c9b6c7652f5f8778929f5caf1a18 Add opt-in atomic Runner veto for revoked unengaged flights
+1f0ca65da266d848296e10dab60285b8441e0719 test(runner): revoke after policy observes a pending target
+503fda4fcd5dde16ad27732b27cf51f433310a56 feat(incoming): propagate identity-bearing revocation to managed receiver
+5261435daaa4090b8a793bbda10be90106f602c4 feat(incoming): provide guarded shadow launch and configuration
+774ce97d5abd711c3c3300bc3d1d7a064deb4ab5 test(incoming): measure complete source-to-decoder producer chain
+a91ec847d1775f3c36668063f875954b3820204e test(incoming): freeze 90 trials and retain stages for PR85 qualification
+5839e0073ab51553ff8f28dccebc7200e2a86505 fix(runner): retain delayed per-flight veto after unrelated status
+d176280a1677f1cfa182c12c0b0ce40df4687b8d docs(incoming): record Runner boundary and frozen qualification scope
+17f47e894dcd69cc7af06c3e3a5cdd0c184dbd1a fix(incoming): complete ROS test includes and trace actual status publication
+359fc3231a69835750d741ae371d733538022d64 test(prediction): pin seven conservative contact-confirmation deltas
+5eeba2cde7a4d140aec21808c90b671ca1440bac test(qualification): record stage instrumentation and bound sanitizer symbols
+ed4a150dc61357e451d13908b0d85405ddd52e0a test(incoming): await actual HOME readiness before offering test flights
+3ace2e00012d93e1873be50f44496120c99ade53 fix(relay): retain bounded qualified history in V2 DDS writers
+290f7c45fbf81310842a2bf109969236a586a800 test(scope): inventory shared-owner integration and preserve downstream pins
+369dd6cf6bfbf12ce2f4cd87223570fd7ee008df test(source): resume paced acquisition without synthetic catch-up bursts
+f015e0e42c9b122b35168994ce04b6045461d4b2 test(source): pace the remaining reacquisition camera after stalls
+0fb3542d77129d42ad04099bbb5296f816841e8b docs(incoming): retain complete qualification failures and acceptance verdict

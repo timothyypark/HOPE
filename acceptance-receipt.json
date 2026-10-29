@@ -1,0 +1,582 @@
+{
+  "tested_source": "369dd6cf6bfbf12ce2f4cd87223570fd7ee008df",
+  "software_qualified": false,
+  "track_a_software_complete": false,
+  "track_b_future_planner_ready": false,
+  "live_adoption_authorized": false,
+  "active_swing_cancellation": false,
+  "gates": {
+    "A": {
+      "status": "PASS_IN_TESTED_SOFTWARE",
+      "evidence": "adapter + coordinator + ROS invalidity/regression tests"
+    },
+    "B": {
+      "status": "PASS",
+      "evidence": "failing-before contact counterexample; genuine/sparse/double/restored contacts; pinned 789-cutoff comparison"
+    },
+    "C": {
+      "status": "PASS_IN_TESTED_SOFTWARE",
+      "evidence": "source/context/HOME retirement, authority lock through publication, delayed second-bounce regression"
+    },
+    "D": {
+      "status": "PASS_IN_TESTED_SOFTWARE",
+      "evidence": "native recovery and actual producer-chain multi-flight tests; campaign losses retained under J/K"
+    },
+    "E": {
+      "status": "PASS",
+      "evidence": "protected RuntimePlaneReference; fixed/per-ball/stable-per-ball tests"
+    },
+    "F": {
+      "status": "PASS",
+      "evidence": "27 exact adapter/downstream/serialization combinations and unchanged planner sources"
+    },
+    "G": {
+      "status": "PASS",
+      "evidence": "actual schema-4/5 receiver and managed ROS tests"
+    },
+    "H": {
+      "status": "PASS_IN_TESTED_SOFTWARE",
+      "evidence": "one-shot identity, deduplication, immutable command and committed plane regressions; lost opportunities count under J"
+    },
+    "I": {
+      "status": "PASS_IN_TESTED_SOFTWARE",
+      "evidence": "continuous without command packets, after one-shot and output toggles; full trajectory cap separate from compact coverage"
+    },
+    "J": {
+      "status": "FAIL",
+      "evidence": "full ROS plus frozen 160/90 campaigns, all trials retained"
+    },
+    "K": {
+      "status": "FAIL",
+      "evidence": "native/sanitizers/numerical/parity/full ROS + campaigns; raw colcon exit retained"
+    },
+    "L": {
+      "status": "PASS_FOR_TESTED_OPT_IN_CONFIGURATION",
+      "evidence": "24 actual PpPolicy/unchanged ONNX cases plus atomic receiver guard tests",
+      "limits": "flag defaults off; deployed artifact and HAL unverified; engaged swing continues"
+    }
+  },
+  "original_four_failure_profiles": {
+    "base_yaw_chain_150_0": {
+      "full_ros": {
+        "status": "PASS",
+        "command_coverage": 0.9512195121951219,
+        "command_denominator": 41,
+        "covered_command_epochs": 39
+      },
+      "campaign_runs": [],
+      "note": "base-yaw belongs to full ROS only; it is not in the original 160-run repeated campaign"
+    },
+    "review_chain_300_12_unknown": {
+      "full_ros": {
+        "status": "PASS",
+        "command_coverage": 1.0,
+        "command_denominator": 40,
+        "covered_command_epochs": 40
+      },
+      "campaign_runs": [
+        {
+          "repetition": 1,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 40,
+            "complete_valid_publication_count": 259,
+            "publication_ms": {
+              "p50": 2.046517,
+              "p95": 2.8294142,
+              "p99": 3.4864853199999994,
+              "max": 4.245904
+            },
+            "decoder_ms": {
+              "p50": 2.163327,
+              "p95": 2.923926099999999,
+              "p99": 3.715817979999997,
+              "max": 5.026723
+            }
+          }
+        },
+        {
+          "repetition": 2,
+          "status": "FAIL",
+          "independent_metrics": {},
+          "retained_failure_analysis": {
+            "profile": "review_chain_300_12_unknown",
+            "repetition": 2,
+            "exception": "AssertionError: ('command coverage', 36, 39, 0.9230769230769231)",
+            "eligible": 39,
+            "covered": 36,
+            "coverage": 0.9230769230769231,
+            "source_cadence": {
+              "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+              "requested_rate_hz": 300,
+              "actual_rate_hz": 298.8845641287517,
+              "minimum_interval_ns": 2129987,
+              "maximum_lateness_ns": 15825996,
+              "resynchronizations": 12,
+              "missed_nominal_ticks": 6,
+              "samples": 3799,
+              "valid": true
+            },
+            "maximum_source_gap_ms": 19.066955,
+            "minimum_source_gap_ms": 2.129577,
+            "first_observed_loss_counts": {
+              "QUEUED_NOT_STARTED_SUPERSEDED_OR_CLOSED": 3
+            },
+            "worker_rejection_reasons": {},
+            "largest_measured_stage_intervals": [
+              {
+                "milliseconds": 3.474849,
+                "stage": "forecast_end",
+                "source_ns": "1793279754370574573",
+                "reason": "incomplete_history"
+              },
+              {
+                "milliseconds": 2.315318,
+                "stage": "forecast_end",
+                "source_ns": "1793279755183920861",
+                "reason": "incomplete_history"
+              },
+              {
+                "milliseconds": 2.124098,
+                "stage": "solve_end",
+                "source_ns": "1793279749326977202",
+                "reason": "RETURN_VALID"
+              },
+              {
+                "milliseconds": 2.079973,
+                "stage": "solve_end",
+                "source_ns": "1793279746334067922",
+                "reason": "RETURN_VALID"
+              },
+              {
+                "milliseconds": 1.8918499999999998,
+                "stage": "solve_end",
+                "source_ns": "1793279746244064167",
+                "reason": "RETURN_VALID"
+              }
+            ],
+            "accounting_complete": true
+          }
+        },
+        {
+          "repetition": 3,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 0.9736842105263158,
+            "denominator": 38,
+            "complete_valid_publication_count": 250,
+            "publication_ms": {
+              "p50": 2.349821,
+              "p95": 3.9105608,
+              "p99": 5.648737819999995,
+              "max": 6.54628
+            },
+            "decoder_ms": {
+              "p50": 2.434118,
+              "p95": 4.079847449999998,
+              "p99": 5.701417159999994,
+              "max": 7.522054
+            }
+          }
+        },
+        {
+          "repetition": 4,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 40,
+            "complete_valid_publication_count": 246,
+            "publication_ms": {
+              "p50": 2.5412435,
+              "p95": 6.8836845,
+              "p99": 9.710010950000013,
+              "max": 14.655753
+            },
+            "decoder_ms": {
+              "p50": 2.680232,
+              "p95": 7.254885299999996,
+              "p99": 12.142543319999966,
+              "max": 17.067007
+            }
+          }
+        },
+        {
+          "repetition": 5,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 40,
+            "complete_valid_publication_count": 249,
+            "publication_ms": {
+              "p50": 2.727675,
+              "p95": 5.3390251999999965,
+              "p99": 7.789140600000002,
+              "max": 9.233454
+            },
+            "decoder_ms": {
+              "p50": 2.880078,
+              "p95": 6.089191250000001,
+              "p99": 8.1620925,
+              "max": 9.398388
+            }
+          }
+        }
+      ],
+      "note": ""
+    },
+    "review_chain_150_12_zero": {
+      "full_ros": {
+        "status": "PASS",
+        "command_coverage": 1.0,
+        "command_denominator": 20,
+        "covered_command_epochs": 20
+      },
+      "campaign_runs": [
+        {
+          "repetition": 1,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 20,
+            "complete_valid_publication_count": 128,
+            "publication_ms": {
+              "p50": 2.8904104999999998,
+              "p95": 4.550405949999998,
+              "p99": 5.8466051299999995,
+              "max": 9.717329
+            },
+            "decoder_ms": {
+              "p50": 3.05434,
+              "p95": 4.921280199999999,
+              "p99": 6.06085004,
+              "max": 9.911633
+            }
+          }
+        },
+        {
+          "repetition": 2,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 20,
+            "complete_valid_publication_count": 127,
+            "publication_ms": {
+              "p50": 2.764162,
+              "p95": 4.4301886,
+              "p99": 6.31633336,
+              "max": 7.193575
+            },
+            "decoder_ms": {
+              "p50": 2.898006,
+              "p95": 5.067743599999992,
+              "p99": 6.4313610599999995,
+              "max": 7.311214
+            }
+          }
+        },
+        {
+          "repetition": 3,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 20,
+            "complete_valid_publication_count": 120,
+            "publication_ms": {
+              "p50": 2.917663,
+              "p95": 4.80895245,
+              "p99": 6.981917970000003,
+              "max": 11.453281
+            },
+            "decoder_ms": {
+              "p50": 3.096812,
+              "p95": 5.086813999999996,
+              "p99": 6.963316379999997,
+              "max": 9.575476
+            }
+          }
+        },
+        {
+          "repetition": 4,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 20,
+            "complete_valid_publication_count": 127,
+            "publication_ms": {
+              "p50": 2.705671,
+              "p95": 4.168676399999999,
+              "p99": 5.389379799999998,
+              "max": 7.508856
+            },
+            "decoder_ms": {
+              "p50": 2.832298,
+              "p95": 4.8067659,
+              "p99": 5.481214419999997,
+              "max": 7.62287
+            }
+          }
+        },
+        {
+          "repetition": 5,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 17,
+            "complete_valid_publication_count": 124,
+            "publication_ms": {
+              "p50": 2.806578,
+              "p95": 5.920842799999999,
+              "p99": 7.7483403899999965,
+              "max": 9.423453
+            },
+            "decoder_ms": {
+              "p50": 2.941841,
+              "p95": 6.160373249999999,
+              "p99": 7.5169108499999995,
+              "max": 10.098763
+            }
+          }
+        }
+      ],
+      "note": ""
+    },
+    "review_refresh_300_10_unknown": {
+      "full_ros": {
+        "status": "PASS",
+        "command_coverage": 1.0,
+        "command_denominator": 160,
+        "covered_command_epochs": 160
+      },
+      "campaign_runs": [
+        {
+          "repetition": 1,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 158,
+            "complete_valid_publication_count": 404,
+            "publication_ms": {
+              "p50": 1.962346,
+              "p95": 3.1308597999999996,
+              "p99": 5.340276069999984,
+              "max": 12.602953
+            },
+            "decoder_ms": {
+              "p50": 2.0821864999999997,
+              "p95": 3.4861358999999994,
+              "p99": 5.6253193099999965,
+              "max": 13.02012
+            }
+          }
+        },
+        {
+          "repetition": 2,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 151,
+            "complete_valid_publication_count": 399,
+            "publication_ms": {
+              "p50": 2.32523,
+              "p95": 5.109715099999999,
+              "p99": 9.572154139999975,
+              "max": 13.252686
+            },
+            "decoder_ms": {
+              "p50": 2.463894,
+              "p95": 5.341853549999998,
+              "p99": 9.797913719999993,
+              "max": 13.098878
+            }
+          }
+        },
+        {
+          "repetition": 3,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 152,
+            "complete_valid_publication_count": 402,
+            "publication_ms": {
+              "p50": 2.141187,
+              "p95": 3.6894272,
+              "p99": 4.967045600000001,
+              "max": 9.147304
+            },
+            "decoder_ms": {
+              "p50": 2.221936,
+              "p95": 4.176525,
+              "p99": 5.393535,
+              "max": 9.466465
+            }
+          }
+        },
+        {
+          "repetition": 4,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 152,
+            "complete_valid_publication_count": 406,
+            "publication_ms": {
+              "p50": 2.1148350000000002,
+              "p95": 3.84040625,
+              "p99": 5.781550549999998,
+              "max": 7.396872
+            },
+            "decoder_ms": {
+              "p50": 2.247354,
+              "p95": 4.154546,
+              "p99": 6.826706580000016,
+              "max": 7.937626
+            }
+          }
+        },
+        {
+          "repetition": 5,
+          "status": "PASS",
+          "independent_metrics": {
+            "coverage": 1.0,
+            "denominator": 154,
+            "complete_valid_publication_count": 410,
+            "publication_ms": {
+              "p50": 1.8625515,
+              "p95": 2.688414699999999,
+              "p99": 3.983220909999997,
+              "max": 5.083785
+            },
+            "decoder_ms": {
+              "p50": 1.9774159999999998,
+              "p95": 2.78259825,
+              "p99": 4.091739250000001,
+              "max": 6.181736
+            }
+          }
+        }
+      ],
+      "note": ""
+    }
+  },
+  "qualification_aggregate_exit": 1,
+  "qualification_note": "The raw aggregate includes inherited lint and is never rewritten; scoped audit and every campaign must independently pass. Component evidence does not establish physical accuracy or real-time guarantees.",
+  "post_campaign_fixture": {
+    "commit": "f015e0e42c9b122b35168994ce04b6045461d4b2",
+    "runtime_sources_unchanged": true,
+    "scope_and_accounting_pytest": {
+      "exit": 0,
+      "tests_passed": 10,
+      "output": "10 passed in 0.05s",
+      "provenance": "Recorded from the actual tool return immediately before this commit; files unchanged between test and commit"
+    },
+    "registered_consumers": {
+      "source_unchanged": true,
+      "passed": 13,
+      "executed": 14,
+      "qualification_credit": false,
+      "results": [
+        {
+          "name": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_150_FOLLOW_POSE_zero",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_150_ON_REFRESH_unknown",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 0.9875,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 0.9852941176470589,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_150_ON_REFRESH_zero",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_delayed_150",
+          "exit": 1,
+          "status": "FAIL",
+          "coverage": 1.0,
+          "exception": "AssertionError: ('A never acquired', 1)"
+        },
+        {
+          "name": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_300_FOLLOW_POSE_zero",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_300_ON_REFRESH_unknown",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_chain_300_ON_REFRESH_zero",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 1.0,
+          "exception": null
+        },
+        {
+          "name": "reacquisition_delayed_300",
+          "exit": 0,
+          "status": "PASS",
+          "coverage": 0.9933333333333333,
+          "exception": null
+        }
+      ]
+    },
+    "qualification_credit": false,
+    "failure_analysis": "acquisition-observer-failure-analysis.json"
+  },
+  "all_four_original_failures_closed": false
+}

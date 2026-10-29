@@ -1,0 +1,23 @@
+{
+  "recorded_ns": 1793284591078827225,
+  "delivered_source": "0fb3542d77129d42ad04099bbb5296f816841e8b",
+  "full_qualification_source": "369dd6cf6bfbf12ce2f4cd87223570fd7ee008df",
+  "post_qualification_changes": [
+    "hope_ws/src/hope_planner_cpp/docs/integrated_planner_software_contract.json",
+    "hope_ws/src/hope_planner_cpp/docs/v2_incoming_implementation.md",
+    "hope_ws/src/hope_planner_cpp/docs/v2_incoming_qualification.json",
+    "hope_ws/src/hope_planner_cpp/docs/v2_incoming_scope_manifest.json",
+    "hope_ws/src/hope_planner_cpp/test/reacquisition_producer_chain.py"
+  ],
+  "runtime_sources_unchanged": true,
+  "source_worktree_clean": true,
+  "implementation_commits": 26,
+  "docs_scope_check": {
+    "status": "PASS",
+    "passed": 4,
+    "provenance": "Actual Docker pytest after final documentation/manifest changes: 4 passed in 0.04s"
+  },
+  "qualification_status": "FAIL",
+  "all_four_original_failures_closed": false,
+  "evidence_branch": "evidence/v2-incoming-qualification-20261029"
+}
