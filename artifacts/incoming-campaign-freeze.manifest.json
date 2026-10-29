@@ -1,0 +1,22 @@
+{
+  "archive": "incoming-campaign-freeze.tar.gz",
+  "bytes": 97303,
+  "sha256": "d85fe0978466684b529483533bba7300206063f9cc3efb4b1919c485080f59f3",
+  "files": [
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/summary.json",
+      "bytes": 313876,
+      "sha256": "a049aec5a485ed941e0f45bc7849a33ab8ceda5a0908c59522ff41618da1a219"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/freeze.json",
+      "bytes": 173974,
+      "sha256": "dcdb0b28677a7e915883931966384516368eb3d14f75e8a997a615ea5a650d0b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/outcomes.jsonl",
+      "bytes": 189570,
+      "sha256": "3eb6c1cf797a0c152b0850aaab0e51dcddf0de195e26fff48c8ab364bbf3ef73"
+    }
+  ]
+}
