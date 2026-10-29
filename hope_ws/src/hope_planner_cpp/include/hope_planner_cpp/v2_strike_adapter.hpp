@@ -27,6 +27,7 @@ struct V2StrikeCandidate {
   std::string session_id, model_config_id, uncertainty_provenance;
   ShotToken token;
   std::uint64_t semantic_epoch = 0, revision = 0;
+  std::uint64_t command_sequence = 0, command_flight_id = 0;
   IncomingPlane plane;
   std::int64_t source_ns = 0, expires_ns = 0;
   std::optional<ContactPlanningInput> contact;

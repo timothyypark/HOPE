@@ -31,7 +31,7 @@ its submitted descendant changes only documentation. Baseline receipts are under
 | Baseline | Source/config hashes, native/ROS/receiver/plane/parity receipts, retained failures | In progress |
 | Bounce | Isolated outlier rejected as contact; genuine/double/sparse/restored contacts tested | Native checks pass |
 | Adapter | Explicit validity result and V2-to-StrikeTarget downstream parity | Native checks pass |
-| Coordinator | One owner, bounded history, packet prefix reconciliation and revocation epochs | Pending |
+| Coordinator | One owner, bounded history, packet prefix reconciliation and revocation epochs | Native component checks pass |
 | Plane and managed backend | Existing plane and one-shot planner integration, actual schema 4/5 | Pending |
 | Runner | Before-publication, before-engagement and engaged lifecycle evidence | Pending |
 | Continuous | Independent forecasts and statuses through commitment and recovery | Pending |
@@ -73,3 +73,15 @@ interfaces. Adapter checks cover 27 position/speed/plane-mode combinations with
 exact outgoing vector and serialized-packet equality, followed by the actual
 schema-4/5 receiver. Existing RuntimePlaneReference tests also pass. These are
 component checks; the ROS drop-in and Runner engagement gate are still pending.
+
+## Coordinator component receipt
+
+Packet samples are reconciled against the actual qualified observation history;
+packet epochs are never equated to V2 generations. Bounded checkpoints recover
+the exact source cutoff, including filter-rejected observations. Native checks
+prove cutoff state/covariance equality, one-shot deduplication, healthy updates,
+source faults, expiry, bounded storage and an observed second-bounce race that
+retires a pending supported result before its source/contact deadlines expire.
+An accepted command retains its original timestamp and absolute contact deadline;
+new observations can support that flight without rewriting its source timestamp.
+A missing fresh authoritative stream revokes it. ROS integration is pending.
