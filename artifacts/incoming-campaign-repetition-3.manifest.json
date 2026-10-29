@@ -1,0 +1,1447 @@
+{
+  "archive": "incoming-campaign-repetition-3.tar.gz",
+  "bytes": 8445023,
+  "sha256": "6c5e5348bdc0b0fe8be187ce2f19f6487e6fdc8109a851c8441cc7dcedd8bd29",
+  "files": [
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown.log",
+      "bytes": 2565,
+      "sha256": "6c59c0b53bdaffcbeccfdf3cf47eaa09e5d8776aea4caa66bbe56c2ad6f52b41"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero.log",
+      "bytes": 2551,
+      "sha256": "080c22aceeb074779d5ffb4a37018ebdebb63c2296bca0c103bf90a6ce352479"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown.log",
+      "bytes": 2540,
+      "sha256": "54fc836457ed03aec62038714d5f0359e8e5c9c21f6937f0b28146e0c6a65dd5"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero.log",
+      "bytes": 2441,
+      "sha256": "45f38c613aeb05018dcd51b07379245ff7ac493fa2db5a05997a452c2e9336c0"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown.log",
+      "bytes": 2430,
+      "sha256": "460f0a483d6ede259492ec5acfbd74d91404af5197c7da6ef420fb5a6de5182e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero.log",
+      "bytes": 2447,
+      "sha256": "ae490de3b4fd7d730410a0e700891bc0ce12425bf09b479fc6e3e603b1a1729f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown.log",
+      "bytes": 2565,
+      "sha256": "cfa70852f0123c1af527f28e36da11ff170ea300ec46da3c988d386ddccb88fe"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero.log",
+      "bytes": 2482,
+      "sha256": "80a6b73c9926a8f997bd81dd511659ba42d963906c3c8e16eec26ff6a3bf3c89"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown.log",
+      "bytes": 2528,
+      "sha256": "52a6ab259dc9912bbc0809cc2d9d50ecd4c11e4a19cd465d62e03b9e7b094a5f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero.log",
+      "bytes": 2558,
+      "sha256": "838a38bfdcc9153b95db05cd75679ec70dce03172fc0ca427b0849cdb0ae2719"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown.log",
+      "bytes": 2533,
+      "sha256": "0fd590b76b1ce48fc03d889a2bad8e8cee015a339735ecf5acdbc5c54d387bb2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero.log",
+      "bytes": 2611,
+      "sha256": "90338171d197992a3569cdf31b4afce703ee2e9318d89319f36a389b7d82bd3f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown.log",
+      "bytes": 2825,
+      "sha256": "6fd5b1d03d703a35b40617839a5c5e0457dc7204efca59208c03a50405eef581"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero.log",
+      "bytes": 2632,
+      "sha256": "8595438ba297e13dfbd206d1b953aa811f419e70d3beec72d0c14c663ec8403c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown.log",
+      "bytes": 2564,
+      "sha256": "46afcd07cbb67cd0d648f5eb498e74e879a7e920516fea606037bddd44c101cf"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero.log",
+      "bytes": 2765,
+      "sha256": "d635b2402b146f2eaf8b48389bdf12b696ee4ef4a327424e0fc5582a00e88bde"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown.log",
+      "bytes": 2699,
+      "sha256": "b3c101b11591348280091cf4980c3fb86ac28680b2dc2b364d682f6a19a98ef6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero.log",
+      "bytes": 2634,
+      "sha256": "9e4e363d9b269b37d6199f96dd80df94f99e3a0e1af785064a2f0523e9c800d2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/accounting.json",
+      "bytes": 6258,
+      "sha256": "35462318722b55aa033735eaa2d0a803edae8b663aea0e2d7f8aae2b2b8b5079"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/contract.json",
+      "bytes": 998,
+      "sha256": "b9dc753e71cae6d5f36f9e437ffb3c5a2c1e82fbef8791a0d552cfb9dc9b5f56"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "b451f29db94ba8cc4a273c388e03fd0da559e4231677382230b92a5cfc523237"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "3bfb6f48e7d6ecc7dfdafabce8e952c01ffc2b245dbb73c9fb5d52c48b380b71"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2834,
+      "sha256": "5470bc233b3d1086670b913db503931c74cd6959d51f9aa2257885386334fc35"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/hope_integrated_runner_probe.log",
+      "bytes": 546,
+      "sha256": "f89517bec63616803ee74b6c181cd1d1f3c5b9dc577684ffc6d742fdfe80d941"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/hope_planner_cpp_node.log",
+      "bytes": 5354,
+      "sha256": "510c2a6292a96bbf37befbd1c806f3457c0dfc108b515a56e3efd9c818a71f15"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "a23497bfd8fb9f2e74564d697129c74dcfb975a3fa2874c0888d95260e89ed10"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "d877ed01888502e89a697cde2de1b1e1f041744ff613975911788897e13aa0ce"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/planner.tsv.gz",
+      "bytes": 68984,
+      "sha256": "707c487e2b0bf974d95341f7383e87dfaeab764dfd2deefdda72f352c9941fc7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/raw.json.gz",
+      "bytes": 140371,
+      "sha256": "c64e07f56d0ac7bf4a657ea1318c7f0209c550f13ed2d8cb3828902252834922"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/relay.tsv",
+      "bytes": 162804,
+      "sha256": "9d8b8c2b96ae477f6169e39ea7bb0b26f7470586cec5d19b5a23d4118e597cdb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/result.json",
+      "bytes": 2387,
+      "sha256": "86e5863fcd6bfa75ba9df26656fdac06c7965cce0ffd5de7d61a626dc4992d7e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown/synthetic-accuracy.json",
+      "bytes": 57252,
+      "sha256": "d42cf5842b9e7ab5ea55f2ccac6380fe33caa441db0d66daca6c387dfccd28ef"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/accounting.json",
+      "bytes": 4792,
+      "sha256": "aa2d1b6012905e84fabdd45e735659fdbc044fb90c27618b37b745d59d6c9455"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/contract.json",
+      "bytes": 995,
+      "sha256": "b7e5c1e60b7e67193df9ed8d277a36d040d7b863ba347430b47df46627a46c60"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "4704a59c10d70737004e91bfbd4400a88206eefe7cff20cf4f1e2bd153241aa1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "4a419e13887e285ea99c48eab31a8a4202d02a4cfe3d582a4a87c2120067fc66"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2623,
+      "sha256": "5e7677a69f06eecd7c83f2018a2fbdf39bcda819cfedcfebf7b5cb0473cdccbf"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "bc23f48eda0a0027f8c5f7c572a3b021242c97f0e40ee33d1be2218a2189b289"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/hope_planner_cpp_node.log",
+      "bytes": 5354,
+      "sha256": "86d434c00662a99f57eae27d52baf42850165cda3eba9af52716ba0424b8ce86"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "8c5df8d017accdfb53b4dc711b3306fd5e9e2a04b7f0495d1af5493d0cbfa945"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "1b55526eb982753749d3484b378933370d789a9d3fe89169e89aa59e2314e4e3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/planner.tsv.gz",
+      "bytes": 69050,
+      "sha256": "02bbceeaa28130db353f427a74c0ee4a2e8a90d9ae5277c14241405b85535b08"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/raw.json.gz",
+      "bytes": 143097,
+      "sha256": "ab26fd6937b54060e253e8faa1c3e6e97577129b7e5004859a58305d5b97e302"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/relay.tsv",
+      "bytes": 163302,
+      "sha256": "da84cf0f663cf8272f649a49e795339ecf25646c96a38b892f5d36718d1cbc33"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/result.json",
+      "bytes": 2373,
+      "sha256": "10e9daae56678dfc8f102bdff3060bcadbbcb892a453e768fb41135f23a6adc1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero/synthetic-accuracy.json",
+      "bytes": 54810,
+      "sha256": "b2a9860d1cc1e552d21df00ea6b5864dd3eb7db201413a81583f80b922aa3fc0"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/accounting.json",
+      "bytes": 7767,
+      "sha256": "8d4e1e463bb249b5476af092de19fba773e31f7107e802efec09d5e7907e1201"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/contract.json",
+      "bytes": 1001,
+      "sha256": "63dc2e45d835fd57d816c0318791c52556c23875bb7f913b6badabba69139bb4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/decoder.tsv",
+      "bytes": 2903,
+      "sha256": "0fd6744f82e5d7740c08134243676a1569ae293ed98b5b2b3b143200085e629d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "f5884a95dd4884ba372e214419bb4d19ae3ab822308271df3d155b1057f5492f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2834,
+      "sha256": "14700eccbda65fdee352ad407b942714af0c1935b1be8d8284ce04dff82d73d4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "bceb47e6b24a216ad0a0c417088b92914d1e880f60e2c5242327e332a7b43b80"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5354,
+      "sha256": "669019bfedf05cfa800ea7321c450d7f2f0f04c80c61164a250c0abefdd04bd7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "b450c3bb7abe18a2c0dd211c33dcf90448552b9e8f0fcaf7cc51a1801462ad01"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "2bceb7bfaf469967d3c579c892d1e0b27ab987b5debf3ff9c2e4c0ec35f6765e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/planner.tsv.gz",
+      "bytes": 69323,
+      "sha256": "9a2b0ce576195625a5bc52bd8dd488df7c7a826fa9cfc8a93546ce22ec8a3250"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/raw.json.gz",
+      "bytes": 141882,
+      "sha256": "6ac74b73db965c3368a7259526f3f57cc994999fbb3a8c64802dd4a35a88bff8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/relay.tsv",
+      "bytes": 164136,
+      "sha256": "d1681d3455fddf9e5da8427473b396b1c93cbc7383b98fd49dab24fc155d3b79"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/result.json",
+      "bytes": 2374,
+      "sha256": "ea08b954f810948450349a1be9cd1b9976172614e1428d9ed1296384c1e37217"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 57002,
+      "sha256": "0a4a4ac6eb125d068dbac9f8a9459ffadede8c4f87adac030ed66bd34378e844"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/accounting.json",
+      "bytes": 574,
+      "sha256": "e391cdd1ea4c510a2ae61f74f2f3004f2c0c3ac09b583a237ebaca52ad2b9cdd"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/contract.json",
+      "bytes": 998,
+      "sha256": "aa051af109f7403a25cedaa23f06d3ca19e05e1aedc704ebe697f7682b2d9e29"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "e50c47dcb828396894b41a3cf89a7a4f07c1edae324aad4b2a569052a4486e86"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "348b2b734139f03b0949c8c45dabb2516a579373673e0d5dac7947913d353e5e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 3047,
+      "sha256": "f9b0d6a44a5d806cae33a23720025baf4904f075252c53595d2c2a90c413e717"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "5dbd666f95c98bdf02a445c8d5d690ef414df0379beeca96b745e43dc89c811d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 6005,
+      "sha256": "2c61c9f821fb5d32c94adedcba09e246b53e68ee4bad4661ff36786b259730f8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 956,
+      "sha256": "4fcc041abb0a722cc5d55791f8c51b72db9cdb2b72f329973cb94cbea6ebb588"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "3799f4f0b209c48e0540668b4390bc68e992e9e7fe67259a9c00a51351dd52d9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/planner.tsv.gz",
+      "bytes": 80172,
+      "sha256": "4c2d186c410f888664a04262bf56cdd2bc97e5dcb53fc97bf8f5eac2042db159"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/raw.json.gz",
+      "bytes": 150108,
+      "sha256": "3c34c2d66fea3ffddb1bcfe34090112cef884fa87b6dfd6375c10dac071c503d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/relay.tsv",
+      "bytes": 176902,
+      "sha256": "353b2cf1ad0a944624a5bbd286f0bb5adb924cb1b201c702cf4785ecf9dfa11e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/result.json",
+      "bytes": 2243,
+      "sha256": "a528f923b2191f076ac24d1fe58919deb6190e50f2155ce906ddaae11b603939"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 56993,
+      "sha256": "fdac48fdec8b66870678ee7809033600bacec49e235c30ca66b564f1057f31f9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/accounting.json",
+      "bytes": 574,
+      "sha256": "fc7e9a124de95381c487207516a34fb644d7bf79bae88642a8db2140d787c755"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/contract.json",
+      "bytes": 1008,
+      "sha256": "ea5c3756f01b1723ae0eaa1934442b0b945e1dadc3123a1ff6652755824563d1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "1e70260acee305840f5c405741d0aec7ee5c8e96f4a46502da50a9c8bee9ccab"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "90e1567317750b8d0022e3188ae8d7f65ba579bd7d745f8ad3823863372fd778"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2834,
+      "sha256": "40aae0a1669c66a2c8b2f294bd2fc879b1743c18454fdb5db19acbf213e29015"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "a4fb6210643a8705813b496639b5a81b19a3b6a31fd2ecc5da5afd8674dfe000"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5354,
+      "sha256": "3022c7a3e2871da191a3d29f29bb4ce338864ae220d808b63f455f435323e688"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "0681fda1d2ce035a277c212e13166ab4536ca8a434ee2fa0d557d2713dcb51df"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "27c6fb3cb7dd1a1d20d13bdf426d81b5ca8ae65759fe1dd7dce9de4b8f09b52e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/planner.tsv.gz",
+      "bytes": 69428,
+      "sha256": "18f925d36979255f927438521e484e1c5bf0836bd54434c700d6482d486ffd9b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/raw.json.gz",
+      "bytes": 141939,
+      "sha256": "e549796d2048597d8aeca0212a5f59561779fdd34d555d1b5e373fd177bbda85"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/relay.tsv",
+      "bytes": 164136,
+      "sha256": "e6950d94ec05ed11187208d5952fae1d2a64130846e9f02b07ab656453a15857"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/result.json",
+      "bytes": 2236,
+      "sha256": "0c2a283c8a33de4f634d904c3f75fe374202784eb2b5b7056fba4160057937f7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 57798,
+      "sha256": "748a52cd4d8b9d08c960d019c61ff9897dd8403d4aa536e161845b2ee96357db"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/accounting.json",
+      "bytes": 574,
+      "sha256": "3de7925909ed5b2deb807d7198b989cec50fdeae01193ccb76e8dfa0479e02b9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/contract.json",
+      "bytes": 1005,
+      "sha256": "28f92420c5818d2d0fe70c9958d5368e1468633e215c93872893a1757c01d1b4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "ba5f906b7db132262c91a56ee026871e82a598a56cf25f0b7992e72b52f71902"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "71dac361904b78eda595c446a67cee9d7a8897600f2a7cdfe36d84000a354d0c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 3047,
+      "sha256": "f080bab2f9dad03400752820f047641f1dbedb55e0ba775a527f16cfe9621b8a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "e68eb364d71bd05c9827c1a1163719e1a75a8628a1ce63fb476f8ab4365b77f3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 6005,
+      "sha256": "f823866ad5af4bc6e8cf3cb65ba23c9bbecb8c85488501078db70aca1206f5a7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 956,
+      "sha256": "693b6356a1666338c42de1a99a187c67ea5153413269e0782cadb14e1171b59b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "c9edc9d44f8da863e64e66f133e75577a12ee3c22f6ab66d80c4b9b827a4c7e3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/planner.tsv.gz",
+      "bytes": 81150,
+      "sha256": "1111536a057b2e4450d87fb3f55bf8c9e96dff598252fce3f1a548bca35bec7d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/raw.json.gz",
+      "bytes": 150827,
+      "sha256": "88ac459a5b16597d2dba2e4a74146beac69db4fc94f627408f8820339c67bbbb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/relay.tsv",
+      "bytes": 178727,
+      "sha256": "cda65c74f158f55bbb520173d08ee089954e5131fc74706cac9dc88f8664625e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/result.json",
+      "bytes": 2249,
+      "sha256": "daa64f555f3180adcfc7f63059beed737ccb0e96987f4c7e755a4c052b45f413"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 55434,
+      "sha256": "9468efff001784362a85069b2fea21d1946642c7b992b5dda205200f85ebdcc8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/accounting.json",
+      "bytes": 6274,
+      "sha256": "6755f466ab2f1850f0392a133d7da15a4dfdcf8ded978f8d402e17697668400f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/contract.json",
+      "bytes": 998,
+      "sha256": "144d11558b6de715d8a123a0e05ec16a09e0f834b15d837720a5d22adff57929"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "c1085f3ea38ccf3e3d2d2f4c44407a4d99db6f2f4a5606ae13d3cc33bdb844bd"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "32fa3abcc216fba4499f74b12133fa8d3b2987757f35681fcaa963d28755fa23"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "8b536067561dd61aa848ff0b55e583e90049c758e53110de99910ea4a1a45f0a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "ed1f8ef1df78d4bf09300873664eb5911a703ac375101e3a5fc5fd50e9d70692"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "32b254b52f99ee85733af5f24b816e28c088b411bd418d0c546590e03f9d6600"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "0aa7c0a004318d1b27922033dbdad0a365eda921ca3472ebd44ea86cfac9133e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "9e145618959baef647cb283a640cd940970f7d331f8a366a31034059b2ee6a9b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/planner.tsv.gz",
+      "bytes": 129926,
+      "sha256": "67497098cdac30fd55a3df48eceaf8d1f89bee8f8bf55845f56e08fe943acec2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/raw.json.gz",
+      "bytes": 264075,
+      "sha256": "6e3622be6210119c619a425a4e52a4a2ed94fe3a5f470516a5504fe81090138d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/relay.tsv.gz",
+      "bytes": 85718,
+      "sha256": "8d802aa71d6d43c94712d7598e2abe049090ba083e971345a857a1c08c77c96f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/result.json",
+      "bytes": 2387,
+      "sha256": "99ee136157c035dd043e0f574e9051e5df17cb67bc791a68608c556129ce6a48"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown/synthetic-accuracy.json",
+      "bytes": 114157,
+      "sha256": "02375af62975133ab82a28e57025e498679344698483e6bc0b09763d46765e65"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/accounting.json",
+      "bytes": 2999,
+      "sha256": "630774f017527741dabb2ee2d40f93df2ac404f049c50afee015a4162b7f7517"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/contract.json",
+      "bytes": 995,
+      "sha256": "8348e799abb9389a4d021266adbcdf8e1b5745bad24061c4066bb1dc5475d8a8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "1fc926305f3426d7e3e37765f02401dbff217e680800b99fbc751d25ab9aa335"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "860ab2c9b73fbbe1a07370fe345a46265457045901b195528da806b716ab8e6c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "75aa8f25d903e752448b6aaac7f1fca3e39f02a8f1a8123451f0c4850669abfe"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "1e213b2846dff9386eaaa243eb5bf63863934e49afba681db732f00161269836"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "640017156fcba67ba036ab60ba34c58b573a2e9466a3199a3d2848fbd92c7ed7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "84c6de9190570878b2e7e01baec81a313d405ece3b79ea17b7c0429ebeaa33a4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "ce6bb8492f6030b72e32d303c9acd9db67861e7db06e7fa2ed70224b0cdaaba1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/planner.tsv.gz",
+      "bytes": 130870,
+      "sha256": "e3055a7f47073d8b2e9df7b759e358eec1685fbbc240c8bc5a0bab428101f345"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/raw.json.gz",
+      "bytes": 269141,
+      "sha256": "6466b5266c9e4d848433fb39c881975afeb0d9bd2c267e156211691c9db85e4c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/relay.tsv.gz",
+      "bytes": 86060,
+      "sha256": "61f44a7262b223d0afabc8b2500eff809afb0194d4a8ad1f0561865bfff37474"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/result.json",
+      "bytes": 2292,
+      "sha256": "ff6b7604d7e44876359b0758ec81e877c959def750a4168b4e93d37a2bbc2dc5"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero/synthetic-accuracy.json",
+      "bytes": 115491,
+      "sha256": "f4527deb84906ddb60b31f14ec2f9040b9eb71fffff4e1e64490bccf1057bc45"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/accounting.json",
+      "bytes": 2379,
+      "sha256": "dbf83057fd5821e5907688fa45cf27157863f61d4c42591305e4ff2fefe915f5"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/contract.json",
+      "bytes": 1001,
+      "sha256": "3e6c067e2c5d28b6559e1d99702dfb6fee2836db22c0cfe6163a6d7016727793"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "c3509980a85095b0643ef6316b0136d51e23dc29869e03ed23cd9312a45ca03e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "e84ab76956195c47d7b75ff9abb191e8546cf25750b1fac562e5b4c4f3636746"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "55dcb55d438fe359b8d8fbd99ee5cad9919d62109cb6c91976c525859ee75474"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "effd04509baaf36387b851664ebc5d1085e78c5dccf32606e279cdd16d54aaa5"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "fdbcfe4cd4f4aee629e141848125fe311dbc61c8d078979436070c71e8a2a0b4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "0f8648b9a3e80907faf770c6c0b6b00717d26b40524b6fdf9fa3ba88db4aa696"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "b89e5aa32f329ed05a3a3e37c50071b746659f5086da635f385c54e0a397c587"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/planner.tsv.gz",
+      "bytes": 130650,
+      "sha256": "be2b5057913710e07a52c9868dd36640b7a6245c4245835ab88788eef98267f9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/raw.json.gz",
+      "bytes": 266109,
+      "sha256": "4807cdda05bb5818dd20ee2f1056cdb84d236ca47375bfb9e7e9cba12532196f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/relay.tsv.gz",
+      "bytes": 85968,
+      "sha256": "3e7eac2600a3c822c23839b8d7583b47b6f2130fd45759ae05dc15574f5ef5dc"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/result.json",
+      "bytes": 2342,
+      "sha256": "4279a9f2a0cdc05b0262166c39e174ff4b1fcb35246e7d111cbde418c92a5a4e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 116601,
+      "sha256": "4152725480a669ee78c655083c96d67d40928b7312ff50b0c83cb2cf6f904681"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/accounting.json",
+      "bytes": 5928,
+      "sha256": "4ef72cbbf94ee04f5a494400508cc9908fa4f9489220675f7743833c83deb50d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/contract.json",
+      "bytes": 998,
+      "sha256": "b28a6490cc82b9dc787b8d66d388fd275ba135a52a595c2f5cf4d0ecc75ed756"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "38ff67ac1e2b38990111fae0088b34840be18aa64fc253a1c21261ed3603cc0b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "1ef8d8fa330773b542a258099975d7861398682c453b652dc0883f03160a193e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2844,
+      "sha256": "0da3e2d767baa4743da0198d30b8101d5e18344db5c1ae534d213216af0c1d5c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "167bc2bb78bc2ea91333f20fede0a517ecf23125207cb06066dc2f2165f2a9b3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5363,
+      "sha256": "db48cb2f2a9290f4bcc4361f3b0ac536764b7de6cf469ad534fc83a52a35889c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "e74ae163b09d591e9ec0f3d3a5a4b1eba54cb23fc7a63749c8bafc60373feb5e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "e339a2986b6478b6dc4b2a006ef49f3ad629b08cb1ca70eae3c1e11c9bcc3afe"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/planner.tsv.gz",
+      "bytes": 130433,
+      "sha256": "f441ec052a3223a0edfb9b56037ac63f67c8b20c5e5761c5ff3356431f980d39"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/raw.json.gz",
+      "bytes": 268298,
+      "sha256": "0a5847b6cd980870b7b1e2c804ce6305c36332b7a28af8d51ace6c85f11ac5f1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/relay.tsv.gz",
+      "bytes": 85907,
+      "sha256": "55c991f1057753aab04ef90d1faa71ce665b30e0b555a1ab2ba333fc4b61636b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/result.json",
+      "bytes": 2380,
+      "sha256": "c761a6ab5269a4e73a6762fb0118cae1d94521992201fbf2f34ef5273275c151"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 115258,
+      "sha256": "be3fa4776052a5a490c7e450e48fb562072f9231751559c143b295832eae5db5"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/accounting.json",
+      "bytes": 2085,
+      "sha256": "1f8ef3b8221198990547faf56124f92eccdda551abc7ecc35dcf89ded19314ac"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/contract.json",
+      "bytes": 1008,
+      "sha256": "9ba0e292f37ffcd0c1fa40251727536b0bff0f2303b69cfb0b5fc986e2f34307"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "2ee32e0ad938ba00aabc2ffe350ea94b0f454b862d258314b10c915a9019e20c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "de825529ef2d02124f6caa503993e86db2b16bdaa2c7aa884f2846917b886b7e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "eaeec38d410d055a99055a04b7dd64bca64607aff06585a44695f87249b2d8c8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "1a30d3890d9cda53278e849ba2666532ea3e48552d1f0e923b072477bffb72f6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5364,
+      "sha256": "8fbbf1eed7b81c83d82c61637d73d0b196b60a87883dc1d959ce99efe41af5d1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "b1dd6781199882a481528188c48e132ff90958ab279e6b75305c3721b874ad73"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "f0e2143f8f0db978684cbe9c969d680369570ac5b674195415961a9eb86a0dee"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/planner.tsv.gz",
+      "bytes": 131562,
+      "sha256": "59494af460719bc94e8ea4dcd26f3fc25059c4a51509331a7a0f073d474b6b62"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/raw.json.gz",
+      "bytes": 266389,
+      "sha256": "5fe68a31a20eff33d81793ae5ffd430f41dac27b50e10058be327184749b6822"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/relay.tsv.gz",
+      "bytes": 86168,
+      "sha256": "297cf549dc2c1b96d9b0270b4e240405415272afb4ac25e4b5b44650d6304ef7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/result.json",
+      "bytes": 2347,
+      "sha256": "3154435276838a3985b4638b8685872fc83a578524680a9243d41d19ed3da51b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 116383,
+      "sha256": "3264f50f289ec744591ce768e43b9ec1ebded38c6ffa21f119b272e31709ec79"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/accounting.json",
+      "bytes": 11593,
+      "sha256": "20c628121dcc7080a936aa9ed9bd8bf68efd4c3bccfd95d425b6fc30d25b6e6a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/contract.json",
+      "bytes": 1005,
+      "sha256": "c883754cc745af0d99da6965cca93852d94e18efd1d3f103f01d20d348243f63"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "226d17bc2f097ebc4551f016066b582a1b9b332af34f7b2fa373192b9f1f3fd2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "7a04991c9fb3c4e507242223c132be36a8178b6bfec8eafc91c2f171ba916198"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "14777c96edadd15fd2b90e3b569c3ae70d32e67c88106a1f3795e62c7bc5ae50"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "1da0d2908b1d7ad7d6a579f2d3ce1f6ec7d2161f26123ff90cc5a6931f610304"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5362,
+      "sha256": "81d95101a456e5431b8f8210880cce0089b288a2cff9ed29178b7fa59cb2ffbc"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "2155dbafdb941b7bb55073ddd45601178aa259cf083384c9b6abbf4c75d1a4ef"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "e86d13cd2f55e555068ac761f8e99e2f298e80b0f8bf1106602b17109bb3b69e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/planner.tsv.gz",
+      "bytes": 129081,
+      "sha256": "94e7792634930bfa6dead5950d90a15717ac92fdbf2319f334b1e4e9988b3b85"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/raw.json.gz",
+      "bytes": 265507,
+      "sha256": "fba5a1ba23605a5a9743256f5340a440a807d5ded16e83b5cd67b79b0c2886c7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/relay.tsv.gz",
+      "bytes": 85241,
+      "sha256": "b9c5a520b98c65871fc39b30c197f957a3a4cd1133f8f6a95f1849ad1cbfc7c9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/result.json",
+      "bytes": 2445,
+      "sha256": "d8e2a6cb775381a566f9234284da67092c8c452fef7d34313cba3815c88d8c67"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 113150,
+      "sha256": "d02e0e77c74b1dc5cce69f07344d31f3532f8d18ce39a05155ff0a1629f4cad8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/accounting.json",
+      "bytes": 26020,
+      "sha256": "31b0afdba62eae8f813fcb2209f37728ddd736bdb63b9004a4f367fe08e0bbf7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/contract.json",
+      "bytes": 998,
+      "sha256": "d86ae08248e950dfeadc7ae4e27ec0c23e126319353f6efe359097e3e61adb31"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "2e4a2f6d46d7def74b0bf0fd80fae7dd0a87792da77242e8404dacb2baddcdd7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "6f2a3346fb10e0e129145160d8bb9b39ae6539bd3a5d2965d57a5855b5663027"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2844,
+      "sha256": "e95e696cb328bcdd0cc1e9ec949282718c690983a24eaabdffeefbaa9074459b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "30a78e17527677d5d73341fe31a0489e0da4017fba9d748655e849aeee98c85b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/hope_planner_cpp_node.log",
+      "bytes": 5363,
+      "sha256": "f30e76aaf3e9d0346c37c5257a7ee3f4529c7badb2f44454e17870dff7641e75"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "3085ae47c1b7877c5e04d65c3c933ddcf761d5a428981829723dba27a76137cb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "a1dc970fa8fef3db50742f1db56cd8101f4deb9f3e104fad1c3606a35d2a20b6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/planner.tsv.gz",
+      "bytes": 151514,
+      "sha256": "22cc797bf603bfb1bf6a993d4177723c6504e7ef4843cea2fabad670cb99f82e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/raw.json.gz",
+      "bytes": 307438,
+      "sha256": "ab9694d8ec35851cd80b06c7e1c364fe3fb5404ce8d7d2994848bb5d9153e989"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/relay.tsv.gz",
+      "bytes": 101406,
+      "sha256": "9731ea897775945b5e53659fc08b24ee562564bed13f31f5da7d0e590c8e74fb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/result.json",
+      "bytes": 2695,
+      "sha256": "04b37b9f43ffce327ae0da064ac52bf312b6951bc5e34defd4c1a924fd223488"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown/synthetic-accuracy.json",
+      "bytes": 133026,
+      "sha256": "13d13127d8185eba6940e36b6aa3087511bfe6ac62aa4bd4966f6b52dfeb93c5"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/accounting.json",
+      "bytes": 12252,
+      "sha256": "fefec731ec7638fe9fb61e64199a4d27164be91f36b2129e2af6d92a4d35a080"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/contract.json",
+      "bytes": 995,
+      "sha256": "5488e7f61527d64c9fb7ef3d2abaa04c170287ff089fac45018c4f3bf2e96a4a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "fa02e83422dfa58a5a4ab5e9162eccddc400af2f6b605061526e304aafe18930"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "2285c6fa2879f76595d3462cafec7aa0652ef288e7f6df23e4cc3c10b65d6feb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2844,
+      "sha256": "8dffac8fedfeb177f1792251b7dc55aff80b5ebb1bf6a2849007fc47edf42d70"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "48a50ecd320550c076218daed775e7152ec5c3c0d479e6b649c0cbdada254f42"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/hope_planner_cpp_node.log",
+      "bytes": 5364,
+      "sha256": "d481ac8c4371d50d7cadae1029d816295e20ff644f85b24b3ecbfb2574c8aa85"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "1c1b03a5a0d54bdf8d0bd0e85292eb67e33941b609cce9b85a48f5d3c9ca0e33"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "cbc83dc8955e7cd660aaf5617d167a88545b3c952dc593287c68c085b74555d3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/planner.tsv.gz",
+      "bytes": 154449,
+      "sha256": "e34de66db0976bd8e154636cb3c0ab464383f49d55bc88e6f057db74c4902a25"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/raw.json.gz",
+      "bytes": 315556,
+      "sha256": "c9baf1bffc095e5f441e82bfc186b35c87bd15a210b8fa8a2f0b913c923a990b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/relay.tsv.gz",
+      "bytes": 102326,
+      "sha256": "20a8282e442413c74c3d3772bb21894e80f782826489ff216b6fca249a0e6459"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/result.json",
+      "bytes": 2466,
+      "sha256": "ddd0b0e24045c9c297d601eaa5a38aa70ce046209244784e4ae84c67e31ce845"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero/synthetic-accuracy.json",
+      "bytes": 136979,
+      "sha256": "c4487b3caa5a8aaecc75aa931576b5d13185a26110f54e79619d21213d471616"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/accounting.json",
+      "bytes": 5337,
+      "sha256": "b71e92fc3b087bcabd295cd676a46c605b078c9dfb281730ef596383f65f634b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/contract.json",
+      "bytes": 1001,
+      "sha256": "e95cadb3aae0276f6dad7838595a393522892bdd33e6e3476723f21c8ca77f45"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "bb0115628d6ea34cd1f0784a1bfe6080a91eefa465a643e660a9d78c94452c41"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "983cc62025ed3779fc9ceba4c20387a0ac1d02ad5c316e699db1637c94f6a175"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2844,
+      "sha256": "a0e07ef1ea00d7b2d396bc2863ae03eda14f6d229d9cb94e3de4422170f5e9ee"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "5a4b5e0a89b61963dc6dfd321bc9c001adfb549a4724115e9f65564fd8dcb167"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5363,
+      "sha256": "c6659dded2ee4a419e228c14f65413b1c2771a12752f212f291a9aca9fe11488"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "2040c977a9e682048b83d1d7be776e9fab2d263009d1bb5da345be3e778bebbb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "e6bdc7b50517450089b9627159498755ae950bfee189771b18d910fadf3db3dd"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/planner.tsv.gz",
+      "bytes": 152649,
+      "sha256": "e84bca00cce6b1c761746cf92fe803239ec97e8dc669f1b32f5e1ca0554ca58e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/raw.json.gz",
+      "bytes": 310542,
+      "sha256": "7f71e274dc8d56d7c5175fc02d359a6e15fea8377e57c765e4f00612f277f0d1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/relay.tsv.gz",
+      "bytes": 101676,
+      "sha256": "e9d0ec9fe67b992d0f1b935caf6725bdc0c7063f8f808de612aa559cb8a8c441"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/result.json",
+      "bytes": 2386,
+      "sha256": "8510881d8cd7862da69f13ce815160ad70b6a1bf5d13ad332779a7de31367d05"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 137812,
+      "sha256": "d0a2c028869101e2529a83f3e6a6e8454c377e62acfcb8a3c236e3ba79ed1b28"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/accounting.json",
+      "bytes": 24520,
+      "sha256": "013bee7c0580102a1c87d954abfc75ee952fbf7d5bb923be753d83ea3105b1df"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/contract.json",
+      "bytes": 998,
+      "sha256": "f784e7800d987dd1cf6f1182edeef78c614e85f5ef87260fc73b5680bf467dd3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "90fe898f2d8342f31f6f16b7523c8f7f519a9a84537bad1d9b901613ba027b1b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "970c432ad194c3f261a3c3f2243bfb1786c387f1178d2ca5b391e0af8c9a9484"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "86dc859e9c2987d8f78ed9e0eaf57d3996d204a690dc7c2dd0e49c4ac9868ec8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "79eac1f307d49746bf2f320f2fe582b63d07b8812e38f59efa2e8a822a4f0f56"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "265675c8571265bd801016cffb3ac861d4388f40ca6ce272e73900541d37a876"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "9ff5161a88f2648f02f667f880d05ccef63a9eb18d209150b4890823ea8ac7e8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "e29f2c518d7f2127947d3302b2a1a6d1ed9be2588c7d765d506e024bfc22ea8a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/planner.tsv.gz",
+      "bytes": 153397,
+      "sha256": "6778ba401a3d91517a67e4325508f1c0ddfe750eef444fdb1fd3451d89b6823d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/raw.json.gz",
+      "bytes": 314739,
+      "sha256": "d99606e47e0186b155da4ec10c9838f1c792f377605fc2dd6b1131abbceadd65"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/relay.tsv.gz",
+      "bytes": 102166,
+      "sha256": "a578a5c05c2f26d7edefd286c44426c7b4fd900ec0fe386038011ec7b3e6cd53"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/result.json",
+      "bytes": 2623,
+      "sha256": "18a1146198bf16a5686910443c8018723b2bb376dc0dd4bda28e7726349950b0"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 136241,
+      "sha256": "5fc5426207f25df7e8704861cc0908c73eb3efabbfbfa1d3154ba114f5321592"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/accounting.json",
+      "bytes": 15987,
+      "sha256": "0cae29b617e1c8862fe9c008f86e6ab037063ee06bd8245f6fde88a86e7aabfa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/contract.json",
+      "bytes": 1008,
+      "sha256": "6c90ba1f71dbf076711207a46b79e98fa25ebfa0f0f31c9dfd21c4986a45f4f2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "4f51466123174388768270d80fc6db4fe8ad55546379634f9bf630cb5f2cdd2e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "ebc7be54cb6630e54bc6f85b9e6768299f5d265887f7a9cdbbb137bacaa2f94b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "7a117f975097e4fae556e1573cfe158df58807c2e2b71ebcf819b116da8cd92a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "1059a7c43dc0b47da5f9995a0e83ed048721d42962dc1d17a4512006f9ef8cef"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5032,
+      "sha256": "6ae12cd2779961e79cc570c7b3edfb5bb634fa48d870ac85f53202a34b32ae1a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "e4c594e484128a623e41db7dd86758ff321f5b20ef70a5d3e6e4b1e3e44ce1f9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "ccb1ec559df54467c45c94965492b2092b4941d937ee86a29ffe73657b9ddce7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/planner.tsv.gz",
+      "bytes": 151596,
+      "sha256": "0f0b25e6f9d65876158db773dc780d58a7a58854714d6b8c6ea1eefc314e3472"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/raw.json.gz",
+      "bytes": 308749,
+      "sha256": "5f9b5437e8dec42778748ac2f9c5fd19edf00fe3f1a47588c678fe4eb96578c9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/relay.tsv.gz",
+      "bytes": 101591,
+      "sha256": "f14b796bad26f4e16191b4c0a308118d1f4a3f385899a2609fe4b6c891aac35a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/result.json",
+      "bytes": 2545,
+      "sha256": "634a97e0ae16d270dfecae04fe77dc721d305af7be93fd7ed6499094f93ebe52"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 134263,
+      "sha256": "3626f567b6aca64e0d9764da1f446fdb1566aea7c0a7076ce841aa18b4977f6d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/accounting.json",
+      "bytes": 9480,
+      "sha256": "a41c659e500da4573d37ebb38d4899e5783bda75554a8344b523cd40a4a598ea"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/contract.json",
+      "bytes": 1005,
+      "sha256": "3dbdf11a78849bd50876704e6ce98608cf52bf3ee9070bf62af5f94a2da41ce6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "4c24b6ef83f28408e6da0c12d4a1cf58b2503a0532df45d6646e21df83cfdc87"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "aa5dbe9aa8b93f9101269bb3e8243c474a1c4d9cb3dbb29167c6124259291607"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 3266,
+      "sha256": "f6be0552fdc5de7812a3b78adafb542b761f56aa9603a17728b35efdb94b89d6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "30ad4a7e321aab55a8f92fa68d8ec45bf04350746f7e268c1af91c7d0b41b3b7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 6015,
+      "sha256": "c3992de3cc27e3cc76cadd58369427d3dfacfcfe35cbecfa7191f175a0b48fd9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 956,
+      "sha256": "8af043c0b1624074733bb253cebee45f36a28854f8b5ccffb6d85d0e738c1793"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "a6f48875460d7c983f4539ff5122a95a1794344e7077dd5668a14eebe5507abb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/planner.tsv.gz",
+      "bytes": 168450,
+      "sha256": "5de59d56dd4f3f6e3184ed56ce92e4de69b73d37cb7b81613beb963d12d4e958"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/raw.json.gz",
+      "bytes": 324609,
+      "sha256": "6e3927179b20a95f3b4bbf9792742f71cf35840e5820de8fd0dbce0bcad21d03"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/relay.tsv.gz",
+      "bytes": 107070,
+      "sha256": "ef84396110ecf62d6ca79a0901152e554c72c28b75a52f2ffef0456771487c42"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/result.json",
+      "bytes": 2464,
+      "sha256": "4b25d2212fd83a0332502fec87587b8d92e20c120e851f8a1da596f4869f2b03"
+    },
+    {
+      "path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 138746,
+      "sha256": "84944048224338936b62fd7bab06a61d761cc6eba80bace6d7bd0b5cb4e2d65f"
+    }
+  ]
+}
