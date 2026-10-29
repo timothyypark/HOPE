@@ -69,6 +69,18 @@ TEST(RunnerRevocation, BoundedLedgerOverflowRequiresNewAuthoritativeHome) {
   receiver.SetFromFlat(packet(true,1,1,1,8));
   EXPECT_FALSE(receiver.Latest().flight_revoked);
 }
+TEST(RunnerRevocation, ReorderedUnrelatedStatusCannotHideCurrentFlightVeto) {
+  for (int schema : {4,5}) {
+    a3_pingpong::PpRacketTargetInput receiver(4,true); receiver.SetExpectedHomeEpoch(7);
+    receiver.SetFromFlat(packet(true,1,1,1,7,schema));
+    receiver.SetFromFlat(packet(false,3,2,2,7,schema));
+    EXPECT_FALSE(receiver.Latest().flight_revoked);
+    receiver.SetFromFlat(packet(false,2,1,2,7,schema));
+    EXPECT_TRUE(receiver.Latest().flight_revoked);
+    EXPECT_EQ(receiver.Latest().seq,3u);
+    EXPECT_FALSE(receiver.GuardEngagement(receiver.Latest().cmd).allowed);
+  }
+}
 TEST(RunnerRevocation, RevocationAndFinalEngagementHaveAnAtomicOrdering) {
   a3_pingpong::PpRacketTargetInput receiver(4,true); receiver.SetExpectedHomeEpoch(7);
   receiver.SetFromFlat(packet(true,1));

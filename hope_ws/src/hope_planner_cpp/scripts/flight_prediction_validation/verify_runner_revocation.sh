@@ -29,7 +29,7 @@ for mode in disabled enabled baseline; do
   binary=candidate
   if [[ "$mode" == baseline ]]; then binary=baseline; fi
   for schema in 4 5; do
-    for lifecycle in 1 2 3; do
+    for lifecycle in 1 2 3 4; do
       name="$mode-schema-$schema-case-$lifecycle"
       set +e
       "$output/$binary" "$policy/policy.onnx" "$policy/deploy.yaml" \
@@ -50,15 +50,16 @@ rows = []
 for path in sorted(root.glob('*-schema-*-case-*.json')):
     row = json.loads(path.read_text())
     enabled = path.name.startswith('enabled-')
-    expected_engagement = row['case'] != 1 and not (enabled and row['case'] == 2)
+    pending_case = row['case'] in (2, 4)
+    expected_engagement = row['case'] != 1 and not (enabled and pending_case)
     assert row['engaged'] == expected_engagement, (path, row)
     assert row['active_after_revocation'] == (row['case'] == 3), (path, row)
-    if row['case'] == 2:
+    if pending_case:
         assert row['policy_observed_before'], (path, row)
-    expected_exit = 1 if row['case'] == 2 and not enabled else 0
+    expected_exit = 1 if pending_case and not enabled else 0
     assert int(path.with_suffix('.exit').read_text()) == expected_exit, path
     rows.append(dict(file=path.name, result=row))
-assert len(rows) in (12, 18), len(rows)
+assert len(rows) in (16, 24), len(rows)
 result = dict(status='PASS', cases=rows, after_engagement_cancellation=False,
               scope='production policy software lifecycle; no HAL or physical actuation')
 (root / 'summary.json').write_text(json.dumps(result, indent=2) + '\n')

@@ -8,6 +8,7 @@ int main(int argc, char** argv) {
   if (argc != 5 && argc != 6) return 2;  // ONNX deploy.yaml lifecycle-case schema [enabled]
   try {
     const int scenario = std::stoi(argv[3]), schema = std::stoi(argv[4]);
+    const bool pending_case = scenario == 2 || scenario == 4;
     const bool revocation_enabled = argc == 6 && std::string(argv[5]) == "enabled";
     a3_pingpong::PpPolicyConfig config;
     config.deploy_cfg_path = argv[2]; config.shared_session_home = true;
@@ -43,7 +44,7 @@ int main(int argc, char** argv) {
     if (!home.epoch) throw std::runtime_error("no production HOME receipt");
     auto wire = [&](bool valid, unsigned sequence, unsigned revision) {
       const double now = a3_pingpong::PpNowWallSec();
-      const double lead = scenario == 2 ? 1.2 : .5;
+      const double lead = pending_case ? 1.2 : .5;
       std::vector<double> packet={double(schema),valid ? 1. : 0.,1,
           home.x+home.plane_x,home.y-.44,1.05,1.92,.19,1.03,
           valid ? lead : 0.,valid ? now+lead : 0.,0,
@@ -55,11 +56,15 @@ int main(int argc, char** argv) {
     if (scenario != 1) input->SetFromFlat(wire(true,1,1));
     const bool retained_before = input->Latest().has_valid;
     bool policy_observed_before = false;
-    if (scenario == 2) {
+    if (pending_case) {
       for (int i=0;i<5;++i) step();
       policy_observed_before = policy.planner_trace_snapshot(tick).planner_flight_id == 1;
       if (policy.level() != 0 || !policy_observed_before)
         throw std::runtime_error("fixture did not exercise an observed unengaged target");
+    }
+    if (scenario == 4) {
+      auto unrelated = wire(false,3,2); unrelated[15] = 2;
+      input->SetFromFlat(unrelated);
     }
     if (scenario != 3) input->SetFromFlat(wire(false,2,2));
     bool engaged = false, active_after = false;
@@ -80,6 +85,6 @@ int main(int argc, char** argv) {
         << ",\"engaged\":" << (engaged ? "true" : "false")
         << ",\"active_after_revocation\":" << (active_after ? "true" : "false")
         << ",\"status\":\"" << status << "\"}\n";
-    return (scenario==1 ? !engaged : scenario==2 ? !engaged : engaged && active_after) ? 0 : 1;
+    return (scenario==1 || pending_case ? !engaged : engaged && active_after) ? 0 : 1;
   } catch (const std::exception& e) { std::cerr << e.what() << '\n'; return 2; }
 }

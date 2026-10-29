@@ -429,18 +429,20 @@ class PpRacketTargetInput {
         if (!expected_home_epoch_ || home_epoch != expected_home_epoch_) return;
         if (m.valid && (revocation_overflow_ || revoked_flights_.count(flight_id))) return;
         if (!m.valid) {
-          // Identity-free legacy invalid messages remain advisory. Explicit
-          // revocation requires a newer revision and command sequence.
+          // Order a veto against its own retained command. A later packet for
+          // another flight must not hide a delayed, still-authoritative veto.
+          // Identity-free legacy invalid messages remain advisory.
           if (!flight_id || !revision_id ||
-              (have_wire_seq_ && command_seq <= last_wire_seq_) ||
               (last_valid_receipt_steady_ >= 0 && flight_id == last_valid_.flight_id &&
-               revision_id <= last_valid_.revision_id)) return;
+               (command_seq <= last_valid_.command_seq ||
+                revision_id <= last_valid_.revision_id))) return;
           auto previous = revoked_flights_.find(flight_id);
           if (previous != revoked_flights_.end() && revision_id <= previous->second) return;
           if (previous == revoked_flights_.end() && revoked_flights_.size() >= 256)
             revocation_overflow_ = true;
           else revoked_flights_[flight_id] = revision_id;
-          have_wire_seq_ = true; last_wire_seq_ = seq_ = command_seq;
+          have_wire_seq_ = true;
+          last_wire_seq_ = seq_ = std::max(last_wire_seq_, command_seq);
           if (last_valid_receipt_steady_ >= 0 && flight_id == last_valid_.flight_id) {
             last_invalid_event_seq_ = ++event_seq_;
             last_invalid_wall_ = now_wall;
