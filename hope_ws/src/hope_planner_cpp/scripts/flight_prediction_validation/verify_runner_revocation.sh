@@ -53,6 +53,8 @@ for path in sorted(root.glob('*-schema-*-case-*.json')):
     expected_engagement = row['case'] != 1 and not (enabled and row['case'] == 2)
     assert row['engaged'] == expected_engagement, (path, row)
     assert row['active_after_revocation'] == (row['case'] == 3), (path, row)
+    if row['case'] == 2:
+        assert row['policy_observed_before'], (path, row)
     expected_exit = 1 if row['case'] == 2 and not enabled else 0
     assert int(path.with_suffix('.exit').read_text()) == expected_exit, path
     rows.append(dict(file=path.name, result=row))

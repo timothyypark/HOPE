@@ -43,9 +43,10 @@ int main(int argc, char** argv) {
     if (!home.epoch) throw std::runtime_error("no production HOME receipt");
     auto wire = [&](bool valid, unsigned sequence, unsigned revision) {
       const double now = a3_pingpong::PpNowWallSec();
+      const double lead = scenario == 2 ? 1.2 : .5;
       std::vector<double> packet={double(schema),valid ? 1. : 0.,1,
           home.x+home.plane_x,home.y-.44,1.05,1.92,.19,1.03,
-          valid ? .5 : 0.,valid ? now+.5 : 0.,0,
+          valid ? lead : 0.,valid ? now+lead : 0.,0,
           std::floor(now),std::floor((now-std::floor(now))*1e9),
           double(sequence),1,double(revision),30,.1,double(home.epoch)};
       if (schema==5) { packet.push_back(home.x); packet.push_back(1); }
@@ -53,6 +54,13 @@ int main(int argc, char** argv) {
     };
     if (scenario != 1) input->SetFromFlat(wire(true,1,1));
     const bool retained_before = input->Latest().has_valid;
+    bool policy_observed_before = false;
+    if (scenario == 2) {
+      for (int i=0;i<5;++i) step();
+      policy_observed_before = policy.planner_trace_snapshot(tick).planner_flight_id == 1;
+      if (policy.level() != 0 || !policy_observed_before)
+        throw std::runtime_error("fixture did not exercise an observed unengaged target");
+    }
     if (scenario != 3) input->SetFromFlat(wire(false,2,2));
     bool engaged = false, active_after = false;
     std::string status;
@@ -67,6 +75,7 @@ int main(int argc, char** argv) {
     std::cout << "{\"case\":" << scenario << ",\"schema\":" << schema
         << ",\"revocation_enabled\":" << (revocation_enabled ? "true" : "false")
         << ",\"retained_before\":" << (retained_before ? "true" : "false")
+        << ",\"policy_observed_before\":" << (policy_observed_before ? "true" : "false")
         << ",\"invalid_after\":" << (input->Latest().invalid_after ? "true" : "false")
         << ",\"engaged\":" << (engaged ? "true" : "false")
         << ",\"active_after_revocation\":" << (active_after ? "true" : "false")
