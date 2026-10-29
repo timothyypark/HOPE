@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FlightEventV2.msg"
   "msg/FlightWaypointV2.msg"
   "msg/FlightPredictionV2.msg"
+  "msg/StrikeCandidateV1.msg"
   "msg/FlightPacketV2.msg"
 
   "msg/BallFlightSample.msg"
