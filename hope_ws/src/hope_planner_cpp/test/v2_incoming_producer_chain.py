@@ -37,7 +37,7 @@ PREFIX = '/hope/shadow/v2_incoming/'
 BASE_ID, WORLD_ID = int('b' * 13, 16), int('a' * 13, 16)
 
 
-def source(rate, spin, stop, ready, queue):
+def source(rate, spin, stop, ready, reference_ready, queue):
     """Offer acquisition-timestamped independent truth at the declared rate."""
     rclpy.init()
     node = rclpy.create_node('incoming_independent_camera')
@@ -51,6 +51,40 @@ def source(rate, spin, stop, ready, queue):
     if not camera.get_subscription_count():
         raise RuntimeError('camera relay discovery failed')
     rows = []
+    home_sequence = 0
+
+    def home_receipt():
+        nonlocal home_sequence
+        home_sequence += 1
+        receipt = Float64MultiArray()
+        receipt.data = [2.0, 100.0, -0.5, -0.7625, 0.58, float(BASE_ID), float(WORLD_ID),
+                        5.0, float(home_sequence), 1.0]
+        home.publish(receipt)
+
+    def body_message(stamp):
+        msg = NamedPoseArrayV2()
+        msg.header.stamp.sec, msg.header.stamp.nanosec = divmod(stamp, 10**9)
+        msg.header.frame_id = 'world'
+        latency = LatencyInfo()
+        latency.source, latency.latency = 'NatNetClockUncertainty', 20
+        msg.latencies.append(latency)
+        body = NamedPose()
+        body.name = 'UCB_P1'
+        body.pose.position.x, body.pose.position.y = -0.5, -0.7625
+        body.pose.orientation.w = 1.0
+        msg.poses.append(body)
+        return msg
+
+    # DDS discovery is not a qualified flight opportunity. Offer no ball until
+    # the actual planner confirms that it has the registered HOME/reference.
+    setup_started = time.time_ns()
+    deadline = time.monotonic() + 10
+    while not reference_ready.is_set() and time.monotonic() < deadline:
+        camera.publish(body_message(time.time_ns()))
+        home_receipt()
+        rclpy.spin_once(node, timeout_sec=0.01)
+    if not reference_ready.is_set():
+        raise RuntimeError('planner HOME/reference readiness failed before offering balls')
     origin_wall, origin_mono = time.time_ns(), time.monotonic_ns()
     gc.disable()
     ready.set()
@@ -65,17 +99,7 @@ def source(rate, spin, stop, ready, queue):
         elapsed = (stamp - origin_wall) * 1e-9
         ordinal = math.floor((elapsed - 0.5) / 0.9)
         phase = elapsed - 0.5 - ordinal * 0.9
-        msg = NamedPoseArrayV2()
-        msg.header.stamp.sec, msg.header.stamp.nanosec = divmod(stamp, 10**9)
-        msg.header.frame_id = 'world'
-        latency = LatencyInfo()
-        latency.source, latency.latency = 'NatNetClockUncertainty', 20
-        msg.latencies.append(latency)
-        body = NamedPose()
-        body.name = 'UCB_P1'
-        body.pose.position.x, body.pose.position.y = -0.5, -0.7625
-        body.pose.orientation.w = 1.0
-        msg.poses.append(body)
+        msg = body_message(stamp)
         present = 0 <= ordinal < 10 and phase < crossing + 0.025
         eligible = present and 0.100 < phase < crossing - 0.030
         state = None
@@ -92,21 +116,7 @@ def source(rate, spin, stop, ready, queue):
             msg.poses.append(ball)
         camera.publish(msg)
         if elapsed >= next_home:
-            receipt = Float64MultiArray()
-            # Production SessionHomeReceipt schema, with fixture identity.
-            receipt.data = [
-                2.0,
-                100.0,
-                -0.5,
-                -0.7625,
-                0.58,
-                float(BASE_ID),
-                float(WORLD_ID),
-                5.0,
-                float(index + 1),
-                1.0,
-            ]
-            home.publish(receipt)
+            home_receipt()
             next_home = elapsed + 0.02
         rows.append(
             {
@@ -130,6 +140,8 @@ def source(rate, spin, stop, ready, queue):
             'crossing_s': crossing,
             'contact_state': after.sol(crossing).tolist(),
             'rate_hz': rate,
+            'reference_ready_ns': origin_wall,
+            'reference_wait_ms': (origin_wall - setup_started) * 1e-6,
         }
     )
     node.destroy_node()
@@ -140,11 +152,12 @@ def run(args):
     """Retain every declared opportunity and every process exit, including failures."""
     args.output.mkdir(parents=True, exist_ok=False)
     contract = {
-        'version': 1,
+        'version': 2,
         'rate_hz': args.rate,
         'mode': args.mode,
         'spin': args.spin,
         'one_shot_opportunities': 10,
+        'startup': 'actual planner HOME=100 and registered plane available before first ball',
         'flight_spacing_s': 0.9,
         'continuous_denominator': (
             'every offered qualified ball source epoch; phase>0.100; crossing lead>0.030'
@@ -180,6 +193,7 @@ def run(args):
     }
     stats, exception, usage = {}, None, {}
     stop, ready, queue = mp.Event(), mp.Event(), mp.Queue()
+    reference_ready = mp.Event()
     camera = node = None
 
     def launch(exe, parameters=(), configs=()):
@@ -273,6 +287,8 @@ def run(args):
             )
 
         def candidate(m, key='candidates'):
+            if m.home_epoch == 100 and m.plane_available:
+                reference_ready.set()
             received[key].append(
                 {
                     'source_ns': m.source_time_ns,
@@ -340,7 +356,8 @@ def run(args):
         while time.monotonic() < until:
             rclpy.spin_once(node, timeout_sec=0.01)
         assert all(p.poll() is None for p in processes), 'child startup failure'
-        camera = mp.Process(target=source, args=(args.rate, args.spin, stop, ready, queue))
+        camera = mp.Process(target=source,
+                            args=(args.rate, args.spin, stop, ready, reference_ready, queue))
         camera.start()
         deadline = time.monotonic() + 15
         while not ready.is_set() and time.monotonic() < deadline:

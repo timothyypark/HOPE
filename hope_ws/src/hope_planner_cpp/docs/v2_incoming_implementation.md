@@ -139,6 +139,12 @@ during sanitizer compilation to include this correction before timing campaigns.
 
 The incoming harness uses independent DOP853 truth, actual camera relays, the
 existing adaptive packetizer, PlannerNode, and the production command decoder.
+Before offering any ball, it requires the actual planner to acknowledge the
+registered HOME/plane. A bounded discovery timeout fails the trial. Invocation
+03 retained two failed 300 Hz zero-spin profiles whose first two balls arrived
+before HOME discovery; correct production abstention exposed the fixture startup
+assumption. The explicit readiness barrier fixes that setup ordering without
+excluding any offered ball or changing the ten-flight denominator or thresholds.
 Every invocation declares ten flights. Continuous eligibility includes every
 offered ball epoch after 100 ms acquisition with more than 30 ms contact lead;
 command eligibility uses the ten distinct flight opportunities. Both require
