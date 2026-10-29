@@ -7,6 +7,28 @@
 using namespace hope_planner_cpp;
 using namespace std::chrono_literals;
 namespace {
+TEST(IncomingStartup, RejectsLiveModeUnqualifiedSourcesAndOutputRemapping) {
+  int argc = 0; rclcpp::init(argc, nullptr);
+  for (const std::string fault : {"live", "unqualified", "command_remap", "forecast_remap"}) {
+    rclcpp::NodeOptions options;
+    options.append_parameter_override("prediction_backend", "v2_incoming");
+    options.append_parameter_override("flight_packet_input_enabled", true);
+    options.append_parameter_override("post_net_one_shot_enabled", true);
+    options.append_parameter_override("racket_flat_schema", 4);
+    for (const auto* field : {"session_id", "frame_id", "calibration_id", "clock_domain",
+                              "clock_mapping_id", "ball_id"})
+      options.append_parameter_override(std::string("v2_incoming.")+field, "fixture");
+    options.append_parameter_override("v2_incoming.base_calibration_id", 7);
+    options.append_parameter_override("v2_incoming.base_world_id", 8);
+    if (fault == "live") options.append_parameter_override("v2_incoming.output_mode", "live");
+    if (fault == "unqualified") options.append_parameter_override("v2_incoming.calibration_id", "");
+    if (fault == "command_remap" || fault == "forecast_remap")
+      options.arguments({"--ros-args", "-r", std::string(V2IncomingRuntime::prefix)+
+          (fault == "command_remap" ? "command_flat:=/racket/command_flat" : "prediction:=/live/prediction")});
+    EXPECT_THROW(std::make_shared<PlannerNode>(options), std::exception) << fault;
+  }
+  rclcpp::shutdown();
+}
 class IncomingRos : public ::testing::TestWithParam<std::string> {
  protected:
   void SetUp() override {
