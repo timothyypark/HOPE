@@ -1,0 +1,27 @@
+{
+  "archive": "repeated-campaign-freeze.tar.gz",
+  "bytes": 90844,
+  "sha256": "0b14284872912412377053ff4e22ceb74133fed457e4a5b8fe0fc775730726ef",
+  "files": [
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/registered-tests.json",
+      "bytes": 202599,
+      "sha256": "858ef7e61c732a5d33ec53c2e65e8d765664b536c6c56ad9d5f1b23dbd91a70e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/summary.json",
+      "bytes": 181571,
+      "sha256": "9ca1c8a66526997c4c3a478095ebff9d1ac331212f559183f1280cd57a5e4c1a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/freeze.json",
+      "bytes": 291122,
+      "sha256": "225e802e4911b2c59552bf6ddb1ab72547459f6d09e2a30a0307aca811e5447c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/outcomes.jsonl",
+      "bytes": 132846,
+      "sha256": "336f29b1ff4f14f7e1bbf94bef9106cf34a014a322464ed17254b1840c885d2b"
+    }
+  ]
+}
