@@ -76,6 +76,20 @@ TEST(V2IncomingCoordinator, PacketMismatchAndDuplicateCannotCreateCommandOpportu
   packet.packet.producer_instance_id = "another-producer";
   EXPECT_FALSE(source.owner.packet(packet, plane(), source.now(), reason));
 }
+TEST(V2IncomingCoordinator, LegacyQuaternionPlaceholderCannotQualifyUnknownSpin) {
+  Source source; source.to(31);
+  auto packet = source.packet(31);
+  for (std::size_t i=0; i<packet.sample_count; ++i) {
+    packet.samples[i].orientation_valid = true;
+    packet.samples[i].orientation = Eigen::Quaterniond::Identity();
+  }
+  std::string reason;
+  auto query = source.owner.packet(packet, plane(), source.now(), reason);
+  ASSERT_TRUE(query) << reason;
+  EXPECT_FALSE(query->pipeline.shot().spin().usable());
+  auto result = V2IncomingCoordinator::evaluate(*query, source.now());
+  EXPECT_FALSE(result.forecast.belief.effective_spin.usable());
+}
 TEST(V2IncomingCoordinator, HealthyNewObservationDoesNotAutomaticallyRetirePendingWork) {
   Source source; source.to(31);
   std::string reason;

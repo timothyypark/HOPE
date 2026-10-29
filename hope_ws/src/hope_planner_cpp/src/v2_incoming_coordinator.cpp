@@ -84,11 +84,14 @@ IncomingQuery V2IncomingCoordinator::continuous(const IncomingPlane& plane) {
 }
 
 bool V2IncomingCoordinator::same_sample(const BallSample& a, const BallSample& b) {
-  if (a.source_time_ns != b.source_time_ns || a.position != b.position ||
-      a.orientation_valid != b.orientation_valid) return false;
+  if (a.source_time_ns != b.source_time_ns || a.position != b.position) return false;
+  // Legacy PoseArray packets carry numeric quaternions without an authority
+  // flag. Only the typed source can qualify orientation; a placeholder cannot
+  // promote unknown spin into measured zero or make a position-only join fail.
+  if (!a.orientation_valid) return true;
+  if (!b.orientation_valid) return false;
   // A quaternion and its negation represent the same acquisition orientation.
-  return !a.orientation_valid ||
-      std::abs(a.orientation.normalized().coeffs().dot(b.orientation.normalized().coeffs())) >= 1 - 1e-12;
+  return std::abs(a.orientation.normalized().coeffs().dot(b.orientation.normalized().coeffs())) >= 1 - 1e-12;
 }
 
 std::optional<IncomingQuery> V2IncomingCoordinator::packet(
@@ -251,6 +254,7 @@ void V2IncomingCoordinator::unavailable_locked(const std::string& reason, Incomi
   V2StrikeCandidate status;
   if (latest_plane_) status.plane = *latest_plane_;
   status.session_id = contract_.session;
+  status.model_config_id = flight_model_config_id(pipeline_.config(), pipeline_.settings(), contract_.frame);
   status.status = state; status.reason = reason;
   status.semantic_epoch = epoch_; status.revision = ++revision_;
   status.token.generation = pipeline_.shot().generation();
