@@ -82,7 +82,8 @@ if [[ -f "$repo/hope_ws/src/hope_planner_cpp/test/test_reacquisition_spin.cpp" ]
     --output "$evidence/policy-contract.json"
 fi
 run_gate sanitized-configure cmake -S "$repo/hope_ws/src/hope_planner_cpp/test/native" -B "$evidence/sanitized" \
-  -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS='-fsanitize=address,undefined -fno-omit-frame-pointer -O1 -g1'
+  -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS_DEBUG=-g1 \
+  -DCMAKE_CXX_FLAGS='-fsanitize=address,undefined -fno-omit-frame-pointer -O1'
 run_after sanitized-build sanitized-configure cmake --build "$evidence/sanitized" -j"$build_jobs"
 run_after sanitized-test sanitized-build env ASAN_OPTIONS=detect_leaks=1 ctest --test-dir "$evidence/sanitized" --output-on-failure
 run_after outgoing-reference native-build python3 "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/integrated_numerical_gate.py" \
