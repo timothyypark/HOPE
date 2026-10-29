@@ -1,0 +1,62 @@
+{
+  "archive": "retained-binary-inventories.tar.gz",
+  "bytes": 351917,
+  "sha256": "d5c94423243c90e0788671bd6eba3da579a70fa917043e5c5737787705379f64",
+  "files": [
+    {
+      "path": "v2-incoming/further-artifact-retention/inventory.json",
+      "bytes": 143238,
+      "sha256": "4571fee1847f0af560146800aebc7e7e884e997f9ce3d2dd0f47f54c59495e82"
+    },
+    {
+      "path": "v2-incoming/inactive-build-retention-05/inventory.json",
+      "bytes": 462554,
+      "sha256": "063ce2295b81aaf11817e2fd4b060cb53bea4d4abd473c77fa65f6b137851928"
+    },
+    {
+      "path": "v2-incoming/prior-binary-retention/inventory.json",
+      "bytes": 25464,
+      "sha256": "09a9bbffca1d8d8781c207d38f16566823f6ab6e21f8fd109dc5e6e27a50c41f"
+    },
+    {
+      "path": "v2-incoming/prior-qualification-retention/inventory.json",
+      "bytes": 104969,
+      "sha256": "998573f2a2a2f541699385d5e2c10d70c0b7fc16cf42976be464d28b3121fc90"
+    },
+    {
+      "path": "v2-incoming/qualification-04-sanitizer-retention/inventory.json",
+      "bytes": 48404,
+      "sha256": "f005370a5549a35c5ab91dc3b0612858a1e1f35d7cd5efc79cef1e2d5c0ac59c"
+    },
+    {
+      "path": "v2-incoming/qualification-05-sanitizer-retention/inventory.json",
+      "bytes": 48404,
+      "sha256": "e7c36bd9345aa8be3cc6ed0c00803fc6074465a1f33889a94b62995ce8b71472"
+    },
+    {
+      "path": "v2-incoming/qualification-06-sanitizer-retention/inventory.json",
+      "bytes": 47260,
+      "sha256": "35ca08de8d8420799a37539a49f7e3a9dc29c5e1132f7659d814a97b0ca4e572"
+    },
+    {
+      "path": "v2-incoming/raw-retention-05/inventory.json",
+      "bytes": 627064,
+      "sha256": "c6d2f71a0a772e21ccc6388e59eca4de2f4bbd3f856b96674022142531f464da"
+    },
+    {
+      "path": "v2-incoming/raw-retention-06-campaign/inventory.json",
+      "bytes": 312382,
+      "sha256": "df31b1bb88c054054350ddb21d90eb9e587710ea954d12d86212ff95036ca1df"
+    },
+    {
+      "path": "v2-incoming/raw-retention-final/inventory.json",
+      "bytes": 200698,
+      "sha256": "8029d9c41e5588bf49878e7b16b51c1a290e91780dcce3b2dd0c7b0782783af7"
+    },
+    {
+      "path": "v2-incoming/sanitizer-artifact-retention/inventory.json",
+      "bytes": 61868,
+      "sha256": "88cf3c680270edaabf789458a44a8f7ed3b4c8db8e91c6553ef4c7d4bd059eb5"
+    }
+  ]
+}
