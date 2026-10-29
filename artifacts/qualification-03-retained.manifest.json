@@ -1,0 +1,3942 @@
+{
+  "archive": "qualification-03-retained.tar.gz",
+  "bytes": 22292789,
+  "sha256": "398909265e024908751b58a32efddf92b02cc467937e0bc0c1e7678475cd1a6f",
+  "files": [
+    {
+      "path": "v2-incoming/qualification-03/INTERRUPTED.json",
+      "bytes": 389,
+      "sha256": "5121b4a0e2b6704026d317f52cccb1654d1a91f9bbd167cee1b0bc6273639a9e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-cases.command",
+      "bytes": 172,
+      "sha256": "394d2dd0e7e1bedfcad0699009d551d335af089f1224cabb37a87927973cd9ce"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-cases.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-cases.log",
+      "bytes": 1065,
+      "sha256": "ba0526512322cae2384b53c5f52cf7b4453fb16ae6e6d4dcfccffe8512beded6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-cases.xml",
+      "bytes": 1703,
+      "sha256": "b53ac0ed3b2ecacf2c4569690447805286bb07542442f41e522038ea5d21ffbb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-producer.command",
+      "bytes": 281,
+      "sha256": "4bbd07da948d99d1a936a42acf76e62c8d5c8a2ba180dc802f3249fe14f7d6fa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-producer.csv",
+      "bytes": 1002,
+      "sha256": "6ebbf7815931bad37046be0b7a20c9406d97678989fc00e29c2a89f65d3fdb37"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-producer.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-producer.json",
+      "bytes": 2673,
+      "sha256": "21e60f0202d7202093bc9f2864420caa5279430be795fd5b289d4172394fa4b2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/base-producer.log",
+      "bytes": 1689,
+      "sha256": "973740b000bf9ef6a442b079ba91dbbf378d56aca51124a33180d380938f8ffe"
+    },
+    {
+      "path": "v2-incoming/qualification-03/code-sha.txt",
+      "bytes": 41,
+      "sha256": "05f8b7408b9dbcdbcb89dcd2b60119385fdd0bc5788757abb92746404526ee01"
+    },
+    {
+      "path": "v2-incoming/qualification-03/counterexample-cases.command",
+      "bytes": 193,
+      "sha256": "889949aeab2238d97286efe0b20ea88bc9e4c74c2319e3739b6b3a9e32ce5cb2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/counterexample-cases.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/counterexample-cases.log",
+      "bytes": 978,
+      "sha256": "6f9f750e1199e493c533f68823644b28e424685971702b9f1cea471da2ff6db3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/counterexample-cases.xml",
+      "bytes": 1491,
+      "sha256": "0e654384c19ab5ac9e57f9993004673220539cd08c9621fcecf63f89a6c3a2f1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before.command",
+      "bytes": 215,
+      "sha256": "d953da44b341a85947c6472ef157c88e3c8e4a3ff98b9b7b440002832506c34a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/historical-legacy-parity.command",
+      "bytes": 356,
+      "sha256": "1c721806e53688ab6770f3a142a7081b8b12fd0ba9c0df1e16461cddd5ece071"
+    },
+    {
+      "path": "v2-incoming/qualification-03/historical-legacy-parity.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/historical-legacy-parity.json",
+      "bytes": 163814,
+      "sha256": "3e7fef314fa5ef47554ad5e8bca0ae64bd1d4c02b194209fcde8dac8f19cb77a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/historical-legacy-parity.log",
+      "bytes": 2053,
+      "sha256": "534b786f6aea7deeb3483c5592f56c4aa89383e2a97aa6855629d68f52699739"
+    },
+    {
+      "path": "v2-incoming/qualification-03/legacy-parity.command",
+      "bytes": 240,
+      "sha256": "134de1c05cf84384c5a682c92b35e7eada1bb292d9208abc9b860dfe9e47077e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/legacy-parity.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/legacy-parity.json",
+      "bytes": 163776,
+      "sha256": "fcd102a71a68a6d9de764fd39e71d89db531efdfd511f1baeed40b1645cd6710"
+    },
+    {
+      "path": "v2-incoming/qualification-03/legacy-parity.log",
+      "bytes": 2015,
+      "sha256": "006949a90bcff051a2cd770725e917cbb42e14595d0ac11e3f998fe485ab4012"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-build.command",
+      "bytes": 79,
+      "sha256": "05194eb886ee2d17eca05486c426de7fda53adebcb5e6c098cd565dc31850ef1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-build.log",
+      "bytes": 11723,
+      "sha256": "811cae77f699366632907b8b58def08809df09e67ce62176786d72a97f24ce1b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-configure.command",
+      "bytes": 169,
+      "sha256": "659727c2fcd25dde30dd7e19bd6d2facbfa35573ed256bab93882f5499e9e4c0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-configure.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-configure.log",
+      "bytes": 508,
+      "sha256": "9b1ae38226b8d1a5e18418fe00748e22e1387527b990de0bd53b2cc43c216b4a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-test.command",
+      "bytes": 98,
+      "sha256": "8e8e16042eac75907dcf73ac2782a59a4fa09e1cc499abfd86f7c465bd32afab"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-test.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native-test.log",
+      "bytes": 2989,
+      "sha256": "7c3c650929f2fbd0aae38470159a08f6d57f8cb7354b95966b0fd2d8488f7cf2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/outgoing-reference.command",
+      "bytes": 320,
+      "sha256": "0aa0e9dd6bcc27748850da0f9bdf2ff9391819f41dcae9b9e839e7dd4eb8dc00"
+    },
+    {
+      "path": "v2-incoming/qualification-03/outgoing-reference.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/outgoing-reference.json",
+      "bytes": 347,
+      "sha256": "9ae9c0391f85d00dc29710c63af7a4b2d5b4d97d60c15a0ea034955581883c4b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/outgoing-reference.log",
+      "bytes": 327,
+      "sha256": "8486235df2e7ec38c9c2b53bc4c6e784e63234405fc27dac45cfa7be36173d51"
+    },
+    {
+      "path": "v2-incoming/qualification-03/policy-contract.command",
+      "bytes": 287,
+      "sha256": "19a0dde89e0f55457c362942f69ed62ad7966c9f62dd79b816035b2b1604ddba"
+    },
+    {
+      "path": "v2-incoming/qualification-03/policy-contract.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/policy-contract.json",
+      "bytes": 5586,
+      "sha256": "c0250652596eca32b9e6d43e0f7a0633a8e60420173b4d18697f145f411d72c8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/policy-contract.log",
+      "bytes": 66,
+      "sha256": "6917bcdc19b5eb9177c95e88737ac7fb93bb5fe4b637b72c05eb4cba04f6f0b4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2-parity.command",
+      "bytes": 316,
+      "sha256": "75e232afb69576185bb97b90dfd5348a3dab2e2487e18fd73b880d0f52d1a1d2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2-parity.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2-parity.json",
+      "bytes": 2756,
+      "sha256": "7cd860f7dfc3bba80d476d19ba7b5798e9f501adaaec70ed1323329649729942"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2-parity.log",
+      "bytes": 1808,
+      "sha256": "e81afa3a170073df4ffbeb31cdcdd04859c54dbe9a17c9e084a0dbb420c77480"
+    },
+    {
+      "path": "v2-incoming/qualification-03/reacquisition-cases.command",
+      "bytes": 181,
+      "sha256": "685e119fa07e1e1b574469d6894c6342bbfae5ed29553a920f245056f2a28c4a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/reacquisition-cases.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/reacquisition-cases.log",
+      "bytes": 3217,
+      "sha256": "e5acbc1d56d427024701606fe433f3eb1b99e7d029499691989dfa6645f51226"
+    },
+    {
+      "path": "v2-incoming/qualification-03/reacquisition-cases.xml",
+      "bytes": 5397,
+      "sha256": "10e0f37b381b70ca191824b6e5d6abc23982d5c3b90568b5acbb0b1fa2f20155"
+    },
+    {
+      "path": "v2-incoming/qualification-03/review-cases.command",
+      "bytes": 182,
+      "sha256": "9658a6052031c89aa86e3be6e00a3e58526bf5553e5979f43f07af5821ff948c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/review-cases.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/review-cases.log",
+      "bytes": 4515,
+      "sha256": "b2efef6d479b13c94ccdf0779b04e17a0a5c90a6ee568a2c7efc101c774bab86"
+    },
+    {
+      "path": "v2-incoming/qualification-03/review-cases.xml",
+      "bytes": 8666,
+      "sha256": "0c895f1eb7c100cb39ab04942185eb812aa4237b94d9d70301bfc86a37c07e7a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/ros-build.command",
+      "bytes": 493,
+      "sha256": "0c91cb87b467b3855561669d0f68b4e508717d01c6bfe1af18a6f2d6872fb30f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/ros-build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/ros-build.log",
+      "bytes": 4755,
+      "sha256": "ea9a576627fbf18d196028db2fdb1460e1ad1c3fe492a55c36c1895b1fd3e436"
+    },
+    {
+      "path": "v2-incoming/qualification-03/ros-test.command",
+      "bytes": 347,
+      "sha256": "4dacf4fa113d4aba4a26ec4129621dd078a890d9a25d4e8fe46f94ff8f80fd82"
+    },
+    {
+      "path": "v2-incoming/qualification-03/ros-test.log",
+      "bytes": 125450,
+      "sha256": "5871179ba913f21c02cdff74584b2c8b55e2ae31a1e2191a9e85691669048276"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-build.command",
+      "bytes": 82,
+      "sha256": "179da8742682e3078e108be755b88d3b7bcbba959cfd68a11edd192ebc0a0dcf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-build.log",
+      "bytes": 11723,
+      "sha256": "641a895c93951a7ab67af91057c9f5a61e19abb12321fe6ad1ddeb2d1d5dc5e5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-configure.command",
+      "bytes": 276,
+      "sha256": "fc90236c9ca67ef3297eae072b870c00b1f5ec25b8c43ae1d9b14eb68075c202"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-configure.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-configure.log",
+      "bytes": 511,
+      "sha256": "6d593b566e5645d819d497bb965a54ca136111df84dd77e9127e5afded526843"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-test.command",
+      "bytes": 133,
+      "sha256": "bb0d6fb57ff90456dc4922335b458129d5f126a7bfba2f0fee9247c419960c81"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-test.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized-test.log",
+      "bytes": 2995,
+      "sha256": "357e75c16dbd7748d275fbbefce5927cdc5c11ac98752490dda660a60ca952e6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/stopped-children.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "v2-incoming/qualification-03/worktree-status.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/CMakeCache.txt",
+      "bytes": 20840,
+      "sha256": "b7dfa0a463f911ff776e6d9883e4422171965f83b04fba331b8f29464e30f82f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/CTestCustom.cmake",
+      "bytes": 104,
+      "sha256": "604987db904b472a78182f761db384fc8115f0ade6bb2cfed0d2242259f36bf0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/CTestTestfile.cmake",
+      "bytes": 39806,
+      "sha256": "f819496ea60bf42d229cf358a06ce621f0ebfb29f61778be4bc1f5dc8d643ef6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/Makefile",
+      "bytes": 7528,
+      "sha256": "77eaa102f9563e8bedfe15cdcb3d8a59effbf536d5a242b48b85598890d9d802"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/cmake_install.cmake",
+      "bytes": 9968,
+      "sha256": "70ac9617c2df40fbb90b1e24ceb3317196efab27cf9f47feaa22f9dfc5a1a815"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/colcon_command_prefix_build.sh",
+      "bytes": 283,
+      "sha256": "528e30a125db5416ed3e6c83c27bf335affcc10496e7c038966a550ae2f30181"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/install_manifest.txt",
+      "bytes": 7651,
+      "sha256": "d16c0d9c0a9c5674017c8fc570f7499660bfc7a3afe75ca1742a551c7a9bdd22"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/.cmake/api/v1/reply/codemodel-v2-7519465c2eac24348a57.json",
+      "bytes": 1300,
+      "sha256": "aa6f8d899290421993de38a361c0c1635d04b3771e9261d9f02f48e55475a190"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/.cmake/api/v1/reply/directory-.-Release-deb03bda29f2eb034e33.json",
+      "bytes": 10258,
+      "sha256": "29d8bbf85c099cd5e104f091b792828cf37dc4c576ab1f6f07dacdab2eb31440"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/.cmake/api/v1/reply/index-2026-10-29T09-03-51-0318.json",
+      "bytes": 794,
+      "sha256": "e69a4bbf55588ca30c6d0720c67ee2381fc83aba09b8aecd4a72fa196ab289a8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/.cmake/api/v1/reply/target-hope_bringup_uninstall-Release-9ba215434516ce4474c6.json",
+      "bytes": 1879,
+      "sha256": "49b699ae69ab859963444ff50088998fe9fca177fab1704d4a410a72770475d7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/.cmake/api/v1/reply/target-uninstall-Release-3c9fe372432da6304515.json",
+      "bytes": 1497,
+      "sha256": "055b7da5b2c63ae74966b5c31ca90144c7ff2ed15701669dcf6041cf728a672b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/ament_cmake_core/hope_bringupConfig-version.cmake",
+      "bytes": 432,
+      "sha256": "1a056d80bda48cd54cf8af2013b223bfedc1cb17655e3a97b3aeae2c09a37c4c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/ament_cmake_core/hope_bringupConfig.cmake",
+      "bytes": 1278,
+      "sha256": "38104ef75fd0a5db0dcb11189e2130efa5ca350cd2b584b156e8c60798073450"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/ament_cmake_core/package.cmake",
+      "bytes": 769,
+      "sha256": "bccc64f0d50f66da380caad1bdc921f2984fb83e0e20e061a45e176d6576fbb6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/ament_cmake_package_templates/templates.cmake",
+      "bytes": 1984,
+      "sha256": "0bd4d2e887197f7f9771d2238eff41586d61b13acc51ce8748b36ebcf55753f3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake",
+      "bytes": 2210,
+      "sha256": "17be545bb58da99792cc8c95fdc6c087acd594cf69222840bd68b1eb83be08a5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/CMakeCache.txt",
+      "bytes": 30129,
+      "sha256": "b836874086c0b4eebe225c5e70e03a56c296c014bcd756ba90c655f15579edfa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/CTestCustom.cmake",
+      "bytes": 104,
+      "sha256": "604987db904b472a78182f761db384fc8115f0ade6bb2cfed0d2242259f36bf0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/CTestTestfile.cmake",
+      "bytes": 3751,
+      "sha256": "ff1af3bc04c88ffd533f679f29077e504784f525531aa0f52a22cdff64d6d51d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/Makefile",
+      "bytes": 259254,
+      "sha256": "47db61d82a3a6ec5834a12c1d747f78dfa205ee30541d2c7f923ea72e599b161"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/cmake_install.cmake",
+      "bytes": 56732,
+      "sha256": "df2c8e3f918398b6b0fa1d0398b12cec256019c28540c395f7abe3cd23f35fd6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/colcon_command_prefix_build.sh",
+      "bytes": 65,
+      "sha256": "025a07cb442dfaedc93a955d89fdf6d1b21420ad6f4257ab63d3d853f9e5e176"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/colcon_command_prefix_test.sh",
+      "bytes": 167,
+      "sha256": "7b92770cc0b59ec372859cf1384beff7671b9cdeae5404dfdfbbec5ffae366d2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/install_manifest.txt",
+      "bytes": 42751,
+      "sha256": "db55f1fa31d120d022a4d41d7b115a30e7aae23ee98163bffa44e3b5f1534f16"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_adapter__arguments__hope_msgs.json",
+      "bytes": 875,
+      "sha256": "af311d2ba866c7c74a83e5c1c184fb44754cbbe6374bb12f63b8340c9fe8a59b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_generator_c__arguments.json",
+      "bytes": 15716,
+      "sha256": "9493660cba0f00c861bb187014d07f05e412a6adb22bfbb35c61077c0abc4528"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_generator_cpp__arguments.json",
+      "bytes": 14914,
+      "sha256": "1a8aac16d1e0bbbbeeac410009de1168e9bcfbf55ae4480ab953b718de96de3d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_generator_py__arguments.json",
+      "bytes": 12626,
+      "sha256": "37668f0671092fe5de272b3461ce6517bb36a067dbbb430cc676a214c01112ab"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_generator_rs__arguments.json",
+      "bytes": 14074,
+      "sha256": "b21de5de76cd86afe6fb7cdeb1fdb6eab3348c2545937d0af1e6ee114c4794d8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_generator_type_description__arguments.json",
+      "bytes": 1636,
+      "sha256": "0456c3972c55913f41e764436cc8d51deb4a1a3cb6632ce66d3d43effd174c7f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_typesupport_c__arguments.json",
+      "bytes": 11925,
+      "sha256": "28162b73a910eb4b368bb4fb73005eb69ab54199132a8c0f98489389cbf4d5ae"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_typesupport_cpp__arguments.json",
+      "bytes": 11945,
+      "sha256": "6c09b7736d39b6b057b861b4b7eb918e2645805a346cc5c0775b733d01b66dce"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_typesupport_fastrtps_c__arguments.json",
+      "bytes": 12240,
+      "sha256": "f2551fb00a4d0580c5ba2c227edd4550eb6b25d4980f694d905add1b7f0e068e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_typesupport_fastrtps_cpp__arguments.json",
+      "bytes": 12268,
+      "sha256": "0d31fb8e8067d1c78b23497e6bfb3f6694f9a95f8c1bfbf7c9c36ecba036e6c9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_typesupport_introspection_c__arguments.json",
+      "bytes": 12298,
+      "sha256": "816451c33a893565dcfd8d41bb478cb9203da9fdd55c412b11991a2dbc031567"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/rosidl_typesupport_introspection_cpp__arguments.json",
+      "bytes": 12338,
+      "sha256": "ce0a5c010a19ca00420d267c1fd9a72c619d28ea42e4728d0dc0df21f7e08bac"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/codemodel-v2-bc548b256f3755b619cf.json",
+      "bytes": 7522,
+      "sha256": "9284bbcbea33cf3d63029773b6c3d8d9c6b759e7b3f4c30c41651916adaa8e7e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/directory-.-Release-fb4019aa7797e47c9ea8.json",
+      "bytes": 40684,
+      "sha256": "2d271ba2acc36f91397a2c3a85881412f487ab3ec81cb2db163d84a8a299c565"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/directory-hope_msgs__py-Release-fb0d5c0dcbc85fd9871b.json",
+      "bytes": 247,
+      "sha256": "c81360e0f2398a353686010a1406cc4e3a4b8e84016a2449936637c85f9024d0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/directory-hope_msgs__rs-Release-c8a255b3a2910fc1f305.json",
+      "bytes": 247,
+      "sha256": "bdcbd807a7f8968d446ab5b5f292249ed86e5bfa6fcfe10d9c2d3e59c0018341"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/index-2026-10-29T09-00-05-0395.json",
+      "bytes": 794,
+      "sha256": "89adce05eafefdcb1df0fbb125a49bb5d8f3c9c069ef51c7518ed7dee0ab3cb6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-ament_cmake_python_build_hope_msgs_egg-Release-f162bbb46a18ccadf763.json",
+      "bytes": 2135,
+      "sha256": "ad82727704fdfa26447301475a16df80236376dcee3d9bc0390740a894169c78"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-ament_cmake_python_copy_hope_msgs-Release-28afc305bc36dd2a9fc0.json",
+      "bytes": 2012,
+      "sha256": "c2ef5967efc454d8a8290c274d13f677fbcb692c94ee9c40e72a1408a4d044e9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs-Release-a0e37db1bb7e6247e063.json",
+      "bytes": 6633,
+      "sha256": "b62e9a2646604c21880740063ff584272ef79b2cca5ce28d8d5d95d76a64f911"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__cpp-Release-f8ee3f629b8cd3776a2a.json",
+      "bytes": 2086,
+      "sha256": "e77b6c7b0633f5e5876e7cb57451e090c42ac913b6d58ccf156dbaa4fcf4f0f2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__py-Release-a99984ea85981091ce13.json",
+      "bytes": 1516,
+      "sha256": "bb45cb01a6fb2769e7324072f41f4e8b53846580e7ee11f92d4853b05b6150bf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_generator_c-Release-26c0997204f25508e1d6.json",
+      "bytes": 26367,
+      "sha256": "7f339d63eaae3704b602fff2befa885358811c92e519e12e70a67822b1f01481"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_generator_py-Release-01f036809fa648d4ad2c.json",
+      "bytes": 19744,
+      "sha256": "2bb077a3c519f63b51f96b9992314bd4c6f7478e0e7944304954f4ceac4542d2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_generator_type_description-Release-97f2e1e8c0cb7dbbfa8c.json",
+      "bytes": 2005,
+      "sha256": "5fd381672f5ca76549c5c1270f5b320c26ad61463cf8b73baf8c91e01d66f361"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_typesupport_c-Release-5b7eb902cb9349d9c49c.json",
+      "bytes": 12544,
+      "sha256": "b2e9a8750a104ab9dd9f5a49a0e4b000a991cf968bb6dc8effb17cd3eb4c4d6d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_typesupport_cpp-Release-6df80d4ffa1bf8d9ebbd.json",
+      "bytes": 13571,
+      "sha256": "73ba052503e016305accbc7c7aa38a0cf3e642243bb59ade2a904daa9ecd85d4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_typesupport_fastrtps_c-Release-ef58c575fff258457420.json",
+      "bytes": 19011,
+      "sha256": "94d3a6f467905c121e4fd7e207d80b4e105fbad00eea4864fa89141ca32fa1d2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_typesupport_fastrtps_cpp-Release-b2a78caae287b2cd38dc.json",
+      "bytes": 19952,
+      "sha256": "3ef434037eef8c6ed19de970cee4e9be6bdaf080b73ef3d670fd8639a09f99aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_typesupport_introspection_c-Release-b7c233e225f42511bf13.json",
+      "bytes": 15959,
+      "sha256": "7e18a732e9518ec0c9366503d1d9c495821a5f585178ab19dad05d7266880ad4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rosidl_typesupport_introspection_cpp-Release-16f07d68ddbf6d238217.json",
+      "bytes": 18440,
+      "sha256": "01fb348d43a719e6d53cae61f446c01a7d8541c2247c5408d3d9174ace6dd3c5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs__rs-Release-45f4824a63beb2b65b3e.json",
+      "bytes": 1405,
+      "sha256": "879135ef8c11bcce8cda8c205381a73d910f9303bd3fa69528f84683cff582b7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs_s__rosidl_typesupport_c-Release-8acc20d0e145b1e00420.json",
+      "bytes": 11965,
+      "sha256": "f5c148bd11115352297075c5ba3c61714c3bdb240d3277ac4f3f1e77e9532564"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs_s__rosidl_typesupport_fastrtps_c-Release-8beb26894430015024dc.json",
+      "bytes": 15108,
+      "sha256": "03cca3c18755a2db4e7efaf740364204a9e603fcdd847ac929d606ffabcb13b7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs_s__rosidl_typesupport_introspection_c-Release-f9c63f66f39275c17f2c.json",
+      "bytes": 13840,
+      "sha256": "fdd5914a22fed23b962b784d47049572b51fb071e8ae8709c6970930e7cc598c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-hope_msgs_uninstall-Release-c4de324327e14533043e.json",
+      "bytes": 1861,
+      "sha256": "9e540d4550f4d58774fa958c4ad87f52e803d39b14a3916a0039ad3c0abe3361"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/.cmake/api/v1/reply/target-uninstall-Release-5bb11edb0bc5b564ff92.json",
+      "bytes": 1494,
+      "sha256": "c1a4a333ada810dec8a78e6575a2fa3fcea1b46d8e40e191cdb2d37f0aab66c6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/Testing/TAG",
+      "bytes": 40,
+      "sha256": "90b909f5c21cf091fecfa4002cdda26e8f693975f704697dd3b43569ffc7ab77"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/Testing/20261029-0903/Test.xml",
+      "bytes": 5798,
+      "sha256": "5803873e1ca5fde04024cfcb419f6c4cfb414f86b91a8e8988333c0fe3e51072"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/Testing/Temporary/CTestCostData.txt",
+      "bytes": 45,
+      "sha256": "c385c0854ee4c65947b5dd86679376e499022750e6809eb8d90e8752a1d2852a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/Testing/Temporary/LastTest.log",
+      "bytes": 121,
+      "sha256": "a14eb816259ade1bd29260064930d372f717e389f16ac308c173439f619e0326"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/Testing/Temporary/LastTest_20261029-0903.log",
+      "bytes": 3112,
+      "sha256": "74f85a6f83321184b8054237b882aef27992e3729c61dea3a549fc9e20f1fc7e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_core/hope_msgsConfig-version.cmake",
+      "bytes": 432,
+      "sha256": "1a056d80bda48cd54cf8af2013b223bfedc1cb17655e3a97b3aeae2c09a37c4c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_core/hope_msgsConfig.cmake",
+      "bytes": 1594,
+      "sha256": "d0e03e6036c5e5459663b0f39a447418166bd9bdf80cc582b3ffd7e8e4c17f7a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_core/package.cmake",
+      "bytes": 739,
+      "sha256": "0613c251d97a588064dc829a0f794f547a1f1a6ebf44cfbe8d74b31111720cdc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake",
+      "bytes": 4453,
+      "sha256": "41b2bed78d67174585c1c78c9b4ef84331be551c3533e3139213ee3319fc4a4b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake",
+      "bytes": 775,
+      "sha256": "98273267e117d8e1d420acc17e9adcfe9f2616d3bbaa8d50dd1d5c4a5441dbe5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake",
+      "bytes": 5073,
+      "sha256": "5d0a106a1d68483ab27dd6b74bedcd6ebdb0fbbca17307ae70d8f1bd0612db57"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake",
+      "bytes": 1327,
+      "sha256": "231c4b6ab6c5d64fea14d327f7cc791543eab15ef5f54c0a4752d4628b7b15f6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_package_templates/templates.cmake",
+      "bytes": 1984,
+      "sha256": "0bd4d2e887197f7f9771d2238eff41586d61b13acc51ce8748b36ebcf55753f3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_python/hope_msgs/setup.py",
+      "bytes": 194,
+      "sha256": "3c67451f48d821af7cba378066fff759c006efbef602f59c8eba811bb28a094d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_python/hope_msgs/hope_msgs/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_python/hope_msgs/hope_msgs.egg-info/SOURCES.txt",
+      "bytes": 162,
+      "sha256": "bbe8e061cc0ec231c3aa1f24bd9e362f134f3c760dd705c758d63049afbe2e5d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_python/hope_msgs/hope_msgs.egg-info/dependency_links.txt",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_python/hope_msgs/hope_msgs.egg-info/top_level.txt",
+      "bytes": 10,
+      "sha256": "ddb8954acd7d859c239e1ea5c26237640d703a4e26c62ca6bf47ad11b98008ea"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake",
+      "bytes": 2204,
+      "sha256": "0e25e6e83b60189afa31736fb6f91c7c05c66895e0c62305cfe1c62961d0df90"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_lint_cmake/lint_cmake.txt",
+      "bytes": 466,
+      "sha256": "e3f16d37b36ba179b1d6a5519e704f20147e3a43d2000603eca9cc74f7d8c8a7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/ament_xmllint/xmllint.txt",
+      "bytes": 485,
+      "sha256": "1c2a09d1f099aeb4ed98275a8fac523a5e8cb21edb196d9a76b34f8972cf0618"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/hope_msgs__py/CMakeLists.txt",
+      "bytes": 1911,
+      "sha256": "82ab0f383ceb29db01522f27acc6edd4bec85aef2dbeaa09a311010bfba9777e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/hope_msgs__py/CTestTestfile.cmake",
+      "bytes": 377,
+      "sha256": "3dc25c20d0dd7f26dacbd27e334578050947b23afeb24eec6d4cae708d14d195"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/hope_msgs__py/Makefile",
+      "bytes": 8521,
+      "sha256": "bf5e263eb7aefdf0e430d02f8a6eee36fa9f350d7d4775190735af9fbe891f3d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/hope_msgs__py/cmake_install.cmake",
+      "bytes": 1363,
+      "sha256": "1ea2bf71abb112bb8aaf871f3619faa7d1ca8e0050b3cbddde29c96d88db6d40"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/hope_msgs__rs/CMakeLists.txt",
+      "bytes": 1341,
+      "sha256": "5e84a0e9e77b590c21ed110629906bc76b96e54aa9461ab204397ad72f9fb551"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/hope_msgs__rs/CTestTestfile.cmake",
+      "bytes": 377,
+      "sha256": "7f050075ee1a457edb225405ea7b82d9756c30930946e14e78eaabc62ef4b119"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/hope_msgs__rs/Makefile",
+      "bytes": 8521,
+      "sha256": "8d592635f1a2f6db51439cdaf41e352c33a65176751b330d262a552f6fc31a8a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/hope_msgs__rs/cmake_install.cmake",
+      "bytes": 1363,
+      "sha256": "fdfd7e2ba02211862eff6ed8342eee1c3dff9efc3836cf1c0a29cc4daa5a09c8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/test_results/hope_msgs/lint_cmake.xunit.xml",
+      "bytes": 286,
+      "sha256": "a47c3fdf11521686e8ba7481536ce519062024317b447da6906257988e43c9b7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_msgs/test_results/hope_msgs/xmllint.xunit.xml",
+      "bytes": 274,
+      "sha256": "fe7eb27f495a920eda245aa597bbc6b6a95361efe249097ceaf201f436fb0d57"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/CMakeCache.txt",
+      "bytes": 31778,
+      "sha256": "e0815f7681f07f4b8f7e0cbae63ad115564b7e9684ad57b3387755a73a391f47"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/CTestCustom.cmake",
+      "bytes": 104,
+      "sha256": "604987db904b472a78182f761db384fc8115f0ade6bb2cfed0d2242259f36bf0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/CTestTestfile.cmake",
+      "bytes": 142525,
+      "sha256": "bc8399a6243f6e1b69455727619a7955267a97b901fca2642bcda8d2158d038c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/Makefile",
+      "bytes": 129882,
+      "sha256": "a08e343855d77cd8421423d49e8b2d6347bc218505a023a5847be9de7e1fe200"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_pose_producer_contract.csv",
+      "bytes": 1002,
+      "sha256": "6149cd57a33360c16cd6a394a6b8c68c73b68a7354e47215c833d44e121b79ca"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_pose_producer_contract.json",
+      "bytes": 2673,
+      "sha256": "21e60f0202d7202093bc9f2864420caa5279430be795fd5b289d4172394fa4b2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_-30-hope_base_pose_flat_relay.log",
+      "bytes": 1068,
+      "sha256": "1b7804099b961e7aeded2b76a74a011619065bf5ffa71ddb511102390d729320"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_-30-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "77ff5dbd51e186a556c474d70d7cc622bb72e4fb80a08d698ebd5a54b2168926"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_-30-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "49407807b79a92e3ad096babda4fc1b4e5692e73c32b3a51ee0c65f14752511a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_-30-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "79b18cea75481f548acd721672fcdba55df82a79c9e27724386e48ac191399c5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_-30.accounting.json",
+      "bytes": 8136,
+      "sha256": "40961c3da042714b69da538ecdd60c1570ca7d1f30c95188d51ad5bd5e082cda"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_-30.json",
+      "bytes": 791723,
+      "sha256": "460615960ae4952559ee8f77648ab0cf0851e0cdad154514acdaad0e8cb4fccb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_-30.raw.json.gz",
+      "bytes": 98085,
+      "sha256": "1978e07f542501c61bef355331520054cf37cb8f9a88a6c569d8f19284b244db"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_0-hope_base_pose_flat_relay.log",
+      "bytes": 1068,
+      "sha256": "60cfec83a703d57783021bbe5371225c94aebe8026853a3c351bcf787348580f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_0-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "022a1385e38df8e43d02242631da8ef0b8fbeff7e63496e6862371486e6fd42b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_0-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "3c1726bce67bd82d900731629883fa6a641cceab243391a8366a2ecd81d6a32b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_0-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "967412c9f103f458ee872ee3285d66b1ab74c61955a766f052944b66dc44c6bd"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_0.accounting.json",
+      "bytes": 8136,
+      "sha256": "cc6e3c48eb90d5f9b196ae51b7b9a10425f1427ffe2af54c80f848a9950bc845"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_0.json",
+      "bytes": 769163,
+      "sha256": "ed3c947dee78ea80ddc3b3a7507d74efb6259da350edfaacce5095cc4a678ac0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_0.raw.json.gz",
+      "bytes": 97869,
+      "sha256": "4360a18f6b1f3481ba91fc95844ffd6a40d677488d7082f6d945eab5ec1451cf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_30-hope_base_pose_flat_relay.log",
+      "bytes": 1066,
+      "sha256": "f1987e325de5256ae0944cebce68d2273f3d6ecfaf7a06812dbea035ec248773"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_30-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "3d510c01c95bdaa6036165a68de156a198ad24678a062312d74efdb72549cd88"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_30-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "1dab9c2dac35c66a90fe38a69bf97decf1a603c05a27ed888338542b2e56d045"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_30-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "c21888074f9fc9d0946d0273df390c61f748ae5d0c928d34d2a81c2efad5366f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_30.accounting.json",
+      "bytes": 8136,
+      "sha256": "987885ccd19cccd4ca2e832d2bc5cf86764560cd7f36107064e13c0b0d37205d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_30.json",
+      "bytes": 790906,
+      "sha256": "ead2bc25aeaff84bdb5dc16f1583a8b45e26aacfd29f4d563e7f18a9ee413df6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_30.raw.json.gz",
+      "bytes": 98874,
+      "sha256": "ecd52eeb0f7c1878f289faf82c7b562eab70ac73ba68c5e90d1f59a76d315483"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_50-hope_base_pose_flat_relay.log",
+      "bytes": 1068,
+      "sha256": "38bd0e95366ffd885c07d47183b6ab8a7bc3954e03f559398b870fa07cff47b6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_50-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "04f9f4ff8ba49a639ccbd8db2327a9590668d025d01064d540ea6a34a639e4ce"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_50-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "75203ff6e907e6462417c5fa4485173014986ce5b195c7e956d9115dbede1ad1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_50-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "a100d70286862adc9d9bbf1cf6b37574a31730e3ece0dfc8383c74b357585429"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_50.accounting.json",
+      "bytes": 14828,
+      "sha256": "3b70541a7fc6650dfc26fa7c0bc05ae6b5efbb5955868d84bc60c2091716ce70"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_50.json",
+      "bytes": 659541,
+      "sha256": "53a0b8ce56c539c75976fb82ece740ef63d62c61923bcaafe17d88526153110f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/base_yaw_chain_150_50.raw.json.gz",
+      "bytes": 85103,
+      "sha256": "690262dc1c15d92a12abb6b85e8135ae5cd49591f81f7dd30e3d8d0bc2eaf48c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/cmake_install.cmake",
+      "bytes": 24756,
+      "sha256": "228f30d612ac010404fcdd26df75794b011c274e6c88a24cba5cc64f171270ad"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/colcon_command_prefix_build.sh",
+      "bytes": 167,
+      "sha256": "7b92770cc0b59ec372859cf1384beff7671b9cdeae5404dfdfbbec5ffae366d2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/colcon_command_prefix_test.sh",
+      "bytes": 283,
+      "sha256": "528e30a125db5416ed3e6c83c27bf335affcc10496e7c038966a550ae2f30181"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/install_manifest.txt",
+      "bytes": 22753,
+      "sha256": "10ed3db375004ab5d10ea9ef80645f3b43fc85d91c3a14b236b0ef62b66c9e71"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_quaternion_only-hope_base_pose_flat_relay.log",
+      "bytes": 5244,
+      "sha256": "8e7d9d99d63aab9227596c4e7fee8384820701de523e3ba94630d90ca5d3b1db"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_quaternion_only-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "3370f5366e2f8462188889cd00f0aa9ddfd0e87a2d0388be18ef77d1276195c7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_quaternion_only-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "abdfb9e956cfbad5dc663f1de145e5671f256cc669d2a942a173bba897945c15"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_quaternion_only-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "a48bab090e9b84923877226192f4d7e386305affd7110c6de365e0fd3013f876"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_quaternion_only.accounting.json",
+      "bytes": 13990,
+      "sha256": "1817450b89543979a274e3f3a6695c4409b3ab60f28b8b7ba011249ed5d60803"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_quaternion_only.json",
+      "bytes": 3043313,
+      "sha256": "912382536af987d81facd8c72bc402a5136cd83402183e0135caec688a838d2b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_quaternion_only.raw.json.gz",
+      "bytes": 454068,
+      "sha256": "2f218a8d2444f937bc88adca6916871adb50757d77a4e52eda9f0f8b7f684fc8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_unknown-hope_base_pose_flat_relay.log",
+      "bytes": 5244,
+      "sha256": "eae363342e0544608f75bd49bc5b89bc1e480cef8339d5c37158bc1f9f9eafe3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_unknown-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "e583aa531e657b418395c5658836370ef31915fd3e6fb6442b18b2207b26e62d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_unknown-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "18d94807f1c2c3b4d457f1cac01ed4952ff8896f79518f6e299736d6242956cf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_unknown-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "7dcd1c2dc966ec4cf2bf4f4f5307800f343cc37f9973aee36902b314e44dcaa0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_unknown.accounting.json",
+      "bytes": 13990,
+      "sha256": "2f5ab8d3272ec8b4b51680b38072f687da74b86a53e5445a176046ff1af1dbeb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_unknown.json",
+      "bytes": 3006247,
+      "sha256": "f8b454671a7d513bffdafbe5eb9330e3d3568ec0843e872a2d93b1413e5d58b0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_unknown.raw.json.gz",
+      "bytes": 408915,
+      "sha256": "d5b3ead716d4c3e462c39067ad0eaaba52541c389fcceddeb6ef88596a4da0e8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_zero-hope_base_pose_flat_relay.log",
+      "bytes": 5243,
+      "sha256": "38dd61296b736fd9cd4366cf68c3aad42d3e49572f389c87642e5d032fede745"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_zero-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "8d0a0badda8df7407714eb70d50e84c921cd55bcb18c5cba9931ccaad5671ba3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_zero-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "1542257ad21273e21bb80a7a32ba32d32493fbe477d46afb73ef2ae94ba15861"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_zero-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "837876c9149931472ed10b2e10e816852f0624e3845fec2f3bcbc0c6949ef1c3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_zero.accounting.json",
+      "bytes": 13990,
+      "sha256": "74c653cde0be917b121d794056a8e4b3c2da99b9504b6769d2e07f9a0c55d805"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_zero.json",
+      "bytes": 3022216,
+      "sha256": "f6e89a36d22d4718539e8e5129e0410b1ab2326b0ff80ac9e5d53162f2cf11bf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_FOLLOW_POSE_zero.raw.json.gz",
+      "bytes": 435658,
+      "sha256": "9f81e9efc94d2269fff636f2eafdb9fdc7e1f0b4004a26c2211fafa8f251e510"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_quaternion_only-hope_base_pose_flat_relay.log",
+      "bytes": 5455,
+      "sha256": "16a31de9bd9defe36febb6d10d7f3869bbc68baa202be6367c0aa27de82d421d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_quaternion_only-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "4487ec43364e776683288e09bc7053d303c3379398b7ef4ecb3fe598096adf2e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_quaternion_only-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "f755336fa4fc5ac17f99ed8f18f3424fe09dbf236ebb34ada9ba5678585f03a8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_quaternion_only-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "77a032114d24afed01fe4dac83041f02c9d94ff16ba8c9f7765c833f3f7e6b20"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_quaternion_only.accounting.json",
+      "bytes": 13990,
+      "sha256": "9ced1aa3ce78d0f38c572abea07e8003f55c4c5d2ecd36bd0c137f5fdabe6ba0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_quaternion_only.json",
+      "bytes": 3037667,
+      "sha256": "5ac9add8d84614ff4c03a9c8a9262d4131253b278d5ffdeb9aca867094731885"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_quaternion_only.raw.json.gz",
+      "bytes": 453821,
+      "sha256": "7e5c8e75950bdee0a045504b867cfcdc07a8f9d772ca080204d59a61e26f5a86"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_unknown-hope_base_pose_flat_relay.log",
+      "bytes": 5455,
+      "sha256": "d53768911248bb2b31277da702690de5f5d329eb4cb453524aab2393018eca51"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_unknown-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "33bf23708348195d02625d086eab070f00f859e4be11ba80cdb45281cef3f8b2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_unknown-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "988d8123a8336a11937eaaf68dc738dd133a1d54002962585fb83bda6e4ff567"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_unknown-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "c65fa1d64bc2a3cde1c9bf26c7e0900c49708398d278f28e6bfb0b89b1486976"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_unknown.accounting.json",
+      "bytes": 13990,
+      "sha256": "6d52e7df89554e151792730ac3b08fab2447280c6774ad3df19289e2bf418d14"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_unknown.json",
+      "bytes": 3005881,
+      "sha256": "6a639b0f76bcf9f7fa7efd32f1004f82d9c454415bf00c08b7d532d721aaa315"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_unknown.raw.json.gz",
+      "bytes": 412138,
+      "sha256": "552c6ddb0ffd19e1358a773d016c25a44bebf7bfa6f0ac0a33455cc89341338f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_zero-hope_base_pose_flat_relay.log",
+      "bytes": 5244,
+      "sha256": "6f789bb2db109da0e0d0f843fa3e28874a04f8e64b273548ef253a436f59bdf0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_zero-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "bb8b10caf9af163e61e242996f1ce38bcceeafc782e5e87473c088a2ea38ba3a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_zero-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "edbc5ed3ea09967640d086243cbb4db3a172e9caa7994e1555a2a9ed12d865d8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_zero-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "c5457b9b0ddf84ef003d4d0fae7811bcc3b967a772f82a14091e101026cf2d39"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_zero.accounting.json",
+      "bytes": 13990,
+      "sha256": "5c7e6739239335b1e8cc1a07b2ddd6547540b90505d5209950de3727d5dd5557"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_zero.json",
+      "bytes": 3021940,
+      "sha256": "a71a2b3fb2ee14f17bc745f66ff398c64f34b9982b017094c06b828a664df335"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_150_ON_REFRESH_zero.raw.json.gz",
+      "bytes": 435030,
+      "sha256": "fcc295c96a55311c8135fe30f8366ef5ca7e9d633433cee0fd3a500938090d42"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_quaternion_only-hope_base_pose_flat_relay.log",
+      "bytes": 5467,
+      "sha256": "4db9d9a62ff1322ea696d2f018d3e777beb2207fff43486e4a76f6373db1ea3d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_quaternion_only-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "3c0a79a0cf450c5f35ff4c0a948dbfde71910422cd87fb3f7cab52ac18cfe0f0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_quaternion_only-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "4b14c89b5fbf1a62ffb237f3dcff8f3fc7e19c6861fad393ca021c85f7227f3c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_quaternion_only-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "0abe5d90ae461f76be3241daca2369ed50a5146b1edae53090108a6312c57001"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_quaternion_only.accounting.json",
+      "bytes": 25052,
+      "sha256": "76e6da4bcebbe1f63ee3e2198795798fa1345a655f8cfd473458a6f3632371f2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_quaternion_only.json",
+      "bytes": 6082021,
+      "sha256": "f2e24eb7c1d5abd902fdc4d986b11e667691de93022a48a5e8f9541f2db0e1c7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_quaternion_only.raw.json.gz",
+      "bytes": 826093,
+      "sha256": "371d416d349ca76dfdf1d495f5e9c3aefb048dfe71a441eb98aaeffb5d8a9e5f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_unknown-hope_base_pose_flat_relay.log",
+      "bytes": 5876,
+      "sha256": "495b36177e43ea0287dfcb63efb605fb3678329718d8f2c87eab68fa599b8ab3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_unknown-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "93be09ada359841fb06346fe2f0fe72bc8856aa5cf94b8250a9ff645fe1b9ff9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_unknown-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "bb6eb91b5c3c0d990ef754b86533a6cfb5b122a1f5fcccf17789886dfeb9bff2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_unknown-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "6f9e8a2c2318098f1a043a39b55547ad940bf0986ebeb61091d3ea329811ebeb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_unknown.accounting.json",
+      "bytes": 26632,
+      "sha256": "d6f91bd3d1eef1d29bd8166a3d8c2fa62b2f4bc17bfcd666220b81419d143a81"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_unknown.json",
+      "bytes": 6007555,
+      "sha256": "0adc28fc4578eee7ce3b9a1d192b5847ddc811785026478d6341c93328a51168"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_unknown.raw.json.gz",
+      "bytes": 749362,
+      "sha256": "68468e9b138dc3b9b58325a4e94cb05c7da8a9392a13f237172c443c9855cda1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_zero-hope_base_pose_flat_relay.log",
+      "bytes": 5467,
+      "sha256": "45505cd61c081c54b9b76705c59fe8cee95b8c3a411a278946c407346be2244b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_zero-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "06cfd9381ed3933d65d825b343bce50d43fe718513049bb4bc15ba942a82fb31"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_zero-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "2bcedf6fe2d190ffab0681ea0439562b94d622caa415e55127f23ea06088c622"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_zero-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "9856b023eec59edab6577d8a069590256ce3a8d5ba233b13ae7cff1f3c2f3c2b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_zero.accounting.json",
+      "bytes": 26632,
+      "sha256": "5f9aeae2e8bcd5b7b870adea7d5b611ac80fda134808f0a996b7f2951460310c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_zero.json",
+      "bytes": 6040031,
+      "sha256": "6ed7397bd68f106fd5a0766c1f166704334c9eac69fc44267c1df9ea09767a09"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_FOLLOW_POSE_zero.raw.json.gz",
+      "bytes": 791315,
+      "sha256": "9f38318e144af38c54f38f41ec9aa63abc2589b3a6eaeddf9c34b2ac758b80c9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_ON_REFRESH_unknown-hope_base_pose_flat_relay.log",
+      "bytes": 3265,
+      "sha256": "c3a761eca0ef4e24c3a81c6350f9b99b41e4b9f843084f7ad8b45af65873dbb6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_ON_REFRESH_unknown-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "c69b784fd89a8b61712d128426850300187990c162019f380718ba3f86d56ed4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_ON_REFRESH_unknown-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "e7a1bfb18ff6386cbcfa5258bcc84ea457508e2f3d36cb193efdc8729bcf0acb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_ON_REFRESH_unknown-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "abb0a1e9e4deb292f9add2b0e50d993cec9f26ad06d19eb680d23506323789ac"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_ON_REFRESH_unknown.accounting.json",
+      "bytes": 1372,
+      "sha256": "65faaf84d55e88662e5de067291dd72e5a656726da896f14a9818babaeba4d2c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_ON_REFRESH_unknown.json",
+      "bytes": 1372,
+      "sha256": "65faaf84d55e88662e5de067291dd72e5a656726da896f14a9818babaeba4d2c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_chain_300_ON_REFRESH_unknown.raw.json.gz",
+      "bytes": 137480,
+      "sha256": "946645f4a3251f6e253d92db2fae7ff005e3dffa323ecf72ad43f692bc70b71e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_delayed_150-hope_base_pose_flat_relay.log",
+      "bytes": 5244,
+      "sha256": "a3782d5f82fe8ee1d7d3a4fe833b77051581281e77590fb4926a167dccbd7cfc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_delayed_150-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "3b2a80961b60433fd414fdc51950c6cec083cbe1fa03fcb60fc9809e480b3baf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_delayed_150-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "157e11f9e2ddaf2b7fdbb5d9eb331c3d0ab1a5f425ea06601674481cec472714"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_delayed_150-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "bfff9984779e3a0cc24655d368f77317d37b95200ca6a9b52353ba56d5120bd5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_delayed_150.accounting.json",
+      "bytes": 13988,
+      "sha256": "78d5c2921d457269bd927207c72769601f342739b2b1a8c32856ee81460d4143"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_delayed_150.json",
+      "bytes": 3005912,
+      "sha256": "81451c5bdb44c458f7e5ea1f904f796bcd6c8a4c26f39c12a9e33493cc92d069"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/reacquisition_delayed_150.raw.json.gz",
+      "bytes": 405590,
+      "sha256": "37cc199125862f562138f2166c632e8f8502813638e96f69494e7a89e93fcaa4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_10_unknown-hope_base_pose_flat_relay.log",
+      "bytes": 2771,
+      "sha256": "6d05c5555e0c9bd6777d5bbbeb3aaada13f13a3f97143bde997a131ccb5911e6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_10_unknown-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "df4b39558d35838b1d2ac3dc2b5ae8a1458870b03aba56de3ed954b4edc61c3f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_10_unknown-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "3fe26301908bbe03844ac90c96eaf3df18c804b913ee3f13314890d03ca8e534"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_10_unknown-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "22009006c2e5f55699b8dde1a990ea0e122fdf0a20c44d3ebc5c94a605297814"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_10_unknown.accounting.json",
+      "bytes": 13937,
+      "sha256": "4a412af29a209edb0fdabe46da9240439f9111bfbc21edceb24c452cdf71caf3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_10_unknown.json",
+      "bytes": 2099524,
+      "sha256": "782a83a17428d4d8a5f20c7fcc8728897d6e0046972298e3aae828ddb7aeadd1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_10_unknown.raw.json.gz",
+      "bytes": 267488,
+      "sha256": "27ba5eec8b2dc1246d2a88ba3e04d860ec7efefe07639f44c4490fae19bdab76"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_12_known-hope_base_pose_flat_relay.log",
+      "bytes": 2771,
+      "sha256": "f306477071fa245e818b86b9f2cbfe246044f3c8fc611da52fe9b7e08c39a37d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_12_known-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "bae9370c50c623e20a928e296fe487d50f32226a1935951d2194a6af9c642ac4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_12_known-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "fa4a6eb2ab03a943c729fb888ae098e4633772c6b91f168deb10b74266914393"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_12_known-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "1fa1bb94eae793019b5327b4b0aeb75828d3283119822b896cfefc1d466b611a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_12_known.accounting.json",
+      "bytes": 4457,
+      "sha256": "061e74132d6b55c0297bf074400ce9ef496de8dc657d6c9de62da6066266e6d2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_12_known.json",
+      "bytes": 1757484,
+      "sha256": "ae668ea5985a878f345e24e8e4c11685dea131b3c44c30158e354de79cc24bc6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_refresh_150_12_known.raw.json.gz",
+      "bytes": 241270,
+      "sha256": "0c33966c27f8d99d401e3198309091ce90e0b184a37a76cb97fde22e28e5d5da"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_worker_expiry_150-hope_base_pose_flat_relay.log",
+      "bytes": 1068,
+      "sha256": "53b76387ec62a2eddca840eeedd2b62b8c592debf2310f7f6f849209085b9e57"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_worker_expiry_150-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "b57ba6d13dc42e381b5e67c0eb219633986d4e304e99f3619b8d5bc30aaf38be"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_worker_expiry_150-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "6c066a38603d476a719e4294af8e98753777757a338b2d0ce86b98b196c5a928"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_worker_expiry_150-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "0dfd0e0c0614245c0843b96daf5a03e64e806ca3651b91ad9f4b56666d061b14"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_worker_expiry_150.accounting.json",
+      "bytes": 14828,
+      "sha256": "30d4b6e229a0f7e13e07f8a744bb0b1fdd40129b9ead305c36cd821bfc4cde4c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_worker_expiry_150.json",
+      "bytes": 637881,
+      "sha256": "cc0a3784f82cdf805b764078d88b16781f6dc82c9432919503db82e9ad12b608"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/review_worker_expiry_150.raw.json.gz",
+      "bytes": 84988,
+      "sha256": "193b4521fd7f8a6a25ae8dbbafe767a4b4515af70a784296f0fac707bd5a06d1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/codemodel-v2-ff80622ac22bfe9ba95c.json",
+      "bytes": 15942,
+      "sha256": "6938026a0bb0d4a7ded0f5bb17792e46eba7836a259083292073223986aa469d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/directory-.-Release-1f72b2dd706f907ee190.json",
+      "bytes": 18443,
+      "sha256": "cdd618155343c16fa0cdd56023e896c2a276d1a705e2b70ad326126349a0481b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/directory-gtest-Release-0908a8c91ddba5d6c989.json",
+      "bytes": 188,
+      "sha256": "cfab4ddc51cec095ccff121353dac49cea7064543b5ab48865e2d1d4fd1c2fe7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/index-2026-10-29T09-00-29-0822.json",
+      "bytes": 794,
+      "sha256": "55031c180a3dd8fa177c207d928e4ab7375249bf12f6f3ca4ac93afe7256e473"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-gtest-Release-77c01015197f05070be4.json",
+      "bytes": 2860,
+      "sha256": "3f8b425c5b7136fede6313b29643eb569a9c8cabaa8ce674634c0550b5e6b545"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-gtest_main-Release-32c3dc0c64aebb9aa4b9.json",
+      "bytes": 2624,
+      "sha256": "7d76a231326ca88b9a6176b0678d126ab3bbe81d665c9cce988354c6e995f0ce"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_ball_flight_baseline_replay-Release-d30d5cebf632c1be8479.json",
+      "bytes": 2984,
+      "sha256": "001a0e56184aad8b7510d5daf67c04c8be2fb65ba7fed9c0b45141799327c78a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_ball_flight_packetizer-Release-24d10e73040d773d7745.json",
+      "bytes": 30451,
+      "sha256": "60523f46753d8be6605422eeb73a35eb7126ef5129877884bf121c54a5586018"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_base_pose_contract_probe-Release-fd077daa8670e262f66f.json",
+      "bytes": 2438,
+      "sha256": "20b546e39ffa5bd76c4834f49a617a93e98132b1d4b6ade044220e04c51db1c4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_flight_prediction_v2_node-Release-887aab6f5b386823196a.json",
+      "bytes": 35422,
+      "sha256": "2bac345e86bce76c2acd133b72c2475cb7430974b4cbf8bbd903f2c03632d875"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_flight_prediction_v2_replay-Release-15b12dca292631d3d1a5.json",
+      "bytes": 2778,
+      "sha256": "f1331c4279677d238dd50f95f6da72fc538ab14cc1600f0e4aa04e9b053b3d60"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_integrated_return-Release-3b04caee05a9d4c74a25.json",
+      "bytes": 2515,
+      "sha256": "214d0e55f19024605d2bde7da615ec62d2a52ab79f12654471f123b636494782"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_integrated_return_sweep-Release-fa3dc44f556cefa9ce29.json",
+      "bytes": 3029,
+      "sha256": "e7b23350792d312367707a23f6c68cdf2d14cf8fa37fd52c0d2a65391b2f907b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_integrated_runner_probe-Release-15a594f4c76a9a145ae0.json",
+      "bytes": 26793,
+      "sha256": "95f6659b2f96bd9ff9e313fd197939dc1f6866d9e842620dfac2614cdf15c446"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_integrated_runtime-Release-ee68cc83b33ceaccb9f9.json",
+      "bytes": 6920,
+      "sha256": "90115c32173a0fd3301fb76fb5f8da6fd2df4be2751c50097561e9ae0b2b4504"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_legacy_flight_evaluation-Release-111c6852fdb1b1d87acc.json",
+      "bytes": 2458,
+      "sha256": "38992e0e78a8e87af6de7b1470339be4c125c2d08d0bcd26dfcb7a7720463725"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_planner_core-Release-bb688dce55da7917ba0d.json",
+      "bytes": 5959,
+      "sha256": "bd16d4d5f44e3e7bbb4a0d28b3c227ff44d58c41f66c1b55957739297b781d17"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_planner_cpp_node-Release-feb37b0ee212b943fe1c.json",
+      "bytes": 32764,
+      "sha256": "b80cfc0171105f23512491846d4009fcc0aa439cd9fc78f1db17e450f4a2d2f0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_planner_cpp_replay-Release-76364a02a5e34ce3ec2a.json",
+      "bytes": 17457,
+      "sha256": "93bfd1585a165d887a43c500e99ee43b35658783db427807f67820d5dcaf2400"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_planner_cpp_uninstall-Release-e6103ecd7b299a7426a0.json",
+      "bytes": 1904,
+      "sha256": "d656ecf1866e72a455a84476fa8cab7e77c98967268dbd1e34c03db70a50e51b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_v2_forecast_core-Release-fcd9b01e770bff517dee.json",
+      "bytes": 3007,
+      "sha256": "28395992fb450c920169d4c6ac6ac33228283f25dde4f00cb8b3641e9e7dafec"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_v2_forward_physics-Release-f9f77132b52ba661e544.json",
+      "bytes": 2322,
+      "sha256": "96e0255597800bd24e48d268ca577066b52bae45f5c944436f1f5d0e71ac9e30"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_v2_incoming_core-Release-3b7549460ab8176e75e9.json",
+      "bytes": 4739,
+      "sha256": "6a247b5d8139cff8d43becfa4fe84077781eac3bd9d03214968ecd64a4e97375"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-hope_v2_transport-Release-12a3d0209a3e9b4a9246.json",
+      "bytes": 5860,
+      "sha256": "78a71a1fcca6953951024298ca62472615bcfce2fea06a46fa72ddec9945e94d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_adaptive_flight_commit-Release-f6de79e6758ae7e6ad7d.json",
+      "bytes": 18621,
+      "sha256": "16c21172daf4914ef10561deec73d855bf5b2577c45d2cde40e51ddd20c1a06a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_audit_logger-Release-a062ee944bc54d3cf8a0.json",
+      "bytes": 18571,
+      "sha256": "aa0ccac711cb5bb1e051d52b7acb3d297ca2a37f277d60d70e797e566b7ecbb5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_base_pose_contract-Release-f90f44a536071898590f.json",
+      "bytes": 19340,
+      "sha256": "1a5f6ecfb5f553d375db3386dc8e7f543b36b40e32edd596136e61cf134d82e2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_batch_physics_estimator-Release-7de26a16c87bb716c09d.json",
+      "bytes": 18626,
+      "sha256": "43b27a62e95521d1efb54a9ccb44b5275768b4b5beb1d8acaadcb0e6ed78b844"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_flight_packet-Release-871d161253731af0a803.json",
+      "bytes": 18576,
+      "sha256": "d2847e2ad064e4e5dffd66698c6c1019b620a9707c0c70dfde882e8fb3333433"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_flight_packet_pipeline-Release-51c6b5777497ab1b48e3.json",
+      "bytes": 34080,
+      "sha256": "96f33de78f9b3dd5f98270fa4cc5251b1bba16d4b9337f0e6f525595637ea337"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_flight_prediction_v2-Release-9e5524a4b21eaf27e907.json",
+      "bytes": 3885,
+      "sha256": "16bd6719c1ce71e05e38c4b9609ce0abfaac795528aa0123ffe04ffb2ed7db11"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_flight_transport_v2-Release-a818638b220fc9e1764b.json",
+      "bytes": 33196,
+      "sha256": "6abad2db4f023b85d7a2f064fb4892a1fcfda743c2e71f7116dca3ad8a1ef794"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_future_contact_predictor-Release-fda5fe5b6a0cbf31bed6.json",
+      "bytes": 18549,
+      "sha256": "14fd6e8e7e5db8e0a4d26447486542c42d21ce255d6512f5bdfb4227f88dd69f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_incoming_trajectory-Release-95ff3450ce8b66e7dac6.json",
+      "bytes": 18606,
+      "sha256": "77aa1399a0006c8012c83439585e6cacfff9e462d0e5bf2216f5e53ffb58c22a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_integrated_return-Release-99af2866548235801e16.json",
+      "bytes": 19335,
+      "sha256": "6521c4ddd5375c71272ec383b913eaba7b8d1d2265c36bc58093293a776bd9b8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_planner_node_one_shot-Release-f8f0d0f6a6fa78794974.json",
+      "bytes": 33932,
+      "sha256": "e2ad0715c4fdf3ac6ac13fab38ae1038b5fbd3268202b0af0618ad5abc790cbe"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_planner_node_turn_guard-Release-29d085651eadded390d5.json",
+      "bytes": 33942,
+      "sha256": "598c825d2ee6ddcc5e20a49d3b730edcf6966e508bf4c6fceec2ab1a000aa007"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_planner_runtime_plane-Release-b62f6d0ab47f708512d0.json",
+      "bytes": 33850,
+      "sha256": "687ad58e8f442a5188ad09eddb495899db667b682591a4988044e9a4277b4efc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_post_net_one_shot-Release-a130f08af9e8a670c0f3.json",
+      "bytes": 18596,
+      "sha256": "57991ee0b6e5d4e069cbf9a751aa7bdae073cb126b460dd280d15fe16c9ad376"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_prediction_event_order-Release-bb74f86bfb2eb4a98d28.json",
+      "bytes": 18621,
+      "sha256": "d69875359009060ddc45b6cb24d7ce8500d0427e281e27b1357e7053f46f41b6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_question_bank_fixture-Release-73d29b0b7d6e1e7065d9.json",
+      "bytes": 18616,
+      "sha256": "3fff97c05d18896c3c45e08bb753dc385bdd100585bf5e3cd07fa280aeb2a80d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_reacquisition_counterexamples-Release-67df291f46ef3ec2875c.json",
+      "bytes": 4418,
+      "sha256": "3e3ce244f9afcc698b10e539a80f1fec7697e7afd17c85aa0f27ee09ff744d20"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_reacquisition_spin-Release-7f70a5ad2fb7290e64ad.json",
+      "bytes": 19258,
+      "sha256": "75b71b4e330385bcc12d4dfeb5f71947f464f9a8e3c7ae433ffce2c8b77904c1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_ros_context_guard-Release-88e9fdfba236de5658c4.json",
+      "bytes": 26840,
+      "sha256": "c809e9720146134fbbd1b06752245985152da6cc698b9e0456fd2b20a9b5a153"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_runner_preengagement_revocation-Release-6a156536b3587f340f16.json",
+      "bytes": 3579,
+      "sha256": "5920afaf30d75f8c9c1c7d0e5879d69e6d50c8c85b48781dce4bb25bea787e93"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_runtime_plane_reference-Release-39173d3bf74b7c278b57.json",
+      "bytes": 18544,
+      "sha256": "3e4e9f7ad49906aa0fc9467436a66e26b4cac1dfcc95fd1c1986e9ea4565ed5b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_schema2-Release-75d6a3357f005687ee32.json",
+      "bytes": 18546,
+      "sha256": "b202d69dc5b651c937cdf973958289b0741a4431fb296b809256e31031fea098"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_spin_estimator-Release-07dfa2cd46cacd769822.json",
+      "bytes": 18581,
+      "sha256": "5b4beca2600302cc9e60bd715fe6d1f1785d4f1819ddf5051febcfd383c9ad39"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_spin_physics-Release-88ce166550b8682bfe75.json",
+      "bytes": 18489,
+      "sha256": "00c210da9a94fcbd8163d51f0213787a9e41a4f06cab728548c99f1177b686fc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_target_turn_guard-Release-1ecf0a5007d3452fcbca.json",
+      "bytes": 18596,
+      "sha256": "7a8f0b4e16ac201b8fbce40b5f613855c2a1c803fc52c048c396e774da6a88aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_trajectory_and_stage3-Release-c1fb5951a9c5478cc7e3.json",
+      "bytes": 18616,
+      "sha256": "cb8f5e9fefdd48dc909f4b7c22e02eb1c16132fcfbf43babf92e257cd8bc6fc4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_v2_contact_corroboration-Release-8055f49093a78770e7d5.json",
+      "bytes": 3905,
+      "sha256": "c9d9e1bbb2afd0c67c68567263af15c35b07a63d8ad3454e4965d05cd3122d6c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_v2_incoming_coordinator-Release-b0a5b6e41dbc005e77af.json",
+      "bytes": 19555,
+      "sha256": "a7360e9e33861d637767f7c6d946420345ca47efa9d02c412b375a212050b6bc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_v2_incoming_ros-Release-0cbdfd91a81ad038a693.json",
+      "bytes": 35109,
+      "sha256": "95b8f190ab150c4aa1c1be3f9cada040106c43c3d5472ad42844e60ac562f40c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_v2_pr64_review_regressions-Release-fe020afb52c76236edb2.json",
+      "bytes": 19298,
+      "sha256": "481c1816acc8c5134928815ffc6eefe23aef161496e81aadae04a1b8b154baf4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-test_v2_strike_adapter-Release-b89634f1e28ff119251e.json",
+      "bytes": 19525,
+      "sha256": "5f26979d8f5c744210470c2de55ae32fcf29131abbae2dc9cd062ee714bc4847"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/.cmake/api/v1/reply/target-uninstall-Release-34e0bf086ab8136b5865.json",
+      "bytes": 1502,
+      "sha256": "ad9917577a593b0212f0e3fa2ba8534f503890db695b60d2073fbee43697a2f2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/Testing/TAG",
+      "bytes": 40,
+      "sha256": "90b909f5c21cf091fecfa4002cdda26e8f693975f704697dd3b43569ffc7ab77"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/Testing/Temporary/CTestCheckpoint.txt",
+      "bytes": 108,
+      "sha256": "041e1932db240f30bfd8e0d963ab9faebc36714308bcb76eed2db9eb09f5acdb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/Testing/Temporary/LastTest.log",
+      "bytes": 121,
+      "sha256": "a14eb816259ade1bd29260064930d372f717e389f16ac308c173439f619e0326"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_core/hope_planner_cppConfig-version.cmake",
+      "bytes": 432,
+      "sha256": "5df7fb3481e154840dd6ac6d1b6eb53c81ed9cadd5e7a00398962383332be7ea"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_core/hope_planner_cppConfig.cmake",
+      "bytes": 1508,
+      "sha256": "531ba1f79a8f8f27b72cef71a3d2d89007e82080e13e33b091ab4f189ad950fa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_core/package.cmake",
+      "bytes": 1059,
+      "sha256": "b6703753e6fa3492dd0307e8dacfd9ac4daf321365485a44538bf6be4f4ce3c5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake",
+      "bytes": 4015,
+      "sha256": "90be53c8320ae8471d54a7261e56194f81e3c9e4f8718b55f8190582090e6726"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake",
+      "bytes": 793,
+      "sha256": "aeebf11d88301217032971a0f41ede185de93e0251cec1f6b2bf20faa6ec6cb3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake",
+      "bytes": 5114,
+      "sha256": "a6c14b2cda1deb33c1cc6bb9d194f9fc3aa9df837bc1f9fecc65d2a0f9763fa2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake",
+      "bytes": 985,
+      "sha256": "e4f3e103ee4f3595afd9d79304f4938860a150defe1dfd270b30aa7938226f47"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_gtest/test_base_pose_contract.txt",
+      "bytes": 1886,
+      "sha256": "22e9fc02d8ae7103d2717f1d8b17a49b1c184b95bdd7fd53d12f1e05a952d48d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_gtest/test_reacquisition_counterexamples.txt",
+      "bytes": 1843,
+      "sha256": "feed18968bafa8771783bf20573fa0c9a1258de52959fa29cf073d5e880b2ea6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_gtest/test_reacquisition_spin.txt",
+      "bytes": 4040,
+      "sha256": "4654d5e3609557a93f440c6b81e53d7716c2dfdef830b1bd94f6387109feae50"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_package_templates/templates.cmake",
+      "bytes": 1984,
+      "sha256": "0bd4d2e887197f7f9771d2238eff41586d61b13acc51ce8748b36ebcf55753f3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake",
+      "bytes": 2218,
+      "sha256": "fb1f97b30a29c6ce3c434fd1589903a9ec2ad2b4ece063f7ca148d3d3ffb392c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/gtest/CTestTestfile.cmake",
+      "bytes": 325,
+      "sha256": "c326d731f57e287a038d1d550991463f19ed02d06751db1da37cd4e583cdf9a9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/gtest/Makefile",
+      "bytes": 10687,
+      "sha256": "b9a786bce6b68fec6a6485d94e0e4218a048b9d730ed49d389b304a5e880f2e2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/gtest/cmake_install.cmake",
+      "bytes": 1319,
+      "sha256": "c7a0aa0e94bf57b372ba2081f020c3168c925990f415fc507ffc04aad92f2ba8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/accounting.json",
+      "bytes": 574,
+      "sha256": "5a4562eee2d04f07ebd8b142ee5c4cb3198c2ea2b4259df97bad97cdddd7026e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/contract.json",
+      "bytes": 803,
+      "sha256": "58802d477d34e4e30e768da6a2f7fa8866a7bd00534cb676b4a1376dfab59c8a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "854ab4a91244afecaf8cebc2599402cba184ff7b8972892c6229870d0e8af3ee"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "b08e92e2c85a03f5cb16d11abe03fe413d5e5e2c3d6f9e0d704ebee48e3348b4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2625,
+      "sha256": "b565b23f37491c7e21b46877ee2b68f9d4b84c396497f115da175e03dd4b0741"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "667c79aca7fc25189cc2a2867c5313342cb57a7df2bd22118e6f4c59946961cc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/hope_planner_cpp_node.log",
+      "bytes": 5021,
+      "sha256": "b87323c2cd7fb9b84fc8170db9668bb7b349352e28b514d61e949c471563eec7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "ade032f8aad3d811f42ca8560a042af8ec4b3ef8624fd8d61af2836bcd3cd658"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "7d8aa49144442ebfc706a64470503d9b5e757b56b9b2ef9eb4c13001e8bbd57b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/planner.tsv.gz",
+      "bytes": 69186,
+      "sha256": "bbdd73c5c9608168c44ab8a684ddc23b3275d847556edc94dcc9332e0a230ef9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/raw.json.gz",
+      "bytes": 126227,
+      "sha256": "f69df1871af3aaebe6e21434bdaf6c295eaf35c59998d56d4753adf3ad55bd0d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/relay.tsv",
+      "bytes": 164052,
+      "sha256": "ba1900c18af8685527a1c5a21a463b79f0702301f979ae36b362e298bf7261a1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/result.json",
+      "bytes": 2187,
+      "sha256": "e7a7c1fbff3686c40d2c6727a21fe94f1c1e524b414a1faf41d8be1a8769fe8c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_unknown/synthetic-accuracy.json",
+      "bytes": 57647,
+      "sha256": "fc7ebcf4bad0ec0b6f386d17f5d27c39c90ec6fc08f07ec356dff63d0ea6f429"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/accounting.json",
+      "bytes": 3619,
+      "sha256": "aa5a3bec2cc6eae8085eb17d3ee37301fafc73f9926527d76c2fce2c1e4d382b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/contract.json",
+      "bytes": 800,
+      "sha256": "7c7e9a75f861a4d7c3c062fea8952dba6b582f54c46893c6c42dec4bbdb61087"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "c9b24469129e064092ad85d2dd835b968515ba47d3b6b05bc199f49af8a8063c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "312e45f9b5f921930dfb2d39ae2d85d77892548d4a3e4b903943d53e3f6578aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2623,
+      "sha256": "813582a8b2111bd1ab9403faa1d8854d31ddcf2ee3dc7b732a3a814638dff5f0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "d92fbb22b76b04cf0590507eb3897dc92ef478a1234c6a07fb48ac4ca28442f2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/hope_planner_cpp_node.log",
+      "bytes": 5021,
+      "sha256": "21f9ebd74d825bf9feb57a43538d3c35e0ef4a0525a2ea068949833ffb411d5d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "fea6e919bf1f591df30026b14b1c6c687492ca7486a18371c600af56683b73e8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "1804925781d0e06e802b6d95cb0f3fd2652bc724360462e3ac1187ebbb8ae204"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/planner.tsv.gz",
+      "bytes": 66247,
+      "sha256": "1fe64909543f84b9670ccc4c4a81ea41301e5b0692fca2f2c73dd9f3cb6bc4d9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/raw.json.gz",
+      "bytes": 124873,
+      "sha256": "c99eb6999f2f92af46ebc82c011fc3b737ee78703961a587874d1e5b8a55846c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/relay.tsv",
+      "bytes": 161293,
+      "sha256": "4d176ec3861e032498674202fcb37220382c56ed960bc26accb80ef97a8d8696"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/result.json",
+      "bytes": 2268,
+      "sha256": "bfb382e93b92193e772d339be78d4f5574e90879fe8db643fe29a11d0486817b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_fixed_zero/synthetic-accuracy.json",
+      "bytes": 55591,
+      "sha256": "b4b80ec6e550175b3847ef2d022900746f92718ebd14c0d80452ad3f45a7faa5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/accounting.json",
+      "bytes": 574,
+      "sha256": "c5a7348c2c3506f9666d613d421e93772198657fe6ba061cd3aa11b4714ff13f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/contract.json",
+      "bytes": 806,
+      "sha256": "d069c5e1d483d47bb7f147396c7b621b915ad286e59cbe4b3378e734a7b70bb6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "987624f52e5f180b0a651c2fc87e0833aa69b788ee0397de0800877fddb05575"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "5b5b19dc10081a3c8c21349673a5c8f1f16cbe3ce0a14dfbce5aa8a71dca74c2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2625,
+      "sha256": "db8032620ef283bf8ce248bda8ae5e1fb4fc024cb7a3b9fe7fee25735005f51c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "1657981a42a78173b8a96910af4ac0657a90deea155d1ae62f73606cb2d90076"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5021,
+      "sha256": "19ec837869d7c169bc6dc55406c3c90dd62b721c03d14d870538ee7edd44fe1c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "f33ead06a436eac4f462d5a03e48a4f52215cd6dc4536628d5b1a3b78db5e541"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "1c4fb455570392e96947cb4e7d1a656a30d809affcc81d5bf28d8a1f8e0b751e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/planner.tsv.gz",
+      "bytes": 69180,
+      "sha256": "61fbf5ef67788073269a0ca92c5a73c43c190edf5340cc13f7c4fc10f301c7ff"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/raw.json.gz",
+      "bytes": 125957,
+      "sha256": "ad43fc38ef07a9daac33da9a5e69c8502bfef179ce864762e748e184daa87b82"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/relay.tsv",
+      "bytes": 164052,
+      "sha256": "22724edda40ef3f93f8b99c1f1b1e8961f8c9a618b10bce9c0e01a1a2c74f6bc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/result.json",
+      "bytes": 2169,
+      "sha256": "96330f3f3c6e443ffea9d0b2d8a08fcff1ffdc5a486117dc6b6a5887e19cdd3b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 57826,
+      "sha256": "ab5fb96760d60e703343c49450b7acc7b90debcb0430cb3222bc98abcb143dd6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/accounting.json",
+      "bytes": 574,
+      "sha256": "602d7fb7aba9c1c0f446e875e6b8cf77118b2934d7b68baf02a0b71b6c60f93c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/contract.json",
+      "bytes": 803,
+      "sha256": "cbb32d875533c30a3e27d13629dc9fe20feef1433617ceee44a651e183c369a5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "56ab9e20a3b1672caf621aea18fcd32786cf2afa9baa3f159c9d2d45b02126b3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "03b4e4ced980f7d6c617012a222dc8636581eb5077df8d9aa15e135a4d3c72fa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2834,
+      "sha256": "f659cafc79c221ece12fd37555af62aa0b6b4225e9b35daee55313dae280b27b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "cdc1c4175739cf977fa9525731a4c10b4c881ac3e6527b43addc04573da9344b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5351,
+      "sha256": "ca79edb6d9bc9c46ba9cd31268e8a6d88c67a4cb39cc8c078164406f7717ac89"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "63adc1b092d8c793de08bfdca09847762f3db91d08e27415cc7c36acb04144a2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "a63e36f6a026b59e92c69fce314f4b86415c884ae497a2c80fc2aaf9e568e0a3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/planner.tsv.gz",
+      "bytes": 69075,
+      "sha256": "04cfa2feb2649de49e081e76ef61282f9a0679c6547f06569aba6d23f609aa75"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/raw.json.gz",
+      "bytes": 127858,
+      "sha256": "5757fde125cf76d9614090c0065bfd50c28dac559f5f15257245935ee91fed4c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/relay.tsv",
+      "bytes": 164052,
+      "sha256": "020c9fa201fcd58c3520c1616379eda1c7667c311aeb7b78f32a29de58082c9b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/result.json",
+      "bytes": 2142,
+      "sha256": "d1b4b56e06a61fbe5389d046d9b01de2e4ad1bc2aa83f3f935011d7372d915be"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 57937,
+      "sha256": "e823e98888cb711bf63d6c35af4f3e083d6a064e599549ca30bfe413f3da66c5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/accounting.json",
+      "bytes": 574,
+      "sha256": "00e704f1e4eb09a34c9b7f769203c7a35c016cc8ec058ab650d0085d736ec0cb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/contract.json",
+      "bytes": 813,
+      "sha256": "5677f62d4b6af8dc10914af4a36102bbe4bd8025e44c50062e4344fbf1b131b9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "6ae160b8023295b886a24571185581c55dd3fbd6ec44860455b61102a9acdbee"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "dc78cf3d34d4d4fbdd16ef3ee345009688d72aad65acb1b3def6c1b0fe3935dc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2625,
+      "sha256": "fe2132f00a4e2fc9813ee0c01b46f244286ea7d49f7304d9cd377935e05805b8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "8bd85a578ee403d847122c15eae5e864980f0f857a6625e667ba6c4a9926069b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5021,
+      "sha256": "d980ed97df1cfb87c107b735d2400de30957ef07fc316ccc74a111442b72b4c5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "75d3544d42dd4a9f2568883c507a1b820942390b35938e107ec7f7e8a278be55"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "e584583c51c58bdfeba957d6fea2f899a8167193a11519f023abcbf3f3a7ee3f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/planner.tsv.gz",
+      "bytes": 69098,
+      "sha256": "49a2f78ff650b4c2cd53f21ef6a134ec253bf7571dc7c699e444ecde4ec90fb9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/raw.json.gz",
+      "bytes": 126346,
+      "sha256": "73555921ba49da504d953e589e2a6ffd8f24a0a8d61bda991f21cd729d569a22"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/relay.tsv",
+      "bytes": 164052,
+      "sha256": "6b440444601255d13d5867ec10b44d4d73610b18af78080ebbd8f0444e11fb39"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/result.json",
+      "bytes": 2161,
+      "sha256": "7501887916233f3a71aec7ea8d6493c74f3652848e4dd445ddaafbe967bc63e5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 58755,
+      "sha256": "d1eacfa8caac51799b375a999e9982e65591c03c544baaf7f5f2a300f1cc36c0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/accounting.json",
+      "bytes": 574,
+      "sha256": "1d985cd43ee2a646493cccac7b1234baa4eb3b97681aee73081cfae7447d9775"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/contract.json",
+      "bytes": 810,
+      "sha256": "321e023a3ff9245edd5ca79d2ab8a515de7f1bfef65a380e199ea6d08512c822"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "3e2bcc94670838a228dd60163c63340a743e70d74a0d210374ce99c44bc707c3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "32af936f7f35674688868b2afe72eff06fd2d4ff3a9d7ed7fe2d02db366fee8d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2763,
+      "sha256": "758fa8eb9d2c0414bbc4c6166e450338ad46bb78e1963a1e0dd1b3d903c4706b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "7c401471b7bebe60a6b3b64e1532a122fec482b6153b3f14c7a92c00c4856eae"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5171,
+      "sha256": "1d7f56ee4525d0ba8ebc1f2a04bdee0d046a7528fb55a2278fde3e41290710a5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "65299ded64ccf92ff59b236c60b7956ba29d2e2a2467ec99fe71ab570c13efbe"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "b32b80bf58be3a3da70212778475902a8928aa2798fec47fad9943c28c5042e9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/planner.tsv.gz",
+      "bytes": 69159,
+      "sha256": "5212925fd19afdf144fcce67d7281a11f6e1cfdd127ba2f64c9532aa3f752144"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/raw.json.gz",
+      "bytes": 127756,
+      "sha256": "e369f51ddf866d7630d9ba1dbe713c801e2be270e5eb289eaeb49236968a76ac"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/relay.tsv",
+      "bytes": 161528,
+      "sha256": "5c56861fb829f4c17daa13e23f17be700ca03ed0b092c628ffadb26aa73374ba"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/result.json",
+      "bytes": 2170,
+      "sha256": "69fc136adabecbe2f03b3499a68708c4633c90254a19abd92aad9efc42b5c0d5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_150_stable_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 58319,
+      "sha256": "60cadd40332cfefc1ed7fd86a9a9b96e1470ada1367fabeb9454e69399a3670a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/accounting.json",
+      "bytes": 2086,
+      "sha256": "24fc06b2aa80c10a5ad41e76c1baab51d94a1cd2389b3fd549399262595f5b87"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/contract.json",
+      "bytes": 803,
+      "sha256": "91d98ac1cfdc9b522c2b8d7d7edf2f929a9b7aae626947227998de6c2021bcf7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "ab618269a1edcb7215fbe4def05b0926ae90de69bc83e6c31f768968f02304fb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "21bf5d8c60b8ec7026e977ef3f7b40ec2a79a2fb61ab2ef4ee79d33f2808d88a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "e9634fe1fca19e7de394988b44c48bb9b25d9ea17663cc7865a7d768e5cd4e61"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "f19539e1e063d8f265cc9db2c01ab007fba28efd26fda7aedf6dc54acbb8da5c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "12f3cce1891a8d0bd997ec61e32f56e1009011612cb42c7d7f70be90b4979b80"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "bdcf2af86c0fa0ad77f835909a3b392f2527cd0b86608190e71e9d644afa4f8c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "82564763e79975ba6899d2ca8af413bc387812c9a33547c2eb82260c09af637b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/planner.tsv.gz",
+      "bytes": 132087,
+      "sha256": "730a44e5d869d81b55616bcde7a1f9071d27a505bc0ca3d2a2ac140a02e71bd0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/raw.json.gz",
+      "bytes": 236550,
+      "sha256": "7be3e339600a8a47c92faa73df0f470b0af163fb79ed2a3fba4f79dfe45d465e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/relay.tsv.gz",
+      "bytes": 86105,
+      "sha256": "36918ce1912b67e28e254a9eef4386146e2c3d9de0991ae7138afa9fead003b7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/result.json",
+      "bytes": 2296,
+      "sha256": "65ef7bdc5f6542e6981664aa9caaf0a1d0cd7148c198c8e5e68eeccd2d67700f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_unknown/synthetic-accuracy.json",
+      "bytes": 115863,
+      "sha256": "690e068944b5cef735d419229b981e55bb528812dafd4f5fefa59e1d45ed76c0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/accounting.json",
+      "bytes": 3059,
+      "sha256": "4de45565bcafd2d2b79cce817642f36f55fc864449bdb3410348a70dbf25518e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/contract.json",
+      "bytes": 800,
+      "sha256": "4324b961685e6b3a4ed9229885d79530788b1653c23dc51bd723e21fa766f475"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/decoder.tsv",
+      "bytes": 2590,
+      "sha256": "832c0aa648c6eaec44d2330b4ed8e09e3ca796e7239dacbd13160211fbc59bb5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "6d64ceb30ea574818baf8d80bac1d3875c308782dc49eac45eae252dcce15031"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "bcceb7c248c1e639265d4f4103631ec881623997f77b5fee1dd538679a87263c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "e214843a336c15d07c7fe260558609395ce222923212e90913064bb4704ef083"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/hope_planner_cpp_node.log",
+      "bytes": 5030,
+      "sha256": "a58abe78794404f9b966bd095fd43c75fa39388ababe05b514421719b7ffb52f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "445b2a09fdb7807c801b2a704ed206948fe64a2d7d663b00b6aaa3279d00e157"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "1f32ec0cb86a2e5f6b67ea0c4aa797998a5a4624380184b689c3004e7a4066fe"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/planner.tsv.gz",
+      "bytes": 152550,
+      "sha256": "fd95cdec935f23e37e58bf840078b47fb5a7dc20a285e8fb99d17b297e36b336"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/raw.json.gz",
+      "bytes": 243294,
+      "sha256": "49e525e510b9788c2d028b88540c969b8098156567a762cf7f6bacd77ff57165"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/relay.tsv.gz",
+      "bytes": 85866,
+      "sha256": "fb99911a50f9b58c1c8a75cb44545bcdf55cfa0afb1e6c29ff7b1d025f99a797"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/result.json",
+      "bytes": 2332,
+      "sha256": "e12a814986613d0159c934453326efb40307d7429337af93fb7358cc94ad35a6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_fixed_zero/synthetic-accuracy.json",
+      "bytes": 92793,
+      "sha256": "6d3e029feca7b15995739e5d5c3019962094a71a178a222e97d3c011419792e4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/accounting.json",
+      "bytes": 574,
+      "sha256": "fccd263f537a7b94efe0ef2f92317e57ddbffec6af15ba07c956da5a8e8e9508"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/contract.json",
+      "bytes": 806,
+      "sha256": "4672a70ce5e66640cde4c53bf874f3d5e616a6e59f40743cd78b44e79b690edb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "bec74a46563f18d140c92c4e91f890ac3186b1d46c5c08f9d065b91ab31e4ef3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "34e464780334469715f9c44c90ba2c8cad783b70593e02e46329a12857357ffd"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "7fd5f9b4bf13fa4f96aba5f0b5ec2e16e954dc8b93d7c7a2f21c5c59749caa7a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "2ae854713f5bd99fb1f0540204b39e4052c3e8fa1b72dc92f284e46ec4e71ad8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "72efe15c9af6bdfc64225e01b678e2420cbf4fb8ab58f7f753be81aabcd420c5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "86e7efebbfd4b678232176d94caa39195e27838166d4f8a056059602a3d17a00"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "eed8122d45202a37dc99a7174a24d5406973311a3f4ea4f53efe486da8da180f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/planner.tsv.gz",
+      "bytes": 131826,
+      "sha256": "a68b8688076e0967560265ae7287e9cc8bf69075212382e1b635806c1879bec6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/raw.json.gz",
+      "bytes": 236324,
+      "sha256": "fcbab8a8f2207132caac7175975d1c735001a0fa52d22bc653554112e37cb0f8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/relay.tsv.gz",
+      "bytes": 86001,
+      "sha256": "bf8e447975676a1d37bbd773a4e7b40cab2f60d3aee4ee91d4985c9c1719be38"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/result.json",
+      "bytes": 2221,
+      "sha256": "374e0be7add241d65b0bf85d362b159c195754f523c745d50687b95660141641"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 117043,
+      "sha256": "ca15561d9c2a1984967ccbd3bfe89ebf4c11ec483895aad6aca6d9cf8ad36f32"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/accounting.json",
+      "bytes": 574,
+      "sha256": "fd94d3d100e6a7560a94fc74ce891183303ce18b562c8684600c3cd80c2ab57d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/contract.json",
+      "bytes": 803,
+      "sha256": "8058077010687d502818ff5418c97cb9bf0fa55ccda3d21c6e8faece86b299f3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "e81246b752feae64a25f0734417712fe748210aa37337835d54ecbd4c973c345"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "28c81a25ff2f0dde403d7a3c5c00752cee0c214f840489d6f1ef14de437ce3b7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "18e27c0cf4991da1f0e5ce495852ed5931722efa956562262cfbef938ad94b3a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "f1cbb76470bf2315a19365807c33bd3ee026546d0216675c2c78cdbcd648b852"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "b9cd618d9865926c7da48d7e293623155dbfab45fc945ea1e46de30cc24194de"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "5ad591a0c6411b52e6ebbb813cb95a0ebfac695997182c13f95bf8554b5db754"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "814be62d784255757d0857e6d1b236700f89a5932adf189dd9a0ad5e8408cc35"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/planner.tsv.gz",
+      "bytes": 130663,
+      "sha256": "9b0662f29cf2039e60346f6b5ea3096b489438fda68a2194f4e2aa14b4d35d38"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/raw.json.gz",
+      "bytes": 238960,
+      "sha256": "fc58f05302fe45109b173aba71bfe6cb633df54fd182c85f7be26d15253a92b3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/relay.tsv.gz",
+      "bytes": 85928,
+      "sha256": "3a9334de94db51a0ebc3c2e77695099a1609dc033afca47f8e544c571257ae5e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/result.json",
+      "bytes": 2217,
+      "sha256": "02fbfe53cbc086d624edd1084cc77c650186c1e644618d47b47a090006dbb440"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 115990,
+      "sha256": "84cd09c42bb347903a3ec2601182478e5bc122cd381c14d4c3558be2f968dbba"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/accounting.json",
+      "bytes": 604,
+      "sha256": "c6bff7ada1ab2b34379c3e62de1945a1767a1ea62ddbe84e96479a76082938f5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/contract.json",
+      "bytes": 813,
+      "sha256": "c6cf1e03adadc521b194449e4901f32085c0d8f0fb47b0d69f0dd386d2450529"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "b63ad369d550d28674e9073886d74312977c2e83c68fad5686f8f365365f26c5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "2377a5cdb8b701da92f33108b2999e72b3b613683b9b4eb42cfa80b538fcebf5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "858c62b42670c781ed53e68da9f3b9c2da242b7712448348f32468eb7a8cc54a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "3db53fcf01ab7c6741f123730b029299ab5f5dba6153e3d10e9445f8db90374d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "41b7b043a49e7d5ac0da8b31b9e82ab544cb2cce35af28a306452f49f30ed993"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "d7de25766cd44716e9ff42f252f02f01d1864c3c42961bc95f48d99d0152794f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "2d02a98b9fb7cc768a7298874212166059a875e537f5d665db12cde732fe93eb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/planner.tsv.gz",
+      "bytes": 131591,
+      "sha256": "e7c6ae188ca29b035011032a8b6f3fb7e852efdd72585c995449fc8380a92296"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/raw.json.gz",
+      "bytes": 236252,
+      "sha256": "0327ba3a2d927fefcd78ed1c3ceebda180a98dd36c0edb048f97ce724bd9f98b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/relay.tsv.gz",
+      "bytes": 86128,
+      "sha256": "9de5e0c7765d98aab28d6dba59407a6cda17d4551429e48835179e75391c9b8c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/result.json",
+      "bytes": 2273,
+      "sha256": "e88fb46d5d8e7425a26ba5d040e77ec1e6f2b0b1bfbd079b5b2c93224b300307"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 116690,
+      "sha256": "e6905a02b20e02c2360801afcfb96c6beed26e46a97aea2af51228611d55fa08"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/accounting.json",
+      "bytes": 32668,
+      "sha256": "93d00e40fcc245b3c9953bc8441298a479151d8deb19cebc00af2b52ad789131"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/contract.json",
+      "bytes": 810,
+      "sha256": "5dce8e93fc6f3906a4e754e8b77b240ce6eed2b3b9646cd492361f55a43b6a37"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/decoder.tsv",
+      "bytes": 2590,
+      "sha256": "d395dfbd8278d6b7580d95c42cf76c1d1a8d38e576cc8299c9d5d4651fd36438"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "a966f9eda1a8998a6b31666cddcfb4f4370c2641da911800cebbec04b32b4790"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "bb6f4baac37366e577f41781374d94053a424194225dccf6cbd2fdcf81417c44"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "f68a092e3fc7f8044ae1e1a53ef6eb86c89df8674ca70b205ff5760548f51ba3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5030,
+      "sha256": "106b26d92995359a0a8777415f81b84dd89504ea56afc3e1c2c0c33d6309c82c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "c96ffa3438d182af75076601f332e9202a0683217f6a9976a1f79ace5ecb352a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "431898fb90b003e480b36c696d9aadc5ec81d5b22d66437e1b70e2c92f991f54"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/planner.tsv.gz",
+      "bytes": 150357,
+      "sha256": "e5b28c23d480565371136f62c7d7b78415bcfc410c5c6c7dbafedf6ca970bec2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/raw.json.gz",
+      "bytes": 240183,
+      "sha256": "9e6b904e61f787c78e13038f81e3bccbddafc8a5d656f028ab926eedc9b2c28a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/relay.tsv.gz",
+      "bytes": 85751,
+      "sha256": "0b505620fe87ec7bc4bd914bdc77a8cfde673f2f8a53550bfdfbdcbe3c93b063"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/result.json",
+      "bytes": 2652,
+      "sha256": "cb41d59decfc2677a619a2c87db6b496cc30ffceb7d0b35c9629b132433260db"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 92879,
+      "sha256": "5370eedec56ecd881efb708ddbc66edbc63d76238f6731045dfce7ace7821225"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/accounting.json",
+      "bytes": 4159,
+      "sha256": "1cd420a1b7e705b49d22129f3512884e2d442a1ece1800be3585d295c6237e20"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/contract.json",
+      "bytes": 803,
+      "sha256": "9cef11511b2e950bd90f309e8c05534fb9021b35a203979af01f7aa7b1fb2f37"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "8898d706573dc739ec4639e2e0a0797b766aefbd322d98713998342c7ed7ad1c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "c41b656258d4d7bb6e6acdbeb5658d4b6575ed484d2f077c1dde0a010cc809ce"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 3254,
+      "sha256": "670ad662583ff1470aa70dbb660006c66f09b422182a0e2731d58fa4d4c9e89d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "a77d4dd0bfef643d8deb8ead7c076139f58f5aa96e20ddd6ea251ffac6a09f06"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/hope_planner_cpp_node.log",
+      "bytes": 6012,
+      "sha256": "7f888d6d91c39651fdeba6505a26eb7232a0bfbb8175c2f2ecee0806bdd5c3c9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "3e7fcd09de5be9dc35b8d3179b7097abc92d8f90e00383cd851893f74880715a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "91016f50210018f2a338f338be7865b83490146b16c8d524116421ec11aa6dd4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/planner.tsv.gz",
+      "bytes": 156358,
+      "sha256": "5df5dadae22cb4b3ead8d5ebc3a189751009663918d0952074def6c4ad3b4b22"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/raw.json.gz",
+      "bytes": 279320,
+      "sha256": "b85d05ad547bc4aec9c18d817165ce38468ad9f0e9f8537b2c8f2e8022fdde9b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/relay.tsv.gz",
+      "bytes": 102359,
+      "sha256": "a85860b208baf9860acd01dda6e0662adecc335b889aeb8d26c4f2a93e0f7085"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/result.json",
+      "bytes": 2345,
+      "sha256": "83729725a125cb3a3737b294405b8857f1dd05827ead4d40cbab8b174bc82c38"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_unknown/synthetic-accuracy.json",
+      "bytes": 139428,
+      "sha256": "e783834b37d47802fd1647a5ea77e6a562c6b6ffc7cad2df8487ebc4b0735d01"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/accounting.json",
+      "bytes": 581,
+      "sha256": "bb7fcae76013ee30ff4a239a907081dd6a19cc3e2d82f9eb19b8ef3c1d90e558"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/contract.json",
+      "bytes": 800,
+      "sha256": "7490aac0e0f0d9ec7d4ff49d7f0a9fdaa6600fc7d6d28a4928175ca6a389d9cb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "3c5a545f47c2435a651dadbe61e4042a1a4b60db996dd33f083a73831394d7e6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "a80446bfc131b0349f282b692dfbcc7efb7c71167b6fd1befe5dcca9a4890ab5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "a1ae3b1048966cd5b84d058c7969342929ec30cf1f86c16aba52fbe2b3909162"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "280088488bf3532e38a915b99a58398b5e628e509d12def56ee171584e6df856"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "bd239fcc898b33cfdea7e04119b9831d8ac97e664e0380b87af449410436ba92"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "f95b597d822b43bbb3f407f49c6019f1194f3b993098ab700afac110441ed25c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "6e43f816bebf231d53ab30ebef5309cd6f00a678d9ac4ed325afce6b91baaf3b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/planner.tsv.gz",
+      "bytes": 155080,
+      "sha256": "a0c8a21263ad2f875fe09519accc4c149438beaaed23e10cf09b212eb43d950e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/raw.json.gz",
+      "bytes": 282787,
+      "sha256": "ea8b0375b349a21a5287c3b3111b9ae59abeadd3b82d3c5cc707d01499f7ec7d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/relay.tsv.gz",
+      "bytes": 102389,
+      "sha256": "ec2fe4a52fee118067b2e563af63fadc311237ed09c86602819f2259e981cc14"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/result.json",
+      "bytes": 2210,
+      "sha256": "05ffdbaefceeeec672666b76101c4d400dff92d38e3cacbc677f14cae94ab996"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_fixed_zero/synthetic-accuracy.json",
+      "bytes": 140256,
+      "sha256": "d9ff1f6b5ead221f319fd06fabdc637ae0b88fe461fd47c9c41fe4d159104650"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/accounting.json",
+      "bytes": 4159,
+      "sha256": "a1e512afae43c3f29120571ddd423379d868f4f346f6353f334322c0072a8001"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/contract.json",
+      "bytes": 806,
+      "sha256": "ef07cc8e470a45cd79d0d689969ea2b66bad7fc496cf31288f4f7470c8ddd804"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "9796b63db7871afe6901ae24ce68ec99cdff1616ddce0ff4a906f7c14074c31a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "15a9186a79ff3ed9e588c3f21c5b947383374802298fe5663ca4f8b191f463d5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "f68c4d019849376434fcffd76acb91fe0e7a36a2cf6af3eb399e0625cac7e369"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "33ec4bd752636b38f5ff2bc5d8dbd11add3eb6b307f68079597bf3ff901ac619"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5030,
+      "sha256": "270ef0af4a55b541ffc46c07fe449a00365f2233312e95121ae46bbadae42065"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "aa0c43438abc095a20ace0ae751dbb3c15965d82de1c2203d287ea635cea974e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "e198ab63cb4ce5fd4e0ea0769853df77602924b5da113442f6393ab3aba61e93"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/planner.tsv.gz",
+      "bytes": 153937,
+      "sha256": "bc10b6ddf1dffca42e188dfdc3574dd30bf24f14b944f2e08547aae37064c154"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/raw.json.gz",
+      "bytes": 277846,
+      "sha256": "8610b6af7d293615691585a9d6b9061566955276473f6d3061297c78ea25577b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/relay.tsv.gz",
+      "bytes": 102100,
+      "sha256": "fe1e4a8aba35b46c98939bc772b75cd3710e720daf26d45067f042c94003b3d9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/result.json",
+      "bytes": 2383,
+      "sha256": "b6a1ade2b6e71841f0b6f81c1b1096df17243ce26367cfcf81de91d52711ffa3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 140378,
+      "sha256": "8d89dddd3d1ab5121d646c52a668ad7477a9bba1746f3f6ddd55d1ca22b66acb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/accounting.json",
+      "bytes": 2057,
+      "sha256": "c97ff2468690df04e234e89121d8bd99464047815553ba244e97101bfe1109c3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/contract.json",
+      "bytes": 803,
+      "sha256": "0075e6e45e8e66f500027f324e58d55de301b1581bfbadecd09ab94914978122"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "49ccb6b0f4fcb408d6f3a96da55e19bbfbc92a808cf013c645ad28c64b8927ae"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "ee553b775414eefc9a14cac95f90c23c839e7e830651e5bc1befddbf50c73012"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "13d0939c8172518af4c70538660fb77b17f309df42912bb8dc3d54aa76524735"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "e9ef16c4be41bc9e0202bf48fa71d3d748fcfb6eaa38eb9ea15b46be8d71a7b7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "6b627d8363cc10b2e2c379f64e4d292bd992f347af5deb94fe72a7eabd3b71c1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "4e69740a2b81674722e03ec1a111759076e523fba4654df9070e426dd3ccf004"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "fdf62ce13aa20b281c793c301a30a02f6396a7794d1349c80bfc5abf08da356c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/planner.tsv.gz",
+      "bytes": 154739,
+      "sha256": "20e1063d74046d676413751986037b59d6fa7a7050ef1e5cef171d41c2d86ec7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/raw.json.gz",
+      "bytes": 282282,
+      "sha256": "23dadb91716a9008c1b34d1373101bb6d1320b7c64ec9c006579cab6aa078d3f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/relay.tsv.gz",
+      "bytes": 102399,
+      "sha256": "fc79453dd01eceddeff9fa91c659088176c91ebd8a0ed6d16b4bb63a9c70e7ff"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/result.json",
+      "bytes": 2273,
+      "sha256": "e5558f01490d4814ba15fa83ed46452f2f7f451cdb191fd315db9767604b4ffd"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 139012,
+      "sha256": "88404ddb3654e16b1a2334b25e5e7ef9fc884dec64bf450b308914407740ec47"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/accounting.json",
+      "bytes": 5335,
+      "sha256": "4c703375d58422583a590361b971d44db8221f7b79bd1b659e094f63ea2f4603"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/contract.json",
+      "bytes": 813,
+      "sha256": "975d843ab4ce33fcfc7e6199b4efbd850e16ecc94136dfeecc208c2e3e30c99c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "da0427c30801a4bed2d4dda1325dfa0b8caa5ffc4110f637fac29f0e7e046670"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "06a1e352edd783128acbcb4da33276acd015b245c033667cf80fb548509b80d1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "f6312f7535a59b376de610325d8cd92ccfd7fbc6d693fbbed20afcf181882d13"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "71d5812d34a414d2b03785d315bda933c1363c3d33263255928e36c652e4eac4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "965e6a6ce655ce2a2cd5530010dd79cbdcfe5b5ca384172f9ce4ccdcb8142805"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "13d7652c8b7e0e37b997a3d96651912e55543051194099de8f8d71966086d5a2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "d951862cefdbc924871e4bb9a3cfb62e48dbc2ce8f59c3fc3fd44a878460e7f2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/planner.tsv.gz",
+      "bytes": 155071,
+      "sha256": "6fbb0ea9b66fd313ce2bc938d4437a86b0bf0a87694d32c5cce1acb77fa86fc3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/raw.json.gz",
+      "bytes": 279331,
+      "sha256": "36ed36f838246bad88b853facdea5a9af323f59cb938546fa708784edea4459f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/relay.tsv.gz",
+      "bytes": 102566,
+      "sha256": "4cd91653486ff8acc612be056d637af2c58cb414b4c8e7dd3aec3560cb79c30c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/result.json",
+      "bytes": 2363,
+      "sha256": "334ba07299573ce4cf57e3c50e8e920af501f2fc9f8cfa02ee91093d832da44b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_unknown/synthetic-accuracy.json",
+      "bytes": 139654,
+      "sha256": "0ab3b86e69a2b64f35bda8e55ea6be40ff2942e19437d7aed57ba5028959362b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/accounting.json",
+      "bytes": 4154,
+      "sha256": "34d1d44dbbae873d1e053df26b6150285eed388fef0a148eb291372f5885553a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/contract.json",
+      "bytes": 810,
+      "sha256": "2490d8501d259f09222e6200c77c3042591a467425e910c3051125559d6ea5e5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/decoder.tsv",
+      "bytes": 3220,
+      "sha256": "c8e0ae877884fdd8c47941a0ce95bf9c6bbef27859abaec267343f72ad6a0a78"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/hope_ball_flight_packetizer.log",
+      "bytes": 2142,
+      "sha256": "800823622199cf78aa5d27b62462367b755257c28f55dd431adc3b04eebef3f7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/hope_base_pose_flat_relay.log",
+      "bytes": 2631,
+      "sha256": "2dfbe33f1d31ba412eb4747badadc568bb10d3466a893b2b87986e402984c23c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "0858e1728d6fa92cbf2e916c5f816358b8da7b4cc5f202e3c148ba7cb8f8c1f9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/hope_planner_cpp_node.log",
+      "bytes": 5031,
+      "sha256": "7850009364e783fd89eb82280db6e976eeaafdb5465a2a1f9aa793a1a8e6ecee"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "385401c9e869f1ea5be12c59232085768d2ba614feecf962fab4aec9b45675ee"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/packetizer.csv",
+      "bytes": 6122,
+      "sha256": "fb3886f4fc53c75b6e55cdf02720237c98f239b1f3e3f6d620c8a24703be0d96"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/planner.tsv.gz",
+      "bytes": 155142,
+      "sha256": "33c3be2900076410b76f5726dd17d1d6fc6e5ecf7f8a68d5e7b24e422ba5ae5d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/raw.json.gz",
+      "bytes": 282546,
+      "sha256": "043718584f9039e396c4ac188866f6a529e47bdb82389cf3b31e1516ce3dbcec"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/relay.tsv.gz",
+      "bytes": 102426,
+      "sha256": "e375df97c53e86f5a71b4c4c0d70e1b75e8e7670c9fb872c1e0b68214ce4af3c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/result.json",
+      "bytes": 2307,
+      "sha256": "2b18e82bc69f7604951235e3d11e7864d6fc391d8856b20d9a547dc314a66edf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/incoming_chain_360_stable_per_ball_zero/synthetic-accuracy.json",
+      "bytes": 139908,
+      "sha256": "2b9903542ceb5be4474dcc16b3a760afe5d62e10b90ba061df469740c7fd113a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/test_results/hope_planner_cpp/test_base_pose_contract.gtest.xml",
+      "bytes": 1788,
+      "sha256": "370821a77979d9fd691a69119089a59145d01ec2db440201fd0fa6ef570d547c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/test_results/hope_planner_cpp/test_reacquisition_counterexamples.gtest.xml",
+      "bytes": 1559,
+      "sha256": "e64854b3b82e7f0928d3e4647790e3449ebffc7762542b5ddbb29c834e51e0d5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/hope_planner_cpp/test_results/hope_planner_cpp/test_reacquisition_spin.gtest.xml",
+      "bytes": 5686,
+      "sha256": "811c74cc55b60374b8d58fe02feff50942c16c6b1871b3ce89448ce1d32468c1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/CMakeCache.txt",
+      "bytes": 30537,
+      "sha256": "694454471b6962b94cd0390235fdc3236dd235e6fd941f022df448c219691330"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/CTestCustom.cmake",
+      "bytes": 104,
+      "sha256": "604987db904b472a78182f761db384fc8115f0ade6bb2cfed0d2242259f36bf0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/CTestTestfile.cmake",
+      "bytes": 74559,
+      "sha256": "351655ac8df93e238e02d1de04d5324b461ee1e3c50a9225f4e9d35ddb352222"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/Makefile",
+      "bytes": 213332,
+      "sha256": "9aa830f4b364b2e63126e176a1930f3bbb4f056d961562a753910aad6283567e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/cmake_install.cmake",
+      "bytes": 63918,
+      "sha256": "b31ec98e6504a3dda61fc9f94209bf95ae1f7632b877ffbf15292baf11e25391"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/colcon_command_prefix_build.sh",
+      "bytes": 65,
+      "sha256": "025a07cb442dfaedc93a955d89fdf6d1b21420ad6f4257ab63d3d853f9e5e176"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/install_manifest.txt",
+      "bytes": 43966,
+      "sha256": "286defa1e4410ea4969aafc13240e1c1f56b2846ab18f7800193a812773d929f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_adapter__arguments__motion_capture_tracking_interfaces.json",
+      "bytes": 740,
+      "sha256": "24b451c330b2959e39e51e8e7dab94cd4fa3d23c34289d08389df2686e8db499"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_generator_c__arguments.json",
+      "bytes": 14815,
+      "sha256": "841cd84105513914a5f9bb328f2b85de3d5494cf815e921352701b6f3486565a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_generator_cpp__arguments.json",
+      "bytes": 14173,
+      "sha256": "c1edb4b392b89a57a5c2f2fbdb73790492bee24d27a3630fb3103295f73ad682"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_generator_py__arguments.json",
+      "bytes": 12281,
+      "sha256": "21823ab9afcb42d6749a63527e219445816232e6fb2836f9a2ade5983aec62be"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_generator_rs__arguments.json",
+      "bytes": 13519,
+      "sha256": "ac98cd2391d0453abd182da92b17486634c195c3542940b293d5d975de86757d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_generator_type_description__arguments.json",
+      "bytes": 1501,
+      "sha256": "99bd2fdf8142b0b7b01ab8a51bb6b9baec373716fb7faa5c2883cb1138cf3558"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_typesupport_c__arguments.json",
+      "bytes": 11580,
+      "sha256": "8c317f6cd1e4e3456d9f5a4001d43c2cdc3d4cb12642168b62f3204eb485d2fc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_typesupport_cpp__arguments.json",
+      "bytes": 11600,
+      "sha256": "e1a9ac16fb05f4fd0e3b8368d2618e1d80aa594fa83ecdc3b95d343bd08e8820"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_typesupport_fastrtps_c__arguments.json",
+      "bytes": 11895,
+      "sha256": "fa04cb33d88412a4ffbf4cefc3977e16fb5b7ec44b2f7de75dd32730514dcf45"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_typesupport_fastrtps_cpp__arguments.json",
+      "bytes": 11923,
+      "sha256": "58b3431d71d9137454f53a30de8ea9d32806f126a1447e1e72753628abc6811c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_typesupport_introspection_c__arguments.json",
+      "bytes": 11953,
+      "sha256": "685a3966f96f49b405e51107b0b6f2c9161321ba683dfc197ad2a8754d7bf961"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/rosidl_typesupport_introspection_cpp__arguments.json",
+      "bytes": 11993,
+      "sha256": "be63403530ae4b16b64ae4613ebc2f2c1f48c81cb965018efb5ed6369e524d49"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/codemodel-v2-181d221411c325911ae4.json",
+      "bytes": 9226,
+      "sha256": "dc76263eda19f14a86365bd8996cc938875e5152065ac36a5745aa0d6ebdac8c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/directory-.-Release-98d9ca1599072741d4aa.json",
+      "bytes": 41669,
+      "sha256": "9a37f64173b98e24fb99e4fee1bfbaf32931133ccc434b97615537bb3a86773b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/directory-motion_capture_tracking_interfaces__py-Release-2bd4e367ebfc2befc828.json",
+      "bytes": 322,
+      "sha256": "63bafcf1a3e7271f37902de92c3750a429f7937b5489d3bbe7b69bdc1c5803d5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/directory-motion_capture_tracking_interfaces__rs-Release-cc08dff797cf7c508a98.json",
+      "bytes": 322,
+      "sha256": "b7e5285acebe2cff452a9fc892c7163a89df89a3d7788b0cde4a4ab959845882"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/index-2026-10-29T09-00-20-0936.json",
+      "bytes": 794,
+      "sha256": "077336dedf10fb638bfc81326dd6682e08524e25c9680f3e2a66b4e24feea0dc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-ament_cmake_python_build_motion_capture_tracking_interfaces_egg-Release-d960d166f244b595150e.json",
+      "bytes": 2310,
+      "sha256": "c3440458b66389ab849cc0db3ef17aacb5c7440d9f79a723aa3eea32d1bedca6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-ament_cmake_python_copy_motion_capture_tracking_interfaces-Release-32553a920c85ccb7727f.json",
+      "bytes": 2162,
+      "sha256": "e584cfcf47c7fcce63712ab832640aed76990b1ac4d723eb45bafd0c99ca4381"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces-Release-e86aca7a29c57d63960a.json",
+      "bytes": 6617,
+      "sha256": "4b92fb6a7128ef909d6bb85d05408c98474674f6a4f4b9988184f4633b87a6c6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__cpp-Release-7f41d5f4175934cff739.json",
+      "bytes": 2304,
+      "sha256": "1737a11b08aeb4cc379f5179e6ea5d8538f06b0879bb9fa9868648c224ee3326"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__py-Release-c8431fb2195a685f1261.json",
+      "bytes": 1941,
+      "sha256": "b5e57721a9773f17ade733e764aa97629018809baa75d78e23dc594883d5f30b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_generator_c-Release-0c9cc05bcc0c69a1d315.json",
+      "bytes": 20661,
+      "sha256": "dfe3e417e83beddfe5562db48703906de2e3f42298df005c2f908103b16ae5c2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_generator_py-Release-c85b8373354ee561e889.json",
+      "bytes": 18585,
+      "sha256": "55db81ab2dbc1f08a67ce153753a6902d5b46d1caf2be2350ccf43702426cbdb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_generator_type_description-Release-cfbadd38b3440b5165d8.json",
+      "bytes": 2199,
+      "sha256": "141ab487aaebaa3e66076bcf7a9fc1167fa2c9f996600b1220913dc2a0637fe0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_typesupport_c-Release-3d8af30b3218b468bfd2.json",
+      "bytes": 11217,
+      "sha256": "a4bc112073f5a7bf7f127e1a932c4554102b27475b1295129be087be7730b69e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_typesupport_cpp-Release-43d0b7827c698bed488b.json",
+      "bytes": 12261,
+      "sha256": "ec4fb6afc3f27110835124f3a9c139d6e322a659b578b044d279030566e2bb6b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_typesupport_fastrtps_c-Release-39029db28c3cde796d07.json",
+      "bytes": 16825,
+      "sha256": "453b61157a3795f376b833c1111d80c6668d86cb16e51f6d15a17a3eea94e247"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_typesupport_fastrtps_cpp-Release-52c14956ce74717eba83.json",
+      "bytes": 18349,
+      "sha256": "e091a518dd3e5782b2a64bd5ead7ee7962af5618dde3832ce1f3c5bec639188f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_typesupport_introspection_c-Release-5d0ee81fd61499e6159b.json",
+      "bytes": 13725,
+      "sha256": "bb6c5c483f24fc145ea8f00eb8964fe78dabc71159be1ae646f636521cf6e77b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rosidl_typesupport_introspection_cpp-Release-c2ee374785a1023444c3.json",
+      "bytes": 16191,
+      "sha256": "1a056e01d5952abf6544ab790c4f5ab2576f0ab108cf412539f9d7316c45d40f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces__rs-Release-0c885305253f39ffa42f.json",
+      "bytes": 1780,
+      "sha256": "8f95663989ffb9e6a54355453e4b1b71f7309f4b5ed9b83cd024523929888b51"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces_s__rosidl_typesupport_c-Release-81106ea823704be0e164.json",
+      "bytes": 11686,
+      "sha256": "fc3b9b6d3249473f9977c23c500c3184ffd5dfdda0bdd8f451ae7e4d18f9ee4c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces_s__rosidl_typesupport_fastrtps_c-Release-0c8dbfce2cdf70a8c789.json",
+      "bytes": 14904,
+      "sha256": "abd94d7992e9352ddea4c1aafa2d1680caad8cdbcfca9e3d45caa917ac2710f4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces_s__rosidl_typesupport_introspection_c-Release-254896246d045e187914.json",
+      "bytes": 13636,
+      "sha256": "d02986cd14c63e0e2752d4af13df060fc3e863c6b410d8ebb39d12de75fa9e21"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-motion_capture_tracking_interfaces_uninstall-Release-baba2cc5319092a37c46.json",
+      "bytes": 2012,
+      "sha256": "434f118973f148c11d7fde46af629eebcdf7043bc7301fc473e9b19e8f423113"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/.cmake/api/v1/reply/target-uninstall-Release-8f38545f1d70502065e4.json",
+      "bytes": 1520,
+      "sha256": "1a85e2365bc420a0aaeb97982de6bdf6f31bf25b0e769c57fa1ed86187871828"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_core/motion_capture_tracking_interfacesConfig-version.cmake",
+      "bytes": 432,
+      "sha256": "5a7167968720f55f94b2935e0d8955d081aa25f233ffc0e190d3c71e4c840e8c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_core/motion_capture_tracking_interfacesConfig.cmake",
+      "bytes": 1919,
+      "sha256": "4a8ba6391c087e979c7c483a388b432149fe7b8d3229e2f1907ee942debb768a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_core/package.cmake",
+      "bytes": 1158,
+      "sha256": "b38455b494bd622e6a6ed4938585d17a742e34ad1eecc324b3b52acf4206fff4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake",
+      "bytes": 4845,
+      "sha256": "eb538f06a272be4631b46b0c095c0fb567f4dadcdfe402baeec67092012dcb92"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake",
+      "bytes": 900,
+      "sha256": "84e95105dad2e3b28530288b5e1b061fbf0d37dba059a22ed164e064d2921992"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake",
+      "bytes": 5573,
+      "sha256": "68c7433479c1fd72335ae0b24de0119a8dc7a6e1626a830374101fa2a37157ae"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake",
+      "bytes": 1602,
+      "sha256": "7e6ee5604c82f63fd1cd6ef1ff82e12ceb9d2eeda91b95f83a4db6487068f3f3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_package_templates/templates.cmake",
+      "bytes": 1984,
+      "sha256": "0bd4d2e887197f7f9771d2238eff41586d61b13acc51ce8748b36ebcf55753f3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_python/motion_capture_tracking_interfaces/setup.py",
+      "bytes": 269,
+      "sha256": "7b999dd94ab82fc6c831f6842f5aa67e8dc8a4c3a3c13db8b8d33279f4b0d2bd"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_python/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_python/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces.egg-info/SOURCES.txt",
+      "bytes": 287,
+      "sha256": "eb9ea8f948fbf163c146e9597501d072b6d9c4ef0685426d9a5dd4257d3d3395"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_python/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces.egg-info/dependency_links.txt",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_python/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces.egg-info/top_level.txt",
+      "bytes": 35,
+      "sha256": "d17677de7312beab8c784e39b7e314b22734ff10b118d577a1e9aa6d85bf374c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake",
+      "bytes": 2254,
+      "sha256": "c5c6973b2f36396f7d8a19eb20719a9cf2e4222a1e128c5f93ab7c32370ee13e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces__py/CMakeLists.txt",
+      "bytes": 1911,
+      "sha256": "82ab0f383ceb29db01522f27acc6edd4bec85aef2dbeaa09a311010bfba9777e"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces__py/CTestTestfile.cmake",
+      "bytes": 477,
+      "sha256": "fefd0fa2d5d89be971c15eaa05538bdabe50792b814a71556a12fdfd36647dc9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces__py/Makefile",
+      "bytes": 9675,
+      "sha256": "700c583873b283f60e22ed864a0a30afd940259fa26ca95d8188ea500dfc5092"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces__py/cmake_install.cmake",
+      "bytes": 1438,
+      "sha256": "b9ad287bdb008ecc87bbbbec32a55b1a6edd0efc7226b29a3a8a57656c405fc5"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces__rs/CMakeLists.txt",
+      "bytes": 1341,
+      "sha256": "5e84a0e9e77b590c21ed110629906bc76b96e54aa9461ab204397ad72f9fb551"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces__rs/CTestTestfile.cmake",
+      "bytes": 477,
+      "sha256": "168ed36f8b0ebb596abb19e8b3ec90915d26db7331a2364cca350b1521c9b978"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces__rs/Makefile",
+      "bytes": 9675,
+      "sha256": "5f3a2133555bc5e09b79fd420982f7104bccde36cf68e0e55b8ce52e5aa4957a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/build/motion_capture_tracking_interfaces/motion_capture_tracking_interfaces__rs/cmake_install.cmake",
+      "bytes": 1438,
+      "sha256": "faaf64305b4f6023f341fb0cf56836b44c1ac75d3478a9335af24aff61f52bfd"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/base-build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/base-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/base.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/base.log",
+      "bytes": 1767,
+      "sha256": "3acd54976c84afd479d45bcecb16c6ec3b6e7255534ed7c7faccbc7439d3b9ad"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/before-base.xml",
+      "bytes": 3517,
+      "sha256": "ba24ce08478dc5411e85c484be0013e6fffc62589a5a7de3b161debe6d252b8f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/before.xml",
+      "bytes": 3463,
+      "sha256": "9f1db3d042af607401e92947d3632d6d1a7a06061326ae47f6be6e7ba6dfd2bc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/before_base.cpp",
+      "bytes": 1483,
+      "sha256": "70b1a806aaba261d868f39e076efcdc2be9e08b9cfb4af9aeec3dc88923c12f1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/build.log",
+      "bytes": 3914,
+      "sha256": "a0133fed85a12eb379386163c2e47cc7017af9feab1979a94cec286ea4b9ec14"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/configure.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/configure.log",
+      "bytes": 523,
+      "sha256": "57748bbfbe54638945b76b776cb38f22280e25dd17822eec9998dfe35cd0381d"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/counterexamples-build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/counterexamples-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/counterexamples.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/counterexamples.log",
+      "bytes": 2013,
+      "sha256": "96810dd494584a9b82935cd1a425611458e864b240705451e4563fe6bc5b1bb1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/receipt.json",
+      "bytes": 495,
+      "sha256": "bf22ce5db1efdea79d21c3c31fea2146e99c87bb56b92e334724f51a62b03106"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/native/CMakeCache.txt",
+      "bytes": 13364,
+      "sha256": "fdb6262f2e055f5ccffe4ec9cf6fc4dcdacad4006db01ec6cd64aa8ce951a997"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/native/CTestTestfile.cmake",
+      "bytes": 7626,
+      "sha256": "69a98244b9b0466e1a5e1dab6187d164170247c6f650ecbf4c379d8cf4c5b4fc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/native/Makefile",
+      "bytes": 145814,
+      "sha256": "db52e12063ec26440802c9c1d09383776e668af6b083c904dd55ace1bc066379"
+    },
+    {
+      "path": "v2-incoming/qualification-03/failing-before/native/cmake_install.cmake",
+      "bytes": 1766,
+      "sha256": "17a6027d96c8e4c5cb389b2f397f9f3725adc09cbf01efd5aac1232f643aee49"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/events.log",
+      "bytes": 406860,
+      "sha256": "b21fcb7be8494524284dbf9257733ee7a186ec18734618eba560100c2ea63eff"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/logger_all.log",
+      "bytes": 69363,
+      "sha256": "b43c460dc1975d9768a0caa123f78a8aaf0abcc0087351edaedf48fd67658206"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_bringup/command.log",
+      "bytes": 5534,
+      "sha256": "5b53db6a55f890c59bbc33a4457aedf62cdaca91a6ef5e164ee5ed0e19bbeb57"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_bringup/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_bringup/stdout.log",
+      "bytes": 10228,
+      "sha256": "fd2a97c99cf9854c68711b87d0c7ae37733db1709439f3e6792c0b9d7fd00773"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_bringup/stdout_stderr.log",
+      "bytes": 10228,
+      "sha256": "fd2a97c99cf9854c68711b87d0c7ae37733db1709439f3e6792c0b9d7fd00773"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_bringup/streams.log",
+      "bytes": 16626,
+      "sha256": "971684e51c856ab3c6ce6cfd1fcbc29143b57517f7c534e1b20ac0b877d8ea62"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_msgs/command.log",
+      "bytes": 1568,
+      "sha256": "58f743642bd26e04ed926615b51c0bb5e7fb986e6a6bcb95429bcd2806552b55"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_msgs/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_msgs/stdout.log",
+      "bytes": 76074,
+      "sha256": "baead0cdc79e49bfc928567f4fe6a1bfdbdf52e7df41090f0446b875cc7e75ac"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_msgs/stdout_stderr.log",
+      "bytes": 76074,
+      "sha256": "baead0cdc79e49bfc928567f4fe6a1bfdbdf52e7df41090f0446b875cc7e75ac"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_msgs/streams.log",
+      "bytes": 83004,
+      "sha256": "4a45f27dfca6fb95d725ea6f4d445733a74d70e7d06adf8a9d91dc7c1dbedcc2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_planner_cpp/command.log",
+      "bytes": 4162,
+      "sha256": "34cc4c987299b7fe165656e598410aef973b700ca777ac53c3beb25322cb417b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_planner_cpp/stderr.log",
+      "bytes": 4344,
+      "sha256": "d959a53d359b6be0e6eade2a671fefe2f52958365231ef7f7846b1ecf2bf5746"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_planner_cpp/stdout.log",
+      "bytes": 43458,
+      "sha256": "80024b2a670590986a13ea22954da8db047f97700cbdafa78c020a5482e05095"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_planner_cpp/stdout_stderr.log",
+      "bytes": 47802,
+      "sha256": "8a8189d56dc65f2270e563b1f6cc70fdd0ed9d93e9a1a7a6da4d5922954ee64b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/hope_planner_cpp/streams.log",
+      "bytes": 56654,
+      "sha256": "075d4c2e5f3991d21ac12fe0ae8ae4ef7da2bb4f4a10fb5c3d9b5f96197a3b31"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/motion_capture_tracking_interfaces/command.log",
+      "bytes": 1926,
+      "sha256": "c960db92f632386292c9c608911eb52a16406839341a6db73ab44bf4a8ca69e9"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/motion_capture_tracking_interfaces/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/motion_capture_tracking_interfaces/stdout.log",
+      "bytes": 76261,
+      "sha256": "af44fcba16f72dbc6642e4f3b841b9832389c186b7eeb6b1f1ccdb1fe0a201fb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/motion_capture_tracking_interfaces/stdout_stderr.log",
+      "bytes": 76261,
+      "sha256": "af44fcba16f72dbc6642e4f3b841b9832389c186b7eeb6b1f1ccdb1fe0a201fb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/log/build_2026-10-29_09-00-02/motion_capture_tracking_interfaces/streams.log",
+      "bytes": 81940,
+      "sha256": "444f110ef89ab6c5fe86bd73c33523fadd8a5989e5fc385343e7743745286835"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native/CMakeCache.txt",
+      "bytes": 13210,
+      "sha256": "58c8351d8ff0ccabbde4c0ff47c3e129e4efe0d1af99a7e8b445e3860bb7204f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native/CTestTestfile.cmake",
+      "bytes": 9744,
+      "sha256": "41d9a42e7dabaf8714be5784d21c5736aba566bad1ccaec3e84dcdb79ddbaaee"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native/Makefile",
+      "bytes": 156765,
+      "sha256": "a4fd8a1b713effe2c0d6c82b932d171bc656a61213420be7e5ad4cd3893a2c76"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native/cmake_install.cmake",
+      "bytes": 1704,
+      "sha256": "ab0f0ed4f68ea56aeadb0314a1f89c5c39d3e3fa31b05dc23e98261fdb7f1174"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native/Testing/Temporary/CTestCostData.txt",
+      "bytes": 822,
+      "sha256": "876c707d024e672806cb58d324854250e9fa4c28b1a2874c242b68a2a7669f43"
+    },
+    {
+      "path": "v2-incoming/qualification-03/native/Testing/Temporary/LastTest.log",
+      "bytes": 85083,
+      "sha256": "1867f6f4e009c4ab6f4d2b80ff5f5696ed95fe38205beb8a855421ad961430a1"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/build.log",
+      "bytes": 4702,
+      "sha256": "8f6c3a0e47932f956dde5cc045ebb57568c334d0b166edf5470b02a839928e58"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/reacquisition_source_cutoff_parity-150-False.csv.integrated.jsonl",
+      "bytes": 410805,
+      "sha256": "befa7f5e66e3d500fe02a50b7fe797bd316dcb151ba17b797ac9997e654be8eb"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/reacquisition_source_cutoff_parity-150-False.csv.premerge.jsonl",
+      "bytes": 411797,
+      "sha256": "14162c99916d378119debe40d75eaff733bdd8ade1817f2301dff1ef85366a47"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/reacquisition_source_cutoff_parity-150-True.csv.integrated.jsonl",
+      "bytes": 414122,
+      "sha256": "fc1ce870cbf4c0caaaa05065c27b2d8938e5d4869cca649612e662cf9d49d0cf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/reacquisition_source_cutoff_parity-150-True.csv.premerge.jsonl",
+      "bytes": 415222,
+      "sha256": "44ce07001a4a5a221aa030e9383c86475a872ca42dcb02f7499f43f902783a15"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/reacquisition_source_cutoff_parity-300-False.csv.integrated.jsonl",
+      "bytes": 849713,
+      "sha256": "bfc5471532e278fb957694efe507ec8f6456c1606fea8a5fc0120d0935ad69e2"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/reacquisition_source_cutoff_parity-300-False.csv.premerge.jsonl",
+      "bytes": 850690,
+      "sha256": "da52f4901e72f2b278418bf44aea08fe1dc690469e381ae9e1862fda2cd9c40f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/reacquisition_source_cutoff_parity-300-True.csv.integrated.jsonl",
+      "bytes": 881316,
+      "sha256": "c9bd6b1c6452ec971fff763fe461404309975110b7a54f5608d10d0a8f59b6c0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/reacquisition_source_cutoff_parity-300-True.csv.premerge.jsonl",
+      "bytes": 881295,
+      "sha256": "c760dae280b5643662c26622196a23ef06ba8ca154d81d52d19234e5a1b34544"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-150-False.csv.integrated.jsonl",
+      "bytes": 299100,
+      "sha256": "5e73f836ff02dc1c0a40f4b709e182e34ea17dd6c9753ee0e72eb7cc24be67a4"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-150-False.csv.premerge.jsonl",
+      "bytes": 299156,
+      "sha256": "1263a8230b5233d8f8c859f34c8531067e0f07b34d6b533fbc8a84453aa9b233"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-150-True-producer-zero.csv.integrated.jsonl",
+      "bytes": 330422,
+      "sha256": "ea31711f27722843abb937c47c175c3aece56455ca7837a5ed54fb982bafb01a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-150-True-producer-zero.csv.premerge.jsonl",
+      "bytes": 331979,
+      "sha256": "008529a3e5aa9d6b2e2b02b91bd6df6e5d63bd486a7cbfc543a8c60383eccdd0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-150-True.csv.integrated.jsonl",
+      "bytes": 334514,
+      "sha256": "c4ef19c7284cd2c1664639ba027ada585c07e1e4ba9af98153b565d393aeac5f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-150-True.csv.premerge.jsonl",
+      "bytes": 335474,
+      "sha256": "9136d577349cce8f15415e967699a985a6616ea91bec79e04371195ca1209e63"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-300-False.csv.integrated.jsonl",
+      "bytes": 671553,
+      "sha256": "304a863f01430ca1d1add2da38c59bbb2940bbb98efea1c628de6b45f3f573dc"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-300-False.csv.premerge.jsonl",
+      "bytes": 672603,
+      "sha256": "cfeb1903c46dbd02a63ec7e61d22a502041b50f75c6e19c34cb3d4c3cca31831"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-300-True-producer-zero.csv.integrated.jsonl",
+      "bytes": 696799,
+      "sha256": "f9f4d2ece6f9556a8270cc0b02fc88bc4e8ae6f252f02e37d1a20fabc0ae88a7"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-300-True-producer-zero.csv.premerge.jsonl",
+      "bytes": 697515,
+      "sha256": "ef6979222d25ae31b596dc040da18346c744d01f22670ad7a740e60ac13588f3"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-300-True.csv.integrated.jsonl",
+      "bytes": 697731,
+      "sha256": "dab43689eadeccb8ccf07adddacb53bea1508ee2b3ff7541df50b40c2419585a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/review_source_cutoff_parity-300-True.csv.premerge.jsonl",
+      "bytes": 697741,
+      "sha256": "d7def08149f64f3c6f2861171931e95f5a746ea872ba7ff5368236e30e034c11"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/build/CMakeCache.txt",
+      "bytes": 13342,
+      "sha256": "63adff1e7e32bc0d31c4767d5ae7a184d31875fb70275f240783018ebf992b63"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/build/CTestTestfile.cmake",
+      "bytes": 8915,
+      "sha256": "76c31f57296b6d3a7d03877ccef2d151b699f29268de64e5b6ee2ff633b36d42"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/build/Makefile",
+      "bytes": 159476,
+      "sha256": "ce8dcdd538de9743385dd36142c05ca35fae866cb0e6a59ea5ea863577180659"
+    },
+    {
+      "path": "v2-incoming/qualification-03/premerge-v2/build/cmake_install.cmake",
+      "bytes": 1759,
+      "sha256": "3f39c854ccd65d94eb52b6221bf39c422a7e3cb56180237ef50f48113cdd4747"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized/CMakeCache.txt",
+      "bytes": 13277,
+      "sha256": "f8880b48578686d5c057b9995484f87dd5593faa469603068c3812b4b3e96cc0"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized/CTestTestfile.cmake",
+      "bytes": 9822,
+      "sha256": "d0f3bf4a311c1f2a15c8a4e47f6431bfff12cedeb67d78dbff282f624e117ef6"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized/Makefile",
+      "bytes": 156777,
+      "sha256": "89adccf50ff71c1c5d0b5bb2c75e9f3192fd50a1ad73612b99306a5c66d6283a"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized/cmake_install.cmake",
+      "bytes": 1705,
+      "sha256": "66f601f9cefb8f3adc92c397d80945e6758d16fa5700c537087e03c5624f462f"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized/Testing/Temporary/CTestCostData.txt",
+      "bytes": 796,
+      "sha256": "e5542629eecf85ae26587187c2e620997dc8cbe8cccb3644553409d389828d49"
+    },
+    {
+      "path": "v2-incoming/qualification-03/sanitized/Testing/Temporary/LastTest.log",
+      "bytes": 85370,
+      "sha256": "4c08c65b3fdff108fecff23cfedc151a138b0644da9e83a5264c6e2d4fb94031"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/events.log",
+      "bytes": 347431,
+      "sha256": "b7045f34f008df4f783006291d1d679b949f9440f20c1d14510ddb3339ba5faf"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/logger_all.log",
+      "bytes": 21504,
+      "sha256": "b743b45e52638c8bff97b0f3becac398fc5c0ef352808d562a35eed300acc5ce"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_msgs/command.log",
+      "bytes": 2278,
+      "sha256": "d078861e374fafe98b2ffeaa0c151d64f9b73135a6fa8fe818ae3744d868617b"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_msgs/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_msgs/stdout.log",
+      "bytes": 3578,
+      "sha256": "92cebb4f3aa71fd2c33c36cecf6c882f4bd5cb44634bdd22f393c05944138f9c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_msgs/stdout_stderr.log",
+      "bytes": 3578,
+      "sha256": "92cebb4f3aa71fd2c33c36cecf6c882f4bd5cb44634bdd22f393c05944138f9c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_msgs/streams.log",
+      "bytes": 6333,
+      "sha256": "8078550dfd80e20739d6b58dca1b37b974f02eb321efd74284d5dee462f6456c"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_planner_cpp/command.log",
+      "bytes": 1140,
+      "sha256": "5c1411ae5aa8b3d28c1a8325755d0585d8243b32106771d09b05604a506cb0d8"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_planner_cpp/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_planner_cpp/stdout.log",
+      "bytes": 121788,
+      "sha256": "7c29860e81df0af0ad7ddb29cbb5dd937ba83b078be4b19e4bcf37fd34e96a54"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_planner_cpp/stdout_stderr.log",
+      "bytes": 121788,
+      "sha256": "7c29860e81df0af0ad7ddb29cbb5dd937ba83b078be4b19e4bcf37fd34e96a54"
+    },
+    {
+      "path": "v2-incoming/qualification-03/test-log/test_2026-10-29_09-03-51/hope_planner_cpp/streams.log",
+      "bytes": 130245,
+      "sha256": "16a2b7c7f5f5e68e876d38a75e0a653b42172244f50c5fedb613f7dad30f22e0"
+    }
+  ]
+}
