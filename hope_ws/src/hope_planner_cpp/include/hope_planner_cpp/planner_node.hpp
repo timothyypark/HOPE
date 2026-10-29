@@ -54,6 +54,7 @@ class PlannerNode final : public rclcpp::Node {
   std::unique_ptr<V2IncomingRuntime> incoming_runtime_;
   bool incoming_backend_ = false;
   IncomingPlane incoming_preview() const;
+  bool publish_incoming_revocation(const V2StrikeCandidate&) noexcept;
   struct BaseSnapshot {
     Vec3 position = Vec3::Zero();
     Eigen::Quaterniond orientation = Eigen::Quaterniond::Identity();

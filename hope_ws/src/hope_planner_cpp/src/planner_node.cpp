@@ -1,4 +1,5 @@
 #include "hope_planner_cpp/planner_node.hpp"
+#include "hope_planner_cpp/v2_managed_revocation.hpp"
 #include "hope_planner_cpp/future_contact_parameters.hpp"
 #include "hope_planner_cpp/hit_speed_scale_state.hpp"
 
@@ -710,7 +711,7 @@ PlannerNode::PlannerNode(const rclcpp::NodeOptions& options)
       *this, physics_, table_, [this] { wake_condition_.notify_one(); }, [this] {
         const auto plane = incoming_preview();
         return std::make_pair(plane.selection.epoch, plane.selection.valid);
-      });
+      }, [this](const V2StrikeCandidate& status) { return publish_incoming_revocation(status); });
   solver_thread_ = std::thread(&PlannerNode::solver_loop, this);
 
   RCLCPP_INFO(
@@ -723,7 +724,7 @@ PlannerNode::PlannerNode(const rclcpp::NodeOptions& options)
 
   RCLCPP_INFO(
       get_logger(),
-      "HOPE C++ planner started: estimator=batch_physics_cpp_no_ekf_persistent_bounce "
+      "HOPE C++ planner started: estimator=%s "
       "input_depth=%d solve_period=%.3f x_hit=%.3f freeze_home=%d "
       "schema=%d reach=%s "
       "window=%.3f min_span=%.3f huber=%.4f recency_half_life=%.3f "
@@ -734,6 +735,7 @@ PlannerNode::PlannerNode(const rclcpp::NodeOptions& options)
       "net_x=%.3f commit_delay=%.3f "
       "future_bounce_gain=%.3f incoming=(margin=%.3f vin=%.3f vout=%.3f "
       "fit=%zu confirm=%zu preroll=%zu gap=%.3f) question_fixture=%d",
+      incoming_backend_ ? "v2_shared_ckf" : "batch_physics_cpp_no_ekf_persistent_bounce",
       input_qos_depth_, solve_period_s_, x_hit_fh_.load(),
       x_hit_freeze_session_home_ ? 1 : 0,
       racket_flat_schema_, reach_permission_config_.contract.c_str(),
@@ -1132,6 +1134,21 @@ IncomingPlane PlannerNode::incoming_preview() const {
                         selection.mode != PlaneMode::Fixed, base_.source_stamp_ns);
 }
 
+bool PlannerNode::publish_incoming_revocation(const V2StrikeCandidate& status) noexcept {
+  try {
+    std::lock_guard<std::mutex> lock(hit_speed_scale_publish_mutex_);
+    const auto identity = schema2_packer_.next_identity(false, steady_now_ns());
+    const auto wire = managed_revocation(status, identity, wall_now_ns());
+    if (!wire || !flat_publisher_) return false;
+    std_msgs::msg::Float64MultiArray message; message.data = *wire;
+    flat_publisher_->publish(message);
+    return true;
+  } catch (const std::exception& e) {
+    RCLCPP_ERROR(get_logger(), "incoming revocation publication failed: %s", e.what());
+    return false;
+  }
+}
+
 PlannerNode::BaseSnapshot PlannerNode::base_snapshot() const noexcept {
   std::lock_guard<std::mutex> lock(base_mutex_);
   return base_;
@@ -1423,7 +1440,8 @@ void PlannerNode::solver_loop() noexcept {
       SpinShadowAudit spin_shadow;
       spin_shadow.enabled = spin_shadow_enabled_ && !incoming_runtime_;
       spin_shadow.mode = spin_shadow.enabled ? spin_shadow_mode_name_ : "disabled";
-      spin_shadow.spin = state.spin_model_enabled ? state.physics_spin : spin_estimator_->estimate();
+      spin_shadow.spin = incoming_runtime_ ? SpinEstimate{} :
+          (state.spin_model_enabled ? state.physics_spin : spin_estimator_->estimate());
       if (spin_shadow.spin.valid) {
         ++spin_valid_count_;
       }
@@ -1596,6 +1614,7 @@ void PlannerNode::solver_loop() noexcept {
               swing_sign, audit, spin_shadow, one_shot_event, solve_finish_ns, &identity);
           candidate.command_sequence = identity.command_sequence;
           candidate.command_flight_id = identity.flight_id;
+          candidate.command_revision_id = identity.revision_id;
           return valid;
         });
       } else publish_solve(latest_sample, state, strike, command, swing_sign, audit,
@@ -2083,8 +2102,21 @@ void PlannerNode::publish_diagnostics() noexcept {
     status.level = ring_drops_.load() == 0 && snapshot_mailbox_.superseded() == 0
         ? diagnostic_msgs::msg::DiagnosticStatus::OK
         : diagnostic_msgs::msg::DiagnosticStatus::WARN;
-    status.message =
+    status.message = incoming_backend_ ? "v2_shared_ckf; shadow commands; packet receive counters" :
         "batch_physics_cpp_no_ekf_persistent_bounce; diagnostics are audit-only";
+    if (incoming_runtime_) {
+      const auto counters = incoming_runtime_->counters();
+      for (const auto& entry : std::vector<std::pair<std::string, std::uint64_t>>{
+          {"incoming_observations", counters.offered}, {"incoming_qualified", counters.qualified},
+          {"incoming_tracker_accepted", counters.tracker_accepted},
+          {"incoming_tracker_rejected", counters.tracker_rejected},
+          {"incoming_queries", counters.queries}, {"incoming_completed", counters.completed},
+          {"incoming_obsolete", counters.obsolete}, {"incoming_commands", counters.commands},
+          {"incoming_revoked", counters.revoked}, {"incoming_history", counters.history},
+          {"incoming_checkpoints", counters.checkpoints},
+          {"incoming_superseded", incoming_runtime_->superseded()}})
+        status.values.push_back(diagnostic_value(entry.first, std::to_string(entry.second)));
+    }
     status.values.push_back(diagnostic_value("hit_speed_scale", scale_string(hit_speed_scale_.load())));
     status.values.push_back(diagnostic_value("hit_speed_scale_configurable", question_fixture_enabled_ ? "false" : "true"));
     status.values.push_back(diagnostic_value("hit_speed_scale_persistent", !question_fixture_enabled_ && !hit_speed_scale_state_file_.empty() ? "true" : "false"));

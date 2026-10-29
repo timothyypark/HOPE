@@ -12,8 +12,9 @@ std::int64_t steady_ns() {
 }
 V2IncomingRuntime::V2IncomingRuntime(rclcpp::Node& node, const BallPhysics& physics,
                                    const TableParams& table, std::function<void()> wake,
-                                   std::function<std::pair<std::uint64_t, bool>()> reference)
-    : node_(node) {
+                                   std::function<std::pair<std::uint64_t, bool>()> reference,
+                                   std::function<bool(const V2StrikeCandidate&)> revoke)
+    : node_(node), revoke_(std::move(revoke)) {
   auto text = [&](const char* key, const char* fallback = "") {
     return node.declare_parameter<std::string>(std::string("v2_incoming.") + key, fallback);
   };
@@ -95,12 +96,10 @@ void V2IncomingRuntime::trace(const char* stage, std::int64_t source,
 
 void V2IncomingRuntime::update_reference(
     const std::function<std::pair<std::uint64_t, bool>()>& update) {
-  owner_->update_reference(update);
-  pending_.store(true);
+  if (owner_->update_reference(update)) pending_.store(true);
 }
 
-void V2IncomingRuntime::candidate(const V2StrikeCandidate& value,
-                                const IncomingQuery* query, const FlightPrediction* prediction) {
+void V2IncomingRuntime::candidate(const V2StrikeCandidate& value) {
   hope_msgs::msg::StrikeCandidateV1 wire;
   wire.session_id = contract_.session; wire.producer_id = producer_;
   wire.frame_id = contract_.frame; wire.calibration_id = contract_.registration;
@@ -133,7 +132,47 @@ void V2IncomingRuntime::candidate(const V2StrikeCandidate& value,
     for (int row=0; row<7; ++row) for (int col=0; col<7; ++col)
       wire.contact_covariance[row*7+col] = value.contact->covariance(row,col);
   }
-  if (query && prediction) wire.event_evidence = encode_prediction(*prediction, query->pipeline.shot()).events;
+  // Event evidence is bounded and independent of the full trajectory cadence.
+  // In particular, a revocation contains the newer contradictory event ledger.
+  for (const auto& event : value.observed_events) {
+    hope_msgs::msg::FlightEventV2 evidence;
+    evidence.event_id = event.id; evidence.shot_id = evidence.shot_generation = event.generation;
+    evidence.kind = name(event.kind); evidence.status = name(event.status); evidence.side = name(event.side);
+    evidence.event_time_ns = event.event_time_ns; evidence.confirmed_at_ns = event.confirmed_at_ns;
+    evidence.time_uncertainty_ns = event.time_uncertainty_ns;
+    evidence.prediction_reference_time_ns = value.source_ns;
+    const long double dt = static_cast<long double>(event.event_time_ns) - value.source_ns;
+    if (dt >= std::numeric_limits<std::int64_t>::min() && dt <= std::numeric_limits<std::int64_t>::max())
+      evidence.arrival_dt_ns = static_cast<std::int64_t>(dt);
+    evidence.has_prediction_reference = event.last_prediction_reference_ns.has_value();
+    evidence.last_prediction_reference_time_ns = event.last_prediction_reference_ns.value_or(0);
+    evidence.evidence_source = event.source;
+    vector(evidence.position, event.pre.position);
+    vector(evidence.pre_velocity, event.pre.velocity); vector(evidence.post_velocity, event.post.velocity);
+    evidence.spin_available = event.post.spin.usable(); evidence.spin_mode = name(event.post.spin.mode);
+    evidence.spin_measurement_time_ns = event.post.spin.measurement_time_ns;
+    evidence.spin_last_contact_id = event.post.spin.last_contact_id;
+    evidence.spin_provenance = event.post.spin.provenance;
+    evidence.spin_measured_valid = event.post.spin.usable() &&
+        event.post.spin.mode == EffectiveSpinMode::MEASURED &&
+        event.post.spin.measurement_time_ns == event.event_time_ns;
+    evidence.pre_spin_available = event.pre.spin.usable(); evidence.pre_spin_mode = name(event.pre.spin.mode);
+    evidence.pre_spin_measurement_time_ns = event.pre.spin.measurement_time_ns;
+    evidence.pre_spin_last_contact_id = event.pre.spin.last_contact_id;
+    evidence.pre_spin_provenance = event.pre.spin.provenance;
+    if (event.pre.spin.usable()) vector(evidence.pre_omega_rad_s, *event.pre.spin.omega);
+    if (event.post.spin.usable()) vector(evidence.omega_rad_s, *event.post.spin.omega);
+    evidence.covariance.fill(std::numeric_limits<double>::quiet_NaN());
+    evidence.linearization_quality = "unavailable";
+    evidence.uncertainty_provenance = value.uncertainty_provenance;
+    if (event.kind == PhysicalEventKind::TABLE &&
+        (event.status == EventStatus::PREDICTED || event.status == EventStatus::CONFIRMED))
+      for (const auto& other : value.observed_events)
+        if (other.generation == event.generation && other.kind == PhysicalEventKind::TABLE &&
+            (other.status == EventStatus::PREDICTED || other.status == EventStatus::CONFIRMED) &&
+            other.event_time_ns <= event.event_time_ns) ++evidence.bounce_index;
+    wire.event_evidence.push_back(std::move(evidence));
+  }
   wire.published_at_ns = node_.now().nanoseconds();
   std::lock_guard<std::mutex> output_lock(output_mutex_);
   bool published = false;
@@ -152,6 +191,9 @@ void V2IncomingRuntime::candidate(const V2StrikeCandidate& value,
 void V2IncomingRuntime::flush_statuses() {
   const auto statuses = owner_->take_statuses();
   for (const auto& status : statuses) {
+    if (status.command_flight_id && revoke_)
+      trace(revoke_(status) ? "command_revoked" : "revocation_failed", status.source_ns,
+            status.revision, status.token.generation, status.reason);
     candidate(status);
     if (!continuous_output_) continue;
     hope_msgs::msg::FlightPredictionV2 wire;
@@ -210,7 +252,7 @@ bool V2IncomingRuntime::forecast(IncomingQuery& query, IncomingEvaluation& resul
         next_full_ns_ = wire.prediction_reference_time_ns + std::llround(1e9 / full_rate_hz_);
       }
     }
-    candidate(value, &query, &result.forecast);
+    candidate(value);
     return true;
   });
 }
@@ -272,7 +314,7 @@ bool V2IncomingRuntime::command(const std::function<bool(V2StrikeCandidate&)>& p
   trace(published ? "command_published" : "command_rejected", value.source_ns,
         published ? value.command_sequence : value.revision, value.token.generation,
         published ? "PUBLISHED" : value.reason);
-  if (published) candidate(command_evaluation_->candidate, &*command_query_, &command_evaluation_->forecast);
+  if (published) candidate(command_evaluation_->candidate);
   flush_statuses();
   return published;
 }

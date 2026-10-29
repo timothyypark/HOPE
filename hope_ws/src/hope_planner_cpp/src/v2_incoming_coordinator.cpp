@@ -231,6 +231,8 @@ void V2IncomingCoordinator::revoke_locked(const std::string& reason) {
   auto revoke = [&](std::optional<V2StrikeCandidate>& previous) {
     if (!previous || !previous->strike_contact_supported) return;
     auto status = *previous;
+    if (status.token.generation == pipeline_.shot().generation())
+      status.observed_events = pipeline_.shot().events();
     status.status = IncomingStatus::Revoked;
     status.command_eligible = status.strike_contact_supported = false;
     status.reason = reason;
@@ -266,15 +268,17 @@ void V2IncomingCoordinator::unavailable_locked(const std::string& reason, Incomi
   if (statuses_.size() >= 64) status_overflow_ = true;
   else statuses_.push_back(std::move(status));
 }
-void V2IncomingCoordinator::update_reference(
+bool V2IncomingCoordinator::update_reference(
     const std::function<std::pair<std::uint64_t, bool>()>& update) {
   std::lock_guard<std::mutex> lock(mutex_);
   const auto [epoch, valid] = update();
+  const bool changed = !reference_received_ || epoch != home_epoch_ || valid != reference_valid_;
   if (epoch != home_epoch_) revoke_locked("HOME_CHANGED");
   else if (reference_valid_ && !valid) revoke_locked("REFERENCE_UNAVAILABLE");
   reference_received_ = true;
   home_epoch_ = epoch;
   reference_valid_ = valid;
+  return changed;
 }
 void V2IncomingCoordinator::expire(std::int64_t now_ns) {
   std::lock_guard<std::mutex> lock(mutex_);

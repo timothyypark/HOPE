@@ -1,6 +1,7 @@
 #include "hope_planner_cpp/v2_strike_adapter.hpp"
 #include "hope_planner_cpp/racket_target_planner.hpp"
 #include "hope_planner_cpp/schema2_packer.hpp"
+#include "hope_planner_cpp/v2_managed_revocation.hpp"
 #include "a3_pingpong/pp_planner_input.hpp"
 #include <gtest/gtest.h>
 
@@ -88,6 +89,24 @@ TEST(V2StrikeAdapter, TentativePlaneHasPhysicalSupportWithoutCommandAuthority) {
   f.plane.tentative = false; f.plane.snapshot.generation++;
   EXPECT_FALSE(f.candidate().command_eligible);
 }
+TEST(V2StrikeAdapter, AbsentBounceWrongDirectionAndAmbiguousOrderingNeverAuthorize) {
+  Fixture f;
+  f.forecast.nominal.events.erase(f.forecast.nominal.events.begin());
+  EXPECT_EQ(f.candidate().reason, "PLANE_BEFORE_FIRST_BOUNCE");
+  EXPECT_FALSE(v2_strike_target(f.candidate(), epoch).valid);
+  f = Fixture{}; f.shot.direction = 1;
+  EXPECT_FALSE(f.candidate().command_eligible);
+  f = Fixture{};
+  f.forecast.nominal.events.insert(f.forecast.nominal.events.begin(),
+                                 event("edge_ambiguous", .05, .9));
+  EXPECT_EQ(f.candidate().status, IncomingStatus::Unavailable);
+  EXPECT_FALSE(v2_strike_target(f.candidate(), epoch).valid);
+  f = Fixture{}; f.plane.selection.flight = 0;
+  const auto preview = f.candidate();
+  EXPECT_TRUE(preview.strike_contact_supported);
+  EXPECT_FALSE(preview.command_eligible);
+  EXPECT_EQ(preview.reason, "WAITING_FLIGHT_COMMIT");
+}
 TEST(V2StrikeAdapter, ConfirmedTerminalAndMismatchedCutoffCannotAuthorize) {
   for (auto kind : {PhysicalEventKind::NET_COLLISION, PhysicalEventKind::GROUND}) {
     Fixture f;
@@ -142,6 +161,17 @@ TEST(V2StrikeAdapter, IdenticalStrikePreservesDownstreamPlannerAndActualSchema45
       EXPECT_EQ(received.cmd.schema, mode == PlaneMode::Fixed ? 4 : 5);
       EXPECT_EQ(received.cmd.pos_w, after.position + Vec3(0, 0, .76));
       EXPECT_EQ(received.cmd.vel_w, after.velocity);
+      a3_pingpong::PpRacketTargetInput opted_in(4,true);
+      opted_in.SetExpectedHomeEpoch(7); opted_in.SetFromFlat(wire);
+      auto revoked=f.candidate(); revoked.status=IncomingStatus::Revoked;
+      revoked.command_sequence=1; revoked.command_flight_id=42;
+      revoked.command_revision_id=1; revoked.revision=17;
+      const auto invalid=managed_revocation(revoked,{2,42,1},epoch);
+      ASSERT_TRUE(invalid);
+      EXPECT_EQ((*invalid)[0],wire[0]); EXPECT_EQ((*invalid)[1],0.);
+      opted_in.SetFromFlat(*invalid);
+      EXPECT_TRUE(opted_in.Latest().flight_revoked);
+      EXPECT_FALSE(opted_in.GuardEngagement(received.cmd).allowed);
     }
 }
 }  // namespace

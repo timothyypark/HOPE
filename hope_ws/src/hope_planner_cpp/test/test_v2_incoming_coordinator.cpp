@@ -146,10 +146,10 @@ TEST(V2IncomingCoordinator, ExpiryAndSourceFaultBlockDelayedPublication) {
 }
 TEST(V2IncomingCoordinator, HomeUpdateRejectsStalePlaneEvenWhenQueryStartsAfterUpdate) {
   Source source; source.to(31);
-  source.owner.update_reference([] { return std::make_pair(7u, true); });
+  EXPECT_TRUE(source.owner.update_reference([] { return std::make_pair(7u, true); }));
   auto query = source.owner.continuous(plane());
   auto result = V2IncomingCoordinator::evaluate(query, source.now());
-  source.owner.update_reference([] { return std::make_pair(7u, true); });
+  EXPECT_FALSE(source.owner.update_reference([] { return std::make_pair(7u, true); }));
   ASSERT_TRUE(source.owner.publish(query, result, source.now(), [](auto&) { return true; }));
   source.owner.update_reference([] { return std::make_pair(8u, true); });
   auto stale_plane = source.owner.continuous(plane());
@@ -204,7 +204,10 @@ TEST(V2IncomingCoordinator, ConfirmedSecondBounceRetiresPreviouslySupportedWorke
   }
   auto selected = plane(); selected.selection.plane_x = -.2;
   selected = incoming_plane(selected.selection, "table", "fixture", false);
-  auto delayed = source.owner.continuous(selected);
+  std::string reason;
+  auto command = source.owner.packet(source.packet(source.samples.size()), selected, source.now(), reason);
+  ASSERT_TRUE(command) << reason;
+  auto delayed = std::move(*command);
   auto result = V2IncomingCoordinator::evaluate(delayed, source.now());
   ASSERT_TRUE(result.candidate.strike_contact_supported) << result.candidate.reason;
   const auto generation = source.owner.state().generation;

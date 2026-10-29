@@ -100,7 +100,8 @@ V2StrikeCandidate evaluate_v2_strike(const FlightPrediction& forecast, const Sho
   candidate.status = IncomingStatus::Supported;
   candidate.command_eligible = !plane.tentative && plane.selection.valid &&
       plane.selection.epoch != 0 && plane.selection.flight != 0;
-  if (!candidate.command_eligible) candidate.reason = "TENTATIVE_PLANE";
+  if (!candidate.command_eligible)
+    candidate.reason = plane.tentative ? "TENTATIVE_PLANE" : "WAITING_FLIGHT_COMMIT";
   for (const auto& event : forecast.nominal.events) {
     if (event.kind == "receiving_plane") {
       candidate.contact_time_std_s = event.time_std_s;

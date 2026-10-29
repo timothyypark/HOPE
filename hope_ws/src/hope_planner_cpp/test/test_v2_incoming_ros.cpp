@@ -42,7 +42,9 @@ class IncomingRos : public ::testing::TestWithParam<std::string> {
     command_sub = io->create_subscription<std_msgs::msg::Float64MultiArray>(
         std::string(V2IncomingRuntime::prefix)+"command_flat", 10,
         [this](std_msgs::msg::Float64MultiArray::ConstSharedPtr message) {
-          commands.push_back(message->data); receiver.SetFromFlat(message->data);
+          if (message->data.at(1)==1.) commands.push_back(message->data);
+          else invalid_commands.push_back(message->data);
+          receiver.SetFromFlat(message->data);
         });
     prediction_sub = io->create_subscription<hope_msgs::msg::FlightPredictionV2>(
         std::string(V2IncomingRuntime::prefix)+"prediction", 64,
@@ -54,6 +56,7 @@ class IncomingRos : public ::testing::TestWithParam<std::string> {
         std::string(V2IncomingRuntime::prefix)+"revocation", rclcpp::QoS(64).reliable().transient_local(),
         [this](hope_msgs::msg::StrikeCandidateV1::ConstSharedPtr message) { revocations.push_back(*message); });
     executor->add_node(planner); executor->add_node(io);
+    receiver.SetExpectedHomeEpoch(100);
     for (int i=0; i<200 && (!observations->get_subscription_count() || !packets->get_subscription_count()); ++i) spin(5ms);
     ASSERT_GT(observations->get_subscription_count(), 0u);
     ASSERT_GT(packets->get_subscription_count(), 0u);
@@ -129,10 +132,10 @@ class IncomingRos : public ::testing::TestWithParam<std::string> {
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr command_sub;
   rclcpp::Subscription<hope_msgs::msg::FlightPredictionV2>::SharedPtr prediction_sub;
   rclcpp::Subscription<hope_msgs::msg::StrikeCandidateV1>::SharedPtr candidate_sub,revocation_sub;
-  std::vector<std::vector<double>> commands;
+  std::vector<std::vector<double>> commands, invalid_commands;
   std::vector<hope_msgs::msg::FlightPredictionV2> predictions;
   std::vector<hope_msgs::msg::StrikeCandidateV1> candidates,revocations;
-  a3_pingpong::PpRacketTargetInput receiver{4};
+  a3_pingpong::PpRacketTargetInput receiver{4,true};
   std::uint64_t sequence=0, source_sequence=0; std::int64_t commit_source=0;
   bool continuous_output=true;
 };
@@ -153,6 +156,8 @@ TEST_P(IncomingRos, ManagedCommandAndContinuousForecastShareFlightAndFrozenPlane
         std::abs(c.plane_x-(fixed ? .08 : .18))<1e-8;
   }));
   EXPECT_FALSE(revocations.empty());
+  EXPECT_EQ(invalid_commands.size(),1u);
+  EXPECT_TRUE(receiver.Latest().flight_revoked);
   EXPECT_EQ(io->count_publishers("/racket/command_flat"),0u);
 }
 TEST_P(IncomingRos, InconsistentPacketHistoryAbstainsWhileContinuousTrackingContinues) {
@@ -184,6 +189,8 @@ TEST_P(IncomingOutputDisabled, DisablingContinuousOutputPreservesOneShotAndRevoc
   EXPECT_TRUE(receiver.Latest().has_valid);
   EXPECT_TRUE(predictions.empty()); EXPECT_TRUE(candidates.empty());
   EXPECT_FALSE(revocations.empty());
+  EXPECT_EQ(invalid_commands.size(),1u);
+  EXPECT_TRUE(receiver.Latest().flight_revoked);
 }
 INSTANTIATE_TEST_SUITE_P(PlaneModes,IncomingOutputDisabled,::testing::Values("fixed","per_ball","stable_per_ball"));
 }  // namespace

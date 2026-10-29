@@ -46,7 +46,7 @@ class V2IncomingCoordinator {
   bool publish(const IncomingQuery&, IncomingEvaluation&, std::int64_t now_ns,
                const std::function<bool(V2StrikeCandidate&)>& publication);
   void revoke(const std::string& reason);
-  void update_reference(const std::function<std::pair<std::uint64_t, bool>()>& update);
+  bool update_reference(const std::function<std::pair<std::uint64_t, bool>()>& update);
   void expire(std::int64_t now_ns);
   std::vector<V2StrikeCandidate> take_statuses();
   IncomingCounters counters() const;

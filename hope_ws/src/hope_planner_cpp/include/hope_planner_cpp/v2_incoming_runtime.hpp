@@ -13,7 +13,8 @@ class V2IncomingRuntime {
  public:
   V2IncomingRuntime(rclcpp::Node&, const BallPhysics&, const TableParams&,
                     std::function<void()> wake,
-                    std::function<std::pair<std::uint64_t, bool>()> reference);
+                    std::function<std::pair<std::uint64_t, bool>()> reference,
+                    std::function<bool(const V2StrikeCandidate&)> revoke);
   ~V2IncomingRuntime();
   bool pending() const { return pending_.load(); }
   bool packet_ready(std::int64_t cutoff_ns) const {
@@ -25,6 +26,8 @@ class V2IncomingRuntime {
   bool command(const std::function<bool(V2StrikeCandidate&)>& publication);
   void update_reference(const std::function<std::pair<std::uint64_t, bool>()>& update);
   const IncomingSourceContract& contract() const { return contract_; }
+  IncomingCounters counters() const { return owner_->counters(); }
+  std::uint64_t superseded() const { return superseded_.load(); }
   bool reference_matches(std::uint64_t calibration, std::uint64_t world) const {
     return calibration == base_calibration_ && world == base_world_;
   }
@@ -32,8 +35,7 @@ class V2IncomingRuntime {
 
  private:
   void flush_statuses();
-  void candidate(const V2StrikeCandidate&, const IncomingQuery* = nullptr,
-                 const FlightPrediction* = nullptr);
+  void candidate(const V2StrikeCandidate&);
   bool forecast(IncomingQuery&, IncomingEvaluation&);
   void trace(const char*, std::int64_t source, std::uint64_t revision,
              std::uint64_t generation, const std::string& reason = {},
@@ -51,6 +53,7 @@ class V2IncomingRuntime {
   std::uint64_t selected_generation_ = 0, base_calibration_ = 0, base_world_ = 0;
   std::mutex output_mutex_;
   BoundedStageTrace accounting_;
+  std::function<bool(const V2StrikeCandidate&)> revoke_;
   std::uint64_t last_candidate_revision_ = 0, last_compact_revision_ = 0;
   bool continuous_output_ = true;
   double full_rate_hz_ = 50;
