@@ -40,19 +40,14 @@ def test_production_sources_and_headers_remain_pinned_upstream():
     for file, digest in json.loads((ROOT / 'test/fixtures/pr85_upstream_sources.json').read_text())['sources'].items():
         data = (ROOT / file).read_bytes()
         if file == 'src/planner_node.cpp':
-            # Only the explicit application dispatch/destruction hooks may
-            # differ. The full legacy constructor/solver stays byte-pinned.
-            source = data.decode()
-            dispatch = '''  const auto backend = declare_parameter<std::string>("prediction_backend", "legacy");
-  if (backend == "v2") {
-    integrated_runtime_ = std::make_unique<IntegratedPlannerRuntime>(*this);
-    return;
-  }
-  if (backend != "legacy") throw std::invalid_argument("unknown prediction_backend");
-'''
-            assert source.count(dispatch) == 1
-            assert source.count('  integrated_runtime_.reset();\n') == 1
-            data = source.replace(dispatch, '').replace('  integrated_runtime_.reset();\n', '').encode()
+            # This milestone intentionally integrates the shared owner into the
+            # existing node. Pin that reviewed integration separately; every
+            # other protected downstream source still uses the upstream pin.
+            manifest = json.loads((ROOT / 'docs/v2_incoming_scope_manifest.json').read_text())
+            integration = manifest['planner_integration']
+            assert integration['upstream_sha256'] == digest
+            assert integration['behavioral_gates']
+            digest = integration['sha256']
         assert hashlib.sha256(data).hexdigest() == digest, file
 
 
@@ -71,6 +66,13 @@ def test_entire_upstream_diff_has_no_historical_pipeline_and_complete_inventory(
     if not manifest.exists():
         manifest = ROOT / 'docs/flight_prediction_minimal_scope_manifest.json'
     entries = json.loads(manifest.read_text())['files']
+    incoming_manifest = ROOT / 'docs/v2_incoming_scope_manifest.json'
+    if incoming_manifest.exists():
+        incoming = json.loads(incoming_manifest.read_text())
+        assert incoming['extends'] == manifest.name
+        merged = {entry['path']: entry for entry in entries}
+        merged.update({entry['path']: entry for entry in incoming['files']})
+        entries = list(merged.values())
     assert paths == {entry['path'] for entry in entries}
     assert all(entry['why_needed'] and entry['owner'] and entry['tests'] for entry in entries)
 

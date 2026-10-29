@@ -165,3 +165,17 @@ stable-per-ball unknown-spin development trial covered 580/589 eligible epochs
 and all ten commands, with 11.659 ms maximum completion age, 9.960 ms decoder
 P95 and 3.272 ms maximum expiry notification delay. These development receipts
 do not constitute final-source qualification or physical-accuracy evidence.
+
+
+Qualification 04 retained a 360 Hz fixed/measured-zero failure (546/590
+continuous epochs, 9/10 commands) and the outdated scope-inventory check. A relay
+callback took 117.596 ms; its cause is unresolved. Ten GC diagnostic trials and
+20 publication-mode trials did not reproduce that pause. The latter revealed
+three additional asynchronous-DDS command misses with depth-one V2 writers.
+Both qualified relay writers now share the explicit bounded input history
+(default one, V2 eight); legacy rate-limited outputs retain depth one. Ten
+predeclared asynchronous trials after that correction passed all gates, and
+12 relay tests passed. These development trials do not replace full qualification
+or establish the cause of the original pause. No coverage or freshness threshold
+was relaxed. The scope check now records the intended PlannerNode integration
+explicitly while retaining every other upstream protected-source byte pin.
