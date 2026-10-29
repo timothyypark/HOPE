@@ -1,0 +1,1939 @@
+{
+  "archive": "repeated-campaign-repetition-3.tar.gz",
+  "bytes": 32829044,
+  "sha256": "170ede0b0586cbfbbd7519b7530a9d7c39ce51ddf85128463ae767a6b7fc5d4e",
+  "files": [
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result-hope_base_pose_flat_relay.log",
+      "bytes": 1692,
+      "sha256": "14dba3515ed60808298972d65dbdf67f3d8e7dc80910a4934a3169e2a54c6028"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "007f303ccc9530701d7d002b69a8b696ba1103da03554b6e7b18352a58a29298"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result-hope_integrated_runner_probe.stages",
+      "bytes": 10060,
+      "sha256": "fd5912f92fe16663523f8d8f85eb88f2b1703758e05fb6cb346e08c0153ab2ed"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "bae3b917610ecfb3b3d5f36ec086f67628672d91ee282ef3000ba730c1527ce3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result-hope_planner_cpp_node.stages",
+      "bytes": 148390,
+      "sha256": "a9ab8b18ee80a2d1a362dc8e300fcfba423d97e766f60dd65cbb0f84fdca5649"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "5ecf4986444cafcd9965557590a8ebb8c1d4fa425a6e1cf24e9c15baa86a1f26"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result-optitrack_mct_relay.stages",
+      "bytes": 79758,
+      "sha256": "0cf4bc17da03a7d232fe654541cfdd66061a6b1f8589d081aef3ed09c9506517"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result.accounting.json",
+      "bytes": 182925,
+      "sha256": "27d6e2c6321cb7dd9a73326227c8399a292c9f7930bbb9171627f89b9567d056"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result.json.gz",
+      "bytes": 82087,
+      "sha256": "b3502c2c7ac82db15881de290d6386e742be0cd654e4183db45e0cf9f6ddfc5c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result.log",
+      "bytes": 1833,
+      "sha256": "c0dc4b73c26e676366fab0f751b61aa31512c55738b87b3f89b88506842f0f14"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result.raw.json.gz",
+      "bytes": 106342,
+      "sha256": "23e23882eb2e38403f74325eead8652f114b144db93eac660373e2dd203b0a11"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result-hope_base_pose_flat_relay.log",
+      "bytes": 1278,
+      "sha256": "19b8299c7a0067a1a4ed691360d89c93a80b0031eef99de6cd2d727002f0b875"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "52e9dac3bdcfa52f3c3697d52577feabd67db7f77aae5fdf146bfb18b94160e4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result-hope_integrated_runner_probe.stages",
+      "bytes": 10060,
+      "sha256": "7954af66b3e216fa7a5b5a1e05d3155ab9823c8299fc4a0d22317c29eda8fde3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "8b011378eb332cb818a930b7291df169c73c528205b73718845eddbc13c6d2cb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result-hope_planner_cpp_node.stages",
+      "bytes": 146359,
+      "sha256": "d05f4ef75f22bf5bac9b66fbedf0d93f3efab028d80ac25161b161b4222730a1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "c63338162d1051b328d4efe1ca7d715c6eede9283eef3343cfd573d71eb19b81"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result-optitrack_mct_relay.stages",
+      "bytes": 78024,
+      "sha256": "33307929a47974c8eaa1b9888d39ee0b5141bc54ba6d944c17bd4c0ec6d3336a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result.accounting.json",
+      "bytes": 182927,
+      "sha256": "e9e9ce24e5b945e85cd95ef0368970daab80c61ccdc25d7ac9cb3e0db76ada88"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result.json.gz",
+      "bytes": 81205,
+      "sha256": "36c742bcbb0c897e1139af660d7687d4bdd998337151baa4d860f63bac71f00f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result.log",
+      "bytes": 1773,
+      "sha256": "ef95eb84eb9e7dc4505264c0c1e78a012a4a7ec2da80dc7dfc3249dcad084a03"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result.raw.json.gz",
+      "bytes": 100749,
+      "sha256": "5bb0a0b53a0274b108931fcc8ee96a431efb7fb9e9044ca5d80bc5fd2ed8083c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result-hope_base_pose_flat_relay.log",
+      "bytes": 1068,
+      "sha256": "6328306ab0210abaa7dd74f356231b726af04232de475c4e57f0d05388fdb95e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "38ebad8145cf9b7222d56f45d55189602146803ac5bb9505fc40516abf37c904"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result-hope_integrated_runner_probe.stages",
+      "bytes": 19942,
+      "sha256": "a3985b8b6156cb8fe71690043a209c4d0c4626c183bec051ac8160fc2cd262e3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "692be45bda5fa82c63ec79982da27af83b5ca12938a74cac461b7a3118cec05e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result-hope_planner_cpp_node.stages",
+      "bytes": 293396,
+      "sha256": "9323cf59d9d552682bac611e29302d733873f033ba547e13e72c58b01ac7330c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "0971ba32d7cdfb05d28f554316c5505b8e29a3e3b5d94675845df1c73b77813a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result-optitrack_mct_relay.stages",
+      "bytes": 158277,
+      "sha256": "3329006b3960540a1cc459164c875c0138d08e5d511947cd480248d7284b6d70"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result.accounting.json.gz",
+      "bytes": 31790,
+      "sha256": "3f76f173803eb95e91148b7fbd0013c28729e31527bbbdc7567beb40e19026a8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result.json.gz",
+      "bytes": 161946,
+      "sha256": "49ac54d1559b82ccee543de902f6952c78bebe47d9a306d52d1cd2b21033025d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result.log",
+      "bytes": 1832,
+      "sha256": "c82053f8bbe4d0c823225d91bfff2a4bb212b9051d66fc84a7e36ab6997a3a9d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result.raw.json.gz",
+      "bytes": 182776,
+      "sha256": "d3bf25521c25367b22930dfa485524f08b7ff054529553a0780928a81cfdcbf8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result-hope_base_pose_flat_relay.log",
+      "bytes": 1068,
+      "sha256": "10abcf1acef9f235ccd777edfc9d686fc1913a7d81a4d905b64cc601fd033c39"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "989589b0bb9a71d9b36422e3265f173691649dcfe519475858a23cd57d86c3c3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result-hope_integrated_runner_probe.stages",
+      "bytes": 19789,
+      "sha256": "f2ca94fee4069efeb97cda4c5e52d97ccb04603aeec74afeee76f0f3dc5de54f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "5cabd0e666d7433a00981073f5e4310cddc26335e40e7ac18b10eba71053a608"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result-hope_planner_cpp_node.stages",
+      "bytes": 294812,
+      "sha256": "e587ec4a82c1f1f0d853d7367c845621ba99b44a474009b2cbe94d9178615518"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "4b19f662050b3221bea38e893a05e6ff21fb49ac9fd8f04e3fc5ccddf656eb89"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result-optitrack_mct_relay.stages",
+      "bytes": 159030,
+      "sha256": "9f6c0d4c4ce02f083695a3c399ddae5ea456edd256b9be4a4506a99aabcaa1c2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result.accounting.json.gz",
+      "bytes": 32072,
+      "sha256": "2b654e5beb90d2f809f6440f0e1f9e33f9113f3e163dfdfe3ba1e39a6a206bde"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result.json.gz",
+      "bytes": 162762,
+      "sha256": "e3a9e0c63a071cf995f8fda605b78f60635cb2420822b8464c881481e2831f31"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result.log",
+      "bytes": 1846,
+      "sha256": "fdc384b7369ac832cbac91bea3daabfb811c21a3d6be87da14dcfcef4e3cf957"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result.raw.json.gz",
+      "bytes": 183592,
+      "sha256": "d1b59fc7be5373293de1b1e87d8f982a8355ab6053660d75d8a6bd254c243b9c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result-hope_base_pose_flat_relay.log",
+      "bytes": 5868,
+      "sha256": "f9928ef0a8c8021bf6e89440a195f09044e98998d82f6a5de4e233566dfb3143"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "8a4f6612b7891cb4a2b94f365f276022875163a82f2873e47ba210d48900f510"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result-hope_integrated_runner_probe.stages",
+      "bytes": 47856,
+      "sha256": "7b69ac2d82a04a429746e1958b46171e6403e9a0ec2e61a532c45f0e6324be16"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "197aaf95505426dfaeb4319b9b38ad720daa41838a988e2e57492fb1890b042a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 148325,
+      "sha256": "4bbeff24f4ce53e8a6bbea5bb11bf9535890906d82db0943391801e44feeb5ce"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "b48eaaeb08733cf0d440ae18a6d8a7f9b400920ff0c757605b0e063c99a4c342"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result-optitrack_mct_relay.stages.gz",
+      "bytes": 87300,
+      "sha256": "3851033266786bfdfff3791ac69376fbab7b74f88bbbcf6ec4984eb432b037d5"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.accounting.json.gz",
+      "bytes": 31453,
+      "sha256": "69be99ec55aec935206d5b63a8853bdf0a9ba95e39d3c4215f6e325fcf602035"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json.gz",
+      "bytes": 300536,
+      "sha256": "14291e008208e9a69239d8e783bc52c82a0421dcf0376829eb03cbabadbcd41a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.log",
+      "bytes": 1462,
+      "sha256": "8fe14f63176ab6af8ac09a132bce852ed28a225a16242f9d79a844c29c643f8d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.raw.json.gz",
+      "bytes": 458364,
+      "sha256": "d56f73d7dd038ca582f1762613eda29fddd55b5e843ad0361156e9d44eaf35b2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 5458,
+      "sha256": "871a247e3e657f305d419ccfb919c8e2bbdf83b112c5d43496478ccd9eb4c170"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "0d5c55774516cd9af06162caa5ccb421f022a43e4e973d63238134c68ec4a549"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 47856,
+      "sha256": "49f70bcf9fa52730ca2efe70617b7bcec2474a1f9cb56b0f9bbfcc681ba33f7c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "75dea5b386ee5ee5fc20eda82dc1ef1a65e348bf26e434d99cfeebae79ff6ac2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 148344,
+      "sha256": "7a996e6beab6cb43c6bd7addf3b16ab6fc1d7e6d8826ee545dc203dcab4f9ac6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "d02243b8f7a108b9e000af54be0b9df06f767ab46a5fe9e6d2a8fe9de8f0a19f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result-optitrack_mct_relay.stages.gz",
+      "bytes": 87279,
+      "sha256": "fbf13ddd77315863c8bf73c048406f7fc507ab123fa157fc4b26c95d430ede16"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result.accounting.json.gz",
+      "bytes": 31244,
+      "sha256": "ca28d254646c49682daf76c5470052b60effccbd2927274c5061983237c2aa23"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json.gz",
+      "bytes": 267907,
+      "sha256": "b280e5065444b4d66fb443fab755ad3d87911685f2361f0b6fcc6452b2624061"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result.log",
+      "bytes": 1452,
+      "sha256": "ccb110fd494f8543633b959ebc2f0366379b684ec448d9101c7083c224006d45"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result.raw.json.gz",
+      "bytes": 410300,
+      "sha256": "9c0b875e2a9d9fcc9e9e08c96fb134f8039c6df7cecea056b591545065927714"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result-hope_base_pose_flat_relay.log",
+      "bytes": 5458,
+      "sha256": "a87bf05f28e1f76e5957244bd4415f0d169ad2edf901eff28336c5c183ab93fc"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "b13761bd7e4d01da6328ec4e821253f79d758fd54e0c4c4f656d9b87502fac9e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result-hope_integrated_runner_probe.stages",
+      "bytes": 47533,
+      "sha256": "b62d7fff8bb98077002d34acd7c0f62dd86b6faa48c3933f69b5a1d9aba9adc3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "89f3b9cdae136e042ecb049b7966222c4b21b949901613423667c9308c5999ca"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 148420,
+      "sha256": "bbf7fe29433c06318b61cbd84c96fbcd50258170d49b28e5caad05ead71d878f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "b2f81b08b9c37348d94bd5b8eadb1b27e949607a5b4871f91622cc8a428237a7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result-optitrack_mct_relay.stages.gz",
+      "bytes": 87219,
+      "sha256": "79033e0413f53b959d130e232a10a7f733cb9e23fba13066e5a1bc8ad7acfe98"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result.accounting.json.gz",
+      "bytes": 31213,
+      "sha256": "ee3b1fd21e8279ee68da94f15abe9a1d2c8324a82ccf65a30767d4210007f148"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result.json.gz",
+      "bytes": 284309,
+      "sha256": "c1802a0ffea6ef8f427ac4cd65437c35233da14dcbce62cc154a711cadd33de9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result.log",
+      "bytes": 1450,
+      "sha256": "54aad6ef9f06d85c4fe4d6f6b2232302b207303ddfd6ee9a047ed64acdfbc270"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result.raw.json.gz",
+      "bytes": 436852,
+      "sha256": "85c0ea915dd8e095efe619d147d6490ceccb1d311af06b237538412909fdfc94"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result-hope_base_pose_flat_relay.log",
+      "bytes": 6076,
+      "sha256": "f82730a83e367cdda491f258f5a9cb86186dd46225155436a531e280eefb87eb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "5d60acd019d9198c58ab3c8331b53927f278fa2e1653fff0ee3913db75761998"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result-hope_integrated_runner_probe.stages",
+      "bytes": 47544,
+      "sha256": "c2a15b707ef2602a5e00de2c983ffbc43359f399b35b47ece939b87991557e38"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "a0467bdc5341d6856661b692a3f28f4f66fe4eaf0b517710b6af5bb8b457e600"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 149188,
+      "sha256": "dd3626f13784f7dd94c760f4b79fd872af4aa67fa7bccbe063e845e507bed29f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "670c52cf4589eb96212ed7a28da85376e6b4c34edf5352e3710c1a31d04e5f52"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result-optitrack_mct_relay.stages.gz",
+      "bytes": 87528,
+      "sha256": "712fbb64b8305d41b80e099b187a0c1a0fadfe4c1fa70fa9c6612758dc5b5a47"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.accounting.json.gz",
+      "bytes": 31171,
+      "sha256": "ef12bebc0ed0d5e9961eb4eae372144adc0882db43cb1ed2d12a19ae7abeb4f6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json.gz",
+      "bytes": 300866,
+      "sha256": "c7a6eb09b48d11a4d345a9b7d35cb33f443b34077b134da63ffba9f3bdad6611"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.log",
+      "bytes": 1455,
+      "sha256": "07b8cf7856473911660e7504e0dc753a02c508519cc0e742cc57f86207374510"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.raw.json.gz",
+      "bytes": 458146,
+      "sha256": "dd1898c93f8f4980db9ffac25259447416a0fe4809173bd80d539f553791b7a8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 5245,
+      "sha256": "e981e5781ee85ba83224749e6dfe39ac9f1271b1f2131c859de0d2fe8c877268"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "5e8e9cfbf625663c6e0756e349cd476ed025e37266c1cbd728676a464699e7b1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 47533,
+      "sha256": "391d12a4c76f17cc7348083f1f35bbcde327d4b2d6fa6af4f60f086ee77b0a1c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "63658f00ecfbdbad33ad228d641aacfb8bcb4eb720ddd43dc19dfe4616322b9f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 148431,
+      "sha256": "022e60ca968061729faf4a76543b7398b1cf0abfb8c0043d27810b6237d58bfb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "6a2e78d2530e20835c65e53fa9a9723c2287e9552fd0ff770f470f88ce2de3b4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result-optitrack_mct_relay.stages.gz",
+      "bytes": 87409,
+      "sha256": "dd37232699ae282563ca29642f8e393d9af5062dc933e11c115c62ca1a0dca69"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result.accounting.json.gz",
+      "bytes": 31667,
+      "sha256": "93d9a4631d0893dc657a04fc582e1a229d6f69b0ec3e018e872a0dfbbebd27e0"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result.json.gz",
+      "bytes": 268932,
+      "sha256": "1e05f3bd93f1cfa363dde1490857093b84f4e143074afe5af1387e5a9fb2fe02"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result.log",
+      "bytes": 1464,
+      "sha256": "b2b8a01133bcc19bb7603cf39d2ca8279c28fdda7fa3aa04bf3ea63f2dd4d900"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result.raw.json.gz",
+      "bytes": 412417,
+      "sha256": "c8dc7bdcf2a6f4ef94cc8f979c5ce3c9e6fc0db54aadf08c2a93a8cb589e13a4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result-hope_base_pose_flat_relay.log",
+      "bytes": 5458,
+      "sha256": "682e477c32bb68bd6390b21f9d577ebd8fa28ec0e17792f911e2305aff05b79e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "ce547b4f0854704fcc00233beb711db22489b58c312d1b4322c97fc066cee12f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result-hope_integrated_runner_probe.stages",
+      "bytes": 47856,
+      "sha256": "3d815d43d7c8e62191fa051634e105b2bfab6593b5e7e5252ef3b45ce09e0de9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "0fdcf88ad62f139711084591536cdfe0c559a4621d609c59a2f93d62201e3169"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 148334,
+      "sha256": "fefada44f6bc180b5cb40c5393404b9909747c719cdd66b425816280bdb752a6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "b6648d9c38f2b209801ddee30fd4781ed62ec775832c83644ef2afd60e537fca"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result-optitrack_mct_relay.stages.gz",
+      "bytes": 87331,
+      "sha256": "531ad1ab6c6fa3af0991dc6868ae3973d40ff8eef85f71ba89d25fdb645a29df"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result.accounting.json.gz",
+      "bytes": 31307,
+      "sha256": "81477d1f767a89f168f211ce693bc0dacfd382a40c58902d0907c937a6fa1a49"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result.json.gz",
+      "bytes": 283925,
+      "sha256": "8a51bdff461515d5ce791301d56f29ec0f2b63c0aeeb357254b63fa57d843da3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result.log",
+      "bytes": 1448,
+      "sha256": "9bf2d9dd7cd8a7052f33cd2f1f50f279887380641b0e8dee684b7dfd09da17b9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result.raw.json.gz",
+      "bytes": 435840,
+      "sha256": "81f7d50e938493b5abef39a364ea1ca82605a8334ed74aedf42cdc593755acab"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result-hope_base_pose_flat_relay.log",
+      "bytes": 5467,
+      "sha256": "ff13536eab94d979adb3b37a43ecea8470b15a3a4b96df5c80e036f35bae482f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "e64a97776eb39d5d5d096ee59156906275152e73c372f35de461c31319761356"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result-hope_integrated_runner_probe.stages",
+      "bytes": 94679,
+      "sha256": "1097e6b8a5bed8e91389eb852076e96110225ada37c914f68bae124022b2b5cf"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "b8ce8a2ccda8f4dbfa6f434b8ca933e438bdfc69d1b921fed88d171941184481"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 292721,
+      "sha256": "d0556bb89353b806edbc958d729940b441f25aa8977b12c89ab70206a3b29a0e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "e228301a8ec846865a7364e5cca57b95288ba4b7618a6c384ee159cde8cd4f3c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result-optitrack_mct_relay.stages.gz",
+      "bytes": 172186,
+      "sha256": "b0cbcc79eb0a8e52cb26f1045f91e97005bd10da3eaf46b352cd8f7312d3a399"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.accounting.json.gz",
+      "bytes": 57167,
+      "sha256": "9b786fbb08bc23bcf89dc26259698409795246da9a180d9928f53f939af8aa0a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json.gz",
+      "bytes": 584321,
+      "sha256": "77d52affa086ce920b4bd573f39d05bfb283f2fcb72b9a245a741270cfc47351"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.log",
+      "bytes": 1443,
+      "sha256": "9a6af1de3b6e782cb8d4324e8955882c6f8ca4e1eb7481b1fe9350c19216f861"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.raw.json.gz",
+      "bytes": 827135,
+      "sha256": "50214f6a9d2c92babf7f66f8eb51aff07cf3fc7ea18ff049ebe9734c191b1340"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 5467,
+      "sha256": "411da792b98a890bbe42f559451b575cd0870f130465292a5dc05a60f69508dc"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 546,
+      "sha256": "75c74c2f6dedd1c9dd562c70aa257b2a3526016a46be4e3e056e6c71d1d60e61"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 91535,
+      "sha256": "c9060d93ab4b145ad46e551e31ba20ce9ec42cca44684e27df4e8d5c0ae83df4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "8f7e5ae52e3499c6557744c7a4a47c54b1c8c9152726f196001e606aafe19282"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 289381,
+      "sha256": "c54123b9c6d172cf7a087e42a851f7bcc38280a56436c3c80aa7e18126d2856c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "3b148ed73f2f1a5ea733ca0264414f0cc0f760f4c6c0f47e9dfc44dbc7139a96"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result-optitrack_mct_relay.stages.gz",
+      "bytes": 172065,
+      "sha256": "bfdf12ba151646fc48446af807e150894f6f1a4776b15332573a364a194b42c1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result.accounting.json.gz",
+      "bytes": 60849,
+      "sha256": "cf583204aa0d592786dbb35bfe1d5ef73bcacf31e989bc859d01c46515df12ac"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json.gz",
+      "bytes": 523628,
+      "sha256": "10a2436e56db656390f884e42c2cf103dd725dbcaeb8dfbb2230899cb273caff"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result.log",
+      "bytes": 1438,
+      "sha256": "6e6fa2d090e51845a30658e80725ad2fa962054f20824a02b6b74ed09b1e3a0d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result.raw.json.gz",
+      "bytes": 743509,
+      "sha256": "9efcfec6174002724466c593d887bf2cfd5a58c6cfbf2651c17bb3e9f41a6e90"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result-hope_base_pose_flat_relay.log",
+      "bytes": 5466,
+      "sha256": "764a25c0744451572df92229b27ddacacedc88572cf241447313e7802ea9a772"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result-hope_integrated_runner_probe.log",
+      "bytes": 546,
+      "sha256": "283594e7a143792f023e1adf935ec315b8b1896b14e184dfe7a62be4ed252d3d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result-hope_integrated_runner_probe.stages",
+      "bytes": 95939,
+      "sha256": "b198719635fc867aa4727d4df2eaa0b4e3e04e9ee7cfbdd792fa7763cd3a8643"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "e69f0c1908292552181c620163d60a3f89cea59c4c592c133b11a94b382f188d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 293058,
+      "sha256": "c61c61ee17cbf823b6a91604f952256882f78d0d29a58774eb755f0c225ca8bb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "742ea4e9951039633cc3edc5755297ba0e055787ddd500a1d495e2bf2917b58f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result-optitrack_mct_relay.stages.gz",
+      "bytes": 172039,
+      "sha256": "7f54ba4fdcebb8a008bf598deef95d91264af05c37f3f0e0c777c58485a30580"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result.accounting.json.gz",
+      "bytes": 60730,
+      "sha256": "995ff09cda523dc7dee6bca1caa12b87512d04f85678edeef70b4f38b334e47a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result.json.gz",
+      "bytes": 553065,
+      "sha256": "6263c36844fcf4695a084074dc61574817d69ac59bd1918f2ac8d4cce92921b4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result.log",
+      "bytes": 1416,
+      "sha256": "1262c52b9950bebea5a9eb39ded7133af3928003d51b6ffc2672e2e56b38ab03"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result.raw.json.gz",
+      "bytes": 794576,
+      "sha256": "addcb8011c348d53db08d2d374823945ca9de58d3ecc584b512765ba9e1df975"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result-hope_base_pose_flat_relay.log",
+      "bytes": 5609,
+      "sha256": "847377abae8d237de1b963bba4234ec1f1f175643ffd63f21acaf3d3c07dc9d7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "92772116fe04200f5dadbcede2cb2213e7b2e9a4859c506c8c7952305d40140e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result-hope_integrated_runner_probe.stages",
+      "bytes": 94367,
+      "sha256": "1cdf4f0f5bc735b13ef504cb0c7f9715e1ca7495be1a200edcf5c3cfb44bd23e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "c4b998cf6e7bb984905b4ffbcd490dfe25f8f2c748e1a836c7970a2ae2488541"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 291705,
+      "sha256": "83241fd036096451a07b1a94c140e7e1c64b2f9bbc61e34147577b1175d39bb4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "dce52ac786f83bfec62c0abb8755d5c83654af882c3e1debdff4adabbb34456b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result-optitrack_mct_relay.stages.gz",
+      "bytes": 170090,
+      "sha256": "92232ffce49f7e24db452091776fafc03606bea5197778ec87d52ce29a4e710c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.accounting.json.gz",
+      "bytes": 57417,
+      "sha256": "c9c835847ffb194a8d04251ac41d50eb35123e83057f18c4aa818ece56ab42e8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json.gz",
+      "bytes": 583595,
+      "sha256": "0f057a5245f6f2c94a8fc06250e071e16f4ae5eadaeeadf2b04353551161e9a9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.log",
+      "bytes": 1433,
+      "sha256": "4e4a3a9b3c3d79d3c30469aa43a4a32917aead6b89f1501d8deafd823510b489"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.raw.json.gz",
+      "bytes": 826615,
+      "sha256": "df76f635ed07538fbf40bb1ee5a23319765d747216a59a26f6a196f4647b21f7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 5876,
+      "sha256": "702a462f0bbdfa559e1525e80f8fe16af94d3a7f3d0207222faadc0e9ff075a5"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "64a4132b179214d7f8aa7dffb3829347b8b48b3c16bec423966cacfdac145b0b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 95936,
+      "sha256": "6fbd176fc8c657fcb1921daa8a79110598124139b4053d42437359074691f926"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "23e3a5c44ac43a7b880d1ddd19be846be1958015d207e4cc16686b4a04d51574"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 292034,
+      "sha256": "ed0ef12dfb89efb187bb4771a46f11edc481f993cda698116580adc899553240"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "59ad524c2910fc05d26bcffe860b08d0d20d14df46db97b08736db626e4b1b61"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result-optitrack_mct_relay.stages.gz",
+      "bytes": 171729,
+      "sha256": "9074cf385f69b81cc48b1e24d624616338280403f051c8050f52f0c365e7763f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result.accounting.json.gz",
+      "bytes": 60986,
+      "sha256": "f14af21205c0a2a97aea6b31939da4b9185bfdd28428fb485e7be3f87004bbb6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result.json.gz",
+      "bytes": 521206,
+      "sha256": "77ed5421d637f8d7d8abcbcf945cda51b80f097cb0c2f4e4b60aae9224f412b7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result.log",
+      "bytes": 1422,
+      "sha256": "8cba2e13d8ff01fa0476bf2cc4d18bd328f6261c41156e57d8dc07ff8a776a71"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result.raw.json.gz",
+      "bytes": 752669,
+      "sha256": "40fb2e43feaae9817b26f40d4473504d34f9f97d1a31f4e1c8fc6b356761f59c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result-hope_base_pose_flat_relay.log",
+      "bytes": 5467,
+      "sha256": "6ba8f54c9c1591944a6dece15dffe643b659fda804484f800d01e6c374b41366"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result-hope_integrated_runner_probe.log",
+      "bytes": 546,
+      "sha256": "57a88447dfa3814acee2a7d9dc38d0b0e76cb7e258f4e7ab641a9d1a312a4508"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result-hope_integrated_runner_probe.stages",
+      "bytes": 93258,
+      "sha256": "0cba1f32b59dfaef4b6849aceb11e9cff9ff279d68335d94d0205ceb1928cc20"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "58a78ee406b171451bf760246479f6540826db0a9ea37e3198076c6ce1aa8485"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 290768,
+      "sha256": "2b2ae456dcbdb70ead73f7e8bcff57e75738338cd4d35e8e6b6630e1892bc72b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "bf545dd3a7bd0e08686c837a011333f01eefa541a8a2e72740a53b29fff971dd"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result-optitrack_mct_relay.stages.gz",
+      "bytes": 171446,
+      "sha256": "bed387f0de435731eb797d6254f18520c3f1e112df39e899788f652db0400403"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result.accounting.json.gz",
+      "bytes": 61135,
+      "sha256": "20bc69776bb19442b356cde9fc25212b915dd1002c2d5d7c8706093ff7e6350e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result.json.gz",
+      "bytes": 553811,
+      "sha256": "076a5517521faa90e9881ff0d6bba305f1e6fc2c3ab1a3ec5ad62482baa52962"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result.log",
+      "bytes": 1420,
+      "sha256": "5ca88cb4fe7a070be6f8a4b67be220fac6d3a56661ec7012819d5e7b4e5d6ee1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result.raw.json.gz",
+      "bytes": 790579,
+      "sha256": "d13f07c73a9a05076ab07d44ce720e17aa37df5bcb937231bb01486bdaf1c5c3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result-hope_base_pose_flat_relay.log",
+      "bytes": 3396,
+      "sha256": "23278ba19b17189e281a936da3f9306afced6eacc68d475d05ff03088ec5e487"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "1cf63b338519b80138db5e15fb63ce67ee051e1c3bc2479d5086246f971ef983"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result-hope_integrated_runner_probe.stages",
+      "bytes": 31880,
+      "sha256": "6fc2a0cbc52c03f45f27ccb6fc5db7a8e26f9ecb597552df6e3ed0e905743da1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "c4c2d741b963bcb8c35063aa1c0f2918dd3fc15fc5e55f27f0fe6e8e35ad0c9c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 88861,
+      "sha256": "5904123cb1ed4d75cc1b76adadaf3e12f69b26e749cb18b454050ecdfa1d8215"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "3aefe0c5088778786dfe9b3eacacf1d89b7478a4cb102d0a0d12eb2be2394f4a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result-optitrack_mct_relay.stages",
+      "bytes": 203027,
+      "sha256": "7796cf90b6b52f07302cb3ea38d4aceb8866850f53871e8e127f5f7546594dc7"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result.accounting.json.gz",
+      "bytes": 29615,
+      "sha256": "59fa619884d3d35894bcdb529711fffd5b708daf6ee3d03fde9adccf3efe8754"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result.json.gz",
+      "bytes": 243757,
+      "sha256": "3f10a74e21789ba2e13ca546174c31e7f0de93f297009c9c0101d4efdd954645"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result.log",
+      "bytes": 1874,
+      "sha256": "eda8a174e9b4ca781cc5f23e2a54de5eacb1d38b407e8466d34d5a9645c4b67c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_known/result.raw.json.gz",
+      "bytes": 301061,
+      "sha256": "1d94d04d62524b98133407cfbcd2f5c5453a95c45d4b651d666948c8d01e161d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 2771,
+      "sha256": "bf53b9591d5261b888d40206fe95ff22067ea3695e849c26b96b14a9b090dd38"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "9e87c4d6fee8f8c5912479e4647a78ba7156ae7e25adb835de1bdbbb30b2ff0b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 32502,
+      "sha256": "b5e95d0204d420f431033160094ed0a613cb701c351ad903625292c496cd3bb0"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "616395e9bc2ce1380cc835bc1ad016a904199a4eeae38f96b5b59bc8a5c091d2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 89116,
+      "sha256": "b2a2c79c8fd8b29f4c5eaa4aa94edb3409a227765e86b5e5287698bdc2329579"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "74253fb906f80c571b984ce5ff0af748a152b70acf08838cbe6ef56774901bb2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result-optitrack_mct_relay.stages",
+      "bytes": 203871,
+      "sha256": "203b4812e6b11b2099ae339918828b8937c4fe09ecd0100621c6f9225613a439"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result.accounting.json.gz",
+      "bytes": 31018,
+      "sha256": "b89115946586543fa7f063c5bd1a07623ac54650d884cd363b88a32bf70883e8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result.json.gz",
+      "bytes": 225896,
+      "sha256": "1adbf2ad4c9307e22cb5223552c5519bf03ad8cbb90a8c345bbcc974148d18bb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result.log",
+      "bytes": 1847,
+      "sha256": "b66bde8c2724a5f507407ac68d717465ee63144eedee3959b252a80c12b51603"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_unknown/result.raw.json.gz",
+      "bytes": 273439,
+      "sha256": "96c527b8429b939da62e212880d5433a460df67a241db1f107a032b4c87cf187"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result-hope_base_pose_flat_relay.log",
+      "bytes": 2771,
+      "sha256": "fa62e9453654d88b44fbc26165e48dbba15f1dd6519fbfdeec3cef8d6ce9f997"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "52295b087d184a2a989dfeede7148f4ff0d94821f63c86ca1db35df4c0bf15da"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result-hope_integrated_runner_probe.stages",
+      "bytes": 32662,
+      "sha256": "998b52db9a7de680849d7ef968e284cb29860328e54283c8d9f80690544ee1f6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "60c15d1f80aafe9f9074da66b20440d883e735936429a720e3cec3cbb8b719f9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 90317,
+      "sha256": "cc0515040f52cbda6e9f5eb89f8b011219d9ebae37ce7d6a179dada188ec04bf"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "435358edb5d68e955c3ebf4c0a8872c8ea836b8b710e4e1a549e99b8a06d7d00"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result-optitrack_mct_relay.stages",
+      "bytes": 203788,
+      "sha256": "e4dbae2dab00315caafb6c13329d944ecdba4396c3eed71a83ee65aa8b31d5d8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result.accounting.json.gz",
+      "bytes": 31404,
+      "sha256": "8d3e45bf8396c93483b59e6e0e5b0da1fbab8186e0c870bc5ce674c5e7607853"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result.json.gz",
+      "bytes": 233985,
+      "sha256": "571ed409cfe75c21b6976665e27ce467f4cd1169ab460cdab91113f4b0eddc31"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result.log",
+      "bytes": 1871,
+      "sha256": "18200b0865fabeaa064f982843a7508d3219cc730015920630095e6d7a3ff7a4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_10_zero/result.raw.json.gz",
+      "bytes": 285541,
+      "sha256": "ba74387866757f3bcee85725b86312a22847cdb190e06d717d5f086d379f04ee"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result-hope_base_pose_flat_relay.log",
+      "bytes": 2771,
+      "sha256": "262e54f33eaa1015af50a1f180afe8a35129fb52b2d3bb888ed1e6ef73bb7143"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "689847c57782c256ee18a21809deeb49808dd3dedd0a4ef975a899e58e0bba00"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result-hope_integrated_runner_probe.stages",
+      "bytes": 7817,
+      "sha256": "3cfbe91f33b65faf0de9a4ff00afcdbeabf92aff3b57cfc03a0c9ce6291c0aa4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "445550a38d6a334f64f33d7e51f5d01f28599ad29fc6970f1094dc6cbdfcdc8e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 70591,
+      "sha256": "2f8862f8ade562e8434adc354c8b10ec795591509158531b5d74ade3708b25b6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "bb1b63408b8ebf5ac9997dc6dbcb3563ab9c7e27d190aa625c245899002a527e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result-optitrack_mct_relay.stages",
+      "bytes": 197787,
+      "sha256": "1e68967999cd9a960c55f906d9f1498ebafc60c9949ba56a6ddf7c5bfdb67075"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result.accounting.json",
+      "bytes": 88399,
+      "sha256": "d394662b032c080ee308295df6c16617c00b19a6d84a6e9e6e1a379f4dc10b09"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result.json.gz",
+      "bytes": 195618,
+      "sha256": "b928af2ae8383ed396096cca7bf9cdb8b119b5614e538937f2db6922487a9034"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result.log",
+      "bytes": 1813,
+      "sha256": "3236710631684cfc98771c70243f34bb1bcf19b226d797b6c276ff59eaa7456d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_known/result.raw.json.gz",
+      "bytes": 248323,
+      "sha256": "3618a32b68ac001080880b026a259168c635aa98fe1a76b2bd4762c013979217"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 3396,
+      "sha256": "e447db430f1f5957e4e71df0e7c1134e535bb7bdff3b36c373b332b0ee39a6ff"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "57f44bc20b652de87bb4fa6269769f01de10bd0dde879dc1f4665458bda163cd"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 20790,
+      "sha256": "9983929c4a61411ac2ce56e2924ccc2e6bcff144f0d23df424041b12b8a4544e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "4883945172be018aebd9b6caa5f19c84eeba991aa2d258305cea4ed54c0a6ed2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 76601,
+      "sha256": "b4726046becc547ef4aa49a4a606d9fad541ee155178d103d35c785993237272"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "cd48b547816153273be28fe5c0fbe049cf082f583df364f3b9798a6e99c9f9a9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result-optitrack_mct_relay.stages",
+      "bytes": 198378,
+      "sha256": "ae8c25f7e7939c217424278740e0ce0ac5c7a6cd029e599fcbc6a195d632d87e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result.accounting.json",
+      "bytes": 88421,
+      "sha256": "f03621a3b0636f2d9933e4cf22044f7f61fba4240370082718fa46693b74c728"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result.json.gz",
+      "bytes": 205236,
+      "sha256": "053bd89c0844bfa35bad3575db5d07aa036b461c59edb73c3c37852711215346"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result.log",
+      "bytes": 1856,
+      "sha256": "1b99c0cb55d76f683de98bee76955559460a03e731192f19bef37d6eadeb3f25"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_unknown/result.raw.json.gz",
+      "bytes": 257975,
+      "sha256": "32169514e6b4f8c8eb967a047d24079f52fc264655bc14d346ccf1c4319113cc"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result-hope_base_pose_flat_relay.log",
+      "bytes": 2768,
+      "sha256": "1fd537e5a21f75a5eef47b6abc4f131dce72c73538dde4410de1301345ccb4fa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "1663cacf33ddaf78cd117721925d77a39d6801b7f66ee8c7fd36b1a91b2d2eed"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result-hope_integrated_runner_probe.stages",
+      "bytes": 19856,
+      "sha256": "782471e4f6247212a962541d927723c300da38f42267664ec94da918a39ed21a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "8799839a3a2ad54781aff266fc784143ed2883bf152bbc9a1980d9fa256fb04a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 75689,
+      "sha256": "a2a7274dea29ffb1122ec805cf19977d55e9ddf633e6aad515c17823a0f25be4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "3032a488b05a95fc9becf7d97978abbb7c4c4dd9f13e89e70a9d496c6e6136c6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result-optitrack_mct_relay.stages",
+      "bytes": 198042,
+      "sha256": "323926da9e6e24026f562f79590b5eed4d80aefddddd01089e5b40156e307578"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result.accounting.json",
+      "bytes": 88416,
+      "sha256": "90f7cbfd3166358ed29192fcc6e597c232c761dbaf864a5c7ee97f8c333f55c9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result.json.gz",
+      "bytes": 208819,
+      "sha256": "9ab2031550a076e22a59c49edeb3a849f5f424ff1db7ae444de90d49566eb29f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result.log",
+      "bytes": 1837,
+      "sha256": "08a0dbb4fd3f6df7aefce5eab22460174e391c3f3f015f11643d9a0ee0d92aa1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_150_12_zero/result.raw.json.gz",
+      "bytes": 259680,
+      "sha256": "e6eaae7f6cc5f91688777b3693e21bcb1a18cd2eefe26662bcc03949e3d15d69"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result-hope_base_pose_flat_relay.log",
+      "bytes": 3404,
+      "sha256": "47ea4f0de168ffe483650d98de9f61e50617192e295dbf33a63191c2adc58ee2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "cc6faeed7ec1339d9357efeb830052010d803f1c204aa020dc145508a346261c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result-hope_integrated_runner_probe.stages",
+      "bytes": 64370,
+      "sha256": "ff5964087ea64a86697fe80a8431b4bbd2f40bb81e4a0319fbcc30537b82329e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "7afb4367e20d8e284e923c2c46383ddd179af50ec97b41499d56eb718a433a0f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 176418,
+      "sha256": "7e1aeeab2cadc084436882339eedea687d11e9a6afa8cf66e5ec88707c6dff65"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "d56f3c6c738b351eeab7639b2cb3399dd6f379bc8cc73abd1daf5ddba73c84ae"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result-optitrack_mct_relay.stages.gz",
+      "bytes": 106375,
+      "sha256": "860cd8b4d68431194b1beac75bba33fe392864e59a6d40c44725dee9377967ab"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result.accounting.json.gz",
+      "bytes": 55577,
+      "sha256": "225a597be9579db3d9b5d5511cb9d6727c148b54d851b8a2d524bfa49eda9f15"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result.json.gz",
+      "bytes": 477637,
+      "sha256": "ff803bd2c49778b8f7dea855563958019fec0843ead919c83395797410e7ce85"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result.log",
+      "bytes": 1830,
+      "sha256": "9edd622b1f9f3ab28b92904e81f8032780ed3c8711a7d4345d9b45975d3c69cb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_known/result.raw.json.gz",
+      "bytes": 537152,
+      "sha256": "9874e62176ed023125ac0a7c613bc19cca077a8f303ba306d22a3c3c709d6b5f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 2778,
+      "sha256": "dfb1b51d743faba83101ffa42daaa79576b5c76f9264a7cbb21bede6b7d2c88d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "de968f2cef51fff755d4987a50c39402051ef8e4b14e89962554d4d8360395b4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 64526,
+      "sha256": "98f65c7df159fb1de3edbce37ec7c4bfdfec914a0a94e4bbaeb80e3b0bbb49dd"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "0157d53a877015e0ca3949c044b037c68a37fa22fae83301baf00c43fb83e336"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 177236,
+      "sha256": "49dfbd667a106c656356bf0596a131f8cc483cfda8e5a51f1ca57da3c24c138d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "d86f6db53e0e2ca9e04a5fca02b70c45c097b1b3579935ea3cfda175f081ebc8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result-optitrack_mct_relay.stages.gz",
+      "bytes": 106987,
+      "sha256": "b468fcdafc29ccec38407f57fbe7a4129b3d268fbe967762719799d9e0481f47"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result.accounting.json.gz",
+      "bytes": 59397,
+      "sha256": "cb719b94af845cde2e528805ef747f1fc6883bf88b681580db5bc30279759ab9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result.json.gz",
+      "bytes": 441722,
+      "sha256": "8aaf1fa70a6a7b1d1c59e320a2c1370b0e0759bcde8144648bddddecc45d7392"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result.log",
+      "bytes": 1857,
+      "sha256": "a381a4de1b5e502c44a9d89a0e7ce51f92d099bed6c36818bbd6571def0b4d60"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_unknown/result.raw.json.gz",
+      "bytes": 492564,
+      "sha256": "70acba99fcefa58039dab7f746d0a1a58be3d158a2033071e1b317e3bc64b7b8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result-hope_base_pose_flat_relay.log",
+      "bytes": 2778,
+      "sha256": "ff648fa87c223d41a7e903010e4491cd5b15c7d4268dd16f6f02c497eb698b67"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "ae2df46826077f2bdfe302cc1d1d5fe8d43000610d4e855f1dc5600a8ea1fa6c"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result-hope_integrated_runner_probe.stages",
+      "bytes": 64209,
+      "sha256": "7e9137b0d35afa7a1edbb6e4f98f8ec4adfa85d20d9c693b2ed641e88177e415"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "3a146e47ad76ccda64fe3487f23b4e80d46690fd4f104f130e6a8422281df2b3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 175825,
+      "sha256": "bb6886c484487ddc8235b4ee7792493052be527363c41748f7a92a2467294129"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "696a2a1bab4875f9f157f18c46de36aa331106ca8755d1f43b2d28928ab2eb8f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result-optitrack_mct_relay.stages.gz",
+      "bytes": 106950,
+      "sha256": "fdc15ac4d6e75348fada154333111e201bb83343c4514342ba78b6bca73bc676"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result.accounting.json.gz",
+      "bytes": 58181,
+      "sha256": "13dce2f11fde4f7a526d1d6762d53c7b283abf81a5650d153d560fbd8ab5cc68"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result.json.gz",
+      "bytes": 456620,
+      "sha256": "a787e3ff3bae208f7a654055e3146468457e8795cf2e41d88ff4cdbc21d01e0e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result.log",
+      "bytes": 1832,
+      "sha256": "b61d568ea09cf99c00da94521f15a557ac63b78baa73826fedf1f01128b30084"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_10_zero/result.raw.json.gz",
+      "bytes": 512238,
+      "sha256": "d501c9f97a9b8a955a58338bc76bf30ad46122bfdf390d448bcdb084ea97cee6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result-hope_base_pose_flat_relay.log",
+      "bytes": 2778,
+      "sha256": "4cb407280aa1b76cfbfddad4683ae5a41e7d9ccb6c5e1a225dcda6fc53b53a78"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "fd115ea8f14524832dbb293e0be7d27a9b956757bb652b9e5061efb36fe01c7f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result-hope_integrated_runner_probe.stages",
+      "bytes": 19461,
+      "sha256": "103304e77dfeafa42a8fabd525c80944db150f5e4fcdc9ad3f2dd844172adb84"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "edc48d550a0932fc1cfc67cc615b45d0064dc5b8b46520227b8ebf223ef4195f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 143025,
+      "sha256": "99356e31f9b37441bb39a385af4865e4ada31f17367f6c60e3dfd9c3cd475f17"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "4c78ccd893c861a1b6cf2e54062cbcee2cbeaf740750b321b01c40f034724201"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result-optitrack_mct_relay.stages.gz",
+      "bytes": 104454,
+      "sha256": "ab0a862548ad37ce005157a3a1b1b2a3dafe47286be6fc36f7acc7f5ced45809"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result.accounting.json",
+      "bytes": 159820,
+      "sha256": "a7a4540a6eebfe4bca8fa4ac5f7b9fbc49635035753a70d587c007bbb5e9471f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result.json.gz",
+      "bytes": 391985,
+      "sha256": "01c11586e89d53ddaf0278227c93c417500b814fb16ca0131f986bf5b03758c1"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result.log",
+      "bytes": 1893,
+      "sha256": "f655456bdd5802dd5f746a80ea4b523cc3dfc8f8f80f5c231575732ef3f9a14a"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_known/result.raw.json.gz",
+      "bytes": 449275,
+      "sha256": "ec2b854d10b9540d234171418d67861ff0ffdbe65bb65c37917e1948a0c94087"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 2778,
+      "sha256": "8c091f1a3dc535e921ceae5507f2c910addb7915f05706a1aa231ae64a53061e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "775865217099f7e29a8020e69b1920d448d3ab3622e4a1a1fe9638425a99572f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 40472,
+      "sha256": "bcd667582986c52a363cc1d23ff137599b7fe9c4c471262c4f7e443582a15782"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "71046c978befbb073d11bf704c5bbb8e20381a309889e9256d4cba7a7f9179f8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 150400,
+      "sha256": "3caaec92bd1b187a8d7abd6e54c4c99a2983473beec8e3b5e5919ccacfab19f6"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "639af9d42ed32247d7081d5757e597edb26e2910ed3e5d204d02ab66cacd65c2"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result-optitrack_mct_relay.stages.gz",
+      "bytes": 104154,
+      "sha256": "ac3632eeb6c7cd419496c2c242fda1e18843799be45c9372fa7ae044e1428b24"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result.accounting.json",
+      "bytes": 168465,
+      "sha256": "b84d1429bad5c6ad4875d373abd4184f96a5c4c7a619971050421624979c24c4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result.json.gz",
+      "bytes": 398613,
+      "sha256": "c4656ef4ec9550559e819b365b9298c090d16787a1ab682760be51283bb69c19"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result.log",
+      "bytes": 1875,
+      "sha256": "6762846be0cba69560ca817514a19b2afcd4248c79f42ed2158c678a825be323"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_unknown/result.raw.json.gz",
+      "bytes": 449940,
+      "sha256": "49ec4f51823cb8ea5bd24e73f4c98cc35aad6eacb668aab3547424814038a140"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result-hope_base_pose_flat_relay.log",
+      "bytes": 2991,
+      "sha256": "4483527f225912262af9d77ce4e875a7979bedcce3b6ca1fdc2bad4a798cf3d9"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "eddd0876c235424c0f2bb094e7a8771fb04315b47b5105c67d886af53631a424"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result-hope_integrated_runner_probe.stages",
+      "bytes": 40942,
+      "sha256": "f611a2cc07a1482feecd51ca56fcfbe4239bca065093961631cb9af16c4f8656"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "d20185d747b96ed428bb607a99dbcc29b08065c07e2acf8dc748e2c2cee83545"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 150432,
+      "sha256": "420ed1b1a37a4425aa77ace0ab22c8795ba8f577b7ea54b37217a0b76366fff3"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "0b7c6f496d13045adf287fd27ef46fdbbc88c9246cb36314dabaff58fe831376"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result-optitrack_mct_relay.stages.gz",
+      "bytes": 104288,
+      "sha256": "1ecf1e6d3d799fe64e601d187ec3ff9113608a6af6059f4655db937370b6aaca"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result.accounting.json",
+      "bytes": 174553,
+      "sha256": "9d20e13919e537715811089c31038bc702d9b9b5fbec57980a052fc7d24e1062"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result.json.gz",
+      "bytes": 411129,
+      "sha256": "15669e39c45af139d998d33b3abbb94de1db05b076a4359531870b79a636921b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result.log",
+      "bytes": 1814,
+      "sha256": "792fe92ce9f4a626f95f1da5856ab955c534c97ece7eebe76427e8d6afab2d39"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_chain_300_12_zero/result.raw.json.gz",
+      "bytes": 465353,
+      "sha256": "c24780c7ced101c3bf949ee6ba62b3f4035b3ae8404e5a347dbe389926c75804"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 2771,
+      "sha256": "6340261de4abdaff6dde3942b741f086a7350ecef816bf5c6254c7516e26fe64"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "0938c75b10dea1ef8d80c3eb6de3a440dc6dd09b68b4842a1fbd6eb84a5eb8ab"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 32662,
+      "sha256": "5e6ac6ead667c925527ed01d3cb7b5eaf3beba82e58778ab325d81e603cd8432"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "b67c0a869229c093e04394ede33d598ece3c2db5ef362384fb424c7066750591"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 90003,
+      "sha256": "ad995d7f99ef076437db90eb986d7abbeaa1a44b93271b759cd3c79a0faa3436"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "2f9032726314643317ff7b7c122850b9623be6d86d8ed97dc5038a99ce5c1eaa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result-optitrack_mct_relay.stages",
+      "bytes": 203871,
+      "sha256": "53e9f859b0d0723bd8c79dace2fbcb0f61b572226077d50e7c18a52b4f658b04"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result.accounting.json.gz",
+      "bytes": 31404,
+      "sha256": "6d20e5a82a27fef27314371705f5d933d073ffd896bf347d1df97a0063c226fb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result.json.gz",
+      "bytes": 226591,
+      "sha256": "f7e9df4e01025815cb4aec7b89f8f05ad82312aeda85635889057d638f7630e0"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result.log",
+      "bytes": 1848,
+      "sha256": "cf62b82f15b36c2f2f4931594b8bde595ed748d0f3d3f73f693ba2e0bffccb09"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result.raw.json.gz",
+      "bytes": 275599,
+      "sha256": "0a7e92f1df1bff0305f74389508dbdaf725bc2ac97fb18a592517a9c8f78b861"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result-hope_base_pose_flat_relay.log",
+      "bytes": 2768,
+      "sha256": "a0128afcc6baac1ba09ae75b7ed5583d6556a9d072125f7142296739c83094fe"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "89b872d4045f669931458b161df78c4c3ac82f92b8f730edd918eb3b27f347ef"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result-hope_integrated_runner_probe.stages",
+      "bytes": 7503,
+      "sha256": "e4981f37c9fc0baa825603176e9c616f2303e78d65af617a9e7bd475bffed572"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "15d77e456e2f8b6aa1a0d87d846d1b51f3bbb8168436b55848f55138d3993119"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 70430,
+      "sha256": "a11d23ddefb68efb81f0bbe6e2274696a18a98761b0efe5bcb7fd97d3f675310"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "3282bc11ae257ed97494c9e6e9f4d1a0f1147e62f91196e3897cca2827e3816e"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result-optitrack_mct_relay.stages",
+      "bytes": 197704,
+      "sha256": "50658c14982480e6e339b173d2165099fd0731c9eaf718229ccece2d6c0aff59"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result.accounting.json",
+      "bytes": 49068,
+      "sha256": "82956b697539756e67e9e1814c9b17049a7e3b48fafdd53e7a5d22ac8b87e318"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result.json",
+      "bytes": 49068,
+      "sha256": "82956b697539756e67e9e1814c9b17049a7e3b48fafdd53e7a5d22ac8b87e318"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result.log",
+      "bytes": 1318,
+      "sha256": "40fe3feceb77529fbbf7a35726d98c23167e6c6fe98f6bbeded2688cac0add42"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result.raw.json.gz",
+      "bytes": 248926,
+      "sha256": "1df829adcee81931ce987a39c1bba89c3e5aa9c35fabb9c6fb98daa8cc3e7b48"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result-hope_base_pose_flat_relay.log",
+      "bytes": 2778,
+      "sha256": "191aa1083da37ca1e02321720c5727d17abcc08a55361e77f449655977ab1901"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "1c694672193d67d02b4ac460dd0091b9c068b1f8ec6e527b483e88e97dbb63f8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result-hope_integrated_runner_probe.stages",
+      "bytes": 64058,
+      "sha256": "c96aad6898893916269ef38d9fd944ce1201c0de142d7a8381be1f8a9aa67f69"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "30477d32e1a1789a7a771e91a8e08948d23d7f716a7525354e435e69002f1e0f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 175848,
+      "sha256": "2a8fc95d12e2cd7e7ed4d719ab641b4ed445f1dd86fb2b07944b3b2d15717bdb"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "50b08df618b19d7e40ab86a59dbc3c73f76d85f61b30320091644dd070df18c8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result-optitrack_mct_relay.stages.gz",
+      "bytes": 106753,
+      "sha256": "0f020be9a28fbe76a6acacdf324ee2745c7a0860534b4d891cc18e058c78f4d4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result.accounting.json.gz",
+      "bytes": 57943,
+      "sha256": "a93fab59a1d621be5f262e8765f0a3ac83d1f070886331f90a07bb4d15cf5c60"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result.json.gz",
+      "bytes": 440526,
+      "sha256": "5fdba092e50f812e2ec6b677a5cd2f305a478e65364015f4087c24e32c41bc6f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result.log",
+      "bytes": 1776,
+      "sha256": "9ddea1e0924c6397b0e5d0c225e9f6bd134f092e987475f371296ad17376ed06"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result.raw.json.gz",
+      "bytes": 492409,
+      "sha256": "729047bdaea0611daa906805b4eb8b55973cff5d222459bc0c37def3c4cd3f88"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result-hope_base_pose_flat_relay.log",
+      "bytes": 3402,
+      "sha256": "4da628075ef477d5340a0713310cc8bee438b490fa64982adfe4000d2cd7d99d"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result-hope_integrated_runner_probe.log",
+      "bytes": 371,
+      "sha256": "32a314ff578e3506dc77f5847ccc4b620a801670eb2da92c52279194f5c0cc19"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result-hope_integrated_runner_probe.stages",
+      "bytes": 18345,
+      "sha256": "7048fb9a35fb41025cb8db79ebe62d27a6b1e13dd65f9197072b759b023da3c8"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result-hope_planner_cpp_node.log",
+      "bytes": 371,
+      "sha256": "784e867d1a646ff06543db9bbe08fa3330e801386b9820134c618d047c79e920"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result-hope_planner_cpp_node.stages.gz",
+      "bytes": 142312,
+      "sha256": "5c04a5b8a8b8502cb13ff2aec81c902eb8f1dc9dd4be352288f5df53d3d74c0b"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result-optitrack_mct_relay.log",
+      "bytes": 787,
+      "sha256": "1d387a0f33e8982a73f8eec81ccb549948af054195c72587760ea3d6d88b83c4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result-optitrack_mct_relay.stages.gz",
+      "bytes": 104197,
+      "sha256": "363bc739549505b5f19e81fe2a9335a3f2b2c5d32e24e98c77a7b5341e30918f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result.accounting.json",
+      "bytes": 158701,
+      "sha256": "811e4e1872bb47bd58e054530fb3fc2d41603e22757c8f7cc2cdb6bbc734c51f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result.json",
+      "bytes": 158701,
+      "sha256": "811e4e1872bb47bd58e054530fb3fc2d41603e22757c8f7cc2cdb6bbc734c51f"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result.log",
+      "bytes": 1318,
+      "sha256": "361fab6500788fd7efbc4d3be369ac0dc4aa51d382a4a6b4aa9d4402ee6f62c4"
+    },
+    {
+      "path": "v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result.raw.json.gz",
+      "bytes": 451074,
+      "sha256": "df7ab1bab18235c2101548266a6871f84c864eb3b38d52286f4698461e0ac1e3"
+    }
+  ],
+  "parts": [
+    {
+      "file": "repeated-campaign-repetition-3.tar.gz.part000",
+      "bytes": 20971520,
+      "sha256": "2b5dd3019a2835cf8da51393cd0d3d8cc1cb4c69f09860836851f13883c3ec1f"
+    },
+    {
+      "file": "repeated-campaign-repetition-3.tar.gz.part001",
+      "bytes": 11857524,
+      "sha256": "374b6b34f9becd3ed5bdae22deed82098c21894c5498b6df547048c9cba38206"
+    }
+  ]
+}
