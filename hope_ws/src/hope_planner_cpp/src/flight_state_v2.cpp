@@ -1213,6 +1213,38 @@ bool FlightPipeline::observe(BallSample sample) {
         low.position.x() >= 0 && low.position.x() <= config_.table.length &&
         low.position.y() >= config_.table.y_max - config_.table.width &&
         low.position.y() <= config_.table.y_max) {
+      // A single low outlier produces both endpoint slopes even when the CKF
+      // rejects it. Require independent post-contact motion, excluding that
+      // sample, to place an ascending surface crossing inside the source
+      // bracket. Do not simply require CKF acceptance: real impacts can exceed
+      // the innovation gate when the contact model is imperfect.
+      if (minimum + 2 >= samples.end()) return update.accepted;
+      const auto &right = *(minimum + 1), &later = *(minimum + 2);
+      const double rise_dt = static_cast<double>(
+          (static_cast<long double>(later.source_time_ns) - right.source_time_ns) * 1e-9L);
+      const Vec3 rise = (later.position - right.position) / rise_dt;
+      const auto corroborating_spin = shot_.spin_at(right.source_time_ns);
+      const double az = ball_acceleration(config_.physics, rise,
+          corroborating_spin.usable() ? *corroborating_spin.omega : Vec3::Zero()).z();
+      const double rise_vz = rise.z() - .5 * az * rise_dt;
+      const double bracket_dt = static_cast<double>(
+          (static_cast<long double>((minimum - 1)->source_time_ns) - right.source_time_ns) * 1e-9L);
+      const double bracket_height = right.position.z() + rise_vz * bracket_dt +
+          .5 * az * bracket_dt * bracket_dt;
+      const double height_tolerance = std::max(.001, 3 * config_.measurement_std_m.z());
+      if (!std::isfinite(rise_vz) || rise_vz <= 0 ||
+          !std::isfinite(bracket_height) ||
+          bracket_height > config_.physics.radius + height_tolerance)
+        return update.accepted;
+      if (minimum >= samples.begin() + 2) {
+        const auto &left = *(minimum - 1), &older = *(minimum - 2);
+        const double dt = static_cast<double>(
+            (static_cast<long double>(left.source_time_ns) - older.source_time_ns) * 1e-9L);
+        const Vec3 descending = (left.position - older.position) / dt;
+        const double vz = descending.z() + .5 * dt * ball_acceleration(
+            config_.physics, descending, Vec3::Zero()).z();
+        if (!std::isfinite(vz) || vz >= 0) return update.accepted;
+      }
       ModelState pre;
       pre.position = low.position;
       pre.velocity = (low.position - a.position) / ta;

@@ -29,7 +29,7 @@ its submitted descendant changes only documentation. Baseline receipts are under
 | Step | Required result | State |
 |---|---|---|
 | Baseline | Source/config hashes, native/ROS/receiver/plane/parity receipts, retained failures | In progress |
-| Bounce | Isolated outlier rejected as contact; genuine/double/sparse/restored contacts tested | Pending |
+| Bounce | Isolated outlier rejected as contact; genuine/double/sparse/restored contacts tested | Native checks pass |
 | Adapter | Explicit validity result and V2-to-StrikeTarget downstream parity | Pending |
 | Coordinator | One owner, bounded history, packet prefix reconciliation and revocation epochs | Pending |
 | Plane and managed backend | Existing plane and one-shot planner integration, actual schema 4/5 | Pending |
@@ -52,3 +52,15 @@ Run finite timing campaigns without concurrent compilation or archival work.
 Keep commits limited to coherent changes with focused checks; run the complete
 clean ladder and predeclared repetitions on the final exact source. Preserve
 failures, raw evidence, binary/config hashes and limits on physical accuracy.
+
+## Contact correction receipt
+
+The new isolated-outlier and restored-outlier regressions fail on the pinned
+source and pass after independent post-contact motion corroboration was added.
+A separate analytic impact with deliberately mismatched filter restitution
+remains detected despite rejected post-contact observations at 150/300/360 Hz.
+All 21 native groups pass, including inherited close double-bounce, sparse,
+fast overlapping-window, restored contact and selected upstream receiver tests.
+Logs: `v2-incoming/baseline/contact-before.{log,xml,exit}` and
+`v2-incoming/contact-tests.{log,exit}` under the environment evidence root.
+Sanitizer and ROS qualification remain pending.

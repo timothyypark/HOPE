@@ -24,7 +24,8 @@ target_link_libraries(hope_native_core PUBLIC Eigen3::Eigen)
 target_compile_options(hope_native_core PRIVATE -Wall -Wextra -Wpedantic)
 foreach(test flight_prediction_v2 spin_physics future_contact_predictor batch_physics_estimator
     trajectory_and_stage3 target_turn_guard prediction_event_order schema2
-    spin_estimator audit_logger post_net_one_shot incoming_trajectory adaptive_flight_commit)
+    spin_estimator audit_logger post_net_one_shot incoming_trajectory adaptive_flight_commit
+    v2_contact_corroboration)
   add_executable(test_${test} ${PLANNER}/test/test_${test}.cpp)
   target_link_libraries(test_${test} PRIVATE hope_native_core GTest::gtest_main)
   add_test(NAME ${test} COMMAND test_${test})
