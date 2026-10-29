@@ -1,0 +1,295 @@
+[
+  {
+    "archive": "development-and-baseline.tar.gz",
+    "bytes": 120762370,
+    "sha256": "f9e2a61bfdb9002cf76f8ab65287f158cc885e0f5ce90954b8dddd5bfd5ef486",
+    "parts": [
+      {
+        "file": "development-and-baseline.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "230187ba412f3507c6fc00c1a4ab291498bcf3ca7c1cd0e9093dfdf9ee4b690d"
+      },
+      {
+        "file": "development-and-baseline.tar.gz.part001",
+        "bytes": 20971520,
+        "sha256": "0a5c2bb156a2f7e5fb1937e3ee1815384b3e74afd8ebf0b73fd788d34f2949be"
+      },
+      {
+        "file": "development-and-baseline.tar.gz.part002",
+        "bytes": 20971520,
+        "sha256": "b0599826ab59e038c5edfaa98f0eebb85cfb528f75195654e493ab7fd9bbc31f"
+      },
+      {
+        "file": "development-and-baseline.tar.gz.part003",
+        "bytes": 20971520,
+        "sha256": "85fc03f1faa42391d68972a533b8e73554c9bcc2be643529c91645ae437d70a5"
+      },
+      {
+        "file": "development-and-baseline.tar.gz.part004",
+        "bytes": 20971520,
+        "sha256": "f595b3d68903cf1306d5934ecdeb21d000e533c3e78c44a501031f9b7138bd77"
+      },
+      {
+        "file": "development-and-baseline.tar.gz.part005",
+        "bytes": 15904770,
+        "sha256": "a2de8f8e72b39e3ee241147319de082b0b5d7603c57705b965fe34f803e398b8"
+      }
+    ]
+  },
+  {
+    "archive": "retained-binary-inventories.tar.gz",
+    "bytes": 351917,
+    "sha256": "d5c94423243c90e0788671bd6eba3da579a70fa917043e5c5737787705379f64"
+  },
+  {
+    "archive": "qualification-01-retained.tar.gz",
+    "bytes": 69970,
+    "sha256": "344724fc4388ad9b7d2f182ea29d18e50204dbc81361279923015a3ee5d62c79"
+  },
+  {
+    "archive": "qualification-02-retained.tar.gz",
+    "bytes": 3624310,
+    "sha256": "556a8d1fafcf181c9b50e71ab960e082dc8ee10666acaa4c0241c8617527ffbc"
+  },
+  {
+    "archive": "qualification-03-retained.tar.gz",
+    "bytes": 22292789,
+    "sha256": "398909265e024908751b58a32efddf92b02cc467937e0bc0c1e7678475cd1a6f"
+  },
+  {
+    "archive": "qualification-04-retained.tar.gz",
+    "bytes": 47054173,
+    "sha256": "0dc576d565cbfaa8a49a1721bfb65e6847e8604eb88e6762a117ba1711419cd2",
+    "parts": [
+      {
+        "file": "qualification-04-retained.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "2ec16e0b86e9dc25b22e6b8cf1dab8e0e32f3bf5706e00b8605a55055b41c215"
+      },
+      {
+        "file": "qualification-04-retained.tar.gz.part001",
+        "bytes": 20971520,
+        "sha256": "df25dcfff8c8b91d6277f98760a4da448346c1030e3b7cb17f3da45d6851674b"
+      },
+      {
+        "file": "qualification-04-retained.tar.gz.part002",
+        "bytes": 5111133,
+        "sha256": "500372d4e3c0c8e17f557af456b6e59d500b34db5254751e3107e2818e154d44"
+      }
+    ]
+  },
+  {
+    "archive": "qualification-05-retained.tar.gz",
+    "bytes": 262438235,
+    "sha256": "bc2be9131bdfb023be3077dddc0fb90eee087fd685f3fa4c5d99cbd5eb223f53",
+    "parts": [
+      {
+        "file": "qualification-05-retained.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "c0cf6730d42523b5ec7e6fa422781fabd24754815967e78afba73976577b7e39"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part001",
+        "bytes": 20971520,
+        "sha256": "39a9b1a2bdd1fcc2abca87391a327fe941bf7a4eea69be04a78a72cbb519236b"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part002",
+        "bytes": 20971520,
+        "sha256": "e6e6414e4d07f66a805f52aa11552d14aadd63353bc01f3206ab300b64764b09"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part003",
+        "bytes": 20971520,
+        "sha256": "efd53f3332e85ac70bd09d9b79533e5c5910371c7d24d94fa8b06831e9288122"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part004",
+        "bytes": 20971520,
+        "sha256": "066975449bec089376dc3ffde6d8beb8f3614a25c91f4315657029660a050630"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part005",
+        "bytes": 20971520,
+        "sha256": "31fd6a19e948dbd0ef2c8b8ce3d41866cea19cfd903ff4d691bc11e77a90ee8b"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part006",
+        "bytes": 20971520,
+        "sha256": "01671bc3c485ce563d5574bad9790b55beefdf1e902f5acc2ffec3639ea8e40a"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part007",
+        "bytes": 20971520,
+        "sha256": "38c9ffaa5712fe2165c830ce703547b5f2ed6323471536b79c1d598c77b3e5ff"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part008",
+        "bytes": 20971520,
+        "sha256": "44032602295a3e043dd27a8bf64d335c7538583667c0a2341d4a032bda6e8436"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part009",
+        "bytes": 20971520,
+        "sha256": "acb6e80dcfe69ebce447ef2451592fa4abebc1c30dd043bea187d67dfafd399d"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part010",
+        "bytes": 20971520,
+        "sha256": "2f56774fee78c08cbf389f4938f9b99f214a8a1b0c37effb0130d9abc2efc446"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part011",
+        "bytes": 20971520,
+        "sha256": "90f342706646b23f52660be7378bfd57ec5722dd867a328950afaae8b7b58b48"
+      },
+      {
+        "file": "qualification-05-retained.tar.gz.part012",
+        "bytes": 10779995,
+        "sha256": "136c4ec0c39932f1ec25f97b74f66bba043a988970c79b4a65277386b5efbe87"
+      }
+    ]
+  },
+  {
+    "archive": "final-complete-ladder.tar.gz",
+    "bytes": 57853600,
+    "sha256": "2d2945d42b9684bb2d2daa420e807ac7fabc80e37705f3cffea5b65bba1bd820",
+    "parts": [
+      {
+        "file": "final-complete-ladder.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "9880a0bd1cf6cb479df1150aa7765ac3b0345446d72fe79aa6da42cab9d61a98"
+      },
+      {
+        "file": "final-complete-ladder.tar.gz.part001",
+        "bytes": 20971520,
+        "sha256": "12e936f979db0d24c0cade5e434ce6f6848dec166067579b8258efc01d045973"
+      },
+      {
+        "file": "final-complete-ladder.tar.gz.part002",
+        "bytes": 15910560,
+        "sha256": "188baa850f210f422273dd4163ec33e95bfd90cc3c0c7da086d5ed6f01be67df"
+      }
+    ]
+  },
+  {
+    "archive": "repeated-campaign-freeze.tar.gz",
+    "bytes": 90844,
+    "sha256": "0b14284872912412377053ff4e22ceb74133fed457e4a5b8fe0fc775730726ef"
+  },
+  {
+    "archive": "repeated-campaign-repetition-1.tar.gz",
+    "bytes": 33401249,
+    "sha256": "3ffeff20d55132ec527712c062edcb8442d7cbe5a882cc78adf8222d46006e0b",
+    "parts": [
+      {
+        "file": "repeated-campaign-repetition-1.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "68f54341b35eb7faabd61848314781455e248317d2e358abc459908762ea0f79"
+      },
+      {
+        "file": "repeated-campaign-repetition-1.tar.gz.part001",
+        "bytes": 12429729,
+        "sha256": "a64b107cee9c8d3722de0f01979050ac42be686e2176d1c99a4db9de276a2a62"
+      }
+    ]
+  },
+  {
+    "archive": "repeated-campaign-repetition-2.tar.gz",
+    "bytes": 32531794,
+    "sha256": "a9599bccfaed5780ace44d3b8c732cabee72e4e8893b0d65450c337ac5aa893f",
+    "parts": [
+      {
+        "file": "repeated-campaign-repetition-2.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "5e000cf43199a80f7ed83f6c8084624d5bc19d2a5a6ad49cd55d4017918f1e4b"
+      },
+      {
+        "file": "repeated-campaign-repetition-2.tar.gz.part001",
+        "bytes": 11560274,
+        "sha256": "ecabd281246fa629ee685e0e537e1ffeaa66b7a874b8561064aa9b9d71cba924"
+      }
+    ]
+  },
+  {
+    "archive": "repeated-campaign-repetition-3.tar.gz",
+    "bytes": 32829044,
+    "sha256": "170ede0b0586cbfbbd7519b7530a9d7c39ce51ddf85128463ae767a6b7fc5d4e",
+    "parts": [
+      {
+        "file": "repeated-campaign-repetition-3.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "2b5dd3019a2835cf8da51393cd0d3d8cc1cb4c69f09860836851f13883c3ec1f"
+      },
+      {
+        "file": "repeated-campaign-repetition-3.tar.gz.part001",
+        "bytes": 11857524,
+        "sha256": "374b6b34f9becd3ed5bdae22deed82098c21894c5498b6df547048c9cba38206"
+      }
+    ]
+  },
+  {
+    "archive": "repeated-campaign-repetition-4.tar.gz",
+    "bytes": 32542662,
+    "sha256": "8722350755737d8e73358524893c5f8fd7427eef4b638aa9ee8624cedc16f80b",
+    "parts": [
+      {
+        "file": "repeated-campaign-repetition-4.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "2baec3535969a7002a9e37e9c318b316e4ffca7361896ff7012c87c00ac4ed37"
+      },
+      {
+        "file": "repeated-campaign-repetition-4.tar.gz.part001",
+        "bytes": 11571142,
+        "sha256": "0fec04270c388828452606f0fa79e1a1ca8a15890351f29ed5f42dcbccc2cbad"
+      }
+    ]
+  },
+  {
+    "archive": "repeated-campaign-repetition-5.tar.gz",
+    "bytes": 32461800,
+    "sha256": "5f2b299bec69999106d5fac64962cf3eadde0248ece8401acc0ea3f6b99cf168",
+    "parts": [
+      {
+        "file": "repeated-campaign-repetition-5.tar.gz.part000",
+        "bytes": 20971520,
+        "sha256": "88ceb0db70434fd6f3d0fde49fb4b2f0d9862b006310ceff99fb953124a849f4"
+      },
+      {
+        "file": "repeated-campaign-repetition-5.tar.gz.part001",
+        "bytes": 11490280,
+        "sha256": "a15b09e50129ed0b1233a0255e83fc1e6165bce165b40a8d37d222b02507b19c"
+      }
+    ]
+  },
+  {
+    "archive": "incoming-campaign-freeze.tar.gz",
+    "bytes": 97303,
+    "sha256": "d85fe0978466684b529483533bba7300206063f9cc3efb4b1919c485080f59f3"
+  },
+  {
+    "archive": "incoming-campaign-repetition-1.tar.gz",
+    "bytes": 8543704,
+    "sha256": "6e6b5a13e44c505ee4ff2cec1e118ee9d1b321942f255795fcce33afc466e7db"
+  },
+  {
+    "archive": "incoming-campaign-repetition-2.tar.gz",
+    "bytes": 8470714,
+    "sha256": "17cc4fa503da96433f597442d696c095b3026e240ed1dc5fde3ac2ff505c7489"
+  },
+  {
+    "archive": "incoming-campaign-repetition-3.tar.gz",
+    "bytes": 8445023,
+    "sha256": "6c5e5348bdc0b0fe8be187ce2f19f6487e6fdc8109a851c8441cc7dcedd8bd29"
+  },
+  {
+    "archive": "incoming-campaign-repetition-4.tar.gz",
+    "bytes": 8518362,
+    "sha256": "1c4bedefd90d2f431c8a9e52433704ee10afc6fff26c0748034c6c34c613daec"
+  },
+  {
+    "archive": "incoming-campaign-repetition-5.tar.gz",
+    "bytes": 8394045,
+    "sha256": "52fada0c7294992c62f8eaa4ad8893e31715f7ac68dd253f4e3482df4a75fddf"
+  }
+]
