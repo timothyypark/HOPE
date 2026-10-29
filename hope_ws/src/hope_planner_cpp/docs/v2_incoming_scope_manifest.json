@@ -110,6 +110,14 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/docs/v2_incoming_qualification.json",
+      "owner": "qualification",
+      "why_needed": "Record explicit milestone contracts, scope, preserved failures and qualification boundaries",
+      "tests": [
+        "flight_v2_scope"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/docs/v2_incoming_scope_manifest.json",
       "owner": "qualification",
       "why_needed": "Record explicit milestone contracts, scope, preserved failures and qualification boundaries",
