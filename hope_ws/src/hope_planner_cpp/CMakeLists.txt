@@ -77,6 +77,10 @@ add_library(hope_integrated_return
   src/return_eligibility.cpp src/validated_return_planner.cpp)
 target_include_directories(hope_integrated_return PUBLIC include)
 target_link_libraries(hope_integrated_return PUBLIC hope_v2_forecast_core)
+add_library(hope_v2_incoming_core src/v2_strike_adapter.cpp)
+target_include_directories(hope_v2_incoming_core PUBLIC include)
+target_link_libraries(hope_v2_incoming_core PUBLIC hope_integrated_return hope_planner_core)
+install(TARGETS hope_v2_incoming_core ARCHIVE DESTINATION lib LIBRARY DESTINATION lib)
 add_library(hope_integrated_runtime src/integrated_planner_runtime.cpp)
 target_include_directories(hope_integrated_runtime PUBLIC include)
 target_link_libraries(hope_integrated_runtime PUBLIC hope_integrated_return
@@ -313,6 +317,9 @@ if(BUILD_TESTING)
 
   ament_add_gtest(test_runtime_plane_reference test/test_runtime_plane_reference.cpp)
   target_link_libraries(test_runtime_plane_reference hope_planner_core Eigen3::Eigen)
+  ament_add_gtest(test_v2_strike_adapter test/test_v2_strike_adapter.cpp)
+  set_target_properties(test_v2_strike_adapter PROPERTIES CXX_STANDARD 20)
+  target_link_libraries(test_v2_strike_adapter hope_v2_incoming_core)
   ament_add_gtest(test_planner_runtime_plane test/test_planner_runtime_plane.cpp src/planner_node.cpp)
   target_link_libraries(test_planner_runtime_plane hope_integrated_runtime)
   target_link_libraries(test_planner_runtime_plane hope_planner_core Eigen3::Eigen rclcpp::rclcpp

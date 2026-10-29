@@ -30,7 +30,7 @@ its submitted descendant changes only documentation. Baseline receipts are under
 |---|---|---|
 | Baseline | Source/config hashes, native/ROS/receiver/plane/parity receipts, retained failures | In progress |
 | Bounce | Isolated outlier rejected as contact; genuine/double/sparse/restored contacts tested | Native checks pass |
-| Adapter | Explicit validity result and V2-to-StrikeTarget downstream parity | Pending |
+| Adapter | Explicit validity result and V2-to-StrikeTarget downstream parity | Native checks pass |
 | Coordinator | One owner, bounded history, packet prefix reconciliation and revocation epochs | Pending |
 | Plane and managed backend | Existing plane and one-shot planner integration, actual schema 4/5 | Pending |
 | Runner | Before-publication, before-engagement and engaged lifecycle evidence | Pending |
@@ -64,3 +64,12 @@ fast overlapping-window, restored contact and selected upstream receiver tests.
 Logs: `v2-incoming/baseline/contact-before.{log,xml,exit}` and
 `v2-incoming/contact-tests.{log,exit}` under the environment evidence root.
 Sanitizer and ROS qualification remain pending.
+
+## Adapter receipt
+
+Explicit availability/support/eligibility statuses, committed/tentative managed
+plane conversion, source-prefix identity and terminal-evidence checks are native
+interfaces. Adapter checks cover 27 position/speed/plane-mode combinations with
+exact outgoing vector and serialized-packet equality, followed by the actual
+schema-4/5 receiver. Existing RuntimePlaneReference tests also pass. These are
+component checks; the ROS drop-in and Runner engagement gate are still pending.
