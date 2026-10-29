@@ -15,6 +15,7 @@ class IncomingRos : public ::testing::TestWithParam<std::string> {
     executor = std::make_unique<rclcpp::executors::SingleThreadedExecutor>();
     rclcpp::NodeOptions options;
     options.append_parameter_override("prediction_backend", "v2_incoming");
+    options.append_parameter_override("v2_incoming.continuous_output", continuous_output);
     options.append_parameter_override("racket_flat_schema", 4);
     options.append_parameter_override("flight_packet_input_enabled", true);
     options.append_parameter_override("post_net_one_shot_enabled", true);
@@ -78,7 +79,7 @@ class IncomingRos : public ::testing::TestWithParam<std::string> {
     receipt.data=a3_deploy::SessionHomeReceipt{100,-.5,-.7625,.58,7,8,true}.pack(sequence,true);
     base->publish(pose); home->publish(receipt);
   }
-  void flight(bool mismatch=false) {
+  void flight(bool mismatch=false, bool send_packets=true) {
     ModelState physical; physical.position=Vec3(2.5,-.7,.32); physical.velocity=Vec3(-10,0,-.5);
     hope_msgs::msg::BallFlightPacket packet;
     packet.schema_version=1; packet.session_id="ros-test"; packet.producer_instance_id="packetizer";
@@ -109,11 +110,12 @@ class IncomingRos : public ::testing::TestWithParam<std::string> {
           packet.commit_exposure_unix_ns=stamp; packet.freeze_wall_unix_ns=packet.publish_wall_unix_ns=now();
           if (mismatch) packet.samples[5].position.z+=.001;
           packet.payload_hash=flight_packet_message_payload_hash(packet);
-          packets->publish(packet); sent=true; commit_source=stamp;
+          if (send_packets) packets->publish(packet);
+          sent=true; commit_source=stamp;
         }
       }
       if (source_sequence%5==0) body(commands.empty() ? -.4 : -.2);
-      if (sent && source_sequence%10==0) { packet.transmit_index=1; packets->publish(packet); }
+      if (send_packets && sent && source_sequence%10==0) { packet.transmit_index=1; packets->publish(packet); }
       spin(3ms);
     }
     ASSERT_TRUE(sent);
@@ -132,6 +134,7 @@ class IncomingRos : public ::testing::TestWithParam<std::string> {
   std::vector<hope_msgs::msg::StrikeCandidateV1> candidates,revocations;
   a3_pingpong::PpRacketTargetInput receiver{4};
   std::uint64_t sequence=0, source_sequence=0; std::int64_t commit_source=0;
+  bool continuous_output=true;
 };
 TEST_P(IncomingRos, ManagedCommandAndContinuousForecastShareFlightAndFrozenPlane) {
   flight();
@@ -158,5 +161,29 @@ TEST_P(IncomingRos, InconsistentPacketHistoryAbstainsWhileContinuousTrackingCont
   EXPECT_FALSE(receiver.Latest().has_valid);
   EXPECT_GT(predictions.size(),10u);
 }
+TEST_P(IncomingRos, ContinuousForecastRunsWithoutPacketCommandConsumer) {
+  flight(false, false);
+  EXPECT_TRUE(commands.empty());
+  EXPECT_GT(predictions.size(),10u);
+  EXPECT_TRUE(std::any_of(candidates.begin(),candidates.end(),[&](const auto& c) {
+    return c.physical_state_available && c.strike_contact_supported &&
+        !c.command_eligible && c.plane_flight_id==0 &&
+        c.plane_tentative==(GetParam()!="fixed");
+  }));
+  EXPECT_TRUE(std::any_of(predictions.begin(),predictions.end(),[](const auto& p) {
+    return p.forecast_status=="REVOKED" || p.forecast_status=="EXPIRED";
+  }));
+}
 INSTANTIATE_TEST_SUITE_P(PlaneModes,IncomingRos,::testing::Values("fixed","per_ball","stable_per_ball"));
+class IncomingOutputDisabled : public IncomingRos {
+  void SetUp() override { continuous_output=false; IncomingRos::SetUp(); }
+};
+TEST_P(IncomingOutputDisabled, DisablingContinuousOutputPreservesOneShotAndRevocations) {
+  flight();
+  ASSERT_EQ(commands.size(),1u);
+  EXPECT_TRUE(receiver.Latest().has_valid);
+  EXPECT_TRUE(predictions.empty()); EXPECT_TRUE(candidates.empty());
+  EXPECT_FALSE(revocations.empty());
+}
+INSTANTIATE_TEST_SUITE_P(PlaneModes,IncomingOutputDisabled,::testing::Values("fixed","per_ball","stable_per_ball"));
 }  // namespace

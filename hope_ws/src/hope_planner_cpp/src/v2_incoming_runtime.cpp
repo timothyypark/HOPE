@@ -31,6 +31,7 @@ V2IncomingRuntime::V2IncomingRuntime(rclcpp::Node& node, const BallPhysics& phys
     throw std::invalid_argument("v2_incoming requires explicit registered base calibration/world identities");
   base_calibration_ = calibration; base_world_ = world;
   producer_ = text("producer_id", "v2-incoming-planner");
+  accounting_.configure(text("stage_trace_path"));
   continuous_output_ = node.declare_parameter("v2_incoming.continuous_output", true);
   full_rate_hz_ = node.declare_parameter("v2_incoming.full_output_rate_hz", 50.);
   if (!std::isfinite(full_rate_hz_) || full_rate_hz_ < 0 || full_rate_hz_ > 300)
@@ -53,14 +54,22 @@ V2IncomingRuntime::V2IncomingRuntime(rclcpp::Node& node, const BallPhysics& phys
       std::string(revocations_->get_topic_name()) != std::string(prefix)+"revocation")
     throw std::invalid_argument("V2 incoming shadow outputs cannot be remapped");
   observations_ = node.create_subscription<hope_msgs::msg::BallObservationV2>(
-      text("observation_topic", "/ball/observation_v2"), rclcpp::QoS(8).best_effort(),
+      text("observation_topic", "/hope/ball/observation_v2"), rclcpp::QoS(8).best_effort(),
       [this, wake](hope_msgs::msg::BallObservationV2::ConstSharedPtr message) {
         auto sample = decode_observation(*message);
         sample.receipt_steady_ns = steady_ns();
         sample.receipt_wall_ns = node_.now().nanoseconds();
-        owner_->observe(sample, sample.receipt_wall_ns);
+        trace("planner_received", sample.source_time_ns, sample.sequence, 0);
+        const bool accepted = owner_->observe(sample, sample.receipt_wall_ns);
+        trace(accepted ? "tracker_accepted" : "tracker_rejected", sample.source_time_ns,
+              sample.sequence, 0, {}, sample.receipt_steady_ns);
         latest_source_ns_.store(owner_->counters().latest_source_ns);
-        if (pending_.exchange(true)) ++superseded_;
+        const auto replaced = pending_source_ns_.exchange(sample.source_time_ns);
+        if (pending_.exchange(true)) {
+          ++superseded_;
+          if (replaced) trace("forecast_superseded", replaced, 0, 0);
+        }
+        trace("forecast_requested", sample.source_time_ns, sample.sequence, 0);
         wake();
       });
   expiry_ = node.create_wall_timer(std::chrono::milliseconds(5), [this, reference] {
@@ -68,6 +77,20 @@ V2IncomingRuntime::V2IncomingRuntime(rclcpp::Node& node, const BallPhysics& phys
     owner_->expire(node_.now().nanoseconds());
     flush_statuses();
   });
+}
+
+V2IncomingRuntime::~V2IncomingRuntime() {
+  expiry_.reset(); observations_.reset();
+  try { accounting_.flush(); }
+  catch (const std::exception& e) { RCLCPP_ERROR(node_.get_logger(), "%s", e.what()); }
+}
+void V2IncomingRuntime::trace(const char* stage, std::int64_t source,
+    std::uint64_t revision, std::uint64_t generation, const std::string& reason,
+    std::int64_t started) {
+  if (!accounting_.enabled()) return;
+  const auto now = steady_ns();
+  accounting_.record(stage, source, revision, generation, node_.now().nanoseconds(),
+                     now, started ? now-started : 0, reason);
 }
 
 void V2IncomingRuntime::update_reference(
@@ -113,9 +136,17 @@ void V2IncomingRuntime::candidate(const V2StrikeCandidate& value,
   if (query && prediction) wire.event_evidence = encode_prediction(*prediction, query->pipeline.shot()).events;
   wire.published_at_ns = node_.now().nanoseconds();
   std::lock_guard<std::mutex> output_lock(output_mutex_);
-  if (value.status == IncomingStatus::Revoked || value.status == IncomingStatus::Expired)
+  bool published = false;
+  if (value.status == IncomingStatus::Revoked || value.status == IncomingStatus::Expired) {
     revocations_->publish(wire);
-  if (continuous_output_) candidates_->publish(wire);
+    published = true;
+  }
+  if (continuous_output_ && value.revision > last_candidate_revision_) {
+    candidates_->publish(wire);
+    last_candidate_revision_ = value.revision;
+    published = true;
+  }
+  if (published) trace("candidate_published", value.source_ns, value.revision, value.token.generation, wire.status);
 }
 
 void V2IncomingRuntime::flush_statuses() {
@@ -140,7 +171,11 @@ void V2IncomingRuntime::flush_statuses() {
     wire.plane_revision = status.plane.snapshot.generation;
     wire.generated_at_ns = wire.published_at_ns = node_.now().nanoseconds();
     std::lock_guard<std::mutex> output_lock(output_mutex_);
-    compact_->publish(wire);
+    if (wire.forecast_revision > last_compact_revision_) {
+      compact_->publish(wire);
+      last_compact_revision_ = wire.forecast_revision;
+    }
+    trace("status_published", status.source_ns, status.revision, status.token.generation, status.reason);
   }
 }
 
@@ -148,6 +183,8 @@ bool V2IncomingRuntime::forecast(IncomingQuery& query, IncomingEvaluation& resul
   const auto metrics = owner_->counters();
   return owner_->publish(query, result, node_.now().nanoseconds(), [&](V2StrikeCandidate& value) {
     if (!continuous_output_) return true;
+    if (value.source_ns && static_cast<long double>(value.expires_ns) - node_.now().nanoseconds() < 5000000.L)
+      return false;
     auto wire = encode_prediction(result.forecast, query.pipeline.shot());
     wire.session_id = contract_.session; wire.producer_id = producer_;
     wire.config_id = value.model_config_id;
@@ -163,10 +200,13 @@ bool V2IncomingRuntime::forecast(IncomingQuery& query, IncomingEvaluation& resul
     {
       std::lock_guard<std::mutex> output_lock(output_mutex_);
       compact_->publish(wire);
+      last_compact_revision_ = wire.forecast_revision;
+      trace("forecast_published", value.source_ns, value.revision, value.token.generation, value.reason);
       if (full_rate_hz_ > 0 && wire.prediction_reference_time_ns >= next_full_ns_) {
         wire.waypoints = std::move(points);
         wire.published_at_ns = node_.now().nanoseconds();
         full_->publish(wire);
+        trace("trajectory_published", value.source_ns, value.revision, value.token.generation);
         next_full_ns_ = wire.prediction_reference_time_ns + std::llround(1e9 / full_rate_hz_);
       }
     }
@@ -181,9 +221,16 @@ void V2IncomingRuntime::continuous(const IncomingPlane& plane) {
   const bool frozen = selected_plane_ && selected_generation_ == state.generation &&
       selected_plane_->selection.epoch == plane.selection.epoch;
   auto query = owner_->continuous(frozen ? *selected_plane_ : plane);
+  const auto start = steady_ns();
+  trace("forecast_queued", query.pipeline.shot().samples().empty() ? 0 :
+        query.pipeline.shot().samples().back().source_time_ns, query.revision,
+        query.pipeline.shot().generation());
   auto result = V2IncomingCoordinator::evaluate(query, node_.now().nanoseconds());
+  trace("forecast_completed", result.candidate.source_ns, query.revision,
+        result.candidate.token.generation, result.candidate.reason, start);
   flush_statuses();
-  forecast(query, result);
+  if (!forecast(query, result)) trace("forecast_retired", result.candidate.source_ns,
+      query.revision, result.candidate.token.generation, "OBSOLETE_OR_EXPIRED");
 }
 
 StrikeTarget V2IncomingRuntime::packet(const TrajectorySnapshot& packet,
@@ -191,7 +238,12 @@ StrikeTarget V2IncomingRuntime::packet(const TrajectorySnapshot& packet,
   command_query_.reset(); command_evaluation_.reset();
   std::string reason;
   command_query_ = owner_->packet(packet, plane, node_.now().nanoseconds(), reason);
-  if (!command_query_) { StrikeTarget rejected; rejected.reason = reason; return rejected; }
+  if (!command_query_) {
+    trace("command_rejected", packet.latest_sample()->source_time_ns, packet.packet.flight_sequence, 0, reason);
+    StrikeTarget rejected; rejected.reason = reason; return rejected;
+  }
+  trace("command_admitted", packet.latest_sample()->source_time_ns,
+        command_query_->revision, command_query_->pipeline.shot().generation());
   selected_plane_ = plane;
   selected_generation_ = command_query_->pipeline.shot().generation();
   command_evaluation_ = V2IncomingCoordinator::evaluate(*command_query_, node_.now().nanoseconds());
@@ -210,7 +262,16 @@ bool V2IncomingRuntime::command(const std::function<bool(V2StrikeCandidate&)>& p
   const auto now = node_.now().nanoseconds();
   if (static_cast<long double>(command_evaluation_->candidate.expires_ns) - now < 5000000.L)
     return false;
-  const bool published = owner_->publish(*command_query_, *command_evaluation_, now, publication);
+  const bool published = owner_->publish(*command_query_, *command_evaluation_, now,
+      [&](V2StrikeCandidate& value) {
+        if (static_cast<long double>(value.expires_ns) - node_.now().nanoseconds() < 5000000.L)
+          return false;
+        return publication(value);
+      });
+  const auto& value = command_evaluation_->candidate;
+  trace(published ? "command_published" : "command_rejected", value.source_ns,
+        published ? value.command_sequence : value.revision, value.token.generation,
+        published ? "PUBLISHED" : value.reason);
   if (published) candidate(command_evaluation_->candidate, &*command_query_, &command_evaluation_->forecast);
   flush_statuses();
   return published;
