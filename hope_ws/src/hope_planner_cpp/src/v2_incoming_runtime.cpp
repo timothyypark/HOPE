@@ -216,8 +216,10 @@ void V2IncomingRuntime::flush_statuses() {
     if (wire.forecast_revision > last_compact_revision_) {
       compact_->publish(wire);
       last_compact_revision_ = wire.forecast_revision;
+      trace("status_published", status.source_ns, status.revision, status.token.generation, status.reason);
+    } else {
+      trace("status_superseded", status.source_ns, status.revision, status.token.generation, status.reason);
     }
-    trace("status_published", status.source_ns, status.revision, status.token.generation, status.reason);
   }
 }
 
