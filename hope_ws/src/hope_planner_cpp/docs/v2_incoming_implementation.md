@@ -209,3 +209,20 @@ cases check pacing, source health and failure retention. The first diagnostic
 attempt used the wrong multiprocessing start mode and failed initialization;
 those unsuccessful setup receipts are also retained. Host CPU-quota counters did
 not advance around the long pauses; no quota-throttling cause is claimed.
+
+## Remaining reacquisition-source pacing correction
+
+Complete invocation 06 at `369dd6c` remains failed: planner 128/130 ROS groups,
+original campaign 152/160 and incoming campaign 83/90. All 25 native groups,
+25 sanitizer groups, numerical/parity gates and 24 actual Runner cases passed.
+The original `review_chain_300_12_unknown` coverage failure recurred in repetition
+2, so required closure is still open. No passing development run replaces it.
+
+A separate reacquisition camera still used the old catch-up loop. Its full-ROS
+failure contains a 29 ms acquisition gap followed by synthetic burst samples.
+The same SourceCadence helper and health gate now cover all three producer
+fixtures. A predeclared 40 ms pause comparison failed before at 79.5031% and
+passed with paced resumption at 97.9452%; the latter measured 298.7053 Hz.
+This fixes the fixture's artificial exposures, not all runtime availability
+failures. All 14 registered consumers of this source are verified separately;
+their receipts receive no replacement qualification credit.

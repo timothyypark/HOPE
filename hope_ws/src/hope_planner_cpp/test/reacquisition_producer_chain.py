@@ -18,7 +18,10 @@ import subprocess
 import signal
 import sys
 from queue import Empty
-from qualification_accounting import stage_parameters, resources as capture_resources, validate_source_epoch, write_receipt
+from qualification_accounting import (
+    SourceCadence, stage_parameters, resources as capture_resources,
+    validate_source_epoch, write_receipt,
+)
 import time
 import numpy as np
 from scipy.optimize import brentq
@@ -51,7 +54,7 @@ def camera(rate, spin, base_x, base_y, yaw, stop, ready, queue):
         rclpy.spin_once(node, timeout_sec=0.01)
     assert pub.get_subscription_count()
     gc.disable()
-    start = time.monotonic()
+    cadence = SourceCadence(rate, time.monotonic_ns())
     clock_origin_ns = time.time_ns()
     ready.set()
     index = 0
@@ -59,12 +62,14 @@ def camera(rate, spin, base_x, base_y, yaw, stop, ready, queue):
     eligible = []
     previous_stamp = 0
     while not stop.is_set():
-        delay = start + index / rate - time.monotonic()
+        intended_ns = cadence.deadline_ns
+        delay = (intended_ns - time.monotonic_ns()) * 1e-9
         if delay > 0:
             time.sleep(delay)
         # One qualified acquisition epoch drives both plant state and message.
         stamp_mono_ns = time.monotonic_ns()
         stamp = time.time_ns()
+        cadence.acquired(stamp_mono_ns)
         elapsed = (stamp - clock_origin_ns) * 1e-9
         state_mono_ns = stamp_mono_ns
         round_id = int((elapsed - 0.8) // 1.8)
@@ -137,7 +142,7 @@ def camera(rate, spin, base_x, base_y, yaw, stop, ready, queue):
                 "stamp_ns": stamp,
                 "state_elapsed_s": elapsed,
                 "index": index,
-                "intended_mono_ns": round((start + index / rate) * 1e9),
+                "intended_mono_ns": intended_ns,
                 "state_mono_ns": state_mono_ns,
                 "stamp_mono_ns": stamp_mono_ns,
                 "publish_wall_ns": publish_wall_ns,
@@ -169,6 +174,7 @@ def camera(rate, spin, base_x, base_y, yaw, stop, ready, queue):
             "base_x": base_x,
             "base_y": base_y,
             "base_yaw_deg": yaw,
+            "cadence": cadence.receipt(),
             "source_intervals_ns": np.diff([r["stamp_ns"] for r in rows]).tolist(),
             "truth": "independent synthetic plant; not physical registration",
             "scored_rounds": 10,
@@ -314,6 +320,7 @@ def run(args):
         stop.set()
         source_stats = queue.get(timeout=8)
         validate_source_epoch(source_stats)
+        assert source_stats["cadence"]["valid"], ("source cadence", source_stats["cadence"])
         source.join(timeout=5)
         assert not source.is_alive()
         rows = source_stats["rows"]
