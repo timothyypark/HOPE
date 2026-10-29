@@ -81,11 +81,12 @@ add_library(hope_v2_incoming_core src/v2_strike_adapter.cpp src/v2_incoming_coor
 target_include_directories(hope_v2_incoming_core PUBLIC include)
 target_link_libraries(hope_v2_incoming_core PUBLIC hope_integrated_return hope_planner_core)
 install(TARGETS hope_v2_incoming_core ARCHIVE DESTINATION lib LIBRARY DESTINATION lib)
-add_library(hope_integrated_runtime src/integrated_planner_runtime.cpp)
+add_library(hope_integrated_runtime src/integrated_planner_runtime.cpp src/v2_incoming_runtime.cpp)
 target_include_directories(hope_integrated_runtime PUBLIC include)
 target_link_libraries(hope_integrated_runtime PUBLIC hope_integrated_return
   hope_v2_transport hope_planner_core rclcpp::rclcpp ${std_msgs_TARGETS}
   ${std_srvs_TARGETS} ${diagnostic_msgs_TARGETS})
+target_link_libraries(hope_integrated_runtime PUBLIC hope_v2_incoming_core)
 target_link_libraries(hope_planner_cpp_node PRIVATE hope_integrated_runtime)
 install(TARGETS hope_integrated_return hope_integrated_runtime
   ARCHIVE DESTINATION lib LIBRARY DESTINATION lib)
@@ -323,6 +324,12 @@ if(BUILD_TESTING)
   ament_add_gtest(test_v2_incoming_coordinator test/test_v2_incoming_coordinator.cpp)
   target_link_libraries(test_v2_incoming_coordinator hope_v2_incoming_core)
   ament_add_gtest(test_planner_runtime_plane test/test_planner_runtime_plane.cpp src/planner_node.cpp)
+  ament_add_gtest(test_v2_incoming_ros test/test_v2_incoming_ros.cpp src/planner_node.cpp)
+  set_target_properties(test_v2_incoming_ros PROPERTIES CXX_STANDARD 20)
+  target_link_libraries(test_v2_incoming_ros hope_integrated_runtime rclcpp::rclcpp
+    ${geometry_msgs_TARGETS} ${hope_msgs_TARGETS} ${std_msgs_TARGETS} ${std_srvs_TARGETS}
+    ${rcl_interfaces_TARGETS} ${diagnostic_msgs_TARGETS})
+  set_tests_properties(test_v2_incoming_ros PROPERTIES RUN_SERIAL TRUE TIMEOUT 120)
   target_link_libraries(test_planner_runtime_plane hope_integrated_runtime)
   target_link_libraries(test_planner_runtime_plane hope_planner_core Eigen3::Eigen rclcpp::rclcpp
     ${diagnostic_msgs_TARGETS} ${geometry_msgs_TARGETS} ${hope_msgs_TARGETS}

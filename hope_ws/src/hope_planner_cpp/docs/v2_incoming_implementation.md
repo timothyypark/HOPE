@@ -85,3 +85,33 @@ retires a pending supported result before its source/contact deadlines expire.
 An accepted command retains its original timestamp and absolute contact deadline;
 new observations can support that flight without rewriting its source timestamp.
 A missing fresh authoritative stream revokes it. ROS integration is pending.
+
+## Managed ROS integration receipt
+
+The opt-in `prediction_backend=v2_incoming` uses the existing solver thread,
+packet commitment, RuntimePlaneReference, RacketTargetPlanner and schema-4/5
+packer. A bounded packet/observation join waits for the same qualified source
+prefix; mismatched histories abstain. One waiting packet takes priority over a
+replaceable continuous preview. Dynamic previews remain tentative until the
+existing selector runs at packet commitment. Continuous forecasts then retain
+that selected plane even when the base moves.
+
+All command/status outputs use the protected `/hope/shadow/v2_incoming/`
+namespace. Legacy remains the default. `StrikeCandidateV1` is a companion to
+the unchanged `FlightPredictionV2`; its revocation stream retains 64 statuses
+separately from latest candidate traffic. Consumers must order by session,
+physical generation, HOME epoch and revision. Runner commitment is `UNKNOWN`.
+
+Development checks: six ROS cases cover fixed/per-ball/stable-per-ball valid
+commands, actual receiver decoding, frozen planes, continuous updates after
+commitment, duplicate packets and mismatched source prefixes. The first fixture
+run retained a per-ball failure caused by moving the base before selection;
+the corrected fixture moves it only after command receipt. Existing managed
+plane and packet-pipeline ROS groups pass. Ten coordinator native cases pass,
+including HOME changes and explicit expiry without a prior supported candidate.
+These checks do not replace the final clean-source qualification campaign.
+
+The production policy lifecycle probe currently stops at artifact validation:
+checked-in model_21800 is incompatible with shared HOME. This is a blocked
+Runner lifecycle test, not evidence that pre-engagement revocation works.
+No policy artifacts, Runner behavior or live deployment configuration changed.
