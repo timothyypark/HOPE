@@ -279,6 +279,16 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/test/integrated_producer_chain.py",
+      "owner": "qualification",
+      "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
+      "tests": [
+        "native CTest",
+        "ROS CTest",
+        "verify_integrated.sh"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/test/integrated_runner_probe.cpp",
       "owner": "qualification",
       "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
@@ -309,6 +319,16 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/test/qualification_accounting.py",
+      "owner": "qualification",
+      "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
+      "tests": [
+        "native CTest",
+        "ROS CTest",
+        "verify_integrated.sh"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/test/runner_revocation_probe.cpp",
       "owner": "qualification",
       "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
@@ -320,6 +340,16 @@
     },
     {
       "path": "hope_ws/src/hope_planner_cpp/test/test_forecast_scope.py",
+      "owner": "qualification",
+      "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
+      "tests": [
+        "native CTest",
+        "ROS CTest",
+        "verify_integrated.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/test_qualification_accounting.py",
       "owner": "qualification",
       "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
       "tests": [

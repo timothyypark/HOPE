@@ -24,7 +24,7 @@ from motion_capture_tracking_interfaces.msg import LatencyInfo, NamedPose, Named
 
 import numpy as np
 
-from qualification_accounting import read_stages, resources
+from qualification_accounting import SourceCadence, read_stages, resources
 
 import rclpy
 from rclpy.qos import DurabilityPolicy, QoSProfile, ReliabilityPolicy, qos_profile_sensor_data
@@ -57,8 +57,18 @@ def source(rate, spin, stop, ready, reference_ready, queue):
         nonlocal home_sequence
         home_sequence += 1
         receipt = Float64MultiArray()
-        receipt.data = [2.0, 100.0, -0.5, -0.7625, 0.58, float(BASE_ID), float(WORLD_ID),
-                        5.0, float(home_sequence), 1.0]
+        receipt.data = [
+            2.0,
+            100.0,
+            -0.5,
+            -0.7625,
+            0.58,
+            float(BASE_ID),
+            float(WORLD_ID),
+            5.0,
+            float(home_sequence),
+            1.0,
+        ]
         home.publish(receipt)
 
     def body_message(stamp):
@@ -86,16 +96,19 @@ def source(rate, spin, stop, ready, reference_ready, queue):
     if not reference_ready.is_set():
         raise RuntimeError('planner HOME/reference readiness failed before offering balls')
     origin_wall, origin_mono = time.time_ns(), time.monotonic_ns()
+    cadence = SourceCadence(rate, origin_mono)
     gc.disable()
     ready.set()
     index = 0
     next_home = 0
     while not stop.is_set():
-        intended = origin_mono + round(index * 1e9 / rate)
+        intended = cadence.deadline_ns
         remaining = (intended - time.monotonic_ns()) * 1e-9
         if remaining > 0:
             time.sleep(remaining)
+        acquisition_steady_ns = time.monotonic_ns()
         stamp = time.time_ns()
+        cadence.acquired(acquisition_steady_ns)
         elapsed = (stamp - origin_wall) * 1e-9
         ordinal = math.floor((elapsed - 0.5) / 0.9)
         phase = elapsed - 0.5 - ordinal * 0.9
@@ -124,6 +137,7 @@ def source(rate, spin, stop, ready, reference_ready, queue):
                 'offered_ns': time.time_ns(),
                 'intended_steady_ns': intended,
                 'actual_steady_ns': time.monotonic_ns(),
+                'acquisition_steady_ns': acquisition_steady_ns,
                 'flight': ordinal + 1,
                 'phase': phase,
                 'present': present,
@@ -140,6 +154,7 @@ def source(rate, spin, stop, ready, reference_ready, queue):
             'crossing_s': crossing,
             'contact_state': after.sol(crossing).tolist(),
             'rate_hz': rate,
+            'cadence': cadence.receipt(),
             'reference_ready_ns': origin_wall,
             'reference_wait_ms': (origin_wall - setup_started) * 1e-6,
         }
@@ -152,7 +167,8 @@ def run(args):
     """Retain every declared opportunity and every process exit, including failures."""
     args.output.mkdir(parents=True, exist_ok=False)
     contract = {
-        'version': 2,
+        'version': 3,
+        'source_cadence': 'resynchronize without catch-up; actual rate >=95% requested; spacing >=half period',
         'rate_hz': args.rate,
         'mode': args.mode,
         'spin': args.spin,
@@ -356,8 +372,9 @@ def run(args):
         while time.monotonic() < until:
             rclpy.spin_once(node, timeout_sec=0.01)
         assert all(p.poll() is None for p in processes), 'child startup failure'
-        camera = mp.Process(target=source,
-                            args=(args.rate, args.spin, stop, ready, reference_ready, queue))
+        camera = mp.Process(
+            target=source, args=(args.rate, args.spin, stop, ready, reference_ready, queue)
+        )
         camera.start()
         deadline = time.monotonic() + 15
         while not ready.is_set() and time.monotonic() < deadline:
@@ -487,8 +504,11 @@ def run(args):
             ordinal = source_flights[row['source_ns']]
             generations.setdefault(ordinal, set()).add(row['generation'])
     command_flights = [source_flights.get(stamp) for stamp in command_sources.values()]
-    expiries = [row for row in received['revocations']
-                if row['status'] == 'EXPIRED' and row['reason'] == 'SOURCE_EXPIRED']
+    expiries = [
+        row
+        for row in received['revocations']
+        if row['status'] == 'EXPIRED' and row['reason'] == 'SOURCE_EXPIRED'
+    ]
     expiry_ms = [(row['published_ns'] - row['source_ns']) * 1e-6 - 30 for row in expiries]
     contact_errors = []
     for row in received['candidates']:
@@ -509,6 +529,7 @@ def run(args):
             }
         )
     gates = {
+        'source_cadence': stats.get('cadence', {}).get('valid', False),
         'children': exception is None and all(p.returncode == 0 for p in processes),
         'continuous_coverage': coverage >= 0.95,
         'one_shot_coverage': len(command_ids) >= math.ceil(0.95 * 10),
@@ -529,14 +550,21 @@ def run(args):
         and len(set.union(*generations.values())) == 10,
         'command_flight_identity': sorted(f for f in command_flights if f is not None)
         == list(range(1, 11)),
-        'explicit_source_expiry': len({source_flights.get(row['source_ns'])
-                                       for row in expiries} - {None}) == 10
-        and bool(expiry_ms) and min(expiry_ms) >= 0 and max(expiry_ms) <= 30,
+        'explicit_source_expiry': len(
+            {source_flights.get(row['source_ns']) for row in expiries} - {None}
+        )
+        == 10
+        and bool(expiry_ms)
+        and min(expiry_ms) >= 0
+        and max(expiry_ms) <= 30,
         'complete_stage_trace': 'overwritten=0' in metadata
         and int(relay_metadata.get('overwritten', -1)) == 0
         and int(decoder_metadata.get('overwritten', -1)) == 0
-        and len({int(row['sequence']) for row in decoder_rows
-                 if row['stage'] == 'decoder_receipt'} & command_sources.keys()) == len(commands),
+        and len(
+            {int(row['sequence']) for row in decoder_rows if row['stage'] == 'decoder_receipt'}
+            & command_sources.keys()
+        )
+        == len(commands),
     }
     counts = Counter(row['stage'] for row in traces)
     ball_rows = [row for row in stats.get('rows', []) if row['present']]
@@ -571,10 +599,12 @@ def run(args):
             ]
         },
         'missing_source_epochs': sorted(eligible - covered),
-        'distinct_forecast_sources_completed': len({int(row['source_ns']) for row in traces
-                                                   if row['stage'] == 'forecast_completed'}),
-        'distinct_forecast_sources_published': len({int(row['source_ns']) for row in traces
-                                                   if row['stage'] == 'forecast_published'}),
+        'distinct_forecast_sources_completed': len(
+            {int(row['source_ns']) for row in traces if row['stage'] == 'forecast_completed'}
+        ),
+        'distinct_forecast_sources_published': len(
+            {int(row['source_ns']) for row in traces if row['stage'] == 'forecast_published'}
+        ),
     }
     (args.output / 'accounting.json').write_text(
         json.dumps(

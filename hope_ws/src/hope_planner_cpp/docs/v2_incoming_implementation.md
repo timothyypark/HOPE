@@ -179,3 +179,33 @@ predeclared asynchronous trials after that correction passed all gates, and
 or establish the cause of the original pause. No coverage or freshness threshold
 was relaxed. The scope check now records the intended PlannerNode integration
 explicitly while retaining every other upstream protected-source byte pin.
+
+
+Qualification 05 completed the full ladder at `290f7c4`: native 25/25,
+sanitized 25/25, parity/numerical gates and 24 actual Runner lifecycle cases
+passed. All 18 incoming ROS profiles passed; one existing 150 Hz follow-pose
+profile failed (35/41) after a 34 ms source scheduling pause generated six
+catch-up exposures within about 1.2 ms. The original repeated campaign passed
+157/160, with failures in `integrated_chain_150_FOLLOW_POSE` (repetitions 4 and 5)
+and `review_chain_300_12_known` (repetition 4). All three original campaign-failure
+profiles passed all five repetitions; the original base-yaw failure profile
+passed the full ROS run. The new incoming campaign passed 89/90; a 360 Hz source
+pause caused lost input, superseded forecasts and one missing command. These
+failures remain blockers; the invocation is not qualified.
+
+The source-pacing correction preserves actual acquisition timestamps and every
+offered observation. After a wakeup later than half a period, it resumes a paced
+schedule instead of manufacturing catch-up exposures. It records missed nominal
+ticks, resynchronizations, actual rate and minimum spacing. An additional source
+health gate requires at least 95% of the requested mean rate and at least half a
+period between acquisitions. Existing eligibility, command opportunities,
+coverage, completion-age and decoder thresholds are unchanged.
+
+A controlled 34 ms source pause reproduced 35/41 coverage before correction.
+After correction it produced 35/36: one genuinely acquired post-gap observation
+was still rejected because the required bounce was not confirmed. No contact
+rule was relaxed. The actual helper repeated 35/36 at 148.91 Hz, and six unit
+cases check pacing, source health and failure retention. The first diagnostic
+attempt used the wrong multiprocessing start mode and failed initialization;
+those unsuccessful setup receipts are also retained. Host CPU-quota counters did
+not advance around the long pauses; no quota-throttling cause is claimed.

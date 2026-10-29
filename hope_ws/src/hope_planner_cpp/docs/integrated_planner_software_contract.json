@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "scope": "Qualified observations and registered pose through CKF6/deterministic physics, model-validated schema-2 shadow commands and actual receiver decoding",
   "upstream_base": "91aecabfd44cb258ac998158e724be9017d883a7",
   "integration_checkpoint": "e7947b9486f1b49b70a560318eaf12bc7de9979a",
@@ -112,5 +112,10 @@
     "publication_gate": "Every completed valid publication still <=30 ms; reserve rejects at admission when less than 5 ms remains, and rejected opportunities remain in the independent denominator"
   },
   "superseded_release": "4065cb57fe3a9256ebb635912d7a1e62d3fbf806: full ladder ran; planner 105/107, with quaternion-only 300 Hz coverage 138/150 and review_chain_300_10_zero publication age 32.525202 ms. Repeated campaign NOT_RUN because the ROS delta audit failed; all evidence retained.",
-  "stage_accounting_change": "All declared nominal trials retain actual loss stages; eligibility and timing limits are unchanged. Diagnostic comparison remains on/off."
+  "stage_accounting_change": "All declared nominal trials retain actual loss stages; eligibility and timing limits are unchanged. Diagnostic comparison remains on/off.",
+  "source_cadence": {
+    "pacing": "actual acquisition; resume periodic schedule after half-period lateness; no catch-up burst",
+    "health_gate": "actual mean rate >=95% of requested and minimum source interval >=half a period",
+    "accounting": "retain every offered observation, scheduling overrun and missed nominal tick; no post-hoc source exclusions"
+  }
 }

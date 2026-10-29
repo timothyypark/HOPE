@@ -6,6 +6,56 @@ import os
 from pathlib import Path
 
 
+class SourceCadence:
+    """Resume paced acquisition after a stall without inventing catch-up frames."""
+
+    def __init__(self, rate_hz, origin_ns):
+        self.rate_hz = rate_hz
+        self.period_ns = round(1e9 / rate_hz)
+        self.deadline_ns = origin_ns
+        self.first_ns = self.last_ns = None
+        self.minimum_interval_ns = None
+        self.samples = self.resynchronizations = self.missed_ticks = 0
+        self.maximum_lateness_ns = 0
+
+    def acquired(self, now_ns):
+        """Keep actual acquisition time and account for every scheduling overrun."""
+        lateness = max(0, now_ns - self.deadline_ns)
+        self.maximum_lateness_ns = max(self.maximum_lateness_ns, lateness)
+        if self.last_ns is not None:
+            interval = now_ns - self.last_ns
+            self.minimum_interval_ns = (interval if self.minimum_interval_ns is None
+                                        else min(interval, self.minimum_interval_ns))
+        else:
+            self.first_ns = now_ns
+        self.last_ns = now_ns
+        self.samples += 1
+        if lateness > self.period_ns // 2:
+            self.resynchronizations += 1
+            self.missed_ticks += lateness // self.period_ns
+            self.deadline_ns = now_ns + self.period_ns
+        else:
+            self.deadline_ns += self.period_ns
+
+    def receipt(self):
+        """Expose source health independently of forecast/command coverage."""
+        span = (self.last_ns or 0) - (self.first_ns or 0)
+        actual_rate = (self.samples - 1) * 1e9 / span if span > 0 else 0
+        minimum = self.minimum_interval_ns or 0
+        return {
+            'policy': 'actual acquisition; resynchronize after half-period lateness; no catch-up',
+            'requested_rate_hz': self.rate_hz,
+            'actual_rate_hz': actual_rate,
+            'minimum_interval_ns': minimum,
+            'maximum_lateness_ns': self.maximum_lateness_ns,
+            'resynchronizations': self.resynchronizations,
+            'missed_nominal_ticks': self.missed_ticks,
+            'samples': self.samples,
+            'valid': actual_rate >= .95 * self.rate_hz
+            and minimum >= self.period_ns // 2,
+        }
+
+
 def stage_parameters(args, executable):
     if not getattr(args, 'stage_accounting', False):
         return []
