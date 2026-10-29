@@ -141,6 +141,22 @@ install(PROGRAMS
 if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)
   find_package(Python3 REQUIRED COMPONENTS Interpreter)
+  foreach(rate 150 300 360)
+    foreach(mode fixed per_ball stable_per_ball)
+      foreach(spin unknown zero)
+        set(profile incoming_chain_${rate}_${mode}_${spin})
+        add_test(NAME ${profile} COMMAND ${Python3_EXECUTABLE}
+          ${CMAKE_CURRENT_SOURCE_DIR}/test/v2_incoming_producer_chain.py
+          --repo ${CMAKE_CURRENT_SOURCE_DIR}/../../..
+          --build ${CMAKE_CURRENT_BINARY_DIR}
+          --bringup ${CMAKE_INSTALL_PREFIX}/../hope_bringup/lib/hope_bringup
+          --rate ${rate} --mode ${mode} --spin ${spin}
+          --output ${CMAKE_CURRENT_BINARY_DIR}/${profile})
+        set_tests_properties(${profile} PROPERTIES RUN_SERIAL TRUE TIMEOUT 60
+          ENVIRONMENT "ROS_DOMAIN_ID=193;ROS_LOCALHOST_ONLY=1")
+      endforeach()
+    endforeach()
+  endforeach()
   ament_add_gtest(test_reacquisition_counterexamples test/reacquisition_counterexamples.cpp)
   target_compile_definitions(test_reacquisition_counterexamples PRIVATE HOPE_REARM_CONTINUATION=1)
   target_link_libraries(test_reacquisition_counterexamples hope_integrated_return)

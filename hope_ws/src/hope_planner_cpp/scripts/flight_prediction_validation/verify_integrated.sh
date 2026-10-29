@@ -118,9 +118,17 @@ run_after diagnostic-comparison ros-build python3 \
   "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/qualification_campaign.py" \
   --repo "$repo" --build "$evidence/build/hope_planner_cpp" --output "$evidence/diagnostic-comparison" \
   --diagnostic-comparison
-run_after repeated-campaign ros-build,ros-result-audit python3 \
+run_after repeated-campaign ros-build python3 \
   "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/qualification_campaign.py" \
   --repo "$repo" --build "$evidence/build/hope_planner_cpp" --output "$evidence/repeated-campaign"
+if [[ -f "$repo/hope_ws/src/hope_planner_cpp/test/v2_incoming_producer_chain.py" ]]; then
+  run_after incoming-campaign ros-build python3 \
+    "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/v2_incoming_campaign.py" \
+    --repo "$repo" --build "$evidence/build/hope_planner_cpp" --output "$evidence/incoming-campaign"
+  run_gate runner-revocation bash \
+    "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/verify_runner_revocation.sh" \
+    "$evidence/runner-revocation" "${HOPE_RUNNER_BASELINE_REPO:-}"
+fi
 if [[ -e "$repo/.git" ]]; then
   git -C "$repo" rev-parse HEAD > "$evidence/final-code-sha.txt"
   git -C "$repo" status --porcelain > "$evidence/final-worktree-status.txt"
