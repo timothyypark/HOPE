@@ -11,10 +11,10 @@ def scenario():
     rows = [dict(source_ns=t, steady_ns=t, wall_ns=t, stage=state,
                  generation=gen, reason=reason)
             for t, state, gen, reason in [(10, 'RALLY', 2, 'ballistic_acquisition_incomplete_history'),
-                                         (20, 'INVALID', 2, 'observed_under_table'),
-                                         (30, 'INVALID', 2, 'observed_under_table'),
-                                         (40, 'RALLY', 3, 'ballistic_acquisition_incomplete_history')]]
-    commands = [dict(source_time_ns=40, physical_shot=3, command_sequence=1,
+                                         (20, 'INVALID', 3, 'observed_under_table'),
+                                         (30, 'INVALID', 3, 'observed_under_table'),
+                                         (40, 'RALLY', 4, 'ballistic_acquisition_incomplete_history')]]
+    commands = [dict(source_time_ns=40, physical_shot=4, command_sequence=1,
                      publication_begin_ns=45)]
     return dict(source_rows=source, metadata={'overwritten': 0, 'total': 4},
                 transitions=rows, commands=commands, decoded_sequences={1}, rounds=1)

@@ -32,20 +32,20 @@ def verify_lifecycle(source_rows, metadata, transitions, commands, decoded_seque
         assert a_generation > previous_b, ('A reused earlier flight', ordinal)
         rejected = [row for row in samples('A_REJECT', 'A_CONTINUED_REJECTED')
                     if row['stage'] == 'INVALID' and row['reason'] == 'observed_under_table'
-                    and int(row['generation']) == a_generation]
+                    and int(row['generation']) == a_generation + 1]
         assert rejected, ('A never physically rejected', ordinal)
         first_rejection = min(int(row['steady_ns']) for row in rejected)
         assert max(int(row['steady_ns']) for row in acquired) < first_rejection
         quarantine = samples('A_CONTINUED_REJECTED')
         assert quarantine and all(row['stage'] == 'INVALID'
-                                  and int(row['generation']) == a_generation
+                                  and int(row['generation']) == a_generation + 1
                                   for row in quarantine), ('A resurrected', ordinal)
         b_active = [row for row in samples('B') if row['stage'] in ACTIVE]
         assert b_active, ('B never acquired', ordinal)
         b_generations = {int(row['generation']) for row in b_active}
         assert len(b_generations) == 1, ('B changed generation', ordinal)
         b_generation = b_generations.pop()
-        assert b_generation > a_generation, ('B reused A generation', ordinal)
+        assert b_generation > a_generation + 1, ('B reused retired A generation', ordinal)
         assert min(int(row['steady_ns']) for row in b_active) > first_rejection
         b_sources = {row['stamp_ns'] for row in source_rows
                      if row['round'] == ordinal and row['opportunity'] == 'B'}
@@ -60,6 +60,7 @@ def verify_lifecycle(source_rows, metadata, transitions, commands, decoded_seque
                     and int(row['publication_begin_ns']) >= rejection_wall], (
                         'obsolete A command after rejection', ordinal)
         evidence.append({'round': ordinal, 'A_generation': a_generation,
+                         'A_retired_generation': a_generation + 1,
                          'B_generation': b_generation,
                          'acquisition_sources': [int(row['source_ns']) for row in acquired],
                          'first_rejection_steady_ns': first_rejection,
