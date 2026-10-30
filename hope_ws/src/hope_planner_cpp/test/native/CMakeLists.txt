@@ -46,6 +46,11 @@ target_include_directories(test_v2_strike_adapter PRIVATE
   ${PLANNER}/../../../a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/include)
 target_link_libraries(test_v2_strike_adapter PRIVATE hope_incoming_native GTest::gtest_main)
 add_test(NAME v2_strike_adapter COMMAND test_v2_strike_adapter)
+add_executable(hope_incoming_conversion_probe ${PLANNER}/test/incoming_conversion_probe.cpp)
+set_target_properties(hope_incoming_conversion_probe PROPERTIES CXX_STANDARD 20)
+target_include_directories(hope_incoming_conversion_probe PRIVATE
+  ${PLANNER}/../../../a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/include)
+target_link_libraries(hope_incoming_conversion_probe PRIVATE hope_incoming_native)
 add_executable(test_runner_preengagement_revocation ${PLANNER}/test/test_runner_preengagement_revocation.cpp)
 set_target_properties(test_runner_preengagement_revocation PROPERTIES CXX_STANDARD 20)
 target_include_directories(test_runner_preengagement_revocation PRIVATE

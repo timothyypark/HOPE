@@ -32,6 +32,9 @@
     "outgoing_landing_reference_time_s": 0.0005,
     "impact_closure_mps": 1e-8,
     "rationale_outgoing": "Existing independent integrated_numerical_gate.py tolerances",
+    "managed_legacy_landing_simulation_m": 0.02,
+    "managed_legacy_landing_simulation_time_s": 0.01,
+    "rationale_managed_legacy": "Existing RacketTargetPlanner uses a separate 1 ms integrator; assess its simulated landing within one ball radius and half a Runner tick, while retaining the stricter independent ValidatedReturnPlanner gate above",
     "continuous_preview_truth_errors": "Report all errors by source cutoff; do not substitute an early preview for the committed-command criterion"
   },
   "lifecycle_controls": [

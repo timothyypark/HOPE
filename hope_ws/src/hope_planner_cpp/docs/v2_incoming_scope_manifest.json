@@ -197,6 +197,16 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/incoming_conversion_simulation.py",
+      "owner": "qualification",
+      "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
+      "tests": [
+        "native CTest",
+        "ROS CTest",
+        "verify_integrated.sh"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/qualification_campaign.py",
       "owner": "qualification",
       "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
@@ -304,6 +314,16 @@
     },
     {
       "path": "hope_ws/src/hope_planner_cpp/test/fixtures/pr85_cutoffs/contact_corroboration_deltas.json",
+      "owner": "qualification",
+      "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
+      "tests": [
+        "native CTest",
+        "ROS CTest",
+        "verify_integrated.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/incoming_conversion_probe.cpp",
       "owner": "qualification",
       "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
       "tests": [
