@@ -11,6 +11,11 @@ def verify_lifecycle(source_rows, metadata, transitions, commands, decoded_seque
     assert len(stamps) == len(set(stamps)), 'duplicate lifecycle source'
     assert all(row['stage'] in ACTIVE | {'INVALID'} for row in transitions), 'unknown state'
     source = {row['stamp_ns']: row for row in source_rows}
+    # Fault injection can intentionally put a different timestamp on the wire.
+    # Keep those receipts attributable, without counting them as clean evidence.
+    for row in source_rows:
+        if row.get('fault') and 'wire_stamp_ns' in row:
+            source.setdefault(row['wire_stamp_ns'], row)
     assert all(stamp in source for stamp in stamps), 'lifecycle source absent from producer'
     assert all(b > a for a, b in zip(stamps, stamps[1:])), 'reordered lifecycle evidence'
     generations = [int(row['generation']) for row in transitions]

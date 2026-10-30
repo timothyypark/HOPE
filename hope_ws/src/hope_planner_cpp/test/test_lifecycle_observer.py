@@ -25,6 +25,16 @@ def test_acquire_reject_between_status_polls():
     assert verify_lifecycle(**scenario())['rounds'][0]['A_generation'] == 2
 
 
+def test_injected_wire_timestamp_remains_attributable_but_is_not_clean_evidence():
+    case = scenario()
+    case['source_rows'].append(dict(stamp_ns=35, wire_stamp_ns=34, round=0,
+                                    opportunity='A_CONTINUED_REJECTED', fault='reorder'))
+    case['transitions'].insert(3, dict(source_ns=34, steady_ns=35, wall_ns=35,
+                                      stage='INVALID', generation=3, reason='observed_under_table'))
+    case['metadata']['total'] += 1
+    assert verify_lifecycle(**case)['rounds'][0]['quarantined_observations'] == 1
+
+
 @pytest.mark.parametrize('failure', ['no_A', 'wrong_round', 'wrong_generation', 'no_reject',
                                     'quarantine_resurrection', 'obsolete_command', 'no_B',
                                     'no_command', 'no_decode', 'overflow', 'missing', 'duplicate'])
