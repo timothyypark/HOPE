@@ -1,0 +1,377 @@
+[
+  {
+    "profile": "review_chain_300_12_known",
+    "repetition": 1,
+    "exception": "AssertionError: ('command coverage', 33, 35, 0.9428571428571428)",
+    "cadence": {
+      "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+      "requested_rate_hz": 300,
+      "actual_rate_hz": 299.4536895248091,
+      "minimum_interval_ns": 1818557,
+      "maximum_lateness_ns": 3588413,
+      "resynchronizations": 9,
+      "missed_nominal_ticks": 1,
+      "samples": 3806,
+      "valid": true
+    },
+    "largest_source_gap_ms": 6.821544,
+    "before": {
+      "index": 1314,
+      "stamp_ns": 1793354617276070527,
+      "state_elapsed_s": 4.383847286,
+      "intended_mono_ns": 413727928467171,
+      "state_mono_ns": 413727928567573,
+      "stamp_mono_ns": 413727928567573,
+      "publish_wall_ns": 1793354617276136314,
+      "publish_mono_ns": 413727928634021,
+      "published_mono_ns": 413727928710775,
+      "phase": 0.5838472860000001,
+      "frame": "world",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "after": {
+      "index": 1315,
+      "stamp_ns": 1793354617282892071,
+      "state_elapsed_s": 4.39066883,
+      "intended_mono_ns": 413727931800504,
+      "state_mono_ns": 413727935388917,
+      "stamp_mono_ns": 413727935388917,
+      "publish_wall_ns": 1793354617282976917,
+      "publish_mono_ns": 413727935474904,
+      "published_mono_ns": 413727935574492,
+      "phase": 0.5906688300000003,
+      "frame": "world",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "profile": "integrated_chain_300_ON_REFRESH",
+    "repetition": 2,
+    "exception": "AssertionError: ('source cadence', {'policy': 'actual acquisition; resynchronize after half-period lateness; no catch-up', 'requested_rate_hz': 300, 'actual_rate_hz': 279.0640013637964, 'minimum_interval_ns': 1780837, 'maximum_lateness_ns': 325015411, 'resynchronizations': 3, 'missed_nominal_ticks': 97, 'samples': 1315, 'valid': False})",
+    "cadence": {
+      "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+      "requested_rate_hz": 300,
+      "actual_rate_hz": 279.0640013637964,
+      "minimum_interval_ns": 1780837,
+      "maximum_lateness_ns": 325015411,
+      "resynchronizations": 3,
+      "missed_nominal_ticks": 97,
+      "samples": 1315,
+      "valid": false
+    },
+    "largest_source_gap_ms": 328.2784,
+    "before": {
+      "index": 0,
+      "stamp_ns": 1793355191802412216,
+      "state_elapsed_s": 5.3979000000000006e-05,
+      "intended_mono_ns": 414302454838768,
+      "state_mono_ns": 414302454909643,
+      "stamp_mono_ns": 414302454909643,
+      "publish_wall_ns": 1793355191802561848,
+      "publish_mono_ns": 414302455059846,
+      "published_mono_ns": 414302783130177,
+      "phase": 0.200053979,
+      "frame": "world",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "after": {
+      "index": 1,
+      "stamp_ns": 1793355192130690616,
+      "state_elapsed_s": 0.328332379,
+      "intended_mono_ns": 414302458172101,
+      "state_mono_ns": 414302783187512,
+      "stamp_mono_ns": 414302783187512,
+      "publish_wall_ns": 1793355192130826948,
+      "publish_mono_ns": 414302783324735,
+      "published_mono_ns": 414302783465824,
+      "phase": 0.528332379,
+      "frame": "world",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "profile": "review_refresh_300_12_known",
+    "repetition": 3,
+    "exception": "AssertionError: ('command coverage', 32, 34, 0.9411764705882353)",
+    "cadence": {
+      "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+      "requested_rate_hz": 300,
+      "actual_rate_hz": 299.2975439030865,
+      "minimum_interval_ns": 1764513,
+      "maximum_lateness_ns": 5759851,
+      "resynchronizations": 10,
+      "missed_nominal_ticks": 2,
+      "samples": 3804,
+      "valid": true
+    },
+    "largest_source_gap_ms": 9.101997,
+    "before": {
+      "index": 3669,
+      "stamp_ns": 1793355529811005976,
+      "state_elapsed_s": 12.253949637000002,
+      "intended_mono_ns": 414640458511538,
+      "state_mono_ns": 414640463502892,
+      "stamp_mono_ns": 414640463502892,
+      "publish_wall_ns": 1793355529811079725,
+      "publish_mono_ns": 414640463577582,
+      "published_mono_ns": 414640463680064,
+      "phase": 0.4539496370000009,
+      "frame": "wrong_frame",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "after": {
+      "index": 3670,
+      "stamp_ns": 1793355529820107973,
+      "state_elapsed_s": 12.263051634,
+      "intended_mono_ns": 414640466836225,
+      "state_mono_ns": 414640472596076,
+      "stamp_mono_ns": 414640472596076,
+      "publish_wall_ns": 1793355529820183655,
+      "publish_mono_ns": 414640472681453,
+      "published_mono_ns": 414640472769533,
+      "phase": 0.46305163399999927,
+      "frame": "wrong_frame",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "profile": "review_chain_300_12_unknown",
+    "repetition": 3,
+    "exception": "AssertionError: ('command coverage', 36, 40, 0.9)",
+    "cadence": {
+      "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+      "requested_rate_hz": 300,
+      "actual_rate_hz": 299.06063340171886,
+      "minimum_interval_ns": 1873161,
+      "maximum_lateness_ns": 5984289,
+      "resynchronizations": 17,
+      "missed_nominal_ticks": 1,
+      "samples": 3801,
+      "valid": true
+    },
+    "largest_source_gap_ms": 9.194783,
+    "before": {
+      "index": 791,
+      "stamp_ns": 1793355691461993001,
+      "state_elapsed_s": 2.642589339,
+      "intended_mono_ns": 414802114366067,
+      "state_mono_ns": 414802114489767,
+      "stamp_mono_ns": 414802114489767,
+      "publish_wall_ns": 1793355691462102513,
+      "publish_mono_ns": 414802114600521,
+      "published_mono_ns": 414802114713458,
+      "phase": 0.8425893390000001,
+      "frame": "world",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "after": {
+      "index": 792,
+      "stamp_ns": 1793355691471187784,
+      "state_elapsed_s": 2.651784122,
+      "intended_mono_ns": 414802117699400,
+      "state_mono_ns": 414802123683689,
+      "stamp_mono_ns": 414802123683689,
+      "publish_wall_ns": 1793355691471334942,
+      "publish_mono_ns": 414802123833341,
+      "published_mono_ns": 414802124110912,
+      "phase": 0.851784122,
+      "frame": "world",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "profile": "review_chain_300_12_known",
+    "repetition": 4,
+    "exception": "AssertionError: ('command coverage', 32, 34, 0.9411764705882353)",
+    "cadence": {
+      "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+      "requested_rate_hz": 300,
+      "actual_rate_hz": 299.49252872183234,
+      "minimum_interval_ns": 1773553,
+      "maximum_lateness_ns": 4421964,
+      "resynchronizations": 8,
+      "missed_nominal_ticks": 1,
+      "samples": 3806,
+      "valid": true
+    },
+    "largest_source_gap_ms": 7.674252,
+    "before": {
+      "index": 1606,
+      "stamp_ns": 1793356283619409548,
+      "state_elapsed_s": 5.364120877,
+      "intended_mono_ns": 415394271823977,
+      "state_mono_ns": 415394271906704,
+      "stamp_mono_ns": 415394271906704,
+      "publish_wall_ns": 1793356283619488305,
+      "publish_mono_ns": 415394271986623,
+      "published_mono_ns": 415394272113162,
+      "phase": 0.5641208770000006,
+      "frame": "world",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "after": {
+      "index": 1607,
+      "stamp_ns": 1793356283627083800,
+      "state_elapsed_s": 5.371795129000001,
+      "intended_mono_ns": 415394275157310,
+      "state_mono_ns": 415394279579274,
+      "stamp_mono_ns": 415394279579274,
+      "publish_wall_ns": 1793356283627255206,
+      "publish_mono_ns": 415394279753143,
+      "published_mono_ns": 415394279974183,
+      "phase": 0.5717951290000007,
+      "frame": "world",
+      "poses": [
+        {
+          "name": "UCB_P1",
+          "position": [
+            -0.42999999999999994,
+            -0.7,
+            0.0
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+]

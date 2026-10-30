@@ -1,0 +1,1049 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "profile": "reacquisition_delayed_150",
+      "enabled": true,
+      "raw_exit": 0,
+      "raw_exception": null,
+      "lifecycle": "PASS",
+      "useful_flight_assessment": {
+        "profile": "reacquisition_unknown",
+        "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/lifecycle-instrumentation-comparison/reacquisition_delayed_150-enabled/result.raw.json",
+        "expected_flights": 10,
+        "flights": [
+          {
+            "flight": 0,
+            "commands": 13,
+            "usable_commands": 13,
+            "first_usable": {
+              "sequence": 1,
+              "source_ns": 1793358185001525748,
+              "position_error_m": 1.0158814221755685e-05,
+              "contact_time_error_ms": 0.008344650268554688,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.1941575505770743,
+              "usable": true
+            },
+            "max_position_error_m": 1.0158814221755685e-05,
+            "max_contact_time_error_ms": 0.008344650268554688
+          },
+          {
+            "flight": 1,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 25,
+              "source_ns": 1793358186761529126,
+              "position_error_m": 0.00022703293933915014,
+              "contact_time_error_ms": 0.21147727966308594,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.23856306093512103,
+              "usable": true
+            },
+            "max_position_error_m": 0.00022703293933915014,
+            "max_contact_time_error_ms": 0.21147727966308594
+          },
+          {
+            "flight": 2,
+            "commands": 20,
+            "usable_commands": 20,
+            "first_usable": {
+              "sequence": 55,
+              "source_ns": 1793358188554860647,
+              "position_error_m": 0.0002407173250316419,
+              "contact_time_error_ms": 0.2162456512451172,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24611751729389653,
+              "usable": true
+            },
+            "max_position_error_m": 0.0002407173250316419,
+            "max_contact_time_error_ms": 0.2162456512451172
+          },
+          {
+            "flight": 3,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 86,
+              "source_ns": 1793358190361534521,
+              "position_error_m": 0.00022686510010819227,
+              "contact_time_error_ms": 0.21123886108398438,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2389227930107154,
+              "usable": true
+            },
+            "max_position_error_m": 0.00022686510010819227,
+            "max_contact_time_error_ms": 0.21123886108398438
+          },
+          {
+            "flight": 4,
+            "commands": 20,
+            "usable_commands": 20,
+            "first_usable": {
+              "sequence": 116,
+              "source_ns": 1793358192154863341,
+              "position_error_m": 0.00024074215304195623,
+              "contact_time_error_ms": 0.2162456512451172,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2455203703721054,
+              "usable": true
+            },
+            "max_position_error_m": 0.00024074215304195623,
+            "max_contact_time_error_ms": 0.2162456512451172
+          },
+          {
+            "flight": 5,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 147,
+              "source_ns": 1793358193961531701,
+              "position_error_m": 0.0002269297129283976,
+              "contact_time_error_ms": 0.21123886108398438,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.23725045507308096,
+              "usable": true
+            },
+            "max_position_error_m": 0.0002269297129283976,
+            "max_contact_time_error_ms": 0.21123886108398438
+          },
+          {
+            "flight": 6,
+            "commands": 20,
+            "usable_commands": 20,
+            "first_usable": {
+              "sequence": 177,
+              "source_ns": 1793358195754861574,
+              "position_error_m": 0.00024062894563539605,
+              "contact_time_error_ms": 0.21600723266601562,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24501316557871178,
+              "usable": true
+            },
+            "max_position_error_m": 0.00024062894563539605,
+            "max_contact_time_error_ms": 0.21600723266601562
+          },
+          {
+            "flight": 7,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 208,
+              "source_ns": 1793358197561535873,
+              "position_error_m": 0.0002276059057411406,
+              "contact_time_error_ms": 0.21195411682128906,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.23850369994761422,
+              "usable": true
+            },
+            "max_position_error_m": 0.0002276059057411406,
+            "max_contact_time_error_ms": 0.21195411682128906
+          },
+          {
+            "flight": 8,
+            "commands": 20,
+            "usable_commands": 20,
+            "first_usable": {
+              "sequence": 238,
+              "source_ns": 1793358199354866876,
+              "position_error_m": 0.00024095360414302935,
+              "contact_time_error_ms": 0.2162456512451172,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2455413369461894,
+              "usable": true
+            },
+            "max_position_error_m": 0.00024095360414302935,
+            "max_contact_time_error_ms": 0.2162456512451172
+          },
+          {
+            "flight": 9,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 269,
+              "source_ns": 1793358201161533812,
+              "position_error_m": 0.0002273239934182103,
+              "contact_time_error_ms": 0.21147727966308594,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.23898588388692588,
+              "usable": true
+            },
+            "max_position_error_m": 0.0002273239934182103,
+            "max_contact_time_error_ms": 0.21147727966308594
+          }
+        ],
+        "assessment": "USABLE_COMMANDS_PRESENT_REQUIRES_LIFECYCLE_AND_SIMULATION_REVIEW"
+      },
+      "flights": [
+        {
+          "flight": 0,
+          "commands": 13,
+          "decoded": 13,
+          "valid": true
+        },
+        {
+          "flight": 1,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        },
+        {
+          "flight": 2,
+          "commands": 20,
+          "decoded": 20,
+          "valid": true
+        },
+        {
+          "flight": 3,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        },
+        {
+          "flight": 4,
+          "commands": 20,
+          "decoded": 20,
+          "valid": true
+        },
+        {
+          "flight": 5,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        },
+        {
+          "flight": 6,
+          "commands": 20,
+          "decoded": 20,
+          "valid": true
+        },
+        {
+          "flight": 7,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        },
+        {
+          "flight": 8,
+          "commands": 20,
+          "decoded": 20,
+          "valid": true
+        },
+        {
+          "flight": 9,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        }
+      ],
+      "generations": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39
+      ],
+      "cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 150,
+        "actual_rate_hz": 149.9988653575012,
+        "minimum_interval_ns": 4240816,
+        "maximum_lateness_ns": 2525814,
+        "resynchronizations": 0,
+        "missed_nominal_ticks": 0,
+        "samples": 2867,
+        "valid": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "profile": "reacquisition_delayed_150",
+      "enabled": false,
+      "raw_exit": 1,
+      "raw_exception": " LIFECYCLE:AssertionError('incomplete lifecycle trace')",
+      "lifecycle": "FAIL",
+      "useful_flight_assessment": {
+        "profile": "reacquisition_unknown",
+        "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/lifecycle-instrumentation-comparison/reacquisition_delayed_150-disabled/result.raw.json",
+        "expected_flights": 10,
+        "flights": [
+          {
+            "flight": 0,
+            "commands": 13,
+            "usable_commands": 13,
+            "first_usable": {
+              "sequence": 1,
+              "source_ns": 1793358207468008464,
+              "position_error_m": 9.993808026492745e-06,
+              "contact_time_error_ms": 0.008106231689453125,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.19103961769724265,
+              "usable": true
+            },
+            "max_position_error_m": 9.993808026492745e-06,
+            "max_contact_time_error_ms": 0.008106231689453125
+          },
+          {
+            "flight": 1,
+            "commands": 20,
+            "usable_commands": 20,
+            "first_usable": {
+              "sequence": 25,
+              "source_ns": 1793358209220758106,
+              "position_error_m": 0.00023505523988789911,
+              "contact_time_error_ms": 0.21409988403320312,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2421398558653891,
+              "usable": true
+            },
+            "max_position_error_m": 0.00023505523988789911,
+            "max_contact_time_error_ms": 0.21409988403320312
+          },
+          {
+            "flight": 2,
+            "commands": 20,
+            "usable_commands": 20,
+            "first_usable": {
+              "sequence": 56,
+              "source_ns": 1793358211020751365,
+              "position_error_m": 0.0002349746030988753,
+              "contact_time_error_ms": 0.21409988403320312,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24177184916334227,
+              "usable": true
+            },
+            "max_position_error_m": 0.0002349746030988753,
+            "max_contact_time_error_ms": 0.21409988403320312
+          },
+          {
+            "flight": 3,
+            "commands": 20,
+            "usable_commands": 20,
+            "first_usable": {
+              "sequence": 87,
+              "source_ns": 1793358212820748514,
+              "position_error_m": 0.00023496863229646725,
+              "contact_time_error_ms": 0.21386146545410156,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24309381446801126,
+              "usable": true
+            },
+            "max_position_error_m": 0.00023496863229646725,
+            "max_contact_time_error_ms": 0.21386146545410156
+          },
+          {
+            "flight": 4,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 117,
+              "source_ns": 1793358214624319473,
+              "position_error_m": 0.00022816241429537976,
+              "contact_time_error_ms": 0.21219253540039062,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.23941252898657694,
+              "usable": true
+            },
+            "max_position_error_m": 0.00022816241429537976,
+            "max_contact_time_error_ms": 0.21219253540039062
+          },
+          {
+            "flight": 5,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 146,
+              "source_ns": 1793358216424306575,
+              "position_error_m": 0.00022782045253558203,
+              "contact_time_error_ms": 0.2117156982421875,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.23970400064717978,
+              "usable": true
+            },
+            "max_position_error_m": 0.00022782045253558203,
+            "max_contact_time_error_ms": 0.2117156982421875
+          },
+          {
+            "flight": 6,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 175,
+              "source_ns": 1793358218224312281,
+              "position_error_m": 0.00022775746116213136,
+              "contact_time_error_ms": 0.2117156982421875,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2395249725668691,
+              "usable": true
+            },
+            "max_position_error_m": 0.00022775746116213136,
+            "max_contact_time_error_ms": 0.2117156982421875
+          },
+          {
+            "flight": 7,
+            "commands": 20,
+            "usable_commands": 20,
+            "first_usable": {
+              "sequence": 204,
+              "source_ns": 1793358220024326144,
+              "position_error_m": 0.00022757831707290177,
+              "contact_time_error_ms": 0.21147727966308594,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.23964416177477688,
+              "usable": true
+            },
+            "max_position_error_m": 0.00022757831707290177,
+            "max_contact_time_error_ms": 0.21147727966308594
+          },
+          {
+            "flight": 8,
+            "commands": 21,
+            "usable_commands": 21,
+            "first_usable": {
+              "sequence": 234,
+              "source_ns": 1793358221817928761,
+              "position_error_m": 0.0002467975910241116,
+              "contact_time_error_ms": 0.22482872009277344,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24590251850895584,
+              "usable": true
+            },
+            "max_position_error_m": 0.0002467975910241116,
+            "max_contact_time_error_ms": 0.22482872009277344
+          },
+          {
+            "flight": 9,
+            "commands": 19,
+            "usable_commands": 19,
+            "first_usable": {
+              "sequence": 265,
+              "source_ns": 1793358223624477507,
+              "position_error_m": 0.0002261208547127691,
+              "contact_time_error_ms": 0.21004676818847656,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.23914642963791266,
+              "usable": true
+            },
+            "max_position_error_m": 0.0002261208547127691,
+            "max_contact_time_error_ms": 0.21004676818847656
+          }
+        ],
+        "assessment": "USABLE_COMMANDS_PRESENT_REQUIRES_LIFECYCLE_AND_SIMULATION_REVIEW"
+      },
+      "flights": [
+        {
+          "flight": 0,
+          "commands": 13,
+          "decoded": 13,
+          "valid": true
+        },
+        {
+          "flight": 1,
+          "commands": 20,
+          "decoded": 20,
+          "valid": true
+        },
+        {
+          "flight": 2,
+          "commands": 20,
+          "decoded": 20,
+          "valid": true
+        },
+        {
+          "flight": 3,
+          "commands": 20,
+          "decoded": 20,
+          "valid": true
+        },
+        {
+          "flight": 4,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        },
+        {
+          "flight": 5,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        },
+        {
+          "flight": 6,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        },
+        {
+          "flight": 7,
+          "commands": 20,
+          "decoded": 20,
+          "valid": true
+        },
+        {
+          "flight": 8,
+          "commands": 21,
+          "decoded": 21,
+          "valid": true
+        },
+        {
+          "flight": 9,
+          "commands": 19,
+          "decoded": 19,
+          "valid": true
+        }
+      ],
+      "generations": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39
+      ],
+      "cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 150,
+        "actual_rate_hz": 149.5841331775453,
+        "minimum_interval_ns": 4645774,
+        "maximum_lateness_ns": 21927721,
+        "resynchronizations": 5,
+        "missed_nominal_ticks": 6,
+        "samples": 2859,
+        "valid": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "enabled": true,
+      "raw_exit": 0,
+      "raw_exception": null,
+      "lifecycle": "PASS",
+      "useful_flight_assessment": {
+        "profile": "reacquisition_zero",
+        "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/lifecycle-instrumentation-comparison/reacquisition_chain_300_ON_REFRESH_zero-enabled/result.raw.json",
+        "expected_flights": 10,
+        "flights": [
+          {
+            "flight": 0,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 21,
+              "source_ns": 1793358229594658888,
+              "position_error_m": 0.0036618730345627237,
+              "contact_time_error_ms": 0.38433074951171875,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2517486830474809,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036618730345627237,
+            "max_contact_time_error_ms": 0.38433074951171875
+          },
+          {
+            "flight": 1,
+            "commands": 40,
+            "usable_commands": 40,
+            "first_usable": {
+              "sequence": 83,
+              "source_ns": 1793358231397058597,
+              "position_error_m": 0.003653810526325796,
+              "contact_time_error_ms": 0.3802776336669922,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2484887700411491,
+              "usable": true
+            },
+            "max_position_error_m": 0.003653810526325796,
+            "max_contact_time_error_ms": 0.3802776336669922
+          },
+          {
+            "flight": 2,
+            "commands": 37,
+            "usable_commands": 37,
+            "first_usable": {
+              "sequence": 144,
+              "source_ns": 1793358233197178786,
+              "position_error_m": 0.003652233311945252,
+              "contact_time_error_ms": 0.37860870361328125,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2484734412864782,
+              "usable": true
+            },
+            "max_position_error_m": 0.003652233311945252,
+            "max_contact_time_error_ms": 0.37860870361328125
+          },
+          {
+            "flight": 3,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 202,
+              "source_ns": 1793358234996385266,
+              "position_error_m": 0.0036556680271092046,
+              "contact_time_error_ms": 0.38051605224609375,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2501073910971172,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036556680271092046,
+            "max_contact_time_error_ms": 0.38051605224609375
+          },
+          {
+            "flight": 4,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 264,
+              "source_ns": 1793358236796406583,
+              "position_error_m": 0.0036515026010808804,
+              "contact_time_error_ms": 0.37670135498046875,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2501061874208972,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036515026010808804,
+            "max_contact_time_error_ms": 0.37670135498046875
+          },
+          {
+            "flight": 5,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 326,
+              "source_ns": 1793358238596400731,
+              "position_error_m": 0.0036549254757935468,
+              "contact_time_error_ms": 0.3800392150878906,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.250390465662349,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036549254757935468,
+            "max_contact_time_error_ms": 0.3800392150878906
+          },
+          {
+            "flight": 6,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 388,
+              "source_ns": 1793358240396405022,
+              "position_error_m": 0.0036552461916792844,
+              "contact_time_error_ms": 0.38051605224609375,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2502804772811942,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036552461916792844,
+            "max_contact_time_error_ms": 0.38051605224609375
+          },
+          {
+            "flight": 7,
+            "commands": 40,
+            "usable_commands": 40,
+            "first_usable": {
+              "sequence": 450,
+              "source_ns": 1793358242196389706,
+              "position_error_m": 0.0036555513800587414,
+              "contact_time_error_ms": 0.3807544708251953,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2504086406552233,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036555513800587414,
+            "max_contact_time_error_ms": 0.3807544708251953
+          },
+          {
+            "flight": 8,
+            "commands": 40,
+            "usable_commands": 40,
+            "first_usable": {
+              "sequence": 511,
+              "source_ns": 1793358243996365087,
+              "position_error_m": 0.003656164225650904,
+              "contact_time_error_ms": 0.3809928894042969,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.25054409983567894,
+              "usable": true
+            },
+            "max_position_error_m": 0.003656164225650904,
+            "max_contact_time_error_ms": 0.3809928894042969
+          },
+          {
+            "flight": 9,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 572,
+              "source_ns": 1793358245795451918,
+              "position_error_m": 0.00365792457016495,
+              "contact_time_error_ms": 0.38123130798339844,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.25141080713365227,
+              "usable": true
+            },
+            "max_position_error_m": 0.00365792457016495,
+            "max_contact_time_error_ms": 0.38123130798339844
+          }
+        ],
+        "assessment": "USABLE_COMMANDS_PRESENT_REQUIRES_LIFECYCLE_AND_SIMULATION_REVIEW"
+      },
+      "flights": [
+        {
+          "flight": 0,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 1,
+          "commands": 40,
+          "decoded": 40,
+          "valid": true
+        },
+        {
+          "flight": 2,
+          "commands": 37,
+          "decoded": 37,
+          "valid": true
+        },
+        {
+          "flight": 3,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 4,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 5,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 6,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 7,
+          "commands": 40,
+          "decoded": 40,
+          "valid": true
+        },
+        {
+          "flight": 8,
+          "commands": 40,
+          "decoded": 40,
+          "valid": true
+        },
+        {
+          "flight": 9,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        }
+      ],
+      "generations": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39
+      ],
+      "cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 300,
+        "actual_rate_hz": 299.6770907267881,
+        "minimum_interval_ns": 1893394,
+        "maximum_lateness_ns": 4001372,
+        "resynchronizations": 8,
+        "missed_nominal_ticks": 1,
+        "samples": 5726,
+        "valid": true
+      },
+      "comparison": "PASS"
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "enabled": false,
+      "raw_exit": 1,
+      "raw_exception": " LIFECYCLE:AssertionError('incomplete lifecycle trace')",
+      "lifecycle": "FAIL",
+      "useful_flight_assessment": {
+        "profile": "reacquisition_zero",
+        "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/lifecycle-instrumentation-comparison/reacquisition_chain_300_ON_REFRESH_zero-disabled/result.raw.json",
+        "expected_flights": 10,
+        "flights": [
+          {
+            "flight": 0,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 2,
+              "source_ns": 1793358252397412940,
+              "position_error_m": 0.0036554494058858578,
+              "contact_time_error_ms": 0.38051605224609375,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.25019481912022457,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036554494058858578,
+            "max_contact_time_error_ms": 0.38051605224609375
+          },
+          {
+            "flight": 1,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 64,
+              "source_ns": 1793358254197773306,
+              "position_error_m": 0.003651213890606575,
+              "contact_time_error_ms": 0.3764629364013672,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24980254645925015,
+              "usable": true
+            },
+            "max_position_error_m": 0.003651213890606575,
+            "max_contact_time_error_ms": 0.3764629364013672
+          },
+          {
+            "flight": 2,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 126,
+              "source_ns": 1793358255996769132,
+              "position_error_m": 0.003657065324607245,
+              "contact_time_error_ms": 0.3809928894042969,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2508548517944291,
+              "usable": true
+            },
+            "max_position_error_m": 0.003657065324607245,
+            "max_contact_time_error_ms": 0.3809928894042969
+          },
+          {
+            "flight": 3,
+            "commands": 40,
+            "usable_commands": 40,
+            "first_usable": {
+              "sequence": 188,
+              "source_ns": 1793358257796776788,
+              "position_error_m": 0.0036571376948759116,
+              "contact_time_error_ms": 0.3809928894042969,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.25027066213078797,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036571376948759116,
+            "max_contact_time_error_ms": 0.3809928894042969
+          },
+          {
+            "flight": 4,
+            "commands": 41,
+            "usable_commands": 33,
+            "first_usable": {
+              "sequence": 249,
+              "source_ns": 1793358259597133274,
+              "position_error_m": 0.0036516841209709994,
+              "contact_time_error_ms": 0.37598609924316406,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2490732898004353,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036516841209709994,
+            "max_contact_time_error_ms": 0.37598609924316406
+          },
+          {
+            "flight": 5,
+            "commands": 40,
+            "usable_commands": 40,
+            "first_usable": {
+              "sequence": 311,
+              "source_ns": 1793358261399101808,
+              "position_error_m": 0.0036492908362192877,
+              "contact_time_error_ms": 0.3771781921386719,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24760627024807036,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036492908362192877,
+            "max_contact_time_error_ms": 0.3771781921386719
+          },
+          {
+            "flight": 6,
+            "commands": 39,
+            "usable_commands": 39,
+            "first_usable": {
+              "sequence": 372,
+              "source_ns": 1793358263198041219,
+              "position_error_m": 0.003652657426588657,
+              "contact_time_error_ms": 0.3788471221923828,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24389852286549285,
+              "usable": true
+            },
+            "max_position_error_m": 0.003652657426588657,
+            "max_contact_time_error_ms": 0.3788471221923828
+          },
+          {
+            "flight": 7,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 432,
+              "source_ns": 1793358264996555062,
+              "position_error_m": 0.0036564188983341794,
+              "contact_time_error_ms": 0.3800392150878906,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.24963676126208156,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036564188983341794,
+            "max_contact_time_error_ms": 0.3800392150878906
+          },
+          {
+            "flight": 8,
+            "commands": 40,
+            "usable_commands": 40,
+            "first_usable": {
+              "sequence": 494,
+              "source_ns": 1793358266797110216,
+              "position_error_m": 0.0036559282222517475,
+              "contact_time_error_ms": 0.3802776336669922,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.2458948633284308,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036559282222517475,
+            "max_contact_time_error_ms": 0.3802776336669922
+          },
+          {
+            "flight": 9,
+            "commands": 41,
+            "usable_commands": 41,
+            "first_usable": {
+              "sequence": 555,
+              "source_ns": 1793358268596380170,
+              "position_error_m": 0.0036581638277207174,
+              "contact_time_error_ms": 0.38123130798339844,
+              "decoder_matches": true,
+              "receiver_lead_s": 0.25139667466282845,
+              "usable": true
+            },
+            "max_position_error_m": 0.0036581638277207174,
+            "max_contact_time_error_ms": 0.38123130798339844
+          }
+        ],
+        "assessment": "USABLE_COMMANDS_PRESENT_REQUIRES_LIFECYCLE_AND_SIMULATION_REVIEW"
+      },
+      "flights": [
+        {
+          "flight": 0,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 1,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 2,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 3,
+          "commands": 40,
+          "decoded": 40,
+          "valid": true
+        },
+        {
+          "flight": 4,
+          "commands": 41,
+          "decoded": 33,
+          "valid": true
+        },
+        {
+          "flight": 5,
+          "commands": 40,
+          "decoded": 40,
+          "valid": true
+        },
+        {
+          "flight": 6,
+          "commands": 39,
+          "decoded": 39,
+          "valid": true
+        },
+        {
+          "flight": 7,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        },
+        {
+          "flight": 8,
+          "commands": 40,
+          "decoded": 40,
+          "valid": true
+        },
+        {
+          "flight": 9,
+          "commands": 41,
+          "decoded": 41,
+          "valid": true
+        }
+      ],
+      "generations": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39
+      ],
+      "cadence": {
+        "policy": "actual acquisition; resynchronize after half-period lateness; no catch-up",
+        "requested_rate_hz": 300,
+        "actual_rate_hz": 294.5443019115673,
+        "minimum_interval_ns": 1783722,
+        "maximum_lateness_ns": 317510497,
+        "resynchronizations": 14,
+        "missed_nominal_ticks": 96,
+        "samples": 5628,
+        "valid": true
+      },
+      "comparison": "PASS"
+    }
+  ]
+}

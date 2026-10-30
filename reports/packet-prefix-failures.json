@@ -1,0 +1,89 @@
+[
+  {
+    "repetition": 1,
+    "profile": "300_per_ball_zero",
+    "flight": 10,
+    "reason": "PACKET_OBSERVATION_PREFIX_MISMATCH",
+    "first_source_ns": 1793281654607019920,
+    "cutoff_ns": 1793281654725444269,
+    "packet_sample_count": 35,
+    "offered_in_packet_time_window": 36,
+    "typed_receipts_in_window": 35,
+    "missing_typed_receipts": [
+      1793281654653662942
+    ],
+    "typed_receipt_age_over_30ms": [
+      {
+        "source_ns": 1793281654650334325,
+        "phase_s": 0.04665788500000012,
+        "age_ms": 34.078334
+      }
+    ],
+    "packet_cutoff_to_rejection_ms": 2.360023,
+    "packet_freeze_to_rejection_ms": 1.078832,
+    "limitation": "Historical packet receipts contain endpoints/count/hash but not the full interior source list. Do not infer exact missing packet frames; new producer-chain receipts retain sample_sources."
+  },
+  {
+    "repetition": 3,
+    "profile": "150_per_ball_unknown",
+    "flight": 10,
+    "reason": "PACKET_OBSERVATION_PREFIX_MISMATCH",
+    "first_source_ns": 1793282066446660356,
+    "cutoff_ns": 1793282066599987998,
+    "packet_sample_count": 24,
+    "offered_in_packet_time_window": 24,
+    "typed_receipts_in_window": 24,
+    "missing_typed_receipts": [],
+    "typed_receipt_age_over_30ms": [
+      {
+        "source_ns": 1793282066580014819,
+        "phase_s": 0.1334424280000004,
+        "age_ms": 32.746973
+      }
+    ],
+    "packet_cutoff_to_rejection_ms": 13.948375,
+    "packet_freeze_to_rejection_ms": 11.349656,
+    "limitation": "Historical packet receipts contain endpoints/count/hash but not the full interior source list. Do not infer exact missing packet frames; new producer-chain receipts retain sample_sources."
+  },
+  {
+    "repetition": 4,
+    "profile": "360_stable_per_ball_zero",
+    "flight": 8,
+    "reason": "PACKET_OBSERVATION_PREFIX_MISMATCH",
+    "first_source_ns": 1793282523711099097,
+    "cutoff_ns": 1793282523832872714,
+    "packet_sample_count": 42,
+    "offered_in_packet_time_window": 44,
+    "typed_receipts_in_window": 42,
+    "missing_typed_receipts": [
+      1793282523742176087,
+      1793282523744908893
+    ],
+    "typed_receipt_age_over_30ms": [
+      {
+        "source_ns": 1793282523738884719,
+        "phase_s": 0.028151311000000234,
+        "age_ms": 30.212675
+      }
+    ],
+    "packet_cutoff_to_rejection_ms": 2.310691,
+    "packet_freeze_to_rejection_ms": 1.170102,
+    "limitation": "Historical packet receipts contain endpoints/count/hash but not the full interior source list. Do not infer exact missing packet frames; new producer-chain receipts retain sample_sources."
+  },
+  {
+    "repetition": 4,
+    "profile": "150_stable_per_ball_zero",
+    "flight": 9,
+    "reason": "PACKET_SOURCE_EXPIRED_OR_UNQUALIFIED",
+    "first_source_ns": 1793282354879654597,
+    "cutoff_ns": 1793282355039656259,
+    "packet_sample_count": 25,
+    "offered_in_packet_time_window": 25,
+    "typed_receipts_in_window": 25,
+    "missing_typed_receipts": [],
+    "typed_receipt_age_over_30ms": [],
+    "packet_cutoff_to_rejection_ms": 46.228745,
+    "packet_freeze_to_rejection_ms": 40.846049,
+    "limitation": "Historical packet receipts contain endpoints/count/hash but not the full interior source list. Do not infer exact missing packet frames; new producer-chain receipts retain sample_sources."
+  }
+]

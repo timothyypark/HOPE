@@ -1,0 +1,47 @@
+{
+  "profile": "integrated_chain_150_ON_REFRESH",
+  "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/build/hope_planner_cpp/integrated_chain_150_ON_REFRESH.raw.json",
+  "expected_flights": 2,
+  "flights": [
+    {
+      "flight": 0,
+      "commands": 25,
+      "usable_commands": 25,
+      "first_usable": {
+        "sequence": 1,
+        "source_ns": 1793353609126908467,
+        "position_error_m": 0.00031717226802874254,
+        "contact_time_error_ms": 0.4935264587402344,
+        "decoder_matches": true,
+        "receiver_lead_s": 0.36146966682281345,
+        "usable": true
+      },
+      "max_position_error_m": 0.00031717226802874254,
+      "max_contact_time_error_ms": 0.4935264587402344
+    },
+    {
+      "flight": 1,
+      "commands": 36,
+      "usable_commands": 36,
+      "first_usable": {
+        "sequence": 28,
+        "source_ns": 1793353610126911733,
+        "position_error_m": 0.0003207647523634227,
+        "contact_time_error_ms": 0.49877166748046875,
+        "decoder_matches": true,
+        "receiver_lead_s": 0.3618780668475665,
+        "usable": true
+      },
+      "max_position_error_m": 0.005235497870995753,
+      "max_contact_time_error_ms": 0.49877166748046875
+    }
+  ],
+  "assessment": "USABLE_COMMANDS_PRESENT_REQUIRES_LIFECYCLE_AND_SIMULATION_REVIEW",
+  "raw_exception": "AssertionError: ('source cadence', {'policy': 'actual acquisition; resynchronize after half-period lateness; no catch-up', 'requested_rate_hz': 150, 'actual_rate_hz': 139.65629667223098, 'minimum_interval_ns': 4834850, 'maximum_lateness_ns': 324875652, 'resynchronizations': 1, 'missed_nominal_ticks': 48, 'samples': 659, 'valid': False})",
+  "largest_source_gap": {
+    "duration_ms": 331.480217,
+    "from_phase_s": 4.6248e-05,
+    "to_phase_s": 0.33152646500000005,
+    "first_declared_flight_starts_s": 0.8
+  }
+}

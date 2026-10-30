@@ -1,0 +1,2711 @@
+{
+  "status": "PASS",
+  "executed": 159,
+  "passed": 159,
+  "simulation_level": "Replay actual converted command returns in the supplied A3 MuJoCo scene.\n\nThe robot is pinned. This tests ball flight after the independently reconstructed\nimpact, not policy tracking, joint reachability, or a simulated racket collision.\n",
+  "results": [
+    {
+      "id": 0,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027891578847336414,
+      "landing_table": [
+        2.052250384077945,
+        -0.7629679893023906,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6687531498718886
+    },
+    {
+      "id": 1,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027891557784904225,
+      "landing_table": [
+        2.0522503861723975,
+        -0.7629679890551528,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6687535066056822
+    },
+    {
+      "id": 2,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002696689253925462,
+      "landing_table": [
+        2.0523443812780644,
+        -0.7629688519339208,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6748086293009659
+    },
+    {
+      "id": 3,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002696686263907177,
+      "landing_table": [
+        2.052344384241087,
+        -0.7629688515190957,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6748093356039475
+    },
+    {
+      "id": 4,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002633853029121832,
+      "landing_table": [
+        2.0524084292000997,
+        -0.7629700452830499,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6778734861860836
+    },
+    {
+      "id": 5,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026338495519126507,
+      "landing_table": [
+        2.0524084326403647,
+        -0.7629700447665726,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6778744169170132
+    },
+    {
+      "id": 6,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027480841696400807,
+      "landing_table": [
+        2.0522532801365085,
+        -0.7624134171210516,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6685521918740784
+    },
+    {
+      "id": 7,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027480820884524452,
+      "landing_table": [
+        2.052253282217289,
+        -0.7624134171667631,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6685525485823143
+    },
+    {
+      "id": 8,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026542806720954277,
+      "landing_table": [
+        2.05234713712184,
+        -0.7624132564933951,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6746140167534724
+    },
+    {
+      "id": 9,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026542777216971188,
+      "landing_table": [
+        2.0523471400713027,
+        -0.762413256570226,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.674614722957396
+    },
+    {
+      "id": 10,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002590371805299586,
+      "landing_table": [
+        2.05241108842081,
+        -0.7624130349218012,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6776863921450587
+    },
+    {
+      "id": 11,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002590368377869,
+      "landing_table": [
+        2.052411091846961,
+        -0.7624130350174462,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6776873227850668
+    },
+    {
+      "id": 12,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002826111546508143,
+      "landing_table": [
+        2.052247745045994,
+        -0.761858128407346,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.668933560188461
+    },
+    {
+      "id": 13,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002826109417393044,
+      "landing_table": [
+        2.052247747153058,
+        -0.7618581287468841,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6689339169645765
+    },
+    {
+      "id": 14,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.00273480501998803,
+      "landing_table": [
+        2.0523418712270165,
+        -0.7618569526272597,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6749838513112736
+    },
+    {
+      "id": 15,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027348019936557924,
+      "landing_table": [
+        2.052341874202958,
+        -0.7618569531964127,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.67498455770193
+    },
+    {
+      "id": 16,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002672901991274111,
+      "landing_table": [
+        2.052406007965648,
+        -0.7618553214904503,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6780414794216532
+    },
+    {
+      "id": 17,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026728984695016935,
+      "landing_table": [
+        2.052406011418493,
+        -0.7618553221988651,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6780424102745743
+    },
+    {
+      "id": 18,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0028070831635616297,
+      "landing_table": [
+        2.0522326691856647,
+        -0.7629707398975875,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6639238259179818
+    },
+    {
+      "id": 19,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0028070813254518177,
+      "landing_table": [
+        2.0522326710172134,
+        -0.7629707397037947,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6639240661913524
+    },
+    {
+      "id": 20,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027108194998334808,
+      "landing_table": [
+        2.052330427364848,
+        -0.7629710884272871,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6707589159123879
+    },
+    {
+      "id": 21,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027108167453137404,
+      "landing_table": [
+        2.0523304300973066,
+        -0.762971088061095,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6707595103722719
+    },
+    {
+      "id": 22,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026455781438750065,
+      "landing_table": [
+        2.052396856978943,
+        -0.7629719429279791,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6743696329709832
+    },
+    {
+      "id": 23,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002645574880839186,
+      "landing_table": [
+        2.05239686020973,
+        -0.7629719424567036,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6743704566937032
+    },
+    {
+      "id": 24,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027657620361479546,
+      "landing_table": [
+        2.0522356095234167,
+        -0.7624129084758904,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6637232199355787
+    },
+    {
+      "id": 25,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027657602182480584,
+      "landing_table": [
+        2.0522356113410902,
+        -0.7624129085117035,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6637234601908226
+    },
+    {
+      "id": 26,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002668203563642916,
+      "landing_table": [
+        2.0523332203126317,
+        -0.7624128429229752,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6705648715953909
+    },
+    {
+      "id": 27,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026682008445024835,
+      "landing_table": [
+        2.0523332230310105,
+        -0.7624128429906998,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6705654659706088
+    },
+    {
+      "id": 28,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002601916890193311,
+      "landing_table": [
+        2.0523995486117053,
+        -0.7624126840187115,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6741828910621417
+    },
+    {
+      "id": 29,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002601913672389969,
+      "landing_table": [
+        2.052399551828395,
+        -0.7624126841058889,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6741837147028085
+    },
+    {
+      "id": 30,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0028442604190951357,
+      "landing_table": [
+        2.0522299894031675,
+        -0.7618543541024169,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6641036844365595
+    },
+    {
+      "id": 31,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002844258562372327,
+      "landing_table": [
+        2.052229991247637,
+        -0.761854354368512,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6641039247399085
+    },
+    {
+      "id": 32,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027491225361754223,
+      "landing_table": [
+        2.0523278831493155,
+        -0.7618538837138761,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6709336352682924
+    },
+    {
+      "id": 33,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002749119749423826,
+      "landing_table": [
+        2.0523278858948975,
+        -0.7618538842162713,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6709342298030334
+    },
+    {
+      "id": 34,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002684789622635485,
+      "landing_table": [
+        2.0523944058898462,
+        -0.7618527174875355,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6745371629328532
+    },
+    {
+      "id": 35,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026847863188297657,
+      "landing_table": [
+        2.052394409133467,
+        -0.7618527181340287,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6745379867645613
+    },
+    {
+      "id": 36,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0028163550164357187,
+      "landing_table": [
+        2.0522235315275767,
+        -0.7629723117617013,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6606006812343741
+    },
+    {
+      "id": 37,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0028165600996396187,
+      "landing_table": [
+        2.052223329336678,
+        -0.7629723460832147,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6605310856341307
+    },
+    {
+      "id": 38,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027224522292827054,
+      "landing_table": [
+        2.0523189716951604,
+        -0.7629731103141705,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.666500738408758
+    },
+    {
+      "id": 39,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002722679535181456,
+      "landing_table": [
+        2.05231874782303,
+        -0.7629731496748257,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6664194879958028
+    },
+    {
+      "id": 40,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002658643172910624,
+      "landing_table": [
+        2.0523839995356368,
+        -0.7629742626817648,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6694609995905507
+    },
+    {
+      "id": 41,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002658885067918255,
+      "landing_table": [
+        2.052383761486763,
+        -0.7629743056464479,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6693711487249805
+    },
+    {
+      "id": 42,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002774917055973148,
+      "landing_table": [
+        2.052226459145881,
+        -0.7624126169463653,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6604003031050827
+    },
+    {
+      "id": 43,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027751194755313226,
+      "landing_table": [
+        2.0522262568263003,
+        -0.7624126105851555,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6603307124435676
+    },
+    {
+      "id": 44,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026796756464322765,
+      "landing_table": [
+        2.0523217543552428,
+        -0.7624124680834189,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6663072671715866
+    },
+    {
+      "id": 45,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026798997693458955,
+      "landing_table": [
+        2.052321530351076,
+        -0.7624124607886013,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6662260277966217
+    },
+    {
+      "id": 46,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026147904500793515,
+      "landing_table": [
+        2.052386682234797,
+        -0.762412254026307,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6692747382119022
+    },
+    {
+      "id": 47,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.00261502877066121,
+      "landing_table": [
+        2.052386444047271,
+        -0.7624122460636723,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6691848962973024
+    },
+    {
+      "id": 48,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0028536367191861595,
+      "landing_table": [
+        2.052220863156431,
+        -0.7618522030180653,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6607801817772543
+    },
+    {
+      "id": 49,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0028538441905547204,
+      "landing_table": [
+        2.052220661078306,
+        -0.7618521560200796,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6607105785514795
+    },
+    {
+      "id": 50,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027608990011509195,
+      "landing_table": [
+        2.0523164366050253,
+        -0.7618511157270306,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6666749517734696
+    },
+    {
+      "id": 51,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0027611291581863097,
+      "landing_table": [
+        2.0523162128484467,
+        -0.7618510618262553,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6665936916128521
+    },
+    {
+      "id": 52,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026980259586391283,
+      "landing_table": [
+        2.0523815562861984,
+        -0.7618495412456251,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6696279037554591
+    },
+    {
+      "id": 53,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0026982710532325676,
+      "landing_table": [
+        2.0523813183583313,
+        -0.7618494824089241,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6695380413572958
+    },
+    {
+      "id": 54,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003212030341675486,
+      "landing_table": [
+        2.051828374273977,
+        -0.7630078672758436,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6216747182236211
+    },
+    {
+      "id": 55,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.00321200525651951,
+      "landing_table": [
+        2.0518283994372717,
+        -0.7630078657681015,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6216758286765789
+    },
+    {
+      "id": 56,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031064126181660845,
+      "landing_table": [
+        2.051935496893367,
+        -0.7630085470123187,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6260572344610869
+    },
+    {
+      "id": 57,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031063878385544047,
+      "landing_table": [
+        2.051935521758751,
+        -0.7630085454870806,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.626058424996554
+    },
+    {
+      "id": 58,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030321740768990474,
+      "landing_table": [
+        2.0520108931929752,
+        -0.7630092348464274,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6286610666779198
+    },
+    {
+      "id": 59,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003032149544703119,
+      "landing_table": [
+        2.0520109178174506,
+        -0.7630092333133329,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6286623080498455
+    },
+    {
+      "id": 60,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031682060426481166,
+      "landing_table": [
+        2.0518331872236577,
+        -0.7624060512465956,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6214786789167956
+    },
+    {
+      "id": 61,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003168180985676798,
+      "landing_table": [
+        2.0518332122834004,
+        -0.762406051524775,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6214797891873263
+    },
+    {
+      "id": 62,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003061305273312863,
+      "landing_table": [
+        2.051940140561316,
+        -0.7624059245414111,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6258701223814911
+    },
+    {
+      "id": 63,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030612805137458427,
+      "landing_table": [
+        2.0519401653239275,
+        -0.7624059248229151,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6258713127122042
+    },
+    {
+      "id": 64,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0029860680104343193,
+      "landing_table": [
+        2.0520154183069157,
+        -0.7624057966017372,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6284796600219364
+    },
+    {
+      "id": 65,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0029860434914032808,
+      "landing_table": [
+        2.052015442829226,
+        -0.7624057968846957,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6284809011727113
+    },
+    {
+      "id": 66,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003251517971156387,
+      "landing_table": [
+        2.051823987890468,
+        -0.7618033536070165,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6218501337613265
+    },
+    {
+      "id": 67,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003251492855995551,
+      "landing_table": [
+        2.0518240131481664,
+        -0.7618033556792958,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6218512442834498
+    },
+    {
+      "id": 68,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.00314702017569464,
+      "landing_table": [
+        2.051931265823357,
+        -0.7618024281117115,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6262258142217354
+    },
+    {
+      "id": 69,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031469953731146426,
+      "landing_table": [
+        2.0519312907820835,
+        -0.7618024302083102,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6262270049387553
+    },
+    {
+      "id": 70,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003073652130822591,
+      "landing_table": [
+        2.0520067708627483,
+        -0.7618014896183901,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6288222961737306
+    },
+    {
+      "id": 71,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030736275812118237,
+      "landing_table": [
+        2.0520067955801817,
+        -0.7618014917257716,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6288235376517872
+    },
+    {
+      "id": 72,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0032274096628997634,
+      "landing_table": [
+        2.0518130646316424,
+        -0.7630095253576505,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6201308346095955
+    },
+    {
+      "id": 73,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0032273845734093363,
+      "landing_table": [
+        2.05181308980319,
+        -0.763009523877897,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6201318622772958
+    },
+    {
+      "id": 74,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003118762933026201,
+      "landing_table": [
+        2.0519231979107855,
+        -0.7630098736473111,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6248444937155859
+    },
+    {
+      "id": 75,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031187381578055063,
+      "landing_table": [
+        2.0519232227752178,
+        -0.7630098721467313,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6248456121557768
+    },
+    {
+      "id": 76,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003042575167034783,
+      "landing_table": [
+        2.052000531590957,
+        -0.7630103458731187,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6276665635716603
+    },
+    {
+      "id": 77,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003042550647948418,
+      "landing_table": [
+        2.0520005562054306,
+        -0.7630103443627099,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6276677405359683
+    },
+    {
+      "id": 78,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031834655162186315,
+      "landing_table": [
+        2.0518179301213233,
+        -0.7624057451318468,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.619935032252837
+    },
+    {
+      "id": 79,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003183440450952542,
+      "landing_table": [
+        2.051817955189494,
+        -0.7624057454049321,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6199360597489898
+    },
+    {
+      "id": 80,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030735615345195504,
+      "landing_table": [
+        2.0519278860401213,
+        -0.762405679673475,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6246575831834777
+    },
+    {
+      "id": 81,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030735367761287424,
+      "landing_table": [
+        2.0519279108016786,
+        -0.7624056799503195,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6246587014291043
+    },
+    {
+      "id": 82,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.002996391979446641,
+      "landing_table": [
+        2.0520050956704976,
+        -0.7624055915701909,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6274853316565605
+    },
+    {
+      "id": 83,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0029963674705824283,
+      "landing_table": [
+        2.05200512018275,
+        -0.7624055918489155,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6274865084094541
+    },
+    {
+      "id": 84,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0032670072174982075,
+      "landing_table": [
+        2.0518086303654592,
+        -0.7618010751006613,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6203061175935878
+    },
+    {
+      "id": 85,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003266982101536117,
+      "landing_table": [
+        2.0518086556311945,
+        -0.7618010771348354,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6203071453242819
+    },
+    {
+      "id": 86,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031594570280964566,
+      "landing_table": [
+        2.0519189263339035,
+        -0.7618006047065687,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6250128947947058
+    },
+    {
+      "id": 87,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031594322331369514,
+      "landing_table": [
+        2.051918951291422,
+        -0.7618006067692957,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6250140134073159
+    },
+    {
+      "id": 88,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030841244006152143,
+      "landing_table": [
+        2.0519963737703546,
+        -0.7617999622931189,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6278276836980523
+    },
+    {
+      "id": 89,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030840998671862784,
+      "landing_table": [
+        2.0519963984773826,
+        -0.7617999643694012,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6278288607620106
+    },
+    {
+      "id": 90,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0032534734240804316,
+      "landing_table": [
+        2.0517872608451833,
+        -0.7630132216327319,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6134495801338502
+    },
+    {
+      "id": 91,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0032539540954800595,
+      "landing_table": [
+        2.0517867861891865,
+        -0.7630132974395883,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6133093438019943
+    },
+    {
+      "id": 92,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003146146895200215,
+      "landing_table": [
+        2.051896101116168,
+        -0.7630138599080719,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6175932719660713
+    },
+    {
+      "id": 93,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031466408340997255,
+      "landing_table": [
+        2.0518956137884894,
+        -0.7630139404523927,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6174415612630404
+    },
+    {
+      "id": 94,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003070760460225992,
+      "landing_table": [
+        2.0519726528555173,
+        -0.7630145280078664,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6200061000186281
+    },
+    {
+      "id": 95,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030712630249968686,
+      "landing_table": [
+        2.051972157358924,
+        -0.7630146119990756,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6198457127033024
+    },
+    {
+      "id": 96,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003209272476618065,
+      "landing_table": [
+        2.0517921321325807,
+        -0.7624050601540128,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6132546671549064
+    },
+    {
+      "id": 97,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.00320974755642676,
+      "landing_table": [
+        2.0517916572606056,
+        -0.7624050461029656,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6131144495075611
+    },
+    {
+      "id": 98,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031006595062495292,
+      "landing_table": [
+        2.051900797979468,
+        -0.7624049410202786,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6174074151685378
+    },
+    {
+      "id": 99,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031011472921796085,
+      "landing_table": [
+        2.0519003104220617,
+        -0.7624049260907902,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6172557264992937
+    },
+    {
+      "id": 100,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030242706732508343,
+      "landing_table": [
+        2.0519772275579826,
+        -0.7624048166565812,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6198260488890119
+    },
+    {
+      "id": 101,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0030247666564431025,
+      "landing_table": [
+        2.0519767318191957,
+        -0.7624048010878983,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6196656862646053
+    },
+    {
+      "id": 102,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0032933021496218532,
+      "landing_table": [
+        2.0517828209029068,
+        -0.7617960129930679,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.613624343341123
+    },
+    {
+      "id": 103,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0032937878395252135,
+      "landing_table": [
+        2.0517823464345493,
+        -0.7617959091929691,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6134840957629777
+    },
+    {
+      "id": 104,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031870984180979926,
+      "landing_table": [
+        2.0518918211455635,
+        -0.7617951450252177,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6177607429950955
+    },
+    {
+      "id": 105,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031875978748003237,
+      "landing_table": [
+        2.051891334016981,
+        -0.7617950347402519,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6176090128484386
+    },
+    {
+      "id": 106,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003112585641294217,
+      "landing_table": [
+        2.051968484889548,
+        -0.7617942340972449,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.620166432635803
+    },
+    {
+      "id": 107,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0031130941050264405,
+      "landing_table": [
+        2.0519679896019114,
+        -0.7617941190945832,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6200060284636923
+    },
+    {
+      "id": 108,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0035565658998160956,
+      "landing_table": [
+        2.0514829365572305,
+        -0.7630286073583177,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6044180052155146
+    },
+    {
+      "id": 109,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003556517120815844,
+      "landing_table": [
+        2.051482985559386,
+        -0.7630286051978259,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6044191321133197
+    },
+    {
+      "id": 110,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003446089224994436,
+      "landing_table": [
+        2.051594794646652,
+        -0.7630292517814358,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6082136236623463
+    },
+    {
+      "id": 111,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034460408467464855,
+      "landing_table": [
+        2.0515948432709745,
+        -0.7630292496275073,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6082147865439695
+    },
+    {
+      "id": 112,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0033682340645787177,
+      "landing_table": [
+        2.0516737066248836,
+        -0.7630298802661394,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6104456331582253
+    },
+    {
+      "id": 113,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003368185983174371,
+      "landing_table": [
+        2.0516737549706834,
+        -0.7630298781201349,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6104468164006518
+    },
+    {
+      "id": 114,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003512442075080249,
+      "landing_table": [
+        2.051488919141494,
+        -0.762402222007457,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6042246895136345
+    },
+    {
+      "id": 115,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003512393241134547,
+      "landing_table": [
+        2.051488967983277,
+        -0.7624022224058742,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6042258162040821
+    },
+    {
+      "id": 116,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034008113896659376,
+      "landing_table": [
+        2.05160059797732,
+        -0.7624021021129904,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6080294969012165
+    },
+    {
+      "id": 117,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034007629332003598,
+      "landing_table": [
+        2.0516006464424397,
+        -0.7624021025100917,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6080306595607776
+    },
+    {
+      "id": 118,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003322062534253339,
+      "landing_table": [
+        2.0516793836998968,
+        -0.762401985363453,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6102674032524147
+    },
+    {
+      "id": 119,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0033220143561101573,
+      "landing_table": [
+        2.0516794318873455,
+        -0.7624019857590812,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6102685862621224
+    },
+    {
+      "id": 120,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003596375909078528,
+      "landing_table": [
+        2.051477488767681,
+        -0.7617748556712024,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6045922762100402
+    },
+    {
+      "id": 121,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003596327171901309,
+      "landing_table": [
+        2.0514775379150483,
+        -0.7617748586431377,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6045934032923896
+    },
+    {
+      "id": 122,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034869100173931,
+      "landing_table": [
+        2.0515895114853993,
+        -0.7617739768866133,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.608379559143797
+    },
+    {
+      "id": 123,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034868617004830908,
+      "landing_table": [
+        2.0515895602541327,
+        -0.7617739798500704,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6083807222228461
+    },
+    {
+      "id": 124,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034098367158382136,
+      "landing_table": [
+        2.051668539402751,
+        -0.7617731184982022,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6106052601502421
+    },
+    {
+      "id": 125,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003409788711593846,
+      "landing_table": [
+        2.051668587892131,
+        -0.7617731214508225,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.610606443460542
+    },
+    {
+      "id": 126,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003568584948140405,
+      "landing_table": [
+        2.051470948137052,
+        -0.7630297088641104,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6038212102590479
+    },
+    {
+      "id": 127,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0035685361637666805,
+      "landing_table": [
+        2.0514709971461085,
+        -0.7630297067201149,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6038222891706235
+    },
+    {
+      "id": 128,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003455268979014112,
+      "landing_table": [
+        2.0515856336610634,
+        -0.7630300813342051,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6078050923567635
+    },
+    {
+      "id": 129,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034552206415272802,
+      "landing_table": [
+        2.0515856822457814,
+        -0.7630300791967837,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6078062163717268
+    },
+    {
+      "id": 130,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0033755646824104447,
+      "landing_table": [
+        2.0516663877528716,
+        -0.7630305339865937,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6101528781271295
+    },
+    {
+      "id": 131,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003375516676884496,
+      "landing_table": [
+        2.0516664360237167,
+        -0.7630305318576206,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.610154028995445
+    },
+    {
+      "id": 132,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0035243925773138754,
+      "landing_table": [
+        2.0514769696682063,
+        -0.7624020187758535,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6036279997050986
+    },
+    {
+      "id": 133,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0035243437355061565,
+      "landing_table": [
+        2.051477018517904,
+        -0.7624020191712214,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6036290784161211
+    },
+    {
+      "id": 134,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034099420659767306,
+      "landing_table": [
+        2.051591467923738,
+        -0.7624019491029587,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6076210444059511
+    },
+    {
+      "id": 135,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034098936484783684,
+      "landing_table": [
+        2.051591516349931,
+        -0.7624019494969713,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.607622168204786
+    },
+    {
+      "id": 136,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.00332935636094295,
+      "landing_table": [
+        2.0516720902560692,
+        -0.7624018648156835,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6099747087770047
+    },
+    {
+      "id": 137,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003329308257192919,
+      "landing_table": [
+        2.051672138369156,
+        -0.762401865208164,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6099758594179807
+    },
+    {
+      "id": 138,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0036084582702114783,
+      "landing_table": [
+        2.051465464949876,
+        -0.7617733411616858,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6039953876551494
+    },
+    {
+      "id": 139,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0036084095296531624,
+      "landing_table": [
+        2.051465514103485,
+        -0.761773344110994,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6039964667451956
+    },
+    {
+      "id": 140,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034961353476018085,
+      "landing_table": [
+        2.051580322400618,
+        -0.7617728359985286,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6079709577548702
+    },
+    {
+      "id": 141,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003496087073492855,
+      "landing_table": [
+        2.051580371128789,
+        -0.761772838939008,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6079720819617316
+    },
+    {
+      "id": 142,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034172016875770226,
+      "landing_table": [
+        2.0516611974406866,
+        -0.7617722192339029,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6103124700731564
+    },
+    {
+      "id": 143,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034171537609472896,
+      "landing_table": [
+        2.051661245854183,
+        -0.7617722221631948,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6103136210054685
+    },
+    {
+      "id": 144,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0036068201437352084,
+      "landing_table": [
+        2.0514329989329085,
+        -0.7630344669649485,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5958532958172049
+    },
+    {
+      "id": 145,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003607454881049994,
+      "landing_table": [
+        2.0514323715556504,
+        -0.7630345633749873,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5956780388858318
+    },
+    {
+      "id": 146,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034947852563475294,
+      "landing_table": [
+        2.051546425312131,
+        -0.7630351129444267,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.599324330694555
+    },
+    {
+      "id": 147,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0034954335604125155,
+      "landing_table": [
+        2.051545785025762,
+        -0.7630352146177075,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5991363870684752
+    },
+    {
+      "id": 149,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003416529335224826,
+      "landing_table": [
+        2.0516257548874837,
+        -0.76303585690171,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6011041645158595
+    },
+    {
+      "id": 150,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003562329827496128,
+      "landing_table": [
+        2.051439042268014,
+        -0.762401137313014,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5956611750689491
+    },
+    {
+      "id": 151,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003562957764658373,
+      "landing_table": [
+        2.0514384145850624,
+        -0.7624011194415375,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5954859419415413
+    },
+    {
+      "id": 152,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003449136228597605,
+      "landing_table": [
+        2.0515522843658474,
+        -0.7624010170244797,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5991415438545498
+    },
+    {
+      "id": 153,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003449777117101063,
+      "landing_table": [
+        2.0515516437543826,
+        -0.762400998176863,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.59895362797838
+    },
+    {
+      "id": 155,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0033699742634287198,
+      "landing_table": [
+        2.0516314837803233,
+        -0.7624008787916431,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.6009274185086875
+    },
+    {
+      "id": 156,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.0036469627263424217,
+      "landing_table": [
+        2.0514274954801213,
+        -0.7617668229526398,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5960265099649469
+    },
+    {
+      "id": 157,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003647603571848025,
+      "landing_table": [
+        2.0514268683683783,
+        -0.7617666909516024,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5958512320018097
+    },
+    {
+      "id": 158,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003535942771037799,
+      "landing_table": [
+        2.0515410910362717,
+        -0.7617659427401807,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5994890831181254
+    },
+    {
+      "id": 159,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.003536597731365148,
+      "landing_table": [
+        2.0515404510314132,
+        -0.7617658035362068,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.5993011150111369
+    },
+    {
+      "id": 161,
+      "status": "PASS",
+      "checks": {
+        "landing": true,
+        "no_net_contact": true,
+        "ball_clears_net": true,
+        "no_unplanned_racket_contact": true
+      },
+      "landing_error_m": 0.00345847973746537,
+      "landing_table": [
+        2.0516205400664163,
+        -0.7617649267711584,
+        0.020000000000000018
+      ],
+      "net_center_height_m": 0.60126276674926
+    }
+  ]
+}

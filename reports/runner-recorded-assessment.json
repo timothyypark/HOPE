@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "scope": "Actual recorded target and interval replay into production policy with rebased clocks/HOME epoch and stand-state feedback at nominal 50 Hz; no robot dynamics or collision proof",
+  "results": [
+    {
+      "name": "early-expiry-recorded-revocation",
+      "status": "PASS",
+      "first_engaged_s": 0.0110328,
+      "revocation_at_s": 0.07971906661987305,
+      "active_through_contact": true
+    },
+    {
+      "name": "early-expiry-valid-only-control",
+      "status": "PASS",
+      "first_engaged_s": 0.0115325,
+      "revocation_at_s": null,
+      "active_through_contact": true
+    },
+    {
+      "name": "late-forecast-recorded-revocation",
+      "status": "PASS",
+      "first_engaged_s": 0.01109,
+      "revocation_at_s": 0.09327483177185059,
+      "active_through_contact": true
+    },
+    {
+      "name": "late-forecast-valid-only-control",
+      "status": "PASS",
+      "first_engaged_s": 0.0117316,
+      "revocation_at_s": null,
+      "active_through_contact": true
+    }
+  ]
+}

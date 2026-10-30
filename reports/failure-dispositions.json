@@ -1,0 +1,313 @@
+{
+  "status": "INCOMPLETE",
+  "scope": "Per-failure dispositions under the declared software/simulation contract. Raw verdicts unchanged. Useful target receipt, retained decoder state and actual policy engagement are distinct evidence levels.",
+  "results": [
+    {
+      "origin": "historical",
+      "profile": "review_chain_300_10_known",
+      "run": "repetition-2",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/repeated-campaign/repetition-2/review_chain_300_10_known/result.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "review_chain_300_12_unknown",
+      "run": "repetition-2",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/repeated-campaign/repetition-2/review_chain_300_12_unknown/result.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "review_refresh_150_12_known",
+      "run": "repetition-3",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_150_12_known/result.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "review_refresh_300_12_known",
+      "run": "repetition-3",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/repeated-campaign/repetition-3/review_refresh_300_12_known/result.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_unknown/result.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "review_chain_300_12_known",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/repeated-campaign/repetition-4/review_chain_300_12_known/result.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "run": "repetition-5",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_zero/result.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "review_chain_300_12_zero",
+      "run": "repetition-5",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/repeated-campaign/repetition-5/review_chain_300_12_zero/result.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_300_per_ball_zero",
+      "run": "repetition-1",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_360_per_ball_unknown",
+      "run": "repetition-1",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_150_per_ball_unknown",
+      "run": "repetition-3",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_150_per_ball_zero",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_150_stable_per_ball_zero",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_360_stable_per_ball_zero",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_300_fixed_unknown",
+      "run": "repetition-5",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-5/incoming_chain_300_fixed_unknown/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "ACCEPTED_TIMING_DEVIATION",
+      "basis": "User accepted historical 54.731069 ms publication; ten useful commands, unchanged expiry/invalidation."
+    },
+    {
+      "origin": "historical",
+      "profile": "base_yaw_chain_150_0",
+      "run": "full_ros",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/build/hope_planner_cpp/base_yaw_chain_150_0.raw.json",
+      "expected_flights": 2,
+      "useful_flights": 2,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked. First flight is deliberately revoked by wrong_frame inputs at source elapsed 1.0\u20131.08 s; its final invalid receipt is at elapsed 1.00242734 s. Second flight remains valid through contact. This is expected abstention after a source fault, not continuous first-flight retention."
+    },
+    {
+      "origin": "historical",
+      "profile": "review_chain_300_12_unknown",
+      "run": "full_ros",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/build/hope_planner_cpp/review_chain_300_12_unknown.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "review_chain_150_12_zero",
+      "run": "full_ros",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/build/hope_planner_cpp/review_chain_150_12_zero.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "review_refresh_300_10_unknown",
+      "run": "full_ros",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/build/hope_planner_cpp/review_refresh_300_10_unknown.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "run": "full_ros",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/build/hope_planner_cpp/reacquisition_chain_300_ON_REFRESH_zero.raw.json",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Skipped observation update did not remove the useful same-flight command; numerical conversion and corrected lifecycle gates pass; actual decoder retention checked."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_300_stable_per_ball_zero",
+      "run": "full_ros",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/raw.json.gz",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "current_campaign",
+      "profile": "review_chain_300_12_known",
+      "run": "repetition-1",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/repeated-campaign/repetition-1/review_chain_300_12_known/result.raw.json",
+      "raw_status": "FAIL",
+      "raw_exception": "AssertionError: ('command coverage', 33, 35, 0.9428571428571428)",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Every independently offered flight had a usable target. Four coverage failures retain targets through contact; the source-cadence failure is a startup gap before scored flights. Deliberate first-flight frame-fault withdrawal remains expected."
+    },
+    {
+      "origin": "current_campaign",
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "run": "repetition-2",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/repeated-campaign/repetition-2/integrated_chain_300_ON_REFRESH/result.raw.json",
+      "raw_status": "FAIL",
+      "raw_exception": "AssertionError: ('source cadence', {'policy': 'actual acquisition; resynchronize after half-period lateness; no catch-up', 'requested_rate_hz': 300, 'actual_rate_hz': 279.0640013637964, 'minimum_interval_ns': 1780837, 'maximum_lateness_ns': 325015411, 'resynchronizations': 3, 'missed_nominal_ticks': 97, 'samples': 1315, 'valid': False})",
+      "expected_flights": 2,
+      "useful_flights": 2,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Every independently offered flight had a usable target. Four coverage failures retain targets through contact; the source-cadence failure is a startup gap before scored flights. Deliberate first-flight frame-fault withdrawal remains expected."
+    },
+    {
+      "origin": "current_campaign",
+      "profile": "review_chain_300_12_unknown",
+      "run": "repetition-3",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/repeated-campaign/repetition-3/review_chain_300_12_unknown/result.raw.json",
+      "raw_status": "FAIL",
+      "raw_exception": "AssertionError: ('command coverage', 36, 40, 0.9)",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Every independently offered flight had a usable target. Four coverage failures retain targets through contact; the source-cadence failure is a startup gap before scored flights. Deliberate first-flight frame-fault withdrawal remains expected."
+    },
+    {
+      "origin": "current_campaign",
+      "profile": "review_refresh_300_12_known",
+      "run": "repetition-3",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/repeated-campaign/repetition-3/review_refresh_300_12_known/result.raw.json",
+      "raw_status": "FAIL",
+      "raw_exception": "AssertionError: ('command coverage', 32, 34, 0.9411764705882353)",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Every independently offered flight had a usable target. Four coverage failures retain targets through contact; the source-cadence failure is a startup gap before scored flights. Deliberate first-flight frame-fault withdrawal remains expected."
+    },
+    {
+      "origin": "current_campaign",
+      "profile": "review_chain_300_12_known",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/repeated-campaign/repetition-4/review_chain_300_12_known/result.raw.json",
+      "raw_status": "FAIL",
+      "raw_exception": "AssertionError: ('command coverage', 32, 34, 0.9411764705882353)",
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "Every independently offered flight had a usable target. Four coverage failures retain targets through contact; the source-cadence failure is a startup gap before scored flights. Deliberate first-flight frame-fault withdrawal remains expected."
+    },
+    {
+      "origin": "current_campaign",
+      "profile": "incoming_chain_360_stable_per_ball_unknown",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_unknown/raw.json",
+      "raw_status": "FAIL",
+      "raw_exception": null,
+      "expected_flights": 10,
+      "useful_flights": 10,
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "basis": "New 41.784759 ms late forecast was ONE_SHOT_ALREADY_COMMITTED, command-ineligible, followed by explicit expiry. All ten commands decoded; actual recorded flight-8 command engaged before revocation in production-policy replay. Raw timing gate remains failed; no new expiry allowance."
+    },
+    {
+      "origin": "current_campaign",
+      "profile": "incoming_chain_360_fixed_unknown",
+      "run": "repetition-5",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/raw.json",
+      "raw_status": "FAIL",
+      "raw_exception": null,
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Flight 9 packet has 44 exact samples. Three were typed-published within 0.661 ms but never recorded at planner receipt; exact-prefix rejection prevented a command. Missing command remains in denominator."
+    },
+    {
+      "origin": "current_full_ros",
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "run": "full_ros",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/build/hope_planner_cpp/integrated_chain_150_ON_REFRESH.raw.json",
+      "raw_status": "FAIL",
+      "assessment": "VERIFIED_NO_FUNCTIONAL_IMPACT",
+      "expected_flights": 2,
+      "useful_flights": 2,
+      "basis": "331.480 ms source startup gap before first flight at 0.8 s. Both scored flights had useful targets; intentional first-flight frame fault still revokes authority. Requested global source rate was not achieved."
+    }
+  ],
+  "unresolved_lost_flight_cases": 8,
+  "inherited_lint": "bringup flake8/pep257 retain existing failures; zero added signatures"
+}

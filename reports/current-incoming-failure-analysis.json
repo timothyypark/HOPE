@@ -1,0 +1,4714 @@
+[
+  {
+    "profile": "incoming_chain_360_stable_per_ball_unknown",
+    "repetition": 4,
+    "raw_gates": {
+      "source_cadence": true,
+      "children": true,
+      "continuous_coverage": true,
+      "one_shot_coverage": true,
+      "one_shot_immutable": true,
+      "schema_home_plane": true,
+      "decoder": true,
+      "completion_age": false,
+      "full_cadence": true,
+      "explicit_revocation": true,
+      "stable_generations": true,
+      "command_flight_identity": true,
+      "explicit_source_expiry": true,
+      "complete_stage_trace": true
+    },
+    "rejected_packets": [],
+    "late_publications": [
+      {
+        "stage": {
+          "stage": "forecast_published",
+          "source_ns": "1793357843358520641",
+          "sequence": "930",
+          "generation": "15",
+          "wall_ns": "1793357843400305400",
+          "steady_ns": "416954052798811",
+          "duration_ns": "0",
+          "reason": "ONE_SHOT_ALREADY_COMMITTED"
+        },
+        "completion_age_ms": 41.784759,
+        "predictions": [
+          {
+            "source_ns": 1793357843358520641,
+            "revision": 930,
+            "generation": 15,
+            "physical": true,
+            "target_valid": false,
+            "status": "UNCERTAIN",
+            "reason": "incomplete_history",
+            "receipt_ns": 1793357843401272090,
+            "published_ns": 1793357843360112893,
+            "waypoints": 0
+          },
+          {
+            "source_ns": 1793357843358520641,
+            "revision": 932,
+            "generation": 15,
+            "physical": false,
+            "target_valid": false,
+            "status": "REVOKED",
+            "reason": "SOURCE_EXPIRED",
+            "receipt_ns": 1793357843405580257,
+            "published_ns": 1793357843401280073,
+            "waypoints": 0
+          }
+        ],
+        "candidates": [
+          {
+            "source_ns": 1793357843358520641,
+            "revision": 930,
+            "generation": 15,
+            "home": 100,
+            "revokes": 0,
+            "command_sequence": 0,
+            "command_flight": 0,
+            "supported": true,
+            "eligible": false,
+            "status": "SUPPORTED",
+            "reason": "ONE_SHOT_ALREADY_COMMITTED",
+            "plane_x": 0.07999999999999996,
+            "tentative": false,
+            "plane_flight": 8,
+            "contact_ns": 1793357843425901455,
+            "contact": [
+              0.08000000000001617,
+              -0.7000000000000003,
+              0.1487227021080964
+            ],
+            "receipt_ns": 1793357843405178312,
+            "published_ns": 1793357843400328394
+          },
+          {
+            "source_ns": 1793357843358520641,
+            "revision": 932,
+            "generation": 15,
+            "home": 100,
+            "revokes": 930,
+            "command_sequence": 0,
+            "command_flight": 0,
+            "supported": false,
+            "eligible": false,
+            "status": "REVOKED",
+            "reason": "SOURCE_EXPIRED",
+            "plane_x": 0.07999999999999996,
+            "tentative": false,
+            "plane_flight": 8,
+            "contact_ns": 1793357843425901455,
+            "contact": [
+              0.08000000000001617,
+              -0.7000000000000003,
+              0.1487227021080964
+            ],
+            "receipt_ns": 1793357843408607142,
+            "published_ns": 1793357843401206604
+          }
+        ],
+        "revocations": [
+          {
+            "source_ns": 1793357843358520641,
+            "revision": 932,
+            "generation": 15,
+            "home": 100,
+            "revokes": 930,
+            "command_sequence": 0,
+            "command_flight": 0,
+            "supported": false,
+            "eligible": false,
+            "status": "REVOKED",
+            "reason": "SOURCE_EXPIRED",
+            "plane_x": 0.07999999999999996,
+            "tentative": false,
+            "plane_flight": 8,
+            "contact_ns": 1793357843425901455,
+            "contact": [
+              0.08000000000001617,
+              -0.7000000000000003,
+              0.1487227021080964
+            ],
+            "receipt_ns": 1793357843408778195,
+            "published_ns": 1793357843401206604
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profile": "incoming_chain_360_fixed_unknown",
+    "repetition": 5,
+    "raw_gates": {
+      "source_cadence": true,
+      "children": true,
+      "continuous_coverage": true,
+      "one_shot_coverage": false,
+      "one_shot_immutable": true,
+      "schema_home_plane": true,
+      "decoder": true,
+      "completion_age": true,
+      "full_cadence": true,
+      "explicit_revocation": true,
+      "stable_generations": true,
+      "command_flight_identity": false,
+      "explicit_source_expiry": true,
+      "complete_stage_trace": true
+    },
+    "rejected_packets": [
+      {
+        "rejection": {
+          "stage": "command_rejected",
+          "source_ns": "1793358033745357358",
+          "sequence": "9",
+          "generation": "0",
+          "wall_ns": "1793358033761004910",
+          "steady_ns": "417144413502427",
+          "duration_ns": "0",
+          "reason": "PACKET_OBSERVATION_PREFIX_MISMATCH"
+        },
+        "packet": {
+          "sequence": 9,
+          "cutoff_ns": 1793358033745357358,
+          "sample_count": 44,
+          "sample_sources": [
+            1793358033625884644,
+            1793358033628646702,
+            1793358033631405375,
+            1793358033634181915,
+            1793358033637058523,
+            1793358033639733713,
+            1793358033642548660,
+            1793358033645291059,
+            1793358033648072466,
+            1793358033650854023,
+            1793358033653654188,
+            1793358033656410628,
+            1793358033659181019,
+            1793358033661958661,
+            1793358033664740528,
+            1793358033667525661,
+            1793358033670301525,
+            1793358033673088360,
+            1793358033675860778,
+            1793358033678671459,
+            1793358033681413007,
+            1793358033684181885,
+            1793358033686965926,
+            1793358033689759962,
+            1793358033692522501,
+            1793358033695289407,
+            1793358033698075792,
+            1793358033700855216,
+            1793358033703637184,
+            1793358033706416497,
+            1793358033709184875,
+            1793358033711960644,
+            1793358033714745145,
+            1793358033717523047,
+            1793358033720300338,
+            1793358033723077324,
+            1793358033725845496,
+            1793358033728652521,
+            1793358033731407289,
+            1793358033734180994,
+            1793358033736961836,
+            1793358033739861153,
+            1793358033742522252,
+            1793358033745357358
+          ],
+          "hash": "75244293af7533c5"
+        },
+        "samples": [
+          {
+            "source_ns": 1793358033625884644,
+            "source": {
+              "source_ns": 1793358033625884644,
+              "offered_ns": 1793358033626164598,
+              "intended_steady_ns": 417144278268780,
+              "actual_steady_ns": 417144278662445,
+              "acquisition_steady_ns": 417144278381790,
+              "flight": 9,
+              "phase": 0.0023005840000003275,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.477028172951452,
+                -0.7,
+                0.31882547360092534,
+                -9.970459591835592,
+                0.0,
+                -0.5210583735180315,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.791882,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033625884644",
+                "sequence": "2760",
+                "generation": "0",
+                "wall_ns": "1793358033626676526",
+                "steady_ns": "417144279174073",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033625884644",
+                "sequence": "2760",
+                "generation": "0",
+                "wall_ns": "1793358033627545562",
+                "steady_ns": "417144280042508",
+                "duration_ns": "870108",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033625884644",
+                "sequence": "2760",
+                "generation": "0",
+                "wall_ns": "1793358033627546363",
+                "steady_ns": "417144280043910",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1068",
+                "generation": "18",
+                "wall_ns": "1793358034528556654",
+                "steady_ns": "417145181053670",
+                "duration_ns": "387083",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1068",
+                "generation": "18",
+                "wall_ns": "1793358034528559498",
+                "steady_ns": "417145181057025",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1069",
+                "generation": "18",
+                "wall_ns": "1793358034529628650",
+                "steady_ns": "417145182126157",
+                "duration_ns": "38757",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1069",
+                "generation": "18",
+                "wall_ns": "1793358034529630023",
+                "steady_ns": "417145182127549",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1070",
+                "generation": "18",
+                "wall_ns": "1793358034532248458",
+                "steady_ns": "417145184745965",
+                "duration_ns": "45538",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1070",
+                "generation": "18",
+                "wall_ns": "1793358034532249660",
+                "steady_ns": "417145184747197",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1071",
+                "generation": "18",
+                "wall_ns": "1793358034535379873",
+                "steady_ns": "417145187877329",
+                "duration_ns": "48001",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1071",
+                "generation": "18",
+                "wall_ns": "1793358034535381245",
+                "steady_ns": "417145187878782",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1072",
+                "generation": "18",
+                "wall_ns": "1793358034539086849",
+                "steady_ns": "417145191584346",
+                "duration_ns": "46178",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1072",
+                "generation": "18",
+                "wall_ns": "1793358034539088301",
+                "steady_ns": "417145191585838",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1073",
+                "generation": "18",
+                "wall_ns": "1793358034540907213",
+                "steady_ns": "417145193404720",
+                "duration_ns": "36524",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1073",
+                "generation": "18",
+                "wall_ns": "1793358034540908355",
+                "steady_ns": "417145193405882",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1074",
+                "generation": "18",
+                "wall_ns": "1793358034543469005",
+                "steady_ns": "417145195966512",
+                "duration_ns": "34131",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1074",
+                "generation": "18",
+                "wall_ns": "1793358034543470357",
+                "steady_ns": "417145195967884",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1075",
+                "generation": "18",
+                "wall_ns": "1793358034546215020",
+                "steady_ns": "417145198712527",
+                "duration_ns": "33951",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1075",
+                "generation": "18",
+                "wall_ns": "1793358034546216932",
+                "steady_ns": "417145198714459",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1076",
+                "generation": "18",
+                "wall_ns": "1793358034549442637",
+                "steady_ns": "417145201940134",
+                "duration_ns": "34130",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1076",
+                "generation": "18",
+                "wall_ns": "1793358034549444520",
+                "steady_ns": "417145201942047",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033625884644",
+                "sequence": "1077",
+                "generation": "18",
+                "wall_ns": "1793358034552038780",
+                "steady_ns": "417145204536287",
+                "duration_ns": "34441",
+                "reason": "ACQUIRING"
+              },
+              {
+                "stage": "forecast_retired",
+                "source_ns": "1793358033625884644",
+                "sequence": "1077",
+                "generation": "18",
+                "wall_ns": "1793358034552040012",
+                "steady_ns": "417145204537529",
+                "duration_ns": "0",
+                "reason": "OBSOLETE_OR_EXPIRED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033625884644,
+                1793358033626384854,
+                417144278882812,
+                2760
+              ],
+              [
+                "typed_published",
+                1793358033625884644,
+                1793358033626611039,
+                417144279108996,
+                2760
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033628646702,
+            "source": {
+              "source_ns": 1793358033628646702,
+              "offered_ns": 1793358033628852567,
+              "intended_steady_ns": 417144281046558,
+              "actual_steady_ns": 417144281350404,
+              "acquisition_steady_ns": 417144281143898,
+              "flight": 9,
+              "phase": 0.005062642000000395,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.4495379100344747,
+                -0.7,
+                0.3173514505744267,
+                -9.93521883903449,
+                0.0,
+                -0.5462645867221169,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.659957,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033628646702",
+                "sequence": "2761",
+                "generation": "0",
+                "wall_ns": "1793358033629306659",
+                "steady_ns": "417144281804206",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033628646702",
+                "sequence": "2761",
+                "generation": "0",
+                "wall_ns": "1793358033629312748",
+                "steady_ns": "417144281810285",
+                "duration_ns": "6870",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033628646702",
+                "sequence": "2761",
+                "generation": "0",
+                "wall_ns": "1793358033629313108",
+                "steady_ns": "417144281810655",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033628646702,
+                1793358033629054405,
+                417144281552363,
+                2761
+              ],
+              [
+                "typed_published",
+                1793358033628646702,
+                1793358033629267561,
+                417144281765408,
+                2761
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033631405375,
+            "source": {
+              "source_ns": 1793358033631405375,
+              "offered_ns": 1793358033631610389,
+              "intended_steady_ns": 417144283824336,
+              "actual_steady_ns": 417144284108336,
+              "acquisition_steady_ns": 417144283902582,
+              "flight": 9,
+              "phase": 0.007821315000000162,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.422178160169638,
+                -0.7,
+                0.31580985463421785,
+                -9.900263856685761,
+                0.0,
+                -0.5713576433261913,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.7334959999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033631405375",
+                "sequence": "2762",
+                "generation": "0",
+                "wall_ns": "1793358033632138871",
+                "steady_ns": "417144284636418",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033631405375",
+                "sequence": "2762",
+                "generation": "0",
+                "wall_ns": "1793358033632144600",
+                "steady_ns": "417144284642137",
+                "duration_ns": "6590",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033631405375",
+                "sequence": "2762",
+                "generation": "0",
+                "wall_ns": "1793358033632144790",
+                "steady_ns": "417144284642337",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033631405375,
+                1793358033631798012,
+                417144284295859,
+                2762
+              ],
+              [
+                "typed_published",
+                1793358033631405375,
+                1793358033632119838,
+                417144284617675,
+                2762
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033634181915,
+            "source": {
+              "source_ns": 1793358033634181915,
+              "offered_ns": 1793358033634429191,
+              "intended_steady_ns": 417144286602114,
+              "actual_steady_ns": 417144286927028,
+              "acquisition_steady_ns": 417144286678711,
+              "flight": 9,
+              "phase": 0.010597855000000322,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.3947382427098125,
+                -0.7,
+                0.31418849083493045,
+                -9.86532447222217,
+                0.0,
+                -0.5965310371403203,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.6458659999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033634181915",
+                "sequence": "2763",
+                "generation": "0",
+                "wall_ns": "1793358033634827781",
+                "steady_ns": "417144287325328",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033634181915",
+                "sequence": "2763",
+                "generation": "0",
+                "wall_ns": "1793358033634834251",
+                "steady_ns": "417144287331788",
+                "duration_ns": "7001",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033634181915",
+                "sequence": "2763",
+                "generation": "0",
+                "wall_ns": "1793358033634834431",
+                "steady_ns": "417144287331978",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033634181915,
+                1793358033634542454,
+                417144287040321,
+                2763
+              ],
+              [
+                "typed_published",
+                1793358033634181915,
+                1793358033634795569,
+                417144287293426,
+                2763
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033637058523,
+            "source": {
+              "source_ns": 1793358033637058523,
+              "offered_ns": 1793358033637233292,
+              "intended_steady_ns": 417144289379892,
+              "actual_steady_ns": 417144289731049,
+              "acquisition_steady_ns": 417144289555720,
+              "flight": 9,
+              "phase": 0.013474463000000547,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.366411333395122,
+                -0.7,
+                0.31243509588272234,
+                -9.829378941794367,
+                0.0,
+                -0.6225256147943252,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.600279,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033637058523",
+                "sequence": "2764",
+                "generation": "0",
+                "wall_ns": "1793358033637658802",
+                "steady_ns": "417144290156359",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033637058523",
+                "sequence": "2764",
+                "generation": "0",
+                "wall_ns": "1793358033637733302",
+                "steady_ns": "417144290230819",
+                "duration_ns": "75021",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033637058523",
+                "sequence": "2764",
+                "generation": "0",
+                "wall_ns": "1793358033637733542",
+                "steady_ns": "417144290231089",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033637058523,
+                1793358033637426328,
+                417144289924175,
+                2764
+              ],
+              [
+                "typed_published",
+                1793358033637058523,
+                1793358033637618482,
+                417144290116229,
+                2764
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033639733713,
+            "source": {
+              "source_ns": 1793358033639733713,
+              "offered_ns": 1793358033639964865,
+              "intended_steady_ns": 417144292157670,
+              "actual_steady_ns": 417144292462622,
+              "acquisition_steady_ns": 417144292230909,
+              "flight": 9,
+              "phase": 0.016149653000000264,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.3401603343008803,
+                -0.7,
+                0.3107374734243197,
+                -9.79617879624752,
+                0.0,
+                -0.6466222365446698,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.580419,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033639733713",
+                "sequence": "2765",
+                "generation": "0",
+                "wall_ns": "1793358033640314132",
+                "steady_ns": "417144292811679",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033639733713",
+                "sequence": "2765",
+                "generation": "0",
+                "wall_ns": "1793358033640319530",
+                "steady_ns": "417144292817067",
+                "duration_ns": "5969",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033639733713",
+                "sequence": "2765",
+                "generation": "0",
+                "wall_ns": "1793358033640319891",
+                "steady_ns": "417144292817438",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033639733713,
+                1793358033640108548,
+                417144292606385,
+                2765
+              ],
+              [
+                "typed_published",
+                1793358033639733713,
+                1793358033640294032,
+                417144292791810,
+                2765
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033642548660,
+            "source": {
+              "source_ns": 1793358033642548660,
+              "offered_ns": 1793358033642716789,
+              "intended_steady_ns": 417144294935448,
+              "actual_steady_ns": 417144295214476,
+              "acquisition_steady_ns": 417144295045646,
+              "flight": 9,
+              "phase": 0.01896460000000033,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.3126335050878386,
+                -0.7,
+                0.3088816726057625,
+                -9.76147926094139,
+                0.0,
+                -0.6718975244944008,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.661299,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033642548660",
+                "sequence": "2766",
+                "generation": "0",
+                "wall_ns": "1793358033643209959",
+                "steady_ns": "417144295707506",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033642548660",
+                "sequence": "2766",
+                "generation": "0",
+                "wall_ns": "1793358033643217400",
+                "steady_ns": "417144295714937",
+                "duration_ns": "8082",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033642548660",
+                "sequence": "2766",
+                "generation": "0",
+                "wall_ns": "1793358033643217570",
+                "steady_ns": "417144295715127",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033642548660,
+                1793358033642905398,
+                417144295403225,
+                2766
+              ],
+              [
+                "typed_published",
+                1793358033642548660,
+                1793358033643161587,
+                417144295659464,
+                2766
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033645291059,
+            "source": {
+              "source_ns": 1793358033645291059,
+              "offered_ns": 1793358033645459538,
+              "intended_steady_ns": 417144297713226,
+              "actual_steady_ns": 417144297957366,
+              "acquisition_steady_ns": 417144297788085,
+              "flight": 9,
+              "phase": 0.02170699900000006,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.285909724992044,
+                -0.7,
+                0.3070053870530737,
+                -9.727903205799057,
+                0.0,
+                -0.6964430977314698,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.709781,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033645291059",
+                "sequence": "2767",
+                "generation": "0",
+                "wall_ns": "1793358033646000840",
+                "steady_ns": "417144298498387",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033645291059",
+                "sequence": "2767",
+                "generation": "0",
+                "wall_ns": "1793358033646008080",
+                "steady_ns": "417144298505607",
+                "duration_ns": "8022",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033645291059",
+                "sequence": "2767",
+                "generation": "0",
+                "wall_ns": "1793358033646008321",
+                "steady_ns": "417144298505868",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033645291059,
+                1793358033645727204,
+                417144298225082,
+                2767
+              ],
+              [
+                "typed_published",
+                1793358033645291059,
+                1793358033645953279,
+                417144298451126,
+                2767
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033648072466,
+            "source": {
+              "source_ns": 1793358033648072466,
+              "offered_ns": 1793358033648241887,
+              "intended_steady_ns": 417144300491004,
+              "actual_steady_ns": 417144300739654,
+              "acquisition_steady_ns": 417144300569602,
+              "flight": 9,
+              "phase": 0.024488406000000573,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.2588995607889526,
+                -0.7,
+                0.30503376474137095,
+                -9.694077986539773,
+                0.0,
+                -0.7212596352378398,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.637273,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033648072466",
+                "sequence": "2768",
+                "generation": "0",
+                "wall_ns": "1793358033648709739",
+                "steady_ns": "417144301207286",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033648072466",
+                "sequence": "2768",
+                "generation": "0",
+                "wall_ns": "1793358033648746183",
+                "steady_ns": "417144301243710",
+                "duration_ns": "36554",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033648072466",
+                "sequence": "2768",
+                "generation": "0",
+                "wall_ns": "1793358033648746433",
+                "steady_ns": "417144301243980",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033648072466,
+                1793358033648435649,
+                417144300933476,
+                2768
+              ],
+              [
+                "typed_published",
+                1793358033648072466,
+                1793358033648675384,
+                417144301173251,
+                2768
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033650854023,
+            "source": {
+              "source_ns": 1793358033650854023,
+              "offered_ns": 1793358033651047600,
+              "intended_steady_ns": 417144303268782,
+              "actual_steady_ns": 417144303545427,
+              "acquisition_steady_ns": 417144303351240,
+              "flight": 9,
+              "phase": 0.027269963000000175,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.231981712310901,
+                -0.7,
+                0.3029931142399686,
+                -9.660478403529593,
+                0.0,
+                -0.7459995402580734,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.7299709999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033650854023",
+                "sequence": "2769",
+                "generation": "0",
+                "wall_ns": "1793358033651583994",
+                "steady_ns": "417144304081530",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_rejected",
+                "source_ns": "1793358033650854023",
+                "sequence": "2769",
+                "generation": "0",
+                "wall_ns": "1793358033651593007",
+                "steady_ns": "417144304090524",
+                "duration_ns": "10376",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033650854023",
+                "sequence": "2769",
+                "generation": "0",
+                "wall_ns": "1793358033651593267",
+                "steady_ns": "417144304090804",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033650854023,
+                1793358033651236755,
+                417144303734612,
+                2769
+              ],
+              [
+                "typed_published",
+                1793358033650854023,
+                1793358033651540214,
+                417144304038072,
+                2769
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033653654188,
+            "source": {
+              "source_ns": 1793358033653654188,
+              "offered_ns": 1793358033653826954,
+              "intended_steady_ns": 417144306046560,
+              "actual_steady_ns": 417144306324711,
+              "acquisition_steady_ns": 417144306151255,
+              "flight": 9,
+              "phase": 0.030070128000000196,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.204977870540165,
+                -0.7,
+                0.3008694138377057,
+                -9.626881199005572,
+                0.0,
+                -0.7708269535861372,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.6504829999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033653654188",
+                "sequence": "2770",
+                "generation": "0",
+                "wall_ns": "1793358033654304671",
+                "steady_ns": "417144306802218",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033653654188",
+                "sequence": "2770",
+                "generation": "0",
+                "wall_ns": "1793358033654622451",
+                "steady_ns": "417144307119768",
+                "duration_ns": "318221",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033653654188",
+                "sequence": "2770",
+                "generation": "0",
+                "wall_ns": "1793358033654622802",
+                "steady_ns": "417144307120349",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033653654188",
+                "sequence": "968",
+                "generation": "17",
+                "wall_ns": "1793358033654698494",
+                "steady_ns": "417144307195971",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033653654188",
+                "sequence": "968",
+                "generation": "17",
+                "wall_ns": "1793358033655176632",
+                "steady_ns": "417144307673668",
+                "duration_ns": "477727",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033653654188",
+                "sequence": "968",
+                "generation": "17",
+                "wall_ns": "1793358033655352893",
+                "steady_ns": "417144307850139",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "trajectory_published",
+                "source_ns": "1793358033653654188",
+                "sequence": "968",
+                "generation": "17",
+                "wall_ns": "1793358033655461133",
+                "steady_ns": "417144307958650",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033653654188",
+                "sequence": "968",
+                "generation": "17",
+                "wall_ns": "1793358033655557466",
+                "steady_ns": "417144308054992",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033653654188,
+                1793358033654019163,
+                417144306517131,
+                2770
+              ],
+              [
+                "typed_published",
+                1793358033653654188,
+                1793358033654275623,
+                417144306773581,
+                2770
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033656410628,
+            "source": {
+              "source_ns": 1793358033656410628,
+              "offered_ns": 1793358033656584225,
+              "intended_steady_ns": 417144308824338,
+              "actual_steady_ns": 417144309081983,
+              "acquisition_steady_ns": 417144308907835,
+              "flight": 9,
+              "phase": 0.032826567999999945,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.1784872779570845,
+                -0.7,
+                0.29871107942960495,
+                -9.594028712163995,
+                0.0,
+                -0.7951909816086515,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.6929259999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033656410628",
+                "sequence": "2771",
+                "generation": "0",
+                "wall_ns": "1793358033657103554",
+                "steady_ns": "417144309601101",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033656410628",
+                "sequence": "2771",
+                "generation": "0",
+                "wall_ns": "1793358033657144094",
+                "steady_ns": "417144309641601",
+                "duration_ns": "41151",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033656410628",
+                "sequence": "2771",
+                "generation": "0",
+                "wall_ns": "1793358033657144394",
+                "steady_ns": "417144309641941",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033656410628",
+                "sequence": "969",
+                "generation": "17",
+                "wall_ns": "1793358033657204724",
+                "steady_ns": "417144309702191",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033656410628",
+                "sequence": "969",
+                "generation": "17",
+                "wall_ns": "1793358033657615462",
+                "steady_ns": "417144310112618",
+                "duration_ns": "410467",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033656410628",
+                "sequence": "969",
+                "generation": "17",
+                "wall_ns": "1793358033657685546",
+                "steady_ns": "417144310183052",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033656410628",
+                "sequence": "969",
+                "generation": "17",
+                "wall_ns": "1793358033657704323",
+                "steady_ns": "417144310201840",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033656410628,
+                1793358033656774522,
+                417144309272470,
+                2771
+              ],
+              [
+                "typed_published",
+                1793358033656410628,
+                1793358033657071992,
+                417144309569860,
+                2771
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033659181019,
+            "source": {
+              "source_ns": 1793358033659181019,
+              "offered_ns": 1793358033659367285,
+              "intended_steady_ns": 417144311602116,
+              "actual_steady_ns": 417144311865323,
+              "acquisition_steady_ns": 417144311678115,
+              "flight": 9,
+              "phase": 0.03559695900000026,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.151953553316914,
+                -0.7,
+                0.2964742563026436,
+                -9.5612275040254,
+                0.0,
+                -0.819603362935525,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.711113,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033659181019",
+                "sequence": "2772",
+                "generation": "0",
+                "wall_ns": "1793358033659892132",
+                "steady_ns": "417144312389689",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033659181019",
+                "sequence": "2772",
+                "generation": "0",
+                "wall_ns": "1793358033659933904",
+                "steady_ns": "417144312431430",
+                "duration_ns": "42312",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033659181019",
+                "sequence": "2772",
+                "generation": "0",
+                "wall_ns": "1793358033659934184",
+                "steady_ns": "417144312431731",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033659181019",
+                "sequence": "970",
+                "generation": "17",
+                "wall_ns": "1793358033660015574",
+                "steady_ns": "417144312512841",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033659181019",
+                "sequence": "970",
+                "generation": "17",
+                "wall_ns": "1793358033660453202",
+                "steady_ns": "417144312950218",
+                "duration_ns": "437417",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033659181019",
+                "sequence": "970",
+                "generation": "17",
+                "wall_ns": "1793358033660621822",
+                "steady_ns": "417144313119138",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033659181019",
+                "sequence": "970",
+                "generation": "17",
+                "wall_ns": "1793358033660656764",
+                "steady_ns": "417144313154270",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033659181019,
+                1793358033659643023,
+                417144312140910,
+                2772
+              ],
+              [
+                "typed_published",
+                1793358033659181019,
+                1793358033659858472,
+                417144312356289,
+                2772
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033661958661,
+            "source": {
+              "source_ns": 1793358033661958661,
+              "offered_ns": 1793358033662247328,
+              "intended_steady_ns": 417144314379894,
+              "actual_steady_ns": 417144314745095,
+              "acquisition_steady_ns": 417144314455867,
+              "flight": 9,
+              "phase": 0.03837460100000012,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.1254413096699905,
+                -0.7,
+                0.294163784964273,
+                -9.528556960810867,
+                0.0,
+                -0.8440049049158524,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.6484789999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033661958661",
+                "sequence": "2773",
+                "generation": "0",
+                "wall_ns": "1793358033662607140",
+                "steady_ns": "417144315104697",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033661958661",
+                "sequence": "2773",
+                "generation": "0",
+                "wall_ns": "1793358033662646238",
+                "steady_ns": "417144315143765",
+                "duration_ns": "39749",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033661958661",
+                "sequence": "2773",
+                "generation": "0",
+                "wall_ns": "1793358033662646539",
+                "steady_ns": "417144315144086",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033661958661",
+                "sequence": "971",
+                "generation": "17",
+                "wall_ns": "1793358033662762150",
+                "steady_ns": "417144315259166",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033661958661",
+                "sequence": "971",
+                "generation": "17",
+                "wall_ns": "1793358033663185497",
+                "steady_ns": "417144315682783",
+                "duration_ns": "423647",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033661958661",
+                "sequence": "971",
+                "generation": "17",
+                "wall_ns": "1793358033663318604",
+                "steady_ns": "417144315815700",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033661958661",
+                "sequence": "971",
+                "generation": "17",
+                "wall_ns": "1793358033663349599",
+                "steady_ns": "417144315847116",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033661958661,
+                1793358033662385377,
+                417144314883225,
+                2773
+              ],
+              [
+                "typed_published",
+                1793358033661958661,
+                1793358033662589149,
+                417144315086996,
+                2773
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033664740528,
+            "source": {
+              "source_ns": 1793358033664740528,
+              "offered_ns": 1793358033664903740,
+              "intended_steady_ns": 417144317157672,
+              "actual_steady_ns": 417144317401507,
+              "acquisition_steady_ns": 417144317237735,
+              "flight": 9,
+              "phase": 0.0411564680000005,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.098979393882097,
+                -0.7,
+                0.2917819692127117,
+                -9.496051591891964,
+                0.0,
+                -0.8683692626459226,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.661239,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033664740528",
+                "sequence": "2774",
+                "generation": "0",
+                "wall_ns": "1793358033665401767",
+                "steady_ns": "417144317899314",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033664740528",
+                "sequence": "2774",
+                "generation": "0",
+                "wall_ns": "1793358033665494865",
+                "steady_ns": "417144317992352",
+                "duration_ns": "93599",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033664740528",
+                "sequence": "2774",
+                "generation": "0",
+                "wall_ns": "1793358033665495165",
+                "steady_ns": "417144317992722",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033664740528",
+                "sequence": "972",
+                "generation": "17",
+                "wall_ns": "1793358033665577407",
+                "steady_ns": "417144318074874",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033664740528",
+                "sequence": "972",
+                "generation": "17",
+                "wall_ns": "1793358033665937029",
+                "steady_ns": "417144318434486",
+                "duration_ns": "359662",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033664740528",
+                "sequence": "972",
+                "generation": "17",
+                "wall_ns": "1793358033666049736",
+                "steady_ns": "417144318547243",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033664740528",
+                "sequence": "972",
+                "generation": "17",
+                "wall_ns": "1793358033666067282",
+                "steady_ns": "417144318564799",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033664740528,
+                1793358033665114622,
+                417144317612459,
+                2774
+              ],
+              [
+                "typed_published",
+                1793358033664740528,
+                1793358033665365032,
+                417144317862880,
+                2774
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033667525661,
+            "source": {
+              "source_ns": 1793358033667525661,
+              "offered_ns": 1793358033667697866,
+              "intended_steady_ns": 417144319935450,
+              "actual_steady_ns": 417144320195633,
+              "acquisition_steady_ns": 417144320022857,
+              "flight": 9,
+              "phase": 0.04394160100000022,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.072576698819798,
+                -0.7,
+                0.28932956220712047,
+                -9.46372106896499,
+                0.0,
+                -0.8926884301454622,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.6598919999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033667525661",
+                "sequence": "2775",
+                "generation": "0",
+                "wall_ns": "1793358033668185553",
+                "steady_ns": "417144320683090",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033667525661",
+                "sequence": "2775",
+                "generation": "0",
+                "wall_ns": "1793358033668222487",
+                "steady_ns": "417144320719994",
+                "duration_ns": "37575",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033667525661",
+                "sequence": "2775",
+                "generation": "0",
+                "wall_ns": "1793358033668222928",
+                "steady_ns": "417144320720475",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033667525661",
+                "sequence": "973",
+                "generation": "17",
+                "wall_ns": "1793358033668287343",
+                "steady_ns": "417144320784820",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033667525661",
+                "sequence": "973",
+                "generation": "17",
+                "wall_ns": "1793358033668695988",
+                "steady_ns": "417144321193115",
+                "duration_ns": "408355",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033667525661",
+                "sequence": "973",
+                "generation": "17",
+                "wall_ns": "1793358033669006107",
+                "steady_ns": "417144321503224",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033667525661",
+                "sequence": "973",
+                "generation": "17",
+                "wall_ns": "1793358033669041770",
+                "steady_ns": "417144321539297",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033667525661,
+                1793358033667912093,
+                417144320409930,
+                2775
+              ],
+              [
+                "typed_published",
+                1793358033667525661,
+                1793358033668140230,
+                417144320638068,
+                2775
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033670301525,
+            "source": {
+              "source_ns": 1793358033670301525,
+              "offered_ns": 1793358033670474090,
+              "intended_steady_ns": 417144322713228,
+              "actual_steady_ns": 417144322971827,
+              "acquisition_steady_ns": 417144322798651,
+              "flight": 9,
+              "phase": 0.0467174650000004,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.0463511765246234,
+                -0.7,
+                0.2868180238079898,
+                -9.431707854831838,
+                0.0,
+                -0.9168538719177337,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.647108,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033670301525",
+                "sequence": "2776",
+                "generation": "0",
+                "wall_ns": "1793358033670948633",
+                "steady_ns": "417144323446180",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033670301525",
+                "sequence": "2776",
+                "generation": "0",
+                "wall_ns": "1793358033671014470",
+                "steady_ns": "417144323511927",
+                "duration_ns": "66298",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033670301525",
+                "sequence": "2776",
+                "generation": "0",
+                "wall_ns": "1793358033671014981",
+                "steady_ns": "417144323512528",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033670301525",
+                "sequence": "974",
+                "generation": "17",
+                "wall_ns": "1793358033671097974",
+                "steady_ns": "417144323595451",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033670301525",
+                "sequence": "974",
+                "generation": "17",
+                "wall_ns": "1793358033671668248",
+                "steady_ns": "417144324164944",
+                "duration_ns": "569544",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033670301525",
+                "sequence": "974",
+                "generation": "17",
+                "wall_ns": "1793358033671790759",
+                "steady_ns": "417144324288096",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033670301525",
+                "sequence": "974",
+                "generation": "17",
+                "wall_ns": "1793358033671823958",
+                "steady_ns": "417144324321465",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033670301525,
+                1793358033670674467,
+                417144323172304,
+                2776
+              ],
+              [
+                "typed_published",
+                1793358033670301525,
+                1793358033670897347,
+                417144323395164,
+                2776
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033673088360,
+            "source": {
+              "source_ns": 1793358033673088360,
+              "offered_ns": 1793358033673259924,
+              "intended_steady_ns": 417144325491006,
+              "actual_steady_ns": 417144325757611,
+              "acquisition_steady_ns": 417144325585556,
+              "flight": 9,
+              "phase": 0.04950430000000061,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                2.0201111050307077,
+                -0.7,
+                0.2842291818629723,
+                -9.399776382943148,
+                0.0,
+                -0.9410423925302899,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.553259,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033673088360",
+                "sequence": "2777",
+                "generation": "0",
+                "wall_ns": "1793358033673641619",
+                "steady_ns": "417144326139166",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033673088360",
+                "sequence": "2777",
+                "generation": "0",
+                "wall_ns": "1793358033673677141",
+                "steady_ns": "417144326174658",
+                "duration_ns": "35602",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033673088360",
+                "sequence": "2777",
+                "generation": "0",
+                "wall_ns": "1793358033673677362",
+                "steady_ns": "417144326174909",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033673088360",
+                "sequence": "975",
+                "generation": "17",
+                "wall_ns": "1793358033673724582",
+                "steady_ns": "417144326222089",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033673088360",
+                "sequence": "975",
+                "generation": "17",
+                "wall_ns": "1793358033674134258",
+                "steady_ns": "417144326631595",
+                "duration_ns": "409547",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033673088360",
+                "sequence": "975",
+                "generation": "17",
+                "wall_ns": "1793358033674194067",
+                "steady_ns": "417144326691583",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033673088360",
+                "sequence": "975",
+                "generation": "17",
+                "wall_ns": "1793358033674208598",
+                "steady_ns": "417144326706125",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033673088360,
+                1793358033673442975,
+                417144325940802,
+                2777
+              ],
+              [
+                "typed_published",
+                1793358033673088360,
+                1793358033673637162,
+                417144326134970,
+                2777
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033675860778,
+            "source": {
+              "source_ns": 1793358033675860778,
+              "offered_ns": 1793358033676053724,
+              "intended_steady_ns": 417144328268784,
+              "actual_steady_ns": 417144328551581,
+              "acquisition_steady_ns": 417144328357804,
+              "flight": 9,
+              "phase": 0.05227671799999989,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.9940947935634163,
+                -0.7,
+                0.2815869446565173,
+                -9.368214873336365,
+                0.0,
+                -0.9650344246037471,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.660318,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033675860778",
+                "sequence": "2778",
+                "generation": "0",
+                "wall_ns": "1793358033676521096",
+                "steady_ns": "417144329018643",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033675860778",
+                "sequence": "2778",
+                "generation": "0",
+                "wall_ns": "1793358033676634924",
+                "steady_ns": "417144329132030",
+                "duration_ns": "114058",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033675860778",
+                "sequence": "2778",
+                "generation": "0",
+                "wall_ns": "1793358033676635495",
+                "steady_ns": "417144329133032",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033675860778",
+                "sequence": "976",
+                "generation": "17",
+                "wall_ns": "1793358033676784706",
+                "steady_ns": "417144329282033",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033675860778",
+                "sequence": "976",
+                "generation": "17",
+                "wall_ns": "1793358033677173441",
+                "steady_ns": "417144329670638",
+                "duration_ns": "388676",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033675860778",
+                "sequence": "976",
+                "generation": "17",
+                "wall_ns": "1793358033677241031",
+                "steady_ns": "417144329738538",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "trajectory_published",
+                "source_ns": "1793358033675860778",
+                "sequence": "976",
+                "generation": "17",
+                "wall_ns": "1793358033677285387",
+                "steady_ns": "417144329782904",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033675860778",
+                "sequence": "976",
+                "generation": "17",
+                "wall_ns": "1793358033677302382",
+                "steady_ns": "417144329799909",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033675860778,
+                1793358033676255132,
+                417144328752970,
+                2778
+              ],
+              [
+                "typed_published",
+                1793358033675860778,
+                1793358033676480015,
+                417144328977843,
+                2778
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033678671459,
+            "source": {
+              "source_ns": 1793358033678671459,
+              "offered_ns": 1793358033678886628,
+              "intended_steady_ns": 417144331046562,
+              "actual_steady_ns": 417144331384385,
+              "acquisition_steady_ns": 417144331168696,
+              "flight": 9,
+              "phase": 0.05508739900000048,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.9678084554318502,
+                -0.7,
+                0.2788404426941421,
+                -9.336423954393878,
+                0.0,
+                -0.9892855867553515,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.70255,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033678671459",
+                "sequence": "2779",
+                "generation": "0",
+                "wall_ns": "1793358033679374009",
+                "steady_ns": "417144331871556",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033678671459",
+                "sequence": "2779",
+                "generation": "0",
+                "wall_ns": "1793358033679411094",
+                "steady_ns": "417144331908621",
+                "duration_ns": "37636",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033678671459",
+                "sequence": "2779",
+                "generation": "0",
+                "wall_ns": "1793358033679411314",
+                "steady_ns": "417144331908861",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033678671459",
+                "sequence": "977",
+                "generation": "17",
+                "wall_ns": "1793358033679489460",
+                "steady_ns": "417144331986636",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033678671459",
+                "sequence": "977",
+                "generation": "17",
+                "wall_ns": "1793358033680052674",
+                "steady_ns": "417144332549680",
+                "duration_ns": "563124",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033678671459",
+                "sequence": "977",
+                "generation": "17",
+                "wall_ns": "1793358033680139422",
+                "steady_ns": "417144332636889",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033678671459",
+                "sequence": "977",
+                "generation": "17",
+                "wall_ns": "1793358033680163618",
+                "steady_ns": "417144332661145",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033678671459,
+                1793358033679128576,
+                417144331626413,
+                2779
+              ],
+              [
+                "typed_published",
+                1793358033678671459,
+                1793358033679338456,
+                417144331836324,
+                2779
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033681413007,
+            "source": {
+              "source_ns": 1793358033681413007,
+              "offered_ns": 1793358033681590139,
+              "intended_steady_ns": 417144333824340,
+              "actual_steady_ns": 417144334087867,
+              "acquisition_steady_ns": 417144333910224,
+              "flight": 9,
+              "phase": 0.057828946999999964,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.9422544805419903,
+                -0.7,
+                0.2760959228926507,
+                -9.305612782209634,
+                0.0,
+                -1.0128710473519933,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.613208,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033681413007",
+                "sequence": "2780",
+                "generation": "0",
+                "wall_ns": "1793358033682026215",
+                "steady_ns": "417144334523762",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033681413007",
+                "sequence": "2780",
+                "generation": "0",
+                "wall_ns": "1793358033682061707",
+                "steady_ns": "417144334559234",
+                "duration_ns": "36163",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033681413007",
+                "sequence": "2780",
+                "generation": "0",
+                "wall_ns": "1793358033682061888",
+                "steady_ns": "417144334559435",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033681413007",
+                "sequence": "978",
+                "generation": "17",
+                "wall_ns": "1793358033682117169",
+                "steady_ns": "417144334614646",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033681413007",
+                "sequence": "978",
+                "generation": "17",
+                "wall_ns": "1793358033682563400",
+                "steady_ns": "417144335060376",
+                "duration_ns": "445780",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033681413007",
+                "sequence": "978",
+                "generation": "17",
+                "wall_ns": "1793358033682704218",
+                "steady_ns": "417144335201515",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033681413007",
+                "sequence": "978",
+                "generation": "17",
+                "wall_ns": "1793358033682731759",
+                "steady_ns": "417144335229286",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033681413007,
+                1793358033681769355,
+                417144334267182,
+                2780
+              ],
+              [
+                "typed_published",
+                1793358033681413007,
+                1793358033682007006,
+                417144334504854,
+                2780
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033684181885,
+            "source": {
+              "source_ns": 1793358033684181885,
+              "offered_ns": 1793358033684438485,
+              "intended_steady_ns": 417144336602118,
+              "actual_steady_ns": 417144336936302,
+              "acquisition_steady_ns": 417144336679102,
+              "flight": 9,
+              "phase": 0.06059782500000033,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.9165312291876715,
+                -0.7,
+                0.2732585077074915,
+                -9.274690555441381,
+                0.0,
+                -1.0366228726256441,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.653918,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033684181885",
+                "sequence": "2781",
+                "generation": "0",
+                "wall_ns": "1793358033684835803",
+                "steady_ns": "417144337333350",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033684181885",
+                "sequence": "2781",
+                "generation": "0",
+                "wall_ns": "1793358033684871386",
+                "steady_ns": "417144337368913",
+                "duration_ns": "36114",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033684181885",
+                "sequence": "2781",
+                "generation": "0",
+                "wall_ns": "1793358033684871686",
+                "steady_ns": "417144337369233",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033684181885",
+                "sequence": "979",
+                "generation": "17",
+                "wall_ns": "1793358033684927269",
+                "steady_ns": "417144337424715",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033684181885",
+                "sequence": "979",
+                "generation": "17",
+                "wall_ns": "1793358033685412266",
+                "steady_ns": "417144337909172",
+                "duration_ns": "484507",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033684181885",
+                "sequence": "979",
+                "generation": "17",
+                "wall_ns": "1793358033685532194",
+                "steady_ns": "417144338029631",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033684181885",
+                "sequence": "979",
+                "generation": "17",
+                "wall_ns": "1793358033685582258",
+                "steady_ns": "417144338079214",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033684181885,
+                1793358033684612293,
+                417144337110120,
+                2781
+              ],
+              [
+                "typed_published",
+                1793358033684181885,
+                1793358033684812159,
+                417144337309976,
+                2781
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033686965926,
+            "source": {
+              "source_ns": 1793358033686965926,
+              "offered_ns": 1793358033687157520,
+              "intended_steady_ns": 417144339379896,
+              "actual_steady_ns": 417144339655337,
+              "acquisition_steady_ns": 417144339463153,
+              "flight": 9,
+              "phase": 0.06338186600000029,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.8907531624067415,
+                -0.7,
+                0.2703393431696943,
+                -9.243795518368902,
+                0.0,
+                -1.0604357162490237,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.622722,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033686965926",
+                "sequence": "2782",
+                "generation": "0",
+                "wall_ns": "1793358033687588648",
+                "steady_ns": "417144340086185",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033686965926",
+                "sequence": "2782",
+                "generation": "0",
+                "wall_ns": "1793358033687686002",
+                "steady_ns": "417144340183439",
+                "duration_ns": "98005",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033686965926",
+                "sequence": "2782",
+                "generation": "0",
+                "wall_ns": "1793358033687686353",
+                "steady_ns": "417144340183900",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033686965926",
+                "sequence": "980",
+                "generation": "17",
+                "wall_ns": "1793358033687750077",
+                "steady_ns": "417144340247544",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033686965926",
+                "sequence": "980",
+                "generation": "17",
+                "wall_ns": "1793358033688323366",
+                "steady_ns": "417144340820031",
+                "duration_ns": "572527",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033686965926",
+                "sequence": "980",
+                "generation": "17",
+                "wall_ns": "1793358033688388832",
+                "steady_ns": "417144340886339",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033686965926",
+                "sequence": "980",
+                "generation": "17",
+                "wall_ns": "1793358033688403544",
+                "steady_ns": "417144340901061",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033686965926,
+                1793358033687328593,
+                417144339826551,
+                2782
+              ],
+              [
+                "typed_published",
+                1793358033686965926,
+                1793358033687547387,
+                417144340045145,
+                2782
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033689759962,
+            "source": {
+              "source_ns": 1793358033689759962,
+              "offered_ns": 1793358033689927881,
+              "intended_steady_ns": 417144342157674,
+              "actual_steady_ns": 417144342425828,
+              "acquisition_steady_ns": 417144342257178,
+              "flight": 9,
+              "phase": 0.06617590200000034,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.8649687525197907,
+                -0.7,
+                0.267343141574414,
+                -9.212985524664026,
+                0.0,
+                -1.0842650474739466,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.6059169999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033689759962",
+                "sequence": "2783",
+                "generation": "0",
+                "wall_ns": "1793358033690365879",
+                "steady_ns": "417144342863426",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033689759962",
+                "sequence": "2783",
+                "generation": "0",
+                "wall_ns": "1793358033690403725",
+                "steady_ns": "417144342901252",
+                "duration_ns": "38407",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033689759962",
+                "sequence": "2783",
+                "generation": "0",
+                "wall_ns": "1793358033690404125",
+                "steady_ns": "417144342901672",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033689759962",
+                "sequence": "981",
+                "generation": "17",
+                "wall_ns": "1793358033690491305",
+                "steady_ns": "417144342988531",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033689759962",
+                "sequence": "981",
+                "generation": "17",
+                "wall_ns": "1793358033691023673",
+                "steady_ns": "417144343520278",
+                "duration_ns": "531857",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033689759962",
+                "sequence": "981",
+                "generation": "17",
+                "wall_ns": "1793358033691218130",
+                "steady_ns": "417144343715367",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033689759962",
+                "sequence": "981",
+                "generation": "17",
+                "wall_ns": "1793358033691247914",
+                "steady_ns": "417144343745441",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033689759962,
+                1793358033690129610,
+                417144342627557,
+                2783
+              ],
+              [
+                "typed_published",
+                1793358033689759962,
+                1793358033690330637,
+                417144342828444,
+                2783
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033692522501,
+            "source": {
+              "source_ns": 1793358033692522501,
+              "offered_ns": 1793358033692698011,
+              "intended_steady_ns": 417144344935452,
+              "actual_steady_ns": 417144345195779,
+              "acquisition_steady_ns": 417144345019648,
+              "flight": 9,
+              "phase": 0.06893844100000024,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.8395593776363048,
+                -0.7,
+                0.2643153511149365,
+                -9.182713750679179,
+                0.0,
+                -1.1077583812282,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.7413879999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033692522501",
+                "sequence": "2784",
+                "generation": "0",
+                "wall_ns": "1793358033693263889",
+                "steady_ns": "417144345761436",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033692522501",
+                "sequence": "2784",
+                "generation": "0",
+                "wall_ns": "1793358033693315425",
+                "steady_ns": "417144345812942",
+                "duration_ns": "52067",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033692522501",
+                "sequence": "2784",
+                "generation": "0",
+                "wall_ns": "1793358033693315946",
+                "steady_ns": "417144345813493",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033692522501",
+                "sequence": "982",
+                "generation": "17",
+                "wall_ns": "1793358033693388674",
+                "steady_ns": "417144345886150",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033692522501",
+                "sequence": "982",
+                "generation": "17",
+                "wall_ns": "1793358033693873021",
+                "steady_ns": "417144346369846",
+                "duration_ns": "483736",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033692522501",
+                "sequence": "982",
+                "generation": "17",
+                "wall_ns": "1793358033694076892",
+                "steady_ns": "417144346574019",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033692522501",
+                "sequence": "982",
+                "generation": "17",
+                "wall_ns": "1793358033694127868",
+                "steady_ns": "417144346625375",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033692522501,
+                1793358033693019818,
+                417144345518046,
+                2784
+              ],
+              [
+                "typed_published",
+                1793358033692522501,
+                1793358033693243829,
+                417144345741667,
+                2784
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033695289407,
+            "source": {
+              "source_ns": 1793358033695289407,
+              "offered_ns": 1793358033695584264,
+              "intended_steady_ns": 417144347713230,
+              "actual_steady_ns": 417144348082181,
+              "acquisition_steady_ns": 417144347786383,
+              "flight": 9,
+              "phase": 0.07170534699999997,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.8141934004658062,
+                -0.7,
+                0.26121781130152694,
+                -9.152582327737955,
+                0.0,
+                -1.1312222836277113,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 1.287356,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033695289407",
+                "sequence": "2785",
+                "generation": "0",
+                "wall_ns": "1793358033696576763",
+                "steady_ns": "417144349074310",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033695289407",
+                "sequence": "2785",
+                "generation": "0",
+                "wall_ns": "1793358033696615921",
+                "steady_ns": "417144349113307",
+                "duration_ns": "39929",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033695289407",
+                "sequence": "2785",
+                "generation": "0",
+                "wall_ns": "1793358033696616201",
+                "steady_ns": "417144349113748",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033695289407",
+                "sequence": "983",
+                "generation": "17",
+                "wall_ns": "1793358033696687446",
+                "steady_ns": "417144349184943",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033695289407",
+                "sequence": "983",
+                "generation": "17",
+                "wall_ns": "1793358033697256309",
+                "steady_ns": "417144349753174",
+                "duration_ns": "568261",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033695289407",
+                "sequence": "983",
+                "generation": "17",
+                "wall_ns": "1793358033697362275",
+                "steady_ns": "417144349859492",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033695289407",
+                "sequence": "983",
+                "generation": "17",
+                "wall_ns": "1793358033697391078",
+                "steady_ns": "417144349888605",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033695289407,
+                1793358033695838835,
+                417144348336683,
+                2785
+              ],
+              [
+                "typed_published",
+                1793358033695289407,
+                1793358033696071219,
+                417144348569017,
+                2785
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033698075792,
+            "source": {
+              "source_ns": 1793358033698075792,
+              "offered_ns": 1793358033698255758,
+              "intended_steady_ns": 417144350491008,
+              "actual_steady_ns": 417144350753595,
+              "acquisition_steady_ns": 417144350572978,
+              "flight": 9,
+              "phase": 0.07449173200000025,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.7887328380781184,
+                -0.7,
+                0.2580329481407214,
+                -9.122427068268946,
+                0.0,
+                -1.1547846194383276,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.653667,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033698075792",
+                "sequence": "2786",
+                "generation": "0",
+                "wall_ns": "1793358033698729459",
+                "steady_ns": "417144351227006",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033698075792",
+                "sequence": "2786",
+                "generation": "0",
+                "wall_ns": "1793358033698840533",
+                "steady_ns": "417144351337970",
+                "duration_ns": "111345",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033698075792",
+                "sequence": "2786",
+                "generation": "0",
+                "wall_ns": "1793358033698840814",
+                "steady_ns": "417144351338361",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033698075792",
+                "sequence": "984",
+                "generation": "17",
+                "wall_ns": "1793358033698900833",
+                "steady_ns": "417144351398320",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033698075792",
+                "sequence": "984",
+                "generation": "17",
+                "wall_ns": "1793358033699317219",
+                "steady_ns": "417144351814245",
+                "duration_ns": "415965",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033698075792",
+                "sequence": "984",
+                "generation": "17",
+                "wall_ns": "1793358033699465018",
+                "steady_ns": "417144351962375",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "trajectory_published",
+                "source_ns": "1793358033698075792",
+                "sequence": "984",
+                "generation": "17",
+                "wall_ns": "1793358033699556023",
+                "steady_ns": "417144352053489",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033698075792",
+                "sequence": "984",
+                "generation": "17",
+                "wall_ns": "1793358033699582922",
+                "steady_ns": "417144352080449",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033698075792,
+                1793358033698480556,
+                417144350978383,
+                2786
+              ],
+              [
+                "typed_published",
+                1793358033698075792,
+                1793358033698697677,
+                417144351195514,
+                2786
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033700855216,
+            "source": {
+              "source_ns": 1793358033700855216,
+              "offered_ns": 1793358033701046809,
+              "intended_steady_ns": 417144353268786,
+              "actual_steady_ns": 417144353544567,
+              "acquisition_steady_ns": 417144353352422,
+              "flight": 9,
+              "phase": 0.07727115600000012,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.7634193318532474,
+                -0.7,
+                0.2547907257108783,
+                -9.092533350012522,
+                0.0,
+                -1.1782219221543453,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.6321749999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033700855216",
+                "sequence": "2787",
+                "generation": "0",
+                "wall_ns": "1793358033701487391",
+                "steady_ns": "417144353984938",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033700855216",
+                "sequence": "2787",
+                "generation": "0",
+                "wall_ns": "1793358033701521612",
+                "steady_ns": "417144354019139",
+                "duration_ns": "34852",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033700855216",
+                "sequence": "2787",
+                "generation": "0",
+                "wall_ns": "1793358033701522113",
+                "steady_ns": "417144354019660",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033700855216",
+                "sequence": "985",
+                "generation": "17",
+                "wall_ns": "1793358033701611655",
+                "steady_ns": "417144354108892",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033700855216",
+                "sequence": "985",
+                "generation": "17",
+                "wall_ns": "1793358033702011207",
+                "steady_ns": "417144354508373",
+                "duration_ns": "399521",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033700855216",
+                "sequence": "985",
+                "generation": "17",
+                "wall_ns": "1793358033702116192",
+                "steady_ns": "417144354613659",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033700855216",
+                "sequence": "985",
+                "generation": "17",
+                "wall_ns": "1793358033702169531",
+                "steady_ns": "417144354666808",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033700855216,
+                1793358033701242254,
+                417144353740091,
+                2787
+              ],
+              [
+                "typed_published",
+                1793358033700855216,
+                1793358033701456431,
+                417144353954258,
+                2787
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033703637184,
+            "source": {
+              "source_ns": 1793358033703637184,
+              "offered_ns": 1793358033703819513,
+              "intended_steady_ns": 417144356046564,
+              "actual_steady_ns": 417144356317231,
+              "acquisition_steady_ns": 417144356134390,
+              "flight": 9,
+              "phase": 0.08005312399999998,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.7381656010353552,
+                -0.7,
+                0.2514803953927138,
+                -9.062796487634944,
+                0.0,
+                -1.201615057896111,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.635751,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033703637184",
+                "sequence": "2788",
+                "generation": "0",
+                "wall_ns": "1793358033704272935",
+                "steady_ns": "417144356770482",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033703637184",
+                "sequence": "2788",
+                "generation": "0",
+                "wall_ns": "1793358033704308858",
+                "steady_ns": "417144356806365",
+                "duration_ns": "36595",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033703637184",
+                "sequence": "2788",
+                "generation": "0",
+                "wall_ns": "1793358033704309148",
+                "steady_ns": "417144356806695",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033703637184",
+                "sequence": "986",
+                "generation": "17",
+                "wall_ns": "1793358033704372272",
+                "steady_ns": "417144356869748",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033703637184",
+                "sequence": "986",
+                "generation": "17",
+                "wall_ns": "1793358033704791702",
+                "steady_ns": "417144357288669",
+                "duration_ns": "418961",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033703637184",
+                "sequence": "986",
+                "generation": "17",
+                "wall_ns": "1793358033704916758",
+                "steady_ns": "417144357414214",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033703637184",
+                "sequence": "986",
+                "generation": "17",
+                "wall_ns": "1793358033704942295",
+                "steady_ns": "417144357439812",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033703637184,
+                1793358033704031948,
+                417144356529795,
+                2788
+              ],
+              [
+                "typed_published",
+                1793358033703637184,
+                1793358033704241538,
+                417144356739355,
+                2788
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033706416497,
+            "source": {
+              "source_ns": 1793358033706416497,
+              "offered_ns": 1793358033706692766,
+              "intended_steady_ns": 417144358824342,
+              "actual_steady_ns": 417144359190664,
+              "acquisition_steady_ns": 417144358913714,
+              "flight": 9,
+              "phase": 0.08283243700000043,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.7130183264500132,
+                -0.7,
+                0.2481083289942359,
+                -9.033270061291692,
+                0.0,
+                -1.22492086091885,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 1.218484,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033706416497",
+                "sequence": "2789",
+                "generation": "0",
+                "wall_ns": "1793358033707634981",
+                "steady_ns": "417144360132528",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033706416497",
+                "sequence": "2789",
+                "generation": "0",
+                "wall_ns": "1793358033707699436",
+                "steady_ns": "417144360196933",
+                "duration_ns": "65016",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033706416497",
+                "sequence": "2789",
+                "generation": "0",
+                "wall_ns": "1793358033707699897",
+                "steady_ns": "417144360197444",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033706416497",
+                "sequence": "987",
+                "generation": "17",
+                "wall_ns": "1793358033707779344",
+                "steady_ns": "417144360276501",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033706416497",
+                "sequence": "987",
+                "generation": "17",
+                "wall_ns": "1793358033708167429",
+                "steady_ns": "417144360664495",
+                "duration_ns": "388044",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033706416497",
+                "sequence": "987",
+                "generation": "17",
+                "wall_ns": "1793358033708315428",
+                "steady_ns": "417144360812684",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033706416497",
+                "sequence": "987",
+                "generation": "17",
+                "wall_ns": "1793358033708343690",
+                "steady_ns": "417144360841207",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033706416497,
+                1793358033707050105,
+                417144359547953,
+                2789
+              ],
+              [
+                "typed_published",
+                1793358033706416497,
+                1793358033707238334,
+                417144359736121,
+                2789
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033709184875,
+            "source": {
+              "source_ns": 1793358033709184875,
+              "offered_ns": 1793358033709364781,
+              "intended_steady_ns": 417144361602120,
+              "actual_steady_ns": 417144361862498,
+              "acquisition_steady_ns": 417144361682091,
+              "flight": 9,
+              "phase": 0.08560081500000027,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.6880513229713832,
+                -0.7,
+                0.24468522629894982,
+                -9.004038760705464,
+                0.0,
+                -1.2480709104640058,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.683191,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033709184875",
+                "sequence": "2790",
+                "generation": "0",
+                "wall_ns": "1793358033709868066",
+                "steady_ns": "417144362365603",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033709184875",
+                "sequence": "2790",
+                "generation": "0",
+                "wall_ns": "1793358033710022855",
+                "steady_ns": "417144362519972",
+                "duration_ns": "154970",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033709184875",
+                "sequence": "2790",
+                "generation": "0",
+                "wall_ns": "1793358033710023446",
+                "steady_ns": "417144362520993",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033709184875",
+                "sequence": "988",
+                "generation": "17",
+                "wall_ns": "1793358033710115272",
+                "steady_ns": "417144362612739",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033709184875",
+                "sequence": "988",
+                "generation": "17",
+                "wall_ns": "1793358033710454274",
+                "steady_ns": "417144362951731",
+                "duration_ns": "339042",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033709184875",
+                "sequence": "988",
+                "generation": "17",
+                "wall_ns": "1793358033710515805",
+                "steady_ns": "417144363013312",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033709184875",
+                "sequence": "988",
+                "generation": "17",
+                "wall_ns": "1793358033710531188",
+                "steady_ns": "417144363028715",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033709184875,
+                1793358033709589034,
+                417144362086841,
+                2790
+              ],
+              [
+                "typed_published",
+                1793358033709184875,
+                1793358033709767938,
+                417144362265636,
+                2790
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033711960644,
+            "source": {
+              "source_ns": 1793358033711960644,
+              "offered_ns": 1793358033712150945,
+              "intended_steady_ns": 417144364379898,
+              "actual_steady_ns": 417144364648773,
+              "acquisition_steady_ns": 417144364457860,
+              "flight": 9,
+              "phase": 0.08837658400000059,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.6630986639437304,
+                -0.7,
+                0.2411887280516843,
+                -8.97490682010423,
+                0.0,
+                -1.2712191038901874,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.684673,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033711960644",
+                "sequence": "2791",
+                "generation": "0",
+                "wall_ns": "1793358033712645317",
+                "steady_ns": "417144365142854",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033711960644",
+                "sequence": "2791",
+                "generation": "0",
+                "wall_ns": "1793358033712689482",
+                "steady_ns": "417144365186969",
+                "duration_ns": "44736",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033711960644",
+                "sequence": "2791",
+                "generation": "0",
+                "wall_ns": "1793358033712689783",
+                "steady_ns": "417144365187330",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033711960644",
+                "sequence": "989",
+                "generation": "17",
+                "wall_ns": "1793358033712798484",
+                "steady_ns": "417144365295881",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033711960644",
+                "sequence": "989",
+                "generation": "17",
+                "wall_ns": "1793358033713178576",
+                "steady_ns": "417144365675903",
+                "duration_ns": "380093",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033711960644",
+                "sequence": "989",
+                "generation": "17",
+                "wall_ns": "1793358033713306506",
+                "steady_ns": "417144365803872",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033711960644",
+                "sequence": "989",
+                "generation": "17",
+                "wall_ns": "1793358033713339094",
+                "steady_ns": "417144365836621",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033711960644,
+                1793358033712347707,
+                417144364845584,
+                2791
+              ],
+              [
+                "typed_published",
+                1793358033711960644,
+                1793358033712525690,
+                417144365023418,
+                2791
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033714745145,
+            "source": {
+              "source_ns": 1793358033714745145,
+              "offered_ns": 1793358033714909949,
+              "intended_steady_ns": 417144367157676,
+              "actual_steady_ns": 417144367407686,
+              "acquisition_steady_ns": 417144367242222,
+              "flight": 9,
+              "phase": 0.09116108500000042,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.6381485084617464,
+                -0.7,
+                0.23761676145994326,
+                -8.945859808000362,
+                0.0,
+                -1.2943765900765716,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.815948,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033714745145",
+                "sequence": "2792",
+                "generation": "0",
+                "wall_ns": "1793358033715561093",
+                "steady_ns": "417144368058620",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033714745145",
+                "sequence": "2792",
+                "generation": "0",
+                "wall_ns": "1793358033715612439",
+                "steady_ns": "417144368109856",
+                "duration_ns": "52378",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033714745145",
+                "sequence": "2792",
+                "generation": "0",
+                "wall_ns": "1793358033715613090",
+                "steady_ns": "417144368110627",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033714745145",
+                "sequence": "990",
+                "generation": "17",
+                "wall_ns": "1793358033715695973",
+                "steady_ns": "417144368193440",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033714745145",
+                "sequence": "990",
+                "generation": "17",
+                "wall_ns": "1793358033716118558",
+                "steady_ns": "417144368615154",
+                "duration_ns": "421765",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033714745145",
+                "sequence": "990",
+                "generation": "17",
+                "wall_ns": "1793358033716252046",
+                "steady_ns": "417144368749533",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033714745145",
+                "sequence": "990",
+                "generation": "17",
+                "wall_ns": "1793358033716278755",
+                "steady_ns": "417144368776272",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033714745145,
+                1793358033715241370,
+                417144367739328,
+                2792
+              ],
+              [
+                "typed_published",
+                1793358033714745145,
+                1793358033715413926,
+                417144367911703,
+                2792
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033717523047,
+            "source": {
+              "source_ns": 1793358033717523047,
+              "offered_ns": 1793358033717735502,
+              "intended_steady_ns": 417144369935454,
+              "actual_steady_ns": 417144370233329,
+              "acquisition_steady_ns": 417144370020264,
+              "flight": 9,
+              "phase": 0.09393898700000047,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.613337833815515,
+                -0.7,
+                0.2339890946216138,
+                -8.917055976037455,
+                0.0,
+                -1.31741630695855,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.725804,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033717523047",
+                "sequence": "2793",
+                "generation": "0",
+                "wall_ns": "1793358033718248851",
+                "steady_ns": "417144370746388",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033717523047",
+                "sequence": "2793",
+                "generation": "0",
+                "wall_ns": "1793358033718292897",
+                "steady_ns": "417144370790414",
+                "duration_ns": "44847",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033717523047",
+                "sequence": "2793",
+                "generation": "0",
+                "wall_ns": "1793358033718293177",
+                "steady_ns": "417144370790724",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033717523047",
+                "sequence": "991",
+                "generation": "17",
+                "wall_ns": "1793358033718383220",
+                "steady_ns": "417144370880407",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033717523047",
+                "sequence": "991",
+                "generation": "17",
+                "wall_ns": "1793358033718805205",
+                "steady_ns": "417144371302221",
+                "duration_ns": "421854",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033717523047",
+                "sequence": "991",
+                "generation": "17",
+                "wall_ns": "1793358033718928057",
+                "steady_ns": "417144371425333",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033717523047",
+                "sequence": "991",
+                "generation": "17",
+                "wall_ns": "1793358033718957210",
+                "steady_ns": "417144371454737",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033717523047,
+                1793358033717930711,
+                417144370428789,
+                2793
+              ],
+              [
+                "typed_published",
+                1793358033717523047,
+                1793358033718132790,
+                417144370630718,
+                2793
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033720300338,
+            "source": {
+              "source_ns": 1793358033720300338,
+              "offered_ns": 1793358033720464191,
+              "intended_steady_ns": 417144372713232,
+              "actual_steady_ns": 417144372961968,
+              "acquisition_steady_ns": 417144372797154,
+              "flight": 9,
+              "phase": 0.0967162780000006,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.5886123645047927,
+                -0.7,
+                0.23029833134829567,
+                -8.888430704312409,
+                0.0,
+                -1.340388666287149,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 0.8780549999999999,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033720300338",
+                "sequence": "2794",
+                "generation": "0",
+                "wall_ns": "1793358033721178393",
+                "steady_ns": "417144373675940",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033720300338",
+                "sequence": "2794",
+                "generation": "0",
+                "wall_ns": "1793358033721272823",
+                "steady_ns": "417144373770270",
+                "duration_ns": "94941",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033720300338",
+                "sequence": "2794",
+                "generation": "0",
+                "wall_ns": "1793358033721273123",
+                "steady_ns": "417144373770670",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033720300338",
+                "sequence": "992",
+                "generation": "17",
+                "wall_ns": "1793358033721499398",
+                "steady_ns": "417144373996044",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033720300338",
+                "sequence": "992",
+                "generation": "17",
+                "wall_ns": "1793358033721861244",
+                "steady_ns": "417144374358500",
+                "duration_ns": "362536",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033720300338",
+                "sequence": "992",
+                "generation": "17",
+                "wall_ns": "1793358033722252493",
+                "steady_ns": "417144374749109",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "trajectory_published",
+                "source_ns": "1793358033720300338",
+                "sequence": "992",
+                "generation": "17",
+                "wall_ns": "1793358033722337549",
+                "steady_ns": "417144374835016",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033720300338",
+                "sequence": "992",
+                "generation": "17",
+                "wall_ns": "1793358033722368114",
+                "steady_ns": "417144374865641",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033720300338,
+                1793358033720663286,
+                417144373161113,
+                2794
+              ],
+              [
+                "typed_published",
+                1793358033720300338,
+                1793358033720930952,
+                417144373428819,
+                2794
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033723077324,
+            "source": {
+              "source_ns": 1793358033723077324,
+              "offered_ns": 1793358033723399771,
+              "intended_steady_ns": 417144375491010,
+              "actual_steady_ns": 417144375897619,
+              "acquisition_steady_ns": 417144375574430,
+              "flight": 9,
+              "phase": 0.09949326400000036,
+              "present": true,
+              "eligible_continuous": false,
+              "state": [
+                1.5639688611809388,
+                -0.7,
+                0.22654426887038054,
+                -8.859978927386434,
+                0.0,
+                -1.3632967239850846,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 2.365426,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033723077324",
+                "sequence": "2795",
+                "generation": "0",
+                "wall_ns": "1793358033725442750",
+                "steady_ns": "417144377940177",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033723077324",
+                "sequence": "2795",
+                "generation": "0",
+                "wall_ns": "1793358033725486835",
+                "steady_ns": "417144377984352",
+                "duration_ns": "44636",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033723077324",
+                "sequence": "2795",
+                "generation": "0",
+                "wall_ns": "1793358033725487236",
+                "steady_ns": "417144377984783",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033723077324",
+                "sequence": "993",
+                "generation": "17",
+                "wall_ns": "1793358033725607203",
+                "steady_ns": "417144378104330",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033723077324",
+                "sequence": "993",
+                "generation": "17",
+                "wall_ns": "1793358033726273339",
+                "steady_ns": "417144378770015",
+                "duration_ns": "665765",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033723077324",
+                "sequence": "993",
+                "generation": "17",
+                "wall_ns": "1793358033726388941",
+                "steady_ns": "417144378886187",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033723077324",
+                "sequence": "993",
+                "generation": "17",
+                "wall_ns": "1793358033726419636",
+                "steady_ns": "417144378917163",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033723077324,
+                1793358033723706510,
+                417144376204478,
+                2795
+              ],
+              [
+                "typed_published",
+                1793358033723077324,
+                1793358033723902901,
+                417144376400718,
+                2795
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033725845496,
+            "source": {
+              "source_ns": 1793358033725845496,
+              "offered_ns": 1793358033726078831,
+              "intended_steady_ns": 417144378268788,
+              "actual_steady_ns": 417144378576569,
+              "acquisition_steady_ns": 417144378342572,
+              "flight": 9,
+              "phase": 0.10226143600000004,
+              "present": true,
+              "eligible_continuous": true,
+              "state": [
+                1.539481976574046,
+                -0.7,
+                0.22273889339827255,
+                -8.831785194467653,
+                0.0,
+                -1.3860710740365887,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 1.263881,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033725845496",
+                "sequence": "2796",
+                "generation": "0",
+                "wall_ns": "1793358033727109377",
+                "steady_ns": "417144379606914",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033725845496",
+                "sequence": "2796",
+                "generation": "0",
+                "wall_ns": "1793358033727154624",
+                "steady_ns": "417144379652091",
+                "duration_ns": "45728",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033725845496",
+                "sequence": "2796",
+                "generation": "0",
+                "wall_ns": "1793358033727154924",
+                "steady_ns": "417144379652471",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_queued",
+                "source_ns": "1793358033725845496",
+                "sequence": "994",
+                "generation": "17",
+                "wall_ns": "1793358033727240371",
+                "steady_ns": "417144379737808",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_completed",
+                "source_ns": "1793358033725845496",
+                "sequence": "994",
+                "generation": "17",
+                "wall_ns": "1793358033727692580",
+                "steady_ns": "417144380189106",
+                "duration_ns": "451328",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "forecast_published",
+                "source_ns": "1793358033725845496",
+                "sequence": "994",
+                "generation": "17",
+                "wall_ns": "1793358033727819087",
+                "steady_ns": "417144380316494",
+                "duration_ns": "0",
+                "reason": "WAITING_FLIGHT_COMMIT"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033725845496",
+                "sequence": "994",
+                "generation": "17",
+                "wall_ns": "1793358033728306289",
+                "steady_ns": "417144380802984",
+                "duration_ns": "0",
+                "reason": "SUPPORTED"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033725845496",
+                "sequence": "995",
+                "generation": "17",
+                "wall_ns": "1793358033759109004",
+                "steady_ns": "417144411605639",
+                "duration_ns": "0",
+                "reason": "REVOKED"
+              },
+              {
+                "stage": "status_published",
+                "source_ns": "1793358033725845496",
+                "sequence": "995",
+                "generation": "17",
+                "wall_ns": "1793358033759137376",
+                "steady_ns": "417144411634893",
+                "duration_ns": "0",
+                "reason": "SOURCE_EXPIRED"
+              },
+              {
+                "stage": "candidate_published",
+                "source_ns": "1793358033725845496",
+                "sequence": "996",
+                "generation": "17",
+                "wall_ns": "1793358033759437710",
+                "steady_ns": "417144411934376",
+                "duration_ns": "0",
+                "reason": "EXPIRED"
+              },
+              {
+                "stage": "status_published",
+                "source_ns": "1793358033725845496",
+                "sequence": "996",
+                "generation": "17",
+                "wall_ns": "1793358033759447885",
+                "steady_ns": "417144411945422",
+                "duration_ns": "0",
+                "reason": "SOURCE_EXPIRED"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033725845496,
+                1793358033726379347,
+                417144378877464,
+                2796
+              ],
+              [
+                "typed_published",
+                1793358033725845496,
+                1793358033726554155,
+                417144379051983,
+                2796
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033728652521,
+            "source": {
+              "source_ns": 1793358033728652521,
+              "offered_ns": 1793358033728916261,
+              "intended_steady_ns": 417144381046566,
+              "actual_steady_ns": 417144381414029,
+              "acquisition_steady_ns": 417144381149427,
+              "flight": 9,
+              "phase": 0.10506846100000011,
+              "present": true,
+              "eligible_continuous": true,
+              "state": [
+                1.5147308625529163,
+                -0.7,
+                0.21881581664560373,
+                -8.803364950506378,
+                0.0,
+                -1.4091033719740138,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": null,
+            "planner_stages": [],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033728652521,
+                1793358033729074396,
+                417144381572263,
+                2797
+              ],
+              [
+                "typed_published",
+                1793358033728652521,
+                1793358033729264407,
+                417144381762104,
+                2797
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033731407289,
+            "source": {
+              "source_ns": 1793358033731407289,
+              "offered_ns": 1793358033731645121,
+              "intended_steady_ns": 417144383824344,
+              "actual_steady_ns": 417144384143168,
+              "acquisition_steady_ns": 417144383904395,
+              "flight": 9,
+              "phase": 0.10782322900000008,
+              "present": true,
+              "eligible_continuous": true,
+              "state": [
+                1.490517862640033,
+                -0.7,
+                0.21490299903115218,
+                -8.775637703613748,
+                0.0,
+                -1.4316469455593224,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 28.72533,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033731407289",
+                "sequence": "2798",
+                "generation": "0",
+                "wall_ns": "1793358033760132619",
+                "steady_ns": "417144412630166",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033731407289",
+                "sequence": "2798",
+                "generation": "0",
+                "wall_ns": "1793358033760291174",
+                "steady_ns": "417144412788661",
+                "duration_ns": "159146",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033731407289",
+                "sequence": "2798",
+                "generation": "0",
+                "wall_ns": "1793358033760292185",
+                "steady_ns": "417144412789732",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_superseded",
+                "source_ns": "1793358033731407289",
+                "sequence": "0",
+                "generation": "0",
+                "wall_ns": "1793358033760386595",
+                "steady_ns": "417144412884142",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033731407289,
+                1793358033731876604,
+                417144384374421,
+                2798
+              ],
+              [
+                "typed_published",
+                1793358033731407289,
+                1793358033732092964,
+                417144384590811,
+                2798
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033734180994,
+            "source": {
+              "source_ns": 1793358033734180994,
+              "offered_ns": 1793358033734354171,
+              "intended_steady_ns": 417144386602122,
+              "actual_steady_ns": 417144386851938,
+              "acquisition_steady_ns": 417144386678221,
+              "flight": 9,
+              "phase": 0.11059693400000015,
+              "present": true,
+              "eligible_continuous": true,
+              "state": [
+                1.4662153627382357,
+                -0.7,
+                0.21090062201723192,
+                -8.747882176721957,
+                0.0,
+                -1.4542859549991551,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": null,
+            "planner_stages": [],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033734180994,
+                1793358033734564332,
+                417144387062160,
+                2799
+              ],
+              [
+                "typed_published",
+                1793358033734180994,
+                1793358033734765931,
+                417144387263748,
+                2799
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033736961836,
+            "source": {
+              "source_ns": 1793358033736961836,
+              "offered_ns": 1793358033737216743,
+              "intended_steady_ns": 417144389379900,
+              "actual_steady_ns": 417144389714581,
+              "acquisition_steady_ns": 417144389459042,
+              "flight": 9,
+              "phase": 0.1133777760000001,
+              "present": true,
+              "eligible_continuous": true,
+              "state": [
+                1.4419273881155314,
+                -0.7,
+                0.2068249927985946,
+                -8.720217031764394,
+                0.0,
+                -1.4769237008674958,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": null,
+            "planner_stages": [],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033736961836,
+                1793358033737436624,
+                417144389934792,
+                2800
+              ],
+              [
+                "typed_published",
+                1793358033736961836,
+                1793358033737622669,
+                417144390120396,
+                2800
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033739861153,
+            "source": {
+              "source_ns": 1793358033739861153,
+              "offered_ns": 1793358033740357027,
+              "intended_steady_ns": 417144392157678,
+              "actual_steady_ns": 417144392854964,
+              "acquisition_steady_ns": 417144392358349,
+              "flight": 9,
+              "phase": 0.11627709299999989,
+              "present": true,
+              "eligible_continuous": true,
+              "state": [
+                1.4166863227287108,
+                -0.7,
+                0.20250878348259005,
+                -8.691543917272798,
+                0.0,
+                -1.5004629341467255,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 20.488637,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033739861153",
+                "sequence": "2801",
+                "generation": "0",
+                "wall_ns": "1793358033760349790",
+                "steady_ns": "417144412847337",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033739861153",
+                "sequence": "2801",
+                "generation": "0",
+                "wall_ns": "1793358033760386375",
+                "steady_ns": "417144412883902",
+                "duration_ns": "36695",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033739861153",
+                "sequence": "2801",
+                "generation": "0",
+                "wall_ns": "1793358033760386785",
+                "steady_ns": "417144412884332",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_superseded",
+                "source_ns": "1793358033739861153",
+                "sequence": "0",
+                "generation": "0",
+                "wall_ns": "1793358033760482767",
+                "steady_ns": "417144412980314",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033739861153,
+                1793358033740662348,
+                417144393160566,
+                2801
+              ],
+              [
+                "typed_published",
+                1793358033739861153,
+                1793358033740934301,
+                417144393432248,
+                2801
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033742522252,
+            "source": {
+              "source_ns": 1793358033742522252,
+              "offered_ns": 1793358033742701287,
+              "intended_steady_ns": 417144394935456,
+              "actual_steady_ns": 417144395199184,
+              "acquisition_steady_ns": 417144395019448,
+              "flight": 9,
+              "phase": 0.11893819199999989,
+              "present": true,
+              "eligible_continuous": true,
+              "state": [
+                1.3935921104102995,
+                -0.7,
+                0.19848721916922346,
+                -8.66537843363424,
+                0.0,
+                -1.522011944497046,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 17.874778,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033742522252",
+                "sequence": "2802",
+                "generation": "0",
+                "wall_ns": "1793358033760397030",
+                "steady_ns": "417144412894587",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033742522252",
+                "sequence": "2802",
+                "generation": "0",
+                "wall_ns": "1793358033760482557",
+                "steady_ns": "417144412980054",
+                "duration_ns": "85557",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033742522252",
+                "sequence": "2802",
+                "generation": "0",
+                "wall_ns": "1793358033760482958",
+                "steady_ns": "417144412980505",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_superseded",
+                "source_ns": "1793358033742522252",
+                "sequence": "0",
+                "generation": "0",
+                "wall_ns": "1793358033760556276",
+                "steady_ns": "417144413053823",
+                "duration_ns": "0",
+                "reason": ""
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033742522252,
+                1793358033742912459,
+                417144395410407,
+                2802
+              ],
+              [
+                "typed_published",
+                1793358033742522252,
+                1793358033743222468,
+                417144395720315,
+                2802
+              ]
+            ]
+          },
+          {
+            "source_ns": 1793358033745357358,
+            "source": {
+              "source_ns": 1793358033745357358,
+              "offered_ns": 1793358033745554580,
+              "intended_steady_ns": 417144397713234,
+              "actual_steady_ns": 417144398052447,
+              "acquisition_steady_ns": 417144397854474,
+              "flight": 9,
+              "phase": 0.12177329799999992,
+              "present": true,
+              "eligible_continuous": true,
+              "state": [
+                1.3690641745164236,
+                -0.7,
+                0.1941396786296422,
+                -8.637660137338028,
+                0.0,
+                -1.544911326818861,
+                0.0
+              ]
+            },
+            "planner_receipt_age_ms": 15.134151999999998,
+            "planner_stages": [
+              {
+                "stage": "planner_received",
+                "source_ns": "1793358033745357358",
+                "sequence": "2803",
+                "generation": "0",
+                "wall_ns": "1793358033760491510",
+                "steady_ns": "417144412989067",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "tracker_accepted",
+                "source_ns": "1793358033745357358",
+                "sequence": "2803",
+                "generation": "0",
+                "wall_ns": "1793358033760556156",
+                "steady_ns": "417144413053683",
+                "duration_ns": "64706",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_requested",
+                "source_ns": "1793358033745357358",
+                "sequence": "2803",
+                "generation": "0",
+                "wall_ns": "1793358033760556346",
+                "steady_ns": "417144413053903",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "forecast_superseded",
+                "source_ns": "1793358033745357358",
+                "sequence": "0",
+                "generation": "0",
+                "wall_ns": "1793358033760588964",
+                "steady_ns": "417144413086521",
+                "duration_ns": "0",
+                "reason": ""
+              },
+              {
+                "stage": "command_rejected",
+                "source_ns": "1793358033745357358",
+                "sequence": "9",
+                "generation": "0",
+                "wall_ns": "1793358033761004910",
+                "steady_ns": "417144413502427",
+                "duration_ns": "0",
+                "reason": "PACKET_OBSERVATION_PREFIX_MISMATCH"
+              }
+            ],
+            "relay_stages": [
+              [
+                "relay_receipt",
+                1793358033745357358,
+                1793358033745824519,
+                417144398322357,
+                2803
+              ],
+              [
+                "typed_published",
+                1793358033745357358,
+                1793358033746074549,
+                417144398572447,
+                2803
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "late_publications": []
+  }
+]

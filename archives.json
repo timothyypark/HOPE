@@ -1,0 +1,1676 @@
+[
+  {
+    "path": "receipts/setup-and-analysis.tar.gz",
+    "files": 98,
+    "bytes": 1091662,
+    "sha256": "d3a3b390f53998eda8305b6fa8cf2176b3b959cf50a370274ce3028b579be709"
+  },
+  {
+    "path": "receipts/conversion-01.tar.gz",
+    "files": 9,
+    "bytes": 325574,
+    "sha256": "97ebce5704f15424ac45a3a8e91bc36f94b2089a38df3887f020d2071679780c"
+  },
+  {
+    "path": "receipts/conversion-02.tar.gz",
+    "files": 9,
+    "bytes": 331127,
+    "sha256": "0463945b99d03530f34c0b2ffe71624607426da33ce9ac4084d8b5a9657b5744"
+  },
+  {
+    "path": "receipts/forecast-path-review.tar.gz",
+    "files": 4,
+    "bytes": 310574,
+    "sha256": "4ce86765a9c6512f13c8269f90b7a95a3bb4f76c58b7b1dd018f1674dfe7f5e6"
+  },
+  {
+    "path": "receipts/historical-lifecycle-replay.tar.gz",
+    "files": 7,
+    "bytes": 132771,
+    "sha256": "751a0200e558fc41792e8001a7c5a0fb6dea3401c1fd360a56a77f9a44dafe2d"
+  },
+  {
+    "path": "receipts/lifecycle-consumers-01.tar.gz",
+    "files": 185,
+    "bytes": 12985982,
+    "sha256": "77a53374384e0d16ff587ae7a19922895169df9eba46197892510fd86ab2158f"
+  },
+  {
+    "path": "receipts/lifecycle-consumers-02.tar.gz",
+    "files": 184,
+    "bytes": 17598488,
+    "sha256": "32103b1625173d638d62e30527611ba14524c954c388bf914614858a21635f6f"
+  },
+  {
+    "path": "receipts/lifecycle-instrumentation-comparison.tar.gz",
+    "files": 40,
+    "bytes": 2779841,
+    "sha256": "fc4fb5079d44986f334f97809b5d197a4ae2c306ca007bd22de277373602cf1e"
+  },
+  {
+    "path": "receipts/mujoco-02.tar.gz",
+    "files": 2,
+    "bytes": 12481,
+    "sha256": "a2d944e25dffeb96857ea80381534b84c661a09faa50cf014cbcb22a40b86014"
+  },
+  {
+    "path": "receipts/native.tar.gz",
+    "files": 2,
+    "bytes": 3733,
+    "sha256": "a751c979c7dd8a19993cec8f71682210fa3fc85976dd5ae719fb375177c07df2"
+  },
+  {
+    "path": "receipts/packet-replays-02.tar.gz",
+    "files": 64,
+    "bytes": 328478,
+    "sha256": "8950825d462194fbb958b61c24f93a668ced9d4a41d3149eff09213ae31e75b0"
+  },
+  {
+    "path": "receipts/packet-replays-03.tar.gz",
+    "files": 64,
+    "bytes": 476742,
+    "sha256": "0f84c9ed8d4894c118c2efc13c020cbdc8008852e2cb54482c4e4880d3360a33"
+  },
+  {
+    "path": "receipts/qualification-01/gates.tar.gz",
+    "files": 107,
+    "bytes": 359276,
+    "sha256": "134b5b1a7a67a41920a7ef239a3e96904df7e2a8b518e503fb23daffbec0d7b6"
+  },
+  {
+    "path": "receipts/qualification-01/build.tar.gz",
+    "files": 1332,
+    "bytes": 36986225,
+    "sha256": "b31d1344b74a7cbb6b3084d7950583369ff78b9aeaf4fcbe35304b2261888cf8"
+  },
+  {
+    "path": "receipts/qualification-01/diagnostic-comparison.tar.gz",
+    "files": 94,
+    "bytes": 9107237,
+    "sha256": "50ff7b7c10535fa9a8fcd264400f5cc197c04039cc81fbb6544b2975b7467f13"
+  },
+  {
+    "path": "receipts/qualification-01/failing-before.tar.gz",
+    "files": 18,
+    "bytes": 6856,
+    "sha256": "40d716a1432cbac286e21e6d4101592ef2831bc1f70a2e43a8e5e8e1d8c40398"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign.tar.gz",
+    "files": 183,
+    "bytes": 101338,
+    "sha256": "24eead0d016fdc5f0723757cd157de20843a662b4b800e2c94b3e31050ed571a"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_150_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 264042,
+    "sha256": "ac19cf9ec88e438059a38da4184d12436b225f158dadd0a7ba35e6c3b2c63a7e"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_150_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 240869,
+    "sha256": "594ce845308b4a34bbe76529ed1430ae8e73eb94637091980a4e5b0e0cf0fba0"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_150_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 240107,
+    "sha256": "b8a8169269e81c6e50d21ab89298ee8f957f7fb0030aaefa13b31a1e5fea1444"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_150_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 242431,
+    "sha256": "a1eb804114f09773a5a5acf910d0540ee12f88d17a77f5ae52b0f2faa6b4c814"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_150_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 240597,
+    "sha256": "9266a486f63e25070abaa56780ed2aab9e65ac2407eb811f5a5d6c186b3f5af0"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_150_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 265641,
+    "sha256": "c658403126e3b7ccbbf5f9d5a83bdfb97c3d49190b7337a58b3a73722f444448"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_300_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 449673,
+    "sha256": "e27799d4821d3cc1fbb74688e83296cb0afecf51ee456c57f3be0abc3b56654e"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_300_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 453188,
+    "sha256": "8eb07aee54559a39a924db8e82138a1016e62ece52fe9ff76b74caf007651c2a"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_300_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 447970,
+    "sha256": "0a8755dd435174e76ddfaf127bdbdfc1550ce8b606fe0802e55192b0e321cee7"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 453150,
+    "sha256": "35445eb51742a25d439e339e0a45c012df026ce7ec0f69ec740c55b7845e8879"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_300_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 452716,
+    "sha256": "e02f88de8958ce11d9ae80ee7f9f1969ed8bc8557e2d3bf266e92b45e7bdd600"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_300_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 454842,
+    "sha256": "30be17e6a420d160467e7b6bc95323a38a39cfef0a379219c33dcb173b34f18c"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_360_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 534448,
+    "sha256": "7e729755d99dafa486a78499b9189f7ebb9da7fb9b5898f2962a418da2fe38b0"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_360_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 537772,
+    "sha256": "94bc4ecf545642cb1ecdebb0a3d15b70ccf04ca86041df12256cf8239501662c"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 531751,
+    "sha256": "10d6506ae03fea9e1fb47b3c0dc6691019777c04c03c1a552c556a8f81c69288"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_360_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 535459,
+    "sha256": "8ba399aca8c01a921170ed220e2ba3d464c5e751ba578222fd212f1c3a0b269d"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_360_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 558538,
+    "sha256": "0b1edd30a717b20fcdcfd900079154a936bd5c811d3ea11888a07ddd55af1b3c"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-1/incoming_chain_360_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 536993,
+    "sha256": "affa61a8943d4735c2a83c1355122cae6c3349ac81e968210c5682d624cc24e8"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_150_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 239845,
+    "sha256": "023ea6731e65cb238cd04414a266e75519e6c0b7d41e599a075d065a129dcf12"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_150_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 241619,
+    "sha256": "11f575108466346485c72f42d895841e92d22651a04ceaebeda0e92eef55bb05"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_150_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 239467,
+    "sha256": "f9ffe74a68299fbfebbdb643f135b25ddd6755c14a5af9d731aa7947b1b6e3da"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_150_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 239187,
+    "sha256": "b0b4de434be80eafac5d2731c67a80f751fd9c65beb95d115875ea95b3ab523a"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_150_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 238696,
+    "sha256": "42abf372c05e8fe1124c80333909ed89416786653e4e99bc62d6d61f788ca2ca"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_150_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 267021,
+    "sha256": "c1a4922b39ea62b4d9de5f070826e75001cf1ea483247bcc737135a2ec97c458"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_300_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 449856,
+    "sha256": "06266fa34ddfe8e37590c6ca1f161f528be9bcea13f06dd8ca7ee3a238c960c8"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_300_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 477479,
+    "sha256": "95bd6849578c0a0946ada685ce661bbb1559e83eec7dd7d433f02320b315d58a"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_300_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 473746,
+    "sha256": "43f38b59545a13474bba3f0ecc241e5e055a065981bd223cab0151776203e374"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_300_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 454415,
+    "sha256": "496cebfdaf0eb5a804df216f0b2d1bcc021c80d610ff127cdc0ea52e68f25673"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_300_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 448925,
+    "sha256": "97bbe15cea33a0ab8dbff745e65f0144d179426227895fc6e78b851b1e35be41"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_300_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 454008,
+    "sha256": "4d05e6a0e9260d93f2917d0c67cbe06797b1d27d1a851d9b86be1bc778a67824"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_360_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 533721,
+    "sha256": "2aeb43927b2f31fbbb7736686aa35e2ab1397cf556318a243b8a5cd1973c64a2"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_360_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 562552,
+    "sha256": "a588fb544caac0ad9548ef2c202c802a4b5cb5b842f011855197a8cdb0f0942e"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_360_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 554749,
+    "sha256": "0cb9a48f72d7532122299b1bee7d6cefd2c2fe19b64c2f29d39d524fa8684c38"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_360_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 529773,
+    "sha256": "38ab9bf165678a8f87d8d3e41a0a978ae932b47c943406c5ac377c0d3533329e"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_360_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 524871,
+    "sha256": "94a1ff4e45ef685b4e5279a0d78619e4107b5d65ec32b6b50720541707e1e3c4"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-2/incoming_chain_360_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 562054,
+    "sha256": "310ccd4082eedc84fb71cd7a58f0630a747be39066b140696cfa536bc808dd8c"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_150_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 241477,
+    "sha256": "3778659a46d7723ff75139a94e2089fca73cd4f6cfd2a3542343a29125d78845"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_150_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 242002,
+    "sha256": "d237e5d6bbd90bc6193ea5310e93e9b79b8f3f233b4915769c5273187bf514a8"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 263578,
+    "sha256": "6dde546f35efb54376922095c1177ce54e6d48d1c328e124468d0e94257e6e29"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_150_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 241219,
+    "sha256": "1878f0fc88fa619b909065f0edb459c73276546f21d7742153f4741df7692a3f"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 240949,
+    "sha256": "f7464edf860f8096a33160e59a9a19ac9e6306f6eff3c36065fe0810560f85e3"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_150_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 240146,
+    "sha256": "b871c19895b9503f4eedcc4669cfe2e657f7ef1b3b6fcbc31fa7306b705dbc4c"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_300_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 474900,
+    "sha256": "b284ee55fee5492f13eea3db1e2770cf4c25787c969cc23931ba8fd6ecfe16af"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_300_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 476907,
+    "sha256": "5c5754f4518e719a3082a78868238a62dc2cfdd1c33ed6f5e5f4e86393a7228b"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_300_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 451449,
+    "sha256": "6cb8319a56478b1a8e693484c23252ffdfd24249ae918a0abe64001e0c5178e6"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_300_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 477244,
+    "sha256": "a96e24012cf85b51e1a54211af2f0e4331c0e644865d46bf990375f319794536"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 451738,
+    "sha256": "727c9c247e8e23e3cddbd3c3b969b0e14ef5e855a013be2b1d2b65c51181d548"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_300_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 454087,
+    "sha256": "cc6b864570db00e701a6c067aebd2fdf787059806b323558f8f345ee6546aab2"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_360_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 533909,
+    "sha256": "8edd3cb5bfae0332e37f69a2397e61ba61183b3915fb24176d5fb9782065a2db"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_360_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 562127,
+    "sha256": "35cc8150b7b690c0529fe34fbb6d3089fb6fa2c70a6ba9fec0f0f6bc8acbdd04"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_360_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 558392,
+    "sha256": "5b26defb5a4d128e2ae082d83046db4d000346c48f962f50e82fb39f018440e6"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_360_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 562544,
+    "sha256": "a7a5d66243fe0d3691a7e57d8766e2cad3fbf35bad81936f9b0feb74ad21d2c8"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 532718,
+    "sha256": "b6c62e53da7e2acb197f904b4f541c2201aa67543188051615f3e5aad188fab8"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-3/incoming_chain_360_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 538672,
+    "sha256": "b352884264c03063858ca7c91bb9174d53bc6036d37f18dbae30a12ed01db2ef"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_150_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 240875,
+    "sha256": "d2510119d6ebe4eec0cf4e5abf0e6e2b2ef0a006e2c4bd077c06cb86db567cd0"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_150_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 241692,
+    "sha256": "16afd70865ef4fe47ebc70fe6acbc6839f8efdd5e1f997aa8fe6eb6017879c43"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_150_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 239284,
+    "sha256": "1965080dfc15a83c153b73e6043e0ad460b95ee5f1da06eebfed6058157a3a64"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 265731,
+    "sha256": "87ed534ea35cb417adef3fdb87cc7fc3ebbbeeda42d83e1012ce1f7d78f44a50"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 262492,
+    "sha256": "a6a7d4be03fac78e85e74b4910eb8b89e90b3552ccf7f12dadf9c1331de34bbf"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 242181,
+    "sha256": "436a1c3167e07fbb427207820867c9cfc33816107c2be91b6a43383cca630101"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_300_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 473587,
+    "sha256": "f7c1d08967331b18894f4028e6f6467383387db6624c9d22c5b460258b3e54b3"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_300_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 477071,
+    "sha256": "52932f63cc15c5a28d4bdcf73d3298484ba60fe38ab6e6ddbf0b60b145945e68"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_300_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 447572,
+    "sha256": "12347da30912d85ac93ec71a544f8d22c32b192d54fa659aac9023856c77a831"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_300_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 451236,
+    "sha256": "8cecacc280d707282793e599f1a85ea251e29ccd25e12703f7df8dfeed79a6c5"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_300_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 451458,
+    "sha256": "d6dee7c9ee294d6f033d38039a215d5fde1f2ee1b9bcbd712842c35e0c257836"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_300_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 473848,
+    "sha256": "b3c38abc13705d6b5cccacf6fa32e4c9b69df16d301e572d4b14a17f274aa47c"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_360_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 557925,
+    "sha256": "654ba40a293bc6e7411cde1b5aeec6d88297485e0cc509fd56feb45426fd6957"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_360_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 538554,
+    "sha256": "b32d712dbf7682570d557d39e1890eed43b7ac2658510290eb16dd33cfb5d23f"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_360_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 560804,
+    "sha256": "7e7d9a64d958bc958da307e6f3a7be29f8bb5fdf419d5f56a864349a6f368de3"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_360_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 537773,
+    "sha256": "1f24ba7e7d2819dc45a46f9989534c7fe4286aaf80bf9cd01357efac89b7aed1"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 534723,
+    "sha256": "dc8ac2d37076598ba2400cb4337da541827a9b95552bbe4d305fd3cc3515aa1f"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 559893,
+    "sha256": "3b73624698594e4c8454bf34c491273a33fd4f9f09e66c4643f4e24efb88f2bc"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_150_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 264222,
+    "sha256": "8adc50f7bea0fa6613847bd8a7e70efeb1e7deb428e65b3b121a86588d8b6727"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_150_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 241700,
+    "sha256": "8428a524712a9e23811b3413ce0feea83b248ec136e66badd24b0885e879cabc"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_150_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 239350,
+    "sha256": "b5e90e7f45904f89b73323bf24f67ce1d27b868119d5df8af64936d9cf2b671b"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_150_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 242202,
+    "sha256": "b94a9f2cfdaee1c1fda86ac1e2fcdb695c44d0df2b1323411bb0c2d2362f8aaa"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_150_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 240116,
+    "sha256": "f1b5bc6f30eb8ce58823758b5fd511bc2e468ccf8cfe9f3d070654f102230ee1"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_150_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 242171,
+    "sha256": "35cb079ff2abd45a8cfa6bc058def7fac38bb81417539964cef70bf5ae4af347"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_300_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 448901,
+    "sha256": "8c97d94c5038d4eff3b6006abfeb50fe05581d5a654e97a270ea18601e173b0f"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_300_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 453902,
+    "sha256": "2ffb44b93530acfdf5a5b02f4128422a9928d990a0b469423c85e31b1dcd6b25"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_300_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 450900,
+    "sha256": "9d61b2c51793aba6a37d74f1b7ed8c0b2495fa14b62b7145bc8d363d4ddf98ae"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_300_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 453223,
+    "sha256": "8f25143d27f039cbfaadad6bc5da356f8dde0d2f58a7fe52b32f5dba9ecffeb9"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_300_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 473895,
+    "sha256": "278209cb8a19d5277c870b140023af51137cfc6d9cb3721cde7ed14eb55fd0bf"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_300_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 453478,
+    "sha256": "bf7065b96c144a48ab6e68909b417ed56bf4f0fab10d8f6b729266c2fe085395"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown.tar.gz",
+    "files": 14,
+    "bytes": 533083,
+    "sha256": "7a806ca5fee182bb0a2577fc1a56eeb9ab4d63add26c0ff6e30f87d2dd1e36cd"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_zero.tar.gz",
+    "files": 14,
+    "bytes": 538556,
+    "sha256": "97fbdd043b3e7952369033d42a6964b0e3903c5c9e520c2c04df69e0d2247f5e"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 534526,
+    "sha256": "35ce729c9daf450c883f8b3e270894b62ecec96d252ab7683e64aaa76f80dfe2"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 537567,
+    "sha256": "0d5bdee2a479a18f88b930d7891aebfe771cc04696ebe1a17e78907559ef9b4a"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_stable_per_ball_unknown.tar.gz",
+    "files": 14,
+    "bytes": 535094,
+    "sha256": "d202ec24f0e626ad2e4b6deb328291e7ca51ffcf6e56cde840d4c66e46d363b2"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_stable_per_ball_zero.tar.gz",
+    "files": 14,
+    "bytes": 538041,
+    "sha256": "13b870cf1712356680b606ecc65bfd3fd7bf16845d0787eb9b9c2b6002fe09b4"
+  },
+  {
+    "path": "receipts/qualification-01/incoming-conversion.tar.gz",
+    "files": 9,
+    "bytes": 331313,
+    "sha256": "0f593455cce15e32f824a74a6b2bf843b4347a442c5d254d2114c4d1ebe7b43f"
+  },
+  {
+    "path": "receipts/qualification-01/log.tar.gz",
+    "files": 22,
+    "bytes": 93009,
+    "sha256": "2336a287fbf710132261a3750a6dd3726c089cfbfc959300ba8ebc07d550d3b2"
+  },
+  {
+    "path": "receipts/qualification-01/mujoco-conversion.tar.gz",
+    "files": 2,
+    "bytes": 12503,
+    "sha256": "1e984dab37173c622cb6581feea2c54f9f5294acf9e3bb1b816ede5e8e991cc8"
+  },
+  {
+    "path": "receipts/qualification-01/native.tar.gz",
+    "files": 4,
+    "bytes": 16008,
+    "sha256": "46ea89b42fb3de943c6d3009a55c6f2d6be7056e9002b5d9ab99f1567398428b"
+  },
+  {
+    "path": "receipts/qualification-01/premerge-v2.tar.gz",
+    "files": 23,
+    "bytes": 2580744,
+    "sha256": "a8178c23b2ed4981ff57bf3c54ed0db978bb638ab706769d1c1c1d9feee23a2b"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign.tar.gz",
+    "files": 4,
+    "bytes": 75991,
+    "sha256": "f00e87e8b73373a95ee80c11ef0fb2825ae3f201934055bcf9bc4e70172b0273"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/integrated_chain_150_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 209574,
+    "sha256": "a552dd4b5f0f1fd73fc47d20bd900fba1bdfb8a288a0b073e8a06064c2884a93"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/integrated_chain_150_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 209582,
+    "sha256": "017be473b07536a500f37573a8fbf15017c6894d40db5f469b41a44c6f8a2307"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/integrated_chain_300_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 404738,
+    "sha256": "3906520276d4f087a5be1b25d5e867b5c3048b28176b3fab2f805ca952b16b2e"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/integrated_chain_300_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 403617,
+    "sha256": "3e5516b3056f14c0da16af13ac6e25f944e62fb3771843a85b5eb609b43aa984"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 901834,
+    "sha256": "e4d139c4cbd9a86efa6975d25846595efffee6e9e00e9a88ce7ba4566251f282"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 836041,
+    "sha256": "55dd74291a7cadb188265e4ee4292313296da4545079c52045ff064eed2de66f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 871251,
+    "sha256": "2b4f5f9b3ff468a538bc55065d42f6ab57965d65d44999b737435644db29b5d7"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 897591,
+    "sha256": "47ea210c68deec14b1e37725ffe49685fab50708ec8b42a84eb93682cbe2dbd4"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 839681,
+    "sha256": "324a3ec2cfc1ac91f6e3c96d9adf5f6497e1db0f778100310aaa89c619a40edb"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 871485,
+    "sha256": "afa45c0ca07590f573a656bf8dbcf0147754b3cfb6c6be479096b27952d760ad"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1714716,
+    "sha256": "9888b26647f45ed0ab792543fced228f57ec290c580c9837c6af588f950deafb"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1593041,
+    "sha256": "8e644829348fff5646355f270f2c34c0badb5d2fe8f4cd3f91404284ce01c442"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 1655034,
+    "sha256": "8ed75f758bb926414608acffefd128c0d0e32eaa71410a5934d1c144a80a56b6"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1710491,
+    "sha256": "36b533c1c0cccbaccedc5546f0e4b32adeb008f04657f7cf5f4741b521f0300d"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1597860,
+    "sha256": "326a9e2c60a343248520265cc5f1d402968525a10b6651e2dbfb2587d2bde962"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 1638420,
+    "sha256": "fc59bc00b6e0b83a024bbdb0d91d7840a81faecc42e4075b64e6a997b394f58b"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_150_10_known.tar.gz",
+    "files": 12,
+    "bytes": 588207,
+    "sha256": "34ac7098e4b2e4427f9778dc7ecd15c6d2302d0df78975b0f318de16361038e6"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 554218,
+    "sha256": "65fa412b8faf28841689d770fe28149cb152427c58953ccc7d148e8947aa1534"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_150_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 571381,
+    "sha256": "904e0de743ec98efcb99e67964dac09be025d4c061cd2fd2d46f0a0d6217180f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 468397,
+    "sha256": "d77ed2fd435394d38e9c930560ac6948252ad42bac38c5c5f5f28db1da06dd2a"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_150_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 490842,
+    "sha256": "c65936b9d8a049dc425d65e188df65175c146c84bb73252c623a5ade976b503d"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_150_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 499146,
+    "sha256": "081484ef628a4ce77dd2b7264eed3988f3393044d29755068d6b7f4105118a26"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_300_10_known.tar.gz",
+    "files": 12,
+    "bytes": 1131529,
+    "sha256": "c5f5142262360ae68de2931bd2f3ec818995fbd1750a9f910f110e8335e2c076"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1062695,
+    "sha256": "282726f5c3f058322bc60878cc7add488256d56a98b9921954b1041779c9240a"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_300_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 1079271,
+    "sha256": "a398a9461898b3b0e585a92f4b3a77f2ca7aaf4ec5d17d123eb92c18a962c0e3"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 598466,
+    "sha256": "c63897048fe0296be30bd82613fd0b66ae2d6404ac5bf7e19c9d9f5cf72443c6"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_300_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 933286,
+    "sha256": "b9b1c1dcf9da281fafa483e7c3e0f2ed5dca0f98e873d5d0a2c93b9138a3c6c2"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_chain_300_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 952954,
+    "sha256": "b42169f6bff91b36e4ee474bf28d2905ae647eceeecf2c3b89dd4df742a66ff4"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_refresh_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 551970,
+    "sha256": "64381e9aeb521a964d1b3654db75270a0a9cddb03225a9b4cbcfe303d8b89d48"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_refresh_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 470898,
+    "sha256": "fd9850bf2f1e5c1085b2e83ba21d6f13108f18a7a3ed154bdd95590685c89097"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_refresh_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1066823,
+    "sha256": "d75ab6d20df95f09c7dec8e2917a6cd34cb706f09b402ad6d2d554d86bff5019"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-1/review_refresh_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 920341,
+    "sha256": "97947b3a5a6023f9801537ba15f9b5bff92d905a9d9441e20044ab64563c3e0f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/integrated_chain_150_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 210801,
+    "sha256": "91de6042aed8874fbd384b254237d33c5b02d4467748c003a49e0e6529cfdd48"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/integrated_chain_150_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 210414,
+    "sha256": "86a899ea1c42d7a30bed9fb1953a9fa89de3278482d11931b12ef2f787a02c1c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/integrated_chain_300_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 404676,
+    "sha256": "f2d87c211fe36a8e58d02832f56d54a3bd794bd4b7b34357fc5d3a0ee9ee1cbe"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/integrated_chain_300_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 283710,
+    "sha256": "6de838f459017fb286a713b64ab77462ef8308e20ddaef67eade19a5896463ff"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 889782,
+    "sha256": "28d5cf9de7260bc19c290abe6d9dcd0aa076a9c394f7513f54766fa49155a266"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 839553,
+    "sha256": "dd8aab3460d87a926d051a57dfb0f3fa7b59f0b91ed7424ef6b01a4cc36df52c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 871933,
+    "sha256": "d90e45a6b2f73fd188494b9e6938b65f0990f2ba4499b03a1b947a7b178adf2f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 899475,
+    "sha256": "330a26ccb70a40a1d7601300944c326d043b71ba091156d3341cb5194f14e1fe"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 834885,
+    "sha256": "ec5feaa90132be764098aae5d0e36e35edcef1e3fb46661feecad24fc848af8d"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 873382,
+    "sha256": "6874233692726f22dab1b309192942110e1641eac2ed748763d66aed0e4b2ec8"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1716018,
+    "sha256": "db94c3b3f13e188d97265f4347ab245d63891147fc81460e13d133ab6b046c33"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1589992,
+    "sha256": "bc96ad7b0bfd86a86631ae4de3f891d176bb06b1d841dbdd5b1f758f995c2538"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 1655414,
+    "sha256": "ca716021e35506ce0096cf17856389feeb225653b10494773cea998517467810"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1710102,
+    "sha256": "6624b8081e665beaf02a565746effa7abb3a542a32c6d171e54f60ab8dbf5bae"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1598749,
+    "sha256": "4d02a9e51125ad39c8b61d326b8ee9feb14593797fe8405b456fad1210b367b0"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 1657658,
+    "sha256": "558cb59eca8b9adc59686013d1339411a92bdd112131e05db87063653ae2d3c2"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_150_10_known.tar.gz",
+    "files": 12,
+    "bytes": 591826,
+    "sha256": "d50bfee94aef796387c34ea1737b871ee334d17f00518afe9b28ad7d06feb636"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 554469,
+    "sha256": "665e15ddfc8ae1a32b59fb30a725b87756186dc38d652111d4f5ee3d33565319"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_150_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 573351,
+    "sha256": "f5b1336279c183cff368afa838dc35af9fce8b47110f5e9014082ba4c676cfaf"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 467618,
+    "sha256": "0ac2622872abe064c00a7142d12fd124d6ba1bb8c46feb9cfd8a5db31bd8d67c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_150_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 487847,
+    "sha256": "2be354f97f8d0c8389e59688b832358533061268632ef238ed429e54f4bf9af5"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_150_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 502994,
+    "sha256": "03d2cf342d50b4eda865e4dfbe09a9c4a7501f80bf560ab6283f035691c7c049"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_300_10_known.tar.gz",
+    "files": 12,
+    "bytes": 1129077,
+    "sha256": "d52b19faa3eb638154d62bbfa5c22164247fbf63172570e9420de5eb00c962fc"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1061382,
+    "sha256": "2169995d922b26ec52b216cb9339662b0f165965b21e468185eec1039f66a5c6"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_300_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 1089407,
+    "sha256": "b63e84b6d65a48f9c817552c1d948f6d69e1f236a5dc3b5b8378e471a4746391"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 912861,
+    "sha256": "84f2272366a4a8a7ba636b7c2cb6fee76f2f672cc2d278777ff61902afe5628e"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_300_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 928434,
+    "sha256": "498460b05a723439a07a606d2d89f83ffa1cc58318ab8d987978c0ff35a6696a"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_chain_300_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 945463,
+    "sha256": "b40b029d6d8cd12322e57754c7da3410fb2463ac07ac837f8a78861c34f6e26c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_refresh_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 549874,
+    "sha256": "6622a5ce03106170173731ec05dce505b13a5d7f1d80b69ad65f532709ff3be0"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_refresh_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 467915,
+    "sha256": "1ea510f8d46c657c401e478e0ac1d060b703c48da210f5ad7c33d877bcec2ac5"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_refresh_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1065399,
+    "sha256": "2d8d9efb9624e924a4bada03dbb490c355bf3e7d3003ff84d9b27c7758e5e3fc"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-2/review_refresh_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 910770,
+    "sha256": "7e8a30cda7871ba72b33dbcdfa1527a49aff7dfbe8f3b0a328cd49473cf90d5f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 210275,
+    "sha256": "cd30e36ff8eeb2645df2a3732a276a50e70ce500b19c93ebd84aeee9082b41ae"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 210156,
+    "sha256": "6cf57910cbdb750aa1f8512768c3edf1ebdf6493bdfebf0b9aa3da69080374ba"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 404194,
+    "sha256": "631c9afc4052b707bbb7cb1716cf8787be5b82e026da14f382489215e5e8744e"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 403974,
+    "sha256": "bafc7eafcacfa7392c045e2d3e90cf21f994d234d3a47b881f23be549c96becb"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 895053,
+    "sha256": "23105210497329237f45a53fcd89e25cb5e1847380c4fd988cc01eb0afbb9891"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 840651,
+    "sha256": "e965ff0bcd1ca6446ad9215364dacfe3f1e8946a0599ba73322ce809d8415cb6"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 861922,
+    "sha256": "ddc2841788342545d5d43670462e1a3184df1730aa9603928498694af4d70a33"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 904719,
+    "sha256": "8eb0778a563ad64a0ce5213cf263b9f1c93db1ae1175a6e2ee764f55c7481da2"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 832576,
+    "sha256": "94bd2d34365b3b726cf6c85a24311d483c73ddca23f5b05034f411bc329dae51"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 873185,
+    "sha256": "039a884bd15e572cf4c70679267af678a8532b369050078f3f59f26608b8be2e"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1709280,
+    "sha256": "7a572447940ff2431f51fe7c45800b3a47994e796d01828eb8fab59d85aa53d0"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1600397,
+    "sha256": "e9e16e56b40508fa1f22828014b45cb2eed6ed4efaafc3072cd1c93c6d5209bd"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 1657641,
+    "sha256": "73bf1f6fcbd7027db20fa5c345b98734464fcfc5cb27905ee6b685068fda57ee"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1707238,
+    "sha256": "f188459630ec68080671a78a9b8e212863ee873737f45f76ae957235c4a1863a"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1599019,
+    "sha256": "146c459084feade8f90a76a14a6b8aef019f4691bbf7f51737d7e00006793a9c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 1656684,
+    "sha256": "1df5386c3a84b32143330c14d69a07285c9db51afdadf050517950f779bfe792"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_150_10_known.tar.gz",
+    "files": 12,
+    "bytes": 582423,
+    "sha256": "e4ec2054746abadba60f70d89d968d5c98885c27b475dd3a450694fe5fd40402"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 552179,
+    "sha256": "46c45da1c7cec7d96e04394cc456e33634c243c77b6a6e61974ff05be5495eb6"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_150_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 569718,
+    "sha256": "883af0e23e04f2c22759375e052d981c4e4d993f3109213a6128a6b5e0143546"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 470387,
+    "sha256": "54d535c564d190e15ae5dab0b8f7ec3ab056d4595d3e8a42458c6a24a5977be9"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_150_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 491272,
+    "sha256": "722c2a3e2e16ac57d11f26c1a0951307d969279fb8731aa9351057ca1175f193"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_150_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 500799,
+    "sha256": "aa6c4f4fdb0ed6d817e01e74521df59fc61eb97150e3a1e6ffcfb30fdf6020bb"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_300_10_known.tar.gz",
+    "files": 12,
+    "bytes": 1127250,
+    "sha256": "4dc56c6ec69a9149e05cd32c4b0abab93e42b22232fc63c3c939c22c29ff295f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1063011,
+    "sha256": "9dbe904361a2f2adc2b5c170e66dd765f0871fce29031b78c13053fb365e621c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_300_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 1092423,
+    "sha256": "c353545604051b19b10b2e287af2949959e9e3b557b9d4c45962590932402efb"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 914285,
+    "sha256": "d0f5f5b408789efc00ced2b32c4521742c719cef584df8acd430c8e9b39d8877"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_300_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 610133,
+    "sha256": "dec37e1442340f361064b3637c2510f41ed478f7be222aed2d5a55b2c5070d97"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_chain_300_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 948256,
+    "sha256": "f892bdeb67c7557bc0fc748c04cf037c8775838f01b607768d81c59dc1ec0901"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_refresh_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 554972,
+    "sha256": "ebf8e174da382a85a54ed0c77fce57d6f6e9f8b79efa00b92ca1f5516c268a23"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_refresh_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 468399,
+    "sha256": "270e2eda2acfd10c4930acfa8b8bf5046f9144fd9e10ff00476389b281f62173"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_refresh_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1060754,
+    "sha256": "3c50002f657f9a681416c033290594a3506e4aea41cba271f5a40f13eaa0b8f4"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-3/review_refresh_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 597976,
+    "sha256": "83426aab19476dab60241cfb5dab6a399db2da3a68f2f86f55671cbe5e310851"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/integrated_chain_150_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 209985,
+    "sha256": "3417fa2c2c932b203475d4c26dff08631d147da836b5cacc61eb6ba9ac1c570e"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/integrated_chain_150_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 210180,
+    "sha256": "3459b93de4f3d033767daed91420d44b1ba68841df37f1f4e6fda15cc4a75857"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/integrated_chain_300_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 392316,
+    "sha256": "d78d5a6b06c0f3e8d95bcaf2efb9cfeafeebba0cb66121cc73b54a7e575ea17b"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/integrated_chain_300_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 403417,
+    "sha256": "654051eed241920872e665d81f3fe26e623c092c604240724c27f7c66b10c861"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 901024,
+    "sha256": "29f74dc31eb43c5f6f27c2f651958046ae792b2748c21b0dc3f9e4e2f9fb52fb"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 841033,
+    "sha256": "4298aa2afcc7fe4f13203cfba92a378b74da6f7b06ea01910052b9f8e51573f1"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 870185,
+    "sha256": "d3d240ed55ca0a820d80b8b6e555f90aed4d7d806f1699e6fd81b18057ba5f03"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 894561,
+    "sha256": "0ce4290fe18ccb668877832bac82014f5d3c7e7e41e3539d500d09535dd39dc7"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 838031,
+    "sha256": "2fc62730aaba52a0d216356ba584d7edcd40224e4ae289e51c0b35536f9d2a53"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 872294,
+    "sha256": "ee2efe8861046752083aa312e817d73931e50617aebc835f9c319ed7af9b5031"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1710246,
+    "sha256": "f6ef2f3bbfdc32980f6450f5dce195157f0262541de2ed235a564c46c063552f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1595357,
+    "sha256": "aa13cef96b80709e7061aed8237095683489299919ad9a19360844512352d33c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 1655646,
+    "sha256": "7fa4a91c6653a3b33980908889c5d79f2f696b30f295bb2965bc460fa71ca1b8"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1711150,
+    "sha256": "e42b2f2e3bdce81fedbf9d6f2b8a88964dd7846cc62fbcfe87786e99376897cc"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1596090,
+    "sha256": "ca6c692eebc516ae932b36547284359d746be5e37c63dc44a4d97d4ac99dfcb6"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 1646230,
+    "sha256": "841c22e3521449820e372be9e7a990e63cb7b2b77507922e1458cd786a7e88c0"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_150_10_known.tar.gz",
+    "files": 12,
+    "bytes": 583798,
+    "sha256": "51ef450a1c4ae524363a28b1e2f9a364f864249577c9d8f93f4eb5d4ee331843"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 552494,
+    "sha256": "8c17906f56b653868e3f8c5d481610fb4aab7e99788d9a67015a3079960f903d"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_150_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 571310,
+    "sha256": "481bcce9d8f69bf5eeab8b44cc4bd03b2e9052f8481aaa4245f9a78fe35d4002"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 470347,
+    "sha256": "2c727d2d8d68fa702d14b3193ac767b4203f323249e1532785aa9d297be2b697"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_150_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 484661,
+    "sha256": "daf8323dcd2d6e03435057606c30deff608057cf772d1576b16cc804baa2f584"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_150_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 503251,
+    "sha256": "acfa82597f4d881865b59322fc3c255be36f604b40a2c7af7af07d697e87c64e"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_300_10_known.tar.gz",
+    "files": 12,
+    "bytes": 1127803,
+    "sha256": "65e6bb316fdd598eb6d6ce89df4d1ee857b3842b7db80f6dcd696a260a46bea4"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1061809,
+    "sha256": "2c81583e3d27477ddb45e32ff918b95bd0c3b0bc3e60d3ac5aae60849832c81a"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_300_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 1085659,
+    "sha256": "e6e08d0ce84d56d86dfc328e6ff39492771aa3bc2fdac7e0e92f23f741437471"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 598940,
+    "sha256": "7a7ecb4f84b22a73baa4b3e6e5301e598c0c3b4627cc66e3a6ccca3c52c1f249"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_300_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 936433,
+    "sha256": "5cb787f90d8599e4ce95a33835183cf5a89829eb0593f3f04846731d49f04e84"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_chain_300_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 951885,
+    "sha256": "19b748cf208eb67f3368574730911d339d5294b429712f7f7ba742d29c4d38e3"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_refresh_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 552699,
+    "sha256": "567f3ea40aa639dad3d627318740b4e2081107338d31bbe1ceb50d48018ab5a9"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_refresh_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 467606,
+    "sha256": "78447d3d422a595d593eb47ec22b7997d8dc283a4664e363ec5f324e69b5e93f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_refresh_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1061773,
+    "sha256": "1a7caa9c89f369560f87708dfe559b2d0abad6504aab777544bfceb8c5f580a8"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-4/review_refresh_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 899908,
+    "sha256": "ed2d58d4b613a1589d711dad3e456e03edd19233a31b7e5698f888d79ad0bb24"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/integrated_chain_150_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 209071,
+    "sha256": "f6a89e05e601a9fa683385f685423acb26059fe86447609eba4431f7e8785664"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/integrated_chain_150_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 209742,
+    "sha256": "ef410a8973860710c55a313327bf495af1572386aec39cd0f5410760755757be"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/integrated_chain_300_FOLLOW_POSE.tar.gz",
+    "files": 12,
+    "bytes": 405894,
+    "sha256": "bc0ae96aea574ca5818d16c77a27436047b46738a4ed6574a96f6f13d6b67535"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/integrated_chain_300_ON_REFRESH.tar.gz",
+    "files": 12,
+    "bytes": 405938,
+    "sha256": "9c0704bf6c5ba094e8c06cb0af4f1180f0d6df1730dab6856d6156ccbcb91d57"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 890746,
+    "sha256": "83bc4fdd3f5d7365884212a2b5dafd914307529086f545739d624f55c015cd9f"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 839087,
+    "sha256": "53636fd9c60e62d76ae4e45d54bb690100be6059240b0e4467dc1e168c5d0ec1"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 872495,
+    "sha256": "6853e9c5160b0ca40c08d5dca690958eb710b8fd5fc8cf3463a56e5e2e99e898"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 902383,
+    "sha256": "2ef903b864712b747cf203de1c00f53d038b1e2a14cb6ef7b29b4e96eee33ad5"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 836785,
+    "sha256": "918b28214c78c5a8779e8913f25e21450ac64308c7780c3ff9bd5d65c6634f09"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 870562,
+    "sha256": "c3681a32a6bbbc8a991d61c5f1e6ca2331a7f4e6d9f99dc4227966bc2329c595"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1709304,
+    "sha256": "e75d7d8d7bfa3a98673af435234d1befad702dcf1f4d7859ca6573624cd66882"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1597452,
+    "sha256": "534b0c2ba3b087944fc54a35b7baa9792694fc4640891d7256f4feb41a10a9b7"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_zero.tar.gz",
+    "files": 13,
+    "bytes": 1657955,
+    "sha256": "c88f316affeb93f459f494a87b33077a1b865a66fa37f0a212a5ec52bc00d1f5"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_quaternion_only.tar.gz",
+    "files": 13,
+    "bytes": 1709302,
+    "sha256": "83862e16838c2c38d5e131fe1d79f177c891afeeca386e7cd385f200071d049c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_unknown.tar.gz",
+    "files": 13,
+    "bytes": 1598204,
+    "sha256": "e4306a22b8247e3011cedf02b680f2514d8d2e4dee048b61f5f2d0d7ae0f0cae"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_zero.tar.gz",
+    "files": 13,
+    "bytes": 1655220,
+    "sha256": "bb030fd1a8f8a6f839a947956e3bcad866655f32edf95f3821ad87265b301919"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_150_10_known.tar.gz",
+    "files": 12,
+    "bytes": 585051,
+    "sha256": "82958bee64719fb3314cbbd9b2ac8a45ae03660d51a9f5e9b44eeab47b7a1915"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 548290,
+    "sha256": "b39642a957d423259c8a5b4ee4fcdae2c6e188f5db9410b309b1757c5f5da3f5"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_150_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 571953,
+    "sha256": "4ab75e2efa208897567e7c16ed4566a1af95bdf145615c4010d8f00424269def"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 468249,
+    "sha256": "c164349251d4d81c49621f7983f7629647f44a219fe85bae8c0b03fac17f6559"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_150_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 487438,
+    "sha256": "daf13e888e242f5f93c0888bf3a78c9e3574867117ce1736836594fff6230b05"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_150_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 504454,
+    "sha256": "5e0eb1a00e2c4c7c5345880943b94de5283c7630b1b5e7085c8205be5e1ffbc7"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_300_10_known.tar.gz",
+    "files": 12,
+    "bytes": 1129839,
+    "sha256": "907d1f8d3ff0a041cb9db21eabc319f4172dad745488838234944de6de3734a2"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1058276,
+    "sha256": "b33d64a96cfb5492a4a202b9400f7abd972a2db33590a19676da645f0f308950"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_300_10_zero.tar.gz",
+    "files": 12,
+    "bytes": 1089177,
+    "sha256": "b4883f05e357c5169f110a0bae56009c63e2f3b7fcb84a3380626a4bc9ec503c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 915880,
+    "sha256": "f3d2206ef72290859aa53aec6caa5a78de033ae56baf0280106b664ff2f33cb0"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_300_12_unknown.tar.gz",
+    "files": 12,
+    "bytes": 929370,
+    "sha256": "7361492656443a37f0882124e12d7201497c3bd1a7d930f87d281334333aae2e"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_chain_300_12_zero.tar.gz",
+    "files": 12,
+    "bytes": 949324,
+    "sha256": "b43e8cc55d191b86252802be828ad939be461b5f75e8742687395ad1578a9dc6"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_refresh_150_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 553250,
+    "sha256": "93a27e9e502610b7389c86563434704c6fdac5c86b84ce68ec61206147ed97d3"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_refresh_150_12_known.tar.gz",
+    "files": 12,
+    "bytes": 468813,
+    "sha256": "ae22ff5751130f8f92c1a743463fc934d226738d9cef12fa3311113fe3ca0c2c"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_refresh_300_10_unknown.tar.gz",
+    "files": 12,
+    "bytes": 1056845,
+    "sha256": "ccafe7c76e3ca170764f8b5f16e1389526ac9dddc9308537be87080f88309b46"
+  },
+  {
+    "path": "receipts/qualification-01/repeated-campaign/repetition-5/review_refresh_300_12_known.tar.gz",
+    "files": 12,
+    "bytes": 912581,
+    "sha256": "abb01f6341d0630494917345fa07a425ebac5355b6b264ca46beb423c60f276f"
+  },
+  {
+    "path": "receipts/qualification-01/runner-revocation.tar.gz",
+    "files": 76,
+    "bytes": 8083,
+    "sha256": "39488b5209bb4849d175a6b6efe15973dfb84f6560a6db69c03844580807ab3d"
+  },
+  {
+    "path": "receipts/qualification-01/sanitized.tar.gz",
+    "files": 4,
+    "bytes": 16477,
+    "sha256": "6f0e68324d29d336b50c53369001dab4af244c3c9350979886511a1cd4665bb1"
+  },
+  {
+    "path": "receipts/qualification-01/test-log.tar.gz",
+    "files": 17,
+    "bytes": 793239,
+    "sha256": "6cfbdb3ea56a978aef31f1e9490ca1dad0c45abaf4393a9001b755047b9457b3"
+  },
+  {
+    "path": "receipts/qualification-01-sanitizer-retention.tar.gz",
+    "files": 1,
+    "bytes": 7123,
+    "sha256": "dc090455e5be061ba273e31ccf7f8a36b3e9693d6afd7aee2b22f1bb532a9fa3"
+  },
+  {
+    "path": "receipts/ros-build.tar.gz",
+    "files": 4,
+    "bytes": 12464,
+    "sha256": "62a04b9a75891e00ef92ba6c1368f512c2a9c1761a31d45ad483a0425cfddac9"
+  },
+  {
+    "path": "receipts/runner-recorded-replay.tar.gz",
+    "files": 18,
+    "bytes": 5127,
+    "sha256": "f90d6abc560728ceacb09945202befbfccc67e750f2a836ba2752e990e69abef"
+  }
+]

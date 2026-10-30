@@ -1,0 +1,10 @@
+{
+  "purpose": "Deterministic actual IncomingTrajectory replay with configuration declarations extracted verbatim; transport callback scheduling is not reconstructed",
+  "source_files": {
+    "hope_ws/src/hope_planner_cpp/src/flight_packetizer_node.cpp": "25ff592a833196dab50cfe1f3f27f1959bcea6c40dbaede93d6260ebd3f7cb67",
+    "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/future_contact_parameters.hpp": "22bc465605493ef922c1a8a99c850f63ceb48cac8c83ee8933f51b50edea4ce0",
+    "hope_ws/src/hope_planner_cpp/src/incoming_trajectory.cpp": "ad3267ec92de77cd7bfe946f4e2bebe56aed2cdd42eff61e4f2976655f28a29a",
+    "hope_ws/src/hope_planner_cpp/src/adaptive_flight_commit.cpp": "e37727c8a95510bc043948b13c2b2b68d31c11e5cc92835ab09e380f785d68f5"
+  },
+  "replay_sha256": "c81a2c1c70e8ab273be6621cc3c6069a75ed27518ec22052bee00a2e1d0b8b72"
+}

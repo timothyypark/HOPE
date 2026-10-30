@@ -1,0 +1,10 @@
+{
+  "declared_ns": 1793351948356971158,
+  "source": "96034645f26b1597c093281a398fa0e62d5c93b5",
+  "wrapper_sha256": {
+    "verify_integrated.sh": "c2ce7ad944bbaaef9423cf6324be103b00edb413c9dd23b202480931c5f83e0b",
+    "run_qualification.sh": "ddf9227117ade422ad68ca42341ad417162515d91e8584fcbef11bd59f56faf9",
+    "retain_sanitizer.py": "ded92bff68e1513e4c5c4c75d777511684a23f0d3aa56fb1e2142060fedd962d"
+  },
+  "storage_hook": "Lossless hash-verified compression of sanitizer binaries only after tests finish, before ROS builds and timing runs"
+}

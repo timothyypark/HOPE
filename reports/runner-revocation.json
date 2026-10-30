@@ -1,0 +1,343 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "file": "baseline-schema-4-case-1.json",
+      "result": {
+        "case": 1,
+        "schema": 4,
+        "revocation_enabled": false,
+        "retained_before": false,
+        "policy_observed_before": false,
+        "invalid_after": false,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "session_home_mismatch"
+      }
+    },
+    {
+      "file": "baseline-schema-4-case-2.json",
+      "result": {
+        "case": 2,
+        "schema": 4,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": false,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "baseline-schema-4-case-3.json",
+      "result": {
+        "case": 3,
+        "schema": 4,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": false,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": true,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "baseline-schema-4-case-4.json",
+      "result": {
+        "case": 4,
+        "schema": 4,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": false,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "baseline-schema-5-case-1.json",
+      "result": {
+        "case": 1,
+        "schema": 5,
+        "revocation_enabled": false,
+        "retained_before": false,
+        "policy_observed_before": false,
+        "invalid_after": false,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "session_home_mismatch"
+      }
+    },
+    {
+      "file": "baseline-schema-5-case-2.json",
+      "result": {
+        "case": 2,
+        "schema": 5,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": false,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "baseline-schema-5-case-3.json",
+      "result": {
+        "case": 3,
+        "schema": 5,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": false,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": true,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "baseline-schema-5-case-4.json",
+      "result": {
+        "case": 4,
+        "schema": 5,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": false,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "disabled-schema-4-case-1.json",
+      "result": {
+        "case": 1,
+        "schema": 4,
+        "revocation_enabled": false,
+        "retained_before": false,
+        "policy_observed_before": false,
+        "invalid_after": false,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "session_home_mismatch"
+      }
+    },
+    {
+      "file": "disabled-schema-4-case-2.json",
+      "result": {
+        "case": 2,
+        "schema": 4,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": false,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "disabled-schema-4-case-3.json",
+      "result": {
+        "case": 3,
+        "schema": 4,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": false,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": true,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "disabled-schema-4-case-4.json",
+      "result": {
+        "case": 4,
+        "schema": 4,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": false,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "disabled-schema-5-case-1.json",
+      "result": {
+        "case": 1,
+        "schema": 5,
+        "revocation_enabled": false,
+        "retained_before": false,
+        "policy_observed_before": false,
+        "invalid_after": false,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "session_home_mismatch"
+      }
+    },
+    {
+      "file": "disabled-schema-5-case-2.json",
+      "result": {
+        "case": 2,
+        "schema": 5,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": false,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "disabled-schema-5-case-3.json",
+      "result": {
+        "case": 3,
+        "schema": 5,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": false,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": true,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "disabled-schema-5-case-4.json",
+      "result": {
+        "case": 4,
+        "schema": 5,
+        "revocation_enabled": false,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": false,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "enabled-schema-4-case-1.json",
+      "result": {
+        "case": 1,
+        "schema": 4,
+        "revocation_enabled": true,
+        "retained_before": false,
+        "policy_observed_before": false,
+        "invalid_after": false,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "session_home_mismatch"
+      }
+    },
+    {
+      "file": "enabled-schema-4-case-2.json",
+      "result": {
+        "case": 2,
+        "schema": 4,
+        "revocation_enabled": true,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "flight_revoked"
+      }
+    },
+    {
+      "file": "enabled-schema-4-case-3.json",
+      "result": {
+        "case": 3,
+        "schema": 4,
+        "revocation_enabled": true,
+        "retained_before": true,
+        "policy_observed_before": false,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": true,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "enabled-schema-4-case-4.json",
+      "result": {
+        "case": 4,
+        "schema": 4,
+        "revocation_enabled": true,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "flight_revoked"
+      }
+    },
+    {
+      "file": "enabled-schema-5-case-1.json",
+      "result": {
+        "case": 1,
+        "schema": 5,
+        "revocation_enabled": true,
+        "retained_before": false,
+        "policy_observed_before": false,
+        "invalid_after": false,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "session_home_mismatch"
+      }
+    },
+    {
+      "file": "enabled-schema-5-case-2.json",
+      "result": {
+        "case": 2,
+        "schema": 5,
+        "revocation_enabled": true,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "flight_revoked"
+      }
+    },
+    {
+      "file": "enabled-schema-5-case-3.json",
+      "result": {
+        "case": 3,
+        "schema": 5,
+        "revocation_enabled": true,
+        "retained_before": true,
+        "policy_observed_before": false,
+        "invalid_after": true,
+        "engaged": true,
+        "active_after_revocation": true,
+        "status": "engage"
+      }
+    },
+    {
+      "file": "enabled-schema-5-case-4.json",
+      "result": {
+        "case": 4,
+        "schema": 5,
+        "revocation_enabled": true,
+        "retained_before": true,
+        "policy_observed_before": true,
+        "invalid_after": true,
+        "engaged": false,
+        "active_after_revocation": false,
+        "status": "flight_revoked"
+      }
+    }
+  ],
+  "after_engagement_cancellation": false,
+  "scope": "production policy software lifecycle; no HAL or physical actuation"
+}
