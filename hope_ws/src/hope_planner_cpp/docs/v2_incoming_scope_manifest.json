@@ -150,6 +150,22 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/docs/v2_simulation_verification_results.json",
+      "owner": "qualification",
+      "why_needed": "Record explicit milestone contracts, scope, preserved failures and qualification boundaries",
+      "tests": [
+        "flight_v2_scope"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/docs/v2_simulation_verification_results.md",
+      "owner": "qualification",
+      "why_needed": "Record explicit milestone contracts, scope, preserved failures and qualification boundaries",
+      "tests": [
+        "flight_v2_scope"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/planner_node.hpp",
       "owner": "runtime",
       "why_needed": "Integrate shared V2 owner, managed-plane schema 4/5 path, continuous forecast and identity-bearing revocation",
