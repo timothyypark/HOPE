@@ -363,6 +363,7 @@ def run(args):
                     'sequence': m.flight_sequence,
                     'cutoff_ns': m.samples[-1].exposure_unix_stamp_ns,
                     'sample_count': len(m.samples),
+                    'sample_sources': [s.exposure_unix_stamp_ns for s in m.samples],
                     'hash': m.payload_hash,
                 }
             ),
