@@ -246,6 +246,16 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/src/integrated_planner_runtime.cpp",
+      "owner": "runtime",
+      "why_needed": "Integrate shared V2 owner, managed-plane schema 4/5 path, continuous forecast and identity-bearing revocation",
+      "tests": [
+        "test_v2_incoming_ros",
+        "native CTest",
+        "flight_v2_scope"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/src/main.cpp",
       "owner": "runtime",
       "why_needed": "Integrate shared V2 owner, managed-plane schema 4/5 path, continuous forecast and identity-bearing revocation",
@@ -323,6 +333,16 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/test/lifecycle_observer.py",
+      "owner": "qualification",
+      "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
+      "tests": [
+        "native CTest",
+        "ROS CTest",
+        "verify_integrated.sh"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/test/native/CMakeLists.txt",
       "owner": "qualification",
       "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
@@ -374,6 +394,16 @@
     },
     {
       "path": "hope_ws/src/hope_planner_cpp/test/test_forecast_scope.py",
+      "owner": "qualification",
+      "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
+      "tests": [
+        "native CTest",
+        "ROS CTest",
+        "verify_integrated.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/test_lifecycle_observer.py",
       "owner": "qualification",
       "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
       "tests": [

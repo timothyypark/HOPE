@@ -40,6 +40,7 @@ struct IntegratedPlannerRuntime::Impl {
   IntegratedCommandLifecycle lifecycle;
   LatestWork<Job> work;
   BoundedStageTrace accounting;
+  BoundedStageTrace lifecycle_accounting;
   std::mutex mutex;
   std::thread worker;
   Base base;
@@ -69,6 +70,7 @@ struct IntegratedPlannerRuntime::Impl {
   explicit Impl(rclcpp::Node &n):node(n) {
     auto string=[&](const char *key,const char *value) { return node.declare_parameter<std::string>(key,value); };
     accounting.configure(string("test.stage_trace_path",""));
+    lifecycle_accounting.configure(string("test.lifecycle_trace_path",""),8192);
     if (string("return_backend","shared_physics")!="shared_physics")
       throw std::invalid_argument("V2 requires shared_physics; legacy ablations use offline evaluation");
     if (string("output_mode","shadow")!="shadow")
@@ -181,7 +183,7 @@ struct IntegratedPlannerRuntime::Impl {
   }
   ~Impl() {
     timer.reset(); work.close(); if (worker.joinable()) worker.join();
-    try { accounting.flush(); }
+    try { accounting.flush(); lifecycle_accounting.flush(); }
     catch (const std::exception &e) { RCLCPP_ERROR(node.get_logger(), "%s", e.what()); }
   }
   bool base_fresh(std::int64_t now,std::int64_t steady) const {
@@ -231,6 +233,9 @@ struct IntegratedPlannerRuntime::Impl {
     const auto generation=pipeline->shot().generation();
     const auto revision=pipeline->shot().revision();
     pipeline->observe(sample);
+    if (lifecycle_accounting.enabled()) lifecycle_accounting.record(name(pipeline->shot().state()),sample.source_time_ns,
+        sample.sequence,pipeline->shot().generation(),node.now().nanoseconds(),monotonic_ns(),0,
+        pipeline->shot().active() ? pipeline->shot().reason() : pipeline->shot().rejection_reason());
     accounting.record("pipeline_observed",sample.source_time_ns,sample.sequence,pipeline->shot().generation(),
                       node.now().nanoseconds(),monotonic_ns(),monotonic_ns()-waiting,pipeline->shot().reason());
     if (generation!=pipeline->shot().generation()) {

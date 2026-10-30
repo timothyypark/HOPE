@@ -20,8 +20,9 @@ import sys
 from queue import Empty
 from qualification_accounting import (
     SourceCadence, stage_parameters, resources as capture_resources,
-    validate_source_epoch, write_receipt,
+    validate_source_epoch, write_receipt, read_stages,
 )
+from lifecycle_observer import verify_lifecycle
 import time
 import numpy as np
 from scipy.optimize import brentq
@@ -207,6 +208,8 @@ def run(args):
     statuses = []
     observations = []
     source_stats = {}
+    result = None
+    lifecycle_path = args.output.with_name(args.output.stem + '-lifecycle.stages')
 
     def launch(exe, params=()):
         cmd = [str(exe), "--ros-args"]
@@ -253,6 +256,7 @@ def run(args):
                 ("plane_policy", args.policy),
                 ("test.worker_delay_ms", args.worker_delay_ms),
                 ("test.first_worker_delay_ms", args.first_worker_delay_ms),
+                ("test.lifecycle_trace_path", str(lifecycle_path)),
             ],
         )
         launch(args.decoder)
@@ -344,27 +348,8 @@ def run(args):
         rounds = []
         generation_order = []
         for i, (lo, hi) in bounds.items():
-            a_sources = {
-                r["stamp_ns"]
-                for r in rows
-                if r["round"] == i and r["opportunity"] == "A"
-            }
-            rejected_sources = {
-                r["stamp_ns"]
-                for r in rows
-                if r["round"] == i
-                and r["opportunity"] in ["A_REJECT", "A_CONTINUED_REJECTED"]
-            }
-            assert any(
-                int(s.get("latest_source_ns", "0")) in a_sources
-                and s["physical_state"] != "INVALID"
-                for s in statuses
-            ), ("A never acquired", i)
-            assert any(
-                int(s.get("latest_source_ns", "0")) in rejected_sources
-                and s["rejection_reason"] == "observed_under_table"
-                for s in statuses
-            ), ("A never physically rejected", i)
+            # Acquisition/rejection/quarantine are checked from the complete
+            # flight-matched trace after orderly process shutdown, below.
             b = [t for t in traces if lo <= int(t["source_time_ns"]) <= hi]
             assert b, (
                 "B produced zero valid commands",
@@ -379,29 +364,6 @@ def run(args):
                 "B never decoded",
                 i,
             )
-            a = [
-                s
-                for s in statuses
-                if int(s.get("latest_source_ns", "0")) < lo
-                and int(s.get("latest_source_ns", "0")) >= lo - 700000000
-                and s.get("physical_state") == "INVALID"
-            ]
-            assert a, ("A rejection not observed", i)
-            quarantine_ns = {
-                r["stamp_ns"]
-                for r in rows
-                if r["round"] == i
-                and r["opportunity"] == "A_CONTINUED_REJECTED"
-                and not r["fault"]
-            }
-            quarantined = [
-                s
-                for s in statuses
-                if int(s.get("latest_source_ns", "0")) in quarantine_ns
-            ]
-            assert quarantined and all(
-                s["physical_state"] == "INVALID" for s in quarantined
-            ), ("A resurrected", i, quarantined)
             if args.spin == "unknown":
                 assert all(t["spin_readiness"] == "UNAVAILABLE" for t in b)
             else:
@@ -513,7 +475,6 @@ def run(args):
             "physical_registration": False,
             "context_publisher": False,
         }
-        args.output.write_text(json.dumps(result, indent=2) + "\n")
         return result
     finally:
         original_failure = sys.exc_info()[1]
@@ -548,10 +509,22 @@ def run(args):
                 failure = (failure or '') + f' CHILD_EXIT:{Path(p.args[0]).name}:{p.returncode}'
         for log in logs:
             log.close()
+        lifecycle = {}
+        try:
+            metadata, transitions = read_stages(lifecycle_path)
+            lifecycle = verify_lifecycle(
+                source_stats.get('rows', []), metadata, transitions, traces,
+                {int(row[0]) for row in decoded})
+        except (AssertionError, KeyError, ValueError) as error:
+            lifecycle = {'status': 'FAIL', 'exception': repr(error)}
+            failure = (failure or '') + ' LIFECYCLE:' + repr(error)
         write_receipt(args, {
             'wire': wire, 'decoded': decoded, 'traces': traces, 'statuses': statuses,
-            'observations': observations, 'source': source_stats,
+            'observations': observations, 'source': source_stats, 'lifecycle': lifecycle,
         }, resource_receipt, failure)
+        if not failure and result is not None:
+            result['lifecycle'] = lifecycle
+            args.output.write_text(json.dumps(result, indent=2) + '\n')
         if failure and original_failure is None:
             raise RuntimeError(failure)
 
