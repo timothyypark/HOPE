@@ -100,8 +100,11 @@ def main():
             metrics['adapter_time_error_s'] = abs(float(row['strike_time'])-int(row['contact_ns'])*1e-9)
             metrics['decoder_position_error_m'] = float(np.linalg.norm(vector(row,'dx dy dz')-racket-[0,0,.76]))
             metrics['decoder_velocity_error_mps'] = float(np.linalg.norm(vector(row,'dvx dvy dvz')-racket_v))
-            metrics['impact_closure_mps'] = float(np.linalg.norm(velocity-(1+.654)*np.dot(velocity-racket_v,normal)*normal-out))
-            solved = outgoing(racket, out)
+            approach = abs(np.dot(velocity-racket_v, normal))
+            restitution = np.clip(.759*np.exp(-.0441*approach), .2, .95)
+            reconstructed = velocity-(1+restitution)*np.dot(velocity-racket_v,normal)*normal
+            metrics['legacy_impact_residual_mps'] = float(np.linalg.norm(reconstructed-out))
+            solved = outgoing(racket, reconstructed)
             checks['outgoing_landing_exists'] = len(solved.t_events[0]) == 1
             if checks['outgoing_landing_exists']:
                 metrics['outgoing_landing_error_m'] = float(np.linalg.norm(solved.y_events[0][0,:3]-[2.055,-.7625,.02]))
@@ -114,7 +117,6 @@ def main():
                 'adapter_time_error_s': 'converted_contact_time_s',
                 'decoder_position_error_m': 'converted_contact_position_m',
                 'decoder_velocity_error_mps': 'converted_contact_velocity_mps',
-                'impact_closure_mps': 'impact_closure_mps',
                 'outgoing_landing_error_m': 'managed_legacy_landing_simulation_m',
                 'outgoing_landing_time_error_s': 'managed_legacy_landing_simulation_time_s',
             }
@@ -135,11 +137,30 @@ def main():
                     axis.set(xlabel='x (m)',ylabel=label);axis.grid(alpha=.25)
                 axes[0].legend(fontsize=8);fig.suptitle(f"Mode {case['mode']}: target-level simulation, no robot motion")
                 fig.tight_layout();fig.savefig(args.output/f"conversion-mode-{case['mode']}.png",dpi=150);plt.close(fig)
+        else:
+            uncertain = (float(row['plane_lower']) <= float(row['bounce_upper'])+.001
+                         or float(row['plane_std']) > .05 or row['plane_quality']!='1'
+                         or float(row['position_variance']) > .15**2
+                         or float(row['min_variance']) < -1e-12 or float(row['plane_vx']) >= -.5)
+            checks = {'uncertainty_explains_abstention': row['reason']=='CONTACT_ORDER_UNCERTAIN' and uncertain,
+                      'no_command_or_publication': row['eligible']=='0' and row['publication_allowed']=='0' and row['decoded']=='0'}
+            metrics['bounce_upper_s'] = float(row['bounce_upper'])
+            metrics['plane_lower_s'] = float(row['plane_lower'])
         results.append(dict(case=case, reason=row['reason'], checks=checks, metrics=metrics,
+                            command_available=row['command_valid']=='1',
                             status='PASS' if all(checks.values()) else 'FAIL'))
+    groups = {}
+    for result in results:
+        case=result['case'];key=(case['speed'],case['spin'],case['y'],case['mode'])
+        groups.setdefault(key,[]).append(result)
+    covered=sum(any(r['command_available'] and r['status']=='PASS' for r in rows)
+                for rows in groups.values())
     report=dict(status='PASS' if all(r['status']=='PASS' for r in results) else 'FAIL',
                 passed=sum(r['status']=='PASS' for r in results), executed=len(results), results=results,
+                physical_scenarios=len(groups), scenarios_with_usable_command=covered,
+                commands=sum(r['command_available'] for r in results),
                 simulation_level=manifest['scope'])
+    if covered != len(groups): report['status']='FAIL'
     (args.output/'result.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if k!='results'}))
     return 0 if report['status']=='PASS' else 1

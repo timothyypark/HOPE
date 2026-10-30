@@ -14,7 +14,8 @@ int main() {
   std::cout << "id,mode,supported,eligible,command_valid,reason,cutoff_ns,contact_ns,"
     "cx,cy,cz,cvx,cvy,cvz,sx,sy,sz,svx,svy,svz,strike_time,"
     "rx,ry,rz,rvx,rvy,rvz,nx,ny,nz,ox,oy,oz,schema,deadline,"
-    "decoded,dx,dy,dz,dvx,dvy,dvz,publication_allowed,revoked_before_engagement\n";
+    "decoded,dx,dy,dz,dvx,dvy,dvz,publication_allowed,revoked_before_engagement,"
+    "bounce_upper,plane_lower,plane_std,plane_quality,position_variance,min_variance,plane_vx\n";
   int id, mode, count;
   double plane_x;
   while (std::cin >> id >> mode >> plane_x >> count) {
@@ -95,7 +96,21 @@ int main() {
     vector(command.position); vector(command.velocity); vector(command.normal); vector(command.outgoing_ball_velocity);
     std::cout << ',' << (wire.empty()?0:wire[0]) << ',' << (wire.empty()?0:wire[10]) << ',' << decoded.has_valid;
     vector(decoded.cmd.pos_w); vector(decoded.cmd.vel_w);
-    std::cout << ',' << published << ',' << revoked << '\n';
+    double bounce_upper=-1,plane_lower=-1,plane_std=-1,position_variance=-1,min_variance=-1,plane_vx=0;
+    bool plane_quality=false;
+    for (const auto& event: result.forecast.nominal.events) {
+      if (event.kind=="table_bounce") bounce_upper=event.dt_s+3*event.time_std_s;
+      if (event.kind=="receiving_plane") {
+        plane_lower=event.dt_s-3*event.time_std_s; plane_std=event.time_std_s;
+        plane_quality=event.quality==LinearizationQuality::Valid;
+        position_variance=event.covariance.diagonal().head<3>().maxCoeff();
+        min_variance=event.covariance.diagonal().minCoeff(); plane_vx=event.pre[3];
+        break;
+      }
+    }
+    std::cout << ',' << published << ',' << revoked << ',' << bounce_upper << ',' << plane_lower
+      << ',' << plane_std << ',' << plane_quality << ',' << position_variance << ','
+      << min_variance << ',' << plane_vx << '\n';
   }
   return std::cin.eof()?0:2;
 }

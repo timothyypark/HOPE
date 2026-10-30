@@ -35,6 +35,8 @@
     "managed_legacy_landing_simulation_m": 0.02,
     "managed_legacy_landing_simulation_time_s": 0.01,
     "rationale_managed_legacy": "Existing RacketTargetPlanner uses a separate 1 ms integrator; assess its simulated landing within one ball radius and half a Runner tick, while retaining the stricter independent ValidatedReturnPlanner gate above",
+    "managed_legacy_impact": "Use speed-dependent restitution .759*exp(-.0441*approach), clamped to [.2,.95]; report the three-iteration solver residual and test the independently reconstructed outgoing landing",
+    "prefix_availability": "A physical scenario must yield a usable command at a declared supported cutoff; an earlier uncertain prefix must abstain with independently checked uncertainty evidence. This does not substitute a later retry for a missing command in a committed ROS flight.",
     "continuous_preview_truth_errors": "Report all errors by source cutoff; do not substitute an early preview for the committed-command criterion"
   },
   "lifecycle_controls": [
