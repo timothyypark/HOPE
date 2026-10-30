@@ -225,6 +225,16 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/mujoco_conversion_replay.py",
+      "owner": "qualification",
+      "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",
+      "tests": [
+        "native CTest",
+        "ROS CTest",
+        "verify_integrated.sh"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/qualification_campaign.py",
       "owner": "qualification",
       "why_needed": "Verify causal validity, unchanged downstream output, actual Runner boundary and frozen complete producer-chain coverage",

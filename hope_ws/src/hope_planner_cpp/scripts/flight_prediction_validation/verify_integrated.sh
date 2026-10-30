@@ -107,6 +107,13 @@ run_gate ros-build env MAKEFLAGS=-j"$build_jobs" colcon --log-base "$evidence/lo
   --executor sequential --cmake-args -DBUILD_TESTING=ON -DCMAKE_BUILD_TYPE=Release
 
 if [[ $(cat "$evidence/ros-build.exit") == 0 ]]; then source "$evidence/install/setup.bash"; fi
+run_after incoming-conversion native-build,ros-build python3 \
+  "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/incoming_conversion_simulation.py" \
+  --probe "$evidence/native/hope_incoming_conversion_probe" --output "$evidence/incoming-conversion"
+run_after mujoco-conversion incoming-conversion env \
+  PYTHONPATH="${HOPE_SIMULATION_PYTHONPATH:-}${PYTHONPATH:+:$PYTHONPATH}" python3 \
+  "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/mujoco_conversion_replay.py" \
+  --repo "$repo" --conversion "$evidence/incoming-conversion" --output "$evidence/mujoco-conversion"
 run_after ros-test ros-build colcon --log-base "$evidence/test-log" test --build-base "$evidence/build" \
   --install-base "$evidence/install" --packages-select hope_msgs hope_planner_cpp hope_bringup \
   --executor sequential --event-handlers console_direct+
