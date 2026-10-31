@@ -8,6 +8,8 @@ Read [the assessment](ASSESSMENT.md) for results, limits and unresolved coverage
 
 [Prepared upstream draft PR and comparison link](UPSTREAM_DRAFT_PR.md) targeting `hitchopen/HOPE:nightly_built`.
 
+[Visual explanation and local ROS/MuJoCo guide](visual-guide/README.md), with downloadable graphs, SVGs and a standalone HTML report.
+
 ## Inspect the results
 
 - [Current verification summary](reports/verification-summary.json)

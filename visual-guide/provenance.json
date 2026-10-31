@@ -1,0 +1,8 @@
+{
+  "source_commit": "979f9aa",
+  "runtime_changes": false,
+  "archive_sha256": "05ec0295212c0bfa0b5a229aabf97af4f3c5b5f561146a473de2ec0c1f18b12c",
+  "probe_sha256": "e87d9d3dde9f0fb6e3c4d255b104132ef17d19b94f31930b8a18e110db4feb05",
+  "retained_files": 46,
+  "focus": "New offline forecast export, plotting and guide; not a replacement full delivery qualification"
+}

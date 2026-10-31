@@ -1,0 +1,31 @@
+{
+  "conversion_status": "PASS",
+  "mujoco_status": "PASS",
+  "commands": 159,
+  "abstentions": 3,
+  "contact_position_max_mm": 0.49326795056195416,
+  "contact_time_max_ms": 0.05490683018322118,
+  "numerical_landing_max_mm": 0.6238627671003457,
+  "mujoco_landing_max_mm": 3.6476035718480246,
+  "trajectory_examples": [
+    {
+      "id": 98,
+      "cutoff_ms": 100.0,
+      "maximum_position_error_mm": 0.47440041905782065
+    },
+    {
+      "id": 99,
+      "cutoff_ms": 180.0,
+      "maximum_position_error_mm": 0.03966672284849864
+    }
+  ],
+  "source_sha256": {
+    "/workspace/.cloud-setup/v2-visual-guide/conversion/manifest.json": "8780439cbcec889209b8b3ebd164230c3d7c253cf9cc09d016c387e22673289a",
+    "/workspace/.cloud-setup/v2-visual-guide/conversion/result.json": "338a44f36bcd42b24f0c5ec6a2c12b91c99f5e857eca9ff280c9210fcf683a1d",
+    "/workspace/.cloud-setup/v2-visual-guide/conversion/probe.csv": "9d76613c2a43eb17b64d67658ff0a91724c348cfff1e0fae59a2cfb206097f1e",
+    "/workspace/.cloud-setup/v2-visual-guide/conversion/waypoints.csv": "56e744d9cacb90e609b30ec39b456dfa036f64df3e047030be51c419b3900425",
+    "/workspace/.cloud-setup/v2-visual-guide/mujoco/manifest.json": "a284f3fe64d7c8f9a6d233224b8857c3c759f8a28567039d2667601b25191e91",
+    "/workspace/.cloud-setup/v2-visual-guide/mujoco/result.json": "c60ca2847a5152653f74a409bbc7f9d931204139a3c33d5a0d3dc7cb0323ab3e"
+  },
+  "limitations": "Noiseless synthetic data. Unknown spin uses a zero-spin plant with withheld orientation. No physical accuracy or dynamic robot contact claim. Numeric accuracy does not establish ROS delivery coverage."
+}

@@ -1,0 +1,24 @@
+{
+  "independent_plant_function_byte_identical": true,
+  "comparisons": [
+    {
+      "left": "/workspace/.cloud-setup/v2-visual-guide/conversion/probe.csv",
+      "right": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/incoming-conversion/probe.csv",
+      "sha256": "9d76613c2a43eb17b64d67658ff0a91724c348cfff1e0fae59a2cfb206097f1e"
+    },
+    {
+      "left": "/workspace/.cloud-setup/v2-visual-guide/conversion/waypoints.csv",
+      "right": "/workspace/.cloud-setup/v2-simulation-verification/forecast-paths.csv",
+      "sha256": "56e744d9cacb90e609b30ec39b456dfa036f64df3e047030be51c419b3900425"
+    },
+    {
+      "left": "/workspace/.cloud-setup/v2-visual-guide/default-probe.csv",
+      "right": "/workspace/.cloud-setup/v2-visual-guide/conversion/probe.csv",
+      "sha256": "9d76613c2a43eb17b64d67658ff0a91724c348cfff1e0fae59a2cfb206097f1e"
+    }
+  ],
+  "conversion": "PASS",
+  "mujoco": "PASS",
+  "ros_smoke": "PASS",
+  "test_scope": "Offline test/plot harness changes only; no production runtime changes and no replacement 250-trial qualification"
+}
