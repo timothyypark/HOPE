@@ -6,6 +6,8 @@ Code and review: [draft PR #1](https://github.com/timothyypark/HOPE/pull/1), bra
 
 Read [the assessment](ASSESSMENT.md) for results, limits and unresolved coverage defects. The report distinguishes original raw verdicts from current per-flight findings. No hardware deployment or physical accuracy is claimed.
 
+[Prepared upstream draft PR and comparison link](UPSTREAM_DRAFT_PR.md) targeting `hitchopen/HOPE:nightly_built`.
+
 ## Inspect the results
 
 - [Current verification summary](reports/verification-summary.json)
