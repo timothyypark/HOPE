@@ -82,7 +82,8 @@ if [[ -f "$repo/hope_ws/src/hope_planner_cpp/test/test_reacquisition_spin.cpp" ]
     --output "$evidence/policy-contract.json"
 fi
 run_gate sanitized-configure cmake -S "$repo/hope_ws/src/hope_planner_cpp/test/native" -B "$evidence/sanitized" \
-  -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS='-fsanitize=address,undefined -fno-omit-frame-pointer -O1 -g1'
+  -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS_DEBUG=-g1 \
+  -DCMAKE_CXX_FLAGS='-fsanitize=address,undefined -fno-omit-frame-pointer -O1'
 run_after sanitized-build sanitized-configure cmake --build "$evidence/sanitized" -j"$build_jobs"
 run_after sanitized-test sanitized-build env ASAN_OPTIONS=detect_leaks=1 ctest --test-dir "$evidence/sanitized" --output-on-failure
 run_after outgoing-reference native-build python3 "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/integrated_numerical_gate.py" \
@@ -106,6 +107,13 @@ run_gate ros-build env MAKEFLAGS=-j"$build_jobs" colcon --log-base "$evidence/lo
   --executor sequential --cmake-args -DBUILD_TESTING=ON -DCMAKE_BUILD_TYPE=Release
 
 if [[ $(cat "$evidence/ros-build.exit") == 0 ]]; then source "$evidence/install/setup.bash"; fi
+run_after incoming-conversion native-build,ros-build python3 \
+  "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/incoming_conversion_simulation.py" \
+  --probe "$evidence/native/hope_incoming_conversion_probe" --output "$evidence/incoming-conversion"
+run_after mujoco-conversion incoming-conversion env \
+  PYTHONPATH="${HOPE_SIMULATION_PYTHONPATH:-}${PYTHONPATH:+:$PYTHONPATH}" python3 \
+  "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/mujoco_conversion_replay.py" \
+  --repo "$repo" --conversion "$evidence/incoming-conversion" --output "$evidence/mujoco-conversion"
 run_after ros-test ros-build colcon --log-base "$evidence/test-log" test --build-base "$evidence/build" \
   --install-base "$evidence/install" --packages-select hope_msgs hope_planner_cpp hope_bringup \
   --executor sequential --event-handlers console_direct+
@@ -118,9 +126,17 @@ run_after diagnostic-comparison ros-build python3 \
   "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/qualification_campaign.py" \
   --repo "$repo" --build "$evidence/build/hope_planner_cpp" --output "$evidence/diagnostic-comparison" \
   --diagnostic-comparison
-run_after repeated-campaign ros-build,ros-result-audit python3 \
+run_after repeated-campaign ros-build python3 \
   "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/qualification_campaign.py" \
   --repo "$repo" --build "$evidence/build/hope_planner_cpp" --output "$evidence/repeated-campaign"
+if [[ -f "$repo/hope_ws/src/hope_planner_cpp/test/v2_incoming_producer_chain.py" ]]; then
+  run_after incoming-campaign ros-build python3 \
+    "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/v2_incoming_campaign.py" \
+    --repo "$repo" --build "$evidence/build/hope_planner_cpp" --output "$evidence/incoming-campaign"
+  run_gate runner-revocation bash \
+    "$repo/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/verify_runner_revocation.sh" \
+    "$evidence/runner-revocation" "${HOPE_RUNNER_BASELINE_REPO:-}"
+fi
 if [[ -e "$repo/.git" ]]; then
   git -C "$repo" rev-parse HEAD > "$evidence/final-code-sha.txt"
   git -C "$repo" status --porcelain > "$evidence/final-worktree-status.txt"

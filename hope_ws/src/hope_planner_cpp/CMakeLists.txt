@@ -77,11 +77,16 @@ add_library(hope_integrated_return
   src/return_eligibility.cpp src/validated_return_planner.cpp)
 target_include_directories(hope_integrated_return PUBLIC include)
 target_link_libraries(hope_integrated_return PUBLIC hope_v2_forecast_core)
-add_library(hope_integrated_runtime src/integrated_planner_runtime.cpp)
+add_library(hope_v2_incoming_core src/v2_strike_adapter.cpp src/v2_incoming_coordinator.cpp)
+target_include_directories(hope_v2_incoming_core PUBLIC include)
+target_link_libraries(hope_v2_incoming_core PUBLIC hope_integrated_return hope_planner_core)
+install(TARGETS hope_v2_incoming_core ARCHIVE DESTINATION lib LIBRARY DESTINATION lib)
+add_library(hope_integrated_runtime src/integrated_planner_runtime.cpp src/v2_incoming_runtime.cpp)
 target_include_directories(hope_integrated_runtime PUBLIC include)
 target_link_libraries(hope_integrated_runtime PUBLIC hope_integrated_return
   hope_v2_transport hope_planner_core rclcpp::rclcpp ${std_msgs_TARGETS}
   ${std_srvs_TARGETS} ${diagnostic_msgs_TARGETS})
+target_link_libraries(hope_integrated_runtime PUBLIC hope_v2_incoming_core)
 target_link_libraries(hope_planner_cpp_node PRIVATE hope_integrated_runtime)
 install(TARGETS hope_integrated_return hope_integrated_runtime
   ARCHIVE DESTINATION lib LIBRARY DESTINATION lib)
@@ -136,6 +141,22 @@ install(PROGRAMS
 if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)
   find_package(Python3 REQUIRED COMPONENTS Interpreter)
+  foreach(rate 150 300 360)
+    foreach(mode fixed per_ball stable_per_ball)
+      foreach(spin unknown zero)
+        set(profile incoming_chain_${rate}_${mode}_${spin})
+        add_test(NAME ${profile} COMMAND ${Python3_EXECUTABLE}
+          ${CMAKE_CURRENT_SOURCE_DIR}/test/v2_incoming_producer_chain.py
+          --repo ${CMAKE_CURRENT_SOURCE_DIR}/../../..
+          --build ${CMAKE_CURRENT_BINARY_DIR}
+          --bringup ${CMAKE_INSTALL_PREFIX}/../hope_bringup/lib/hope_bringup
+          --rate ${rate} --mode ${mode} --spin ${spin}
+          --output ${CMAKE_CURRENT_BINARY_DIR}/${profile})
+        set_tests_properties(${profile} PROPERTIES RUN_SERIAL TRUE TIMEOUT 60
+          ENVIRONMENT "ROS_DOMAIN_ID=193;ROS_LOCALHOST_ONLY=1")
+      endforeach()
+    endforeach()
+  endforeach()
   ament_add_gtest(test_reacquisition_counterexamples test/reacquisition_counterexamples.cpp)
   target_compile_definitions(test_reacquisition_counterexamples PRIVATE HOPE_REARM_CONTINUATION=1)
   target_link_libraries(test_reacquisition_counterexamples hope_integrated_return)
@@ -313,7 +334,22 @@ if(BUILD_TESTING)
 
   ament_add_gtest(test_runtime_plane_reference test/test_runtime_plane_reference.cpp)
   target_link_libraries(test_runtime_plane_reference hope_planner_core Eigen3::Eigen)
+  ament_add_gtest(test_v2_strike_adapter test/test_v2_strike_adapter.cpp)
+  set_target_properties(test_v2_strike_adapter PROPERTIES CXX_STANDARD 20)
+  target_link_libraries(test_v2_strike_adapter hope_v2_incoming_core)
+  ament_add_gtest(test_runner_preengagement_revocation test/test_runner_preengagement_revocation.cpp)
+  set_target_properties(test_runner_preengagement_revocation PROPERTIES CXX_STANDARD 20)
+  target_include_directories(test_runner_preengagement_revocation PRIVATE "${HOPE_RECORDING_INCLUDE_DIR}")
+  target_link_libraries(test_runner_preengagement_revocation Eigen3::Eigen)
+  ament_add_gtest(test_v2_incoming_coordinator test/test_v2_incoming_coordinator.cpp)
+  target_link_libraries(test_v2_incoming_coordinator hope_v2_incoming_core)
   ament_add_gtest(test_planner_runtime_plane test/test_planner_runtime_plane.cpp src/planner_node.cpp)
+  ament_add_gtest(test_v2_incoming_ros test/test_v2_incoming_ros.cpp src/planner_node.cpp)
+  set_target_properties(test_v2_incoming_ros PROPERTIES CXX_STANDARD 20)
+  target_link_libraries(test_v2_incoming_ros hope_integrated_runtime rclcpp::rclcpp
+    ${geometry_msgs_TARGETS} ${hope_msgs_TARGETS} ${std_msgs_TARGETS} ${std_srvs_TARGETS}
+    ${rcl_interfaces_TARGETS} ${diagnostic_msgs_TARGETS})
+  set_tests_properties(test_v2_incoming_ros PROPERTIES RUN_SERIAL TRUE TIMEOUT 120)
   target_link_libraries(test_planner_runtime_plane hope_integrated_runtime)
   target_link_libraries(test_planner_runtime_plane hope_planner_core Eigen3::Eigen rclcpp::rclcpp
     ${diagnostic_msgs_TARGETS} ${geometry_msgs_TARGETS} ${hope_msgs_TARGETS}
@@ -418,6 +454,8 @@ if(BUILD_TESTING)
   find_package(Python3 REQUIRED COMPONENTS Interpreter)
   find_package(ament_cmake_pytest REQUIRED)
   ament_add_pytest_test(qualification_accounting test/test_qualification_accounting.py)
+  ament_add_pytest_test(lifecycle_observer test/test_lifecycle_observer.py)
+  ament_add_pytest_test(coverage_outcome_audit test/test_coverage_outcome_audit.py)
   ament_add_pytest_test(qualification_relay_shutdown test/test_relay_shutdown.py)
   set_tests_properties(qualification_relay_shutdown PROPERTIES RUN_SERIAL TRUE
     ENVIRONMENT "ROS_DOMAIN_ID=194;ROS_LOCALHOST_ONLY=1")
@@ -461,6 +499,8 @@ if(BUILD_TESTING)
     ${CMAKE_CURRENT_SOURCE_DIR}/test/installed_forward_api.py --prefix ${CMAKE_INSTALL_PREFIX})
   ament_add_gtest(test_flight_prediction_v2 test/test_flight_prediction_v2.cpp)
   target_link_libraries(test_flight_prediction_v2 hope_v2_forecast_core)
+  ament_add_gtest(test_v2_contact_corroboration test/test_v2_contact_corroboration.cpp)
+  target_link_libraries(test_v2_contact_corroboration hope_v2_forecast_core)
   ament_add_gtest(test_flight_transport_v2 test/test_flight_transport_v2.cpp)
   target_link_libraries(test_flight_transport_v2 hope_v2_transport)
   foreach(pair "numerical;numerical_gate.py" "causal_replay;causal_replay_gate.py")

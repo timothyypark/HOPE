@@ -24,7 +24,8 @@ target_link_libraries(hope_native_core PUBLIC Eigen3::Eigen)
 target_compile_options(hope_native_core PRIVATE -Wall -Wextra -Wpedantic)
 foreach(test flight_prediction_v2 spin_physics future_contact_predictor batch_physics_estimator
     trajectory_and_stage3 target_turn_guard prediction_event_order schema2
-    spin_estimator audit_logger post_net_one_shot incoming_trajectory adaptive_flight_commit)
+    spin_estimator audit_logger post_net_one_shot incoming_trajectory adaptive_flight_commit
+    v2_contact_corroboration)
   add_executable(test_${test} ${PLANNER}/test/test_${test}.cpp)
   target_link_libraries(test_${test} PRIVATE hope_native_core GTest::gtest_main)
   add_test(NAME ${test} COMMAND test_${test})
@@ -36,6 +37,32 @@ target_link_libraries(hope_flight_prediction_v2_replay PRIVATE hope_native_core)
 add_library(hope_integrated_native
   ${PLANNER}/src/return_eligibility.cpp ${PLANNER}/src/validated_return_planner.cpp)
 target_link_libraries(hope_integrated_native PUBLIC hope_native_core)
+add_library(hope_incoming_native ${PLANNER}/src/v2_strike_adapter.cpp
+  ${PLANNER}/src/v2_incoming_coordinator.cpp)
+target_link_libraries(hope_incoming_native PUBLIC hope_integrated_native)
+add_executable(test_v2_strike_adapter ${PLANNER}/test/test_v2_strike_adapter.cpp)
+set_target_properties(test_v2_strike_adapter PROPERTIES CXX_STANDARD 20)
+target_include_directories(test_v2_strike_adapter PRIVATE
+  ${PLANNER}/../../../a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/include)
+target_link_libraries(test_v2_strike_adapter PRIVATE hope_incoming_native GTest::gtest_main)
+add_test(NAME v2_strike_adapter COMMAND test_v2_strike_adapter)
+add_executable(hope_incoming_conversion_probe ${PLANNER}/test/incoming_conversion_probe.cpp)
+set_target_properties(hope_incoming_conversion_probe PROPERTIES CXX_STANDARD 20)
+target_include_directories(hope_incoming_conversion_probe PRIVATE
+  ${PLANNER}/../../../a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/include)
+target_link_libraries(hope_incoming_conversion_probe PRIVATE hope_incoming_native)
+add_executable(test_runner_preengagement_revocation ${PLANNER}/test/test_runner_preengagement_revocation.cpp)
+set_target_properties(test_runner_preengagement_revocation PROPERTIES CXX_STANDARD 20)
+target_include_directories(test_runner_preengagement_revocation PRIVATE
+  ${PLANNER}/../../../a3_deploy/a3_deploy_example/src/a3/a3_deploy_onnx_ref/include)
+target_link_libraries(test_runner_preengagement_revocation PRIVATE Eigen3::Eigen GTest::gtest_main)
+add_test(NAME runner_preengagement_revocation COMMAND test_runner_preengagement_revocation)
+add_executable(test_v2_incoming_coordinator ${PLANNER}/test/test_v2_incoming_coordinator.cpp)
+target_link_libraries(test_v2_incoming_coordinator PRIVATE hope_incoming_native GTest::gtest_main)
+add_test(NAME v2_incoming_coordinator COMMAND test_v2_incoming_coordinator)
+add_executable(test_runtime_plane_reference ${PLANNER}/test/test_runtime_plane_reference.cpp)
+target_link_libraries(test_runtime_plane_reference PRIVATE hope_native_core GTest::gtest_main)
+add_test(NAME runtime_plane_reference COMMAND test_runtime_plane_reference)
 add_executable(test_integrated_return ${PLANNER}/test/test_integrated_return.cpp)
 set_target_properties(test_integrated_return PROPERTIES CXX_STANDARD 20)
 target_include_directories(test_integrated_return PRIVATE

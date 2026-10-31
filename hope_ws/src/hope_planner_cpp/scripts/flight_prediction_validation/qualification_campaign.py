@@ -52,7 +52,9 @@ def main():
             command = test['command'].copy()
             output = args.output / f'repetition-{repetition}' / name / 'result.json'
             command[command.index('--output') + 1] = str(output)
-            accounting_enabled = args.diagnostic_comparison and repetition == 1
+            # Every declared qualification trial needs actual loss attribution.
+            # The separate diagnostic pair still measures accounting on/off.
+            accounting_enabled = not args.diagnostic_comparison or repetition == 1
             if accounting_enabled:
                 command.append('--stage-accounting')
             environment = {}

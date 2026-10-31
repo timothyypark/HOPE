@@ -6,6 +6,7 @@ game history, solves and reconstructs the paddle action, and checks its first
 outgoing landing before emitting schema-2 **shadow** previews. Legacy remains
 the default. See [integration contracts and migration](docs/integrated_planner_input_migration.md)
 and [current verification and remaining gates](docs/integrated_planner_acceptance.md).
+For the shared V2 incoming path, see the [local simulation, accuracy graphs and ROS/MuJoCo guide](docs/v2_local_simulation_guide.md).
 The production description below describes the preserved legacy backend.
 
 Deterministic C++17 Planner for the `model_21800` hardware contract. This is

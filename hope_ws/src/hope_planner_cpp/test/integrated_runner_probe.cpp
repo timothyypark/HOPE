@@ -8,11 +8,11 @@ int main(int argc,char **argv) {
   auto node=std::make_shared<rclcpp::Node>("integrated_runner_probe");
   hope_planner_cpp::BoundedStageTrace accounting;
   accounting.configure(node->declare_parameter<std::string>("test.stage_trace_path",""));
-  a3_pingpong::PpRacketTargetInput receiver(2);
+  a3_pingpong::PpRacketTargetInput receiver(node->declare_parameter<int>("test.expected_schema",2));
   auto output=node->create_publisher<std_msgs::msg::Float64MultiArray>(
       "/hope/test/integrated_runner/decoded",rclcpp::QoS(10).reliable());
   auto input=node->create_subscription<std_msgs::msg::Float64MultiArray>(
-      "/hope/shadow/integrated_planner/racket_target",rclcpp::QoS(1).reliable(),
+      node->declare_parameter<std::string>("test.input_topic", "/hope/shadow/integrated_planner/racket_target"),rclcpp::QoS(1).reliable(),
       [&](std_msgs::msg::Float64MultiArray::ConstSharedPtr message) {
         const auto receipt=node->now().nanoseconds();
         const auto steady=std::chrono::duration_cast<std::chrono::nanoseconds>(

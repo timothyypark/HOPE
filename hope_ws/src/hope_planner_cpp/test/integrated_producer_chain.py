@@ -15,12 +15,12 @@ import subprocess
 import signal
 import sys
 from queue import Empty
-from qualification_accounting import stage_parameters, resources as capture_resources, validate_source_epoch, write_receipt
+from qualification_accounting import SourceCadence, stage_parameters, resources as capture_resources, validate_source_epoch, write_receipt
 import time
 
 import numpy as np
-from scipy.integrate import solve_ivp
 from scipy.optimize import brentq
+from independent_ball_flight import flight
 import rclpy
 from rclpy.qos import qos_profile_sensor_data, QoSProfile, ReliabilityPolicy
 from diagnostic_msgs.msg import DiagnosticArray
@@ -30,50 +30,6 @@ from motion_capture_tracking_interfaces.msg import NamedPoseArrayV2, NamedPose, 
 from std_msgs.msg import Float64MultiArray
 
 
-def flight(speed=5., spin='unknown', scenario='standard'):
-    """Independent DOP853 plant, explicit thin-shell impulse and orientation.
-
-    New fast-flight equivalents have frozen initial geometry below. They are
-    not the unavailable original reviewer's exact recordings.
-    """
-    omega = 30. if spin == 'known' else 0.
-    drag = 0. if scenario in ['net_clear', 'net_collision'] else .12861635416914574
-    def rhs(w):
-        def derivative(_, s):
-            v = s[3:6]
-            a = np.array([0., 0., -9.81]) - drag*np.linalg.norm(v)*v
-            if spin != 'unknown':
-                a += .00379260504480258*np.cross([0., w, 0.], v)
-            return np.r_[v, a, w]
-        return derivative
-    def contact(_, s):
-        return s[2] - .02
-    contact.direction = -1
-    contact.terminal = True
-    geometry = {5.: (1.8, .4, -.5), 10.: (2.5, .32, -.5),
-                12.: (2.6, .3, -.5), 20.: (2.6, .65, -5.)}
-    x, z, vz = geometry[speed]
-    velocity_x = -speed
-    if scenario in ['net_clear', 'net_collision']:
-        x, velocity_x = 2.6, -10.
-        net_time = (x-1.37)/10
-        vz = -4.+9.81*net_time
-        z = .1525+.024-vz*net_time+4.905*net_time**2
-        if scenario == 'net_collision': z -= .015
-    if scenario == 'uncertain_contact': x = 1.2
-    before = solve_ivp(rhs(omega), [0, 1], [x, -.7, z, velocity_x, 0., vz, 0.],
-                       method='DOP853', events=contact, dense_output=True, rtol=1e-11, atol=1e-13)
-    bounce = before.t[-1]
-    post = before.y[:, -1].copy()
-    slip = post[3] - .02*omega if spin != 'unknown' else post[3]
-    impulse = min(.38744443855065164*abs(slip),
-                  .16706204822993975*(1+.9313775047019153)*abs(post[5]))
-    dv = -np.sign(slip)*impulse
-    post[3] += dv
-    if spin != 'unknown': omega -= dv/((2./3)*.02)
-    post[5] *= -.9313775047019153
-    after = solve_ivp(rhs(omega), [bounce, .7], post, method='DOP853', dense_output=True, rtol=1e-11, atol=1e-13)
-    return before, after, bounce
 
 
 def source(rate, stop, ready, stats, speed=5., spin='unknown', scenario='standard', scored_flights=2, base_yaw=0.):
@@ -91,11 +47,12 @@ def source(rate, stop, ready, stats, speed=5., spin='unknown', scenario='standar
     while pub.get_subscription_count() == 0 and time.monotonic() < discovery_deadline:
         rclpy.spin_once(node, timeout_sec=.01)
     assert pub.get_subscription_count() > 0, 'installed relay did not subscribe'
-    # This short-lived publisher has no per-frame reference cycles. Prevent a
-    # synthetic Python cyclic-GC stop from turning a paced camera into a burst
-    # of catch-up exposures. All launched source rows remain in the receipt.
+    # This short-lived publisher has no per-frame reference cycles. Avoid avoidable
+    # cyclic-GC pauses during capture; SourceCadence also accounts for other
+    # scheduling overruns. All launched source rows remain in the receipt.
     gc.disable()
     start = time.monotonic()
+    cadence = SourceCadence(rate, round(start * 1e9))
     clock_origin_ns = time.time_ns()
     ready.set()
     index = 0
@@ -103,7 +60,7 @@ def source(rate, stop, ready, stats, speed=5., spin='unknown', scenario='standar
     source_rows = []
     eligible_stamps = []
     while not stop.is_set():
-        deadline = start + index/rate
+        deadline = cadence.deadline_ns * 1e-9
         remaining = deadline-time.monotonic()
         if remaining > 0:
             time.sleep(remaining)
@@ -111,6 +68,7 @@ def source(rate, stop, ready, stats, speed=5., spin='unknown', scenario='standar
         # Message construction/publish delays are measured after acquisition.
         stamp_mono_ns = time.monotonic_ns()
         stamp = time.time_ns()
+        cadence.acquired(stamp_mono_ns)
         elapsed = (stamp - clock_origin_ns) * 1e-9
         state_mono_ns = stamp_mono_ns
         phase = (elapsed-.8) % 1.0
@@ -163,7 +121,7 @@ def source(rate, stop, ready, stats, speed=5., spin='unknown', scenario='standar
                 not (1.0 < elapsed < 1.08)):
             eligible_stamps.append(stamp)
         index += 1
-    stats.put({'clock_origin_ns': clock_origin_ns, 'rows': source_rows, 'sent': index, 'synthetic_source_cyclic_gc': 'disabled_during_pacing', 'source_intervals_ns': np.diff(sent).tolist(), 'bounce_s': bounce,
+    stats.put({'cadence': cadence.receipt(), 'clock_origin_ns': clock_origin_ns, 'rows': source_rows, 'sent': index, 'synthetic_source_cyclic_gc': 'disabled_during_pacing', 'source_intervals_ns': np.diff(sent).tolist(), 'bounce_s': bounce,
                'plane_s': plane_time, 'eligible_stamps': eligible_stamps,
                'command_epoch_contract': f'first_{scored_flights}_flights; phase>0.100; lead>0.130; physical_frame_fault_excluded; unknown_game_history_included'})
     node.destroy_node()
@@ -248,6 +206,7 @@ def run(args, rate, policy):
         stop.set()
         source_stats = queue.get(timeout=5)
         validate_source_epoch(source_stats)
+        assert source_stats['cadence']['valid'], ('source cadence', source_stats['cadence'])
         camera.join(timeout=5)
         assert not camera.is_alive()
         if args.test_fail_after_collection:

@@ -3,7 +3,38 @@ import json
 from types import SimpleNamespace
 
 import pytest
-from qualification_accounting import validate_source_epoch, write_receipt
+from qualification_accounting import SourceCadence, validate_source_epoch, write_receipt
+
+
+@pytest.mark.parametrize('rate', [150, 300, 360])
+def test_source_pause_does_not_manufacture_catch_up_observations(rate):
+    """A delayed camera resumes acquisition instead of creating a false burst."""
+    cadence = SourceCadence(rate, 1_000_000_000)
+    acquisitions = []
+    for index in range(1000):
+        acquisition = cadence.deadline_ns + (34_000_000 if index == 305 else 50_000)
+        acquisitions.append(acquisition)
+        cadence.acquired(acquisition)
+        if index == 305:
+            assert cadence.deadline_ns == acquisition + cadence.period_ns
+    receipt = cadence.receipt()
+    assert receipt['valid']
+    assert receipt['resynchronizations'] == 1
+    assert receipt['missed_nominal_ticks'] == 34_000_000 // cadence.period_ns
+    assert min(b - a for a, b in zip(acquisitions, acquisitions[1:])) >= cadence.period_ns // 2
+    assert receipt['samples'] == len(acquisitions)  # no offered observation is removed
+
+
+def test_source_health_rejects_slow_or_burst_acquisition():
+    """Coverage cannot conceal a source that misses its declared cadence."""
+    slow = SourceCadence(150, 0)
+    for index in range(100):
+        slow.acquired(index * 10_000_000)
+    assert not slow.receipt()['valid']
+    burst = SourceCadence(150, 0)
+    for instant in [0, 0, 100_000, 6_666_667]:
+        burst.acquired(instant)
+    assert not burst.receipt()['valid']
 
 
 def test_delayed_stamp_cannot_describe_an_earlier_physical_state():

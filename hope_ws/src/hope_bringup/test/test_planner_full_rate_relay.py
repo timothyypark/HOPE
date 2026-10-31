@@ -107,3 +107,23 @@ def test_numeric_identity_without_source_authority_is_position_only(relay):
     assert observation.position_valid
     assert not observation.orientation_authoritative
     assert not observation.orientation_valid
+
+
+@pytest.mark.parametrize('depth', [1, 8])
+def test_qualified_output_history_matches_bounded_ingress(depth):
+    """DDS writers must retain the same qualified prefix as their input reader."""
+    rclpy.init(args=[
+        '--ros-args', '-p', 'publish_tf:=false', '-p',
+        'planner_poses_topic:=/poses/planner_full', '-p',
+        f'input_history_depth:={depth}',
+    ])
+    node = module.OptitrackMctRelay(messages.NamedPoseArrayV2)
+    try:
+        assert node._sub.qos_profile.depth == depth
+        assert node._ball_observation_v2_pub.qos_profile.depth == depth
+        assert node._planner_pose_array_pub.qos_profile.depth == depth
+        assert node._pose_array_pub.qos_profile.depth == 1
+        assert node._ball_pub.qos_profile.depth == 1
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()

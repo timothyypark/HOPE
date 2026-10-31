@@ -231,11 +231,14 @@ class OptitrackMctRelay(Node):
         if planner_topic and planner_topic == str(self.get_parameter("poses_topic").value):
             raise ValueError("planner_poses_topic must differ from the rate-limited poses_topic")
         self._planner_pose_array_pub = (
-            self.create_publisher(PoseArray, planner_topic, sensor_qos)
+            self.create_publisher(PoseArray, planner_topic, input_qos)
             if planner_topic else None
         )
+        # Keep the same bounded observation history at both writer and reader.
+        # An asynchronous DDS writer with depth one can otherwise discard an
+        # intervening exposure before either qualified consumer receives it.
         self._ball_observation_v2_pub = self.create_publisher(
-            BallObservationV2, "/hope/ball/observation_v2", sensor_qos
+            BallObservationV2, "/hope/ball/observation_v2", input_qos
         )
         self._ball_pub = self.create_publisher(
             PointStamped, str(self.get_parameter("ball_point_topic").value), sensor_qos
