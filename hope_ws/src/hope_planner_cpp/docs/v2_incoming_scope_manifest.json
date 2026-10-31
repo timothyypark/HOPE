@@ -86,6 +86,16 @@
       ]
     },
     {
+      "path": "hope_ws/src/hope_planner_cpp/README.md",
+      "owner": "runtime",
+      "why_needed": "Integrate shared V2 owner, managed-plane schema 4/5 path, continuous forecast and identity-bearing revocation",
+      "tests": [
+        "test_v2_incoming_ros",
+        "native CTest",
+        "flight_v2_scope"
+      ]
+    },
+    {
       "path": "hope_ws/src/hope_planner_cpp/config/v2_incoming.shadow.yaml",
       "owner": "runtime",
       "why_needed": "Expose explicit shadow-only opt-in with existing managed planes and protected output topics",
@@ -127,6 +137,14 @@
     },
     {
       "path": "hope_ws/src/hope_planner_cpp/docs/v2_incoming_scope_manifest.json",
+      "owner": "qualification",
+      "why_needed": "Record explicit milestone contracts, scope, preserved failures and qualification boundaries",
+      "tests": [
+        "flight_v2_scope"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/docs/v2_local_simulation_guide.md",
       "owner": "qualification",
       "why_needed": "Record explicit milestone contracts, scope, preserved failures and qualification boundaries",
       "tests": [
