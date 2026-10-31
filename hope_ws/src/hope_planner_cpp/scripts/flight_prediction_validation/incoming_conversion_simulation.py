@@ -16,7 +16,7 @@ from scipy.optimize import brentq
 
 PACKAGE = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PACKAGE / 'test'))
-from integrated_producer_chain import flight
+from independent_ball_flight import flight
 
 
 def vector(row, names):
@@ -39,6 +39,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--probe', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--waypoints', action='store_true',
+                        help='Retain actual production forecast waypoints for visualization')
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=False)
     acceptance = json.loads((PACKAGE / 'docs/v2_simulation_acceptance.json').read_text())
@@ -70,7 +72,10 @@ def main():
                     probe_sha256=hashlib.sha256(args.probe.read_bytes()).hexdigest(),
                     scope='Target/ball simulation and actual C++ decoding; no robot joint dynamics')
     (args.output/'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
-    process = subprocess.run([str(args.probe)], input=data, text=True, capture_output=True)
+    command = [str(args.probe)]
+    if args.waypoints:
+        command += ['--waypoints', str(args.output / 'waypoints.csv')]
+    process = subprocess.run(command, input=data, text=True, capture_output=True)
     (args.output/'probe.csv').write_text(process.stdout)
     (args.output/'probe.stderr').write_text(process.stderr)
     (args.output/'probe.exit').write_text(str(process.returncode)+'\n')

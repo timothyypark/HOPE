@@ -5,11 +5,20 @@
 #include "hope_planner_cpp/schema2_packer.hpp"
 #include "hope_planner_cpp/v2_managed_revocation.hpp"
 #include "a3_pingpong/pp_planner_input.hpp"
+#include <fstream>
 #include <iomanip>
 #include <iostream>
 
 using namespace hope_planner_cpp;
-int main() {
+int main(int argc, char** argv) {
+  std::ofstream paths;
+  if (argc != 1 && argc != 3) return 2;
+  if (argc == 3) {
+    if (std::string(argv[1]) != "--waypoints") return 2;
+    paths.open(argv[2]);
+    if (!paths) return 2;
+    paths << std::setprecision(17) << "id,source_ns,dt,x,y,z,vx,vy,vz\n";
+  }
   std::cout << std::setprecision(17);
   std::cout << "id,mode,supported,eligible,command_valid,reason,cutoff_ns,contact_ns,"
     "cx,cy,cz,cvx,cvy,cvz,sx,sy,sz,svx,svy,svz,strike_time,"
@@ -55,6 +64,11 @@ int main() {
     auto query=owner.packet(packet,plane,now,reason);
     IncomingEvaluation result;
     if (query) result=V2IncomingCoordinator::evaluate(*query,now);
+    if (paths.is_open()) for (const auto& waypoint : result.forecast.nominal.waypoints) {
+      paths << id << ',' << now << ',' << waypoint.dt_s;
+      for (int axis=0; axis<6; ++axis) paths << ',' << waypoint.state[axis];
+      paths << '\n';
+    }
     const auto strike=v2_strike_target(result.candidate,now);
     RacketTargetPlanner planner({}, {}, {});
     const auto command=planner.plan(strike,Vec3(2.055,-.7625,.02),.7);
@@ -112,5 +126,5 @@ int main() {
       << ',' << plane_std << ',' << plane_quality << ',' << position_variance << ','
       << min_variance << ',' << plane_vx << '\n';
   }
-  return std::cin.eof()?0:2;
+  return std::cin.eof() && (!paths.is_open() || paths.good()) ? 0 : 2;
 }
