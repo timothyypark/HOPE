@@ -27,7 +27,7 @@ TEST(StageTrace, BoundedOverwriteRetainsExactNanosecondsAndReportsLoss) {
 TEST(StageTrace, BadDestinationAndUnboundedCapacityFailBeforeWork) {
   hope_planner_cpp::BoundedStageTrace trace;
   EXPECT_THROW(trace.configure("/nonexistent/hope/trace"), std::invalid_argument);
-  EXPECT_THROW(trace.configure("/tmp/unused-stage", 65537), std::invalid_argument);
+  EXPECT_THROW(trace.configure("/tmp/unused-stage", 1048577), std::invalid_argument);
   EXPECT_THROW(trace.configure("/tmp/unused-stage", 0), std::invalid_argument);
   EXPECT_FALSE(trace.enabled());
 }

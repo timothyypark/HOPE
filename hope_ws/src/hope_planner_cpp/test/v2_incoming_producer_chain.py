@@ -165,6 +165,7 @@ def source(rate, spin, stop, ready, reference_ready, queue):
 
 def run(args):
     """Retain every declared opportunity and every process exit, including failures."""
+    recorded = getattr(args, 'recorded_observations', None) is not None
     args.output.mkdir(parents=True, exist_ok=False)
     contract = {
         'version': 3,
@@ -172,7 +173,9 @@ def run(args):
         'rate_hz': args.rate,
         'mode': args.mode,
         'spin': args.spin,
-        'one_shot_opportunities': 10,
+        'one_shot_opportunities': None if recorded else 10,
+        'evidence_type': 'measured_recording' if recorded else 'independent_simulation',
+        'base_authority': 'interface_fixture',
         'startup': 'actual planner HOME=100 and registered plane available before first ball',
         'flight_spacing_s': 0.9,
         'continuous_denominator': (
@@ -236,6 +239,9 @@ def run(args):
                 ('ball_orientation_authoritative', str(args.spin != 'unknown').lower()),
                 ('planner_poses_topic', '/poses/planner_full'),
                 ('test.stage_trace_path', args.output / 'relay.tsv'),
+                ('test.stage_trace_capacity', 262144 if recorded else 32768),
+                ('test.typed_drop_every', 37 if recorded and args.recorded_fault=='typed_loss' else 0),
+                ('test.typed_delay_ms', 40.0 if recorded and args.recorded_fault=='typed_delay' else 0.0),
             ],
         )
         launch(
@@ -258,6 +264,7 @@ def run(args):
                 ('v2_incoming.base_calibration_id', BASE_ID),
                 ('v2_incoming.base_world_id', WORLD_ID),
                 ('v2_incoming.stage_trace_path', args.output / 'planner.tsv'),
+                ('v2_incoming.stage_trace_capacity', 1048576 if recorded else 65536),
                 ('session_home_input_topic', '/test/incoming/home'),
                 ('plane_reference_mode', args.mode),
             ],
@@ -373,16 +380,27 @@ def run(args):
         while time.monotonic() < until:
             rclpy.spin_once(node, timeout_sec=0.01)
         assert all(p.poll() is None for p in processes), 'child startup failure'
-        camera = mp.Process(
-            target=source, args=(args.rate, args.spin, stop, ready, reference_ready, queue)
-        )
+        source_target=source
+        source_args=(args.rate,args.spin,stop,ready,reference_ready,queue)
+        if recorded:
+            from ppq004_ros_source import recorded_source
+            source_target=recorded_source
+            source_args += ({'observations':str(args.recorded_observations),
+                'recording_id':args.recording_id,'fault':args.recorded_fault,
+                'max_seconds':args.recorded_max_seconds},)
+        camera = mp.Process(target=source_target,args=source_args)
         camera.start()
         deadline = time.monotonic() + 15
         while not ready.is_set() and time.monotonic() < deadline:
             rclpy.spin_once(node, timeout_sec=0.01)
         assert ready.is_set(), 'camera startup failure'
-        deadline = time.monotonic() + 10.0
+        duration = (args.recorded_max_seconds or (52.87 if args.recording_id.endswith('3') else 218.45)) + 1.0 if recorded else 10.0
+        deadline = time.monotonic() + duration
+        fault_started=False
         while time.monotonic() < deadline:
+            if recorded and args.recorded_fault in ('worker_stall','decoder_delay') and not fault_started and time.monotonic()>deadline-duration+5:
+                target=processes[2 if args.recorded_fault=='worker_stall' else 4]
+                target.send_signal(signal.SIGSTOP);time.sleep(.08);target.send_signal(signal.SIGCONT);fault_started=True
             rclpy.spin_once(node, timeout_sec=0.002)
         stop.set()
         stats = queue.get(timeout=5)
@@ -417,6 +435,9 @@ def run(args):
             'children': [{'command': p.args, 'exit': p.returncode} for p in processes],
         }
         (args.output / 'raw.json').write_text(json.dumps(raw) + '\n')
+    if recorded:
+        from ppq004_ros_source import recorded_result
+        return recorded_result(raw,args.output)
     # Exact source-epoch coverage, with a separate committed-flight denominator.
     eligible = {row['source_ns'] for row in stats.get('rows', []) if row['eligible_continuous']}
     covered = {row['source_ns'] for row in received['predictions'] if row['physical']} & eligible
@@ -638,5 +659,9 @@ if __name__ == '__main__':
     parser.add_argument('--rate', type=int, choices=[150, 300, 360], required=True)
     parser.add_argument('--mode', choices=['fixed', 'per_ball', 'stable_per_ball'], required=True)
     parser.add_argument('--spin', choices=['unknown', 'zero'], required=True)
+    parser.add_argument('--recorded-observations',type=Path)
+    parser.add_argument('--recording-id',choices=['ppq004_part1','ppq004_part2','ppq004_part3'],default='ppq004_part3')
+    parser.add_argument('--recorded-max-seconds',type=float)
+    parser.add_argument('--recorded-fault',choices=['none','source_gap','spike','missing_orientation','quaternion_sign','duplicate','clock_backstep','wrong_frame','typed_loss','typed_delay','worker_stall','decoder_delay','home_change','source_silence'],default='none')
     mp.set_start_method('spawn')
     raise SystemExit(run(parser.parse_args()))

@@ -163,8 +163,23 @@ class OptitrackMctRelay(Node):
         self._debug_rows_since_flush = 0
         self._debug_frame_seq = 0
         self._stage_path = self.declare_parameter('test.stage_trace_path', '').value
-        self._stage_rows = deque(maxlen=32768)
+        stage_capacity = int(self.declare_parameter('test.stage_trace_capacity', 32768).value)
+        if not 1 <= stage_capacity <= 1048576:
+            raise ValueError('test.stage_trace_capacity must be in [1,1048576]')
+        self._stage_rows = deque(maxlen=stage_capacity)
         self._stage_total = 0
+        self._test_typed_drop_every = int(self.declare_parameter('test.typed_drop_every', 0).value)
+        self._test_typed_delay_ms = float(self.declare_parameter('test.typed_delay_ms', 0.0).value)
+        if self._test_typed_drop_every < 0 or not 0 <= self._test_typed_delay_ms <= 1000:
+            raise ValueError('invalid test-only typed transport fault')
+        if (self._test_typed_drop_every or self._test_typed_delay_ms) and not self._stage_path:
+            raise ValueError('typed transport faults require a retained stage trace')
+        self._test_typed_count = 0
+        self._test_typed_pending = deque()
+        self._test_typed_timer = (
+            self.create_timer(0.005, self._flush_test_typed)
+            if self._test_typed_delay_ms else None
+        )
         self._debug_flush_rows = max(
             1, int(self.get_parameter("debug_flush_rows").value)
         )
@@ -368,9 +383,20 @@ class OptitrackMctRelay(Node):
             observation.orientation_valid = (
                 self._ball_orientation_authoritative and ball_pose_orientation_valid
             )
-            self._ball_observation_v2_pub.publish(observation)
-            if self._stage_path:
-                self._record_stage('typed_published', msg.header.stamp)
+            self._test_typed_count += 1
+            if self._test_typed_drop_every and self._test_typed_count % self._test_typed_drop_every == 0:
+                self._record_stage('typed_intentionally_dropped', msg.header.stamp)
+            elif self._test_typed_delay_ms:
+                if len(self._test_typed_pending) >= 512:
+                    self._record_stage('typed_fault_queue_overflow', msg.header.stamp)
+                else:
+                    self._test_typed_pending.append((
+                        time.monotonic_ns() + int(self._test_typed_delay_ms * 1e6),
+                        observation, msg.header.stamp))
+            else:
+                self._ball_observation_v2_pub.publish(observation)
+                if self._stage_path:
+                    self._record_stage('typed_published', msg.header.stamp)
             if self._planner_pose_array_pub is not None:
                 self._publish_poses(
                     self._latest["ball"].header.stamp,
@@ -570,6 +596,13 @@ class OptitrackMctRelay(Node):
             if key in self._latest
         ]
         (publisher if publisher is not None else self._pose_array_pub).publish(msg)
+
+    def _flush_test_typed(self):
+        now = time.monotonic_ns()
+        while self._test_typed_pending and self._test_typed_pending[0][0] <= now:
+            _, observation, stamp = self._test_typed_pending.popleft()
+            self._ball_observation_v2_pub.publish(observation)
+            self._record_stage('typed_published', stamp)
 
     def _record_stage(self, stage, stamp):
         self._stage_total += 1

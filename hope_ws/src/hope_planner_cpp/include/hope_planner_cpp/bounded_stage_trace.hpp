@@ -18,7 +18,7 @@ class BoundedStageTrace {
  public:
   void configure(std::string path, std::size_t capacity = 65536) {
     if (path.empty()) return;
-    if (!capacity || capacity > 65536) throw std::invalid_argument("invalid trace capacity");
+    if (!capacity || capacity > 1048576) throw std::invalid_argument("invalid trace capacity");
     std::ofstream probe(path);
     if (!probe) throw std::invalid_argument("stage trace path is not writable");
     path_ = std::move(path);

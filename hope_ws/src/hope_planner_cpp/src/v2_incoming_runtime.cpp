@@ -32,7 +32,10 @@ V2IncomingRuntime::V2IncomingRuntime(rclcpp::Node& node, const BallPhysics& phys
     throw std::invalid_argument("v2_incoming requires explicit registered base calibration/world identities");
   base_calibration_ = calibration; base_world_ = world;
   producer_ = text("producer_id", "v2-incoming-planner");
-  accounting_.configure(text("stage_trace_path"));
+  const auto trace_capacity = node.declare_parameter<std::int64_t>("v2_incoming.stage_trace_capacity", 65536);
+  if (trace_capacity < 1 || trace_capacity > 1048576)
+    throw std::invalid_argument("stage_trace_capacity must be in [1,1048576]");
+  accounting_.configure(text("stage_trace_path"), static_cast<std::size_t>(trace_capacity));
   continuous_output_ = node.declare_parameter("v2_incoming.continuous_output", true);
   full_rate_hz_ = node.declare_parameter("v2_incoming.full_output_rate_hz", 50.);
   if (!std::isfinite(full_rate_hz_) || full_rate_hz_ < 0 || full_rate_hz_ > 300)
