@@ -15,6 +15,26 @@ import numpy as np
 from ppq004_dataset import sha256
 
 
+def outgoing_crossing(before, after, net_x, net_height, radius):
+    """Require a forward net-plane crossing, then report ball-surface clearance."""
+    if not before[0] < net_x <= after[0]:
+        return None
+    fraction = (net_x - before[0]) / (after[0] - before[0])
+    point = np.asarray(before) + fraction * (np.asarray(after) - before)
+    return dict(
+        position_table=point.tolist(), clearance_m=float(point[2] - radius - net_height)
+    )
+
+
+def engaged_identity(level, lifecycle, expected):
+    """Credit only the command that owns the active frozen policy swing."""
+    return (
+        level == 1
+        and expected is not None
+        and tuple(map(int, lifecycle[:2])) == expected
+    )
+
+
 def simulate(repo, library, scenario, output):
     import mujoco
 
@@ -43,6 +63,14 @@ def simulate(repo, library, scenario, output):
     lib.ppq_wire.restype = ctypes.c_int
     lib.ppq_step.argtypes = [ctypes.c_void_p, vec, vec]
     lib.ppq_step.restype = ctypes.c_int
+    ids = np.ctypeslib.ndpointer(dtype=np.uint64, flags="C_CONTIGUOUS")
+    lib.ppq_lifecycle.argtypes = [ctypes.c_void_p, ids]
+    lib.ppq_geometry.argtypes = [ctypes.c_void_p, vec]
+    lib.ppq_lifecycle.restype = None
+    lib.ppq_geometry.restype = None
+    lifecycle = np.zeros(8, dtype=np.uint64)
+    geometry = np.zeros(16)
+    expected_identity = None
     policies = repo / "hope_training/whole_body_tracking/checkpoints"
     p = lib.ppq_create(
         str(policies / "policy.onnx").encode(), str(policies / "deploy.yaml").encode()
@@ -84,7 +112,8 @@ def simulate(repo, library, scenario, output):
     decoded_attempts = set()
     launched = False
     landings = {}
-    net = False
+    net_contacts = set()
+    outgoing_crossings = {}
     max_tilt = 0.0
     max_lateness = 0.0
     launch_ticks = [25 + 125 * i for i in range(int(scenario.get("repetitions", 1)))]
@@ -120,6 +149,7 @@ def simulate(repo, library, scenario, output):
                 wire[19] = lib.ppq_home(p)
                 wire[14] += attempt
                 wire[15] += 1000 * attempt
+                expected_identity = (int(wire[14]), int(wire[15]))
                 if lib.ppq_wire(p, wire, len(wire)) == 1:
                     decoded_attempts.add(attempt)
                 scene._set_ball(
@@ -130,6 +160,14 @@ def simulate(repo, library, scenario, output):
                     scenario.get("ball_spin", [0.0, 0.0, 0.0])
                 )
                 launched = True
+            mujoco.mj_kinematics(m, d)
+            racket_before_policy = (
+                d.site_xpos[scene.racket_site_id].copy() - policy_shift
+            )
+            ball_before_policy = (
+                d.qpos[scene.ball_qpos_address : scene.ball_qpos_address + 3].copy()
+                - policy_shift
+            )
             state = np.concatenate(
                 [
                     d.qpos[qa],
@@ -143,7 +181,9 @@ def simulate(repo, library, scenario, output):
             level = lib.ppq_step(p, np.ascontiguousarray(state), command)
             if level < 0:
                 raise RuntimeError("policy step failed")
-            if level == 1 and attempt >= 0:
+            lib.ppq_lifecycle(p, lifecycle)
+            lib.ppq_geometry(p, geometry)
+            if engaged_identity(level, lifecycle, expected_identity) and attempt >= 0:
                 engaged_attempts.add(attempt)
             for _ in range(steps):
                 torque = (
@@ -167,7 +207,28 @@ def simulate(repo, library, scenario, output):
                         * scenario["magnus_k"]
                         * np.cross(spatial[:3], spatial[3:])
                     )
+                before_ball = (
+                    d.qpos[scene.ball_qpos_address : scene.ball_qpos_address + 3].copy()
+                    - scene.offset
+                )
                 mujoco.mj_step(m, d)
+                after_ball = (
+                    d.qpos[scene.ball_qpos_address : scene.ball_qpos_address + 3]
+                    - scene.offset
+                )
+                if (
+                    any(c["attempt"] == attempt for c in contacts)
+                    and attempt not in outgoing_crossings
+                ):
+                    crossing = outgoing_crossing(
+                        before_ball,
+                        after_ball,
+                        scene.net_x_table,
+                        scene.net_height,
+                        scene.ball_radius,
+                    )
+                    if crossing is not None:
+                        outgoing_crossings[attempt] = crossing
                 if launched:
                     for c in range(d.ncon):
                         contact = d.contact[c]
@@ -190,7 +251,7 @@ def simulate(repo, library, scenario, output):
                                 )
                             )
                         if scene.net_geom_id in geoms:
-                            net = True
+                            net_contacts.add(attempt)
                         if (
                             any(c["attempt"] == attempt for c in contacts)
                             and scene.table_geom_id in geoms
@@ -218,6 +279,20 @@ def simulate(repo, library, scenario, output):
                     time_s=float(d.time),
                     level=level,
                     policy_status=lib.ppq_status(p).decode(),
+                    policy_lifecycle=lifecycle.tolist(),
+                    expected_command_identity=expected_identity,
+                    policy_target=geometry[1:4].tolist(),
+                    policy_racket_fk=geometry[4:7].tolist() if geometry[0] else None,
+                    mujoco_racket_before_policy=racket_before_policy.tolist(),
+                    ball_before_policy=ball_before_policy.tolist(),
+                    ball_racket_site_distance_m=float(
+                        np.linalg.norm(ball_before_policy - racket_before_policy)
+                    ),
+                    racket_fk_residual_m=float(
+                        np.linalg.norm(geometry[4:7] - racket_before_policy)
+                    )
+                    if geometry[0]
+                    else None,
                     tilt_deg=tilt,
                     base=d.qpos[root : root + 3].tolist(),
                     ball_table=(
@@ -238,7 +313,9 @@ def simulate(repo, library, scenario, output):
         decoded=len(decoded_attempts) == len(launch_ticks),
         engaged=len(engaged_attempts) == len(launch_ticks),
         racket_contact=len({c["attempt"] for c in contacts}) == len(launch_ticks),
-        net_clearance=bool(contacts) and not net,
+        net_clearance=len(outgoing_crossings) == len(launch_ticks)
+        and not net_contacts
+        and all(c["clearance_m"] > 0 for c in outgoing_crossings.values()),
         landing=len(landing_errors) == len(launch_ticks)
         and all(
             e <= scenario.get("landing_tolerance_m", 0.2)
@@ -291,7 +368,36 @@ def simulate(repo, library, scenario, output):
         max_tilt_deg=max_tilt,
         max_wall_lateness_s=max_lateness,
         recovery_between_balls=recovery,
+        outgoing_net_crossings=outgoing_crossings,
+        net_contact_attempts=sorted(net_contacts),
+        sampled_closest_ball_site_distance_m={
+            i: min(r["ball_racket_site_distance_m"] for r in rows if r["attempt"] == i)
+            for i in range(attempt + 1)
+        },
+        distance_sampling_scope="Same-instant 20 ms policy samples; not a contact-time or sub-step closest-distance measurement",
+        first_contact_errors=[
+            dict(
+                attempt=i,
+                ball_center_to_command_point_error_m=float(
+                    np.linalg.norm(
+                        np.asarray(
+                            next(c for c in contacts if c["attempt"] == i)["position"]
+                        )
+                        - policy_shift
+                        - np.asarray(scenario["wire"])[3:6]
+                    )
+                ),
+                timing_error_s=next(c for c in contacts if c["attempt"] == i)["time_s"]
+                - launch_ticks[i] * 0.02
+                - scenario["contact_lead_s"],
+            )
+            for i in sorted({c["attempt"] for c in contacts})
+        ],
         attempts=attempt + 1,
+        decoded_attempts=sorted(decoded_attempts),
+        engaged_attempts=sorted(engaged_attempts),
+        engagement_evidence="Active frozen command sequence AND flight ID, not level alone",
+        racket_control_point_scope="Policy FK versus provided MuJoCo site diagnostic; no physical registration claim",
         physical_execution="NOT_RUN",
         scenario=scenario,
         hashes={

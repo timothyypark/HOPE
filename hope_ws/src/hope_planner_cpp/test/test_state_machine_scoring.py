@@ -107,3 +107,24 @@ def test_paired_diagnostics_retain_unmatched_cutoffs():
     assert result["reference_only"] == 1
     assert result["paired_arcs"][0]["difference_m"] == pytest.approx(0.01)
     assert compare({}, {})["status"] == "NOT_COVERED"
+
+
+def test_ongoing_swing_cannot_credit_a_new_command():
+    from ppq004_coupled_simulation import engaged_identity
+
+    # A second target has been decoded while the first flight still owns the swing.
+    frozen_first = [17, 101, 1, 3, 0, 0, 18, 102]
+    assert engaged_identity(1, frozen_first, (17, 101))
+    assert not engaged_identity(1, frozen_first, (18, 102))
+    assert not engaged_identity(0, frozen_first, (17, 101))
+
+
+def test_no_net_collision_is_not_evidence_of_net_clearance():
+    from ppq004_coupled_simulation import outgoing_crossing
+
+    assert outgoing_crossing([0, 0, 1], [1, 0, 1], 1.37, 0.1525, 0.02) is None
+    assert outgoing_crossing([2, 0, 1], [1, 0, 1], 1.37, 0.1525, 0.02) is None
+    low = outgoing_crossing([1, 0, 0.1], [2, 0, 0.1], 1.37, 0.1525, 0.02)
+    assert low["clearance_m"] < 0
+    high = outgoing_crossing([1, 0, 0.3], [2, 0, 0.3], 1.37, 0.1525, 0.02)
+    assert abs(high["clearance_m"] - 0.1275) < 1e-12
