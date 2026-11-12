@@ -71,9 +71,13 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--trace',type=Path,required=True);p.add_argument('--annotations',type=Path,required=True)
     p.add_argument('--frames',type=int,required=True);p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--recording-id',required=True)
     a=p.parse_args()
     with a.trace.open() as f:
-        result=score((json.loads(line) for line in f),[json.loads(line) for line in a.annotations.read_text().splitlines()],a.frames)
+        labels=[json.loads(line) for line in a.annotations.read_text().splitlines()]
+        labels=[row for row in labels if row['recording_id']==a.recording_id]
+        result=score((json.loads(line) for line in f),labels,a.frames)
+        result['recording_id']=a.recording_id
     a.output.write_text(json.dumps(result,indent=2)+'\n')
     return int(result['verdict']=='FAIL')
 

@@ -593,6 +593,303 @@
         "ROS CTest",
         "verify_integrated.sh"
       ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/config/ppq004_validation.yaml",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/docs/ppq004_local_validation.md",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/docs/ppq004_physical_protocol.md",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/docs/ppq004_requirements.json",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/docs/ppq004_validation_contract.md",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/build_ppq004_policy_bridge.sh",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_annotations.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_campaign.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_coupled_simulation.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_dataset.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_forecast_score.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_plots.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_prepare.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_reference_check.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_replay.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_report.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_scenarios.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/state_machine_scoring.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/verify_ppq004.sh",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/fixtures/ppq004/retained_losses.json",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/fixtures/ppq004/reviewed_intervals.jsonl",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/ppq004_policy_bridge.cpp",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/ppq004_ros_source.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/ppq004_state_replay.cpp",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/test_ppq004_dataset.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/test_ppq004_state_contract.cpp",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/test/test_state_machine_scoring.py",
+      "owner": "recorded validation",
+      "why_needed": "PPQ004 measured replay, causal scoring, bounded evidence or coupled software simulation; physical capture stays separate",
+      "tests": [
+        "ppq004_dataset",
+        "ppq004_state_contract",
+        "ppq004_state_scoring",
+        "verify_ppq004.sh"
+      ]
     }
   ]
 }

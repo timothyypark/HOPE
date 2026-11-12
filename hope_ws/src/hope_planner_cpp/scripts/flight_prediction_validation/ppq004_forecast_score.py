@@ -55,13 +55,16 @@ def score(source,replay,annotations,output,split):
     arc_rms=[float(np.sqrt(np.mean(np.square(values)))) for values in groups.values()]
     rng=np.random.default_rng(1226)
     bootstrap=[float(np.median(rng.choice(arc_rms,len(arc_rms),replace=True))) for _ in range(1000)] if arc_rms else []
+    target=json.loads((Path(__file__).resolve().parents[2]/'config/ppq004_validation.yaml').read_text())['recorded_accuracy_targets']
+    stats=statistics(arc_rms)
+    diagnostic_pass=bool(arc_rms) and stats['median']<=target['median_arc_rms_limit_m'] and stats['p95']<=target['p95_arc_rms_limit_m'] and len(groups)/max(1,len(episodes))>=target['minimum_arc_coverage']
     result=dict(evidence_type='measured_recording',truth_kind='recorded_proxy',gate_p='NOT_RUN_RECORDED_PROXY',
         split=split,lead_window_ms=[10,150],source_cutoffs_offered=offered,source_cutoffs_scored=available,
-        arcs_offered=len(episodes),arcs_scored=len(groups),arc_rms_m=statistics(arc_rms),
+        arcs_offered=len(episodes),arcs_scored=len(groups),arc_rms_m=stats,acceptance=target,
         paired_unit='screened observed arc; physical boundary is unqualified',
         median_arc_rms_bootstrap_95=np.quantile(bootstrap,[.025,.975]).tolist() if bootstrap else None,
-        reasons=dict(reasons),verdict='NOT_COVERED' if not arc_rms else 'INCONCLUSIVE',
-        reason='Descriptive recorded proxy; model-adoption acceptance must be frozen separately',
+        reasons=dict(reasons),verdict='NOT_COVERED' if not arc_rms else 'PASS' if diagnostic_pass else 'FAIL',
+        reason='Frozen conditional recorded-proxy diagnostic; not full availability or model adoption',
         input_hashes={'annotation':sha256(annotations),'replay_receipt':sha256(replay/'receipt.json')},
         per_arc={k:dict(samples=len(v),rms_m=float(np.sqrt(np.mean(np.square(v))))) for k,v in groups.items()})
     (output/'results.json').write_text(json.dumps(result,indent=2)+'\n');return result

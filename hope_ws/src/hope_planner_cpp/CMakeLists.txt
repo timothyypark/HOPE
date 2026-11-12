@@ -462,6 +462,8 @@ if(BUILD_TESTING)
   ament_add_pytest_test(qualification_accounting test/test_qualification_accounting.py)
   ament_add_pytest_test(lifecycle_observer test/test_lifecycle_observer.py)
   ament_add_pytest_test(coverage_outcome_audit test/test_coverage_outcome_audit.py)
+  ament_add_pytest_test(ppq004_dataset test/test_ppq004_dataset.py)
+  ament_add_pytest_test(ppq004_state_scoring test/test_state_machine_scoring.py)
   ament_add_pytest_test(qualification_relay_shutdown test/test_relay_shutdown.py)
   set_tests_properties(qualification_relay_shutdown PROPERTIES RUN_SERIAL TRUE
     ENVIRONMENT "ROS_DOMAIN_ID=194;ROS_LOCALHOST_ONLY=1")

@@ -1,0 +1,91 @@
+{
+  "source_commit": "ca7176903b120993a829a91ed8fa9dfda0f9c3ad",
+  "source_path": "reports/failure-dispositions.json",
+  "source_sha256": "fa2a8e61457037861dfe966366fc84cbe31daa69023db87a41a89bb8ebe4d784",
+  "cases": [
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_300_per_ball_zero",
+      "run": "repetition-1",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_360_per_ball_unknown",
+      "run": "repetition-1",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_150_per_ball_unknown",
+      "run": "repetition-3",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_150_per_ball_zero",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_150_stable_per_ball_zero",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_360_stable_per_ball_zero",
+      "run": "repetition-4",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/raw.json",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "historical",
+      "profile": "incoming_chain_300_stable_per_ball_zero",
+      "run": "full_ros",
+      "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/raw.json.gz",
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+    },
+    {
+      "origin": "current_campaign",
+      "profile": "incoming_chain_360_fixed_unknown",
+      "run": "repetition-5",
+      "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/raw.json",
+      "raw_status": "FAIL",
+      "raw_exception": null,
+      "expected_flights": 10,
+      "useful_flights": 9,
+      "assessment": "CONFIRMED_DEFECT",
+      "basis": "Flight 9 packet has 44 exact samples. Three were typed-published within 0.661 ms but never recorded at planner receipt; exact-prefix rejection prevented a command. Missing command remains in denominator."
+    }
+  ],
+  "closure_status": "FAIL",
+  "new_campaign_cannot_erase_originals": true
+}
