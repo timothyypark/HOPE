@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "requirements": [
+    {
+      "id": "DATA",
+      "layer": "import",
+      "test": "test_ppq004_dataset.py",
+      "completion_condition": "All hashes, exact CSV/NPZ rows, absent frames and source mappings preserved",
+      "evidence_type": "measured_recording"
+    },
+    {
+      "id": "CLOCK",
+      "layer": "clocks",
+      "test": "test_ppq004_dataset.py",
+      "completion_condition": "Integer epoch mapping, duplicates, resets and ordering handled explicitly",
+      "evidence_type": "interface_fixture"
+    },
+    {
+      "id": "ANNOTATION",
+      "layer": "truth",
+      "test": "ppq004_annotations.py",
+      "completion_condition": "Every scored interval independently reviewed with source brackets and availability time",
+      "evidence_type": "measured_recording"
+    },
+    {
+      "id": "STATE",
+      "layer": "classification",
+      "test": "test_ppq004_state_contract.cpp",
+      "completion_condition": "Every declared case passes under strict and managed profiles",
+      "evidence_type": "interface_fixture"
+    },
+    {
+      "id": "REPLAY",
+      "layer": "acquisition",
+      "test": "ppq004_state_replay.cpp",
+      "completion_condition": "One owner per full take; observation-only inference; gaps advance virtual expiry",
+      "evidence_type": "measured_recording"
+    },
+    {
+      "id": "TRACE",
+      "layer": "observability",
+      "test": "test_state_machine_scoring.py",
+      "completion_condition": "Complete ordered sequence including timer transitions; truncation fails",
+      "evidence_type": "interface_fixture"
+    },
+    {
+      "id": "EVENT",
+      "layer": "physical_events",
+      "test": "test_flight_prediction_v2.cpp",
+      "completion_condition": "Causal event credit, deduplication, generation fencing and restored equivalence",
+      "evidence_type": "interface_fixture"
+    },
+    {
+      "id": "SPIN",
+      "layer": "estimation",
+      "test": "test_flight_prediction_v2.cpp",
+      "completion_condition": "Unknown spin stays unknown; causal orientation and sign equivalence",
+      "evidence_type": "interface_fixture"
+    },
+    {
+      "id": "FORECAST",
+      "layer": "accuracy",
+      "test": "compare_recordings.py",
+      "completion_condition": "Paired whole-flight metrics and frozen targets; zero-support remains uncovered",
+      "evidence_type": "measured_recording"
+    },
+    {
+      "id": "PLANE",
+      "layer": "references",
+      "test": "test_runtime_plane_reference.cpp",
+      "completion_condition": "All managed modes and stale/mismatched reference outcomes",
+      "evidence_type": "interface_fixture"
+    },
+    {
+      "id": "COMMAND",
+      "layer": "conversion",
+      "test": "incoming_conversion_probe.cpp",
+      "completion_condition": "Actual production adapter, packer and decoder agree with model truth",
+      "evidence_type": "independent_simulation"
+    },
+    {
+      "id": "PREFIX",
+      "layer": "packet_join",
+      "test": "test_v2_incoming_coordinator.cpp",
+      "completion_condition": "Exact source prefixes, bounded history, expiry and one-shot authority",
+      "evidence_type": "interface_fixture"
+    },
+    {
+      "id": "RUNNER",
+      "layer": "consumer",
+      "test": "verify_runner_revocation.sh",
+      "completion_condition": "Matching revocation vetoes pending targets; engaged continuation preserved",
+      "evidence_type": "interface_fixture"
+    },
+    {
+      "id": "ROS",
+      "layer": "delivery",
+      "test": "v2_incoming_producer_chain.py",
+      "completion_condition": "Offered flights retained; five nominal repetitions plus faults and full-take memory",
+      "evidence_type": "measured_recording"
+    },
+    {
+      "id": "LOSS",
+      "layer": "regressions",
+      "test": "coverage_outcome_audit.py",
+      "completion_condition": "All eight retained lost flights remain failures until reproduced remedy",
+      "evidence_type": "controlled_modification"
+    },
+    {
+      "id": "OUTGOING",
+      "layer": "simulation",
+      "test": "mujoco_conversion_replay.py",
+      "completion_condition": "Independent outgoing trajectories with matching command hashes",
+      "evidence_type": "independent_simulation"
+    },
+    {
+      "id": "COUPLED",
+      "layer": "execution",
+      "test": "ppq004_coupled_simulation.py",
+      "completion_condition": "Actual policy and joint feedback, detected racket contact, landing and recovery",
+      "evidence_type": "independent_simulation"
+    },
+    {
+      "id": "PHYSICAL",
+      "layer": "hardware",
+      "test": "docs/ppq004_physical_protocol.md",
+      "completion_condition": "Registered clocks, transport, joints and independent contact/landing evidence",
+      "evidence_type": "physical_capture"
+    }
+  ]
+}

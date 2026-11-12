@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "baseline_sha": "979f9aacea8d39fb5964740ec4dfd809fd247655",
+  "dataset_sha": "8dad6e7247fbc8af4219756b14523bc106212c8d",
+  "previous_qualification_sha": "96034645f26b1597c093281a398fa0e62d5c93b5",
+  "split": {
+    "development": [
+      1,
+      2
+    ],
+    "benchmark_holdout": [
+      3
+    ],
+    "blind_holdout": []
+  },
+  "states": [
+    "INVALID",
+    "OPPONENT_RALLY",
+    "RALLY",
+    "OPPONENT_SERVE",
+    "SERVE"
+  ],
+  "evidence_types": [
+    "measured_recording",
+    "controlled_modification",
+    "independent_simulation",
+    "interface_fixture",
+    "physical_capture"
+  ],
+  "profiles": [
+    "strict",
+    "managed"
+  ],
+  "nominal_ros_hz": [
+    150,
+    300
+  ],
+  "repetitions": 5,
+  "plane_modes": [
+    "fixed",
+    "per_ball",
+    "stable_per_ball"
+  ],
+  "plane_x_m": [
+    0.15
+  ],
+  "receiver_lead_s": 0.08,
+  "source_expiry_s": 0.03,
+  "synthetic_position_limit_m": 0.001,
+  "synthetic_event_limit_s": 0.0005,
+  "conversion_position_limit_m": 0.02,
+  "conversion_time_limit_s": 0.01,
+  "recorded_accuracy_targets": {
+    "status": "NOT_FROZEN",
+    "reason": "Requires development baseline and annotation uncertainty before candidate holdout scoring"
+  },
+  "spin_modes": [
+    "position_only",
+    "causal_orientation"
+  ],
+  "physics_profiles": {
+    "unchanged": {},
+    "magnus_disabled": {
+      "magnus_k": 0
+    },
+    "train_free_flight": {
+      "drag_k": 0.12509060571761474,
+      "magnus_k": 0.004018823648810745
+    }
+  },
+  "all_data_contact_gain": {
+    "value": 0.41642144985036184,
+    "status": "INCONCLUSIVE",
+    "reason": "Outside unchanged validator domain; no clamp or model adoption"
+  },
+  "physical_scope": "protocol_only",
+  "historical_lost_flights": 7,
+  "fresh_retained_lost_flights": 1,
+  "annotation_version": "ppq004-independent-v1",
+  "trace_loss_verdict": "INCONCLUSIVE",
+  "forecast_publication_exception_ms": 54.731069,
+  "per_observation_coverage": "diagnostic"
+}
