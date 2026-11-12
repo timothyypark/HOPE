@@ -3,13 +3,13 @@ import numpy as np
 from scipy.integrate import solve_ivp
 
 
-def flight(speed=5., spin='unknown', scenario='standard'):
+def flight(speed=5., spin='unknown', scenario='standard', spin_rad_s=30.):
     """Independent DOP853 plant, explicit thin-shell impulse and orientation.
 
     New fast-flight equivalents have frozen initial geometry below. They are
     not the unavailable original reviewer's exact recordings.
     """
-    omega = 30. if spin == 'known' else 0.
+    omega = float(spin_rad_s) if spin == 'known' else 0.
     drag = 0. if scenario in ['net_clear', 'net_collision'] else .12861635416914574
     def rhs(w):
         def derivative(_, s):
