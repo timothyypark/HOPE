@@ -258,3 +258,19 @@ TEST(V2IncomingDecisionObserver, InstrumentationPreservesForecastAndKeepsRepeate
   EXPECT_EQ(fa.forecast.belief.covariance,fb.forecast.belief.covariance);
   traced.set_decision_observer({});
 }
+
+
+TEST(V2IncomingDecisionObserver, ReferenceTransitionsRetainReceiptClock) {
+  IncomingSourceContract ids{"session", "table", "fixture", "simulation", "clock", "ball"};
+  V2IncomingCoordinator owner({}, {}, ids);
+  std::vector<IncomingDecision> rows;
+  owner.set_decision_observer([&](const auto& row){rows.push_back(row);});
+  constexpr std::int64_t receipt = 1800000000123456789LL;
+  EXPECT_TRUE(owner.update_reference([]{return std::make_pair(7ULL,true);}, receipt));
+  ASSERT_EQ(rows.size(), 2u);
+  EXPECT_STREQ(rows[0].phase.data(), "before_reference");
+  EXPECT_STREQ(rows[1].phase.data(), "after_reference");
+  EXPECT_EQ(rows[0].receipt_ns, receipt);
+  EXPECT_EQ(rows[1].receipt_ns, receipt);
+  EXPECT_EQ(rows[0].sequence + 1, rows[1].sequence);
+}

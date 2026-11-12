@@ -293,11 +293,11 @@ void V2IncomingCoordinator::unavailable_locked(const std::string& reason, Incomi
   else statuses_.push_back(std::move(status));
 }
 bool V2IncomingCoordinator::update_reference(
-    const std::function<std::pair<std::uint64_t, bool>()>& update) {
+    const std::function<std::pair<std::uint64_t, bool>()>& update, std::int64_t receipt_ns) {
   std::lock_guard<std::mutex> lock(mutex_);
   const auto source=history_.empty()?0:history_.back().source_time_ns;
-  decision_locked("before_reference",source,0);
-  DecisionScope decision{*this,"after_reference",source,0};
+  decision_locked("before_reference",source,receipt_ns);
+  DecisionScope decision{*this,"after_reference",source,receipt_ns};
   const auto [epoch, valid] = update();
   const bool changed = !reference_received_ || epoch != home_epoch_ || valid != reference_valid_;
   if (epoch != home_epoch_) revoke_locked("HOME_CHANGED");

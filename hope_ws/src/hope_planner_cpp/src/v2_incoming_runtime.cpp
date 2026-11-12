@@ -80,7 +80,7 @@ V2IncomingRuntime::V2IncomingRuntime(rclcpp::Node& node, const BallPhysics& phys
         wake();
       });
   expiry_ = node.create_wall_timer(std::chrono::milliseconds(5), [this, reference] {
-    owner_->update_reference(reference);
+    owner_->update_reference(reference, node_.now().nanoseconds());
     owner_->expire(node_.now().nanoseconds());
     flush_statuses();
   });
@@ -103,7 +103,7 @@ void V2IncomingRuntime::trace(const char* stage, std::int64_t source,
 
 void V2IncomingRuntime::update_reference(
     const std::function<std::pair<std::uint64_t, bool>()>& update) {
-  if (owner_->update_reference(update)) pending_.store(true);
+  if (owner_->update_reference(update, node_.now().nanoseconds())) pending_.store(true);
 }
 
 void V2IncomingRuntime::candidate(const V2StrikeCandidate& value) {
