@@ -73,6 +73,71 @@ balance and successive-ball recovery are distinct gates. See
 The scenario generator selects one decoded command per recording and adds modeled
 yaw, translation and initial base velocity. Independent 12 m/s and 180 rad/s
 sources pass through the native production command path before dynamic replay;
-they are synthetic extensions, not extra measured PPQ004 exposures. No decoded
+they are synthetic extensions, not extra measured PPQ004 exposures. A scenario without a decoded
 target is reported as NOT_COVERED. Future recorded positions are retained for
 a separate incoming proxy comparison and never drive the simulated ball.
+
+
+## Selected-upstream lint comparison
+
+The regression ladder retains inherited lint failures and compares their findings
+against the exact selected upstream source. Set `HOPE_SELECTED_UPSTREAM_BUILD` to
+that separate baseline result directory before the campaign. The November 12
+comparison used upstream `91aecabfd44cb258ac998158e724be9017d883a7`.
+This comparison does not constitute a full upstream ROS build/test.
+
+```bash
+source /opt/ros/jazzy/setup.bash
+PPQ_BASELINE_SOURCE=/absolute/new/selected-upstream-source
+PPQ_BASELINE_RESULTS=/absolute/new/selected-upstream-lint
+git worktree add --detach "$PPQ_BASELINE_SOURCE" 91aecabfd44cb258ac998158e724be9017d883a7
+mkdir -p "$PPQ_BASELINE_RESULTS/hope_bringup/test_results/hope_bringup"
+(
+  cd "$PPQ_BASELINE_SOURCE/hope_ws/src/hope_bringup"
+  /opt/ros/jazzy/bin/ament_flake8 --xunit-file "$PPQ_BASELINE_RESULTS/hope_bringup/test_results/hope_bringup/flake8.xunit.xml"
+  /opt/ros/jazzy/bin/ament_pep257 --xunit-file "$PPQ_BASELINE_RESULTS/hope_bringup/test_results/hope_bringup/pep257.xunit.xml"
+)
+export HOPE_SELECTED_UPSTREAM_BUILD="$PPQ_BASELINE_RESULTS"
+```
+
+Both lint commands may return failure; preserve both XML results. Use the same
+ament tool versions and package working directory as the candidate. A missing
+baseline is an incomplete comparison, not permission to waive a new finding.
+
+## Additional diagnostics and immutable report rendering
+
+`ppq004_event_diagnostics.py` joins confirmed native events to the independent
+position-contact brackets, retains unmatched and multiply matched events, measures
+classification delay after annotation availability, and reports spin availability
+across source gaps. These are recorded-proxy diagnostics, not independent spin
+or event-time measurements. Source/generation violations fail separately.
+
+The coupled trace binds engagement to the frozen command sequence and flight ID.
+It compares policy racket FK with the provided MuJoCo racket site at the same
+simulation instant. A net-clearance pass requires an actual outgoing crossing
+after racket contact. Ball-center distance to the command point and contact-time
+error are retained as diagnostics; they do not establish physical registration.
+
+To produce additional plots without changing frozen receipts:
+
+```bash
+"$HOPE_PPQ004_PYTHON" hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_render.py \
+  /absolute/completed/ppq004-campaign /absolute/new/review-report
+```
+
+The generated index links back to the original receipts. Keep these directories
+in the same relative layout when sharing the report. Optional repeated
+`--supplementary /absolute/path/results.json` arguments link separately executed
+follow-up checks while preserving the original campaign source binding.
+
+The native recorded replay uses the configured fixed plane at X=0.15 m and a
+corresponding reference fixture at X=-0.43 m. The recorded ROS source uses HOME
+X=-0.50 m with a 0.58 m distance, so its effective initial shared-reference plane
+is X=0.08 m. The nominal ROS modes all receive that same stationary fixture.
+These are separately declared scenarios; native/ROS output counts are not a
+paired comparison at an identical plane. Actual candidate plane coordinates and
+HOME identities remain in the raw ROS receipts.
+The short-prefix public-method comparison also includes X=0.08 m so the ROS
+fixture's effective plane has a separately identified crossing diagnostic.
+This still does not establish an independently eligible physical-flight
+opportunity or substitute short-prefix results for persistent ROS replay.

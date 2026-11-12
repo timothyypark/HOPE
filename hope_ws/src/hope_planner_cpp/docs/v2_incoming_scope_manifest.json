@@ -960,6 +960,26 @@
         "scorer-controls",
         "verify_ppq004.sh"
       ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_detail_plots.py",
+      "owner": "recorded validation",
+      "why_needed": "Source-causal diagnostic scoring and immutable report rendering with explicit missing evidence",
+      "tests": [
+        "ppq004_event_diagnostics",
+        "scorer-controls",
+        "verify_ppq004.sh"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_render.py",
+      "owner": "recorded validation",
+      "why_needed": "Source-causal diagnostic scoring and immutable report rendering with explicit missing evidence",
+      "tests": [
+        "ppq004_event_diagnostics",
+        "scorer-controls",
+        "verify_ppq004.sh"
+      ]
     }
   ]
 }

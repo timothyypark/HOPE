@@ -4,18 +4,24 @@ import argparse
 import html
 from fnmatch import fnmatch
 import json
+import os
 from pathlib import Path
 
 
 REQUIREMENT_GATES = {
     "DATA": ["data-integrity", "prepare", "scorer-controls"],
-    "CLOCK": ["scorer-controls", "ros-fault-clock_backstep", "ros-fault-duplicate"],
+    "CLOCK": [
+        "scorer-controls",
+        "ros-fault-clock_backstep/fault-response",
+        "ros-fault-duplicate/fault-response",
+    ],
     "ANNOTATION": ["annotations", "state-managed-*", "state-strict-*"],
     "STATE": ["controlled-states", "integrated/native-test"],
     "REPLAY": ["managed", "strict"],
     "TRACE": ["scorer-controls", "ros-full-take-*"],
-    "EVENT": ["integrated/native-test"],
+    "EVENT": ["integrated/native-test", "event-spin-diagnostics"],
     "SPIN": [
+        "event-spin-diagnostics",
         "integrated/native-test",
         "position-only",
         "managed",
@@ -26,13 +32,13 @@ REQUIREMENT_GATES = {
         "integrated/native-test",
         "ros-*-per_ball",
         "ros-*-stable_per_ball",
-        "ros-fault-home_change",
+        "ros-fault-home_change/fault-response",
     ],
     "COMMAND": ["conversion", "complete-command-opportunities"],
     "PREFIX": [
         "integrated/native-test",
-        "ros-fault-typed_loss",
-        "ros-fault-typed_delay",
+        "ros-fault-typed_loss/fault-response",
+        "ros-fault-typed_delay/fault-response",
     ],
     "RUNNER": ["runner-lifecycle"],
     "ROS": ["ros-*-150-*", "ros-*-300-*", "ros-fault-*", "ros-full-take-*"],
@@ -80,11 +86,38 @@ def requirement_results(gates, requirements):
     return rows
 
 
-def report(root):
+def receipt_link(root, name, gate):
+    candidates = [
+        root / name / "result.json",
+        root / name / "results.json",
+        root / name / "receipt.json",
+    ]
+    if gate["status"] == "FAIL":
+        candidates = [
+            path
+            for path in sorted((root / name).glob("*.stderr"))
+            if path.stat().st_size
+        ] + candidates
+    if name.startswith("state-"):
+        candidates.append(root / ("state-score-" + name[len("state-") :] + ".json"))
+    if gate.get("log"):
+        candidates.extend(
+            [root / gate["log"], (root / gate["log"]).with_suffix(".exit")]
+        )
+    candidates.append(root / "results.json")
+    return next(path for path in candidates if path.is_file())
+
+
+def report(root, output=None):
+    output = output or root
+
+    def href(path):
+        return html.escape(os.path.relpath(path, output), quote=True)
+
     results = json.loads((root / "results.json").read_text())
     rows = []
     for name, gate in results["gates"].items():
-        link = html.escape(gate.get("log", "results.json"), quote=True)
+        link = href(receipt_link(root, name, gate))
         rows.append(
             "<tr><td>"
             + html.escape(name)
@@ -145,17 +178,19 @@ def report(root):
     payload = json.dumps(timeline).replace("<", "\\u003c")
     figures = "".join(
         '<figure><img style="max-width:100%" src="'
-        + html.escape(p.name, quote=True)
+        + href(p)
         + '"><figcaption>'
         + html.escape(p.name)
         + "</figcaption></figure>"
-        for p in sorted(root.glob("*.png"))
+        for p in sorted(
+            {p.name: p for p in [*root.glob("*.png"), *output.glob("*.png")]}.values()
+        )
     )
     text = (
         """<!doctype html><meta charset="utf-8"><title>PPQ004 validation evidence</title>
 <style>body{font:16px system-ui;max-width:1200px;margin:32px auto;padding:0 20px}table{border-collapse:collapse;width:100%}td,th{padding:8px;border-bottom:1px solid #ddd;text-align:left}pre{white-space:pre-wrap}a{color:#1254a1}select{padding:8px}</style>
 <h1>PPQ004 validation evidence</h1><p>Recorded proxy, controlled fixtures, simulation and physical evidence are separate. Missing evidence never counts as a pass.</p>
-<p><a href="results.json">Machine-readable results and source binding</a> · <a href="campaign.json">Frozen campaign</a></p>
+<p><a href="RESULTS_LINK">Machine-readable results and source binding</a> · <a href="CAMPAIGN_LINK">Frozen campaign</a></p>
 <table><thead><tr><th>Gate</th><th>Status</th><th>Evidence</th><th>Receipt</th><th>Limits</th></tr></thead><tbody>"""
         + "".join(rows)
         + "</tbody></table><h2>Requirement coverage</h2><table><tr><th>Requirement</th><th>Status</th><th>Completion condition</th><th>Evidence gates</th></tr>"
@@ -171,8 +206,11 @@ def report(root):
         + payload
         + """;const filter=document.getElementById('filter');function draw(){document.getElementById('timeline').textContent=data.filter(r=>filter.value==='All'||r.state===filter.value).map(r=>JSON.stringify(r)).join('\\n')}filter.onchange=draw;draw();</script>"""
     )
-    (root / "index.html").write_text(text)
-    return root / "index.html"
+    text = text.replace("RESULTS_LINK", href(root / "results.json")).replace(
+        "CAMPAIGN_LINK", href(root / "campaign.json")
+    )
+    (output / "index.html").write_text(text)
+    return output / "index.html"
 
 
 if __name__ == "__main__":
