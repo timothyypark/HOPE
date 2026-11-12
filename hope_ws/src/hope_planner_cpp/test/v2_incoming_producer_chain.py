@@ -169,7 +169,7 @@ def run(args):
     args.output.mkdir(parents=True, exist_ok=False)
     contract = {
         'version': 3,
-        'source_cadence': 'resynchronize without catch-up; actual rate >=95% requested; spacing >=half period',
+        'source_cadence': ('original measured deadlines; late frames retain original source time; 150 Hz decimation' if recorded else 'resynchronize without catch-up; actual rate >=95% requested; spacing >=half period'),
         'rate_hz': args.rate,
         'mode': args.mode,
         'spin': args.spin,
@@ -235,7 +235,7 @@ def run(args):
             [
                 ('publish_tf', 'false'),
                 ('input_history_depth', 8),
-                ('ball_calibration_id', 'SYNTHETIC_INCOMING'),
+                ('ball_calibration_id', 'WRONG_CALIBRATION' if recorded and args.recorded_fault=='wrong_calibration' else 'SYNTHETIC_INCOMING'),
                 ('ball_orientation_authoritative', str(args.spin != 'unknown').lower()),
                 ('planner_poses_topic', '/poses/planner_full'),
                 ('test.stage_trace_path', args.output / 'relay.tsv'),
@@ -681,6 +681,6 @@ if __name__ == '__main__':
     parser.add_argument('--recorded-observations',type=Path)
     parser.add_argument('--recording-id',choices=['ppq004_part1','ppq004_part2','ppq004_part3'],default='ppq004_part3')
     parser.add_argument('--recorded-max-seconds',type=float)
-    parser.add_argument('--recorded-fault',choices=['none','source_gap','spike','missing_orientation','quaternion_sign','duplicate','clock_backstep','wrong_frame','typed_loss','typed_delay','worker_stall','decoder_delay','home_change','source_silence'],default='none')
+    parser.add_argument('--recorded-fault',choices=['none','short_gap','long_gap','reordered','wrong_calibration','source_gap','spike','missing_orientation','quaternion_sign','duplicate','clock_backstep','wrong_frame','typed_loss','typed_delay','worker_stall','decoder_delay','home_change','source_silence'],default='none')
     mp.set_start_method('spawn')
     raise SystemExit(run(parser.parse_args()))

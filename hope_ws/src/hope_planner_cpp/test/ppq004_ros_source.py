@@ -115,7 +115,8 @@ def recorded_source(rate, spin, stop, ready, reference_ready, queue, options):
         fault = options.get("fault", "none")
         i = r["source_index"]
         present = ball["available"]
-        if fault == "source_gap" and anchor <= i < anchor + 15:
+        gap_frames = {"short_gap": 3, "source_gap": 15, "long_gap": 150}.get(fault, 0)
+        if gap_frames and anchor <= i < anchor + gap_frames:
             present = False
         if present:
             pose = NamedPose()
@@ -142,6 +143,9 @@ def recorded_source(rate, spin, stop, ready, reference_ready, queue, options):
         if fault == "duplicate" and i == anchor and rows:
             stamp = rows[-1]["source_ns"]
             m.header.stamp.sec, m.header.stamp.nanosec = divmod(stamp, 10**9)
+        if fault == "reordered" and i in (anchor, anchor + 1):
+            stamp += 3333333 if i == anchor else -3333333
+            m.header.stamp.sec, m.header.stamp.nanosec = divmod(stamp, 10**9)
         if fault == "clock_backstep" and i == anchor:
             stamp -= 100000000
             m.header.stamp.sec, m.header.stamp.nanosec = divmod(stamp, 10**9)
@@ -165,6 +169,7 @@ def recorded_source(rate, spin, stop, ready, reference_ready, queue, options):
                 offered_ns=time.time_ns(),
                 intended_steady_ns=due,
                 present=present,
+                original_present=ball["available"],
                 physical_flight_id=None,
                 command_opportunity="UNANNOTATED",
                 parent_sha256=r["parent_sha256"],
@@ -248,10 +253,13 @@ def recorded_result(raw, output):
         observer["decisions.tsv"] = str(error)
     ball = {r["source_ns"] for r in offered if r["present"]}
     losses = {
-        stage: len(ball - values)
-        for stage, values in by_stage.items()
-        if stage
-        in ("relay_receipt", "typed_published", "planner_received", "tracker_accepted")
+        stage: len(ball - by_stage.get(stage, set()))
+        for stage in (
+            "relay_receipt",
+            "typed_published",
+            "planner_received",
+            "tracker_accepted",
+        )
     }
     received = raw["received"]
     commands = [r for r in received["commands"] if r[1] == 1.0]
@@ -296,7 +304,8 @@ def recorded_result(raw, output):
         status="NOT_COVERED"
         if not commands
         else "PASS"
-        if len(command_rows) == len(commands) and all(
+        if len(command_rows) == len(commands)
+        and all(
             0 <= int(r["wall_ns"]) - int(r["source_ns"]) <= 30000000
             for r in command_rows
         )
@@ -304,9 +313,22 @@ def recorded_result(raw, output):
         else "FAIL",
         scope="Publication freshness and unique internal HOME/flight identity only; physical-flight eligibility remains unqualified",
     )
+    fault_control = dict(
+        status="NOT_COVERED",
+        scope="See source transformation and native invariant tests",
+    )
+    if raw["source"].get("transformation") == "wrong_calibration":
+        fault_control = dict(
+            status="PASS"
+            if not commands and not by_stage.get("tracker_accepted")
+            else "FAIL",
+            scope="Mismatched calibration cannot qualify observations or authorize a new command",
+        )
     result = dict(
         status="FAIL"
-        if raw["exception"] or raw_authority["status"] == "FAIL"
+        if raw["exception"]
+        or raw_authority["status"] == "FAIL"
+        or fault_control["status"] == "FAIL"
         else "PASS"
         if complete
         else "INCONCLUSIVE",
@@ -328,6 +350,7 @@ def recorded_result(raw, output):
         if command_sources
         else None,
         publication_authority=raw_authority,
+        fault_control=fault_control,
         resources=raw.get("resources"),
         stage_counts=dict(
             __import__("collections").Counter(r["stage"] for r in stage_rows)
