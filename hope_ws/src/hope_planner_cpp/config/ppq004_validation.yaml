@@ -51,8 +51,15 @@
   "conversion_position_limit_m": 0.02,
   "conversion_time_limit_s": 0.01,
   "recorded_accuracy_targets": {
-    "status": "NOT_FROZEN",
-    "reason": "Requires development baseline and annotation uncertainty before candidate holdout scoring"
+    "status": "FROZEN_DEVELOPMENT_SCREEN",
+    "truth_kind": "recorded_proxy",
+    "metric": "10-150 ms future-position RMS, grouped by screened observed arc",
+    "median_arc_rms_limit_m": 0.02,
+    "p95_arc_rms_limit_m": 0.04,
+    "minimum_arc_coverage": 0.13821138211382114,
+    "development_receipt": "development-score-01: 34/246 arcs; median .01283078895 m, p95 .02594791658 m",
+    "scope": "Conditional forecast diagnostic, not complete-chain acceptance or model adoption",
+    "frozen_before": "candidate benchmark-holdout scoring"
   },
   "spin_modes": [
     "position_only",

@@ -6,7 +6,7 @@ import subprocess
 from ppq004_dataset import sha256
 
 
-def replay(prepared, executable, output, profile='managed', spin=True, sets=(), forecast_stride=6, plane_x=.15):
+def replay(prepared, executable, output, profile='managed', spin=True, sets=(), forecast_stride=6, plane_x=.15, command_fixtures=False):
     prepared, executable, output=map(Path,(prepared,executable,output))
     manifest=json.loads((prepared/'manifest.json').read_text())
     if sha256(prepared/'observations.jsonl')!=manifest['files']['observations.jsonl']:
@@ -14,7 +14,7 @@ def replay(prepared, executable, output, profile='managed', spin=True, sets=(), 
     output.mkdir(parents=True,exist_ok=False)
     receipt=dict(schema='ppq004-native-replay-v1',evidence_type='measured_recording',
         input_manifest_sha256=sha256(prepared/'manifest.json'),binary_sha256=sha256(executable),
-        profile=profile,orientation_forwarded=spin,physics_overrides=list(sets),
+        profile=profile,orientation_forwarded=spin,physics_overrides=list(sets),command_fixtures=command_fixtures,
         plane={'mode':'fixed','x':plane_x,'authority':'interface_fixture'},runs=[])
     current=None;process=None;log=None;error=None;frames=0
     try:
@@ -31,6 +31,7 @@ def replay(prepared, executable, output, profile='managed', spin=True, sets=(), 
                     command=[str(executable),'--profile',profile,'--plane-x',str(plane_x),
                         '--forecasts',str(output/f'{recording}.forecast.jsonl'),'--forecast-stride',str(forecast_stride)]
                     for setting in sets: command+=['--set',setting]
+                    if command_fixtures: command+=['--commands',str(output/f'{recording}.commands.jsonl')]
                     process=subprocess.Popen(command,stdin=subprocess.PIPE,stdout=log,stderr=error,text=True)
                 ball=row['streams']['ball'];position=ball['position_m'] or [0,0,0]
                 quaternion=ball['quaternion_xyzw'] or [0,0,0,1]
@@ -57,6 +58,7 @@ def main():
     p.add_argument('--output',type=Path,required=True);p.add_argument('--profile',choices=['strict','managed'],default='managed')
     p.add_argument('--position-only',action='store_true');p.add_argument('--set',action='append',default=[])
     p.add_argument('--forecast-stride',type=int,default=6);p.add_argument('--plane-x',type=float,default=.15)
-    a=p.parse_args();replay(a.prepared,a.executable,a.output,a.profile,not a.position_only,a.set,a.forecast_stride,a.plane_x)
+    p.add_argument('--command-fixtures',action='store_true',help='Explicit native packet fixtures; not actual packetizer delivery')
+    a=p.parse_args();replay(a.prepared,a.executable,a.output,a.profile,not a.position_only,a.set,a.forecast_stride,a.plane_x,a.command_fixtures)
 
 if __name__=='__main__':main()

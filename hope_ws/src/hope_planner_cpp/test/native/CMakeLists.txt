@@ -111,6 +111,8 @@ add_executable(test_ppq004_state_contract ${PLANNER}/test/test_ppq004_state_cont
 target_link_libraries(test_ppq004_state_contract PRIVATE hope_incoming_native GTest::gtest_main)
 add_test(NAME ppq004_state_contract COMMAND test_ppq004_state_contract)
 add_executable(hope_ppq004_state_replay ${PLANNER}/test/ppq004_state_replay.cpp)
+set_target_properties(hope_ppq004_state_replay PROPERTIES CXX_STANDARD 20)
+target_include_directories(hope_ppq004_state_replay PRIVATE ${RUNNER}/include)
 target_link_libraries(hope_ppq004_state_replay PRIVATE hope_incoming_native)
 add_executable(hope_ball_flight_baseline_replay ${PLANNER}/src/ball_flight_baseline_replay.cpp)
 target_link_libraries(hope_ball_flight_baseline_replay PRIVATE hope_native_core)
