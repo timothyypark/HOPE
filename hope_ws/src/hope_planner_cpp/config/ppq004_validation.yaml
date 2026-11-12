@@ -42,7 +42,7 @@
     "stable_per_ball"
   ],
   "plane_x_m": [
-    0.15
+    -0.58
   ],
   "receiver_lead_s": 0.08,
   "source_expiry_s": 0.03,

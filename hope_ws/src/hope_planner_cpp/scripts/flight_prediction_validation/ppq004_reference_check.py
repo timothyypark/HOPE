@@ -15,7 +15,17 @@ def main():
     a = p.parse_args()
     a.output.mkdir(parents=True, exist_ok=False)
     proc = subprocess.run(
-        [sys.executable, str(a.tools / "score_holdout.py"), "--fit", str(a.fit)],
+        [
+            sys.executable,
+            "-c",
+            "import json,runpy,sys; from pathlib import Path; "
+            "script,fit,output=sys.argv[1:]; sys.path.insert(0,str(Path(script).parent)); "
+            "sys.argv=[script,'--fit',fit]; values=runpy.run_path(script,run_name='__main__'); "
+            "Path(output).write_text(json.dumps(values['rows'],indent=2,default=lambda x:x.tolist())+'\\n')",
+            str(a.tools / "score_holdout.py"),
+            str(a.fit),
+            str(a.output / "reproduced_holdout_rows.json"),
+        ],
         capture_output=True,
         text=True,
     )
@@ -39,7 +49,9 @@ def main():
         )
     counts = (r["train_arcs"], r["holdout_arcs"], r["causal_arcs"]) == (246, 27, 24)
     result = dict(
-        status="PASS" if counts and all(x["pass_check"] for x in checks.values()) else "FAIL",
+        status="PASS"
+        if counts and all(x["pass_check"] for x in checks.values())
+        else "FAIL",
         checks=checks,
         counts_match=counts,
         evidence_type="measured_recording",
