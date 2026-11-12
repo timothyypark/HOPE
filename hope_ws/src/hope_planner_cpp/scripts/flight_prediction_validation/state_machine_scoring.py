@@ -4,6 +4,7 @@ import argparse
 from collections import Counter, defaultdict
 import json
 from pathlib import Path
+from ppq004_dataset import sha256
 
 STATES = ("INVALID", "OPPONENT_RALLY", "RALLY", "OPPONENT_SERVE", "SERVE")
 
@@ -94,7 +95,8 @@ def score(trace, annotations, expected_frames):
     if not footer:
         raise ValueError("missing trace completion footer")
     if set(phase_counts) != set(range(expected_frames)) or any(
-        phases != ["before", "after_expire", "after"] for phases in phase_counts.values()
+        phases != ["before", "after_expire", "after"]
+        for phases in phase_counts.values()
     ):
         raise ValueError("incomplete/duplicate frame phases")
     per_state = {}
@@ -146,6 +148,15 @@ def main():
         labels = [row for row in labels if row["recording_id"] == a.recording_id]
         result = score((json.loads(line) for line in f), labels, a.frames)
         result["recording_id"] = a.recording_id
+        result["reviewed_and_ambiguous_annotations"] = labels
+        result["input_files"] = {
+            "trace": str(a.trace),
+            "annotations": str(a.annotations),
+        }
+        result["input_sha256"] = {
+            "trace": sha256(a.trace),
+            "annotations": sha256(a.annotations),
+        }
     a.output.write_text(json.dumps(result, indent=2) + "\n")
     return int(result["verdict"] == "FAIL")
 
