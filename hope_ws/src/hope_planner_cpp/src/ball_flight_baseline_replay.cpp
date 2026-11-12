@@ -13,20 +13,27 @@
 using namespace hope_planner_cpp;
 int main(int argc, char **argv) {
   try {
-    if (argc != 3 || std::string(argv[1]) != "--method" ||
+    if (argc < 3 || std::string(argv[1]) != "--method" ||
         (std::string(argv[2]) != "one-shot" &&
          std::string(argv[2]) != "progressive"))
       throw std::invalid_argument("Usage: --method one-shot|progressive < "
                                   "CSV(source_ns,x,y,z,omega_valid,wx,wy,wz)");
     const bool one_shot = std::string(argv[2]) == "one-shot";
-    BallPhysics physics;
+    ProbabilisticConfig scoped; ShotSettings unused;
+    for (int i=3;i<argc;++i) {
+      if (std::string(argv[i])!="--set" || ++i>=argc) throw std::invalid_argument("expected --set key=value");
+      const std::string value=argv[i];const auto split=value.find('=');
+      if(split==std::string::npos)throw std::invalid_argument("expected key=value");
+      set_flight_parameter(scoped,unused,value.substr(0,split),std::stod(value.substr(split+1)));
+    }
+    BallPhysics physics=scoped.physics;
     EstimatorConfig estimator;
     estimator.spin_enabled = false;
     FutureContactConfig future;
     future.spin_enabled = false;
     future.magnus_enabled = false;
     PlannerConfig planner;
-    planner.x_hit = .15;
+    planner.x_hit = scoped.x_hit;
     planner.adaptive_predict_horizon = true;
     planner.max_predict_time_cap_s = 3.;
     FutureContactPredictor predictor(physics, planner, {}, future);
@@ -86,9 +93,9 @@ int main(int argc, char **argv) {
              "incoming_and_fixed_trigger\",\"model_config_id\":\""
           << ("baseline-upstream-v1:sha256:" +
               sha256(
-                  return_region_config_identity({}, {}, "table") +
+                  flight_model_config_id(scoped, unused, "table") +
                   ";8d599e7;window=.18;min_span=.08;min_samples=12;spin=false;"
-                  "commit=.05;adaptive=false;plane=.15;horizon_cap=3;" +
+                  "commit=.05;adaptive=false;horizon_cap=3;" +
                   std::string(one_shot ? "one-shot" : "progressive")))
           << "\",\"source_ns\":" << s.source_time_ns
           << ",\"actual_trigger\":" << (actual_trigger ? "true" : "false")

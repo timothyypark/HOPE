@@ -20,16 +20,25 @@ def replay(executable, args, csv):
             for row in [json.loads(line)]}
 
 
-def compare(dataset, v2_executable, baseline_executable, synthetic=False):
+def compare(dataset, v2_executable, baseline_executable, synthetic=False, recorded_proxy=False):
     for field in ('frame_id','clock_mapping_id','registration_receipt_sha256','code_pins','flights'):
         if field not in dataset:
             raise ValueError('missing dataset provenance: '+field)
     if dataset['frame_id']!='table' or not dataset['clock_mapping_id']:
         raise ValueError('registered table/source-clock coordinates required')
-    if not synthetic and not dataset.get('independent_truth',False):
+    if synthetic and recorded_proxy:
+        raise ValueError('evidence modes are mutually exclusive')
+    if recorded_proxy and dataset.get('evidence_type') != 'measured_recording':
+        raise ValueError('recorded_proxy requires measured_recording provenance')
+    if not synthetic and not recorded_proxy and not dataset.get('independent_truth',False):
         raise ValueError('same-sensor/proxy data cannot qualify independent real-ball accuracy')
-    if dataset.get('plane_policy', 'FIXED') != 'FIXED' or dataset.get('x_hit', .15) != .15:
-        raise ValueError('matched replay supports only registered fixed x_hit=0.15; moving-plane datasets require a separate adapter')
+    if dataset.get('plane_policy', 'FIXED') != 'FIXED':
+        raise ValueError('matched replay supports registered fixed x_hit planes; moving-plane datasets require a separate adapter')
+    x_hit=float(dataset.get('x_hit', .15))
+    if not __import__('math').isfinite(x_hit): raise ValueError('finite plane required')
+    settings=dataset.get('physics_overrides', {})
+    set_args=['--set', 'x_hit='+str(x_hit)]
+    for key,value in sorted(settings.items()): set_args += ['--set', str(key)+'='+str(value)]
     rows=[]
     for flight in dataset['flights']:
         observations=flight['observations']
@@ -38,11 +47,17 @@ def compare(dataset, v2_executable, baseline_executable, synthetic=False):
             raise ValueError('acquisition stamps must be strictly ordered')
         if flight.get('split')!='held_out' and not synthetic:
             raise ValueError('physical scoring requires a held-out whole-flight/session split')
-        csv=''.join(','.join(str(v) for v in [r['source_ns'],*r['position'],int(r.get('omega_valid',False)),*r.get('omega_rad_s',[0,0,0])])+'\n' for r in observations)
+        def csv_row(r):
+            values=[r['source_ns'],*r['position'],int(r.get('omega_valid',False)),*r.get('omega_rad_s',[0,0,0])]
+            if 'quaternion_xyzw' in r:
+                q=r['quaternion_xyzw'] or [0,0,0,1]
+                values += [int(r.get('orientation_available',False)),int(r.get('orientation_authoritative',False)),q[3],*q[:3]]
+            return ','.join(map(str,values))+'\n'
+        csv=''.join(csv_row(r) for r in observations)
         predictions={'v2_ckf':replay(v2_executable,['--observations',str(flight['direction']),
-                       'complete' if flight.get('complete_history',False) else 'unknown'],csv),
-                     'legacy_one_shot':replay(baseline_executable,['--method','one-shot'],csv),
-                     'progressive_batch':replay(baseline_executable,['--method','progressive'],csv)}
+                       'complete' if flight.get('complete_history',False) else 'unknown',*set_args],csv),
+                     'legacy_one_shot':replay(baseline_executable,['--method','one-shot',*set_args],csv),
+                     'progressive_batch':replay(baseline_executable,['--method','progressive',*set_args],csv)}
         common_spin={}; held=False
         for observation in observations:
             angular=observation.get('omega_rad_s',[0,0,0])
@@ -74,6 +89,8 @@ def compare(dataset, v2_executable, baseline_executable, synthetic=False):
                              code_sha=dataset['code_pins'][method],config_id=p.get('model_config_id','not_triggered') if p else 'not_triggered',
                              frame_id=dataset['frame_id'],clock_mapping_id=dataset['clock_mapping_id'],
                              spin_mode=common_spin[cutoff],model_spin_mode=p.get('spin_mode','POSITION_ONLY') if p else 'UNAVAILABLE',
+                             evidence_type='measured_recording' if recorded_proxy else 'independent_simulation' if synthetic else 'physical_capture',
+                             truth_kind='recorded_proxy' if recorded_proxy else 'independent',
                              independent_truth=dataset.get('independent_truth',False),truth_available=event.get('truth_available',True),
                              information_cutoff_ns=cutoff,prediction_reference_time_ns=cutoff if p else None,
                              attempted=p is not None,actual_trigger=p.get('actual_trigger',False) if p else False,
@@ -98,6 +115,7 @@ def main():
     parser.add_argument('--baseline-executable')
     parser.add_argument('--output',required=True)
     parser.add_argument('--allow-synthetic',action='store_true',help='Tooling tests only; never Gate P qualification')
+    parser.add_argument('--recorded-proxy',action='store_true',help='Same-sensor recorded proxy; never independent physical Gate P')
     args=parser.parse_args()
     output=Path(args.output);output.mkdir(parents=True,exist_ok=True)
     if not args.dataset:
@@ -109,9 +127,9 @@ def main():
     if not args.v2_executable or not args.baseline_executable:
         parser.error('both public HOPE replay executables are required with --dataset')
     raw=Path(args.dataset).read_bytes();dataset=json.loads(raw)
-    rows=compare(dataset,args.v2_executable,args.baseline_executable,args.allow_synthetic)
+    rows=compare(dataset,args.v2_executable,args.baseline_executable,args.allow_synthetic,args.recorded_proxy)
     (output/'matched.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in rows))
-    summary=write_report(rows,output,args.allow_synthetic)
+    summary=write_report(rows,output,args.allow_synthetic,recorded_proxy=args.recorded_proxy)
     manifest=dict(dataset_sha256=hashlib.sha256(raw).hexdigest(),registration=dataset['registration_receipt_sha256'],
                   code_pins=dataset['code_pins'],input_flights=[(r['session_id'],r['ball_id'],r['flight_id']) for r in dataset['flights']],
                   executables={key:hashlib.sha256(Path(path).read_bytes()).hexdigest() for key,path in

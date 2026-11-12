@@ -54,3 +54,15 @@ def test_moving_plane_dataset_is_rejected_before_comparison():
                    plane_policy='FOLLOW_POSE')
     with pytest.raises(ValueError, match='fixed x_hit'):
         compare(dataset, 'not-run', 'not-run', synthetic=True)
+
+
+def test_recorded_proxy_never_silently_relaxes_independent_gate():
+    from compare_recordings import compare
+    dataset = dict(frame_id='table', clock_mapping_id='fixture',
+                   registration_receipt_sha256='0'*64, code_pins={}, flights=[],
+                   evidence_type='measured_recording', x_hit=.23)
+    with pytest.raises(ValueError, match='same-sensor'):
+        compare(dataset, 'not-run', 'not-run')
+    assert compare(dataset, 'not-run', 'not-run', recorded_proxy=True) == []
+    with pytest.raises(ValueError, match='mutually exclusive'):
+        compare(dataset, 'not-run', 'not-run', synthetic=True, recorded_proxy=True)

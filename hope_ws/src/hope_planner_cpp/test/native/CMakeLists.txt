@@ -112,3 +112,5 @@ target_link_libraries(test_ppq004_state_contract PRIVATE hope_incoming_native GT
 add_test(NAME ppq004_state_contract COMMAND test_ppq004_state_contract)
 add_executable(hope_ppq004_state_replay ${PLANNER}/test/ppq004_state_replay.cpp)
 target_link_libraries(hope_ppq004_state_replay PRIVATE hope_incoming_native)
+add_executable(hope_ball_flight_baseline_replay ${PLANNER}/src/ball_flight_baseline_replay.cpp)
+target_link_libraries(hope_ball_flight_baseline_replay PRIVATE hope_native_core)

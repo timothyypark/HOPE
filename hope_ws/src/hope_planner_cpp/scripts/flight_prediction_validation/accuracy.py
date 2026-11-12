@@ -20,7 +20,7 @@ def statistics(values):
                 maximum=float(np.max(values)), rmse=float(np.sqrt(np.mean(values**2))))
 
 
-def validate(records, synthetic=False):
+def validate(records, synthetic=False, recorded_proxy=False):
     """Require comparable source cutoffs, identities and independently registered truth."""
     keys=defaultdict(set)
     seen=set()
@@ -31,7 +31,10 @@ def validate(records, synthetic=False):
                 raise ValueError('missing physical provenance: '+field)
         if row['method'] not in METHODS:
             raise ValueError('unknown method')
-        if not synthetic and not row.get('independent_truth',False):
+        if synthetic and recorded_proxy: raise ValueError('mutually exclusive evidence modes')
+        if recorded_proxy and (row.get('evidence_type')!='measured_recording' or row.get('truth_kind')!='recorded_proxy'):
+            raise ValueError('recorded proxy provenance required')
+        if not synthetic and not recorded_proxy and not row.get('independent_truth',False):
             raise ValueError('independent truth is required; same-sensor proxy is not qualification')
         key=tuple(row[f] for f in ('session_id','ball_id','flight_id','event_id','information_cutoff_ns'))
         if (row['method'],key) in seen:
@@ -175,8 +178,8 @@ def paired_error_comparisons(errors, repetitions=500):
     return result
 
 
-def write_report(records, output, synthetic=False, repetitions=500):
-    validate(records,synthetic)
+def write_report(records, output, synthetic=False, repetitions=500, recorded_proxy=False):
+    validate(records,synthetic,recorded_proxy)
     errors=residuals(records)
     output=Path(output);output.mkdir(parents=True,exist_ok=True)
     strata=defaultdict(list)
@@ -187,7 +190,7 @@ def write_report(records, output, synthetic=False, repetitions=500):
                 'B1_B2' if row.get('b2_ns') is None or row['prediction_reference_time_ns']<row['b2_ns'] else 'post_B2')
         key=(row['method'],row['spin_mode'],row.get('event_kind','receiving_plane'),phase,lead_bin)
         strata[key].append(row)
-    summary=dict(gate_p='NOT_RUN_SYNTHETIC_TOOLING' if synthetic else 'SCORED_INDEPENDENT_DATA',
+    summary=dict(gate_p='NOT_RUN_RECORDED_PROXY' if recorded_proxy else 'NOT_RUN_SYNTHETIC_TOOLING' if synthetic else 'SCORED_INDEPENDENT_DATA',
                  uncertainty='conditional p/v/event covariance only; auxiliary spin/model/plane/clock omissions',
                  groups=group_statistics(records,errors),paired_bootstrap=paired_bootstrap(records,repetitions),
                  paired_error_comparisons=paired_error_comparisons(errors,repetitions),
