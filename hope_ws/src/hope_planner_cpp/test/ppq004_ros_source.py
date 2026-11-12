@@ -198,13 +198,34 @@ def recorded_result(raw, output):
             continue
         try:
             metadata, rows = read_stages(path)
-            if "missing" in metadata or "error" in metadata or int(metadata.get("overwritten", 0)):
+            if "missing" in metadata or "error" in metadata or int(metadata.get("overwritten", -1)) != 0:
                 raise ValueError("missing or overwritten stage evidence: " + str(metadata))
             for row in rows:
                 by_stage.setdefault(row["stage"], set()).add(int(row["source_ns"]))
             observer[filename] = "PASS"
         except (ValueError, AssertionError, RuntimeError) as error:
             observer[filename] = str(error)
+    try:
+        sequence = 0
+        footer = None
+        with (output / "decisions.tsv").open() as stream:
+            if not stream.readline().startswith("sequence\tsource_ns\t"):
+                raise ValueError("invalid decision trace header")
+            for line in stream:
+                if line.startswith("#"):
+                    footer = dict(item.split("=") for item in line[1:].split())
+                    continue
+                if footer is not None:
+                    raise ValueError("decision evidence after footer")
+                fields = line.rstrip("\n").split("\t")
+                sequence += 1
+                if len(fields) != 16 or int(fields[0]) != sequence:
+                    raise ValueError("lost/reordered decision evidence")
+        if not footer or footer.get("complete") != "1" or int(footer["written"]) != sequence:
+            raise ValueError("incomplete decision trace")
+        observer["decisions.tsv"] = "PASS"
+    except (OSError, ValueError, KeyError) as error:
+        observer["decisions.tsv"] = str(error)
     ball = {r["source_ns"] for r in offered if r["present"]}
     losses = {
         stage: len(ball - values)

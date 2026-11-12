@@ -42,6 +42,9 @@ V2IncomingRuntime::V2IncomingRuntime(rclcpp::Node& node, const BallPhysics& phys
     throw std::invalid_argument("full_output_rate_hz must be in [0,300]; zero disables full output");
   ProbabilisticConfig config; config.physics = physics; config.table = table;
   owner_ = std::make_unique<V2IncomingCoordinator>(config, ShotSettings{}, contract_);
+  decisions_.configure(text("decision_trace_path"));
+  if(decisions_.enabled())owner_->set_decision_observer(
+      [this](const IncomingDecision& row){decisions_.record(row);});
   compact_ = node.create_publisher<hope_msgs::msg::FlightPredictionV2>(
       std::string(prefix)+"prediction", rclcpp::QoS(1).reliable());
   full_ = node.create_publisher<hope_msgs::msg::FlightPredictionV2>(
@@ -85,6 +88,7 @@ V2IncomingRuntime::V2IncomingRuntime(rclcpp::Node& node, const BallPhysics& phys
 
 V2IncomingRuntime::~V2IncomingRuntime() {
   expiry_.reset(); observations_.reset();
+  owner_->set_decision_observer({});decisions_.close();
   try { accounting_.flush(); }
   catch (const std::exception& e) { RCLCPP_ERROR(node_.get_logger(), "%s", e.what()); }
 }

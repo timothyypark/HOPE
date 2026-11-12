@@ -2,6 +2,7 @@
 
 #include "hope_planner_cpp/v2_strike_adapter.hpp"
 #include "hope_planner_cpp/incoming_trajectory.hpp"
+#include "hope_planner_cpp/incoming_decision_trace.hpp"
 #include <functional>
 #include <set>
 
@@ -51,6 +52,8 @@ class V2IncomingCoordinator {
   std::vector<V2StrikeCandidate> take_statuses();
   IncomingCounters counters() const;
   ShotSnapshot state() const;
+  // Optional observer runs inside the authority lock and must never reenter owner.
+  void set_decision_observer(std::function<void(const IncomingDecision&)> observer);
 
  private:
   struct Checkpoint { std::int64_t source_ns; FlightPipeline pipeline; };
@@ -75,5 +78,12 @@ class V2IncomingCoordinator {
   bool reference_received_ = false, reference_valid_ = false;
   std::uint64_t home_epoch_ = 0;
   IncomingCounters counters_;
+  std::function<void(const IncomingDecision&)> decision_observer_;
+  std::uint64_t decision_sequence_=0;
+  void decision_locked(const char* phase,std::int64_t source,std::int64_t receipt);
+  struct DecisionScope {
+    V2IncomingCoordinator& owner;const char* after;std::int64_t source,receipt;
+    ~DecisionScope(){owner.decision_locked(after,source,receipt);}
+  };
 };
 }  // namespace hope_planner_cpp

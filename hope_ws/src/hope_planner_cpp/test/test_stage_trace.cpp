@@ -31,3 +31,19 @@ TEST(StageTrace, BadDestinationAndUnboundedCapacityFailBeforeWork) {
   EXPECT_THROW(trace.configure("/tmp/unused-stage", 0), std::invalid_argument);
   EXPECT_FALSE(trace.enabled());
 }
+
+#include "hope_planner_cpp/incoming_decision_trace.hpp"
+TEST(IncomingDecisionTrace, AsynchronousExportPreservesAllRepeatedTimestampRecords) {
+  const auto path=std::filesystem::temp_directory_path()/
+    ("hope-decision-trace-"+std::to_string(getpid()));
+  hope_planner_cpp::IncomingDecisionTrace trace;trace.configure(path.string(),4096);
+  for(int i=0;i<1000;++i){hope_planner_cpp::IncomingDecision row;row.sequence=i+1;
+    row.source_ns=1800000000000000000LL;row.receipt_ns=row.source_ns+i;
+    row.state=hope_planner_cpp::PlayState::RALLY;trace.record(row);}
+  trace.close();std::ifstream input(path);std::string line;std::getline(input,line);
+  ASSERT_EQ(line.find("sequence\tsource_ns\t"),0u);
+  for(int i=0;i<1000;++i){ASSERT_TRUE(std::getline(input,line));
+    EXPECT_EQ(line.find(std::to_string(i+1)+"\t1800000000000000000\t"),0u);}
+  ASSERT_TRUE(std::getline(input,line));EXPECT_NE(line.find("offered=1000 written=1000 lost=0"),std::string::npos);
+  EXPECT_NE(line.find("complete=1"),std::string::npos);std::filesystem::remove(path);
+}

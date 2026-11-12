@@ -229,3 +229,32 @@ TEST(V2IncomingCoordinator, ConfirmedSecondBounceRetiresPreviouslySupportedWorke
   EXPECT_FALSE(called);
 }
 }  // namespace
+
+TEST(V2IncomingDecisionObserver, InstrumentationPreservesForecastAndKeepsRepeatedTimestampTransitions) {
+  IncomingSourceContract ids{"session", "table", "fixture", "simulation", "clock", "ball"};
+  V2IncomingCoordinator plain({}, {}, ids), traced({}, {}, ids);
+  std::vector<IncomingDecision> rows;
+  traced.set_decision_observer([&](const auto& row){rows.push_back(row);});
+  for(int i=0;i<40;++i) {
+    BallSample s;s.source_time_ns=1800000000000000000LL+i*3333333LL;s.sequence=i+1;
+    const double t=i/300.;s.position=Vec3(2.5-5*t,-.7,.5-.5*t-4.905*t*t);
+    s.frame_id="table";s.calibration_id="fixture";s.clock_domain="simulation";s.clock_mapping_id="clock";s.ball_id="ball";
+    EXPECT_EQ(plain.observe(s,s.source_time_ns),traced.observe(s,s.source_time_ns));
+    plain.expire(s.source_time_ns);traced.expire(s.source_time_ns);
+  }
+  ASSERT_EQ(rows.size(),160u);
+  for(std::size_t i=0;i<rows.size();++i)EXPECT_EQ(rows[i].sequence,i+1);
+  EXPECT_EQ(rows[0].source_ns,rows[3].source_ns);
+  EXPECT_STREQ(rows[0].phase.data(),"before_observe");
+  EXPECT_STREQ(rows[3].phase.data(),"after_expire");
+  EXPECT_EQ(plain.state().generation,traced.state().generation);
+  EXPECT_EQ(plain.state().state,traced.state().state);
+  PlaneSelection selection;selection.valid=true;selection.epoch=1;selection.flight=1;selection.plane_x=.15;selection.reference_x=-.43;
+  auto p=incoming_plane(selection,"table","fixture",false);
+  auto a=plain.continuous(p),b=traced.continuous(p);
+  auto fa=V2IncomingCoordinator::evaluate(a,1800000000130000000LL);
+  auto fb=V2IncomingCoordinator::evaluate(b,1800000000130000000LL);
+  EXPECT_EQ(fa.forecast.belief.mean,fb.forecast.belief.mean);
+  EXPECT_EQ(fa.forecast.belief.covariance,fb.forecast.belief.covariance);
+  traced.set_decision_observer({});
+}

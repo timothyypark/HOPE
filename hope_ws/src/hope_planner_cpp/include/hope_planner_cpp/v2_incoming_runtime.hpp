@@ -53,6 +53,7 @@ class V2IncomingRuntime {
   std::uint64_t selected_generation_ = 0, base_calibration_ = 0, base_world_ = 0;
   std::mutex output_mutex_;
   BoundedStageTrace accounting_;
+  IncomingDecisionTrace decisions_;
   std::function<bool(const V2StrikeCandidate&)> revoke_;
   std::uint64_t last_candidate_revision_ = 0, last_compact_revision_ = 0;
   bool continuous_output_ = true;

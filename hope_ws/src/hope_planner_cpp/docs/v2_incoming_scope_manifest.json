@@ -890,6 +890,16 @@
         "ppq004_state_scoring",
         "verify_ppq004.sh"
       ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/include/hope_planner_cpp/incoming_decision_trace.hpp",
+      "owner": "incoming observation evidence",
+      "why_needed": "Default-off bounded asynchronous export of authoritative decision sequences; loss is explicit",
+      "tests": [
+        "V2IncomingDecisionObserver",
+        "IncomingDecisionTrace",
+        "recorded ROS full-take observer completeness"
+      ]
     }
   ]
 }

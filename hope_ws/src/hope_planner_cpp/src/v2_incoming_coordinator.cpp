@@ -22,6 +22,8 @@ V2IncomingCoordinator::V2IncomingCoordinator(ProbabilisticConfig config, ShotSet
 
 bool V2IncomingCoordinator::observe(const BallSample& sample, std::int64_t now_ns) {
   std::lock_guard<std::mutex> lock(mutex_);
+  decision_locked("before_observe",sample.source_time_ns,now_ns);
+  DecisionScope decision{*this,"after_observe",sample.source_time_ns,now_ns};
   ++counters_.offered;
   const long double age = static_cast<long double>(now_ns) - sample.source_time_ns;
   if (!sample.position_valid || !sample.position.allFinite() || !sample.source_time_valid ||
@@ -72,6 +74,23 @@ bool V2IncomingCoordinator::observe(const BallSample& sample, std::int64_t now_n
   return accepted;
 }
 
+void V2IncomingCoordinator::set_decision_observer(std::function<void(const IncomingDecision&)> observer) {
+  std::lock_guard<std::mutex> lock(mutex_);decision_observer_=std::move(observer);
+}
+void V2IncomingCoordinator::decision_locked(const char* phase,std::int64_t source,std::int64_t receipt) {
+  if(!decision_observer_)return;
+  IncomingDecision row;const auto& shot=pipeline_.shot();row.sequence=++decision_sequence_;
+  row.source_ns=source;row.receipt_ns=receipt;row.generation=shot.generation();row.revision=shot.revision();
+  row.semantic_epoch=epoch_;row.state=shot.state();row.route=shot.route();row.classification=shot.classification();
+  row.continuity=shot.continuity();row.command_retained=command_candidate_.has_value();row.source_fault=source_fault_||source_expired_;
+  auto copy=[](auto& target,const std::string& value){const auto count=std::min(target.size()-1,value.size());
+    for(std::size_t i=0;i<count;++i)target[i]=static_cast<unsigned char>(value[i])<32?'_':value[i];target[count]='\0';};
+  copy(row.phase,phase);copy(row.reason,shot.reason());copy(row.acquisition,shot.acquisition_state());
+  row.events_truncated=shot.events().size()>row.events.size();row.event_count=std::min(shot.events().size(),row.events.size());
+  for(std::size_t i=0;i<row.event_count;++i)row.events[i]=shot.events()[i].id;
+  decision_observer_(row);
+}
+
 IncomingQuery V2IncomingCoordinator::query(FlightPipeline pipeline, const IncomingPlane& plane,
                                          bool command) {
   ++counters_.queries;
@@ -98,6 +117,9 @@ std::optional<IncomingQuery> V2IncomingCoordinator::packet(
     const TrajectorySnapshot& packet, const IncomingPlane& plane,
     std::int64_t now_ns, std::string& reason) {
   std::lock_guard<std::mutex> lock(mutex_);
+  const auto source=history_.empty()?0:history_.back().source_time_ns;
+  decision_locked("before_packet",source,now_ns);
+  DecisionScope decision{*this,"after_packet",source,now_ns};
   reason = "PACKET_IDENTITY_UNQUALIFIED";
   if (!packet.packet.present || packet.packet.session_id != contract_.session ||
       packet.packet.producer_instance_id.empty() || packet.packet.payload_hash.empty() ||
@@ -188,6 +210,8 @@ bool V2IncomingCoordinator::current(const IncomingQuery& query, std::int64_t now
 bool V2IncomingCoordinator::publish(const IncomingQuery& query, IncomingEvaluation& result,
     std::int64_t now_ns, const std::function<bool(V2StrikeCandidate&)>& publication) {
   std::lock_guard<std::mutex> lock(mutex_);
+  decision_locked("before_publish",result.candidate.source_ns,now_ns);
+  DecisionScope decision{*this,"after_publish",result.candidate.source_ns,now_ns};
   ++counters_.completed;
   if (!current(query, now_ns) || (!query.command && query.revision <= published_revision_)) {
     ++counters_.obsolete;
@@ -271,6 +295,9 @@ void V2IncomingCoordinator::unavailable_locked(const std::string& reason, Incomi
 bool V2IncomingCoordinator::update_reference(
     const std::function<std::pair<std::uint64_t, bool>()>& update) {
   std::lock_guard<std::mutex> lock(mutex_);
+  const auto source=history_.empty()?0:history_.back().source_time_ns;
+  decision_locked("before_reference",source,0);
+  DecisionScope decision{*this,"after_reference",source,0};
   const auto [epoch, valid] = update();
   const bool changed = !reference_received_ || epoch != home_epoch_ || valid != reference_valid_;
   if (epoch != home_epoch_) revoke_locked("HOME_CHANGED");
@@ -282,6 +309,9 @@ bool V2IncomingCoordinator::update_reference(
 }
 void V2IncomingCoordinator::expire(std::int64_t now_ns) {
   std::lock_guard<std::mutex> lock(mutex_);
+  const auto source=history_.empty()?0:history_.back().source_time_ns;
+  decision_locked("before_expire",source,now_ns);
+  DecisionScope decision{*this,"after_expire",source,now_ns};
   // An accepted one-shot command keeps its original source timestamp. Its
   // flight may remain supported by newer authoritative observations; do not
   // impose a 30 ms execution lease on the existing absolute strike deadline.
