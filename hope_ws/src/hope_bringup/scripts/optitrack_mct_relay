@@ -168,7 +168,8 @@ class OptitrackMctRelay(Node):
             raise ValueError('test.stage_trace_capacity must be in [1,1048576]')
         self._stage_rows = deque(maxlen=stage_capacity)
         self._stage_total = 0
-        self._test_typed_drop_every = int(self.declare_parameter('test.typed_drop_every', 0).value)
+        self._test_typed_drop_every = int(
+            self.declare_parameter('test.typed_drop_every', 0).value)
         self._test_typed_delay_ms = float(self.declare_parameter('test.typed_delay_ms', 0.0).value)
         if self._test_typed_drop_every < 0 or not 0 <= self._test_typed_delay_ms <= 1000:
             raise ValueError('invalid test-only typed transport fault')
@@ -384,7 +385,8 @@ class OptitrackMctRelay(Node):
                 self._ball_orientation_authoritative and ball_pose_orientation_valid
             )
             self._test_typed_count += 1
-            if self._test_typed_drop_every and self._test_typed_count % self._test_typed_drop_every == 0:
+            if (self._test_typed_drop_every and
+                    self._test_typed_count % self._test_typed_drop_every == 0):
                 self._record_stage('typed_intentionally_dropped', msg.header.stamp)
             elif self._test_typed_delay_ms:
                 if len(self._test_typed_pending) >= 512:
@@ -598,6 +600,7 @@ class OptitrackMctRelay(Node):
         (publisher if publisher is not None else self._pose_array_pub).publish(msg)
 
     def _flush_test_typed(self):
+        """Deliver explicitly delayed test observations with their original clocks."""
         now = time.monotonic_ns()
         while self._test_typed_pending and self._test_typed_pending[0][0] <= now:
             _, observation, stamp = self._test_typed_pending.popleft()

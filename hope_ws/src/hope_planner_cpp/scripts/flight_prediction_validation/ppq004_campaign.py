@@ -194,6 +194,7 @@ def main():
         )
     executable = native / "hope_ppq004_state_replay"
     if executable.exists():
+        run("controlled-states", [native / "test_ppq004_state_contract"])
         for name, flags in [
             ("managed", []),
             ("strict", ["--profile", "strict"]),
@@ -368,9 +369,13 @@ def main():
             ):
                 ros_trial("ros-fault-" + fault, 300, "fixed", fault=fault, seconds=25)
     if os.environ.get("ORT_ROOT"):
+        run("runner-baseline-source", ["git", "worktree", "add", "--detach",
+            root / "runner-baseline-source", "4d2247c69100f1e5416a8f42468b4d67418c45fb"])
         run(
             "runner-lifecycle",
-            ["bash", scripts / "verify_runner_revocation.sh", root / "runner-lifecycle"],
+            ["bash", scripts / "verify_runner_revocation.sh", root / "runner-lifecycle",
+             root / "runner-baseline-source"],
+            requires=("runner-baseline-source",),
         )
         run(
             "policy-bridge",
