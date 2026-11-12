@@ -26,8 +26,13 @@ explicit. Coupled simulation is a separate gate from outgoing-ball replay.
 | Direction reversal alone | no new generation | evidence-dependent | cannot invent racket contact / same |
 | Invalid identity, source expiry or changed HOME | state and authority separate | evidence-dependent | no new obsolete command / same |
 
-Every legal, forbidden and ambiguous case has a stable case ID in the controlled
-suite. Logic fixtures may inject START/CONTACT/CONTEXT; observation replay must
+The paired-profile logic cases S01–S15 cover startup, both directions, observed
+serve reclassification, route hypotheses, illegal order, reset, repeated contacts,
+missing history, reversal, identity/clock faults, gaps, restore, serve ordering,
+net collision and physical rejection. Existing native pipeline/coordinator tests
+supply raw bounce inference, checkpoint, plane and packet-authority coverage.
+The managed profile keeps net-collision/contact-order classification advisory;
+retained physical tracking does not establish command authority. Logic fixtures may inject START/CONTACT/CONTEXT; observation replay must
 not. Recorded annotations are derived from raw measured geometry, never from
 predictor outputs. Same-sensor future positions are recorded-proxy truth.
 
