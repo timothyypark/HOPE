@@ -313,6 +313,20 @@ def run(args):
                     'waypoints': len(m.waypoints),
                 }
             )
+            if recorded and key == 'full':
+                received[key][-1].update(
+                    frame_id=m.frame_id, calibration_id=m.calibration_id,
+                    expires_at_ns=m.expires_at_ns, plane_x=m.plane_x,
+                    plane_revision=m.plane_revision, target_kind=m.target_kind,
+                    target_position=[m.target_position.x,m.target_position.y,m.target_position.z],
+                    target_velocity=[m.target_velocity.x,m.target_velocity.y,m.target_velocity.z],
+                    target_arrival_ns=m.predicted_arrival_time_ns,
+                    target_covariance=list(m.target_covariance),
+                    trajectory=[dict(arrival_dt_ns=w.arrival_dt_ns,
+                        position=[w.position.x,w.position.y,w.position.z],
+                        velocity=[w.velocity.x,w.velocity.y,w.velocity.z],
+                        spin_available=w.spin_available,spin_mode=w.spin_mode,
+                        omega=[w.omega_rad_s.x,w.omega_rad_s.y,w.omega_rad_s.z]) for w in m.waypoints])
 
         def candidate(m, key='candidates'):
             if m.home_epoch == 100 and m.plane_available:

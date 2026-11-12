@@ -72,6 +72,25 @@ def plots(root):
             fig.savefig(root / "holdout-error-vs-lead.png", dpi=140)
             plt.close(fig)
             figs.append("holdout-error-vs-lead.png")
+    receipts = [(p.parent.name, json.loads(p.read_text())) for p in sorted(root.glob("ros-*/result.json"))]
+    if receipts:
+        labels = [name for name, _ in receipts]
+        stages = ["relay_receipt", "typed_published", "planner_received", "tracker_accepted"]
+        fig, axes = plt.subplots(2, 1, figsize=(15, 10), sharex=True)
+        for stage in stages:
+            axes[0].plot(range(len(labels)), [r.get("loss_by_boundary", {}).get(stage, np.nan) for _, r in receipts], marker=".", label=stage)
+        axes[0].set_ylabel("Offered Ball frames absent at boundary")
+        axes[0].legend()
+        axes[1].plot(range(len(labels)), [r.get("valid_commands", 0) for _, r in receipts], marker="o", label="valid commands")
+        axes[1].plot(range(len(labels)), [r.get("decoded", 0) for _, r in receipts], marker=".", label="decoded")
+        axes[1].set_ylabel("Count; physical-flight denominator unqualified")
+        axes[1].set_xticks(range(len(labels)), labels, rotation=90, fontsize=7)
+        axes[1].legend()
+        fig.suptitle("Recorded pipeline losses and outputs; tracker rejection is not necessarily transport loss")
+        fig.tight_layout()
+        fig.savefig(root / "ros-boundaries.png", dpi=140)
+        plt.close(fig)
+        figs.append("ros-boundaries.png")
     return figs
 
 

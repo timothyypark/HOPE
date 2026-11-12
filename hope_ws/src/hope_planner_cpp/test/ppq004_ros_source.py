@@ -10,14 +10,20 @@ import time
 from pathlib import Path
 import rclpy
 from rclpy.qos import qos_profile_sensor_data
-from motion_capture_tracking_interfaces.msg import LatencyInfo, NamedPose, NamedPoseArrayV2
+from motion_capture_tracking_interfaces.msg import (
+    LatencyInfo,
+    NamedPose,
+    NamedPoseArrayV2,
+)
 from std_msgs.msg import Float64MultiArray
 
 
 def recorded_source(rate, spin, stop, ready, reference_ready, queue, options):
     rclpy.init()
     node = rclpy.create_node("ppq004_recorded_camera")
-    camera = node.create_publisher(NamedPoseArrayV2, "/optitrack/poses", qos_profile_sensor_data)
+    camera = node.create_publisher(
+        NamedPoseArrayV2, "/optitrack/poses", qos_profile_sensor_data
+    )
     home = node.create_publisher(Float64MultiArray, "/test/incoming/home", 10)
     selected = []
     with Path(options["observations"]).open() as f:
@@ -114,7 +120,9 @@ def recorded_source(rate, spin, stop, ready, reference_ready, queue, options):
         if present:
             pose = NamedPose()
             pose.name = "Ball"
-            pose.pose.position.x, pose.pose.position.y, pose.pose.position.z = ball["position_m"]
+            pose.pose.position.x, pose.pose.position.y, pose.pose.position.z = ball[
+                "position_m"
+            ]
             if fault == "spike" and i == anchor:
                 pose.pose.position.z += 0.5
             if (
@@ -190,6 +198,7 @@ def recorded_result(raw, output):
 
     offered = raw["source"].get("rows", [])
     by_stage = {}
+    stage_rows = []
     observer = {}
     for filename in ("relay.tsv", "planner.tsv", "decoder.tsv"):
         path = output / filename
@@ -198,8 +207,15 @@ def recorded_result(raw, output):
             continue
         try:
             metadata, rows = read_stages(path)
-            if "missing" in metadata or "error" in metadata or int(metadata.get("overwritten", -1)) != 0:
-                raise ValueError("missing or overwritten stage evidence: " + str(metadata))
+            if (
+                "missing" in metadata
+                or "error" in metadata
+                or int(metadata.get("overwritten", -1)) != 0
+            ):
+                raise ValueError(
+                    "missing or overwritten stage evidence: " + str(metadata)
+                )
+            stage_rows.extend(rows)
             for row in rows:
                 by_stage.setdefault(row["stage"], set()).add(int(row["source_ns"]))
             observer[filename] = "PASS"
@@ -221,7 +237,11 @@ def recorded_result(raw, output):
                 sequence += 1
                 if len(fields) != 16 or int(fields[0]) != sequence:
                     raise ValueError("lost/reordered decision evidence")
-        if not footer or footer.get("complete") != "1" or int(footer["written"]) != sequence:
+        if (
+            not footer
+            or footer.get("complete") != "1"
+            or int(footer["written"]) != sequence
+        ):
             raise ValueError("incomplete decision trace")
         observer["decisions.tsv"] = "PASS"
     except (OSError, ValueError, KeyError) as error:
@@ -230,19 +250,89 @@ def recorded_result(raw, output):
     losses = {
         stage: len(ball - values)
         for stage, values in by_stage.items()
-        if stage in ("relay_receipt", "typed_published", "planner_received", "tracker_accepted")
+        if stage
+        in ("relay_receipt", "typed_published", "planner_received", "tracker_accepted")
     }
     received = raw["received"]
     commands = [r for r in received["commands"] if r[1] == 1.0]
-    complete = raw["source"].get("complete", False) and all(v == "PASS" for v in observer.values())
+    complete = raw["source"].get("complete", False) and all(
+        v == "PASS" for v in observer.values()
+    )
+    import numpy as np
+
+    def distribution(values):
+        return (
+            dict(
+                n=len(values),
+                median=float(np.median(values)),
+                p95=float(np.percentile(values, 95)),
+                maximum=float(max(values)),
+            )
+            if values
+            else dict(n=0, median=None, p95=None, maximum=None)
+        )
+
+    published = [
+        r
+        for r in stage_rows
+        if r["stage"] in ("forecast_published", "command_published")
+        and int(r["source_ns"]) > 0
+    ]
+    command_rows = [r for r in published if r["stage"] == "command_published"]
+    command_sources = {int(r["sequence"]): int(r["source_ns"]) for r in command_rows}
+    source_to_decoder = [
+        (int(r[13]) * 10**9 + int(r[14]) - command_sources[int(r[0])]) * 1e-6
+        for r in received["decoded"]
+        if int(r[0]) in command_sources
+    ]
+    lead = [
+        (wire[10] - (int(r[13]) + int(r[14]) * 1e-9)) * 1000
+        for wire in commands
+        for r in received["decoded"]
+        if r[0] == wire[14]
+    ]
+    covered = {r["source_ns"] for r in received["predictions"] if r["physical"]} & ball
+    raw_authority = dict(
+        status="NOT_COVERED"
+        if not commands
+        else "PASS"
+        if len(command_rows) == len(commands) and all(
+            0 <= int(r["wall_ns"]) - int(r["source_ns"]) <= 30000000
+            for r in command_rows
+        )
+        and len(commands) == len({(r[19], r[15]) for r in commands})
+        else "FAIL",
+        scope="Publication freshness and unique internal HOME/flight identity only; physical-flight eligibility remains unqualified",
+    )
     result = dict(
-        status="FAIL" if raw["exception"] else "PASS" if complete else "INCONCLUSIVE",
+        status="FAIL"
+        if raw["exception"] or raw_authority["status"] == "FAIL"
+        else "PASS"
+        if complete
+        else "INCONCLUSIVE",
         scope="recorded transport and observation receipt; command opportunity eligibility requires independent annotations",
         evidence_type=raw["source"].get("evidence_type"),
         frame_count=len(offered),
         ball_frames=len(ball),
         loss_by_boundary=losses,
         observer=observer,
+        physical_forecast_coverage_diagnostic=len(covered) / len(ball)
+        if ball
+        else None,
+        source_to_publication_ms=distribution(
+            [(int(r["wall_ns"]) - int(r["source_ns"])) * 1e-6 for r in published]
+        ),
+        source_to_decoder_ms=distribution(source_to_decoder),
+        receiver_lead_ms=distribution(lead),
+        first_command_source_ns=min(command_sources.values())
+        if command_sources
+        else None,
+        publication_authority=raw_authority,
+        resources=raw.get("resources"),
+        stage_counts=dict(
+            __import__("collections").Counter(r["stage"] for r in stage_rows)
+        ),
+        consumer_lifetime="NOT_COVERED_RECORDED_RUNNER_ENGAGEMENT; separate actual Runner fixture gate",
         valid_commands=len(commands),
         decoded=len(received["decoded"]),
         revocations=len(received["revocations"]),
