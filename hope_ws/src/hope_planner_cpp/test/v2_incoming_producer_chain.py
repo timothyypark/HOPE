@@ -211,6 +211,7 @@ def run(args):
         ]
     }
     stats, exception, usage = {}, None, {}
+    fault_injections = []
     stop, ready, queue = mp.Event(), mp.Event(), mp.Queue()
     reference_ready = mp.Event()
     camera = node = None
@@ -417,9 +418,15 @@ def run(args):
         deadline = time.monotonic() + duration
         fault_started=False
         while time.monotonic() < deadline:
-            if recorded and args.recorded_fault in ('worker_stall','decoder_delay') and not fault_started and time.monotonic()>deadline-duration+5:
+            if recorded and args.recorded_fault in ('worker_stall','decoder_delay') and not fault_started and time.monotonic()>deadline-duration+getattr(args, 'recorded_stall_start_seconds', 5.0):
                 target=processes[2 if args.recorded_fault=='worker_stall' else 4]
-                target.send_signal(signal.SIGSTOP);time.sleep(.08);target.send_signal(signal.SIGCONT);fault_started=True
+                receipt = dict(kind=args.recorded_fault, pid=target.pid, start_wall_ns=time.time_ns(), start_steady_ns=time.monotonic_ns())
+                target.send_signal(signal.SIGSTOP)
+                time.sleep(.08)
+                target.send_signal(signal.SIGCONT)
+                receipt.update(end_wall_ns=time.time_ns(), end_steady_ns=time.monotonic_ns())
+                fault_injections.append(receipt)
+                fault_started=True
             rclpy.spin_once(node, timeout_sec=0.002)
         stop.set()
         stats = queue.get(timeout=5)
@@ -448,6 +455,7 @@ def run(args):
             rclpy.shutdown()
         raw = {
             'source': stats,
+            'fault_injections': fault_injections,
             'received': received,
             'exception': exception,
             'resources': usage,
@@ -681,6 +689,7 @@ if __name__ == '__main__':
     parser.add_argument('--recorded-observations',type=Path)
     parser.add_argument('--recording-id',choices=['ppq004_part1','ppq004_part2','ppq004_part3'],default='ppq004_part3')
     parser.add_argument('--recorded-max-seconds',type=float)
+    parser.add_argument('--recorded-stall-start-seconds', type=float, default=5.0)
     parser.add_argument('--recorded-fault',choices=['none','short_gap','long_gap','reordered','wrong_calibration','source_gap','spike','missing_orientation','quaternion_sign','duplicate','clock_backstep','wrong_frame','typed_loss','typed_delay','worker_stall','decoder_delay','home_change','source_silence'],default='none')
     mp.set_start_method('spawn')
     raise SystemExit(run(parser.parse_args()))

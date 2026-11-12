@@ -320,9 +320,41 @@ def recorded_result(raw, output):
     if raw["source"].get("transformation") == "wrong_calibration":
         fault_control = dict(
             status="PASS"
-            if not commands and not by_stage.get("tracker_accepted")
+            if by_stage.get("planner_received")
+            and not commands
+            and not by_stage.get("tracker_accepted")
             else "FAIL",
             scope="Mismatched calibration cannot qualify observations or authorize a new command",
+        )
+    transformation = raw["source"].get("transformation")
+    if transformation == "typed_loss":
+        dropped = by_stage.get("typed_intentionally_dropped", set())
+        fault_control = dict(
+            status="NOT_COVERED"
+            if not dropped
+            else "PASS"
+            if dropped <= by_stage.get("relay_receipt", set())
+            and not dropped & by_stage.get("typed_published", set())
+            and not dropped & by_stage.get("planner_received", set())
+            else "FAIL",
+            scope="Injected typed loss is observed and absent at downstream boundaries; recovery opportunity remains unqualified",
+            injected_losses=len(dropped),
+        )
+    elif transformation == "typed_delay":
+        delayed = [row for row in stage_rows if row["stage"] == "planner_received"]
+        fault_control = dict(
+            status="NOT_COVERED"
+            if not delayed
+            else "PASS"
+            if not commands
+            and not by_stage.get("tracker_accepted")
+            and all(
+                int(row["wall_ns"]) - int(row["source_ns"]) > 30000000
+                for row in delayed
+            )
+            else "FAIL",
+            scope="Actual delayed observations arrive beyond source freshness and cannot qualify tracking or new commands",
+            delayed_observations=len(delayed),
         )
     result = dict(
         status="FAIL"
@@ -358,6 +390,14 @@ def recorded_result(raw, output):
         consumer_lifetime="NOT_COVERED_RECORDED_RUNNER_ENGAGEMENT; separate actual Runner fixture gate",
         valid_commands=len(commands),
         decoded=len(received["decoded"]),
+        decoder_status_messages=len(received["decoded"]),
+        decoded_valid_commands=len(
+            {int(row[0]) for row in received["decoded"] if row[10] == 0}
+        ),
+        decoded_revoked_commands=len(
+            {int(row[0]) for row in received["decoded"] if row[10] != 0}
+        ),
+        decoded_field_scope="Legacy decoded field counts status messages, including retained-command revocation updates",
         revocations=len(received["revocations"]),
         command_correctness="INCONCLUSIVE",
         measured_base_authority="NOT_COVERED",
