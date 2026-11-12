@@ -900,6 +900,26 @@
         "IncomingDecisionTrace",
         "recorded ROS full-take observer completeness"
       ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_paired_forecasts.py",
+      "owner": "incoming observation evidence",
+      "why_needed": "Paired actual-cutoff recorded diagnostics with unsupported truth retained",
+      "tests": [
+        "scorer-controls",
+        "public-plane-comparison",
+        "paired-forecasts"
+      ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_plane_comparison.py",
+      "owner": "incoming observation evidence",
+      "why_needed": "Paired actual-cutoff recorded diagnostics with unsupported truth retained",
+      "tests": [
+        "scorer-controls",
+        "public-plane-comparison",
+        "paired-forecasts"
+      ]
     }
   ]
 }

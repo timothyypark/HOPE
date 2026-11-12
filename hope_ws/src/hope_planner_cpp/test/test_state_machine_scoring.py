@@ -43,21 +43,29 @@ def annotation():
 
 def test_future_serve_cannot_penalize_causal_rally():
     result = score(trace(), [annotation()], 1)
-    assert result["scored_frames"] == 0 and result["states"]["SERVE"]["status"] == "NOT_COVERED"
+    assert (
+        result["scored_frames"] == 0
+        and result["states"]["SERVE"]["status"] == "NOT_COVERED"
+    )
 
 
 def test_observable_wrong_state_fails():
     a = annotation()
     a["available_ns"] = 50
     result = score(trace(), [a], 1)
-    assert result["verdict"] == "FAIL" and result["confusion_matrix"]["SERVE"]["RALLY"] == 1
+    assert (
+        result["verdict"] == "FAIL"
+        and result["confusion_matrix"]["SERVE"]["RALLY"] == 1
+    )
 
 
 def test_empty_labels_do_not_pass():
     assert score(trace(), [], 1)["verdict"] == "NOT_COVERED"
 
 
-@pytest.mark.parametrize("damage", ["lost", "reordered", "truncated", "phase", "after_footer"])
+@pytest.mark.parametrize(
+    "damage", ["lost", "reordered", "truncated", "phase", "after_footer"]
+)
 def test_incomplete_observer_cannot_pass(damage):
     rows = trace()
     if damage == "lost":
@@ -76,3 +84,26 @@ def test_incomplete_observer_cannot_pass(damage):
 
 def test_repeated_source_timestamp_transitions_are_not_deduplicated():
     assert score(trace(), [], 1)["trace_complete"]
+
+
+def test_missing_campaign_gate_cannot_pass():
+    from ppq004_report import requirement_results
+
+    result = requirement_results(
+        {"conversion": {"status": "PASS"}}, [{"id": "COMMAND"}]
+    )
+    assert result[0]["status"] == "NOT_RUN"
+    assert result[0]["missing_gate_patterns"] == ["complete-command-opportunities"]
+
+
+def test_paired_diagnostics_retain_unmatched_cutoffs():
+    from ppq004_paired_forecasts import compare
+
+    result = compare(
+        {("r", "a", "1", "2"): 0.01, ("r", "a", "2", "3"): 0.02},
+        {("r", "a", "1", "2"): 0.02},
+    )
+    assert result["paired_samples"] == 1
+    assert result["reference_only"] == 1
+    assert result["paired_arcs"][0]["difference_m"] == pytest.approx(0.01)
+    assert compare({}, {})["status"] == "NOT_COVERED"

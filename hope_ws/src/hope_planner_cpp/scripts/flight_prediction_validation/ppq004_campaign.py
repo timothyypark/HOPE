@@ -9,14 +9,16 @@ import subprocess
 import sys
 import time
 from ppq004_dataset import sha256
-from ppq004_report import report
+from ppq004_report import report, requirement_results
 
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--output", type=Path, required=True)
     p.add_argument(
-        "--development", action="store_true", help="One short ROS trial; not final qualification"
+        "--development",
+        action="store_true",
+        help="One short ROS trial; not final qualification",
     )
     p.add_argument(
         "--skip-integrated",
@@ -45,7 +47,9 @@ def main():
         python=sys.version,
         platform=platform.platform(),
         development=a.development or a.skip_integrated,
-        annotation_sha256=sha256(package / "test/fixtures/ppq004/reviewed_intervals.jsonl"),
+        annotation_sha256=sha256(
+            package / "test/fixtures/ppq004/reviewed_intervals.jsonl"
+        ),
         physical_scope="protocol_only",
         started_ns=time.time_ns(),
     )
@@ -70,9 +74,16 @@ def main():
         with (root / (name + ".log")).open("w") as log:
             log.write(json.dumps(list(map(str, command))) + "\n")
             log.flush()
-            process = subprocess.run(
-                list(map(str, command)), stdout=log, stderr=subprocess.STDOUT, cwd=repo
-            )
+            try:
+                process = subprocess.run(
+                    list(map(str, command)),
+                    stdout=log,
+                    stderr=subprocess.STDOUT,
+                    cwd=repo,
+                )
+            except OSError as error:
+                log.write(f"Cannot execute gate: {error}\n")
+                process = subprocess.CompletedProcess(command, 127)
         results["gates"][name] = dict(
             status="PASS" if process.returncode == 0 else "FAIL",
             exit_code=process.returncode,
@@ -81,12 +92,24 @@ def main():
             duration_s=time.monotonic() - start,
             command=list(map(str, command)),
         )
-        for receipt in (root / name / "result.json", root / name / "results.json"):
+        for receipt in (
+            root / name / "result.json",
+            root / name / "results.json",
+            root / name / "manifest.json",
+        ):
             if receipt.exists():
                 value = json.loads(receipt.read_text())
                 verdict = value.get("status", value.get("verdict"))
-                if verdict in ("PASS", "FAIL", "NOT_RUN", "NOT_COVERED", "INCONCLUSIVE"):
-                    results["gates"][name]["execution_status"] = results["gates"][name]["status"]
+                if verdict in (
+                    "PASS",
+                    "FAIL",
+                    "NOT_RUN",
+                    "NOT_COVERED",
+                    "INCONCLUSIVE",
+                ):
+                    results["gates"][name]["execution_status"] = results["gates"][name][
+                        "status"
+                    ]
                     results["gates"][name]["status"] = verdict
         save()
         print("RESULT", name, process.returncode, flush=True)
@@ -160,6 +183,15 @@ def main():
             "integrated-regression",
             ["bash", scripts / "verify_integrated.sh", root / "integrated"],
         )
+        for path in sorted((root / "integrated").glob("*.exit")):
+            code = int(path.read_text())
+            results["gates"]["integrated/" + path.stem] = dict(
+                status="NOT_RUN" if code == 77 else "PASS" if code == 0 else "FAIL",
+                evidence_type="interface_fixture",
+                exit_code=code,
+                log="integrated/" + path.stem + ".log",
+            )
+        save()
         native = root / "integrated/native"
         ros = root / "integrated"
     else:
@@ -173,9 +205,20 @@ def main():
         ros = root / "ros"
         run(
             "native-configure",
-            ["cmake", "-S", package / "test/native", "-B", native, "-DCMAKE_BUILD_TYPE=Release"],
+            [
+                "cmake",
+                "-S",
+                package / "test/native",
+                "-B",
+                native,
+                "-DCMAKE_BUILD_TYPE=Release",
+            ],
         )
-        run("native-build", ["cmake", "--build", native, "-j4"], requires=("native-configure",))
+        run(
+            "native-build",
+            ["cmake", "--build", native, "-j4"],
+            requires=("native-configure",),
+        )
         run(
             "native-test",
             ["ctest", "--test-dir", native, "--output-on-failure"],
@@ -202,7 +245,12 @@ def main():
             ("magnus-off", ["--set", "magnus_k=0"]),
             (
                 "train-free-flight",
-                ["--set", "drag_k=0.12509060571761474", "--set", "magnus_k=0.004018823648810745"],
+                [
+                    "--set",
+                    "drag_k=0.12509060571761474",
+                    "--set",
+                    "magnus_k=0.004018823648810745",
+                ],
             ),
             ("managed-commands", ["--command-fixtures"]),
         ]:
@@ -219,7 +267,9 @@ def main():
                     root / name,
                     *flags,
                 ],
-                "interface_fixture" if name == "managed-commands" else "measured_recording",
+                "interface_fixture"
+                if name == "managed-commands"
+                else "measured_recording",
                 ("prepare",),
             )
         for profile in ("managed", "strict"):
@@ -271,6 +321,36 @@ def main():
                     (profile, "annotations"),
                 )
         run(
+            "public-plane-comparison",
+            [
+                py,
+                scripts / "ppq004_plane_comparison.py",
+                "--source",
+                root / "source",
+                "--annotations",
+                root / "annotations/episodes.jsonl",
+                "--v2-executable",
+                native / "hope_flight_prediction_v2_replay",
+                "--baseline-executable",
+                native / "hope_ball_flight_baseline_replay",
+                "--output",
+                root / "public-plane-comparison",
+            ],
+            "measured_recording",
+            ("annotations",),
+        )
+        run(
+            "paired-forecasts",
+            [
+                py,
+                scripts / "ppq004_paired_forecasts.py",
+                root,
+                "--output",
+                root / "paired-forecasts",
+            ],
+            "measured_recording",
+        )
+        run(
             "conversion",
             [
                 py,
@@ -296,6 +376,10 @@ def main():
             ],
             "independent_simulation",
             ("conversion",),
+        )
+    else:
+        results["gates"]["native-recorded"] = dict(
+            status="NOT_RUN", reason="Native replay executable unavailable"
         )
     if (ros / "install/setup.bash").exists():
 
@@ -368,13 +452,30 @@ def main():
                 "source_silence",
             ):
                 ros_trial("ros-fault-" + fault, 300, "fixed", fault=fault, seconds=25)
+    else:
+        results["gates"]["ros-recorded"] = dict(
+            status="NOT_RUN", reason="ROS installation unavailable"
+        )
     if os.environ.get("ORT_ROOT"):
-        run("runner-baseline-source", ["git", "worktree", "add", "--detach",
-            root / "runner-baseline-source", "4d2247c69100f1e5416a8f42468b4d67418c45fb"])
+        run(
+            "runner-baseline-source",
+            [
+                "git",
+                "worktree",
+                "add",
+                "--detach",
+                root / "runner-baseline-source",
+                "4d2247c69100f1e5416a8f42468b4d67418c45fb",
+            ],
+        )
         run(
             "runner-lifecycle",
-            ["bash", scripts / "verify_runner_revocation.sh", root / "runner-lifecycle",
-             root / "runner-baseline-source"],
+            [
+                "bash",
+                scripts / "verify_runner_revocation.sh",
+                root / "runner-lifecycle",
+                root / "runner-baseline-source",
+            ],
             requires=("runner-baseline-source",),
         )
         run(
@@ -395,7 +496,9 @@ def main():
             ("managed-commands",),
         )
         if (root / "coupled-scenarios/manifest.json").exists():
-            for scenario in sorted((root / "coupled-scenarios").glob("scenario-*.json")):
+            for scenario in sorted(
+                (root / "coupled-scenarios").glob("scenario-*.json")
+            ):
                 run(
                     "coupled-" + scenario.stem,
                     [
@@ -420,6 +523,11 @@ def main():
         results["gates"]["coupled-execution"] = dict(
             status="NOT_RUN", reason="Production policy bridge unavailable"
         )
+    if not any(name.startswith("coupled-scenario-") for name in results["gates"]):
+        results["gates"].setdefault(
+            "coupled-execution",
+            dict(status="NOT_COVERED", reason="No executable decoded scenario"),
+        )
     results["gates"]["physical-qualification"] = dict(
         status="NOT_RUN",
         evidence_type="physical_capture",
@@ -440,7 +548,15 @@ def main():
     )
     run("plots", [py, scripts / "ppq004_plots.py", root], "measured_recording")
     results["status"] = (
-        "INCOMPLETE" if any(g["status"] != "PASS" for g in results["gates"].values()) else "PASS"
+        "INCOMPLETE"
+        if any(g["status"] != "PASS" for g in results["gates"].values())
+        else "PASS"
+    )
+    results["requirements"] = requirement_results(
+        results["gates"],
+        json.loads((package / "docs/ppq004_requirements.json").read_text())[
+            "requirements"
+        ],
     )
     results["completed_ns"] = time.time_ns()
     save()

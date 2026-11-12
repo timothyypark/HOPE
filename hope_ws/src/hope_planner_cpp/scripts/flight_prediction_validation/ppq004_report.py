@@ -2,15 +2,89 @@
 
 import argparse
 import html
+from fnmatch import fnmatch
 import json
 from pathlib import Path
+
+
+REQUIREMENT_GATES = {
+    "DATA": ["data-integrity", "prepare", "scorer-controls"],
+    "CLOCK": ["scorer-controls", "ros-fault-clock_backstep", "ros-fault-duplicate"],
+    "ANNOTATION": ["annotations", "state-managed-*", "state-strict-*"],
+    "STATE": ["controlled-states", "integrated/native-test"],
+    "REPLAY": ["managed", "strict"],
+    "TRACE": ["scorer-controls", "ros-full-take-*"],
+    "EVENT": ["integrated/native-test"],
+    "SPIN": [
+        "integrated/native-test",
+        "position-only",
+        "managed",
+        "ros-fault-quaternion_sign",
+    ],
+    "FORECAST": ["forecast-*", "paired-forecasts", "public-plane-comparison"],
+    "PLANE": [
+        "integrated/native-test",
+        "ros-*-per_ball",
+        "ros-*-stable_per_ball",
+        "ros-fault-home_change",
+    ],
+    "COMMAND": ["conversion", "complete-command-opportunities"],
+    "PREFIX": [
+        "integrated/native-test",
+        "ros-fault-typed_loss",
+        "ros-fault-typed_delay",
+    ],
+    "RUNNER": ["runner-lifecycle"],
+    "ROS": ["ros-*-150-*", "ros-*-300-*", "ros-fault-*", "ros-full-take-*"],
+    "LOSS": ["historical-loss-closure"],
+    "OUTGOING": ["outgoing-mujoco"],
+    "COUPLED": ["coupled-scenario-*"],
+    "PHYSICAL": ["physical-qualification"],
+}
+
+
+def requirement_results(gates, requirements):
+    """Conservative accounting: a missing planned gate cannot become a pass."""
+    rows = []
+    for requirement in requirements:
+        patterns = REQUIREMENT_GATES.get(requirement["id"], [])
+        selected = {
+            name: gate["status"]
+            for name, gate in gates.items()
+            if any(fnmatch(name, pattern) for pattern in patterns)
+        }
+        missing = [
+            pattern
+            for pattern in patterns
+            if not any(fnmatch(name, pattern) for name in gates)
+        ]
+        states = list(selected.values()) + (
+            ["NOT_RUN"] if missing or not patterns else []
+        )
+        status = next(
+            (
+                state
+                for state in ("FAIL", "NOT_RUN", "INCONCLUSIVE", "NOT_COVERED")
+                if state in states
+            ),
+            "PASS",
+        )
+        rows.append(
+            dict(
+                requirement,
+                status=status,
+                gates=selected,
+                missing_gate_patterns=missing,
+            )
+        )
+    return rows
 
 
 def report(root):
     results = json.loads((root / "results.json").read_text())
     rows = []
     for name, gate in results["gates"].items():
-        link = html.escape(gate.get("log", name + ".log"), quote=True)
+        link = html.escape(gate.get("log", "results.json"), quote=True)
         rows.append(
             "<tr><td>"
             + html.escape(name)
@@ -24,6 +98,18 @@ def report(root):
             + html.escape(gate.get("reason", ""))
             + "</td></tr>"
         )
+    requirement_table = "".join(
+        "<tr><td>"
+        + html.escape(row["id"])
+        + "</td><td>"
+        + html.escape(row["status"])
+        + "</td><td>"
+        + html.escape(row["completion_condition"])
+        + "</td><td>"
+        + html.escape(", ".join(row["gates"]))
+        + "</td></tr>"
+        for row in results.get("requirements", [])
+    )
     state_sections = []
     for path in sorted(root.glob("state-score-*.json")):
         s = json.loads(path.read_text())
@@ -72,7 +158,9 @@ def report(root):
 <p><a href="results.json">Machine-readable results and source binding</a> · <a href="campaign.json">Frozen campaign</a></p>
 <table><thead><tr><th>Gate</th><th>Status</th><th>Evidence</th><th>Receipt</th><th>Limits</th></tr></thead><tbody>"""
         + "".join(rows)
-        + """</tbody></table>
+        + "</tbody></table><h2>Requirement coverage</h2><table><tr><th>Requirement</th><th>Status</th><th>Completion condition</th><th>Evidence gates</th></tr>"
+        + requirement_table
+        + """</table>
 <h2>Measured paths and forecasts</h2>"""
         + figures
         + """<h2>Measured classification</h2>"""
