@@ -175,6 +175,8 @@ def main():
             "-q",
             package / "test/test_ppq004_dataset.py",
             package / "test/test_state_machine_scoring.py",
+            package / "test/test_ppq004_event_diagnostics.py",
+            package / "test/test_ppq004_fault_diagnostics.py",
             package / "test/test_scoped_accuracy.py",
         ],
     )
@@ -242,14 +244,14 @@ def main():
             ("managed", []),
             ("strict", ["--profile", "strict"]),
             ("position-only", ["--position-only"]),
-            ("magnus-off", ["--set", "magnus_k=0"]),
+            ("magnus-off", ["--set", "physics.magnus_k=0"]),
             (
                 "train-free-flight",
                 [
                     "--set",
-                    "drag_k=0.12509060571761474",
+                    "physics.drag_k=0.12509060571761474",
                     "--set",
-                    "magnus_k=0.004018823648810745",
+                    "physics.magnus_k=0.004018823648810745",
                 ],
             ),
             ("managed-commands", ["--command-fixtures"]),
@@ -301,6 +303,20 @@ def main():
                         state_receipt.read_text()
                     )["verdict"]
                     save()
+        run(
+            "event-spin-diagnostics",
+            [
+                py,
+                scripts / "ppq004_event_diagnostics.py",
+                root,
+                "--annotations",
+                package / "test/fixtures/ppq004/reviewed_intervals.jsonl",
+                "--output",
+                root / "event-spin-diagnostics",
+            ],
+            "measured_recording",
+            ("annotations",),
+        )
         for profile in ("managed", "position-only", "magnus-off", "train-free-flight"):
             for split in ("development", "benchmark_holdout"):
                 run(
@@ -426,6 +442,16 @@ def main():
                 ("prepare",),
             )
 
+            receipt = root / name / "result.json"
+            if fault != "none" and receipt.exists():
+                value = json.loads(receipt.read_text())
+                results["gates"][name + "/fault-response"] = dict(
+                    value["fault_control"],
+                    evidence_type="controlled_modification",
+                    log=name + ".log",
+                )
+                save()
+
         for repetition in range(1 if a.development else config["repetitions"]):
             for rate in [300] if a.development else config["nominal_ros_hz"]:
                 for mode in ["fixed"] if a.development else config["plane_modes"]:
@@ -462,6 +488,26 @@ def main():
         results["gates"]["ros-recorded"] = dict(
             status="NOT_RUN", reason="ROS installation unavailable"
         )
+    run(
+        "recorded-fault-diagnostics",
+        [
+            py,
+            scripts / "ppq004_fault_diagnostics.py",
+            root,
+            "--output",
+            root / "recorded-fault-diagnostics",
+        ],
+        "controlled_modification",
+    )
+    fault_receipt = root / "recorded-fault-diagnostics/results.json"
+    if fault_receipt.exists():
+        for fault, value in json.loads(fault_receipt.read_text())["faults"].items():
+            results["gates"]["ros-fault-" + fault + "/fault-response"] = dict(
+                value,
+                evidence_type="controlled_modification",
+                log="recorded-fault-diagnostics/results.json",
+            )
+        save()
     if os.environ.get("ORT_ROOT"):
         run(
             "runner-baseline-source",

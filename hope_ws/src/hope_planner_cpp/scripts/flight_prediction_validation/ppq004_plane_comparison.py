@@ -151,7 +151,7 @@ def main():
     code = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
     episodes = [json.loads(line) for line in a.annotations.read_text().splitlines()]
     gates = {}
-    for plane in (0.15, -0.58):
+    for plane in (0.15, -0.58, 0.08):
         key = f"plane_{plane}"
         value = dataset(a.source, episodes, plane, code)
         path = a.output / (key + ".json")
