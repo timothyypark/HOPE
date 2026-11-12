@@ -21,7 +21,12 @@ def prepare(source, archive, output):
     with (output/'observations.jsonl').open('w') as stream:
         for part in (1, 2, 3):
             path = source/f'fit/part{part}/raw_extracted.npz'
-            with np.load(path, allow_pickle=False) as data:
+            with np.load(path, allow_pickle=False) as packed:
+                # NpzFile indexing decompresses an entire member on every access.
+                # Materialize only the streams used here once, not once per frame.
+                data = {key: packed[key] for key in packed.files
+                        if key in ('t', 'rate', 'ball_pos') or
+                        key.endswith(('_present', '_centroid', '_quat', '_rms'))}
                 count = check_csv(data, source/f'trajectories/part{part}.csv')
                 available = 0
                 for row in observations(data, part, sha256(path)):
