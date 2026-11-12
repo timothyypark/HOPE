@@ -265,6 +265,8 @@ def main():
                     executable,
                     "--output",
                     root / name,
+                    "--plane-x",
+                    config["plane_x_m"][0],
                     *flags,
                 ],
                 "interface_fixture"
@@ -439,11 +441,15 @@ def main():
             for fault in (
                 "missing_orientation",
                 "quaternion_sign",
+                "short_gap",
                 "source_gap",
+                "long_gap",
                 "spike",
                 "duplicate",
+                "reordered",
                 "clock_backstep",
                 "wrong_frame",
+                "wrong_calibration",
                 "typed_loss",
                 "typed_delay",
                 "worker_stall",
@@ -487,6 +493,10 @@ def main():
             [
                 py,
                 scripts / "ppq004_scenarios.py",
+                "--native",
+                executable,
+                "--source",
+                root / "source",
                 "--replay",
                 root / "managed-commands",
                 "--output",
@@ -496,6 +506,15 @@ def main():
             ("managed-commands",),
         )
         if (root / "coupled-scenarios/manifest.json").exists():
+            for name, gate in (
+                json.loads((root / "coupled-scenarios/manifest.json").read_text())
+                .get("extensions", {})
+                .items()
+            ):
+                results["gates"]["coupled-source-" + name] = dict(
+                    gate, evidence_type="independent_simulation"
+                )
+            save()
             for scenario in sorted(
                 (root / "coupled-scenarios").glob("scenario-*.json")
             ):
