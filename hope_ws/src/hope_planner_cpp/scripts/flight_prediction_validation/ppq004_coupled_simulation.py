@@ -59,9 +59,12 @@ def simulate(repo, library, scenario, output):
     policy_shift = scene.offset - np.array([0.0, 0.0, 0.76])
     root = scene.base_qpos_address
     rv = scene.base_dof_address
-    d.qpos[root : root + 2] = np.array(scenario.get("base_xy", [-0.5, -0.7625])) + scene.offset[:2]
+    d.qpos[root : root + 2] = (
+        np.array(scenario.get("base_xy", [-0.5, -0.7625])) + scene.offset[:2]
+    )
     yaw = float(scenario.get("base_yaw_rad", 0))
     d.qpos[root + 3 : root + 7] = [np.cos(yaw / 2), 0, 0, np.sin(yaw / 2)]
+    d.qvel[rv : rv + 2] = scenario.get("base_velocity_xy", [0.0, 0.0])
     mujoco.mj_forward(m, d)
     actuators = []
     for joint in scene.joint_ids:
@@ -99,7 +102,11 @@ def simulate(repo, library, scenario, output):
                 attempt += 1
                 if attempt:
                     recovery.append(
-                        bool(rows and rows[-1]["level"] == 0 and rows[-1]["tilt_deg"] < 30)
+                        bool(
+                            rows
+                            and rows[-1]["level"] == 0
+                            and rows[-1]["tilt_deg"] < 30
+                        )
                     )
                 if not lib.ppq_home(p):
                     raise RuntimeError("no production HOME before target")
@@ -119,8 +126,8 @@ def simulate(repo, library, scenario, output):
                     np.asarray(scenario["ball_position_table"]) + scene.offset,
                     scenario["ball_velocity"],
                 )
-                d.qvel[scene.ball_dof_address + 3 : scene.ball_dof_address + 6] = scenario.get(
-                    "ball_spin", [0.0, 0.0, 0.0]
+                d.qvel[scene.ball_dof_address + 3 : scene.ball_dof_address + 6] = (
+                    scenario.get("ball_spin", [0.0, 0.0, 0.0])
                 )
                 launched = True
             state = np.concatenate(
@@ -145,9 +152,21 @@ def simulate(repo, library, scenario, output):
                     + command[62:93]
                 )
                 d.ctrl[actuators] = np.clip(
-                    torque, m.actuator_ctrlrange[actuators, 0], m.actuator_ctrlrange[actuators, 1]
+                    torque,
+                    m.actuator_ctrlrange[actuators, 0],
+                    m.actuator_ctrlrange[actuators, 1],
                 )
                 scene._apply_drag()
+                if scenario.get("magnus_k", 0):
+                    spatial = np.zeros(6)
+                    mujoco.mj_objectVelocity(
+                        m, d, mujoco.mjtObj.mjOBJ_BODY, scene.ball_body_id, spatial, 0
+                    )
+                    d.xfrc_applied[scene.ball_body_id, :3] += (
+                        scene.ball_mass
+                        * scenario["magnus_k"]
+                        * np.cross(spatial[:3], spatial[3:])
+                    )
                 mujoco.mj_step(m, d)
                 if launched:
                     for c in range(d.ncon):
@@ -165,7 +184,8 @@ def simulate(repo, library, scenario, output):
                                     time_s=float(d.time),
                                     impulse_ns=impulse,
                                     position=d.qpos[
-                                        scene.ball_qpos_address : scene.ball_qpos_address + 3
+                                        scene.ball_qpos_address : scene.ball_qpos_address
+                                        + 3
                                     ].tolist(),
                                 )
                             )
@@ -177,7 +197,10 @@ def simulate(repo, library, scenario, output):
                             and attempt not in landings
                         ):
                             landings[attempt] = (
-                                d.qpos[scene.ball_qpos_address : scene.ball_qpos_address + 3]
+                                d.qpos[
+                                    scene.ball_qpos_address : scene.ball_qpos_address
+                                    + 3
+                                ]
                                 - scene.offset
                             ).tolist()
             lib.ppq_delivered(p)
@@ -188,6 +211,10 @@ def simulate(repo, library, scenario, output):
             rows.append(
                 dict(
                     tick=tick,
+                    attempt=attempt,
+                    time_since_launch_s=(tick - launch_ticks[attempt]) * 0.02
+                    if attempt >= 0
+                    else None,
                     time_s=float(d.time),
                     level=level,
                     policy_status=lib.ppq_status(p).decode(),
@@ -213,11 +240,47 @@ def simulate(repo, library, scenario, output):
         racket_contact=len({c["attempt"] for c in contacts}) == len(launch_ticks),
         net_clearance=bool(contacts) and not net,
         landing=len(landing_errors) == len(launch_ticks)
-        and all(e <= scenario.get("landing_tolerance_m", 0.2) for e in landing_errors.values()),
+        and all(
+            e <= scenario.get("landing_tolerance_m", 0.2)
+            for e in landing_errors.values()
+        ),
         balance=max_tilt < 30,
         successive_ball_recovery=bool(recovery) and all(recovery),
     )
+    incoming_errors = []
+    truth = scenario.get("incoming_comparison_only", {})
+    if truth.get("source_ns"):
+        truth_t = (
+            np.asarray(truth["source_ns"], dtype=np.int64) - scenario["source_ns"]
+        ) * 1e-9
+        truth_p = np.asarray(truth["positions"])
+        for row in rows:
+            elapsed = row["time_since_launch_s"]
+            if elapsed is None or not truth_t[0] <= elapsed <= truth_t[-1]:
+                continue
+            # Rows are observed after one policy tick's integration.
+            elapsed += 0.02
+            if elapsed > truth_t[-1]:
+                continue
+            if any(
+                c["attempt"] == row["attempt"] and c["time_s"] <= row["time_s"]
+                for c in contacts
+            ):
+                continue
+            measured = [
+                np.interp(elapsed, truth_t, truth_p[:, axis]) for axis in range(3)
+            ]
+            incoming_errors.append(
+                dict(
+                    attempt=row["attempt"],
+                    elapsed_s=elapsed,
+                    position_error_m=float(
+                        np.linalg.norm(np.asarray(row["ball_table"]) - measured)
+                    ),
+                )
+            )
     result = dict(
+        incoming_recorded_proxy_comparison=incoming_errors,
         status="PASS" if all(gates.values()) else "FAIL",
         evidence_type="independent_simulation",
         parent_evidence_type=scenario["evidence_type"],

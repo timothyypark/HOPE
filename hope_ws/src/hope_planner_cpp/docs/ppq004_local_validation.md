@@ -69,3 +69,10 @@ its physics receipt is explicit. Unknown measured spin uses a declared zero-spin
 conditional plant, not a claim of measured zero spin. Dynamic contact, landing,
 balance and successive-ball recovery are distinct gates. See
 `ppq004_physical_protocol.md` for evidence that simulation cannot supply.
+
+The scenario generator selects one decoded command per recording and adds modeled
+yaw, translation and initial base velocity. Independent 12 m/s and 180 rad/s
+sources pass through the native production command path before dynamic replay;
+they are synthetic extensions, not extra measured PPQ004 exposures. No decoded
+target is reported as NOT_COVERED. Future recorded positions are retained for
+a separate incoming proxy comparison and never drive the simulated ball.
