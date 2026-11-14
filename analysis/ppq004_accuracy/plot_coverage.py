@@ -22,7 +22,7 @@ def plot(args):
             axes[0].text(bar.get_x()+bar.get_width()/2,bar.get_height()+2,
                          f"{c['cutoffs']}/{c['offered_cutoffs']}\n{c['arcs']}/{c['offered_arcs']} arcs",ha='center',fontsize=8)
     axes[0].set(xticks=np.arange(2),xticklabels=labels,ylim=(0,112),ylabel='Available 100 ms forecasts (%)',title='Physical forecast coverage')
-    axes[0].legend(loc='upper left',fontsize=8)
+    axes[0].legend(loc='upper center',bbox_to_anchor=(.5,-.11),ncol=2,fontsize=8)
     indexed=[]
     for path in (args.baseline,args.candidate):
         with (path/'common-errors.csv').open() as stream:
