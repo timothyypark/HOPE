@@ -48,6 +48,11 @@ V2StrikeCandidate evaluate_v2_strike(const FlightPrediction& forecast, const Sho
   candidate.observed_events = shot.events;
   candidate.predicted_events = forecast.events;
   candidate.physical_state_available = forecast.physical_available && forecast.belief.initialized;
+  if (forecast.descriptive_only) {
+    candidate.status = IncomingStatus::Unavailable;
+    candidate.reason = forecast.reason;
+    return candidate;
+  }
   if (shot.observations.empty() || !forecast.belief.initialized) return candidate;
   candidate.status = IncomingStatus::Unavailable;
   candidate.reason = "SOURCE_PREFIX_MISMATCH";

@@ -6,6 +6,7 @@ namespace {
 ShotSettings continuous_settings(ShotSettings settings) {
   settings.automatic_rearm = true;
   settings.game_legality_advisory = true;
+  settings.descriptive_forecasts = true;
   return settings;
 }
 }
@@ -213,7 +214,11 @@ bool V2IncomingCoordinator::publish(const IncomingQuery& query, IncomingEvaluati
   decision_locked("before_publish",result.candidate.source_ns,now_ns);
   DecisionScope decision{*this,"after_publish",result.candidate.source_ns,now_ns};
   ++counters_.completed;
-  if (!current(query, now_ns) || (!query.command && query.revision <= published_revision_)) {
+  const auto &forecast = result.forecast;
+  const bool expired_physical = forecast.physical_available &&
+      (now_ns > forecast.expires_ns ||
+       static_cast<long double>(now_ns) < static_cast<long double>(forecast.reference_ns) - 1000000.L);
+  if (expired_physical || !current(query, now_ns) || (!query.command && query.revision <= published_revision_)) {
     ++counters_.obsolete;
     return false;
   }

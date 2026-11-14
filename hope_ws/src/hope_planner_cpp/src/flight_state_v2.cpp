@@ -62,6 +62,7 @@ std::string flight_model_config_id(const ProbabilisticConfig &c,
       << s.event_capacity << ';' << s.service_armed;
   if (s.game_legality_advisory) out << ";game_legality_advisory";
   if (s.automatic_rearm) out << ";automatic_rearm";
+  if (s.descriptive_forecasts) out << ";descriptive-forecast-v1";
   out << ";bounded-causal-candidate-spin-v2";
   return "flight-model-v3:sha256:" + sha256(out.str());
 }
@@ -1006,6 +1007,7 @@ void FlightPipeline::restore(const ShotSnapshot &snapshot,
   tracker.set_effective_spin(spin);
   shot_ = std::move(shot);
   tracker_ = std::move(tracker);
+  descriptive_spin_.reset(); descriptive_source_.reset();
   origin_ = origin;
   tracker_generation_ = shot_.generation();
   tracker_history_.clear();
@@ -1128,6 +1130,7 @@ void FlightPipeline::start(std::int64_t ns, int direction,
                            BoundaryEvidence evidence,
                            HistoryContinuity continuity) {
   shot_.start(ns, direction, evidence, continuity);
+  descriptive_spin_.reset(); descriptive_source_.reset();
   tracker_.set_effective_spin({});
   tracker_.reset();
   origin_.reset();
@@ -1136,6 +1139,7 @@ void FlightPipeline::start(std::int64_t ns, int direction,
 }
 void FlightPipeline::invalidate(const std::string &why) {
   shot_.invalidate(why);
+  descriptive_spin_.reset(); descriptive_source_.reset();
   tracker_.set_effective_spin({});
   tracker_.reset();
   origin_.reset();
@@ -1157,7 +1161,9 @@ bool FlightPipeline::observe(BallSample sample) {
     tracker_.reset();
     tracker_history_.clear();
     tracker_generation_ = shot_.generation();
+    descriptive_spin_.reset(); descriptive_source_.reset();
     if (!shot_.active()) {
+      observe_descriptive(sample);
       return false;
     }
     if (settings_.automatic_rearm && !shot_.samples().empty()) {
@@ -1173,8 +1179,10 @@ bool FlightPipeline::observe(BallSample sample) {
     }
     return !shot_.samples().empty();
   }
-  if (!admitted)
+  if (!admitted) {
+    if (!shot_.active()) observe_descriptive(sample);
     return false;
+  }
   tracker_history_.push_back({sample.source_time_ns, tracker_.export_checkpoint()});
   while (!tracker_history_.empty() && !shot_.samples().empty() &&
          tracker_history_.front().next_observation_ns < shot_.samples().front().source_time_ns)
@@ -1312,8 +1320,88 @@ bool FlightPipeline::observe(BallSample sample) {
   }
   return update.accepted;
 }
+void FlightPipeline::observe_descriptive(const BallSample &sample) {
+  if (!settings_.descriptive_forecasts) return;
+  // This path describes observations, without changing the rejected shot or
+  // its rearm fence. It reuses the one tracker while command admission is off.
+  if (!sample.position_valid || !sample.source_time_valid ||
+      !sample.clock_mapping_valid || !sample.position.allFinite() ||
+      !std::isfinite(sample.source_time_s) ||
+      !std::isfinite(sample.clock_uncertainty_s) ||
+      sample.clock_uncertainty_s < 0 || sample.clock_uncertainty_s > .001) return;
+  if (descriptive_source_) {
+    if (!shot_.compatible(*descriptive_source_, sample)) {
+      tracker_.reset(); tracker_.set_effective_spin({});
+      descriptive_spin_.reset(); descriptive_source_.reset();
+      return;
+    }
+    if (sample.source_time_ns <= descriptive_source_->source_time_ns) return;
+    if ((static_cast<long double>(sample.source_time_ns) -
+         descriptive_source_->source_time_ns) * 1e-9L > config_.gap_warning_s) {
+      tracker_.reset(); tracker_.set_effective_spin({});
+      descriptive_spin_.reset();
+    }
+  }
+  const auto update = tracker_.observe(sample);
+  if (update.new_track) descriptive_spin_.reset();
+  tracker_.set_effective_spin(descriptive_spin_.observe(sample));
+  descriptive_source_ = sample;
+}
+
+FlightPrediction FlightPipeline::forecast_descriptive(const HitPlaneSnapshot &plane,
+                                                     std::int64_t now) {
+  FlightPrediction out;
+  out.descriptive_only = true;
+  out.token = shot_.snapshot();
+  out.state = shot_.state(); out.route = shot_.route(); out.plane = plane;
+  out.status = ForecastStatus::UNCERTAIN;
+  out.reason = "DESCRIPTIVE_ONLY:" + shot_.reason();
+  out.model_config_id = flight_model_config_id(config_, settings_,
+      descriptive_source_ ? descriptive_source_->frame_id : "table");
+  if (!descriptive_source_) return out;
+  out.reference_ns = descriptive_source_->source_time_ns;
+  out.descriptive_source = descriptive_source_;
+  out.token.source_ns = out.reference_ns;
+  const auto expiry = duration_ns(settings_.max_source_age_s);
+  if (!expiry || !checked_arrival(out.reference_ns, *expiry, out.expires_ns)) return out;
+  const long double age = (static_cast<long double>(now) - out.reference_ns) * 1e-9L;
+  if (age < -.001 || age > settings_.max_source_age_s) {
+    out.reason = "DESCRIPTIVE_SOURCE_EXPIRED"; return out;
+  }
+  const auto &belief = tracker_.belief();
+  // Never report a propagated outlier rejection as a newly measured estimate.
+  if (!belief.initialized || belief.last_measurement_time_ns != out.reference_ns) {
+    out.reason = "DESCRIPTIVE_MEASUREMENT_REJECTED"; return out;
+  }
+  if (belief.observation_count < 6 ||
+      belief.source_time_s - belief.first_measurement_time_s < settings_.qualification_span_s) {
+    out.status = ForecastStatus::WARMING_UP;
+    out.reason = "DESCRIPTIVE_WARMING_UP"; return out;
+  }
+  out.belief = belief;
+  out.belief.source_time_origin_ns = origin_.value_or(0);
+  out.belief.source_time_ns = out.reference_ns;
+  out.belief.frame_id = descriptive_source_->frame_id;
+  auto config = config_;
+  config.effective_spin = belief.effective_spin;
+  if (plane.calibrated) config.x_hit = plane.x_hit_m;
+  out.nominal = forecast_nominal(out.belief, config);
+  if (!plane.calibrated) {
+    out.nominal.hit_plane.reset();
+    out.nominal.events.erase(std::remove_if(out.nominal.events.begin(), out.nominal.events.end(),
+        [](const auto &event) { return event.kind == "receiving_plane"; }), out.nominal.events.end());
+  }
+  out.nominal.uncertainty_provenance += ";descriptive_only;motion_model_unqualified;not_command_authority";
+  out.physical_available = out.nominal.available;
+  // No route target or observed-event promotion: these conditional trajectories
+  // cannot resurrect an invalid shot, even if their nominal plane looks usable.
+  return out;
+}
+
 FlightPrediction FlightPipeline::forecast(const HitPlaneSnapshot &plane,
                                           std::int64_t now) {
+  if (!shot_.active() && settings_.descriptive_forecasts)
+    return forecast_descriptive(plane, now);
   FlightPrediction out;
   out.model_config_id = flight_model_config_id(
       config_, settings_,

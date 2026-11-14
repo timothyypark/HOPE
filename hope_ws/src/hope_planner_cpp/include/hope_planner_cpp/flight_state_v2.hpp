@@ -72,6 +72,9 @@ struct ShotSettings {
   // Explicit opt-in for long-running integrated sessions; standalone retains
   // its explicit-boundary default and service_armed is always respected.
   bool automatic_rearm = false;
+  // Keep conditional physical estimates while shot authorization is withheld.
+  // Enabled by the managed continuous owner; never relaxes command admission.
+  bool descriptive_forecasts = false;
   void validate() const;
 };
 inline constexpr const char *kFlightPhysicsProfile =
@@ -216,6 +219,8 @@ struct FlightPrediction {
   PlayState state = PlayState::INVALID, route = PlayState::INVALID;
   ForecastStatus status = ForecastStatus::REVOKED;
   bool physical_available = false;
+  bool descriptive_only = false;
+  std::optional<BallSample> descriptive_source;
   RouteTarget target;
   StateBelief belief;
   NominalBallForecast nominal;
@@ -259,6 +264,10 @@ private:
     FullTrackerCheckpoint before;
   };
   std::deque<TrackerHistory> tracker_history_;
+  TrustedSpin descriptive_spin_;
+  std::optional<BallSample> descriptive_source_;
+  void observe_descriptive(const BallSample &);
+  FlightPrediction forecast_descriptive(const HitPlaneSnapshot &, std::int64_t);
 };
 // One running solve plus one replaceable latest input. Close wakes the worker.
 template <class T> class LatestWork {

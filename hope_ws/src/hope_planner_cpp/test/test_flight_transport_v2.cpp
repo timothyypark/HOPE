@@ -340,3 +340,30 @@ TEST(FlightTransportV2,
   EXPECT_FALSE(receiver.admit(packet, "config", reason));
   EXPECT_EQ(reason, "retired_packet");
 }
+
+TEST(FlightTransportV2, DescriptiveForecastPreservesSourceAndCannotAdvertiseTarget) {
+  ShotSettings settings; settings.descriptive_forecasts = true; settings.service_armed = true;
+  FlightPipeline pipeline({}, settings);
+  BallSample sample;
+  sample.frame_id = "table"; sample.calibration_id = "registration"; sample.ball_id = "ball";
+  sample.clock_domain = "simulation"; sample.clock_mapping_id = "clock";
+  for (int i = 0; i < 20; ++i) {
+    const double t = i / 300.;
+    sample.source_time_ns = 10000000000LL + std::llround(t * 1e9);
+    sample.position = Vec3(2.5 - 4*t, -.7, .8 + t - 4.905*t*t);
+    pipeline.observe(sample);
+  }
+  HitPlaneSnapshot plane; plane.calibrated = true; plane.x_hit_m = .15;
+  auto forecast = pipeline.forecast(plane, sample.source_time_ns);
+  ASSERT_TRUE(forecast.descriptive_only);
+  ASSERT_TRUE(forecast.physical_available);
+  auto wire = encode_prediction(forecast, pipeline.shot());
+  EXPECT_TRUE(wire.physical_available); EXPECT_TRUE(wire.current_state_available);
+  EXPECT_FALSE(wire.target_valid);
+  EXPECT_EQ(wire.forecast_status, "UNCERTAIN");
+  EXPECT_EQ(wire.current_state.linearization_quality, "descriptive_conditional_ckf_posterior");
+  EXPECT_EQ(wire.frame_id, sample.frame_id); EXPECT_EQ(wire.calibration_id, sample.calibration_id);
+  EXPECT_EQ(wire.ball_id, sample.ball_id); EXPECT_EQ(wire.clock_mapping_id, sample.clock_mapping_id);
+  EXPECT_EQ(wire.prediction_reference_time_ns, sample.source_time_ns);
+  EXPECT_FALSE(wire.waypoints.empty());
+}

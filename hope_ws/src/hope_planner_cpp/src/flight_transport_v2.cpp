@@ -177,8 +177,9 @@ hope_msgs::msg::FlightPredictionV2 encode_prediction(const FlightPrediction &p,
     current.spin_provenance = p.belief.effective_spin.provenance;
     if (current.spin_available)
       vector(current.omega_rad_s, *p.belief.effective_spin.omega);
-    current.linearization_quality =
-        p.belief.last_measurement_time_ns == p.reference_ns
+    current.linearization_quality = p.descriptive_only
+        ? "descriptive_conditional_ckf_posterior"
+        : p.belief.last_measurement_time_ns == p.reference_ns
             ? "conditional_ckf_posterior"
             : "conditional_prediction_since_last_accepted_measurement";
     for (int r = 0; r < 6; ++r)
@@ -189,8 +190,10 @@ hope_msgs::msg::FlightPredictionV2 encode_prediction(const FlightPrediction &p,
   w.plane_available = p.plane.calibrated;
   w.plane_revision = p.plane.generation;
   w.plane_pose_source_time_ns = p.plane.source_ns;
-  if (!shot.samples().empty()) {
-    const auto &s = shot.samples().back();
+  const BallSample *source = p.descriptive_only && p.descriptive_source
+      ? &*p.descriptive_source : shot.samples().empty() ? nullptr : &shot.samples().back();
+  if (source) {
+    const auto &s = *source;
     w.frame_id = s.frame_id;
     w.calibration_id = s.calibration_id;
     w.ball_id = s.ball_id;

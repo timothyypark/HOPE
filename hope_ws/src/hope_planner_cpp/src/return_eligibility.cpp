@@ -7,6 +7,7 @@ ReturnEligibility select_physical_return(const FlightPrediction &f, const ShotSn
                                         const ProbabilisticConfig &c, std::int64_t now) {
   ReturnEligibility out;
   auto fail = [&](const char *why) { out.reason = why; return out; };
+  if (f.descriptive_only) return fail("DESCRIPTIVE_ONLY");
   if (!f.physical_available || !f.belief.initialized || s.observations.empty() ||
       f.token.generation != s.generation)
     return fail("RETURN_UNSUPPORTED");

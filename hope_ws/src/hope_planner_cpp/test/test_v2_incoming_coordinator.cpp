@@ -274,3 +274,112 @@ TEST(V2IncomingDecisionObserver, ReferenceTransitionsRetainReceiptClock) {
   EXPECT_EQ(rows[1].receipt_ns, receipt);
   EXPECT_EQ(rows[0].sequence + 1, rows[1].sequence);
 }
+
+TEST(V2IncomingCoordinator, DescriptiveTrackContinuesAfterRejectionWithoutRearmingCommand) {
+  ShotSettings settings;
+  settings.automatic_rearm = settings.game_legality_advisory = settings.descriptive_forecasts = true;
+  FlightPipeline pipeline({}, settings);
+  pipeline.start(origin, -1, BoundaryEvidence::RESTART, HistoryContinuity::kUnknown);
+  ModelState physical;
+  physical.position = Vec3(2.5, -.7, .8); physical.velocity = Vec3(-4, 0, 1);
+  BallSample sample;
+  sample.frame_id = "table"; sample.calibration_id = "fixture";
+  sample.clock_domain = "simulation"; sample.clock_mapping_id = "clock"; sample.ball_id = "ball";
+  std::uint64_t rejected_generation = 0;
+  int descriptive_count = 0;
+  for (int i = 0; i < 85; ++i) {
+    sample.source_time_ns = origin + std::llround(i * 1e9 / 300);
+    sample.position = physical.position;
+    pipeline.observe(sample);
+    if (i == 30) {
+      pipeline.invalidate("qualified_non_ballistic_motion");
+      rejected_generation = pipeline.shot().generation();
+    }
+    if (i > 40) {
+      auto forecast = pipeline.forecast(plane().snapshot, sample.source_time_ns);
+      ASSERT_TRUE(forecast.descriptive_only);
+      ASSERT_TRUE(forecast.physical_available) << forecast.reason;
+      EXPECT_FALSE(forecast.target.valid);
+      EXPECT_EQ(forecast.reference_ns, sample.source_time_ns);
+      EXPECT_EQ(pipeline.shot().generation(), rejected_generation);
+      EXPECT_FALSE(pipeline.shot().active());
+      EXPECT_LT((forecast.belief.mean.head<3>() - sample.position).norm(), .02);
+      EXPECT_NE(forecast.nominal.uncertainty_provenance.find("not_command_authority"), std::string::npos);
+      auto candidate = evaluate_v2_strike(forecast, pipeline.shot().export_snapshot(), {}, plane(), sample.source_time_ns);
+      EXPECT_TRUE(candidate.physical_state_available);
+      EXPECT_FALSE(candidate.command_eligible);
+      EXPECT_FALSE(candidate.strike_contact_supported);
+      EXPECT_FALSE(v2_strike_target(candidate, sample.source_time_ns).valid);
+      EXPECT_EQ(select_physical_return(forecast, pipeline.shot().export_snapshot(), {}, sample.source_time_ns).reason,
+                "DESCRIPTIVE_ONLY");
+      ++descriptive_count;
+    }
+    EventGeometry geometry;
+    advance_ball(physical, 1./300, {}, geometry);
+  }
+  EXPECT_GT(descriptive_count, 30);
+  auto stale = pipeline.forecast(plane().snapshot, sample.source_time_ns + 31000000);
+  EXPECT_FALSE(stale.physical_available);
+  EXPECT_FALSE(stale.belief.initialized);
+  EXPECT_EQ(stale.reason, "DESCRIPTIVE_SOURCE_EXPIRED");
+  // An outlier must not be reported as a fresh posterior at its source time.
+  sample.source_time_ns += 3333333; sample.position += Vec3(3, 2, 1);
+  pipeline.observe(sample);
+  auto rejected = pipeline.forecast(plane().snapshot, sample.source_time_ns);
+  EXPECT_FALSE(rejected.physical_available);
+  EXPECT_EQ(rejected.reason, "DESCRIPTIVE_MEASUREMENT_REJECTED");
+}
+
+TEST(V2IncomingCoordinator, DescriptiveOutputCannotClaimPacketOrSurviveSourceFault) {
+  Source source;
+  // Deliberately non-ballistic motion: a diagnostic track may describe this,
+  // but the production shot qualifier must not authorize it.
+  for (int i = 0; i < 40; ++i) {
+    source.physical.position.z() = .8;
+    source.physical.velocity.z() = 0;
+    source.next();
+  }
+  auto query = source.owner.continuous(plane());
+  auto evaluation = V2IncomingCoordinator::evaluate(query, source.now());
+  ASSERT_TRUE(evaluation.forecast.descriptive_only);
+  ASSERT_TRUE(evaluation.forecast.physical_available) << evaluation.forecast.reason;
+  EXPECT_FALSE(evaluation.candidate.command_eligible);
+  int publications = 0;
+  EXPECT_TRUE(source.owner.publish(query, evaluation, source.now(), [&](auto &candidate) {
+    EXPECT_FALSE(candidate.command_eligible); ++publications; return true;
+  }));
+  EXPECT_EQ(publications, 1);
+  std::string reason;
+  EXPECT_FALSE(source.owner.packet(source.packet(40), plane(), source.now(), reason));
+  EXPECT_EQ(reason, "PACKET_PHYSICAL_GENERATION_RETIRED");
+  EXPECT_EQ(source.owner.counters().commands, 0u);
+  auto delayed = source.owner.continuous(plane());
+  auto result = V2IncomingCoordinator::evaluate(delayed, source.now());
+  EXPECT_FALSE(source.owner.publish(delayed, result, source.now() + 31000000, [](auto &) { return true; }));
+  auto bad = source.samples.back(); bad.source_time_ns += 3333333; bad.calibration_id = "wrong";
+  EXPECT_FALSE(source.owner.observe(bad, bad.source_time_ns));
+  EXPECT_FALSE(source.owner.publish(delayed, result, bad.source_time_ns, [](auto &) { return true; }));
+}
+
+TEST(V2IncomingCoordinator, DescriptiveQueriesKeepCausalCutoffAndStandaloneRemainsStrict) {
+  Source source;
+  for (int i = 0; i < 20; ++i) {
+    source.physical.position.z() = .8; source.physical.velocity.z() = 0; source.next();
+  }
+  auto query = source.owner.continuous(plane());
+  const auto now = source.now();
+  auto before = V2IncomingCoordinator::evaluate(query, now);
+  ASSERT_TRUE(before.forecast.descriptive_only);
+  ASSERT_TRUE(before.forecast.physical_available);
+  source.physical.velocity = Vec3(3, 2, 4); source.to(50);
+  auto after = V2IncomingCoordinator::evaluate(query, now);
+  EXPECT_EQ(before.forecast.belief.mean, after.forecast.belief.mean);
+  EXPECT_EQ(before.forecast.belief.covariance, after.forecast.belief.covariance);
+  EXPECT_EQ(before.forecast.reference_ns, after.forecast.reference_ns);
+  ShotSettings strict; strict.service_armed = true;
+  FlightPipeline standalone({}, strict);
+  for (auto sample : source.samples) standalone.observe(sample);
+  auto forecast = standalone.forecast(plane().snapshot, source.now());
+  EXPECT_FALSE(forecast.physical_available);
+  EXPECT_FALSE(forecast.descriptive_only);
+}
