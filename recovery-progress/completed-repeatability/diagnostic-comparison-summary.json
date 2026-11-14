@@ -1,0 +1,302 @@
+{
+  "status": "FAIL",
+  "candidate_unchanged": true,
+  "source_commit": "f4902023d49c85ff57da62a618b2001181d3b8e7",
+  "expected_trials": 8,
+  "executed_trials": 8,
+  "failed_trials": [
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 1,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1794659643881406083,
+      "finished_wall_ns": 1794659659648129236,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-1/review_chain_300_10_zero/result.json",
+      "coverage": 0.8013245033112583,
+      "denominator": 151,
+      "decoder_ms": null
+    }
+  ],
+  "outcomes": [
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 155,
+        "complete_valid_publication_count": 597,
+        "publication_ms": {
+          "p50": 1.782765,
+          "p95": 2.4929916,
+          "p99": 3.315388719999996,
+          "max": 5.16537
+        },
+        "decoder_ms": {
+          "p50": 1.856911,
+          "p95": 2.6884985,
+          "p99": 3.4764124499999918,
+          "max": 5.19519
+        }
+      },
+      "started_wall_ns": 1794659620915535359,
+      "finished_wall_ns": 1794659643880788943,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-1/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 155,
+      "decoder_ms": {
+        "p50": 1.856911,
+        "p95": 2.6884985,
+        "p99": 3.4764124499999918,
+        "max": 5.19519
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 1,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1794659643881406083,
+      "finished_wall_ns": 1794659659648129236,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-1/review_chain_300_10_zero/result.json",
+      "coverage": 0.8013245033112583,
+      "denominator": 151,
+      "decoder_ms": null
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 75,
+        "complete_valid_publication_count": 284,
+        "publication_ms": {
+          "p50": 1.913858,
+          "p95": 2.7413589999999997,
+          "p99": 3.5731642,
+          "max": 5.165984
+        },
+        "decoder_ms": {
+          "p50": 2.022602,
+          "p95": 2.9400341999999995,
+          "p99": 3.7665482000000003,
+          "max": 5.287287
+        }
+      },
+      "started_wall_ns": 1794659659648803053,
+      "finished_wall_ns": 1794659681995764230,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-1/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 75,
+      "decoder_ms": {
+        "p50": 2.022602,
+        "p95": 2.9400341999999995,
+        "p99": 3.7665482000000003,
+        "max": 5.287287
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 147,
+        "complete_valid_publication_count": 587,
+        "publication_ms": {
+          "p50": 1.892972,
+          "p95": 3.3968442999999957,
+          "p99": 5.190542759999999,
+          "max": 8.77148
+        },
+        "decoder_ms": {
+          "p50": 1.9803855000000001,
+          "p95": 3.6644803,
+          "p99": 5.463086399999998,
+          "max": 8.419489
+        }
+      },
+      "started_wall_ns": 1794659681996122951,
+      "finished_wall_ns": 1794659704770801830,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-1/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 147,
+      "decoder_ms": {
+        "p50": 1.9803855000000001,
+        "p95": 3.6644803,
+        "p99": 5.463086399999998,
+        "max": 8.419489
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 593,
+        "publication_ms": {
+          "p50": 1.803281,
+          "p95": 2.960340799999999,
+          "p99": 4.389240840000007,
+          "max": 7.490529
+        },
+        "decoder_ms": {
+          "p50": 1.887859,
+          "p95": 3.1832631999999994,
+          "p99": 4.693270080000005,
+          "max": 7.44505
+        }
+      },
+      "started_wall_ns": 1794659704771369006,
+      "finished_wall_ns": 1794659727381903157,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-2/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.887859,
+        "p95": 3.1832631999999994,
+        "p99": 4.693270080000005,
+        "max": 7.44505
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 151,
+        "complete_valid_publication_count": 409,
+        "publication_ms": {
+          "p50": 1.765084,
+          "p95": 3.0111673999999993,
+          "p99": 4.020904799999999,
+          "max": 4.826639
+        },
+        "decoder_ms": {
+          "p50": 1.871094,
+          "p95": 3.2882731999999995,
+          "p99": 4.649548,
+          "max": 5.878321
+        }
+      },
+      "started_wall_ns": 1794659727382611867,
+      "finished_wall_ns": 1794659743272725584,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-2/review_chain_300_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 151,
+      "decoder_ms": {
+        "p50": 1.871094,
+        "p95": 3.2882731999999995,
+        "p99": 4.649548,
+        "max": 5.878321
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 287,
+        "publication_ms": {
+          "p50": 2.002742,
+          "p95": 3.1641557,
+          "p99": 5.038585939999998,
+          "max": 6.762654
+        },
+        "decoder_ms": {
+          "p50": 2.11375,
+          "p95": 3.5743869999999984,
+          "p99": 5.189355479999998,
+          "max": 7.667194
+        }
+      },
+      "started_wall_ns": 1794659743273242685,
+      "finished_wall_ns": 1794659765789686656,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-2/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.11375,
+        "p95": 3.5743869999999984,
+        "p99": 5.189355479999998,
+        "max": 7.667194
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 147,
+        "complete_valid_publication_count": 585,
+        "publication_ms": {
+          "p50": 1.767062,
+          "p95": 2.376921199999999,
+          "p99": 5.42460527999999,
+          "max": 24.999651
+        },
+        "decoder_ms": {
+          "p50": 1.860132,
+          "p95": 2.6103692,
+          "p99": 4.82018875999999,
+          "max": 13.736372
+        }
+      },
+      "started_wall_ns": 1794659765790733575,
+      "finished_wall_ns": 1794659788479529885,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/diagnostic-comparison/repetition-2/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 147,
+      "decoder_ms": {
+        "p50": 1.860132,
+        "p95": 2.6103692,
+        "p99": 4.82018875999999,
+        "max": 13.736372
+      }
+    }
+  ]
+}

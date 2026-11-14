@@ -1,0 +1,5916 @@
+{
+  "status": "FAIL",
+  "candidate_unchanged": true,
+  "source_commit": "f4902023d49c85ff57da62a618b2001181d3b8e7",
+  "expected_trials": 160,
+  "executed_trials": 160,
+  "failed_trials": [
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 1,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1794660270341361886,
+      "finished_wall_ns": 1794660286098981510,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 145,
+      "decoder_ms": null
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 1,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1794660341737239869,
+      "finished_wall_ns": 1794660349301040916,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.7195121951219512,
+      "denominator": 82,
+      "decoder_ms": null
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 4,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1794661806330340351,
+      "finished_wall_ns": 1794661822102317905,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_refresh_300_12_known/result.json",
+      "coverage": 0.8823529411764706,
+      "denominator": 34,
+      "decoder_ms": null
+    }
+  ],
+  "outcomes": [
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.951775,
+          "p95": 3.382661800000001,
+          "p99": 4.688118560000011,
+          "max": 10.195899
+        },
+        "decoder_ms": {
+          "p50": 2.054289,
+          "p95": 3.6336642,
+          "p99": 5.3933837600000025,
+          "max": 10.591006
+        }
+      },
+      "started_wall_ns": 1794659788709005419,
+      "finished_wall_ns": 1794659811262690008,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.054289,
+        "p95": 3.6336642,
+        "p99": 5.3933837600000025,
+        "max": 10.591006
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 70,
+        "complete_valid_publication_count": 271,
+        "publication_ms": {
+          "p50": 2.093334,
+          "p95": 3.7612069999999997,
+          "p99": 4.6972336000000094,
+          "max": 7.759422
+        },
+        "decoder_ms": {
+          "p50": 2.167125,
+          "p95": 4.087339,
+          "p99": 5.528886000000005,
+          "max": 8.29345
+        }
+      },
+      "started_wall_ns": 1794659811263242522,
+      "finished_wall_ns": 1794659834022995793,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 70,
+      "decoder_ms": {
+        "p50": 2.167125,
+        "p95": 4.087339,
+        "p99": 5.528886000000005,
+        "max": 8.29345
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 74,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.948501,
+          "p95": 3.133673800000002,
+          "p99": 5.194281400000036,
+          "max": 7.652712
+        },
+        "decoder_ms": {
+          "p50": 2.046258,
+          "p95": 3.2204832000000003,
+          "p99": 5.976056720000033,
+          "max": 9.070502
+        }
+      },
+      "started_wall_ns": 1794659834023709059,
+      "finished_wall_ns": 1794659856462067261,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 74,
+      "decoder_ms": {
+        "p50": 2.046258,
+        "p95": 3.2204832000000003,
+        "p99": 5.976056720000033,
+        "max": 9.070502
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 75,
+        "complete_valid_publication_count": 281,
+        "publication_ms": {
+          "p50": 1.89534,
+          "p95": 3.010844,
+          "p99": 4.257204599999999,
+          "max": 6.295758
+        },
+        "decoder_ms": {
+          "p50": 2.00415,
+          "p95": 3.210628,
+          "p99": 4.50344219999999,
+          "max": 6.495054
+        }
+      },
+      "started_wall_ns": 1794659856462479173,
+      "finished_wall_ns": 1794659878811839111,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 75,
+      "decoder_ms": {
+        "p50": 2.00415,
+        "p95": 3.210628,
+        "p99": 4.50344219999999,
+        "max": 6.495054
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 70,
+        "complete_valid_publication_count": 270,
+        "publication_ms": {
+          "p50": 1.95699,
+          "p95": 2.69722135,
+          "p99": 4.0751098300000015,
+          "max": 6.548191
+        },
+        "decoder_ms": {
+          "p50": 2.066434,
+          "p95": 2.9253651499999997,
+          "p99": 3.8965154500000008,
+          "max": 6.520905
+        }
+      },
+      "started_wall_ns": 1794659878812390473,
+      "finished_wall_ns": 1794659901671146214,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 70,
+      "decoder_ms": {
+        "p50": 2.066434,
+        "p95": 2.9253651499999997,
+        "p99": 3.8965154500000008,
+        "max": 6.520905
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.024891,
+          "p95": 2.7621410000000006,
+          "p99": 4.139372440000004,
+          "max": 5.347935
+        },
+        "decoder_ms": {
+          "p50": 2.134075,
+          "p95": 3.1678998000000003,
+          "p99": 5.249224360000007,
+          "max": 6.373341
+        }
+      },
+      "started_wall_ns": 1794659901671905630,
+      "finished_wall_ns": 1794659924174230215,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.134075,
+        "p95": 3.1678998000000003,
+        "p99": 5.249224360000007,
+        "max": 6.373341
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.0326115,
+          "p95": 2.7057676499999994,
+          "p99": 3.7440190799999997,
+          "max": 5.069239
+        },
+        "decoder_ms": {
+          "p50": 2.1477905,
+          "p95": 2.829207399999999,
+          "p99": 3.85688962,
+          "max": 5.186155
+        }
+      },
+      "started_wall_ns": 1794659924174688356,
+      "finished_wall_ns": 1794659940685960878,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.1477905,
+        "p95": 2.829207399999999,
+        "p99": 3.85688962,
+        "max": 5.186155
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 11,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.516367,
+          "p95": 3.138347149999999,
+          "p99": 3.7428836999999997,
+          "max": 3.947115
+        },
+        "decoder_ms": {
+          "p50": 2.709421,
+          "p95": 3.300037999999999,
+          "p99": 3.74603056,
+          "max": 3.837991
+        }
+      },
+      "started_wall_ns": 1794659940686530017,
+      "finished_wall_ns": 1794659956453974172,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 11,
+      "decoder_ms": {
+        "p50": 2.709421,
+        "p95": 3.300037999999999,
+        "p99": 3.74603056,
+        "max": 3.837991
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 153,
+        "complete_valid_publication_count": 591,
+        "publication_ms": {
+          "p50": 1.904399,
+          "p95": 2.728149,
+          "p99": 5.471392800000006,
+          "max": 9.054317
+        },
+        "decoder_ms": {
+          "p50": 1.980918,
+          "p95": 3.0369270000000004,
+          "p99": 5.753057400000001,
+          "max": 16.002566
+        }
+      },
+      "started_wall_ns": 1794659956454490572,
+      "finished_wall_ns": 1794659979278901460,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 153,
+      "decoder_ms": {
+        "p50": 1.980918,
+        "p95": 3.0369270000000004,
+        "p99": 5.753057400000001,
+        "max": 16.002566
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 149,
+        "complete_valid_publication_count": 588,
+        "publication_ms": {
+          "p50": 1.8034465,
+          "p95": 3.1758618,
+          "p99": 4.704209719999998,
+          "max": 18.124483
+        },
+        "decoder_ms": {
+          "p50": 1.896081,
+          "p95": 3.2754916999999995,
+          "p99": 5.0352181,
+          "max": 18.985452
+        }
+      },
+      "started_wall_ns": 1794659979279553724,
+      "finished_wall_ns": 1794660002884745563,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 149,
+      "decoder_ms": {
+        "p50": 1.896081,
+        "p95": 3.2754916999999995,
+        "p99": 5.0352181,
+        "max": 18.985452
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 153,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.7921485,
+          "p95": 2.8010912500000016,
+          "p99": 4.60175846000003,
+          "max": 18.365815
+        },
+        "decoder_ms": {
+          "p50": 1.87263,
+          "p95": 3.089468,
+          "p99": 5.394100320000025,
+          "max": 19.094304
+        }
+      },
+      "started_wall_ns": 1794660002885253500,
+      "finished_wall_ns": 1794660025740887886,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 153,
+      "decoder_ms": {
+        "p50": 1.87263,
+        "p95": 3.089468,
+        "p99": 5.394100320000025,
+        "max": 19.094304
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 151,
+        "complete_valid_publication_count": 599,
+        "publication_ms": {
+          "p50": 1.682103,
+          "p95": 2.2295676,
+          "p99": 2.589511079999999,
+          "max": 3.553718
+        },
+        "decoder_ms": {
+          "p50": 1.757927,
+          "p95": 2.358071,
+          "p99": 2.6787763599999996,
+          "max": 4.262111
+        }
+      },
+      "started_wall_ns": 1794660025741455843,
+      "finished_wall_ns": 1794660048545961524,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 151,
+      "decoder_ms": {
+        "p50": 1.757927,
+        "p95": 2.358071,
+        "p99": 2.6787763599999996,
+        "max": 4.262111
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9932432432432432,
+        "denominator": 148,
+        "complete_valid_publication_count": 587,
+        "publication_ms": {
+          "p50": 1.899309,
+          "p95": 3.0182882999999925,
+          "p99": 4.422672779999997,
+          "max": 10.354237
+        },
+        "decoder_ms": {
+          "p50": 1.9790375,
+          "p95": 3.2112912500000004,
+          "p99": 4.601876749999999,
+          "max": 10.46889
+        }
+      },
+      "started_wall_ns": 1794660048546345443,
+      "finished_wall_ns": 1794660071407958002,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 0.9932432432432432,
+      "denominator": 148,
+      "decoder_ms": {
+        "p50": 1.9790375,
+        "p95": 3.2112912500000004,
+        "p99": 4.601876749999999,
+        "max": 10.46889
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9934640522875817,
+        "denominator": 153,
+        "complete_valid_publication_count": 592,
+        "publication_ms": {
+          "p50": 1.8678629999999998,
+          "p95": 3.498270249999994,
+          "p99": 5.188941090000033,
+          "max": 10.457349
+        },
+        "decoder_ms": {
+          "p50": 1.9612094999999998,
+          "p95": 3.8699863999999993,
+          "p99": 6.004039020000004,
+          "max": 11.384647
+        }
+      },
+      "started_wall_ns": 1794660071408384537,
+      "finished_wall_ns": 1794660094375816025,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 0.9934640522875817,
+      "denominator": 153,
+      "decoder_ms": {
+        "p50": 1.9612094999999998,
+        "p95": 3.8699863999999993,
+        "p99": 6.004039020000004,
+        "max": 11.384647
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 157,
+        "complete_valid_publication_count": 407,
+        "publication_ms": {
+          "p50": 1.685623,
+          "p95": 2.3002048,
+          "p99": 3.08286822,
+          "max": 5.449438
+        },
+        "decoder_ms": {
+          "p50": 1.766405,
+          "p95": 2.5641178,
+          "p99": 3.15211658,
+          "max": 6.256221
+        }
+      },
+      "started_wall_ns": 1794660094376377770,
+      "finished_wall_ns": 1794660110224059816,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 157,
+      "decoder_ms": {
+        "p50": 1.766405,
+        "p95": 2.5641178,
+        "p99": 3.15211658,
+        "max": 6.256221
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 37,
+        "complete_valid_publication_count": 114,
+        "publication_ms": {
+          "p50": 2.0074555,
+          "p95": 2.7667742999999994,
+          "p99": 3.571137410000002,
+          "max": 3.940571
+        },
+        "decoder_ms": {
+          "p50": 2.130959,
+          "p95": 2.9935106499999997,
+          "p99": 3.85302014,
+          "max": 3.98963
+        }
+      },
+      "started_wall_ns": 1794660110224620573,
+      "finished_wall_ns": 1794660126020430890,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 37,
+      "decoder_ms": {
+        "p50": 2.130959,
+        "p95": 2.9935106499999997,
+        "p99": 3.85302014,
+        "max": 3.98963
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.877662,
+          "p95": 3.1673668499999987,
+          "p99": 3.4412690199999947,
+          "max": 4.067788
+        },
+        "decoder_ms": {
+          "p50": 1.9548554999999999,
+          "p95": 3.3365968999999995,
+          "p99": 3.904502829999998,
+          "max": 4.170793
+        }
+      },
+      "started_wall_ns": 1794660126020902232,
+      "finished_wall_ns": 1794660144394546902,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.9548554999999999,
+        "p95": 3.3365968999999995,
+        "p99": 3.904502829999998,
+        "max": 4.170793
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.904531,
+          "p95": 2.623707849999999,
+          "p99": 4.557660409999995,
+          "max": 6.496048
+        },
+        "decoder_ms": {
+          "p50": 2.0061045,
+          "p95": 2.882556399999999,
+          "p99": 4.623303119999996,
+          "max": 6.575137
+        }
+      },
+      "started_wall_ns": 1794660144395036620,
+      "finished_wall_ns": 1794660160159060867,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.0061045,
+        "p95": 2.882556399999999,
+        "p99": 4.623303119999996,
+        "max": 6.575137
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.849347,
+          "p95": 2.4548595499999997,
+          "p99": 2.801501229999999,
+          "max": 5.074463
+        },
+        "decoder_ms": {
+          "p50": 1.9835475,
+          "p95": 2.749959099999999,
+          "p99": 3.074486789999999,
+          "max": 8.688102
+        }
+      },
+      "started_wall_ns": 1794660160159608012,
+      "finished_wall_ns": 1794660175860229197,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.9835475,
+        "p95": 2.749959099999999,
+        "p99": 3.074486789999999,
+        "max": 8.688102
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.01349,
+          "p95": 2.93620235,
+          "p99": 3.8766663899999987,
+          "max": 6.376332
+        },
+        "decoder_ms": {
+          "p50": 2.119761,
+          "p95": 2.8328518,
+          "p99": 3.785411639999994,
+          "max": 6.467119
+        }
+      },
+      "started_wall_ns": 1794660175860650823,
+      "finished_wall_ns": 1794660191618973727,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.119761,
+        "p95": 2.8328518,
+        "p99": 3.785411639999994,
+        "max": 6.467119
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.1924775,
+          "p95": 3.2399305499999995,
+          "p99": 5.658427409999993,
+          "max": 6.917724
+        },
+        "decoder_ms": {
+          "p50": 2.3109764999999998,
+          "p95": 3.989849799999998,
+          "p99": 6.08844455,
+          "max": 7.061111
+        }
+      },
+      "started_wall_ns": 1794660191619503576,
+      "finished_wall_ns": 1794660207322449541,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.3109764999999998,
+        "p95": 3.989849799999998,
+        "p99": 6.08844455,
+        "max": 7.061111
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.209423,
+          "p95": 4.10410185,
+          "p99": 5.082887919999999,
+          "max": 5.676808
+        },
+        "decoder_ms": {
+          "p50": 2.299719,
+          "p95": 4.23165195,
+          "p99": 5.2265712099999995,
+          "max": 5.859643
+        }
+      },
+      "started_wall_ns": 1794660207322938118,
+      "finished_wall_ns": 1794660223022973940,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.299719,
+        "p95": 4.23165195,
+        "p99": 5.2265712099999995,
+        "max": 5.859643
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9512195121951219,
+        "denominator": 41,
+        "complete_valid_publication_count": 61,
+        "publication_ms": {
+          "p50": 1.866533,
+          "p95": 2.428849,
+          "p99": 3.111730999999998,
+          "max": 4.001222
+        },
+        "decoder_ms": {
+          "p50": 2.089319,
+          "p95": 2.916255,
+          "p99": 4.877523199999999,
+          "max": 5.258948
+        }
+      },
+      "started_wall_ns": 1794660223023470500,
+      "finished_wall_ns": 1794660230605014174,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.9512195121951219,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.089319,
+        "p95": 2.916255,
+        "p99": 4.877523199999999,
+        "max": 5.258948
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 2.058656,
+          "p95": 3.45961475,
+          "p99": 4.10690607,
+          "max": 4.47389
+        },
+        "decoder_ms": {
+          "p50": 2.1991505,
+          "p95": 3.7449828,
+          "p99": 4.3141028200000004,
+          "max": 4.585698
+        }
+      },
+      "started_wall_ns": 1794660230605589462,
+      "finished_wall_ns": 1794660238156662381,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.1991505,
+        "p95": 3.7449828,
+        "p99": 4.3141028200000004,
+        "max": 4.585698
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 153,
+        "complete_valid_publication_count": 408,
+        "publication_ms": {
+          "p50": 1.84015,
+          "p95": 2.9048462999999995,
+          "p99": 5.746941090000004,
+          "max": 7.465466
+        },
+        "decoder_ms": {
+          "p50": 1.940383,
+          "p95": 3.44101875,
+          "p99": 6.061978780000007,
+          "max": 8.691546
+        }
+      },
+      "started_wall_ns": 1794660238157074263,
+      "finished_wall_ns": 1794660254343808663,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 153,
+      "decoder_ms": {
+        "p50": 1.940383,
+        "p95": 3.44101875,
+        "p99": 6.061978780000007,
+        "max": 8.691546
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9934640522875817,
+        "denominator": 153,
+        "complete_valid_publication_count": 406,
+        "publication_ms": {
+          "p50": 1.788439,
+          "p95": 2.825541,
+          "p99": 4.360314599999998,
+          "max": 8.217061
+        },
+        "decoder_ms": {
+          "p50": 1.8681394999999998,
+          "p95": 3.1413465,
+          "p99": 5.096766399999997,
+          "max": 9.588036
+        }
+      },
+      "started_wall_ns": 1794660254344764315,
+      "finished_wall_ns": 1794660270340760739,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_300_10_zero/result.json",
+      "coverage": 0.9934640522875817,
+      "denominator": 153,
+      "decoder_ms": {
+        "p50": 1.8681394999999998,
+        "p95": 3.1413465,
+        "p99": 5.096766399999997,
+        "max": 9.588036
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 1,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1794660270341361886,
+      "finished_wall_ns": 1794660286098981510,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 145,
+      "decoder_ms": null
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 258,
+        "publication_ms": {
+          "p50": 1.9438525,
+          "p95": 2.4886250999999997,
+          "p99": 3.2892786400000036,
+          "max": 4.687917
+        },
+        "decoder_ms": {
+          "p50": 2.0255815,
+          "p95": 2.7245004500000003,
+          "p99": 3.496532280000002,
+          "max": 6.562534
+        }
+      },
+      "started_wall_ns": 1794660286099512462,
+      "finished_wall_ns": 1794660302032810128,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_300_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.0255815,
+        "p95": 2.7245004500000003,
+        "p99": 3.496532280000002,
+        "max": 6.562534
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975,
+        "denominator": 40,
+        "complete_valid_publication_count": 252,
+        "publication_ms": {
+          "p50": 1.9588245,
+          "p95": 3.1232649999999986,
+          "p99": 5.256229770000003,
+          "max": 10.934733
+        },
+        "decoder_ms": {
+          "p50": 2.0459875,
+          "p95": 3.224644049999999,
+          "p99": 5.364232370000002,
+          "max": 11.019727
+        }
+      },
+      "started_wall_ns": 1794660302033362871,
+      "finished_wall_ns": 1794660318081325261,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_300_12_zero/result.json",
+      "coverage": 0.975,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.0459875,
+        "p95": 3.224644049999999,
+        "p99": 5.364232370000002,
+        "max": 11.019727
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 35,
+        "complete_valid_publication_count": 113,
+        "publication_ms": {
+          "p50": 2.068666,
+          "p95": 2.6739045999999993,
+          "p99": 3.541352479999998,
+          "max": 4.63099
+        },
+        "decoder_ms": {
+          "p50": 2.174656,
+          "p95": 2.9638367999999997,
+          "p99": 3.2991298399999995,
+          "max": 4.488641
+        }
+      },
+      "started_wall_ns": 1794660318081988281,
+      "finished_wall_ns": 1794660334045815248,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 35,
+      "decoder_ms": {
+        "p50": 2.174656,
+        "p95": 2.9638367999999997,
+        "p99": 3.2991298399999995,
+        "max": 4.488641
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 1,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9753086419753086,
+        "denominator": 81,
+        "complete_valid_publication_count": 127,
+        "publication_ms": {
+          "p50": 1.853172,
+          "p95": 2.715035599999999,
+          "p99": 3.1870590999999995,
+          "max": 3.464527
+        },
+        "decoder_ms": {
+          "p50": 1.983957,
+          "p95": 2.8235072,
+          "p99": 3.639072979999999,
+          "max": 3.942948
+        }
+      },
+      "started_wall_ns": 1794660334046351296,
+      "finished_wall_ns": 1794660341736825354,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.9753086419753086,
+      "denominator": 81,
+      "decoder_ms": {
+        "p50": 1.983957,
+        "p95": 2.8235072,
+        "p99": 3.639072979999999,
+        "max": 3.942948
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 1,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1794660341737239869,
+      "finished_wall_ns": 1794660349301040916,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-1/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.7195121951219512,
+      "denominator": 82,
+      "decoder_ms": null
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 70,
+        "complete_valid_publication_count": 278,
+        "publication_ms": {
+          "p50": 2.0027299999999997,
+          "p95": 3.5050582999999995,
+          "p99": 8.935618970000032,
+          "max": 13.4238
+        },
+        "decoder_ms": {
+          "p50": 2.1406330000000002,
+          "p95": 3.704611049999993,
+          "p99": 9.145637340000029,
+          "max": 13.559059
+        }
+      },
+      "started_wall_ns": 1794660349301499789,
+      "finished_wall_ns": 1794660371894957504,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 70,
+      "decoder_ms": {
+        "p50": 2.1406330000000002,
+        "p95": 3.704611049999993,
+        "p99": 9.145637340000029,
+        "max": 13.559059
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 79,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.819956,
+          "p95": 2.6044898,
+          "p99": 4.4530323600000035,
+          "max": 5.337845
+        },
+        "decoder_ms": {
+          "p50": 1.924799,
+          "p95": 2.7398540000000002,
+          "p99": 4.613597280000003,
+          "max": 5.42039
+        }
+      },
+      "started_wall_ns": 1794660371895466823,
+      "finished_wall_ns": 1794660394400829113,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 79,
+      "decoder_ms": {
+        "p50": 1.924799,
+        "p95": 2.7398540000000002,
+        "p99": 4.613597280000003,
+        "max": 5.42039
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.033298,
+          "p95": 3.288578000000004,
+          "p99": 6.405551800000047,
+          "max": 13.699902
+        },
+        "decoder_ms": {
+          "p50": 2.16673,
+          "p95": 3.723597200000001,
+          "p99": 6.536284480000046,
+          "max": 13.831651
+        }
+      },
+      "started_wall_ns": 1794660394401429910,
+      "finished_wall_ns": 1794660416805185572,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.16673,
+        "p95": 3.723597200000001,
+        "p99": 6.536284480000046,
+        "max": 13.831651
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9875,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.827588,
+          "p95": 2.583043400000001,
+          "p99": 3.2497931600000016,
+          "max": 20.668613
+        },
+        "decoder_ms": {
+          "p50": 1.988703,
+          "p95": 2.7392312000000003,
+          "p99": 3.4380785600000134,
+          "max": 22.327841
+        }
+      },
+      "started_wall_ns": 1794660416805683273,
+      "finished_wall_ns": 1794660439330194346,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 0.9875,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.988703,
+        "p95": 2.7392312000000003,
+        "p99": 3.4380785600000134,
+        "max": 22.327841
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 75,
+        "complete_valid_publication_count": 279,
+        "publication_ms": {
+          "p50": 2.003188,
+          "p95": 2.8139066999999973,
+          "p99": 4.416587519999992,
+          "max": 5.708962
+        },
+        "decoder_ms": {
+          "p50": 2.092152,
+          "p95": 3.247431699999998,
+          "p99": 4.749643959999991,
+          "max": 5.900755
+        }
+      },
+      "started_wall_ns": 1794660439330855123,
+      "finished_wall_ns": 1794660461731948260,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 75,
+      "decoder_ms": {
+        "p50": 2.092152,
+        "p95": 3.247431699999998,
+        "p99": 4.749643959999991,
+        "max": 5.900755
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.13385,
+          "p95": 3.6521230000000005,
+          "p99": 5.734860560000016,
+          "max": 12.081986
+        },
+        "decoder_ms": {
+          "p50": 2.239654,
+          "p95": 3.8899916000000028,
+          "p99": 6.438138360000002,
+          "max": 12.111065
+        }
+      },
+      "started_wall_ns": 1794660461732315985,
+      "finished_wall_ns": 1794660484503952119,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.239654,
+        "p95": 3.8899916000000028,
+        "p99": 6.438138360000002,
+        "max": 12.111065
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 78,
+        "complete_valid_publication_count": 198,
+        "publication_ms": {
+          "p50": 2.1209360000000004,
+          "p95": 3.4208043499999983,
+          "p99": 6.554481080000005,
+          "max": 16.330314
+        },
+        "decoder_ms": {
+          "p50": 2.2686335,
+          "p95": 3.9788266999999964,
+          "p99": 6.676204650000005,
+          "max": 16.513426
+        }
+      },
+      "started_wall_ns": 1794660484505117568,
+      "finished_wall_ns": 1794660500479081055,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 78,
+      "decoder_ms": {
+        "p50": 2.2686335,
+        "p95": 3.9788266999999964,
+        "p99": 6.676204650000005,
+        "max": 16.513426
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.3522245,
+          "p95": 3.466300949999997,
+          "p99": 4.6594020899999995,
+          "max": 4.694373
+        },
+        "decoder_ms": {
+          "p50": 2.4863765,
+          "p95": 3.630528349999997,
+          "p99": 4.84674902,
+          "max": 4.943228
+        }
+      },
+      "started_wall_ns": 1794660500479833481,
+      "finished_wall_ns": 1794660516336739366,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.4863765,
+        "p95": 3.630528349999997,
+        "p99": 4.84674902,
+        "max": 4.943228
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.908525,
+          "p95": 2.744119999999997,
+          "p99": 3.532248719999999,
+          "max": 4.444487
+        },
+        "decoder_ms": {
+          "p50": 2.0077365,
+          "p95": 2.9141207000000002,
+          "p99": 3.9721036,
+          "max": 6.327393
+        }
+      },
+      "started_wall_ns": 1794660516337358089,
+      "finished_wall_ns": 1794660539342158994,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 2.0077365,
+        "p95": 2.9141207000000002,
+        "p99": 3.9721036,
+        "max": 6.327393
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 591,
+        "publication_ms": {
+          "p50": 1.997997,
+          "p95": 3.665772,
+          "p99": 5.575424000000007,
+          "max": 7.641563
+        },
+        "decoder_ms": {
+          "p50": 2.0758685000000003,
+          "p95": 3.724892899999995,
+          "p99": 5.610834260000006,
+          "max": 8.789434
+        }
+      },
+      "started_wall_ns": 1794660539342704328,
+      "finished_wall_ns": 1794660562383905043,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 2.0758685000000003,
+        "p95": 3.724892899999995,
+        "p99": 5.610834260000006,
+        "max": 8.789434
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9935897435897436,
+        "denominator": 156,
+        "complete_valid_publication_count": 592,
+        "publication_ms": {
+          "p50": 1.8659525000000001,
+          "p95": 2.7858916999999987,
+          "p99": 3.878004540000021,
+          "max": 8.389547
+        },
+        "decoder_ms": {
+          "p50": 1.9732315,
+          "p95": 3.0298292499999997,
+          "p99": 4.549877710000011,
+          "max": 8.397659
+        }
+      },
+      "started_wall_ns": 1794660562384465920,
+      "finished_wall_ns": 1794660585399191305,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 0.9935897435897436,
+      "denominator": 156,
+      "decoder_ms": {
+        "p50": 1.9732315,
+        "p95": 3.0298292499999997,
+        "p99": 4.549877710000011,
+        "max": 8.397659
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.833366,
+          "p95": 3.6176453,
+          "p99": 5.443228279999993,
+          "max": 7.246081
+        },
+        "decoder_ms": {
+          "p50": 1.93534,
+          "p95": 4.050588399999999,
+          "p99": 5.893682979999991,
+          "max": 7.830472
+        }
+      },
+      "started_wall_ns": 1794660585399691860,
+      "finished_wall_ns": 1794660608312845433,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.93534,
+        "p95": 4.050588399999999,
+        "p99": 5.893682979999991,
+        "max": 7.830472
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 146,
+        "complete_valid_publication_count": 587,
+        "publication_ms": {
+          "p50": 1.780947,
+          "p95": 2.516773699999998,
+          "p99": 4.4535367599999995,
+          "max": 9.157778
+        },
+        "decoder_ms": {
+          "p50": 1.844048,
+          "p95": 2.7071806999999986,
+          "p99": 4.63191114,
+          "max": 9.17958
+        }
+      },
+      "started_wall_ns": 1794660608313260840,
+      "finished_wall_ns": 1794660631070671874,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 146,
+      "decoder_ms": {
+        "p50": 1.844048,
+        "p95": 2.7071806999999986,
+        "p99": 4.63191114,
+        "max": 9.17958
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9867549668874173,
+        "denominator": 151,
+        "complete_valid_publication_count": 591,
+        "publication_ms": {
+          "p50": 1.823597,
+          "p95": 2.9122250000000003,
+          "p99": 5.197939800000001,
+          "max": 10.992058
+        },
+        "decoder_ms": {
+          "p50": 1.9330975000000001,
+          "p95": 3.14664275,
+          "p99": 5.310272930000007,
+          "max": 11.059179
+        }
+      },
+      "started_wall_ns": 1794660631071175594,
+      "finished_wall_ns": 1794660654191746454,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 0.9867549668874173,
+      "denominator": 151,
+      "decoder_ms": {
+        "p50": 1.9330975000000001,
+        "p95": 3.14664275,
+        "p99": 5.310272930000007,
+        "max": 11.059179
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 160,
+        "complete_valid_publication_count": 409,
+        "publication_ms": {
+          "p50": 1.677503,
+          "p95": 2.2508754,
+          "p99": 3.120426920000003,
+          "max": 4.162501
+        },
+        "decoder_ms": {
+          "p50": 1.77221,
+          "p95": 2.479062399999999,
+          "p99": 3.29482176,
+          "max": 6.220757
+        }
+      },
+      "started_wall_ns": 1794660654192443125,
+      "finished_wall_ns": 1794660670153221628,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 160,
+      "decoder_ms": {
+        "p50": 1.77221,
+        "p95": 2.479062399999999,
+        "p99": 3.29482176,
+        "max": 6.220757
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 116,
+        "publication_ms": {
+          "p50": 2.0280129999999996,
+          "p95": 2.78506525,
+          "p99": 4.340207899999993,
+          "max": 4.773439
+        },
+        "decoder_ms": {
+          "p50": 2.1258025,
+          "p95": 3.1912495,
+          "p99": 4.682827799999994,
+          "max": 4.863529
+        }
+      },
+      "started_wall_ns": 1794660670153848174,
+      "finished_wall_ns": 1794660686208016408,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.1258025,
+        "p95": 3.1912495,
+        "p99": 4.682827799999994,
+        "max": 4.863529
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.226118,
+          "p95": 3.4579189499999985,
+          "p99": 6.810974979999999,
+          "max": 12.416453
+        },
+        "decoder_ms": {
+          "p50": 2.3589785,
+          "p95": 3.7041487499999954,
+          "p99": 6.73978814999999,
+          "max": 12.591747
+        }
+      },
+      "started_wall_ns": 1794660686208710596,
+      "finished_wall_ns": 1794660704688561867,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.3589785,
+        "p95": 3.7041487499999954,
+        "p99": 6.73978814999999,
+        "max": 12.591747
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.115287,
+          "p95": 2.9335725999999993,
+          "p99": 3.756999579999997,
+          "max": 4.590277
+        },
+        "decoder_ms": {
+          "p50": 2.2206905,
+          "p95": 3.1485889499999997,
+          "p99": 3.8897094899999987,
+          "max": 4.709752
+        }
+      },
+      "started_wall_ns": 1794660704689411239,
+      "finished_wall_ns": 1794660720500323337,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.2206905,
+        "p95": 3.1485889499999997,
+        "p99": 3.8897094899999987,
+        "max": 4.709752
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.245593,
+          "p95": 3.0752370499999997,
+          "p99": 3.9932050299999964,
+          "max": 5.290924
+        },
+        "decoder_ms": {
+          "p50": 2.318148,
+          "p95": 3.2325725999999957,
+          "p99": 4.4822015099999994,
+          "max": 5.416918
+        }
+      },
+      "started_wall_ns": 1794660720500840457,
+      "finished_wall_ns": 1794660736388879020,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.318148,
+        "p95": 3.2325725999999957,
+        "p99": 4.4822015099999994,
+        "max": 5.416918
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 129,
+        "publication_ms": {
+          "p50": 2.482637,
+          "p95": 4.098571199999997,
+          "p99": 7.3422917599999975,
+          "max": 8.966931
+        },
+        "decoder_ms": {
+          "p50": 2.582747,
+          "p95": 4.384613399999995,
+          "p99": 7.914479919999996,
+          "max": 9.150633
+        }
+      },
+      "started_wall_ns": 1794660736389663954,
+      "finished_wall_ns": 1794660755020881476,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.582747,
+        "p95": 4.384613399999995,
+        "p99": 7.914479919999996,
+        "max": 9.150633
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.2802485,
+          "p95": 3.0157335,
+          "p99": 4.150244209999996,
+          "max": 8.116748
+        },
+        "decoder_ms": {
+          "p50": 2.4101714999999997,
+          "p95": 3.3430063999999997,
+          "p99": 4.140461349999996,
+          "max": 8.319474
+        }
+      },
+      "started_wall_ns": 1794660755021413589,
+      "finished_wall_ns": 1794660770784973980,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.4101714999999997,
+        "p95": 3.3430063999999997,
+        "p99": 4.140461349999996,
+        "max": 8.319474
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.243375,
+          "p95": 3.09527645,
+          "p99": 3.38001878,
+          "max": 3.520262
+        },
+        "decoder_ms": {
+          "p50": 2.3432385,
+          "p95": 3.2435518999999986,
+          "p99": 3.96103903,
+          "max": 4.127188
+        }
+      },
+      "started_wall_ns": 1794660770785979638,
+      "finished_wall_ns": 1794660786663087995,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.3432385,
+        "p95": 3.2435518999999986,
+        "p99": 3.96103903,
+        "max": 4.127188
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 2.158572,
+          "p95": 3.22464805,
+          "p99": 3.5495603,
+          "max": 3.613714
+        },
+        "decoder_ms": {
+          "p50": 2.2934205,
+          "p95": 3.36680815,
+          "p99": 3.85167606,
+          "max": 4.059536
+        }
+      },
+      "started_wall_ns": 1794660786663668851,
+      "finished_wall_ns": 1794660794378695754,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.2934205,
+        "p95": 3.36680815,
+        "p99": 3.85167606,
+        "max": 4.059536
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9512195121951219,
+        "denominator": 41,
+        "complete_valid_publication_count": 61,
+        "publication_ms": {
+          "p50": 1.987004,
+          "p95": 3.478839,
+          "p99": 4.1933032,
+          "max": 4.293805
+        },
+        "decoder_ms": {
+          "p50": 2.107024,
+          "p95": 3.626692,
+          "p99": 4.3823951999999995,
+          "max": 4.430727
+        }
+      },
+      "started_wall_ns": 1794660794379378865,
+      "finished_wall_ns": 1794660802038166065,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.9512195121951219,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.107024,
+        "p95": 3.626692,
+        "p99": 4.3823951999999995,
+        "max": 4.430727
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 158,
+        "complete_valid_publication_count": 409,
+        "publication_ms": {
+          "p50": 1.744513,
+          "p95": 2.4340121999999997,
+          "p99": 3.8728111200000113,
+          "max": 5.683547
+        },
+        "decoder_ms": {
+          "p50": 1.846837,
+          "p95": 2.6293523999999997,
+          "p99": 3.4712940399999996,
+          "max": 5.73871
+        }
+      },
+      "started_wall_ns": 1794660802038530585,
+      "finished_wall_ns": 1794660818001121006,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 158,
+      "decoder_ms": {
+        "p50": 1.846837,
+        "p95": 2.6293523999999997,
+        "p99": 3.4712940399999996,
+        "max": 5.73871
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9871794871794872,
+        "denominator": 156,
+        "complete_valid_publication_count": 405,
+        "publication_ms": {
+          "p50": 1.852575,
+          "p95": 2.932797199999997,
+          "p99": 3.821362079999999,
+          "max": 5.505583
+        },
+        "decoder_ms": {
+          "p50": 2.014385,
+          "p95": 3.1774165999999964,
+          "p99": 3.9740056399999997,
+          "max": 6.500876
+        }
+      },
+      "started_wall_ns": 1794660818001498145,
+      "finished_wall_ns": 1794660834001179887,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_300_10_zero/result.json",
+      "coverage": 0.9871794871794872,
+      "denominator": 156,
+      "decoder_ms": {
+        "p50": 2.014385,
+        "p95": 3.1774165999999964,
+        "p99": 3.9740056399999997,
+        "max": 6.500876
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.757312,
+          "p95": 2.2977065499999996,
+          "p99": 4.249030619999982,
+          "max": 6.236261
+        },
+        "decoder_ms": {
+          "p50": 1.8679515,
+          "p95": 2.618859699999999,
+          "p99": 4.549456219999996,
+          "max": 6.319231
+        }
+      },
+      "started_wall_ns": 1794660834001875246,
+      "finished_wall_ns": 1794660850050245284,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.8679515,
+        "p95": 2.618859699999999,
+        "p99": 4.549456219999996,
+        "max": 6.319231
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 253,
+        "publication_ms": {
+          "p50": 2.010174,
+          "p95": 2.6016442,
+          "p99": 2.862795239999999,
+          "max": 4.472689
+        },
+        "decoder_ms": {
+          "p50": 2.170055,
+          "p95": 2.8876793999999997,
+          "p99": 3.3696291199999977,
+          "max": 4.968713
+        }
+      },
+      "started_wall_ns": 1794660850050830417,
+      "finished_wall_ns": 1794660868554143928,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_300_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.170055,
+        "p95": 2.8876793999999997,
+        "p99": 3.3696291199999977,
+        "max": 4.968713
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 256,
+        "publication_ms": {
+          "p50": 1.9779545,
+          "p95": 2.4462475,
+          "p99": 2.9364076,
+          "max": 4.107118
+        },
+        "decoder_ms": {
+          "p50": 2.0490525,
+          "p95": 2.6777759999999997,
+          "p99": 3.382797849999999,
+          "max": 4.226758
+        }
+      },
+      "started_wall_ns": 1794660868554891626,
+      "finished_wall_ns": 1794660884351678197,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.0490525,
+        "p95": 2.6777759999999997,
+        "p99": 3.382797849999999,
+        "max": 4.226758
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 31,
+        "complete_valid_publication_count": 113,
+        "publication_ms": {
+          "p50": 1.935696,
+          "p95": 2.4150138,
+          "p99": 2.754041159999999,
+          "max": 2.937408
+        },
+        "decoder_ms": {
+          "p50": 2.040529,
+          "p95": 2.5288795999999993,
+          "p99": 2.8266602399999994,
+          "max": 3.074054
+        }
+      },
+      "started_wall_ns": 1794660884352026953,
+      "finished_wall_ns": 1794660900244572270,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 31,
+      "decoder_ms": {
+        "p50": 2.040529,
+        "p95": 2.5288795999999993,
+        "p99": 2.8266602399999994,
+        "max": 3.074054
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9753086419753086,
+        "denominator": 81,
+        "complete_valid_publication_count": 127,
+        "publication_ms": {
+          "p50": 1.793621,
+          "p95": 2.5063202999999987,
+          "p99": 5.109395119999996,
+          "max": 7.317972
+        },
+        "decoder_ms": {
+          "p50": 1.876076,
+          "p95": 2.557441799999998,
+          "p99": 6.18466747999999,
+          "max": 7.494318
+        }
+      },
+      "started_wall_ns": 1794660900244983861,
+      "finished_wall_ns": 1794660907980157247,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.9753086419753086,
+      "denominator": 81,
+      "decoder_ms": {
+        "p50": 1.876076,
+        "p95": 2.557441799999998,
+        "p99": 6.18466747999999,
+        "max": 7.494318
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 2,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 82,
+        "complete_valid_publication_count": 127,
+        "publication_ms": {
+          "p50": 1.748068,
+          "p95": 2.3527396,
+          "p99": 2.4405286999999998,
+          "max": 3.318878
+        },
+        "decoder_ms": {
+          "p50": 1.847958,
+          "p95": 2.4636737999999996,
+          "p99": 3.3916830599999988,
+          "max": 3.794661
+        }
+      },
+      "started_wall_ns": 1794660907981089634,
+      "finished_wall_ns": 1794660915743168995,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-2/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.847958,
+        "p95": 2.4636737999999996,
+        "p99": 3.3916830599999988,
+        "max": 3.794661
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 281,
+        "publication_ms": {
+          "p50": 1.851705,
+          "p95": 2.516849,
+          "p99": 4.051561599999999,
+          "max": 10.60709
+        },
+        "decoder_ms": {
+          "p50": 2.119624,
+          "p95": 3.018915,
+          "p99": 4.829244799999999,
+          "max": 12.59501
+        }
+      },
+      "started_wall_ns": 1794660915744158168,
+      "finished_wall_ns": 1794660938283097175,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.119624,
+        "p95": 3.018915,
+        "p99": 4.829244799999999,
+        "max": 12.59501
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 70,
+        "complete_valid_publication_count": 271,
+        "publication_ms": {
+          "p50": 1.920448,
+          "p95": 2.8610344999999997,
+          "p99": 4.5149897,
+          "max": 6.566004
+        },
+        "decoder_ms": {
+          "p50": 2.06411,
+          "p95": 3.081295,
+          "p99": 4.657137600000001,
+          "max": 6.629314
+        }
+      },
+      "started_wall_ns": 1794660938283571671,
+      "finished_wall_ns": 1794660960909949753,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 70,
+      "decoder_ms": {
+        "p50": 2.06411,
+        "p95": 3.081295,
+        "p99": 4.657137600000001,
+        "max": 6.629314
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.867603,
+          "p95": 2.5390578,
+          "p99": 3.2084564000000055,
+          "max": 4.183533
+        },
+        "decoder_ms": {
+          "p50": 1.956608,
+          "p95": 2.7180256000000003,
+          "p99": 3.3024843600000056,
+          "max": 4.303579
+        }
+      },
+      "started_wall_ns": 1794660960911099207,
+      "finished_wall_ns": 1794660983369186476,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.956608,
+        "p95": 2.7180256000000003,
+        "p99": 3.3024843600000056,
+        "max": 4.303579
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 76,
+        "complete_valid_publication_count": 277,
+        "publication_ms": {
+          "p50": 2.079558,
+          "p95": 3.3627134,
+          "p99": 5.735315440000001,
+          "max": 14.794946
+        },
+        "decoder_ms": {
+          "p50": 2.184342,
+          "p95": 3.628241399999999,
+          "p99": 6.7075748400000075,
+          "max": 17.483708
+        }
+      },
+      "started_wall_ns": 1794660983369715664,
+      "finished_wall_ns": 1794661005872908027,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 76,
+      "decoder_ms": {
+        "p50": 2.184342,
+        "p95": 3.628241399999999,
+        "p99": 6.7075748400000075,
+        "max": 17.483708
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.958545,
+          "p95": 3.2985972000000023,
+          "p99": 6.632850120000008,
+          "max": 9.660358
+        },
+        "decoder_ms": {
+          "p50": 2.072172,
+          "p95": 3.496721400000001,
+          "p99": 7.02160808000002,
+          "max": 9.862573
+        }
+      },
+      "started_wall_ns": 1794661005874186671,
+      "finished_wall_ns": 1794661028334441741,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.072172,
+        "p95": 3.496721400000001,
+        "p99": 7.02160808000002,
+        "max": 9.862573
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 75,
+        "complete_valid_publication_count": 283,
+        "publication_ms": {
+          "p50": 2.066598,
+          "p95": 3.469127799999996,
+          "p99": 4.946342820000001,
+          "max": 6.080995
+        },
+        "decoder_ms": {
+          "p50": 2.233474,
+          "p95": 3.6784262999999986,
+          "p99": 5.105351060000001,
+          "max": 6.289969
+        }
+      },
+      "started_wall_ns": 1794661028334895685,
+      "finished_wall_ns": 1794661050718857653,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 75,
+      "decoder_ms": {
+        "p50": 2.233474,
+        "p95": 3.6784262999999986,
+        "p99": 5.105351060000001,
+        "max": 6.289969
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.1238165,
+          "p95": 5.200207349999999,
+          "p99": 8.691801819999984,
+          "max": 13.040827
+        },
+        "decoder_ms": {
+          "p50": 2.2133195,
+          "p95": 5.38943555,
+          "p99": 8.829645679999985,
+          "max": 14.721302
+        }
+      },
+      "started_wall_ns": 1794661050719439571,
+      "finished_wall_ns": 1794661066545137488,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.2133195,
+        "p95": 5.38943555,
+        "p99": 8.829645679999985,
+        "max": 14.721302
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.0970519999999997,
+          "p95": 2.8349148999999993,
+          "p99": 3.15126264,
+          "max": 3.22467
+        },
+        "decoder_ms": {
+          "p50": 2.233482,
+          "p95": 2.9099678499999992,
+          "p99": 3.18161169,
+          "max": 3.222612
+        }
+      },
+      "started_wall_ns": 1794661066545509419,
+      "finished_wall_ns": 1794661082252601105,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.233482,
+        "p95": 2.9099678499999992,
+        "p99": 3.18161169,
+        "max": 3.222612
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 151,
+        "complete_valid_publication_count": 596,
+        "publication_ms": {
+          "p50": 1.7407949999999999,
+          "p95": 2.4149374999999997,
+          "p99": 4.21610249999999,
+          "max": 5.685631
+        },
+        "decoder_ms": {
+          "p50": 1.8132890000000002,
+          "p95": 2.5832615,
+          "p99": 4.502852599999996,
+          "max": 5.778912
+        }
+      },
+      "started_wall_ns": 1794661082253172207,
+      "finished_wall_ns": 1794661104943191034,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 151,
+      "decoder_ms": {
+        "p50": 1.8132890000000002,
+        "p95": 2.5832615,
+        "p99": 4.502852599999996,
+        "max": 5.778912
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 149,
+        "complete_valid_publication_count": 591,
+        "publication_ms": {
+          "p50": 1.791484,
+          "p95": 2.441094,
+          "p99": 3.476429100000003,
+          "max": 5.358722
+        },
+        "decoder_ms": {
+          "p50": 1.861129,
+          "p95": 2.635593,
+          "p99": 3.691530000000013,
+          "max": 5.520261
+        }
+      },
+      "started_wall_ns": 1794661104943750157,
+      "finished_wall_ns": 1794661127970603054,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 149,
+      "decoder_ms": {
+        "p50": 1.861129,
+        "p95": 2.635593,
+        "p99": 3.691530000000013,
+        "max": 5.520261
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 149,
+        "complete_valid_publication_count": 589,
+        "publication_ms": {
+          "p50": 1.734367,
+          "p95": 2.3662456,
+          "p99": 3.8244237600000006,
+          "max": 5.878466
+        },
+        "decoder_ms": {
+          "p50": 1.806236,
+          "p95": 2.5052969999999997,
+          "p99": 3.9593964799999974,
+          "max": 5.961757
+        }
+      },
+      "started_wall_ns": 1794661127970987564,
+      "finished_wall_ns": 1794661150768990045,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 149,
+      "decoder_ms": {
+        "p50": 1.806236,
+        "p95": 2.5052969999999997,
+        "p99": 3.9593964799999974,
+        "max": 5.961757
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9934640522875817,
+        "denominator": 153,
+        "complete_valid_publication_count": 592,
+        "publication_ms": {
+          "p50": 1.7234855,
+          "p95": 2.432041599999999,
+          "p99": 3.9807986300000064,
+          "max": 11.5108
+        },
+        "decoder_ms": {
+          "p50": 1.8089325,
+          "p95": 2.617378999999996,
+          "p99": 4.343341360000003,
+          "max": 11.64636
+        }
+      },
+      "started_wall_ns": 1794661150769469698,
+      "finished_wall_ns": 1794661173719693872,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 0.9934640522875817,
+      "denominator": 153,
+      "decoder_ms": {
+        "p50": 1.8089325,
+        "p95": 2.617378999999996,
+        "p99": 4.343341360000003,
+        "max": 11.64636
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 143,
+        "complete_valid_publication_count": 574,
+        "publication_ms": {
+          "p50": 1.980661,
+          "p95": 4.420530800000002,
+          "p99": 8.800771539999987,
+          "max": 22.875043
+        },
+        "decoder_ms": {
+          "p50": 2.05924,
+          "p95": 4.561974549999996,
+          "p99": 8.901432939999959,
+          "max": 23.150414
+        }
+      },
+      "started_wall_ns": 1794661173722436781,
+      "finished_wall_ns": 1794661199319592464,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 143,
+      "decoder_ms": {
+        "p50": 2.05924,
+        "p95": 4.561974549999996,
+        "p99": 8.901432939999959,
+        "max": 23.150414
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 156,
+        "complete_valid_publication_count": 595,
+        "publication_ms": {
+          "p50": 1.718108,
+          "p95": 2.2955312999999995,
+          "p99": 2.9763184599999817,
+          "max": 4.646311
+        },
+        "decoder_ms": {
+          "p50": 1.799428,
+          "p95": 2.5489561500000004,
+          "p99": 3.1387837500000044,
+          "max": 5.479058
+        }
+      },
+      "started_wall_ns": 1794661199320491400,
+      "finished_wall_ns": 1794661222244871499,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 156,
+      "decoder_ms": {
+        "p50": 1.799428,
+        "p95": 2.5489561500000004,
+        "p99": 3.1387837500000044,
+        "max": 5.479058
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 151,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7711725,
+          "p95": 2.4717241999999997,
+          "p99": 4.250237789999981,
+          "max": 5.249683
+        },
+        "decoder_ms": {
+          "p50": 1.836024,
+          "p95": 2.529385999999999,
+          "p99": 4.302350889999983,
+          "max": 5.316148
+        }
+      },
+      "started_wall_ns": 1794661222245367648,
+      "finished_wall_ns": 1794661238122834360,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 151,
+      "decoder_ms": {
+        "p50": 1.836024,
+        "p95": 2.529385999999999,
+        "p99": 4.302350889999983,
+        "max": 5.316148
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 36,
+        "complete_valid_publication_count": 116,
+        "publication_ms": {
+          "p50": 1.9816305,
+          "p95": 2.72681375,
+          "p99": 4.06514475,
+          "max": 4.083307
+        },
+        "decoder_ms": {
+          "p50": 2.0796340000000004,
+          "p95": 2.901859,
+          "p99": 4.1475415,
+          "max": 4.301526
+        }
+      },
+      "started_wall_ns": 1794661238123387304,
+      "finished_wall_ns": 1794661254074591322,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 36,
+      "decoder_ms": {
+        "p50": 2.0796340000000004,
+        "p95": 2.901859,
+        "p99": 4.1475415,
+        "max": 4.301526
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 199,
+        "publication_ms": {
+          "p50": 1.921289,
+          "p95": 3.4529473999999976,
+          "p99": 8.029931060000004,
+          "max": 12.367508
+        },
+        "decoder_ms": {
+          "p50": 2.003298,
+          "p95": 4.203712599999999,
+          "p99": 8.094829360000004,
+          "max": 13.6506
+        }
+      },
+      "started_wall_ns": 1794661254075194732,
+      "finished_wall_ns": 1794661269791873497,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.003298,
+        "p95": 4.203712599999999,
+        "p99": 8.094829360000004,
+        "max": 13.6506
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.8485665,
+          "p95": 2.4689015000000003,
+          "p99": 2.80917328,
+          "max": 3.182963
+        },
+        "decoder_ms": {
+          "p50": 1.9300320000000002,
+          "p95": 2.5870838499999995,
+          "p99": 2.9745596399999967,
+          "max": 3.587969
+        }
+      },
+      "started_wall_ns": 1794661269792206169,
+      "finished_wall_ns": 1794661285558762163,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.9300320000000002,
+        "p95": 2.5870838499999995,
+        "p99": 2.9745596399999967,
+        "max": 3.587969
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.867616,
+          "p95": 2.529352249999999,
+          "p99": 3.155226929999998,
+          "max": 3.626828
+        },
+        "decoder_ms": {
+          "p50": 1.9898105,
+          "p95": 2.7118739499999984,
+          "p99": 3.2672793699999967,
+          "max": 3.713309
+        }
+      },
+      "started_wall_ns": 1794661285559252393,
+      "finished_wall_ns": 1794661301272413991,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.9898105,
+        "p95": 2.7118739499999984,
+        "p99": 3.2672793699999967,
+        "max": 3.713309
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 125,
+        "publication_ms": {
+          "p50": 2.059318,
+          "p95": 2.6320398000000003,
+          "p99": 3.2241632,
+          "max": 3.758722
+        },
+        "decoder_ms": {
+          "p50": 2.202805,
+          "p95": 2.8628728,
+          "p99": 3.31697772,
+          "max": 4.023652
+        }
+      },
+      "started_wall_ns": 1794661301272767365,
+      "finished_wall_ns": 1794661319993842182,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.202805,
+        "p95": 2.8628728,
+        "p99": 3.31697772,
+        "max": 4.023652
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 127,
+        "publication_ms": {
+          "p50": 2.637841,
+          "p95": 4.265740899999999,
+          "p99": 6.4431569799999995,
+          "max": 7.582398
+        },
+        "decoder_ms": {
+          "p50": 2.803512,
+          "p95": 4.3989321,
+          "p99": 7.011573319999998,
+          "max": 7.676149
+        }
+      },
+      "started_wall_ns": 1794661319994216046,
+      "finished_wall_ns": 1794661335816125777,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.803512,
+        "p95": 4.3989321,
+        "p99": 7.011573319999998,
+        "max": 7.676149
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.1612595,
+          "p95": 2.5214169499999994,
+          "p99": 2.8902799299999997,
+          "max": 2.992075
+        },
+        "decoder_ms": {
+          "p50": 2.273594,
+          "p95": 2.5747452499999994,
+          "p99": 2.9322652799999998,
+          "max": 3.048075
+        }
+      },
+      "started_wall_ns": 1794661335816586052,
+      "finished_wall_ns": 1794661351615981133,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.273594,
+        "p95": 2.5747452499999994,
+        "p99": 2.9322652799999998,
+        "max": 3.048075
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9512195121951219,
+        "denominator": 41,
+        "complete_valid_publication_count": 61,
+        "publication_ms": {
+          "p50": 1.972898,
+          "p95": 4.043758,
+          "p99": 10.076137799999993,
+          "max": 13.301583
+        },
+        "decoder_ms": {
+          "p50": 2.050234,
+          "p95": 4.139522,
+          "p99": 10.693313399999994,
+          "max": 13.468821
+        }
+      },
+      "started_wall_ns": 1794661351616383391,
+      "finished_wall_ns": 1794661359436923583,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.9512195121951219,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.050234,
+        "p95": 4.139522,
+        "p99": 10.693313399999994,
+        "max": 13.468821
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9512195121951219,
+        "denominator": 41,
+        "complete_valid_publication_count": 61,
+        "publication_ms": {
+          "p50": 1.784693,
+          "p95": 2.309414,
+          "p99": 2.8859733999999997,
+          "max": 3.148606
+        },
+        "decoder_ms": {
+          "p50": 1.887538,
+          "p95": 2.593623,
+          "p99": 3.137941599999999,
+          "max": 3.543016
+        }
+      },
+      "started_wall_ns": 1794661359437628066,
+      "finished_wall_ns": 1794661369904220354,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.9512195121951219,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 1.887538,
+        "p95": 2.593623,
+        "p99": 3.137941599999999,
+        "max": 3.543016
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 152,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.663628,
+          "p95": 2.1860521,
+          "p99": 3.3326866699999966,
+          "max": 5.611963
+        },
+        "decoder_ms": {
+          "p50": 1.767127,
+          "p95": 2.4824195999999996,
+          "p99": 4.0672554099999925,
+          "max": 5.471406
+        }
+      },
+      "started_wall_ns": 1794661369904771807,
+      "finished_wall_ns": 1794661385803394903,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 152,
+      "decoder_ms": {
+        "p50": 1.767127,
+        "p95": 2.4824195999999996,
+        "p99": 4.0672554099999925,
+        "max": 5.471406
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.98,
+        "denominator": 150,
+        "complete_valid_publication_count": 401,
+        "publication_ms": {
+          "p50": 1.818765,
+          "p95": 2.56483,
+          "p99": 3.738872,
+          "max": 11.018782
+        },
+        "decoder_ms": {
+          "p50": 1.928705,
+          "p95": 2.761086,
+          "p99": 3.831472,
+          "max": 11.263646
+        }
+      },
+      "started_wall_ns": 1794661385803991103,
+      "finished_wall_ns": 1794661401813230462,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_300_10_zero/result.json",
+      "coverage": 0.98,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.928705,
+        "p95": 2.761086,
+        "p99": 3.831472,
+        "max": 11.263646
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 401,
+        "publication_ms": {
+          "p50": 1.795669,
+          "p95": 2.448124,
+          "p99": 3.518899,
+          "max": 5.604357
+        },
+        "decoder_ms": {
+          "p50": 1.878009,
+          "p95": 2.715772299999997,
+          "p99": 4.033857469999998,
+          "max": 5.655615
+        }
+      },
+      "started_wall_ns": 1794661401814016348,
+      "finished_wall_ns": 1794661417977031094,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.878009,
+        "p95": 2.715772299999997,
+        "p99": 4.033857469999998,
+        "max": 5.655615
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975,
+        "denominator": 40,
+        "complete_valid_publication_count": 247,
+        "publication_ms": {
+          "p50": 1.971275,
+          "p95": 2.547656799999999,
+          "p99": 4.493432799999998,
+          "max": 13.615551
+        },
+        "decoder_ms": {
+          "p50": 2.042458,
+          "p95": 2.8809590999999997,
+          "p99": 4.579678019999999,
+          "max": 14.185736
+        }
+      },
+      "started_wall_ns": 1794661417977876990,
+      "finished_wall_ns": 1794661434021614982,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_300_12_unknown/result.json",
+      "coverage": 0.975,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.042458,
+        "p95": 2.8809590999999997,
+        "p99": 4.579678019999999,
+        "max": 14.185736
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 35,
+        "complete_valid_publication_count": 252,
+        "publication_ms": {
+          "p50": 2.1108345,
+          "p95": 3.1832935499999975,
+          "p99": 4.411992820000001,
+          "max": 6.098148
+        },
+        "decoder_ms": {
+          "p50": 2.231951,
+          "p95": 3.3049258499999996,
+          "p99": 4.8914737299999995,
+          "max": 6.117327
+        }
+      },
+      "started_wall_ns": 1794661434022108487,
+      "finished_wall_ns": 1794661450229985210,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 35,
+      "decoder_ms": {
+        "p50": 2.231951,
+        "p95": 3.3049258499999996,
+        "p99": 4.8914737299999995,
+        "max": 6.117327
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 35,
+        "complete_valid_publication_count": 110,
+        "publication_ms": {
+          "p50": 2.201141,
+          "p95": 3.68692735,
+          "p99": 4.4544156,
+          "max": 4.553492
+        },
+        "decoder_ms": {
+          "p50": 2.29283,
+          "p95": 3.8385534,
+          "p99": 4.64301828,
+          "max": 4.654274
+        }
+      },
+      "started_wall_ns": 1794661450230573538,
+      "finished_wall_ns": 1794661466526043770,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 35,
+      "decoder_ms": {
+        "p50": 2.29283,
+        "p95": 3.8385534,
+        "p99": 4.64301828,
+        "max": 4.654274
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9753086419753086,
+        "denominator": 81,
+        "complete_valid_publication_count": 127,
+        "publication_ms": {
+          "p50": 1.987629,
+          "p95": 2.800021099999998,
+          "p99": 4.026026559999999,
+          "max": 4.334901
+        },
+        "decoder_ms": {
+          "p50": 2.059077,
+          "p95": 2.8476091999999995,
+          "p99": 4.1557436999999995,
+          "max": 5.538702
+        }
+      },
+      "started_wall_ns": 1794661466526842225,
+      "finished_wall_ns": 1794661474372705115,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.9753086419753086,
+      "denominator": 81,
+      "decoder_ms": {
+        "p50": 2.059077,
+        "p95": 2.8476091999999995,
+        "p99": 4.1557436999999995,
+        "max": 5.538702
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 3,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9753086419753086,
+        "denominator": 81,
+        "complete_valid_publication_count": 125,
+        "publication_ms": {
+          "p50": 2.052651,
+          "p95": 5.018206199999999,
+          "p99": 8.009840280000006,
+          "max": 10.50704
+        },
+        "decoder_ms": {
+          "p50": 2.087702,
+          "p95": 5.853784599999994,
+          "p99": 8.205884769999997,
+          "max": 10.622239
+        }
+      },
+      "started_wall_ns": 1794661474373475398,
+      "finished_wall_ns": 1794661482354403000,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-3/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.9753086419753086,
+      "denominator": 81,
+      "decoder_ms": {
+        "p50": 2.087702,
+        "p95": 5.853784599999994,
+        "p99": 8.205884769999997,
+        "max": 10.622239
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 287,
+        "publication_ms": {
+          "p50": 1.878498,
+          "p95": 2.8825456999999997,
+          "p99": 4.5438689799999965,
+          "max": 5.795224
+        },
+        "decoder_ms": {
+          "p50": 1.990193,
+          "p95": 3.0565470999999995,
+          "p99": 5.009575319999999,
+          "max": 5.886912
+        }
+      },
+      "started_wall_ns": 1794661482355129507,
+      "finished_wall_ns": 1794661505143584118,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.990193,
+        "p95": 3.0565470999999995,
+        "p99": 5.009575319999999,
+        "max": 5.886912
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 70,
+        "complete_valid_publication_count": 270,
+        "publication_ms": {
+          "p50": 1.8854395,
+          "p95": 2.9191885999999996,
+          "p99": 4.128766800000001,
+          "max": 7.674938
+        },
+        "decoder_ms": {
+          "p50": 2.009019,
+          "p95": 3.201650949999996,
+          "p99": 4.570067830000001,
+          "max": 11.256422
+        }
+      },
+      "started_wall_ns": 1794661505144329322,
+      "finished_wall_ns": 1794661527901812057,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 70,
+      "decoder_ms": {
+        "p50": 2.009019,
+        "p95": 3.201650949999996,
+        "p99": 4.570067830000001,
+        "max": 11.256422
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.156764,
+          "p95": 3.2435818000000007,
+          "p99": 4.823166680000016,
+          "max": 6.283491
+        },
+        "decoder_ms": {
+          "p50": 2.333691,
+          "p95": 3.3852102000000004,
+          "p99": 5.063951080000011,
+          "max": 7.326635
+        }
+      },
+      "started_wall_ns": 1794661527902337339,
+      "finished_wall_ns": 1794661550455277609,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.333691,
+        "p95": 3.3852102000000004,
+        "p99": 5.063951080000011,
+        "max": 7.326635
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 289,
+        "publication_ms": {
+          "p50": 2.161664,
+          "p95": 3.9852535999999974,
+          "p99": 8.47759024000002,
+          "max": 21.132104
+        },
+        "decoder_ms": {
+          "p50": 2.301769,
+          "p95": 4.204180549999998,
+          "p99": 7.757400529999997,
+          "max": 15.536477
+        }
+      },
+      "started_wall_ns": 1794661550455786396,
+      "finished_wall_ns": 1794661573132138691,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.301769,
+        "p95": 4.204180549999998,
+        "p99": 7.757400529999997,
+        "max": 15.536477
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 70,
+        "complete_valid_publication_count": 272,
+        "publication_ms": {
+          "p50": 1.884316,
+          "p95": 2.9879553999999997,
+          "p99": 4.47614639,
+          "max": 5.421134
+        },
+        "decoder_ms": {
+          "p50": 1.976491,
+          "p95": 3.2624373999999983,
+          "p99": 4.602862490000001,
+          "max": 5.502847
+        }
+      },
+      "started_wall_ns": 1794661573132794931,
+      "finished_wall_ns": 1794661595620087391,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 70,
+      "decoder_ms": {
+        "p50": 1.976491,
+        "p95": 3.2624373999999983,
+        "p99": 4.602862490000001,
+        "max": 5.502847
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 283,
+        "publication_ms": {
+          "p50": 2.024394,
+          "p95": 3.519399299999997,
+          "p99": 9.645518180000003,
+          "max": 20.617885
+        },
+        "decoder_ms": {
+          "p50": 2.126433,
+          "p95": 3.7337145999999986,
+          "p99": 11.531751400000031,
+          "max": 20.757571
+        }
+      },
+      "started_wall_ns": 1794661595620749059,
+      "finished_wall_ns": 1794661618081931431,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.126433,
+        "p95": 3.7337145999999986,
+        "p99": 11.531751400000031,
+        "max": 20.757571
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.8771865,
+          "p95": 2.5109973,
+          "p99": 3.94163628,
+          "max": 4.484164
+        },
+        "decoder_ms": {
+          "p50": 1.9956725,
+          "p95": 2.8507985999999996,
+          "p99": 4.00747076,
+          "max": 4.553043
+        }
+      },
+      "started_wall_ns": 1794661618082547762,
+      "finished_wall_ns": 1794661633799579272,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_refresh_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.9956725,
+        "p95": 2.8507985999999996,
+        "p99": 4.00747076,
+        "max": 4.553043
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 10,
+        "complete_valid_publication_count": 49,
+        "publication_ms": {
+          "p50": 2.241521,
+          "p95": 2.887705399999998,
+          "p99": 3.5655932399999974,
+          "max": 3.874047
+        },
+        "decoder_ms": {
+          "p50": 2.384218,
+          "p95": 3.1625305999999993,
+          "p99": 3.971769599999995,
+          "max": 4.56672
+        }
+      },
+      "started_wall_ns": 1794661633800339902,
+      "finished_wall_ns": 1794661649749628664,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 10,
+      "decoder_ms": {
+        "p50": 2.384218,
+        "p95": 3.1625305999999993,
+        "p99": 3.971769599999995,
+        "max": 4.56672
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9871794871794872,
+        "denominator": 156,
+        "complete_valid_publication_count": 597,
+        "publication_ms": {
+          "p50": 1.894985,
+          "p95": 3.5810601999999943,
+          "p99": 5.53728984,
+          "max": 8.723975
+        },
+        "decoder_ms": {
+          "p50": 1.9671340000000002,
+          "p95": 3.7284115,
+          "p99": 5.565914199999998,
+          "max": 8.643153
+        }
+      },
+      "started_wall_ns": 1794661649750006595,
+      "finished_wall_ns": 1794661672560087486,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 0.9871794871794872,
+      "denominator": 156,
+      "decoder_ms": {
+        "p50": 1.9671340000000002,
+        "p95": 3.7284115,
+        "p99": 5.565914199999998,
+        "max": 8.643153
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 145,
+        "complete_valid_publication_count": 592,
+        "publication_ms": {
+          "p50": 1.7858844999999999,
+          "p95": 2.3952001499999995,
+          "p99": 3.3834717300000055,
+          "max": 4.792813
+        },
+        "decoder_ms": {
+          "p50": 1.890505,
+          "p95": 2.5695667999999996,
+          "p99": 3.7666308400000017,
+          "max": 5.082781
+        }
+      },
+      "started_wall_ns": 1794661672560693290,
+      "finished_wall_ns": 1794661695395949117,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 145,
+      "decoder_ms": {
+        "p50": 1.890505,
+        "p95": 2.5695667999999996,
+        "p99": 3.7666308400000017,
+        "max": 5.082781
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 596,
+        "publication_ms": {
+          "p50": 1.7521415,
+          "p95": 2.53083325,
+          "p99": 3.6220327999999973,
+          "max": 5.060222
+        },
+        "decoder_ms": {
+          "p50": 1.920878,
+          "p95": 2.8679785,
+          "p99": 4.134147749999976,
+          "max": 6.189025
+        }
+      },
+      "started_wall_ns": 1794661695396640840,
+      "finished_wall_ns": 1794661718491748012,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.920878,
+        "p95": 2.8679785,
+        "p99": 4.134147749999976,
+        "max": 6.189025
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 152,
+        "complete_valid_publication_count": 598,
+        "publication_ms": {
+          "p50": 1.7780179999999999,
+          "p95": 2.5038286,
+          "p99": 3.992428639999992,
+          "max": 6.451803
+        },
+        "decoder_ms": {
+          "p50": 1.868729,
+          "p95": 2.7155062,
+          "p99": 4.255819359999996,
+          "max": 6.637193
+        }
+      },
+      "started_wall_ns": 1794661718492418493,
+      "finished_wall_ns": 1794661741420140544,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 152,
+      "decoder_ms": {
+        "p50": 1.868729,
+        "p95": 2.7155062,
+        "p99": 4.255819359999996,
+        "max": 6.637193
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 147,
+        "complete_valid_publication_count": 590,
+        "publication_ms": {
+          "p50": 1.7585185,
+          "p95": 2.26273805,
+          "p99": 2.7207686,
+          "max": 5.319828
+        },
+        "decoder_ms": {
+          "p50": 1.8444194999999999,
+          "p95": 2.4978567499999995,
+          "p99": 2.850727810000002,
+          "max": 5.273823
+        }
+      },
+      "started_wall_ns": 1794661741420805708,
+      "finished_wall_ns": 1794661767063497810,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 147,
+      "decoder_ms": {
+        "p50": 1.8444194999999999,
+        "p95": 2.4978567499999995,
+        "p99": 2.850727810000002,
+        "max": 5.273823
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9934640522875817,
+        "denominator": 153,
+        "complete_valid_publication_count": 588,
+        "publication_ms": {
+          "p50": 1.861971,
+          "p95": 4.120576049999998,
+          "p99": 8.356653789999998,
+          "max": 15.734811
+        },
+        "decoder_ms": {
+          "p50": 1.9595725000000002,
+          "p95": 4.2727467500000005,
+          "p99": 8.744829149999994,
+          "max": 16.46315
+        }
+      },
+      "started_wall_ns": 1794661767064681937,
+      "finished_wall_ns": 1794661790195973058,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 0.9934640522875817,
+      "denominator": 153,
+      "decoder_ms": {
+        "p50": 1.9595725000000002,
+        "p95": 4.2727467500000005,
+        "p99": 8.744829149999994,
+        "max": 16.46315
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 155,
+        "complete_valid_publication_count": 408,
+        "publication_ms": {
+          "p50": 1.733107,
+          "p95": 2.5941261499999997,
+          "p99": 4.058907460000003,
+          "max": 9.963556
+        },
+        "decoder_ms": {
+          "p50": 1.8192395000000001,
+          "p95": 2.778581299999999,
+          "p99": 4.7133748700000035,
+          "max": 11.647547
+        }
+      },
+      "started_wall_ns": 1794661790196723760,
+      "finished_wall_ns": 1794661806329046107,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 155,
+      "decoder_ms": {
+        "p50": 1.8192395000000001,
+        "p95": 2.778581299999999,
+        "p99": 4.7133748700000035,
+        "max": 11.647547
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 4,
+      "exit": 1,
+      "status": "FAIL",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": "AssertionError: ",
+      "independent_metrics": {},
+      "started_wall_ns": 1794661806330340351,
+      "finished_wall_ns": 1794661822102317905,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_refresh_300_12_known/result.json",
+      "coverage": 0.8823529411764706,
+      "denominator": 34,
+      "decoder_ms": null
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.846489,
+          "p95": 3.370335099999994,
+          "p99": 4.752571639999987,
+          "max": 6.377504
+        },
+        "decoder_ms": {
+          "p50": 1.932803,
+          "p95": 3.606100699999996,
+          "p99": 5.442743669999991,
+          "max": 6.500505
+        }
+      },
+      "started_wall_ns": 1794661822102906034,
+      "finished_wall_ns": 1794661837885849536,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 1.932803,
+        "p95": 3.606100699999996,
+        "p99": 5.442743669999991,
+        "max": 6.500505
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 71,
+        "complete_valid_publication_count": 199,
+        "publication_ms": {
+          "p50": 1.804904,
+          "p95": 2.4613950999999994,
+          "p99": 3.1550689400000063,
+          "max": 4.05576
+        },
+        "decoder_ms": {
+          "p50": 1.912105,
+          "p95": 2.6868155000000002,
+          "p99": 3.849246860000003,
+          "max": 4.147615
+        }
+      },
+      "started_wall_ns": 1794661837886220376,
+      "finished_wall_ns": 1794661853816294231,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 71,
+      "decoder_ms": {
+        "p50": 1.912105,
+        "p95": 2.6868155000000002,
+        "p99": 3.849246860000003,
+        "max": 4.147615
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 72,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 1.861126,
+          "p95": 2.4206244,
+          "p99": 2.939520369999983,
+          "max": 5.841275
+        },
+        "decoder_ms": {
+          "p50": 1.9531494999999999,
+          "p95": 2.518801699999999,
+          "p99": 4.840285699999992,
+          "max": 6.939482
+        }
+      },
+      "started_wall_ns": 1794661853816933065,
+      "finished_wall_ns": 1794661869643472562,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 72,
+      "decoder_ms": {
+        "p50": 1.9531494999999999,
+        "p95": 2.518801699999999,
+        "p99": 4.840285699999992,
+        "max": 6.939482
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 129,
+        "publication_ms": {
+          "p50": 2.194482,
+          "p95": 3.7381203999999992,
+          "p99": 14.994506799999996,
+          "max": 17.65986
+        },
+        "decoder_ms": {
+          "p50": 2.287202,
+          "p95": 3.9257631999999996,
+          "p99": 15.070012919999998,
+          "max": 17.977869
+        }
+      },
+      "started_wall_ns": 1794661869644054300,
+      "finished_wall_ns": 1794661885507663934,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.287202,
+        "p95": 3.9257631999999996,
+        "p99": 15.070012919999998,
+        "max": 17.977869
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 120,
+        "publication_ms": {
+          "p50": 2.2198789999999997,
+          "p95": 2.7584699999999995,
+          "p99": 3.7210820800000013,
+          "max": 3.849331
+        },
+        "decoder_ms": {
+          "p50": 2.2995145,
+          "p95": 3.0835730999999997,
+          "p99": 3.8579601600000006,
+          "max": 3.986517
+        }
+      },
+      "started_wall_ns": 1794661885508036387,
+      "finished_wall_ns": 1794661901264694915,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.2995145,
+        "p95": 3.0835730999999997,
+        "p99": 3.8579601600000006,
+        "max": 3.986517
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.175795,
+          "p95": 3.44578255,
+          "p99": 3.4999575800000002,
+          "max": 3.503927
+        },
+        "decoder_ms": {
+          "p50": 2.297696,
+          "p95": 3.55068255,
+          "p99": 4.060843779999999,
+          "max": 4.327252
+        }
+      },
+      "started_wall_ns": 1794661901265020687,
+      "finished_wall_ns": 1794661917032329078,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.297696,
+        "p95": 3.55068255,
+        "p99": 4.060843779999999,
+        "max": 4.327252
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9512195121951219,
+        "denominator": 41,
+        "complete_valid_publication_count": 61,
+        "publication_ms": {
+          "p50": 1.993645,
+          "p95": 2.853291,
+          "p99": 4.289852999999999,
+          "max": 4.668246
+        },
+        "decoder_ms": {
+          "p50": 2.074757,
+          "p95": 3.00566,
+          "p99": 4.701467,
+          "max": 4.779293
+        }
+      },
+      "started_wall_ns": 1794661917032965588,
+      "finished_wall_ns": 1794661924704215529,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.9512195121951219,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.074757,
+        "p95": 3.00566,
+        "p99": 4.701467,
+        "max": 4.779293
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9512195121951219,
+        "denominator": 41,
+        "complete_valid_publication_count": 61,
+        "publication_ms": {
+          "p50": 2.04677,
+          "p95": 2.683421,
+          "p99": 3.469447599999998,
+          "max": 4.363207
+        },
+        "decoder_ms": {
+          "p50": 2.115544,
+          "p95": 2.764232,
+          "p99": 4.3932752,
+          "max": 4.479863
+        }
+      },
+      "started_wall_ns": 1794661924704891971,
+      "finished_wall_ns": 1794661932262530959,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.9512195121951219,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.115544,
+        "p95": 2.764232,
+        "p99": 4.3932752,
+        "max": 4.479863
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 153,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7252364999999998,
+          "p95": 2.240676049999999,
+          "p99": 3.8425407199999855,
+          "max": 7.382348
+        },
+        "decoder_ms": {
+          "p50": 1.8302855,
+          "p95": 2.4573109999999994,
+          "p99": 3.8934752300000013,
+          "max": 7.642606
+        }
+      },
+      "started_wall_ns": 1794661932262961119,
+      "finished_wall_ns": 1794661948272357558,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 153,
+      "decoder_ms": {
+        "p50": 1.8302855,
+        "p95": 2.4573109999999994,
+        "p99": 3.8934752300000013,
+        "max": 7.642606
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 154,
+        "complete_valid_publication_count": 399,
+        "publication_ms": {
+          "p50": 1.885294,
+          "p95": 2.736843299999997,
+          "p99": 4.004850739999998,
+          "max": 9.704357
+        },
+        "decoder_ms": {
+          "p50": 1.972894,
+          "p95": 2.993192999999999,
+          "p99": 4.205137759999997,
+          "max": 10.338441
+        }
+      },
+      "started_wall_ns": 1794661948272850880,
+      "finished_wall_ns": 1794661964336177047,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_300_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 154,
+      "decoder_ms": {
+        "p50": 1.972894,
+        "p95": 2.993192999999999,
+        "p99": 4.205137759999997,
+        "max": 10.338441
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.993103448275862,
+        "denominator": 145,
+        "complete_valid_publication_count": 396,
+        "publication_ms": {
+          "p50": 1.8333409999999999,
+          "p95": 3.3810485000000003,
+          "p99": 6.774777000000012,
+          "max": 18.883281
+        },
+        "decoder_ms": {
+          "p50": 1.9211785,
+          "p95": 3.66118925,
+          "p99": 7.031230400000009,
+          "max": 18.678772
+        }
+      },
+      "started_wall_ns": 1794661964336788953,
+      "finished_wall_ns": 1794661980402502538,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_300_10_known/result.json",
+      "coverage": 0.993103448275862,
+      "denominator": 145,
+      "decoder_ms": {
+        "p50": 1.9211785,
+        "p95": 3.66118925,
+        "p99": 7.031230400000009,
+        "max": 18.678772
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 242,
+        "publication_ms": {
+          "p50": 2.011252,
+          "p95": 3.483088549999999,
+          "p99": 5.818369210000002,
+          "max": 16.384158
+        },
+        "decoder_ms": {
+          "p50": 2.101889,
+          "p95": 3.675095,
+          "p99": 5.328523799999997,
+          "max": 15.924184
+        }
+      },
+      "started_wall_ns": 1794661980403189433,
+      "finished_wall_ns": 1794661996360608042,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_300_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.101889,
+        "p95": 3.675095,
+        "p99": 5.328523799999997,
+        "max": 15.924184
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 257,
+        "publication_ms": {
+          "p50": 1.976917,
+          "p95": 2.8804524000000002,
+          "p99": 4.981140559999999,
+          "max": 7.803801
+        },
+        "decoder_ms": {
+          "p50": 2.065949,
+          "p95": 2.9813891999999997,
+          "p99": 5.148060519999999,
+          "max": 7.890156
+        }
+      },
+      "started_wall_ns": 1794661996361455590,
+      "finished_wall_ns": 1794662012314693529,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.065949,
+        "p95": 2.9813891999999997,
+        "p99": 5.148060519999999,
+        "max": 7.890156
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 34,
+        "complete_valid_publication_count": 113,
+        "publication_ms": {
+          "p50": 1.989477,
+          "p95": 2.872900599999996,
+          "p99": 5.910264759999992,
+          "max": 6.281709
+        },
+        "decoder_ms": {
+          "p50": 2.07159,
+          "p95": 3.2333486,
+          "p99": 6.096245639999991,
+          "max": 6.937989
+        }
+      },
+      "started_wall_ns": 1794662012315495639,
+      "finished_wall_ns": 1794662028274952282,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 34,
+      "decoder_ms": {
+        "p50": 2.07159,
+        "p95": 3.2333486,
+        "p99": 6.096245639999991,
+        "max": 6.937989
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 82,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 1.6801240000000002,
+          "p95": 2.261660449999999,
+          "p99": 3.7756088900000035,
+          "max": 4.372037
+        },
+        "decoder_ms": {
+          "p50": 1.750531,
+          "p95": 2.3439232999999993,
+          "p99": 3.8577083400000034,
+          "max": 4.484431
+        }
+      },
+      "started_wall_ns": 1794662028276138341,
+      "finished_wall_ns": 1794662036010333828,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.750531,
+        "p95": 2.3439232999999993,
+        "p99": 3.8577083400000034,
+        "max": 4.484431
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 4,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9878048780487805,
+        "denominator": 82,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 1.776522,
+          "p95": 2.3796665499999996,
+          "p99": 4.850239480000008,
+          "max": 5.82487
+        },
+        "decoder_ms": {
+          "p50": 1.842427,
+          "p95": 2.3885101,
+          "p99": 4.606001279999994,
+          "max": 5.850599
+        }
+      },
+      "started_wall_ns": 1794662036010831800,
+      "finished_wall_ns": 1794662043751028865,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-4/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.9878048780487805,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.842427,
+        "p95": 2.3885101,
+        "p99": 4.606001279999994,
+        "max": 5.850599
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 286,
+        "publication_ms": {
+          "p50": 1.949493,
+          "p95": 2.8272837500000003,
+          "p99": 3.945065499999999,
+          "max": 7.138341
+        },
+        "decoder_ms": {
+          "p50": 2.0550885,
+          "p95": 3.1392515,
+          "p99": 4.118036399999996,
+          "max": 7.227024
+        }
+      },
+      "started_wall_ns": 1794662043751938919,
+      "finished_wall_ns": 1794662066358518361,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.0550885,
+        "p95": 3.1392515,
+        "p99": 4.118036399999996,
+        "max": 7.227024
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_quaternion_only",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 79,
+        "complete_valid_publication_count": 284,
+        "publication_ms": {
+          "p50": 2.022052,
+          "p95": 3.196964049999999,
+          "p99": 4.5393586000000035,
+          "max": 5.566733
+        },
+        "decoder_ms": {
+          "p50": 2.099805,
+          "p95": 3.4173814999999994,
+          "p99": 4.7499625800000045,
+          "max": 5.9054
+        }
+      },
+      "started_wall_ns": 1794662066358981921,
+      "finished_wall_ns": 1794662088868994294,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 79,
+      "decoder_ms": {
+        "p50": 2.099805,
+        "p95": 3.4173814999999994,
+        "p99": 4.7499625800000045,
+        "max": 5.9054
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_FOLLOW_POSE_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 76,
+        "complete_valid_publication_count": 281,
+        "publication_ms": {
+          "p50": 1.985036,
+          "p95": 3.369466,
+          "p99": 4.4034138,
+          "max": 5.600618
+        },
+        "decoder_ms": {
+          "p50": 2.102053,
+          "p95": 3.939961,
+          "p99": 5.325235599999993,
+          "max": 6.545018
+        }
+      },
+      "started_wall_ns": 1794662088869517674,
+      "finished_wall_ns": 1794662111346988730,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_150_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 76,
+      "decoder_ms": {
+        "p50": 2.102053,
+        "p95": 3.939961,
+        "p99": 5.325235599999993,
+        "max": 6.545018
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 79,
+        "complete_valid_publication_count": 280,
+        "publication_ms": {
+          "p50": 1.8634825,
+          "p95": 2.6845109500000004,
+          "p99": 4.175737679999999,
+          "max": 5.557631
+        },
+        "decoder_ms": {
+          "p50": 1.972521,
+          "p95": 2.9426116500000004,
+          "p99": 4.335496079999998,
+          "max": 5.714308
+        }
+      },
+      "started_wall_ns": 1794662111347515915,
+      "finished_wall_ns": 1794662133869618640,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 79,
+      "decoder_ms": {
+        "p50": 1.972521,
+        "p95": 2.9426116500000004,
+        "p99": 4.335496079999998,
+        "max": 5.714308
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_quaternion_only",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 1.944308,
+          "p95": 3.289526,
+          "p99": 5.49855152,
+          "max": 6.135823
+        },
+        "decoder_ms": {
+          "p50": 2.045767,
+          "p95": 3.838154200000001,
+          "p99": 6.054939080000005,
+          "max": 14.20937
+        }
+      },
+      "started_wall_ns": 1794662133871233206,
+      "finished_wall_ns": 1794662156526432222,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.045767,
+        "p95": 3.838154200000001,
+        "p99": 6.054939080000005,
+        "max": 14.20937
+      }
+    },
+    {
+      "profile": "reacquisition_chain_150_ON_REFRESH_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 285,
+        "publication_ms": {
+          "p50": 2.015761,
+          "p95": 2.8288838000000007,
+          "p99": 3.767283440000011,
+          "max": 4.672796
+        },
+        "decoder_ms": {
+          "p50": 2.132939,
+          "p95": 2.9537734,
+          "p99": 4.0030144000000165,
+          "max": 4.840184
+        }
+      },
+      "started_wall_ns": 1794662156526920058,
+      "finished_wall_ns": 1794662179028459888,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_150_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.132939,
+        "p95": 2.9537734,
+        "p99": 4.0030144000000165,
+        "max": 4.840184
+      }
+    },
+    {
+      "profile": "review_refresh_150_10_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.987012987012987,
+        "denominator": 77,
+        "complete_valid_publication_count": 196,
+        "publication_ms": {
+          "p50": 2.236097,
+          "p95": 5.741615250000001,
+          "p99": 10.66980795000004,
+          "max": 17.737376
+        },
+        "decoder_ms": {
+          "p50": 2.3745304999999997,
+          "p95": 6.480401,
+          "p99": 10.79187995000004,
+          "max": 18.140239
+        }
+      },
+      "started_wall_ns": 1794662179028876947,
+      "finished_wall_ns": 1794662194861524530,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_refresh_150_10_unknown/result.json",
+      "coverage": 0.987012987012987,
+      "denominator": 77,
+      "decoder_ms": {
+        "p50": 2.3745304999999997,
+        "p95": 6.480401,
+        "p99": 10.79187995000004,
+        "max": 18.140239
+      }
+    },
+    {
+      "profile": "review_refresh_150_12_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 40,
+        "publication_ms": {
+          "p50": 2.1830315000000002,
+          "p95": 3.2481985,
+          "p99": 3.40767879,
+          "max": 3.455664
+        },
+        "decoder_ms": {
+          "p50": 2.3480935,
+          "p95": 3.4012396,
+          "p99": 3.6057009599999996,
+          "max": 3.724158
+        }
+      },
+      "started_wall_ns": 1794662194861995581,
+      "finished_wall_ns": 1794662210973993042,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_refresh_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.3480935,
+        "p95": 3.4012396,
+        "p99": 3.6057009599999996,
+        "max": 3.724158
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 158,
+        "complete_valid_publication_count": 594,
+        "publication_ms": {
+          "p50": 1.811861,
+          "p95": 2.73481285,
+          "p99": 4.363645680000003,
+          "max": 6.121286
+        },
+        "decoder_ms": {
+          "p50": 1.937964,
+          "p95": 3.0652862000000005,
+          "p99": 4.394615530000011,
+          "max": 6.185452
+        }
+      },
+      "started_wall_ns": 1794662210974987363,
+      "finished_wall_ns": 1794662233884504407,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 158,
+      "decoder_ms": {
+        "p50": 1.937964,
+        "p95": 3.0652862000000005,
+        "p99": 4.394615530000011,
+        "max": 6.185452
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_quaternion_only",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 146,
+        "complete_valid_publication_count": 587,
+        "publication_ms": {
+          "p50": 1.871114,
+          "p95": 2.6698605,
+          "p99": 4.3658797,
+          "max": 4.993636
+        },
+        "decoder_ms": {
+          "p50": 1.972266,
+          "p95": 2.8725692999999985,
+          "p99": 4.52036032,
+          "max": 5.144293
+        }
+      },
+      "started_wall_ns": 1794662233885304625,
+      "finished_wall_ns": 1794662256695632364,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_quaternion_only/result.json",
+      "coverage": 1.0,
+      "denominator": 146,
+      "decoder_ms": {
+        "p50": 1.972266,
+        "p95": 2.8725692999999985,
+        "p99": 4.52036032,
+        "max": 5.144293
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_FOLLOW_POSE_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 156,
+        "complete_valid_publication_count": 597,
+        "publication_ms": {
+          "p50": 1.844158,
+          "p95": 3.0291163999999995,
+          "p99": 4.273111919999999,
+          "max": 5.295307
+        },
+        "decoder_ms": {
+          "p50": 1.942882,
+          "p95": 3.191280599999999,
+          "p99": 4.67454099999999,
+          "max": 5.445513
+        }
+      },
+      "started_wall_ns": 1794662256696258108,
+      "finished_wall_ns": 1794662281823200366,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_300_FOLLOW_POSE_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 156,
+      "decoder_ms": {
+        "p50": 1.942882,
+        "p95": 3.191280599999999,
+        "p99": 4.67454099999999,
+        "max": 5.445513
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 598,
+        "publication_ms": {
+          "p50": 1.7320389999999999,
+          "p95": 2.3878624499999996,
+          "p99": 3.0724073499999998,
+          "max": 5.060232
+        },
+        "decoder_ms": {
+          "p50": 1.820885,
+          "p95": 2.57879135,
+          "p99": 3.187924709999999,
+          "max": 5.150798
+        }
+      },
+      "started_wall_ns": 1794662281823643906,
+      "finished_wall_ns": 1794662304779520993,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.820885,
+        "p95": 2.57879135,
+        "p99": 3.187924709999999,
+        "max": 5.150798
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_quaternion_only",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9785714285714285,
+        "denominator": 140,
+        "complete_valid_publication_count": 585,
+        "publication_ms": {
+          "p50": 1.910113,
+          "p95": 3.2974511999999985,
+          "p99": 5.029533479999995,
+          "max": 6.55117
+        },
+        "decoder_ms": {
+          "p50": 1.9953785,
+          "p95": 3.4253947,
+          "p99": 5.570774379999993,
+          "max": 6.639603
+        }
+      },
+      "started_wall_ns": 1794662304780185686,
+      "finished_wall_ns": 1794662327656650973,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_quaternion_only/result.json",
+      "coverage": 0.9785714285714285,
+      "denominator": 140,
+      "decoder_ms": {
+        "p50": 1.9953785,
+        "p95": 3.4253947,
+        "p99": 5.570774379999993,
+        "max": 6.639603
+      }
+    },
+    {
+      "profile": "reacquisition_chain_300_ON_REFRESH_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 155,
+        "complete_valid_publication_count": 593,
+        "publication_ms": {
+          "p50": 1.747217,
+          "p95": 2.4388669999999997,
+          "p99": 4.8077262400000125,
+          "max": 19.990147
+        },
+        "decoder_ms": {
+          "p50": 1.821599,
+          "p95": 2.6155614,
+          "p99": 4.673667520000026,
+          "max": 21.0887
+        }
+      },
+      "started_wall_ns": 1794662327657251109,
+      "finished_wall_ns": 1794662350622037977,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/reacquisition_chain_300_ON_REFRESH_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 155,
+      "decoder_ms": {
+        "p50": 1.821599,
+        "p95": 2.6155614,
+        "p99": 4.673667520000026,
+        "max": 21.0887
+      }
+    },
+    {
+      "profile": "review_refresh_300_10_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 150,
+        "complete_valid_publication_count": 410,
+        "publication_ms": {
+          "p50": 1.7245065,
+          "p95": 2.2396413999999996,
+          "p99": 2.9014060699999926,
+          "max": 4.633923
+        },
+        "decoder_ms": {
+          "p50": 1.807067,
+          "p95": 2.375538849999999,
+          "p99": 3.1451658699999983,
+          "max": 4.967885
+        }
+      },
+      "started_wall_ns": 1794662350622851454,
+      "finished_wall_ns": 1794662367340529872,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_refresh_300_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 150,
+      "decoder_ms": {
+        "p50": 1.807067,
+        "p95": 2.375538849999999,
+        "p99": 3.1451658699999983,
+        "max": 4.967885
+      }
+    },
+    {
+      "profile": "review_refresh_300_12_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 37,
+        "complete_valid_publication_count": 114,
+        "publication_ms": {
+          "p50": 2.030351,
+          "p95": 2.7422852999999994,
+          "p99": 3.17865977,
+          "max": 3.745662
+        },
+        "decoder_ms": {
+          "p50": 2.1767275,
+          "p95": 2.92730175,
+          "p99": 3.7646129800000026,
+          "max": 4.405168
+        }
+      },
+      "started_wall_ns": 1794662367341095374,
+      "finished_wall_ns": 1794662385845436265,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_refresh_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 37,
+      "decoder_ms": {
+        "p50": 2.1767275,
+        "p95": 2.92730175,
+        "p99": 3.7646129800000026,
+        "max": 4.405168
+      }
+    },
+    {
+      "profile": "review_chain_150_10_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 199,
+        "publication_ms": {
+          "p50": 2.050984,
+          "p95": 4.058208199999998,
+          "p99": 7.1785667000000135,
+          "max": 10.38306
+        },
+        "decoder_ms": {
+          "p50": 2.187208,
+          "p95": 4.652788899999999,
+          "p99": 7.828103620000008,
+          "max": 10.767966
+        }
+      },
+      "started_wall_ns": 1794662385845974036,
+      "finished_wall_ns": 1794662401781250179,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_150_10_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.187208,
+        "p95": 4.652788899999999,
+        "p99": 7.828103620000008,
+        "max": 10.767966
+      }
+    },
+    {
+      "profile": "review_chain_150_10_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.007189,
+          "p95": 2.870709549999999,
+          "p99": 5.187171909999999,
+          "max": 5.639427
+        },
+        "decoder_ms": {
+          "p50": 2.1402815,
+          "p95": 3.086574149999999,
+          "p99": 5.817505959999993,
+          "max": 7.213127
+        }
+      },
+      "started_wall_ns": 1794662401781857915,
+      "finished_wall_ns": 1794662417596487066,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_150_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.1402815,
+        "p95": 3.086574149999999,
+        "p99": 5.817505959999993,
+        "max": 7.213127
+      }
+    },
+    {
+      "profile": "review_chain_150_10_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 80,
+        "complete_valid_publication_count": 200,
+        "publication_ms": {
+          "p50": 2.0328865,
+          "p95": 2.585962799999999,
+          "p99": 3.348522249999989,
+          "max": 5.595852
+        },
+        "decoder_ms": {
+          "p50": 2.119265,
+          "p95": 2.8271545499999995,
+          "p99": 3.648680559999991,
+          "max": 5.745749
+        }
+      },
+      "started_wall_ns": 1794662417597109225,
+      "finished_wall_ns": 1794662433531105148,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_150_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 80,
+      "decoder_ms": {
+        "p50": 2.119265,
+        "p95": 2.8271545499999995,
+        "p99": 3.648680559999991,
+        "max": 5.745749
+      }
+    },
+    {
+      "profile": "review_chain_150_12_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 18,
+        "complete_valid_publication_count": 112,
+        "publication_ms": {
+          "p50": 2.2925305,
+          "p95": 3.24491805,
+          "p99": 3.418202,
+          "max": 3.850713
+        },
+        "decoder_ms": {
+          "p50": 2.387296,
+          "p95": 3.32722845,
+          "p99": 3.95995909,
+          "max": 4.082408
+        }
+      },
+      "started_wall_ns": 1794662433531824874,
+      "finished_wall_ns": 1794662449400679854,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_150_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 18,
+      "decoder_ms": {
+        "p50": 2.387296,
+        "p95": 3.32722845,
+        "p99": 3.95995909,
+        "max": 4.082408
+      }
+    },
+    {
+      "profile": "review_chain_150_12_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 20,
+        "complete_valid_publication_count": 130,
+        "publication_ms": {
+          "p50": 2.219023,
+          "p95": 2.92549715,
+          "p99": 3.148345709999999,
+          "max": 4.15561
+        },
+        "decoder_ms": {
+          "p50": 2.3134005,
+          "p95": 3.1871592,
+          "p99": 4.18573375,
+          "max": 4.255971
+        }
+      },
+      "started_wall_ns": 1794662449401138847,
+      "finished_wall_ns": 1794662465212594511,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_150_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 20,
+      "decoder_ms": {
+        "p50": 2.3134005,
+        "p95": 3.1871592,
+        "p99": 4.18573375,
+        "max": 4.255971
+      }
+    },
+    {
+      "profile": "review_chain_150_12_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 13,
+        "complete_valid_publication_count": 42,
+        "publication_ms": {
+          "p50": 2.2940775,
+          "p95": 3.122836299999999,
+          "p99": 3.7263256499999984,
+          "max": 3.913259
+        },
+        "decoder_ms": {
+          "p50": 2.637373,
+          "p95": 3.5614120499999986,
+          "p99": 3.9597356299999995,
+          "max": 4.017036
+        }
+      },
+      "started_wall_ns": 1794662465213216820,
+      "finished_wall_ns": 1794662481057097045,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_150_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 13,
+      "decoder_ms": {
+        "p50": 2.637373,
+        "p95": 3.5614120499999986,
+        "p99": 3.9597356299999995,
+        "max": 4.017036
+      }
+    },
+    {
+      "profile": "integrated_chain_150_FOLLOW_POSE",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9512195121951219,
+        "denominator": 41,
+        "complete_valid_publication_count": 61,
+        "publication_ms": {
+          "p50": 2.098281,
+          "p95": 2.536286,
+          "p99": 3.203220999999999,
+          "max": 3.670684
+        },
+        "decoder_ms": {
+          "p50": 2.166829,
+          "p95": 2.642722,
+          "p99": 3.4123811999999982,
+          "max": 4.152957
+        }
+      },
+      "started_wall_ns": 1794662481057859527,
+      "finished_wall_ns": 1794662488832044073,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/integrated_chain_150_FOLLOW_POSE/result.json",
+      "coverage": 0.9512195121951219,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.166829,
+        "p95": 2.642722,
+        "p99": 3.4123811999999982,
+        "max": 4.152957
+      }
+    },
+    {
+      "profile": "integrated_chain_150_ON_REFRESH",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 41,
+        "complete_valid_publication_count": 62,
+        "publication_ms": {
+          "p50": 2.1147615,
+          "p95": 2.69111465,
+          "p99": 3.5875802500000002,
+          "max": 3.900922
+        },
+        "decoder_ms": {
+          "p50": 2.153345,
+          "p95": 2.7159508999999997,
+          "p99": 3.88258255,
+          "max": 3.941353
+        }
+      },
+      "started_wall_ns": 1794662488832571008,
+      "finished_wall_ns": 1794662496603454890,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/integrated_chain_150_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 41,
+      "decoder_ms": {
+        "p50": 2.153345,
+        "p95": 2.7159508999999997,
+        "p99": 3.88258255,
+        "max": 3.941353
+      }
+    },
+    {
+      "profile": "review_chain_300_10_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.9870967741935484,
+        "denominator": 155,
+        "complete_valid_publication_count": 399,
+        "publication_ms": {
+          "p50": 1.97843,
+          "p95": 4.093286999999998,
+          "p99": 6.463984419999994,
+          "max": 11.82611
+        },
+        "decoder_ms": {
+          "p50": 2.0704235,
+          "p95": 4.402705099999999,
+          "p99": 6.960638339999999,
+          "max": 11.994463
+        }
+      },
+      "started_wall_ns": 1794662496605066341,
+      "finished_wall_ns": 1794662512971466295,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_300_10_unknown/result.json",
+      "coverage": 0.9870967741935484,
+      "denominator": 155,
+      "decoder_ms": {
+        "p50": 2.0704235,
+        "p95": 4.402705099999999,
+        "p99": 6.960638339999999,
+        "max": 11.994463
+      }
+    },
+    {
+      "profile": "review_chain_300_10_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 151,
+        "complete_valid_publication_count": 401,
+        "publication_ms": {
+          "p50": 1.811394,
+          "p95": 2.964704,
+          "p99": 4.675194,
+          "max": 8.882183
+        },
+        "decoder_ms": {
+          "p50": 1.8934920000000002,
+          "p95": 3.115220299999994,
+          "p99": 5.061639689999998,
+          "max": 9.057043
+        }
+      },
+      "started_wall_ns": 1794662512972324629,
+      "finished_wall_ns": 1794662529090475128,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_300_10_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 151,
+      "decoder_ms": {
+        "p50": 1.8934920000000002,
+        "p95": 3.115220299999994,
+        "p99": 5.061639689999998,
+        "max": 9.057043
+      }
+    },
+    {
+      "profile": "review_chain_300_10_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 147,
+        "complete_valid_publication_count": 396,
+        "publication_ms": {
+          "p50": 1.875257,
+          "p95": 3.11367325,
+          "p99": 9.688487850000083,
+          "max": 21.812284
+        },
+        "decoder_ms": {
+          "p50": 1.9709415,
+          "p95": 3.392503299999996,
+          "p99": 9.434205909999998,
+          "max": 19.49707
+        }
+      },
+      "started_wall_ns": 1794662529091617612,
+      "finished_wall_ns": 1794662545368051719,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_300_10_known/result.json",
+      "coverage": 1.0,
+      "denominator": 147,
+      "decoder_ms": {
+        "p50": 1.9709415,
+        "p95": 3.392503299999996,
+        "p99": 9.434205909999998,
+        "max": 19.49707
+      }
+    },
+    {
+      "profile": "review_chain_300_12_unknown",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 251,
+        "publication_ms": {
+          "p50": 2.089933,
+          "p95": 3.0065015,
+          "p99": 5.3621305,
+          "max": 7.826113
+        },
+        "decoder_ms": {
+          "p50": 2.199999,
+          "p95": 3.2783415,
+          "p99": 5.6879095,
+          "max": 8.546389
+        }
+      },
+      "started_wall_ns": 1794662545368656591,
+      "finished_wall_ns": 1794662561258338838,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_300_12_unknown/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.199999,
+        "p95": 3.2783415,
+        "p99": 5.6879095,
+        "max": 8.546389
+      }
+    },
+    {
+      "profile": "review_chain_300_12_zero",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 40,
+        "complete_valid_publication_count": 253,
+        "publication_ms": {
+          "p50": 2.011225,
+          "p95": 2.522642,
+          "p99": 4.176844719999993,
+          "max": 5.05775
+        },
+        "decoder_ms": {
+          "p50": 2.087655,
+          "p95": 2.7607203999999994,
+          "p99": 3.9442533000000113,
+          "max": 7.557888
+        }
+      },
+      "started_wall_ns": 1794662561258877701,
+      "finished_wall_ns": 1794662577099060141,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_300_12_zero/result.json",
+      "coverage": 1.0,
+      "denominator": 40,
+      "decoder_ms": {
+        "p50": 2.087655,
+        "p95": 2.7607203999999994,
+        "p99": 3.9442533000000113,
+        "max": 7.557888
+      }
+    },
+    {
+      "profile": "review_chain_300_12_known",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 1.0,
+        "denominator": 33,
+        "complete_valid_publication_count": 110,
+        "publication_ms": {
+          "p50": 2.0291865,
+          "p95": 2.7368688499999996,
+          "p99": 4.714815919999993,
+          "max": 4.918051
+        },
+        "decoder_ms": {
+          "p50": 2.168472,
+          "p95": 3.2403375999999997,
+          "p99": 4.950666720000001,
+          "max": 5.621082
+        }
+      },
+      "started_wall_ns": 1794662577099497561,
+      "finished_wall_ns": 1794662592908286448,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/review_chain_300_12_known/result.json",
+      "coverage": 1.0,
+      "denominator": 33,
+      "decoder_ms": {
+        "p50": 2.168472,
+        "p95": 3.2403375999999997,
+        "p99": 4.950666720000001,
+        "max": 5.621082
+      }
+    },
+    {
+      "profile": "integrated_chain_300_FOLLOW_POSE",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 82,
+        "complete_valid_publication_count": 128,
+        "publication_ms": {
+          "p50": 1.661407,
+          "p95": 2.4555722499999995,
+          "p99": 3.1658327900000023,
+          "max": 3.9997
+        },
+        "decoder_ms": {
+          "p50": 1.76617,
+          "p95": 2.58078475,
+          "p99": 3.4858554100000005,
+          "max": 4.195185
+        }
+      },
+      "started_wall_ns": 1794662592908972404,
+      "finished_wall_ns": 1794662600540203535,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/integrated_chain_300_FOLLOW_POSE/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.76617,
+        "p95": 2.58078475,
+        "p99": 3.4858554100000005,
+        "max": 4.195185
+      }
+    },
+    {
+      "profile": "integrated_chain_300_ON_REFRESH",
+      "repetition": 5,
+      "exit": 0,
+      "status": "PASS",
+      "timed_out": false,
+      "missing_outputs": [],
+      "receipt_validation_error": null,
+      "independent_metrics": {
+        "coverage": 0.975609756097561,
+        "denominator": 82,
+        "complete_valid_publication_count": 127,
+        "publication_ms": {
+          "p50": 1.695508,
+          "p95": 2.3453646,
+          "p99": 3.01871184,
+          "max": 3.940075
+        },
+        "decoder_ms": {
+          "p50": 1.776912,
+          "p95": 2.5721782999999996,
+          "p99": 3.415197579999998,
+          "max": 4.709426
+        }
+      },
+      "started_wall_ns": 1794662600540680405,
+      "finished_wall_ns": 1794662608168505381,
+      "output": "/workspace/ppq004-recovery/qualification-01/integrated/repeated-campaign/repetition-5/integrated_chain_300_ON_REFRESH/result.json",
+      "coverage": 0.975609756097561,
+      "denominator": 82,
+      "decoder_ms": {
+        "p50": 1.776912,
+        "p95": 2.5721782999999996,
+        "p99": 3.415197579999998,
+        "max": 4.709426
+      }
+    }
+  ]
+}
