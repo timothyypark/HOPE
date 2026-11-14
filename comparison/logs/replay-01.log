@@ -1,0 +1,19 @@
+fatal: detected dubious ownership in repository at '/workspace/HOPE-main-comparison'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /workspace/HOPE-main-comparison
+Traceback (most recent call last):
+  File "/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/run.py", line 96, in <module>
+    run(parser.parse_args())
+  File "/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/run.py", line 27, in run
+    if git(root, 'rev-parse', 'HEAD') != pin or git(root, 'status', '--porcelain'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/run.py", line 21, in git
+    return subprocess.check_output(['git', '-C', str(root), *args], text=True).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/HOPE-main-comparison', 'rev-parse', 'HEAD']' returned non-zero exit status 128.

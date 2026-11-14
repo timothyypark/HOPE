@@ -1,0 +1,21 @@
+............F                                                            [100%]
+=================================== FAILURES ===================================
+__________________ test_main_reads_the_checked_in_fit_profile __________________
+
+binaries = PosixPath('/workspace/ppq004-accuracy-20261114/build')
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-12/test_main_reads_the_checked_in0')
+
+    def test_main_reads_the_checked_in_fit_profile(binaries,tmp_path):
+        config=Path(os.environ['MAIN_SOURCE'])/'hope_ws/src/hope_planner_cpp/config'
+        document=yaml.safe_load((config/'model21800_hardware.yaml').read_text())
+        document['hope_planner']['ros__parameters']['batch_estimator_min_span_s']=5.0
+        modified=tmp_path/'profile.yaml';modified.write_text(yaml.safe_dump(document))
+        rows=invoke(binaries/'main_replay',synthetic_frames(),[modified,config/'model21800_flight_packetizer.yaml'])
+>       assert not any(r['available'] for r in rows)
+E       assert not True
+E        +  where True = any(<generator object test_main_reads_the_checked_in_fit_profile.<locals>.<genexpr> at 0x7f161d8aa8e0>)
+
+workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/test_comparison.py:125: AssertionError
+=========================== short test summary info ============================
+FAILED workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/test_comparison.py::test_main_reads_the_checked_in_fit_profile
+1 failed, 12 passed in 0.68s

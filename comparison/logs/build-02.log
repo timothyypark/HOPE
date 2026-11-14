@@ -1,0 +1,48 @@
+[ 10%] Building CXX object CMakeFiles/main_replay.dir/main_replay.cpp.o
+[ 10%] Building CXX object CMakeFiles/main_replay.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/spin_estimator.cpp.o
+[ 15%] Building CXX object CMakeFiles/main_replay.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/trajectory_predictor.cpp.o
+[ 20%] Building CXX object CMakeFiles/v2_replay.dir/v2_replay.cpp.o
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp: In function ‘int main(int, char**)’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:54:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   54 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:54:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   54 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                          ^~~~~~~~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp: In function ‘int main()’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                          ^~~~~~~~
+[ 25%] Building CXX object CMakeFiles/main_replay.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/laptop_play_state.cpp.o
+[ 30%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/flight_state_v2.cpp.o
+[ 35%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/spin_estimator.cpp.o
+[ 40%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/probabilistic_physics.cpp.o
+[ 45%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/probabilistic_ball_tracker.cpp.o
+[ 50%] Linking CXX executable main_replay
+[ 55%] Built target main_replay
+[ 65%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/nominal_event_forecast.cpp.o
+[ 65%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/fixed_lag_types.cpp.o
+[ 70%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/hit_plane_manager.cpp.o
+[ 75%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp.o
+/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp: In lambda function:
+/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp:87:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   87 |     for(std::size_t i=0;i<count;++i)target[i]=static_cast<unsigned char>(value[i])<32?'_':value[i];target[count]='\0';};
+      |     ^~~
+/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp:87:100: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   87 |     for(std::size_t i=0;i<count;++i)target[i]=static_cast<unsigned char>(value[i])<32?'_':value[i];target[count]='\0';};
+      |                                                                                                    ^~~~~~
+[ 80%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/v2_strike_adapter.cpp.o
+[ 85%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/return_eligibility.cpp.o
+[ 90%] Linking CXX executable v2_replay
+/usr/bin/ld: CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/flight_state_v2.cpp.o: in function `hope_planner_cpp::flight_model_config_id(hope_planner_cpp::ProbabilisticConfig const&, hope_planner_cpp::ShotSettings const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+flight_state_v2.cpp:(.text+0x3885): undefined reference to `hope_planner_cpp::return_region_config_identity(hope_planner_cpp::ProbabilisticConfig const&, hope_planner_cpp::ReturnRegionPolicy const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: flight_state_v2.cpp:(.text+0x3b37): undefined reference to `hope_planner_cpp::sha256(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/fixed_lag_types.cpp.o: in function `hope_planner_cpp::noise_model_fingerprint[abi:cxx11](hope_planner_cpp::ProbabilisticConfig const&)':
+fixed_lag_types.cpp:(.text+0x97b): undefined reference to `hope_planner_cpp::physics_fingerprint[abi:cxx11](hope_planner_cpp::ProbabilisticConfig const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/v2_replay.dir/build.make:289: v2_replay] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/v2_replay.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2

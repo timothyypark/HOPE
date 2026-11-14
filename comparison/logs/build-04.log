@@ -1,0 +1,44 @@
+-- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.14.0")  
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/ppq004-accuracy-20261114/build
+[  3%] Building CXX object CMakeFiles/main_core.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/batch_physics_estimator.cpp.o
+[  6%] Building CXX object CMakeFiles/main_core.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/trajectory_predictor.cpp.o
+[  9%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/common_ball_physics.cpp.o
+[ 12%] Building CXX object CMakeFiles/main_core.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/spin_estimator.cpp.o
+[ 15%] Building CXX object CMakeFiles/main_core.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/laptop_play_state.cpp.o
+[ 18%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/flight_spin_estimator.cpp.o
+[ 21%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/flight_state_v2.cpp.o
+[ 24%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/spin_estimator.cpp.o
+[ 27%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/probabilistic_physics.cpp.o
+[ 30%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/probabilistic_ball_tracker.cpp.o
+[ 33%] Linking CXX static library libmain_core.a
+[ 33%] Built target main_core
+[ 36%] Linking CXX executable main_replay
+[ 39%] Built target main_replay
+[ 42%] Building CXX object CMakeFiles/main_test_batch_physics_estimator.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/test/test_batch_physics_estimator.cpp.o
+[ 45%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/nominal_event_forecast.cpp.o
+[ 48%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/fixed_lag_types.cpp.o
+[ 51%] Linking CXX executable main_test_batch_physics_estimator
+[ 51%] Built target main_test_batch_physics_estimator
+[ 54%] Building CXX object CMakeFiles/main_test_spin_estimator.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/test/test_spin_estimator.cpp.o
+[ 57%] Linking CXX executable main_test_spin_estimator
+[ 57%] Built target main_test_spin_estimator
+[ 60%] Building CXX object CMakeFiles/main_test_future_contact_predictor.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/test/test_future_contact_predictor.cpp.o
+[ 63%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/hit_plane_manager.cpp.o
+[ 66%] Linking CXX executable main_test_future_contact_predictor
+[ 66%] Built target main_test_future_contact_predictor
+[ 69%] Building CXX object CMakeFiles/main_test_laptop_play_state.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/test/test_laptop_play_state.cpp.o
+[ 72%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp.o
+[ 75%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/v2_strike_adapter.cpp.o
+[ 78%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/return_eligibility.cpp.o
+[ 81%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/return_region.cpp.o
+[ 84%] Linking CXX executable main_test_laptop_play_state
+[ 84%] Built target main_test_laptop_play_state
+[ 87%] Linking CXX static library libv2_core.a
+[ 87%] Built target v2_core
+[ 90%] Building CXX object CMakeFiles/v2_test_coordinator.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/test/test_v2_incoming_coordinator.cpp.o
+[ 93%] Linking CXX executable v2_replay
+[ 96%] Built target v2_replay
+[100%] Linking CXX executable v2_test_coordinator
+[100%] Built target v2_test_coordinator

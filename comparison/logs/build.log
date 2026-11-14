@@ -1,0 +1,118 @@
+[  5%] Building CXX object CMakeFiles/v2_replay.dir/v2_replay.cpp.o
+[ 10%] Building CXX object CMakeFiles/main_replay.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/batch_physics_estimator.cpp.o
+[ 15%] Building CXX object CMakeFiles/main_replay.dir/main_replay.cpp.o
+[ 20%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/common_ball_physics.cpp.o
+In file included from /workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:2:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp:12:8: error: ‘int64_t’ in namespace ‘std’ does not name a type
+   12 |   std::int64_t ns;
+      |        ^~~~~~~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp: In function ‘bool read_frame(Frame&)’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp:21:23: error: ‘struct Frame’ has no member named ‘ns’
+   21 |   if(!(in>>f.index>>f.ns>>f.present>>f.x>>f.y>>f.z>>f.oriented>>f.qx>>f.qy>>f.qz>>f.qw))
+      |                       ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp: In function ‘void prefix(const char*, const Frame&)’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp:31:103: error: ‘const struct Frame’ has no member named ‘ns’
+   31 |   std::cout<<"{\"method\":"<<std::quoted(method)<<",\"source_index\":"<<f.index<<",\"source_ns\":"<<f.ns;
+      |                                                                                                       ^~
+In file included from /workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:2:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp:12:8: error: ‘int64_t’ in namespace ‘std’ does not name a type
+   12 |   std::int64_t ns;
+      |        ^~~~~~~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp: In function ‘bool read_frame(Frame&)’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp:21:23: error: ‘struct Frame’ has no member named ‘ns’
+   21 |   if(!(in>>f.index>>f.ns>>f.present>>f.x>>f.y>>f.z>>f.oriented>>f.qx>>f.qy>>f.qz>>f.qw))
+      |                       ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp: In function ‘void prefix(const char*, const Frame&)’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/replay_io.hpp:31:103: error: ‘const struct Frame’ has no member named ‘ns’
+   31 |   std::cout<<"{\"method\":"<<std::quoted(method)<<",\"source_index\":"<<f.index<<",\"source_ns\":"<<f.ns;
+      |                                                                                                       ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp: In function ‘int main(int, char**)’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:54:28: error: ‘struct Frame’ has no member named ‘ns’
+   54 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                            ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:54:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   54 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:54:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   54 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                          ^~~~~~~~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:54:101: error: ‘struct Frame’ has no member named ‘ns’
+   54 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                                     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:55:17: error: ‘struct Frame’ has no member named ‘ns’
+   55 |     gate.poll(f.ns);sync();
+      |                 ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:56:65: error: ‘struct Frame’ has no member named ‘ns’
+   56 |     if(!f.present){gate.input_unavailable("ball_pose_missing",f.ns);sync();}
+      |                                                                 ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:58:39: error: ‘struct Frame’ has no member named ‘ns’
+   58 |       BallSample s;s.source_time_ns=f.ns;s.source_time_s=f.ns*1e-9;s.sequence=f.index+1;
+      |                                       ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:58:60: error: ‘struct Frame’ has no member named ‘ns’
+   58 |       BallSample s;s.source_time_ns=f.ns;s.source_time_s=f.ns*1e-9;s.sequence=f.index+1;
+      |                                                            ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:59:29: error: ‘struct Frame’ has no member named ‘ns’
+   59 |       s.receipt_steady_ns=f.ns;s.receipt_wall_ns=f.ns;s.position=Vec3(f.x,f.y,f.z);
+      |                             ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:59:52: error: ‘struct Frame’ has no member named ‘ns’
+   59 |       s.receipt_steady_ns=f.ns;s.receipt_wall_ns=f.ns;s.position=Vec3(f.x,f.y,f.z);
+      |                                                    ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp: In lambda function:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:72:55: error: ‘struct Frame’ has no member named ‘ns’
+   72 |       const bool fresh=std::abs(state.source_time_s-f.ns*1e-9)<1e-8;
+      |                                                       ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp: In function ‘int main()’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:28: error: ‘struct Frame’ has no member named ‘ns’
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                            ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                          ^~~~~~~~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:101: error: ‘struct Frame’ has no member named ‘ns’
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                                     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:13:20: error: ‘struct Frame’ has no member named ‘ns’
+   13 |     owner.expire(f.ns);
+      |                    ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:15:39: error: ‘struct Frame’ has no member named ‘ns’
+   15 |       BallSample s;s.source_time_ns=f.ns;s.source_time_s=f.ns*1e-9;s.sequence=f.index+1;
+      |                                       ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:15:60: error: ‘struct Frame’ has no member named ‘ns’
+   15 |       BallSample s;s.source_time_ns=f.ns;s.source_time_s=f.ns*1e-9;s.sequence=f.index+1;
+      |                                                            ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:16:29: error: ‘struct Frame’ has no member named ‘ns’
+   16 |       s.receipt_steady_ns=f.ns;s.receipt_wall_ns=f.ns;s.position=Vec3(f.x,f.y,f.z);
+      |                             ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:16:52: error: ‘struct Frame’ has no member named ‘ns’
+   16 |       s.receipt_steady_ns=f.ns;s.receipt_wall_ns=f.ns;s.position=Vec3(f.x,f.y,f.z);
+      |                                                    ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:19:25: error: ‘struct Frame’ has no member named ‘ns’
+   19 |       owner.observe(s,f.ns);
+      |                         ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:26:83: error: ‘struct Frame’ has no member named ‘ns’
+   26 |         auto q=owner.continuous(plane);auto e=V2IncomingCoordinator::evaluate(q,f.ns);const auto& forecast=e.forecast;
+      |                                                                                   ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:27:95: error: ‘struct Frame’ has no member named ‘ns’
+   27 |         const bool available=f.present&&forecast.physical_available&&forecast.reference_ns==f.ns;
+      |                                                                                               ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:29:118: error: expected primary-expression before ‘)’ token
+   29 |           <<",\"generation\":"<<forecast.token.generation<<",\"position\":";vector_json(forecast.belief.mean.head<3>());
+      |                                                                                                                      ^
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:30:80: error: expected primary-expression before ‘)’ token
+   30 |           std::cout<<",\"velocity\":";vector_json(forecast.belief.mean.tail<3>());std::cout<<",\"spin_available\":"<<forecast.belief.effective_spin.usable()<<",\"omega\":";
+      |                                                                                ^
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:33:58: error: ‘struct Frame’ has no member named ‘ns’
+   33 |         const auto target=v2_strike_target(e.candidate,f.ns);
+      |                                                          ^~
+gmake[2]: *** [CMakeFiles/main_replay.dir/build.make:76: CMakeFiles/main_replay.dir/main_replay.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 25%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/flight_spin_estimator.cpp.o
+gmake[2]: *** [CMakeFiles/v2_replay.dir/build.make:76: CMakeFiles/v2_replay.dir/v2_replay.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/v2_replay.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/main_replay.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2

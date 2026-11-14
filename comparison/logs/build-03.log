@@ -1,0 +1,7 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/ppq004-accuracy-20261114/build
+[ 28%] Built target main_replay
+[ 33%] Building CXX object CMakeFiles/v2_replay.dir/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/src/return_region.cpp.o
+[ 38%] Linking CXX executable v2_replay
+[100%] Built target v2_replay

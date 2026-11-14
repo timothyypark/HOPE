@@ -1,0 +1,146 @@
+{
+  "contract": {
+    "schema": "ppq004-main-ckf-matched-v1",
+    "main_sha": "01de418c146cf3f2d2dba32e63b425f01c8a7f19",
+    "v2_sha": "f4902023d49c85ff57da62a618b2001181d3b8e7",
+    "development_parts": [
+      1,
+      2
+    ],
+    "benchmark_holdout_parts": [
+      3
+    ],
+    "blind_holdout": false,
+    "truth": "same-sensor measured-position proxy, not independent physical truth",
+    "sample_hz": 300,
+    "forecast_stride_frames": 6,
+    "primary_plane_m": 0.15,
+    "diagnostic_planes_m": [
+      0.08,
+      0.7,
+      1.37
+    ],
+    "crossing_lead_range_s": [
+      0.01,
+      0.5
+    ],
+    "common_rollout_horizons_ms": [
+      10,
+      30,
+      50,
+      100,
+      150
+    ],
+    "primary_common_rollout_horizon_ms": 100,
+    "common_rollout_dt_s": 0.0005,
+    "scoring_arcs": "Existing independently screened contact-free observed arcs; incoming negative-X arcs for primary comparison; annotation boundaries never supplied to replay",
+    "inputs": "All original frames and absent observations in chronological order; recorded quaternion when finite and normalized; no future spin or positions supplied to replay",
+    "profiles": "Main model21800_hardware and packetizer checked-in parameters; V2 existing managed defaults, shared unchanged physics; no PPQ004 all-data calibration adoption",
+    "methods": {
+      "main_operator": "Production LaptopPlayState observation admission, generation/bounce resets, BatchPhysicsEstimator, SpinEstimator and FutureContactPredictor; diagnostic same-cutoff queries, not published command counts",
+      "main_batch": "Same production batch estimator and predictor without operator gate, persistent across take; diagnostic only",
+      "v2_managed": "Production V2IncomingCoordinator observation-only persistent owner, continuous forecast and strike candidate; no annotation START/CONTEXT/CONTACT inputs"
+    },
+    "metrics": "Paired native plane position/time error at identical actual cutoffs; paired common-kernel free-flight position error using each current fitted state/spin; per-method and paired availability",
+    "aggregation": "Within-arc RMS then equal-weight arc median; primary pairing main_operator versus v2_managed; main_batch comparison separately; paired bootstrap resamples arcs, 5000 draws seed 140126; source frames are not independent trials",
+    "winner_rule": "Directional evidence requires paired median difference bootstrap 95% interval excluding zero with at least 5 holdout arcs; any reduced availability must be reported and prevents an unqualified overall winner claim; no threshold/model tuning after scoring",
+    "scope_limits": "Native prediction accuracy, not ROS latency, full command delivery, racket execution or hardware qualification; one holdout recording cannot establish cross-session generalization"
+  },
+  "harness_sha": "f6c33a42399571fc588919b3e09f00ed5a38895c",
+  "contract_sha256": "a348c8471fcc944359633a7c42805104a5f84b27aef40c0474f22f909ad82cc0",
+  "prepared_sha256": "d81570aece3e7c98f0abb5fc46fb04e08d2f0ea5976f35497c547dcb8d57b199",
+  "observations_sha256": "6dccb4fd32f630e4ddb89aa56796a150156ea01c67e1ff4b6560ed319e82ab30",
+  "profiles": {
+    "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_hardware.yaml": "756409d72af68666b7d7d4dbe12e430667234085f0667577679b3ed98779a99e",
+    "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_flight_packetizer.yaml": "682b93da58b809face7fff6d15d1e5d1c8c6163d1f5e0dc435aecb82e96621b7"
+  },
+  "binaries": {
+    "main_replay": "5df98c04cb57cfb5bd788c2afef5cdfd9553d73c3dc4ac8c517a21437f17d57a",
+    "v2_replay": "07014f05535f3bfd059388b1240c0a3af754a1f8f1c265df20cb0ff428ca1167"
+  },
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "started_ns": 1794686456716357932,
+  "runs": [
+    {
+      "recording": "ppq004_part1",
+      "binary": "main_replay",
+      "command": [
+        "/workspace/ppq004-accuracy-20261114/build/main_replay",
+        "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_hardware.yaml",
+        "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_flight_packetizer.yaml"
+      ],
+      "exit_code": 0,
+      "duration_s": 2.3685636349982815,
+      "input_sha256": "b2e4a54a58089511772a389f32b38214048ab1c9ee0fff8b327f46b3fdc385fc",
+      "output_sha256": "dcac87689c2379627203b1b0276e904a72b52c97f4784e9ff5bc54d99029dac6",
+      "stderr_sha256": "e90fe11851cef7b4e8de68d1efbb6cd8aca5b8cfffa463b889735ed95d1a3122"
+    },
+    {
+      "recording": "ppq004_part1",
+      "binary": "v2_replay",
+      "command": [
+        "/workspace/ppq004-accuracy-20261114/build/v2_replay"
+      ],
+      "exit_code": 0,
+      "duration_s": 5.168586380001216,
+      "input_sha256": "b2e4a54a58089511772a389f32b38214048ab1c9ee0fff8b327f46b3fdc385fc",
+      "output_sha256": "6430d0457d105681cda585f5ba6aeb8b0724b8fb866b7a9c6a9e98a010905b27",
+      "stderr_sha256": "e90fe11851cef7b4e8de68d1efbb6cd8aca5b8cfffa463b889735ed95d1a3122"
+    },
+    {
+      "recording": "ppq004_part2",
+      "binary": "main_replay",
+      "command": [
+        "/workspace/ppq004-accuracy-20261114/build/main_replay",
+        "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_hardware.yaml",
+        "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_flight_packetizer.yaml"
+      ],
+      "exit_code": 0,
+      "duration_s": 2.6327272550006455,
+      "input_sha256": "7afc96dd10b1c206af91d6ff38b91553535ebe591ebbed3520fbfcdfb711d2c0",
+      "output_sha256": "c2a220509525cc2217f34ab25a4608b81385de08f08a5d204df9fa78dcfe8b02",
+      "stderr_sha256": "e90fe11851cef7b4e8de68d1efbb6cd8aca5b8cfffa463b889735ed95d1a3122"
+    },
+    {
+      "recording": "ppq004_part2",
+      "binary": "v2_replay",
+      "command": [
+        "/workspace/ppq004-accuracy-20261114/build/v2_replay"
+      ],
+      "exit_code": 0,
+      "duration_s": 3.3254531559978204,
+      "input_sha256": "7afc96dd10b1c206af91d6ff38b91553535ebe591ebbed3520fbfcdfb711d2c0",
+      "output_sha256": "e545e55a63d982f5cfee38eb92f3522c209a57e1397d62c36c37ca7d597f63dd",
+      "stderr_sha256": "e90fe11851cef7b4e8de68d1efbb6cd8aca5b8cfffa463b889735ed95d1a3122"
+    },
+    {
+      "recording": "ppq004_part3",
+      "binary": "main_replay",
+      "command": [
+        "/workspace/ppq004-accuracy-20261114/build/main_replay",
+        "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_hardware.yaml",
+        "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_flight_packetizer.yaml"
+      ],
+      "exit_code": 0,
+      "duration_s": 0.7132749359989248,
+      "input_sha256": "881ede70c65a9eb51db17fa11c3cf0d2deee667414db32201d8350370d44e944",
+      "output_sha256": "a08a41be8dd5a9f054445f81a47f63898ffcfdaeaa833a981bfb71b45e96f894",
+      "stderr_sha256": "caeb17547bf3d04bb7d97496612b848f8b49141a839df191956bf1bd3ffae18b"
+    },
+    {
+      "recording": "ppq004_part3",
+      "binary": "v2_replay",
+      "command": [
+        "/workspace/ppq004-accuracy-20261114/build/v2_replay"
+      ],
+      "exit_code": 0,
+      "duration_s": 0.920320796998567,
+      "input_sha256": "881ede70c65a9eb51db17fa11c3cf0d2deee667414db32201d8350370d44e944",
+      "output_sha256": "2d7fd976c206982f671aed0d6bfbf63f6146675bd985ed4a81bde046a9681e4c",
+      "stderr_sha256": "caeb17547bf3d04bb7d97496612b848f8b49141a839df191956bf1bd3ffae18b"
+    }
+  ],
+  "scope": "Offline virtual-clock prediction queries; no ROS, packet transmission or robot execution",
+  "completed_ns": 1794686475219790694,
+  "source_unchanged": true
+}

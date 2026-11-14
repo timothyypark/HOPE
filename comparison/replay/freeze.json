@@ -1,0 +1,65 @@
+{
+  "contract": {
+    "schema": "ppq004-main-ckf-matched-v1",
+    "main_sha": "01de418c146cf3f2d2dba32e63b425f01c8a7f19",
+    "v2_sha": "f4902023d49c85ff57da62a618b2001181d3b8e7",
+    "development_parts": [
+      1,
+      2
+    ],
+    "benchmark_holdout_parts": [
+      3
+    ],
+    "blind_holdout": false,
+    "truth": "same-sensor measured-position proxy, not independent physical truth",
+    "sample_hz": 300,
+    "forecast_stride_frames": 6,
+    "primary_plane_m": 0.15,
+    "diagnostic_planes_m": [
+      0.08,
+      0.7,
+      1.37
+    ],
+    "crossing_lead_range_s": [
+      0.01,
+      0.5
+    ],
+    "common_rollout_horizons_ms": [
+      10,
+      30,
+      50,
+      100,
+      150
+    ],
+    "primary_common_rollout_horizon_ms": 100,
+    "common_rollout_dt_s": 0.0005,
+    "scoring_arcs": "Existing independently screened contact-free observed arcs; incoming negative-X arcs for primary comparison; annotation boundaries never supplied to replay",
+    "inputs": "All original frames and absent observations in chronological order; recorded quaternion when finite and normalized; no future spin or positions supplied to replay",
+    "profiles": "Main model21800_hardware and packetizer checked-in parameters; V2 existing managed defaults, shared unchanged physics; no PPQ004 all-data calibration adoption",
+    "methods": {
+      "main_operator": "Production LaptopPlayState observation admission, generation/bounce resets, BatchPhysicsEstimator, SpinEstimator and FutureContactPredictor; diagnostic same-cutoff queries, not published command counts",
+      "main_batch": "Same production batch estimator and predictor without operator gate, persistent across take; diagnostic only",
+      "v2_managed": "Production V2IncomingCoordinator observation-only persistent owner, continuous forecast and strike candidate; no annotation START/CONTEXT/CONTACT inputs"
+    },
+    "metrics": "Paired native plane position/time error at identical actual cutoffs; paired common-kernel free-flight position error using each current fitted state/spin; per-method and paired availability",
+    "aggregation": "Within-arc RMS then equal-weight arc median; primary pairing main_operator versus v2_managed; main_batch comparison separately; paired bootstrap resamples arcs, 5000 draws seed 140126; source frames are not independent trials",
+    "winner_rule": "Directional evidence requires paired median difference bootstrap 95% interval excluding zero with at least 5 holdout arcs; any reduced availability must be reported and prevents an unqualified overall winner claim; no threshold/model tuning after scoring",
+    "scope_limits": "Native prediction accuracy, not ROS latency, full command delivery, racket execution or hardware qualification; one holdout recording cannot establish cross-session generalization"
+  },
+  "harness_sha": "f6c33a42399571fc588919b3e09f00ed5a38895c",
+  "contract_sha256": "a348c8471fcc944359633a7c42805104a5f84b27aef40c0474f22f909ad82cc0",
+  "prepared_sha256": "d81570aece3e7c98f0abb5fc46fb04e08d2f0ea5976f35497c547dcb8d57b199",
+  "observations_sha256": "6dccb4fd32f630e4ddb89aa56796a150156ea01c67e1ff4b6560ed319e82ab30",
+  "profiles": {
+    "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_hardware.yaml": "756409d72af68666b7d7d4dbe12e430667234085f0667577679b3ed98779a99e",
+    "/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/config/model21800_flight_packetizer.yaml": "682b93da58b809face7fff6d15d1e5d1c8c6163d1f5e0dc435aecb82e96621b7"
+  },
+  "binaries": {
+    "main_replay": "5df98c04cb57cfb5bd788c2afef5cdfd9553d73c3dc4ac8c517a21437f17d57a",
+    "v2_replay": "07014f05535f3bfd059388b1240c0a3af754a1f8f1c265df20cb0ff428ca1167"
+  },
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "started_ns": 1794686456716357932,
+  "runs": [],
+  "scope": "Offline virtual-clock prediction queries; no ROS, packet transmission or robot execution"
+}

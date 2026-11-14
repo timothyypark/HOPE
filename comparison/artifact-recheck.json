@@ -1,0 +1,23 @@
+{
+  "compressed_files_verified": true,
+  "score_files": [
+    {
+      "file": "results.json",
+      "original_sha256": "d59b556aa4ee4537f914d27e480e214037ee0f42607af1c2e0a0d6bcf9f11a44",
+      "restored_sha256": "d59b556aa4ee4537f914d27e480e214037ee0f42607af1c2e0a0d6bcf9f11a44",
+      "byte_identical": true
+    },
+    {
+      "file": "common-errors.csv",
+      "original_sha256": "7050b2e67d257e0e1d25ee98d9d62372bb7300c1ef5765711a6f16b1eeae0b1b",
+      "restored_sha256": "7050b2e67d257e0e1d25ee98d9d62372bb7300c1ef5765711a6f16b1eeae0b1b",
+      "byte_identical": true
+    },
+    {
+      "file": "plane-errors.csv",
+      "original_sha256": "87b21c26a7e6b07d7273057726d45ead4141559f88daee1a74d0e8dde770ed01",
+      "restored_sha256": "87b21c26a7e6b07d7273057726d45ead4141559f88daee1a74d0e8dde770ed01",
+      "byte_identical": true
+    }
+  ]
+}

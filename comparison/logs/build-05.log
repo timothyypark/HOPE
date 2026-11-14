@@ -1,0 +1,18 @@
+[ 15%] Built target main_core
+[ 57%] Built target v2_core
+[ 60%] Building CXX object CMakeFiles/main_replay.dir/main_replay.cpp.o
+[ 66%] Built target main_test_spin_estimator
+[ 72%] Built target main_test_batch_physics_estimator
+[ 78%] Built target main_test_future_contact_predictor
+[ 84%] Built target main_test_laptop_play_state
+[ 90%] Built target v2_test_coordinator
+[ 96%] Built target v2_replay
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp: In function ‘int main(int, char**)’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:76:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   76 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:76:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   76 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                          ^~~~~~~~
+[100%] Linking CXX executable main_replay
+[100%] Built target main_replay

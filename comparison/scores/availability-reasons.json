@@ -1,0 +1,94 @@
+{
+  "development:100ms:main_batch": {
+    "AVAILABLE": 1692,
+    "OPPONENT_RALLY:post_bounce_segment_not_ready": 148,
+    "RALLY:estimator_not_ready": 18,
+    "OPPONENT_RALLY:estimator_not_ready": 19,
+    "INVALID:post_bounce_segment_not_ready": 90,
+    "RALLY:post_bounce_segment_not_ready": 10,
+    "OPPONENT_SERVE:post_bounce_segment_not_ready": 32,
+    "INVALID:estimator_not_ready": 3,
+    "SERVE:estimator_not_ready": 5,
+    "OPPONENT_SERVE:contact_confirmation_pending": 1
+  },
+  "development:100ms:main_operator": {
+    "AVAILABLE": 1636,
+    "OPPONENT_RALLY:estimator_not_ready": 48,
+    "RALLY:observed_receiver_bounce": 57,
+    "OPPONENT_RALLY:contact_confirmation_pending": 10,
+    "OPPONENT_RALLY:position_discontinuity": 9,
+    "RALLY:ball_observation_missing": 3,
+    "INVALID:second_receiver_bounce": 39,
+    "INVALID:second_striker_bounce": 43,
+    "RALLY:position_discontinuity": 10,
+    "RALLY:ball_tracking_gap": 18,
+    "OPPONENT_SERVE:estimator_not_ready": 17,
+    "INVALID:no_receiver_bounce": 24,
+    "SERVE:observed_receiver_bounce": 6,
+    "SERVE:ball_tracking_gap": 5,
+    "INVALID:return_bounced_on_striker_side": 76,
+    "OPPONENT_RALLY:ball_pose_missing": 6,
+    "OPPONENT_RALLY:ball_observation_missing": 6,
+    "OPPONENT_SERVE:position_discontinuity": 3,
+    "OPPONENT_RALLY:ball_tracking_gap": 2
+  },
+  "development:100ms:v2_managed": {
+    "INVALID:qualified_non_ballistic_motion": 1634,
+    "INVALID:SPIN_COLLECTING_MODEL_NOT_YET_SUPPORTED": 31,
+    "INVALID:MODEL_UNSUPPORTED_WHILE_SPIN_UNKNOWN": 8,
+    "INVALID:acquisition_qualified_spin_model_residual": 120,
+    "AVAILABLE": 224,
+    "INVALID:acquisition_discontinuous_or_contact_window": 1
+  },
+  "development:plane0.15:main_batch": {
+    "invalid_estimate": 56,
+    "AVAILABLE": 188
+  },
+  "development:plane0.15:main_operator": {
+    "AVAILABLE": 217,
+    "invalid_estimate": 27
+  },
+  "development:plane0.15:v2_managed": {
+    "ACQUIRING": 194,
+    "PLANE_BEFORE_FIRST_BOUNCE": 50
+  },
+  "benchmark_holdout:100ms:main_batch": {
+    "AVAILABLE": 216,
+    "OPPONENT_RALLY:post_bounce_segment_not_ready": 27,
+    "OPPONENT_SERVE:post_bounce_segment_not_ready": 3,
+    "RALLY:estimator_not_ready": 2,
+    "OPPONENT_RALLY:estimator_not_ready": 1
+  },
+  "benchmark_holdout:100ms:main_operator": {
+    "RALLY:ball_pose_missing": 2,
+    "AVAILABLE": 217,
+    "OPPONENT_RALLY:estimator_not_ready": 10,
+    "INVALID:no_receiver_bounce": 1,
+    "OPPONENT_SERVE:estimator_not_ready": 1,
+    "OPPONENT_RALLY:position_discontinuity": 3,
+    "RALLY:ball_observation_missing": 2,
+    "OPPONENT_RALLY:contact_confirmation_pending": 4,
+    "RALLY:observed_receiver_bounce": 9
+  },
+  "benchmark_holdout:100ms:v2_managed": {
+    "INVALID:SPIN_COLLECTING_MODEL_NOT_YET_SUPPORTED": 6,
+    "INVALID:MODEL_UNSUPPORTED_WHILE_SPIN_UNKNOWN": 2,
+    "INVALID:acquisition_qualified_spin_model_residual": 22,
+    "AVAILABLE": 68,
+    "INVALID:qualified_non_ballistic_motion": 151
+  },
+  "benchmark_holdout:plane0.15:main_batch": {
+    "not_incoming": 2,
+    "prediction_horizon_exceeded": 1,
+    "AVAILABLE": 37,
+    "invalid_estimate": 3
+  },
+  "benchmark_holdout:plane0.15:main_operator": {
+    "invalid_estimate": 3,
+    "AVAILABLE": 40
+  },
+  "benchmark_holdout:plane0.15:v2_managed": {
+    "ACQUIRING": 21,
+    "AVAILABLE": 22
+  }
+}
