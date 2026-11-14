@@ -1,0 +1,63 @@
+{
+  "recordings": [
+    {
+      "recording": "ppq004_part1",
+      "queries": 10923,
+      "old_available": 909,
+      "new_available": 5310,
+      "added_descriptive": 4401,
+      "qualified_state_changes": 0,
+      "native_command_target_changes": 0
+    },
+    {
+      "recording": "ppq004_part2",
+      "queries": 10923,
+      "old_available": 529,
+      "new_available": 6712,
+      "added_descriptive": 6183,
+      "qualified_state_changes": 0,
+      "native_command_target_changes": 0
+    },
+    {
+      "recording": "ppq004_part3",
+      "queries": 2644,
+      "old_available": 189,
+      "new_available": 1066,
+      "added_descriptive": 877,
+      "qualified_state_changes": 0,
+      "native_command_target_changes": 0
+    }
+  ],
+  "support": {
+    "development:original_support": {
+      "arcs": 18,
+      "cutoffs": 224,
+      "median_arc_rms_mm": 15.734403427914245,
+      "p95_arc_rms_mm": 25.567847704982366,
+      "worst_arc_rms_mm": 28.470100390626115
+    },
+    "development:newly_covered": {
+      "arcs": 143,
+      "cutoffs": 1709,
+      "median_arc_rms_mm": 22.044141863716327,
+      "p95_arc_rms_mm": 47.87583902244013,
+      "worst_arc_rms_mm": 107.89367458636346
+    },
+    "benchmark_holdout:original_support": {
+      "arcs": 7,
+      "cutoffs": 68,
+      "median_arc_rms_mm": 24.668740357540575,
+      "p95_arc_rms_mm": 29.11900323044519,
+      "worst_arc_rms_mm": 29.914110374387462
+    },
+    "benchmark_holdout:newly_covered": {
+      "arcs": 12,
+      "cutoffs": 175,
+      "median_arc_rms_mm": 21.693519179359612,
+      "p95_arc_rms_mm": 41.185973048471894,
+      "worst_arc_rms_mm": 50.52604137258977
+    }
+  },
+  "original_score_changes": 0,
+  "command_and_original_state_parity": true
+}

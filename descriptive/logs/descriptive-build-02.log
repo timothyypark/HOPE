@@ -1,0 +1,25 @@
+[ 15%] Built target main_core
+[ 18%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/flight_state_v2.cpp.o
+[ 24%] Built target main_test_batch_physics_estimator
+[ 30%] Built target main_replay
+[ 36%] Built target main_test_spin_estimator
+[ 39%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp.o
+[ 45%] Built target main_test_future_contact_predictor
+[ 51%] Built target main_test_laptop_play_state
+[ 54%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/v2_strike_adapter.cpp.o
+[ 57%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/return_eligibility.cpp.o
+[ 60%] Linking CXX static library libv2_core.a
+[ 87%] Built target v2_core
+[ 93%] Building CXX object CMakeFiles/v2_test_coordinator.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_incoming_coordinator.cpp.o
+[ 93%] Building CXX object CMakeFiles/v2_replay.dir/v2_replay.cpp.o
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp: In function ‘int main()’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                          ^~~~~~~~
+[ 96%] Linking CXX executable v2_replay
+[ 96%] Built target v2_replay
+[100%] Linking CXX executable v2_test_coordinator
+[100%] Built target v2_test_coordinator

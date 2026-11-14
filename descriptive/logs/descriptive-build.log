@@ -1,0 +1,56 @@
+[  6%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/common_ball_physics.cpp.o
+[  6%] Building CXX object CMakeFiles/main_core.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/batch_physics_estimator.cpp.o
+[  9%] Building CXX object CMakeFiles/main_core.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/spin_estimator.cpp.o
+[ 12%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/flight_spin_estimator.cpp.o
+[ 15%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/flight_state_v2.cpp.o
+[ 18%] Building CXX object CMakeFiles/main_core.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/trajectory_predictor.cpp.o
+[ 21%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/spin_estimator.cpp.o
+[ 24%] Building CXX object CMakeFiles/main_core.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/src/laptop_play_state.cpp.o
+[ 27%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/probabilistic_physics.cpp.o
+[ 30%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/probabilistic_ball_tracker.cpp.o
+[ 33%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/nominal_event_forecast.cpp.o
+[ 36%] Linking CXX static library libmain_core.a
+[ 36%] Built target main_core
+[ 39%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/fixed_lag_types.cpp.o
+[ 42%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/hit_plane_manager.cpp.o
+[ 45%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp.o
+[ 48%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/v2_strike_adapter.cpp.o
+[ 51%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/return_eligibility.cpp.o
+[ 54%] Building CXX object CMakeFiles/v2_core.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/return_region.cpp.o
+[ 57%] Building CXX object CMakeFiles/main_replay.dir/main_replay.cpp.o
+[ 60%] Building CXX object CMakeFiles/main_test_batch_physics_estimator.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/test/test_batch_physics_estimator.cpp.o
+[ 63%] Building CXX object CMakeFiles/main_test_spin_estimator.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/test/test_spin_estimator.cpp.o
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp: In function ‘int main(int, char**)’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:76:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   76 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/main_replay.cpp:76:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   76 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                          ^~~~~~~~
+[ 66%] Linking CXX executable main_test_spin_estimator
+[ 66%] Built target main_test_spin_estimator
+[ 69%] Building CXX object CMakeFiles/main_test_future_contact_predictor.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/test/test_future_contact_predictor.cpp.o
+[ 72%] Linking CXX executable main_test_batch_physics_estimator
+[ 72%] Built target main_test_batch_physics_estimator
+[ 75%] Building CXX object CMakeFiles/main_test_laptop_play_state.dir/workspace/HOPE-main-comparison/hope_ws/src/hope_planner_cpp/test/test_laptop_play_state.cpp.o
+[ 78%] Linking CXX executable main_replay
+[ 78%] Built target main_replay
+[ 81%] Linking CXX executable main_test_future_contact_predictor
+[ 81%] Built target main_test_future_contact_predictor
+[ 84%] Linking CXX static library libv2_core.a
+[ 84%] Built target v2_core
+[ 90%] Building CXX object CMakeFiles/v2_test_coordinator.dir/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_incoming_coordinator.cpp.o
+[ 90%] Building CXX object CMakeFiles/v2_replay.dir/v2_replay.cpp.o
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp: In function ‘int main()’:
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |     ^~
+/workspace/HOPE-accuracy-comparison/analysis/ppq004_accuracy/v2_replay.cpp:12:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   12 |     if(f.index!=count++||f.ns<=previous)throw std::runtime_error("Input sequence/order");previous=f.ns;
+      |                                                                                          ^~~~~~~~
+[ 93%] Linking CXX executable v2_replay
+[ 93%] Built target v2_replay
+[ 96%] Linking CXX executable main_test_laptop_play_state
+[ 96%] Built target main_test_laptop_play_state
+[100%] Linking CXX executable v2_test_coordinator
+[100%] Built target v2_test_coordinator

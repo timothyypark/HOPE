@@ -1,0 +1,33 @@
+Internal ctest changing into directory: /workspace/descriptive-validation/ros-build
+Test project /workspace/descriptive-validation/ros-build
+      Start  19: test_reacquisition_counterexamples
+ 1/12 Test  #19: test_reacquisition_counterexamples .....   Passed    0.06 sec
+      Start  20: test_reacquisition_spin
+ 2/12 Test  #20: test_reacquisition_spin ................   Passed    0.16 sec
+      Start  52: test_integrated_return
+ 3/12 Test  #52: test_integrated_return .................   Passed    0.10 sec
+      Start  53: test_v2_pr64_review_regressions
+ 4/12 Test  #53: test_v2_pr64_review_regressions ........   Passed    1.25 sec
+      Start 100: test_v2_strike_adapter
+ 5/12 Test #100: test_v2_strike_adapter .................   Passed    0.07 sec
+      Start 101: test_runner_preengagement_revocation
+ 6/12 Test #101: test_runner_preengagement_revocation ...   Passed    0.07 sec
+      Start 102: test_v2_incoming_coordinator
+ 7/12 Test #102: test_v2_incoming_coordinator ...........   Passed    0.15 sec
+      Start 103: test_ppq004_state_contract
+ 8/12 Test #103: test_ppq004_state_contract .............   Passed    0.06 sec
+      Start 105: test_v2_incoming_ros
+ 9/12 Test #105: test_v2_incoming_ros ...................   Passed    8.36 sec
+      Start 125: test_flight_prediction_v2
+10/12 Test #125: test_flight_prediction_v2 ..............   Passed    1.20 sec
+      Start 126: test_v2_contact_corroboration
+11/12 Test #126: test_v2_contact_corroboration ..........   Passed    0.11 sec
+      Start 127: test_flight_transport_v2
+12/12 Test #127: test_flight_transport_v2 ...............   Passed    0.09 sec
+
+100% tests passed, 0 tests failed out of 12
+
+Label Time Summary:
+gtest    =  11.68 sec*proc (12 tests)
+
+Total Test time (real) =  11.69 sec

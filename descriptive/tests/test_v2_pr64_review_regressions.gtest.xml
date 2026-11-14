@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="26" failures="0" disabled="0" errors="0" time="1.154" timestamp="2026-11-14T20:42:46.542" name="AllTests">
+  <testsuite name="PR64Review" tests="26" failures="0" disabled="0" skipped="0" errors="0" time="1.153" timestamp="2026-11-14T20:42:46.542">
+    <testcase name="RV01_DragAcquisitionBothRatesDirectionsAndSpin" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="32" status="run" result="completed" time="0.667" timestamp="2026-11-14T20:42:46.542" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV02_HeldImpossibleAccelerationAndProvenanceFaults" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="86" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.210" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV01b_RecentLaunchAfterHeldCandidatePrefixAcquiresPromptly" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="107" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.210" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV03_OneFastBounceHasOneStableIdentity" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="122" status="run" result="completed" time="0.16" timestamp="2026-11-14T20:42:47.211" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV03b_ReproducedOverlappingTwentyMetrePerSecondBounce" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="167" status="run" result="completed" time="0.017" timestamp="2026-11-14T20:42:47.371" classname="hope_planner_cpp.PR64Review">
+      <properties>
+        <property name="confirmed_ids_150" value="1"/>
+        <property name="confirmed_ids_300" value="1"/>
+      </properties>
+    </testcase>
+    <testcase name="RV03c_WireStyleRestorePreservesReversalIdentityOnNextObservation" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="197" status="run" result="completed" time="0.001" timestamp="2026-11-14T20:42:47.388" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV03d_ObservedBracketCorroboratesAuthoritativeContactOnce" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="225" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV05_DelayedContactSegmentsQuaternionWindow" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="245" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV06_HistoricalPreContactSpinRestoresImpactVelocity" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="272" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review">
+      <properties>
+        <property name="pre_spin_available" value="true"/>
+        <property name="post_vx" value="3.000000"/>
+      </properties>
+    </testcase>
+    <testcase name="RV07_AuthoritativeAndQuaternionZeroRemainAvailable" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="292" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV06b_WireStyleCheckpointRecoversHistoricalSpinSuffix" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="309" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV08_FiniteNetCornerClearanceAndTrueContact" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="328" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review">
+      <properties>
+        <property name="clearance_02753_collision" value="false"/>
+      </properties>
+    </testcase>
+    <testcase name="RV09_NetFirstContactTimeAcrossStepSizes" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="344" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV09b_TrueCornerCollisionWinsPlaneTie" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="362" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV10_SameStepBounceNoiseReachesPlane" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="378" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review">
+      <properties>
+        <property name="vx_variance_dt_1000" value="0.422500"/>
+        <property name="vx_variance_dt_500" value="0.422500"/>
+        <property name="vx_variance_dt_250" value="0.422500"/>
+      </properties>
+    </testcase>
+    <testcase name="RV04_RealCloseBouncesRemainDistinctAndGapDoesNotInventContact" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="402" status="run" result="completed" time="0.002" timestamp="2026-11-14T20:42:47.390" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV11_IndependentImpulseCovarianceOracleAndFreeFlightControl" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="438" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.393" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV11c_BounceNoiseChangesPhysicalReturnAdmission" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="473" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.393" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV12_NoOpAndRejectedContextsPreserveJobsSemanticChangeFencesThem" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="523" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.393" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV11b_EdgeBranchAndTangentPlaneNeverClaimValidLinearization" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="540" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.393" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV13_OriginalNakashimaFrictionSensitivityAndTrueZero" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="552" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.393" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV14_FastAcquisitionReachesPhysicalReturnAndValidatedOutgoing" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="567" status="run" result="completed" time="0.199" timestamp="2026-11-14T20:42:47.394" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV15_ClearingTopEdgeReturnUsesCorrectedSharedKernel" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="592" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:47.593" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV17_CausalCheckpointAndObservationCutoffParity" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="611" status="run" result="completed" time="0.095" timestamp="2026-11-14T20:42:47.594" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV17b_LongGapStartsFreshQualifiedShotWithoutOldBounceLedger" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="635" status="run" result="completed" time="0.002" timestamp="2026-11-14T20:42:47.692" classname="hope_planner_cpp.PR64Review" />
+    <testcase name="RV08b_NetTopFlyoverRemainsAnEligibleIncomingReturn" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp" line="653" status="run" result="completed" time="0.002" timestamp="2026-11-14T20:42:47.694" classname="hope_planner_cpp.PR64Review" />
+  </testsuite>
+</testsuites>

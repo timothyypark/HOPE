@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="16" failures="0" disabled="0" errors="0" time="0.049" timestamp="2026-11-14T20:42:46.433" name="AllTests">
+  <testsuite name="ReturnEligibility" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-14T20:42:46.433">
+    <testcase name="I17_I18_I19_UnknownIncompleteAndEarlyPrediction" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="40" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.433" classname="hope_planner_cpp.ReturnEligibility" />
+    <testcase name="I20_PhysicalOrderingAndDirectionNegatives" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="57" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.433" classname="hope_planner_cpp.ReturnEligibility" />
+    <testcase name="I21_I22_AdvisoryGameContextAndPhysicalSupport" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="68" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.433" classname="hope_planner_cpp.ReturnEligibility" />
+    <testcase name="SignedSimulationEpochAndRegistrationMismatch" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="80" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.433" classname="hope_planner_cpp.ReturnEligibility" />
+  </testsuite>
+  <testsuite name="PaddleImpact" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-14T20:42:46.433">
+    <testcase name="P03_IndependentAnalyticClosureAndApproach" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="89" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.433" classname="hope_planner_cpp.PaddleImpact" />
+  </testsuite>
+  <testsuite name="ValidatedReturn" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-14T20:42:46.433">
+    <testcase name="P01_P03_P05_P08_P09_ActualActionFirstLandingAndDuration" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="96" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.433" classname="hope_planner_cpp.ValidatedReturn" />
+    <testcase name="P02_FiniteUnconvergedIsRejected" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="109" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.434" classname="hope_planner_cpp.ValidatedReturn" />
+    <testcase name="P04_AnalyticNoDragSurfaceRadiusAndHeightOnce" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="115" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.434" classname="hope_planner_cpp.ValidatedReturn" />
+    <testcase name="P06_P07_NetAndGeometryFaultsReject" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="127" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.434" classname="hope_planner_cpp.ValidatedReturn" />
+    <testcase name="P08_RetryRecordsActualSelectedDuration" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="134" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.434" classname="hope_planner_cpp.ValidatedReturn" />
+  </testsuite>
+  <testsuite name="IntegratedLifecycle" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-14T20:42:46.435">
+    <testcase name="L01_L02_L03_SemanticIdentityAndFreshness" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="142" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.435" classname="hope_planner_cpp.IntegratedLifecycle" />
+    <testcase name="L05_L06_CommitAndExactIntegerOverflow" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="155" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.435" classname="hope_planner_cpp.IntegratedLifecycle" />
+    <testcase name="ReservesTimeForPublicationWithoutConsumingRejectedIdentity" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="165" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.436" classname="hope_planner_cpp.IntegratedLifecycle" />
+  </testsuite>
+  <testsuite name="RunnerRoundTrip" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-14T20:42:46.436">
+    <testcase name="W01_W02_W03_W05_ActualSchema2Decoder" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="181" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.436" classname="hope_planner_cpp.RunnerRoundTrip" />
+  </testsuite>
+  <testsuite name="IntegratedFlight" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0.045" timestamp="2026-11-14T20:42:46.437">
+    <testcase name="I12_I17_I19_ActualCkfWithoutContextPublisher" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="225" status="run" result="completed" time="0.045" timestamp="2026-11-14T20:42:46.437" classname="hope_planner_cpp.IntegratedFlight" />
+    <testcase name="I21_GameIllegalHistoryDoesNotRetirePhysicalTrack" file="/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_integrated_return.cpp" line="248" status="run" result="completed" time="0." timestamp="2026-11-14T20:42:46.482" classname="hope_planner_cpp.IntegratedFlight" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,12 @@
+[  3%] Built target gtest_main
+[ 13%] Built target hope_v2_forward_physics
+[ 17%] Built target gtest
+[ 51%] Built target hope_planner_core
+[ 68%] Built target hope_v2_forecast_core
+[ 75%] Built target hope_integrated_return
+[ 79%] Built target hope_v2_transport
+[ 86%] Built target hope_v2_incoming_core
+[ 93%] Built target hope_integrated_runtime
+[ 93%] Building CXX object CMakeFiles/test_v2_incoming_ros.dir/test/test_v2_incoming_ros.cpp.o
+[ 96%] Linking CXX executable test_v2_incoming_ros
+[100%] Built target test_v2_incoming_ros

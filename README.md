@@ -1,4 +1,17 @@
-# PPQ004 main-versus-CKF accuracy comparison — November 14, 2026
+# PPQ004 descriptive-forecast follow-up — November 14, 2026
+
+The managed CKF now supplies descriptive estimates while preserving strict
+command authority. Holdout forecast availability increased from **68/249 to
+243/249**, covering **17/17 screened arcs**, with unchanged previously qualified
+estimates and command-eligible targets. All 187 tests across 12 selected
+ROS/native groups passed.
+
+Start with the [follow-up report](descriptive/REPORT.md) and
+[coverage graph](descriptive/plots/descriptive-coverage.png). This is additional
+descriptive coverage; command coverage and the unresolved native contact
+accuracy gate remain unchanged.
+
+## Original comparison retained below
 
 Start with the completed [accuracy comparison report](comparison/REPORT.md),
 [graphs](comparison/plots/accuracy-and-coverage.png), and

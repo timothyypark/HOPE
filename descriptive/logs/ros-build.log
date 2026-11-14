@@ -1,0 +1,193 @@
+[  7%] Building CXX object CMakeFiles/hope_v2_forward_physics.dir/src/common_ball_physics.cpp.o
+[  3%] Building CXX object CMakeFiles/hope_v2_forward_physics.dir/src/flight_spin_estimator.cpp.o
+[  7%] Building CXX object CMakeFiles/hope_planner_core.dir/src/batch_physics_estimator.cpp.o
+[ 11%] Building CXX object CMakeFiles/hope_planner_core.dir/src/spin_estimator.cpp.o
+[ 14%] Building CXX object CMakeFiles/hope_planner_core.dir/src/trajectory_predictor.cpp.o
+[ 18%] Building CXX object CMakeFiles/hope_planner_core.dir/src/racket_target_planner.cpp.o
+[ 22%] Linking CXX static library libhope_v2_forward_physics.a
+[ 22%] Built target hope_v2_forward_physics
+[ 22%] Building CXX object CMakeFiles/hope_planner_core.dir/src/reach_permission.cpp.o
+[ 25%] Building CXX object CMakeFiles/hope_planner_core.dir/src/schema2_packer.cpp.o
+[ 29%] Building CXX object CMakeFiles/hope_planner_core.dir/src/schema3_packer.cpp.o
+[ 29%] Building CXX object CMakeFiles/hope_planner_core.dir/src/audit_logger.cpp.o
+[ 33%] Building CXX object CMakeFiles/hope_planner_core.dir/src/post_net_one_shot.cpp.o
+[ 37%] Building CXX object CMakeFiles/hope_planner_core.dir/src/incoming_trajectory.cpp.o
+[ 37%] Building CXX object CMakeFiles/hope_v2_forecast_core.dir/src/probabilistic_physics.cpp.o
+[ 40%] Building CXX object CMakeFiles/hope_planner_core.dir/src/adaptive_flight_commit.cpp.o
+[ 40%] Building CXX object CMakeFiles/hope_planner_core.dir/src/flight_packet.cpp.o
+[ 44%] Building CXX object CMakeFiles/hope_planner_core.dir/src/question_bank_fixture.cpp.o
+[ 48%] Building CXX object CMakeFiles/hope_v2_forecast_core.dir/src/probabilistic_ball_tracker.cpp.o
+[ 51%] Building CXX object CMakeFiles/hope_v2_forecast_core.dir/src/nominal_event_forecast.cpp.o
+[ 55%] Linking CXX static library libhope_planner_core.a
+[ 55%] Built target hope_planner_core
+[ 59%] Building CXX object CMakeFiles/hope_v2_forecast_core.dir/src/fixed_lag_types.cpp.o
+[ 59%] Building CXX object CMakeFiles/hope_v2_forecast_core.dir/src/return_region.cpp.o
+[ 62%] Building CXX object CMakeFiles/hope_v2_forecast_core.dir/src/hit_plane_manager.cpp.o
+[ 66%] Building CXX object CMakeFiles/hope_v2_forecast_core.dir/src/flight_state_v2.cpp.o
+[ 66%] Linking CXX static library libhope_v2_forecast_core.a
+[ 66%] Built target hope_v2_forecast_core
+[ 66%] Building CXX object CMakeFiles/hope_v2_transport.dir/src/flight_transport_v2.cpp.o
+[ 70%] Building CXX object CMakeFiles/hope_integrated_return.dir/src/return_eligibility.cpp.o
+[ 74%] Building CXX object CMakeFiles/hope_integrated_return.dir/src/validated_return_planner.cpp.o
+[ 74%] Linking CXX static library libhope_integrated_return.a
+[ 74%] Built target hope_integrated_return
+[ 77%] Building CXX object CMakeFiles/hope_v2_incoming_core.dir/src/v2_incoming_coordinator.cpp.o
+[ 77%] Building CXX object CMakeFiles/hope_v2_incoming_core.dir/src/v2_strike_adapter.cpp.o
+[ 81%] Linking CXX static library libhope_v2_transport.a
+[ 81%] Built target hope_v2_transport
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp: In lambda function:
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp:88:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   88 |     for(std::size_t i=0;i<count;++i)target[i]=static_cast<unsigned char>(value[i])<32?'_':value[i];target[count]='\0';};
+      |     ^~~
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/src/v2_incoming_coordinator.cpp:88:100: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   88 |     for(std::size_t i=0;i<count;++i)target[i]=static_cast<unsigned char>(value[i])<32?'_':value[i];target[count]='\0';};
+      |                                                                                                    ^~~~~~
+[ 85%] Linking CXX static library libhope_v2_incoming_core.a
+[ 85%] Built target hope_v2_incoming_core
+[ 92%] Building CXX object CMakeFiles/hope_integrated_runtime.dir/src/integrated_planner_runtime.cpp.o
+[ 92%] Building CXX object CMakeFiles/hope_integrated_runtime.dir/src/v2_incoming_runtime.cpp.o
+[ 92%] Linking CXX static library libhope_integrated_runtime.a
+[ 92%] Built target hope_integrated_runtime
+[ 96%] Building CXX object CMakeFiles/hope_planner_cpp_node.dir/src/planner_node.cpp.o
+[ 96%] Building CXX object CMakeFiles/hope_planner_cpp_node.dir/src/main.cpp.o
+[100%] Linking CXX executable hope_planner_cpp_node
+[100%] Built target hope_planner_cpp_node
+[  0%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[  3%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 13%] Built target hope_v2_forward_physics
+[ 48%] Built target hope_planner_core
+[ 65%] Built target hope_v2_forecast_core
+[ 68%] Built target hope_v2_transport
+[ 75%] Built target hope_integrated_return
+[ 82%] Built target hope_v2_incoming_core
+[ 89%] Built target hope_integrated_runtime
+[ 89%] Linking CXX static library libgtest_main.a
+[ 89%] Built target gtest_main
+[ 93%] Linking CXX static library libgtest.a
+[ 93%] Built target gtest
+[ 93%] Building CXX object CMakeFiles/test_v2_incoming_ros.dir/test/test_v2_incoming_ros.cpp.o
+[ 96%] Building CXX object CMakeFiles/test_v2_incoming_ros.dir/src/planner_node.cpp.o
+[100%] Linking CXX executable test_v2_incoming_ros
+[100%] Built target test_v2_incoming_ros
+[  8%] Built target gtest_main
+[ 16%] Built target gtest
+[ 41%] Built target hope_v2_forward_physics
+[ 83%] Built target hope_v2_forecast_core
+[ 91%] Built target hope_v2_transport
+[ 91%] Building CXX object CMakeFiles/test_flight_transport_v2.dir/test/test_flight_transport_v2.cpp.o
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_flight_transport_v2.cpp: In member function ‘virtual void FlightTransportV2_A12_T03_TargetAndEveryWaypointHaveExactArrivalEquation_Test::TestBody()’:
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_flight_transport_v2.cpp:139:6: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  139 |   if (result.target.event)
+      |      ^
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_flight_transport_v2.cpp: In member function ‘virtual void FlightTransportV2_A12_B12_T03_X07_ForecastOnlyPosteriorSpinGeometryAndEventCovariance_Test::TestBody()’:
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_flight_transport_v2.cpp:296:8: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  296 |     if (point.spin_available)
+      |        ^
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_flight_transport_v2.cpp:302:8: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  302 |     if (event.pre_spin_available)
+      |        ^
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_flight_transport_v2.cpp:305:6: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  305 |   if (prediction.target.event && !prediction.target.historical)
+      |      ^
+[100%] Linking CXX executable test_flight_transport_v2
+[100%] Built target test_flight_transport_v2
+[  8%] Built target gtest_main
+[ 16%] Built target gtest
+[ 41%] Built target hope_v2_forward_physics
+[ 83%] Built target hope_v2_forecast_core
+[ 91%] Building CXX object CMakeFiles/test_flight_prediction_v2.dir/test/test_flight_prediction_v2.cpp.o
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_flight_prediction_v2.cpp: In member function ‘virtual void FlightV2Association_A02_A06_A10_B06_C02_RawTwoBounceServeKeepsHypothesisIdentity_Test::TestBody()’:
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_flight_prediction_v2.cpp:943:16: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  943 |             if (e.status == EventStatus::CONFIRMED)
+      |                ^
+[100%] Linking CXX executable test_flight_prediction_v2
+[100%] Built target test_flight_prediction_v2
+[  3%] Built target gtest_main
+[  7%] Built target gtest
+[ 19%] Built target hope_v2_forward_physics
+[ 57%] Built target hope_planner_core
+[ 76%] Built target hope_v2_forecast_core
+[ 84%] Built target hope_integrated_return
+[ 92%] Built target hope_v2_incoming_core
+[ 96%] Building CXX object CMakeFiles/test_v2_strike_adapter.dir/test/test_v2_strike_adapter.cpp.o
+[100%] Linking CXX executable test_v2_strike_adapter
+[100%] Built target test_v2_strike_adapter
+[  3%] Built target gtest_main
+[  7%] Built target gtest
+[ 19%] Built target hope_v2_forward_physics
+[ 57%] Built target hope_planner_core
+[ 76%] Built target hope_v2_forecast_core
+[ 84%] Built target hope_integrated_return
+[ 92%] Built target hope_v2_incoming_core
+[ 96%] Building CXX object CMakeFiles/test_v2_incoming_coordinator.dir/test/test_v2_incoming_coordinator.cpp.o
+[100%] Linking CXX executable test_v2_incoming_coordinator
+[100%] Built target test_v2_incoming_coordinator
+[  7%] Built target gtest_main
+[ 14%] Built target gtest
+[ 35%] Built target hope_v2_forward_physics
+[ 71%] Built target hope_v2_forecast_core
+[ 85%] Built target hope_integrated_return
+[ 92%] Building CXX object CMakeFiles/test_reacquisition_counterexamples.dir/test/reacquisition_counterexamples.cpp.o
+[100%] Linking CXX executable test_reacquisition_counterexamples
+[100%] Built target test_reacquisition_counterexamples
+[  4%] Built target gtest_main
+[  8%] Built target gtest
+[ 21%] Built target hope_v2_forward_physics
+[ 65%] Built target hope_planner_core
+[ 86%] Built target hope_v2_forecast_core
+[ 95%] Built target hope_integrated_return
+[100%] Building CXX object CMakeFiles/test_reacquisition_spin.dir/test/test_reacquisition_spin.cpp.o
+[100%] Linking CXX executable test_reacquisition_spin
+[100%] Built target test_reacquisition_spin
+[ 15%] Built target hope_v2_forward_physics
+[ 11%] Built target gtest
+[ 19%] Built target gtest_main
+[ 57%] Built target hope_planner_core
+[ 76%] Built target hope_v2_forecast_core
+[ 84%] Built target hope_integrated_return
+[ 92%] Built target hope_v2_incoming_core
+[ 96%] Building CXX object CMakeFiles/test_ppq004_state_contract.dir/test/test_ppq004_state_contract.cpp.o
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_ppq004_state_contract.cpp: In member function ‘virtual void {anonymous}::PPQ004Contract_S13_ServeNetBeforeB1IsExplicitProfileDisagreement_Test::TestBody()’:
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_ppq004_state_contract.cpp:260:6: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  260 |   if (GetParam())
+      |      ^
+[100%] Linking CXX executable test_ppq004_state_contract
+[100%] Built target test_ppq004_state_contract
+[ 36%] Built target hope_v2_forward_physics
+[ 18%] Built target gtest_main
+[ 45%] Built target gtest
+[ 90%] Built target hope_v2_forecast_core
+[ 90%] Building CXX object CMakeFiles/test_v2_contact_corroboration.dir/test/test_v2_contact_corroboration.cpp.o
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_contact_corroboration.cpp: In member function ‘virtual void {anonymous}::ContactCorroboration_GenuineBounceSurvivesLargeInnovationAndOverlappingWindows_Test::TestBody()’:
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_contact_corroboration.cpp:69:12: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+   69 |         if (contact_id) EXPECT_EQ(event.id, *contact_id);
+      |            ^
+[100%] Linking CXX executable test_v2_contact_corroboration
+[100%] Built target test_v2_contact_corroboration
+[  4%] Built target gtest_main
+[  8%] Built target gtest
+[ 21%] Built target hope_v2_forward_physics
+[ 65%] Built target hope_planner_core
+[ 86%] Built target hope_v2_forecast_core
+[ 95%] Built target hope_integrated_return
+[100%] Building CXX object CMakeFiles/test_integrated_return.dir/test/test_integrated_return.cpp.o
+[100%] Linking CXX executable test_integrated_return
+[100%] Built target test_integrated_return
+[  4%] Built target gtest
+[  8%] Built target gtest_main
+[ 21%] Built target hope_v2_forward_physics
+[ 65%] Built target hope_planner_core
+[ 86%] Built target hope_v2_forecast_core
+[ 95%] Built target hope_integrated_return
+[ 95%] Building CXX object CMakeFiles/test_v2_pr64_review_regressions.dir/test/test_v2_pr64_review_regressions.cpp.o
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp: In member function ‘virtual void {anonymous}::PR64Review_RV11c_BounceNoiseChangesPhysicalReturnAdmission_Test::TestBody()’:
+/workspace/HOPE-descriptive/hope_ws/src/hope_planner_cpp/test/test_v2_pr64_review_regressions.cpp:518:10: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  518 |       if (result.input)
+      |          ^
+[100%] Linking CXX executable test_v2_pr64_review_regressions
+[100%] Built target test_v2_pr64_review_regressions
+[ 33%] Built target gtest_main
+[ 66%] Built target gtest
+[ 66%] Building CXX object CMakeFiles/test_runner_preengagement_revocation.dir/test/test_runner_preengagement_revocation.cpp.o
+[100%] Linking CXX executable test_runner_preengagement_revocation
+[100%] Built target test_runner_preengagement_revocation
