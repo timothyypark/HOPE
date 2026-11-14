@@ -201,6 +201,38 @@ TEST_P(IncomingRos, ContinuousForecastRunsWithoutPacketCommandConsumer) {
     return p.forecast_status=="REVOKED" || p.forecast_status=="EXPIRED";
   }));
 }
+TEST_P(IncomingRos, DescriptiveMotionPublishesUncertainStateWithoutCommandSupport) {
+  const auto start = now();
+  while (now() - start < 400000000) {
+    const auto stamp = now();
+    const double t = (stamp - start) * 1e-9;
+    BallSample sample;
+    sample.source_time_ns = stamp; sample.sequence = ++source_sequence;
+    sample.position = Vec3(2.5 - 4*t, -.7, .8);  // Smooth but non-ballistic.
+    sample.frame_id = "table"; sample.calibration_id = "fixture";
+    sample.clock_domain = "system"; sample.clock_mapping_id = "clock"; sample.ball_id = "ball";
+    observations->publish(encode_observation(sample));
+    if (source_sequence % 5 == 0) body(-.4);
+    spin(3ms);
+  }
+  spin(20ms);
+  int descriptive = 0;
+  for (const auto &p : predictions) {
+    if (!p.physical_available || p.reason.find("DESCRIPTIVE_ONLY:") != 0) continue;
+    ++descriptive;
+    EXPECT_TRUE(p.current_state_available);
+    EXPECT_EQ(p.forecast_status, "UNCERTAIN");
+    EXPECT_FALSE(p.target_valid);
+    EXPECT_EQ(p.frame_id, "table"); EXPECT_EQ(p.calibration_id, "fixture");
+    EXPECT_EQ(p.current_state.linearization_quality, "descriptive_conditional_ckf_posterior");
+  }
+  EXPECT_GT(descriptive, 5);
+  EXPECT_TRUE(commands.empty());
+  EXPECT_TRUE(std::any_of(candidates.begin(), candidates.end(), [](const auto &c) {
+    return c.physical_state_available && !c.command_eligible && !c.strike_contact_supported &&
+        c.reason.find("DESCRIPTIVE_ONLY:") == 0;
+  }));
+}
 INSTANTIATE_TEST_SUITE_P(PlaneModes,IncomingRos,::testing::Values("fixed","per_ball","stable_per_ball"));
 class IncomingOutputDisabled : public IncomingRos {
   void SetUp() override { continuous_output=false; IncomingRos::SetUp(); }
