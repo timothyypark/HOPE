@@ -1,0 +1,549 @@
+{
+  "status": "PASS",
+  "scope": "Original October receipts recovered; not new executions and not recovered November 12 logs",
+  "cases": [
+    {
+      "case": {
+        "origin": "historical",
+        "profile": "incoming_chain_300_per_ball_zero",
+        "run": "repetition-1",
+        "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/raw.json",
+        "expected_flights": 10,
+        "useful_flights": 9,
+        "assessment": "CONFIRMED_DEFECT",
+        "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+      },
+      "source_commit": "2ad416bf65261722013fc640375ee772d4cfb82b",
+      "archive": {
+        "archive": "incoming-campaign-repetition-1.tar.gz",
+        "bytes": 8543704,
+        "sha256": "6e6b5a13e44c505ee4ff2cec1e118ee9d1b321942f255795fcce33afc466e7db"
+      },
+      "parts": [
+        {
+          "path": "artifacts/incoming-campaign-repetition-1.tar.gz",
+          "sha256": "6e6b5a13e44c505ee4ff2cec1e118ee9d1b321942f255795fcce33afc466e7db",
+          "bytes": 8543704
+        }
+      ],
+      "files": [
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/accounting.json",
+          "path": "01-repetition-1-incoming_chain_300_per_ball_zero/accounting.json",
+          "bytes": 3883,
+          "sha256": "ae1cf2f6cb6bd2bdab2d8e27f14c78dbe560d2222d7416456f76a0e90002ae6b"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/decoder.tsv",
+          "path": "01-repetition-1-incoming_chain_300_per_ball_zero/decoder.tsv",
+          "bytes": 2903,
+          "sha256": "5b8a4d02dd47d1c0fcb8bee1cc57a80d6d3bf33409879337f903e8fa28f5aac1"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/planner.tsv.gz",
+          "path": "01-repetition-1-incoming_chain_300_per_ball_zero/planner.tsv.gz",
+          "bytes": 130064,
+          "sha256": "c5ea8b9575da95ac978b852c240f3d0ec8ddda0d72ddd1072e732fa513bd9c8d"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/raw.json.gz",
+          "path": "01-repetition-1-incoming_chain_300_per_ball_zero/raw.json.gz",
+          "bytes": 267879,
+          "sha256": "cc8b35be3c5d1fb49f015f3bc4b14bb0814897eef69f1882a9bf4b746b45083f"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/relay.tsv.gz",
+          "path": "01-repetition-1-incoming_chain_300_per_ball_zero/relay.tsv.gz",
+          "bytes": 85837,
+          "sha256": "4fa113b2ab2587f2439a3af5a2f1e1c37950edfbd0050822b7053e8ded99bc0e"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_300_per_ball_zero/result.json",
+          "path": "01-repetition-1-incoming_chain_300_per_ball_zero/result.json",
+          "bytes": 2430,
+          "sha256": "873891d86f469c206416abf5016686062ee8f24ba3b70b564efb53265f327257"
+        }
+      ],
+      "directory": "01-repetition-1-incoming_chain_300_per_ball_zero"
+    },
+    {
+      "case": {
+        "origin": "historical",
+        "profile": "incoming_chain_360_per_ball_unknown",
+        "run": "repetition-1",
+        "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/raw.json",
+        "expected_flights": 10,
+        "useful_flights": 9,
+        "assessment": "CONFIRMED_DEFECT",
+        "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+      },
+      "source_commit": "2ad416bf65261722013fc640375ee772d4cfb82b",
+      "archive": {
+        "archive": "incoming-campaign-repetition-1.tar.gz",
+        "bytes": 8543704,
+        "sha256": "6e6b5a13e44c505ee4ff2cec1e118ee9d1b321942f255795fcce33afc466e7db"
+      },
+      "parts": [
+        {
+          "path": "artifacts/incoming-campaign-repetition-1.tar.gz",
+          "sha256": "6e6b5a13e44c505ee4ff2cec1e118ee9d1b321942f255795fcce33afc466e7db",
+          "bytes": 8543704
+        }
+      ],
+      "files": [
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/accounting.json",
+          "path": "02-repetition-1-incoming_chain_360_per_ball_unknown/accounting.json",
+          "bytes": 33692,
+          "sha256": "167146a1cfdb562e71fa92ec7b4e6b216d3f1cd48fb6f35ced89de441b0ce402"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/decoder.tsv",
+          "path": "02-repetition-1-incoming_chain_360_per_ball_unknown/decoder.tsv",
+          "bytes": 2903,
+          "sha256": "ca13a5955b0886495e5c37468a5b14829fabdb1d947c5b7373594293de5c2a12"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/planner.tsv.gz",
+          "path": "02-repetition-1-incoming_chain_360_per_ball_unknown/planner.tsv.gz",
+          "bytes": 163840,
+          "sha256": "6b43f8f3221e9a1b2668ef7e997f4827219507a4dbbd5e80a0e827cd4245bf71"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/raw.json.gz",
+          "path": "02-repetition-1-incoming_chain_360_per_ball_unknown/raw.json.gz",
+          "bytes": 314505,
+          "sha256": "ac56469945dc55a52702e0cb9aeb5f954a308ca259a94e9c6fb155ad54d1898d"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/relay.tsv.gz",
+          "path": "02-repetition-1-incoming_chain_360_per_ball_unknown/relay.tsv.gz",
+          "bytes": 105924,
+          "sha256": "c9ffb3879585713e1f8a7cfe5bcc2e54089c6d0f59ebffe2d84acfad8423fbd7"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-1/incoming_chain_360_per_ball_unknown/result.json",
+          "path": "02-repetition-1-incoming_chain_360_per_ball_unknown/result.json",
+          "bytes": 2790,
+          "sha256": "47a9130268e0a7bebcbec407393de8f01a516f0ab830f950e2ed06f57f68e49d"
+        }
+      ],
+      "directory": "02-repetition-1-incoming_chain_360_per_ball_unknown"
+    },
+    {
+      "case": {
+        "origin": "historical",
+        "profile": "incoming_chain_150_per_ball_unknown",
+        "run": "repetition-3",
+        "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/raw.json",
+        "expected_flights": 10,
+        "useful_flights": 9,
+        "assessment": "CONFIRMED_DEFECT",
+        "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+      },
+      "source_commit": "2ad416bf65261722013fc640375ee772d4cfb82b",
+      "archive": {
+        "archive": "incoming-campaign-repetition-3.tar.gz",
+        "bytes": 8445023,
+        "sha256": "6c5e5348bdc0b0fe8be187ce2f19f6487e6fdc8109a851c8441cc7dcedd8bd29"
+      },
+      "parts": [
+        {
+          "path": "artifacts/incoming-campaign-repetition-3.tar.gz",
+          "sha256": "6c5e5348bdc0b0fe8be187ce2f19f6487e6fdc8109a851c8441cc7dcedd8bd29",
+          "bytes": 8445023
+        }
+      ],
+      "files": [
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/accounting.json",
+          "path": "03-repetition-3-incoming_chain_150_per_ball_unknown/accounting.json",
+          "bytes": 7767,
+          "sha256": "8d4e1e463bb249b5476af092de19fba773e31f7107e802efec09d5e7907e1201"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/decoder.tsv",
+          "path": "03-repetition-3-incoming_chain_150_per_ball_unknown/decoder.tsv",
+          "bytes": 2903,
+          "sha256": "0fd6744f82e5d7740c08134243676a1569ae293ed98b5b2b3b143200085e629d"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/planner.tsv.gz",
+          "path": "03-repetition-3-incoming_chain_150_per_ball_unknown/planner.tsv.gz",
+          "bytes": 69323,
+          "sha256": "9a2b0ce576195625a5bc52bd8dd488df7c7a826fa9cfc8a93546ce22ec8a3250"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/raw.json.gz",
+          "path": "03-repetition-3-incoming_chain_150_per_ball_unknown/raw.json.gz",
+          "bytes": 141882,
+          "sha256": "6ac74b73db965c3368a7259526f3f57cc994999fbb3a8c64802dd4a35a88bff8"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/relay.tsv",
+          "path": "03-repetition-3-incoming_chain_150_per_ball_unknown/relay.tsv",
+          "bytes": 164136,
+          "sha256": "d1681d3455fddf9e5da8427473b396b1c93cbc7383b98fd49dab24fc155d3b79"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-3/incoming_chain_150_per_ball_unknown/result.json",
+          "path": "03-repetition-3-incoming_chain_150_per_ball_unknown/result.json",
+          "bytes": 2374,
+          "sha256": "ea08b954f810948450349a1be9cd1b9976172614e1428d9ed1296384c1e37217"
+        }
+      ],
+      "directory": "03-repetition-3-incoming_chain_150_per_ball_unknown"
+    },
+    {
+      "case": {
+        "origin": "historical",
+        "profile": "incoming_chain_150_per_ball_zero",
+        "run": "repetition-4",
+        "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/raw.json",
+        "expected_flights": 10,
+        "useful_flights": 9,
+        "assessment": "CONFIRMED_DEFECT",
+        "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+      },
+      "source_commit": "2ad416bf65261722013fc640375ee772d4cfb82b",
+      "archive": {
+        "archive": "incoming-campaign-repetition-4.tar.gz",
+        "bytes": 8518362,
+        "sha256": "1c4bedefd90d2f431c8a9e52433704ee10afc6fff26c0748034c6c34c613daec"
+      },
+      "parts": [
+        {
+          "path": "artifacts/incoming-campaign-repetition-4.tar.gz",
+          "sha256": "1c4bedefd90d2f431c8a9e52433704ee10afc6fff26c0748034c6c34c613daec",
+          "bytes": 8518362
+        }
+      ],
+      "files": [
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/accounting.json",
+          "path": "04-repetition-4-incoming_chain_150_per_ball_zero/accounting.json",
+          "bytes": 2372,
+          "sha256": "a2b7226cb21aa814bc89e8629df0fbcc59b2e9b89344a6112e1b1754a3fce227"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/decoder.tsv",
+          "path": "04-repetition-4-incoming_chain_150_per_ball_zero/decoder.tsv",
+          "bytes": 2903,
+          "sha256": "36423a85874e44109a3443c2acee20d17e89fa9e2f379bb143a1cab983d0e29b"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/planner.tsv.gz",
+          "path": "04-repetition-4-incoming_chain_150_per_ball_zero/planner.tsv.gz",
+          "bytes": 68472,
+          "sha256": "f1d3a128bb73c1bcb4dac60951e2fb4de327aa3ebf6c77c6f5c8fe1f48c4930a"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/raw.json.gz",
+          "path": "04-repetition-4-incoming_chain_150_per_ball_zero/raw.json.gz",
+          "bytes": 142402,
+          "sha256": "756feeef3067475f4480e1dee19c6ec4cafdd26c966fa24b3ab480fa78e54206"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/relay.tsv",
+          "path": "04-repetition-4-incoming_chain_150_per_ball_zero/relay.tsv",
+          "bytes": 163134,
+          "sha256": "7805f082d0273c0e9896d2353b94c03ea09e692b25101bff82ee632ebf609652"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_per_ball_zero/result.json",
+          "path": "04-repetition-4-incoming_chain_150_per_ball_zero/result.json",
+          "bytes": 2343,
+          "sha256": "08bc41ce14dae316d28d2f598d7e0ca623d246a28b88a986d5f520dfb9b92082"
+        }
+      ],
+      "directory": "04-repetition-4-incoming_chain_150_per_ball_zero"
+    },
+    {
+      "case": {
+        "origin": "historical",
+        "profile": "incoming_chain_150_stable_per_ball_zero",
+        "run": "repetition-4",
+        "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/raw.json",
+        "expected_flights": 10,
+        "useful_flights": 9,
+        "assessment": "CONFIRMED_DEFECT",
+        "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+      },
+      "source_commit": "2ad416bf65261722013fc640375ee772d4cfb82b",
+      "archive": {
+        "archive": "incoming-campaign-repetition-4.tar.gz",
+        "bytes": 8518362,
+        "sha256": "1c4bedefd90d2f431c8a9e52433704ee10afc6fff26c0748034c6c34c613daec"
+      },
+      "parts": [
+        {
+          "path": "artifacts/incoming-campaign-repetition-4.tar.gz",
+          "sha256": "1c4bedefd90d2f431c8a9e52433704ee10afc6fff26c0748034c6c34c613daec",
+          "bytes": 8518362
+        }
+      ],
+      "files": [
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/accounting.json",
+          "path": "05-repetition-4-incoming_chain_150_stable_per_ball_zero/accounting.json",
+          "bytes": 16921,
+          "sha256": "4ee96f34061d9ce2ad20793dd21e8bbf1736791af70df4d53a34950b26e5cbc9"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/decoder.tsv",
+          "path": "05-repetition-4-incoming_chain_150_stable_per_ball_zero/decoder.tsv",
+          "bytes": 2903,
+          "sha256": "7ae53980a01f4069144351d85bb0d36ff8636b30e3cfef46151d431bce52d596"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/planner.tsv.gz",
+          "path": "05-repetition-4-incoming_chain_150_stable_per_ball_zero/planner.tsv.gz",
+          "bytes": 68123,
+          "sha256": "5ce261b5e80714639ad1dcd238c144f0c9493f8d55ce5b0281a8ec7abcad28a9"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/raw.json.gz",
+          "path": "05-repetition-4-incoming_chain_150_stable_per_ball_zero/raw.json.gz",
+          "bytes": 141881,
+          "sha256": "f95edaaaa8ba4c1095ee2b318c2d59c52653ba28a3deb30414c700603842f69b"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/relay.tsv",
+          "path": "05-repetition-4-incoming_chain_150_stable_per_ball_zero/relay.tsv",
+          "bytes": 163295,
+          "sha256": "abc9b013e5bf952fd5ee424b911e00662feb06245c878849604f96647d56da95"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_150_stable_per_ball_zero/result.json",
+          "path": "05-repetition-4-incoming_chain_150_stable_per_ball_zero/result.json",
+          "bytes": 2544,
+          "sha256": "a9242a78b7a55baa17d192720e6945e90ccd43388a3b615c3732bda5ca561e20"
+        }
+      ],
+      "directory": "05-repetition-4-incoming_chain_150_stable_per_ball_zero"
+    },
+    {
+      "case": {
+        "origin": "historical",
+        "profile": "incoming_chain_360_stable_per_ball_zero",
+        "run": "repetition-4",
+        "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/raw.json",
+        "expected_flights": 10,
+        "useful_flights": 9,
+        "assessment": "CONFIRMED_DEFECT",
+        "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+      },
+      "source_commit": "2ad416bf65261722013fc640375ee772d4cfb82b",
+      "archive": {
+        "archive": "incoming-campaign-repetition-4.tar.gz",
+        "bytes": 8518362,
+        "sha256": "1c4bedefd90d2f431c8a9e52433704ee10afc6fff26c0748034c6c34c613daec"
+      },
+      "parts": [
+        {
+          "path": "artifacts/incoming-campaign-repetition-4.tar.gz",
+          "sha256": "1c4bedefd90d2f431c8a9e52433704ee10afc6fff26c0748034c6c34c613daec",
+          "bytes": 8518362
+        }
+      ],
+      "files": [
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/accounting.json",
+          "path": "06-repetition-4-incoming_chain_360_stable_per_ball_zero/accounting.json",
+          "bytes": 29778,
+          "sha256": "e385b4ccc381cca166f5b7098961c1496743a85394244b480389d975f5749d9e"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/decoder.tsv",
+          "path": "06-repetition-4-incoming_chain_360_stable_per_ball_zero/decoder.tsv",
+          "bytes": 2903,
+          "sha256": "80ab67ea5a399a8bfbe048795208b834dd18307f9a552f321cba3241069a4334"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/planner.tsv.gz",
+          "path": "06-repetition-4-incoming_chain_360_stable_per_ball_zero/planner.tsv.gz",
+          "bytes": 152693,
+          "sha256": "a84e4242a8bb2563d29b9c7b3deb3f3974b3f58964e7e27efb7153419cbe65fd"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/raw.json.gz",
+          "path": "06-repetition-4-incoming_chain_360_stable_per_ball_zero/raw.json.gz",
+          "bytes": 313675,
+          "sha256": "c9816b2dcb4b5e9378b080b424ed6d9a804f982883ded1a9b0e896165fd0d5ed"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/relay.tsv.gz",
+          "path": "06-repetition-4-incoming_chain_360_stable_per_ball_zero/relay.tsv.gz",
+          "bytes": 101960,
+          "sha256": "b1625e80d78275f6c7801934429337625dba9a480611a57c3ffc723351c83ce1"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/incoming-campaign/repetition-4/incoming_chain_360_stable_per_ball_zero/result.json",
+          "path": "06-repetition-4-incoming_chain_360_stable_per_ball_zero/result.json",
+          "bytes": 2766,
+          "sha256": "969382cf48c5678fd5bcb19ad9ba80f52bf15d38962c6ee89daf6b5845c841cb"
+        }
+      ],
+      "directory": "06-repetition-4-incoming_chain_360_stable_per_ball_zero"
+    },
+    {
+      "case": {
+        "origin": "historical",
+        "profile": "incoming_chain_300_stable_per_ball_zero",
+        "run": "full_ros",
+        "raw_path": "/workspace/.cloud-setup/v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/raw.json.gz",
+        "expected_flights": 10,
+        "useful_flights": 9,
+        "assessment": "CONFIRMED_DEFECT",
+        "basis": "Missing usable incoming command; packet/prefix/expiry causal receipts retained; no retry or freshness relaxation applied."
+      },
+      "source_commit": "2ad416bf65261722013fc640375ee772d4cfb82b",
+      "archive": {
+        "archive": "final-complete-ladder.tar.gz",
+        "bytes": 57853600,
+        "sha256": "2d2945d42b9684bb2d2daa420e807ac7fabc80e37705f3cffea5b65bba1bd820",
+        "parts": [
+          {
+            "file": "final-complete-ladder.tar.gz.part000",
+            "bytes": 20971520,
+            "sha256": "9880a0bd1cf6cb479df1150aa7765ac3b0345446d72fe79aa6da42cab9d61a98"
+          },
+          {
+            "file": "final-complete-ladder.tar.gz.part001",
+            "bytes": 20971520,
+            "sha256": "12e936f979db0d24c0cade5e434ce6f6848dec166067579b8258efc01d045973"
+          },
+          {
+            "file": "final-complete-ladder.tar.gz.part002",
+            "bytes": 15910560,
+            "sha256": "188baa850f210f422273dd4163ec33e95bfd90cc3c0c7da086d5ed6f01be67df"
+          }
+        ]
+      },
+      "parts": [
+        {
+          "path": "artifacts/final-complete-ladder.tar.gz.part000",
+          "sha256": "9880a0bd1cf6cb479df1150aa7765ac3b0345446d72fe79aa6da42cab9d61a98",
+          "bytes": 20971520
+        },
+        {
+          "path": "artifacts/final-complete-ladder.tar.gz.part001",
+          "sha256": "12e936f979db0d24c0cade5e434ce6f6848dec166067579b8258efc01d045973",
+          "bytes": 20971520
+        },
+        {
+          "path": "artifacts/final-complete-ladder.tar.gz.part002",
+          "sha256": "188baa850f210f422273dd4163ec33e95bfd90cc3c0c7da086d5ed6f01be67df",
+          "bytes": 15910560
+        }
+      ],
+      "files": [
+        {
+          "original_path": "v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/accounting.json",
+          "path": "07-full_ros-incoming_chain_300_stable_per_ball_zero/accounting.json",
+          "bytes": 16900,
+          "sha256": "99fda61ed2a02964dcdedaab1ae6603d511d268abc8650954c652421e4099004"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/decoder.tsv",
+          "path": "07-full_ros-incoming_chain_300_stable_per_ball_zero/decoder.tsv",
+          "bytes": 2903,
+          "sha256": "4290e0f1b2e08473d38847c42dbf5d0a52d527da39ea611467ef4fc493c4fdf3"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/planner.tsv.gz",
+          "path": "07-full_ros-incoming_chain_300_stable_per_ball_zero/planner.tsv.gz",
+          "bytes": 129569,
+          "sha256": "6ad174864ed6b581a93c11ab350230696faa4b35ef74292af44727b54f426278"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/raw.json.gz",
+          "path": "07-full_ros-incoming_chain_300_stable_per_ball_zero/raw.json.gz",
+          "bytes": 267541,
+          "sha256": "ea92628923cf0a3cff1af6302fdbc0fa65c5c7432fe7bd527b3be79a8125b09c"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/relay.tsv.gz",
+          "path": "07-full_ros-incoming_chain_300_stable_per_ball_zero/relay.tsv.gz",
+          "bytes": 85648,
+          "sha256": "02d21e8aed8ac0ae8eb95b229d135910771340030c9aab34f1f9ec5717f935c0"
+        },
+        {
+          "original_path": "v2-incoming/qualification-06/build/hope_planner_cpp/incoming_chain_300_stable_per_ball_zero/result.json",
+          "path": "07-full_ros-incoming_chain_300_stable_per_ball_zero/result.json",
+          "bytes": 2687,
+          "sha256": "7e8a1de24e75c1b4057365bd75b8c1e7f37f74cb69bce84cf65fa0921b338e01"
+        }
+      ],
+      "directory": "07-full_ros-incoming_chain_300_stable_per_ball_zero"
+    },
+    {
+      "case": {
+        "origin": "current_campaign",
+        "profile": "incoming_chain_360_fixed_unknown",
+        "run": "repetition-5",
+        "raw_path": "/workspace/.cloud-setup/v2-simulation-verification/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/raw.json",
+        "raw_status": "FAIL",
+        "raw_exception": null,
+        "expected_flights": 10,
+        "useful_flights": 9,
+        "assessment": "CONFIRMED_DEFECT",
+        "basis": "Flight 9 packet has 44 exact samples. Three were typed-published within 0.661 ms but never recorded at planner receipt; exact-prefix rejection prevented a command. Missing command remains in denominator."
+      },
+      "source_commit": "ca7176903b120993a829a91ed8fa9dfda0f9c3ad",
+      "archive": {
+        "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown.tar.gz",
+        "files": 14,
+        "bytes": 533083,
+        "sha256": "7a806ca5fee182bb0a2577fc1a56eeb9ab4d63add26c0ff6e30f87d2dd1e36cd"
+      },
+      "parts": [
+        {
+          "path": "receipts/qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown.tar.gz",
+          "files": 14,
+          "bytes": 533083,
+          "sha256": "7a806ca5fee182bb0a2577fc1a56eeb9ab4d63add26c0ff6e30f87d2dd1e36cd"
+        }
+      ],
+      "files": [
+        {
+          "original_path": "qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/accounting.json",
+          "path": "08-repetition-5-incoming_chain_360_fixed_unknown/accounting.json",
+          "bytes": 23295,
+          "sha256": "2857ca260f3ea39b6394e52224ad1ca7387b2e84f3b187780395645384775072"
+        },
+        {
+          "original_path": "qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/decoder.tsv",
+          "path": "08-repetition-5-incoming_chain_360_fixed_unknown/decoder.tsv",
+          "bytes": 2903,
+          "sha256": "25e6bd04269461c60c6c87f46a0b249e572cd0f05523f71dd72e32f9b472d497"
+        },
+        {
+          "original_path": "qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/planner.tsv",
+          "path": "08-repetition-5-incoming_chain_360_fixed_unknown/planner.tsv",
+          "bytes": 740184,
+          "sha256": "b7a50d928707ce3d60fa4842c0e9a88502efe4a78d698174a74e3317009c1d53"
+        },
+        {
+          "original_path": "qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/raw.json",
+          "path": "08-repetition-5-incoming_chain_360_fixed_unknown/raw.json",
+          "bytes": 2040920,
+          "sha256": "d4527df56fd867809ce33fd1385e05d9b83d8fd4bc035f468f7fc60ca9b3d350"
+        },
+        {
+          "original_path": "qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/relay.tsv",
+          "path": "08-repetition-5-incoming_chain_360_fixed_unknown/relay.tsv",
+          "bytes": 392631,
+          "sha256": "88ebcf38c36cf3e9a6771e7e81974c5e3f03ac5b3e3e416494827ed4ec3780bc"
+        },
+        {
+          "original_path": "qualification-01/incoming-campaign/repetition-5/incoming_chain_360_fixed_unknown/result.json",
+          "path": "08-repetition-5-incoming_chain_360_fixed_unknown/result.json",
+          "bytes": 2771,
+          "sha256": "0d5ca9808c89bf1cfeb610c8c7cd2c253430a56efe53d7edfd687fbf72fc4a23"
+        }
+      ],
+      "directory": "08-repetition-5-incoming_chain_360_fixed_unknown"
+    }
+  ]
+}

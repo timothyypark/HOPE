@@ -1,0 +1,10 @@
+["/workspace/ppq004-recovery/python/bin/python", "/workspace/HOPE-ppq004-review/calibration/ppq004_20261020/verify_dataset.py", "--unpack", "/workspace/ppq004-recovery/qualification-01/source"]
+raw/ppq_004_1.c3d.gz verified 50340608
+trajectories/part1.csv.gz verified 6489186
+fit/part1/raw_extracted.npz.gz verified 26791702
+raw/ppq_004_2.c3d.gz verified 50340608
+trajectories/part2.csv.gz verified 7858463
+fit/part2/raw_extracted.npz.gz verified 28291219
+raw/ppq_004_3.c3d.gz verified 12190976
+trajectories/part3.csv.gz verified 1288678
+fit/part3/raw_extracted.npz.gz verified 5490012

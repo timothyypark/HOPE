@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": {
+    "endpoint_mm": {
+      "expected": 20.7699,
+      "actual": 20.779858612149958,
+      "tolerance": 0.05,
+      "pass_check": true
+    },
+    "future_rms_mm": {
+      "expected": 11.9898,
+      "actual": 11.98671183848107,
+      "tolerance": 0.05,
+      "pass_check": true
+    },
+    "net_time_ms": {
+      "expected": 1.60218,
+      "actual": 1.6020640099974615,
+      "tolerance": 0.01,
+      "pass_check": true
+    }
+  },
+  "counts_match": true,
+  "evidence_type": "measured_recording",
+  "scope": "archived train-only physics benchmark, not V2 qualification"
+}

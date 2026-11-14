@@ -1,0 +1,18 @@
+{
+  "source_sha": "f4902023d49c85ff57da62a618b2001181d3b8e7",
+  "repository": "timothyypark/HOPE",
+  "upstream_nightly_built": "91aecabfd44cb258ac998158e724be9017d883a7",
+  "nohope": "96e71c1adb217d14b925681173cebe00d8427f21",
+  "nohope_changed": false,
+  "nohope_upstream": "dongc1/nohope unavailable: GitHub API 404",
+  "image_manifest": "ros@sha256:00b8d47a6e6384a2834e3d01fa87ae767876543baa574f2d64a75c04ea33c698",
+  "hardware_scope": "protocol_only",
+  "plan_file_sha256": "86999762bd410ef4dd2ce78af16fcb4affc04db441912869abf09de1752aecd4",
+  "configuration_sha256": "0ae18dfb9c7e3ae8d5883c56d7f9b56a57ff6768c7746f315c9938ca4b5416d5",
+  "annotation_sha256": "8b43777b0c999e8c1b54b72df1ad60729812ee284459e150081da8075816973e",
+  "preflight_controls": {
+    "status": "PASS",
+    "tests": 36,
+    "log_sha256": "8ec0b7f04236e51811b211c5d0280f931c220b3a265e4e0bcabebc885f1c2fd9"
+  }
+}

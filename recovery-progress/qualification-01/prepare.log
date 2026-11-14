@@ -1,0 +1,39 @@
+["/workspace/ppq004-recovery/python/bin/python", "/workspace/HOPE-ppq004-review/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_prepare.py", "--source", "/workspace/ppq004-recovery/qualification-01/source", "--archive", "/workspace/HOPE-ppq004-review/calibration/ppq004_20261020", "--output", "/workspace/ppq004-recovery/qualification-01/prepared"]
+{
+  "schema": "ppq004-prepared-v1",
+  "archive_manifest_sha256": "0308178b1a910d914f1e9bae9fdb0c390fa67511d191e3708740e1617270ff24",
+  "recordings": [
+    {
+      "part": 1,
+      "parent_sha256": "6366cf914067567e2c2cbd30515b170b0089bd21b3fbd7895f1520a86dc116da",
+      "frames": 65535,
+      "tracked_ball": 42437,
+      "rate_hz": 300.0,
+      "split": "development"
+    },
+    {
+      "part": 2,
+      "parent_sha256": "07c881f5c93ded5d451ceea4dc67b52f89de6092effbaf0dad67526fcf9cc23c",
+      "frames": 65535,
+      "tracked_ball": 51384,
+      "rate_hz": 300.0,
+      "split": "development"
+    },
+    {
+      "part": 3,
+      "parent_sha256": "9185d01437e8708b39b9c2b2250d1892fd5a1e4aa918a48dd7fcd6a3c8d961e4",
+      "frames": 15861,
+      "tracked_ball": 8454,
+      "rate_hz": 300.0,
+      "split": "benchmark_holdout"
+    }
+  ],
+  "annotation_status": "UNREVIEWED",
+  "files": {
+    "observations.jsonl": "6dccb4fd32f630e4ddb89aa56796a150156ea01c67e1ff4b6560ed319e82ab30",
+    "episodes.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "annotation_candidates.jsonl": "b77eb9bf3de5b0540d47c8d15db0c60026da219870d3feba28053b04230c0c6a"
+  },
+  "frames": 146931,
+  "tracked_ball": 102275
+}
