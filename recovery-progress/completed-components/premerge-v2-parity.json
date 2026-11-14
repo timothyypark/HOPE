@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "premerge": "47296db5653c6dda7d397d7a82153f69fa4ed4fb",
+  "excluded_fields": [
+    "compute_ms"
+  ],
+  "cases": [
+    {
+      "fixture": "reacquisition_source_cutoff_parity-150-False.csv",
+      "cutoffs": 63,
+      "physical_cutoffs": 50,
+      "exact_match": false,
+      "exact_cutoffs": 62,
+      "contact_correction_cutoffs": [
+        48
+      ]
+    },
+    {
+      "fixture": "reacquisition_source_cutoff_parity-150-True.csv",
+      "cutoffs": 63,
+      "physical_cutoffs": 49,
+      "exact_match": false,
+      "exact_cutoffs": 62,
+      "contact_correction_cutoffs": [
+        50
+      ]
+    },
+    {
+      "fixture": "reacquisition_source_cutoff_parity-300-False.csv",
+      "cutoffs": 126,
+      "physical_cutoffs": 104,
+      "exact_match": false,
+      "exact_cutoffs": 125,
+      "contact_correction_cutoffs": [
+        95
+      ]
+    },
+    {
+      "fixture": "reacquisition_source_cutoff_parity-300-True.csv",
+      "cutoffs": 126,
+      "physical_cutoffs": 104,
+      "exact_match": true,
+      "exact_cutoffs": 126,
+      "contact_correction_cutoffs": []
+    },
+    {
+      "fixture": "review_source_cutoff_parity-150-False.csv",
+      "cutoffs": 42,
+      "physical_cutoffs": 37,
+      "exact_match": true,
+      "exact_cutoffs": 42,
+      "contact_correction_cutoffs": []
+    },
+    {
+      "fixture": "review_source_cutoff_parity-150-True-producer-zero.csv",
+      "cutoffs": 45,
+      "physical_cutoffs": 40,
+      "exact_match": false,
+      "exact_cutoffs": 44,
+      "contact_correction_cutoffs": [
+        33
+      ]
+    },
+    {
+      "fixture": "review_source_cutoff_parity-150-True.csv",
+      "cutoffs": 45,
+      "physical_cutoffs": 40,
+      "exact_match": false,
+      "exact_cutoffs": 44,
+      "contact_correction_cutoffs": [
+        35
+      ]
+    },
+    {
+      "fixture": "review_source_cutoff_parity-300-False.csv",
+      "cutoffs": 93,
+      "physical_cutoffs": 85,
+      "exact_match": false,
+      "exact_cutoffs": 92,
+      "contact_correction_cutoffs": [
+        65
+      ]
+    },
+    {
+      "fixture": "review_source_cutoff_parity-300-True-producer-zero.csv",
+      "cutoffs": 93,
+      "physical_cutoffs": 85,
+      "exact_match": false,
+      "exact_cutoffs": 92,
+      "contact_correction_cutoffs": [
+        65
+      ]
+    },
+    {
+      "fixture": "review_source_cutoff_parity-300-True.csv",
+      "cutoffs": 93,
+      "physical_cutoffs": 85,
+      "exact_match": true,
+      "exact_cutoffs": 93,
+      "contact_correction_cutoffs": []
+    }
+  ],
+  "correction_policy": "Independent post-minimum motion corroboration withholds the contact for one source cutoff; exact equality resumes at the next cutoff. Explicitly pinned differences, no numerical tolerance or broad exclusion."
+}

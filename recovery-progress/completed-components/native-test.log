@@ -1,0 +1,58 @@
+Internal ctest changing into directory: /workspace/ppq004-recovery/qualification-01/integrated/native
+Test project /workspace/ppq004-recovery/qualification-01/integrated/native
+      Start  1: flight_prediction_v2
+ 1/26 Test  #1: flight_prediction_v2 ..............   Passed    1.37 sec
+      Start  2: spin_physics
+ 2/26 Test  #2: spin_physics ......................   Passed    0.01 sec
+      Start  3: future_contact_predictor
+ 3/26 Test  #3: future_contact_predictor ..........   Passed    0.00 sec
+      Start  4: batch_physics_estimator
+ 4/26 Test  #4: batch_physics_estimator ...........   Passed    0.01 sec
+      Start  5: trajectory_and_stage3
+ 5/26 Test  #5: trajectory_and_stage3 .............   Passed    0.00 sec
+      Start  6: target_turn_guard
+ 6/26 Test  #6: target_turn_guard .................   Passed    0.00 sec
+      Start  7: prediction_event_order
+ 7/26 Test  #7: prediction_event_order ............   Passed    0.00 sec
+      Start  8: schema2
+ 8/26 Test  #8: schema2 ...........................   Passed    0.00 sec
+      Start  9: spin_estimator
+ 9/26 Test  #9: spin_estimator ....................   Passed    0.00 sec
+      Start 10: audit_logger
+10/26 Test #10: audit_logger ......................   Passed    0.01 sec
+      Start 11: post_net_one_shot
+11/26 Test #11: post_net_one_shot .................   Passed    0.00 sec
+      Start 12: incoming_trajectory
+12/26 Test #12: incoming_trajectory ...............   Passed    0.01 sec
+      Start 13: adaptive_flight_commit
+13/26 Test #13: adaptive_flight_commit ............   Passed    0.11 sec
+      Start 14: v2_contact_corroboration
+14/26 Test #14: v2_contact_corroboration ..........   Passed    0.06 sec
+      Start 15: v2_strike_adapter
+15/26 Test #15: v2_strike_adapter .................   Passed    0.02 sec
+      Start 16: runner_preengagement_revocation
+16/26 Test #16: runner_preengagement_revocation ...   Passed    0.01 sec
+      Start 17: v2_incoming_coordinator
+17/26 Test #17: v2_incoming_coordinator ...........   Passed    0.08 sec
+      Start 18: runtime_plane_reference
+18/26 Test #18: runtime_plane_reference ...........   Passed    0.00 sec
+      Start 19: integrated_return
+19/26 Test #19: integrated_return .................   Passed    0.06 sec
+      Start 20: v2_pr64_review_regressions
+20/26 Test #20: v2_pr64_review_regressions ........   Passed    1.25 sec
+      Start 21: reacquisition_counterexamples
+21/26 Test #21: reacquisition_counterexamples .....   Passed    0.01 sec
+      Start 22: reacquisition_spin
+22/26 Test #22: reacquisition_spin ................   Passed    0.10 sec
+      Start 23: base_pose_contract
+23/26 Test #23: base_pose_contract ................   Passed    0.00 sec
+      Start 24: upstream_receiver
+24/26 Test #24: upstream_receiver .................   Passed    0.19 sec
+      Start 25: stage_trace
+25/26 Test #25: stage_trace .......................   Passed    0.14 sec
+      Start 26: ppq004_state_contract
+26/26 Test #26: ppq004_state_contract .............   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 26
+
+Total Test time (real) =   3.49 sec
