@@ -128,3 +128,25 @@ def test_no_net_collision_is_not_evidence_of_net_clearance():
     assert low["clearance_m"] < 0
     high = outgoing_crossing([1, 0, 0.3], [2, 0, 0.3], 1.37, 0.1525, 0.02)
     assert abs(high["clearance_m"] - 0.1275) < 1e-12
+
+
+def test_spin_transport_success_cannot_replace_fault_response():
+    from ppq004_report import requirement_results
+
+    gates = {
+        name: {"status": "PASS"}
+        for name in (
+            "event-spin-diagnostics", "integrated/native-test", "position-only",
+            "managed", "ros-fault-quaternion_sign", "ros-fault-missing_orientation",
+        )
+    }
+    result = requirement_results(gates, [{"id": "SPIN"}])[0]
+    assert result["status"] == "NOT_RUN"
+    assert set(result["missing_gate_patterns"]) == {
+        "ros-fault-missing_orientation/fault-response",
+        "ros-fault-quaternion_sign/fault-response",
+    }
+    gates.update({name: {"status": "PASS"} for name in result["missing_gate_patterns"]})
+    assert requirement_results(gates, [{"id": "SPIN"}])[0]["status"] == "PASS"
+    gates["ros-fault-missing_orientation/fault-response"]["status"] = "FAIL"
+    assert requirement_results(gates, [{"id": "SPIN"}])[0]["status"] == "FAIL"

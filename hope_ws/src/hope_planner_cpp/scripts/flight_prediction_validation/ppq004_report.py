@@ -25,7 +25,8 @@ REQUIREMENT_GATES = {
         "integrated/native-test",
         "position-only",
         "managed",
-        "ros-fault-quaternion_sign",
+        "ros-fault-missing_orientation/fault-response",
+        "ros-fault-quaternion_sign/fault-response",
     ],
     "FORECAST": ["forecast-*", "paired-forecasts", "public-plane-comparison"],
     "PLANE": [
