@@ -980,6 +980,16 @@
         "scorer-controls",
         "verify_ppq004.sh"
       ]
+    },
+    {
+      "path": "hope_ws/src/hope_planner_cpp/docs/ppq004_validation_results.md",
+      "owner": "validation",
+      "why_needed": "Separate recovered implementation, unavailable historical receipts and fresh PPQ004 qualification",
+      "tests": [
+        "full PPQ004 recovery campaign",
+        "source scope checks",
+        "archive and report verification"
+      ]
     }
   ]
 }
