@@ -136,8 +136,12 @@ def test_spin_transport_success_cannot_replace_fault_response():
     gates = {
         name: {"status": "PASS"}
         for name in (
-            "event-spin-diagnostics", "integrated/native-test", "position-only",
-            "managed", "ros-fault-quaternion_sign", "ros-fault-missing_orientation",
+            "event-spin-diagnostics",
+            "integrated/native-test",
+            "position-only",
+            "managed",
+            "ros-fault-quaternion_sign",
+            "ros-fault-missing_orientation",
         )
     }
     result = requirement_results(gates, [{"id": "SPIN"}])[0]
