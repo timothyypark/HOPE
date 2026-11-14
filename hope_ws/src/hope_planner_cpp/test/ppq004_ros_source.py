@@ -121,6 +121,8 @@ def recorded_source(rate, spin, stop, ready, reference_ready, queue, options):
         if present:
             pose = NamedPose()
             pose.name = "Ball"
+            # ROS Quaternion defaults w=1: explicitly mark unavailable orientation.
+            pose.pose.orientation.w = 0.0
             pose.pose.position.x, pose.pose.position.y, pose.pose.position.z = ball[
                 "position_m"
             ]
@@ -140,9 +142,13 @@ def recorded_source(rate, spin, stop, ready, reference_ready, queue, options):
                     pose.pose.orientation.w,
                 ) = [sign * v for v in q]
             m.poses.append(pose)
-        if fault == "duplicate" and i == anchor and rows:
-            stamp = rows[-1]["source_ns"]
-            m.header.stamp.sec, m.header.stamp.nanosec = divmod(stamp, 10**9)
+        if fault == "duplicate" and i == anchor:
+            previous_ball = next(
+                (row for row in reversed(rows) if row["present"]), None
+            )
+            if previous_ball is not None:
+                stamp = previous_ball["source_ns"]
+                m.header.stamp.sec, m.header.stamp.nanosec = divmod(stamp, 10**9)
         if fault == "reordered" and i in (anchor, anchor + 1):
             stamp += 3333333 if i == anchor else -3333333
             m.header.stamp.sec, m.header.stamp.nanosec = divmod(stamp, 10**9)
