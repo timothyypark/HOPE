@@ -72,6 +72,12 @@ python analysis/ppq004_accuracy/score.py \
   --replay /tmp/accuracy-replay --source /path/to/qualification/source \
   --annotations /path/to/qualification/annotations/episodes.jsonl \
   --output /tmp/accuracy-scores
+python analysis/ppq004_accuracy/plot.py \
+  --results /tmp/accuracy-scores/results.json --output /tmp/accuracy-plots
+python analysis/ppq004_accuracy/diagnose.py \
+  --replay /tmp/accuracy-replay --source /path/to/qualification/source \
+  --annotations /path/to/qualification/annotations/episodes.jsonl \
+  --output /tmp/accuracy-scores/availability-reasons.json
 ```
 
 Inputs are the recovered, verified PPQ004 `prepared/observations.jsonl`, its
@@ -81,3 +87,20 @@ the scorer verifies replay integrity and equality of measured truth with the
 replayed positions. Outputs must be fresh directories; failed invocations remain
 available. Tests cover causal prefix invariance, quaternion sign equivalence,
 configuration loading, pairing, missing support, integration and crossing gaps.
+
+The source recordings are already archived in
+`calibration/ppq004_20261020` in the V2 checkout. To reconstruct prepared input:
+
+```bash
+python /path/to/v2/calibration/ppq004_20261020/verify_dataset.py \
+  --unpack /tmp/accuracy-source
+python /path/to/v2/hope_ws/src/hope_planner_cpp/scripts/flight_prediction_validation/ppq004_prepare.py \
+  --source /tmp/accuracy-source \
+  --archive /path/to/v2/calibration/ppq004_20261020 \
+  --output /tmp/accuracy-prepared
+```
+
+Use the retained `episodes.jsonl` from the comparison evidence branch for scoring,
+not the intentionally empty prepared episode file. No new annotations are
+required to reproduce these scores. Set `PYTHONDONTWRITEBYTECODE=1` and put pytest's
+cache outside the checkout when preserving the runner's clean-source requirement.
