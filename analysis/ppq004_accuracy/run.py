@@ -22,7 +22,8 @@ def git(root, *args):
 
 
 def run(args):
-    contract = json.loads(Path(__file__).with_name('contract.json').read_text())
+    contract_path = args.contract or Path(__file__).with_name('contract.json')
+    contract = json.loads(contract_path.read_text())
     for root, pin in ((args.main, contract['main_sha']), (args.v2, contract['v2_sha'])):
         if git(root, 'rev-parse', 'HEAD') != pin or git(root, 'status', '--porcelain'):
             raise ValueError('Pinned implementation must be clean: ' + str(root))
@@ -38,7 +39,7 @@ def run(args):
     hardware = config / 'model21800_hardware.yaml'
     packetizer = config / 'model21800_flight_packetizer.yaml'
     receipt = dict(contract=contract, harness_sha=git(harness, 'rev-parse', 'HEAD'),
-                   contract_sha256=digest(Path(__file__).with_name('contract.json')),
+                   contract_sha256=digest(contract_path),
                    prepared_sha256=digest(args.prepared / 'manifest.json'),
                    observations_sha256=digest(observation_path),
                    profiles={str(p): digest(p) for p in (hardware, packetizer)},
@@ -91,6 +92,7 @@ def run(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--contract', type=Path, help='Explicit committed follow-up experiment contract')
     for name in ('main', 'v2', 'build', 'prepared', 'output'):
         parser.add_argument('--' + name, type=Path, required=True)
     run(parser.parse_args())
