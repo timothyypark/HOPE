@@ -1,0 +1,29 @@
+{
+  "schema": "ppq004-main-ckf-matched-v1",
+  "main_sha": "01de418c146cf3f2d2dba32e63b425f01c8a7f19",
+  "v2_sha": "f4902023d49c85ff57da62a618b2001181d3b8e7",
+  "development_parts": [1, 2],
+  "benchmark_holdout_parts": [3],
+  "blind_holdout": false,
+  "truth": "same-sensor measured-position proxy, not independent physical truth",
+  "sample_hz": 300,
+  "forecast_stride_frames": 6,
+  "primary_plane_m": 0.15,
+  "diagnostic_planes_m": [0.08, 0.7, 1.37],
+  "crossing_lead_range_s": [0.01, 0.5],
+  "common_rollout_horizons_ms": [10, 30, 50, 100, 150],
+  "primary_common_rollout_horizon_ms": 100,
+  "common_rollout_dt_s": 0.0005,
+  "scoring_arcs": "Existing independently screened contact-free observed arcs; incoming negative-X arcs for primary comparison; annotation boundaries never supplied to replay",
+  "inputs": "All original frames and absent observations in chronological order; recorded quaternion when finite and normalized; no future spin or positions supplied to replay",
+  "profiles": "Main model21800_hardware and packetizer checked-in parameters; V2 existing managed defaults, shared unchanged physics; no PPQ004 all-data calibration adoption",
+  "methods": {
+    "main_operator": "Production LaptopPlayState observation admission, generation/bounce resets, BatchPhysicsEstimator, SpinEstimator and FutureContactPredictor; diagnostic same-cutoff queries, not published command counts",
+    "main_batch": "Same production batch estimator and predictor without operator gate, persistent across take; diagnostic only",
+    "v2_managed": "Production V2IncomingCoordinator observation-only persistent owner, continuous forecast and strike candidate; no annotation START/CONTEXT/CONTACT inputs"
+  },
+  "metrics": "Paired native plane position/time error at identical actual cutoffs; paired common-kernel free-flight position error using each current fitted state/spin; per-method and paired availability",
+  "aggregation": "Within-arc RMS then equal-weight arc median; primary pairing main_operator versus v2_managed; main_batch comparison separately; paired bootstrap resamples arcs, 5000 draws seed 140126; source frames are not independent trials",
+  "winner_rule": "Directional evidence requires paired median difference bootstrap 95% interval excluding zero with at least 5 holdout arcs; any reduced availability must be reported and prevents an unqualified overall winner claim; no threshold/model tuning after scoring",
+  "scope_limits": "Native prediction accuracy, not ROS latency, full command delivery, racket execution or hardware qualification; one holdout recording cannot establish cross-session generalization"
+}
