@@ -1,0 +1,10 @@
+{
+  "status": "IN_PROGRESS",
+  "restored_source": "55799d4d31638c98c8b555549f56f11fc62ead59",
+  "unavailable_prior_final_source": "f63fa391b5cf34e133d9815885e99ab28cc8b891",
+  "unavailable_prior_evidence": "6cc0aae7291485d521a99dc7704470c8ff841fbd",
+  "plan_sha256": "86999762bd410ef4dd2ce78af16fcb4affc04db441912869abf09de1752aecd4",
+  "raw_prior_november_receipts_recovered": false,
+  "physical_scope": "protocol_only",
+  "repository": "timothyypark/HOPE"
+}
