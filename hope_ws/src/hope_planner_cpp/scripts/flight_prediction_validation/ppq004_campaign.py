@@ -426,6 +426,10 @@ def main():
                 "--recorded-fault",
                 fault,
             ]
+            if fault in ("decoder_delay", "worker_stall"):
+                # Frozen part-3 source produces its first command near 27.403 s.
+                # A 25 s replay cannot exercise delayed command receipt.
+                command += ["--recorded-stall-start-seconds", 27.36]
             if seconds:
                 command += ["--recorded-max-seconds", seconds]
             run(
@@ -483,7 +487,13 @@ def main():
                 "home_change",
                 "source_silence",
             ):
-                ros_trial("ros-fault-" + fault, 300, "fixed", fault=fault, seconds=25)
+                ros_trial(
+                    "ros-fault-" + fault,
+                    300,
+                    "fixed",
+                    fault=fault,
+                    seconds=None if fault in ("decoder_delay", "worker_stall") else 25,
+                )
     else:
         results["gates"]["ros-recorded"] = dict(
             status="NOT_RUN", reason="ROS installation unavailable"

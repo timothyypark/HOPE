@@ -141,3 +141,14 @@ The short-prefix public-method comparison also includes X=0.08 m so the ROS
 fixture's effective plane has a separately identified crossing diagnostic.
 This still does not establish an independently eligible physical-flight
 opportunity or substitute short-prefix results for persistent ROS replay.
+
+
+The decoder-delay and owner-process-stall variants replay the full third take,
+with an 80 ms process pause starting at 27.36 s. This declared fixture window
+covers the first nominal command observed near source time 27.403 s; the earlier
+25 s fault trial could not do so. Actual signal, publication and decoder clocks
+are retained. A process pause that does not overlap an in-flight forecast cannot
+qualify the delayed-worker-completion gate: it remains NOT_COVERED even if source
+freshness is respected. Missing orientation is an explicit zero quaternion at the
+camera boundary, because ROS defaults an omitted quaternion to identity. The
+duplicate variant repeats a timestamp from an actual preceding Ball observation.
